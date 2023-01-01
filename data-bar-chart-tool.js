@@ -13,6 +13,7 @@ selectElement.addEventListener("change", () => {
 });
 
 // Preview Dark Mode
+const lightMode = document.getElementById("lightMode");
 const darkMode = document.getElementById("darkMode");
 const scrollBox = document.getElementsByClassName("scrollBox");
 const textarea = document.getElementsByTagName("textarea");
@@ -36,24 +37,53 @@ darkMode.addEventListener("click", () => {
         scrollBox[i].classList.toggle("darkStyles");
         textarea[i].classList.toggle("darkStyles");
         previewBox[i].classList.toggle("darkStyles");
-    };
-    for (var i = 0; i < horiz1Bars.length; i++) {
-        horiz1BarsNodes1[i].classList.toggle("darkStyles");
-        horiz1BarsNodes2[i].classList.toggle("darkStyles");
-        horiz2BarsNodes3[i].classList.toggle("darkStyles");
-        horiz3BarsNodes1[i].classList.toggle("darkStyles");
-        horiz3BarsNodes3[i].classList.toggle("darkStyles");
-        stacked1BarsNodes1[i].classList.toggle("darkStyles");
-        stacked1BarsNodes4[i].classList.toggle("darkStyles");
-        stacked2BarsNodes1[i].classList.toggle("darkStyles");
-        stacked2BarsNodes4[i].classList.toggle("darkStyles");
-        stacked3BarsNodes1[i].classList.toggle("darkStyles");
-        stacked1BarsNodes2[i].classList.toggle("darkBorder");
-    };
-    for (var i = 0; i < combo1BarsNodes1.length; i++) {
-        combo1BarsNodes1[i].classList.toggle("darkStyles");
-        combo1BarsNodes3[i].classList.toggle("darkStyles");
-    };
+    }
+    for (var x = 0; x < horiz1Bars.length; x++) {
+        horiz1BarsNodes1[x].classList.toggle("darkStyles");
+        horiz1BarsNodes2[x].classList.toggle("darkStyles");
+        horiz2BarsNodes3[x].classList.toggle("darkStyles");
+        horiz3BarsNodes1[x].classList.toggle("darkStyles");
+        horiz3BarsNodes3[x].classList.toggle("darkStyles");
+        stacked1BarsNodes1[x].classList.toggle("darkStyles");
+        stacked1BarsNodes4[x].classList.toggle("darkStyles");
+        stacked2BarsNodes1[x].classList.toggle("darkStyles");
+        stacked2BarsNodes4[x].classList.toggle("darkStyles");
+        stacked3BarsNodes1[x].classList.toggle("darkStyles");
+        stacked1BarsNodes2[x].classList.toggle("darkBorder");
+    }
+    for (var y = 0; y < combo1BarsNodes1.length; y++) {
+        combo1BarsNodes1[y].classList.toggle("darkStyles");
+        combo1BarsNodes3[y].classList.toggle("darkStyles");
+    }
+    darkMode.style.display = "none";
+    lightMode.style.display = "inline-block";
+});
+lightMode.addEventListener("click", () => {
+    document.body.classList.toggle("darkStyles");
+    for (var i = 0; i < scrollBox.length; i++) {
+        scrollBox[i].classList.toggle("darkStyles");
+        textarea[i].classList.toggle("darkStyles");
+        previewBox[i].classList.toggle("darkStyles");
+    }
+    for (var x = 0; x < horiz1Bars.length; x++) {
+        horiz1BarsNodes1[x].classList.toggle("darkStyles");
+        horiz1BarsNodes2[x].classList.toggle("darkStyles");
+        horiz2BarsNodes3[x].classList.toggle("darkStyles");
+        horiz3BarsNodes1[x].classList.toggle("darkStyles");
+        horiz3BarsNodes3[x].classList.toggle("darkStyles");
+        stacked1BarsNodes1[x].classList.toggle("darkStyles");
+        stacked1BarsNodes4[x].classList.toggle("darkStyles");
+        stacked2BarsNodes1[x].classList.toggle("darkStyles");
+        stacked2BarsNodes4[x].classList.toggle("darkStyles");
+        stacked3BarsNodes1[x].classList.toggle("darkStyles");
+        stacked1BarsNodes2[x].classList.toggle("darkBorder");
+    }
+    for (var y = 0; y < combo1BarsNodes1.length; y++) {
+        combo1BarsNodes1[y].classList.toggle("darkStyles");
+        combo1BarsNodes3[y].classList.toggle("darkStyles");
+    }
+    darkMode.style.display = "inline-block";
+    lightMode.style.display = "none";
 });
 
 
@@ -775,37 +805,31 @@ legend4Color2x.oninput = function() {
 const combo1Row1a = document.getElementById("combo1Row1a");
 const combo1Row1b = document.getElementById("combo1Row1b");
 const combo1Row1c = document.getElementById("combo1Row1c");
-const combo1Row1x = document.getElementById("combo1Row1x");
 const combo1Row1y = document.getElementById("combo1Row1y");
 const combo1Row1z = document.getElementById("combo1Row1z");
 const combo1Row2a = document.getElementById("combo1Row2a");
 const combo1Row2b = document.getElementById("combo1Row2b");
 const combo1Row2c = document.getElementById("combo1Row2c");
-const combo1Row2x = document.getElementById("combo1Row2x");
 const combo1Row2y = document.getElementById("combo1Row2y");
 const combo1Row2z = document.getElementById("combo1Row2z");
 const combo1Row3a = document.getElementById("combo1Row3a");
 const combo1Row3b = document.getElementById("combo1Row3b");
 const combo1Row3c = document.getElementById("combo1Row3c");
-const combo1Row3x = document.getElementById("combo1Row3x");
 const combo1Row3y = document.getElementById("combo1Row3y");
 const combo1Row3z = document.getElementById("combo1Row3z");
 const combo1Row4a = document.getElementById("combo1Row4a");
 const combo1Row4b = document.getElementById("combo1Row4b");
 const combo1Row4c = document.getElementById("combo1Row4c");
-const combo1Row4x = document.getElementById("combo1Row4x");
 const combo1Row4y = document.getElementById("combo1Row4y");
 const combo1Row4z = document.getElementById("combo1Row4z");
 const combo1Row5a = document.getElementById("combo1Row5a");
 const combo1Row5b = document.getElementById("combo1Row5b");
 const combo1Row5c = document.getElementById("combo1Row5c");
-const combo1Row5x = document.getElementById("combo1Row5x");
 const combo1Row5y = document.getElementById("combo1Row5y");
 const combo1Row5z = document.getElementById("combo1Row5z");
 const combo1Row6a = document.getElementById("combo1Row6a");
 const combo1Row6b = document.getElementById("combo1Row6b");
 const combo1Row6c = document.getElementById("combo1Row6c");
-const combo1Row6x = document.getElementById("combo1Row6x");
 const combo1Row6y = document.getElementById("combo1Row6y");
 const combo1Row6z = document.getElementById("combo1Row6z");
 
