@@ -89,7 +89,7 @@ stacked1Size1a.oninput = function() {
     stacked1Size1a.max = Math.abs((100 - stacked1Size1b.value));
     if (stacked1Size1a.value == "0" || stacked1Size1a.value == "100") {
         stacked1Row1b.style.borderRight = "none";
-    } else if (stacked1Size1a.value > "0") {
+    } else if (stacked1Size1a.value > "0" && stacked1Size1b.value > "0") {
         stacked1Row1b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -110,6 +110,11 @@ stacked1Size1b.oninput = function() {
     stacked1Row1c.style.width = ((Math.abs(stacked1Size1b.value)) * .75) + "%";
     stacked1Size1a.max = Math.abs((100 - stacked1Size1b.value));
     stacked1Size1b.max = Math.abs((100 - stacked1Size1a.value));
+    if (stacked1Size1b.value == "0") {
+        stacked1Row1b.style.borderRight = "none";
+    } else if (stacked1Size1b.value > "0" && stacked1Size1a.value > "0") {
+        stacked1Row1b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text1b = document.getElementById("stacked1Text1b"); // End Data Label #2
 stacked1Text1b.oninput = function() {
@@ -136,7 +141,7 @@ stacked1Size2a.oninput = function() {
     stacked1Size2a.max = Math.abs((100 - stacked1Size2b.value));
     if (stacked1Size2a.value == "0" || stacked1Size2a.value == "100") {
         stacked1Row2b.style.borderRight = "none";
-    } else if (stacked1Size2a.value > "0") {
+    } else if (stacked1Size2a.value > "0" && stacked1Size2b.value > "0") {
         stacked1Row2b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -157,6 +162,11 @@ stacked1Size2b.oninput = function() {
     stacked1Row2c.style.width = ((Math.abs(stacked1Size2b.value)) * .75) + "%";
     stacked1Size2a.max = Math.abs((100 - stacked1Size2b.value));
     stacked1Size2b.max = Math.abs((100 - stacked1Size2a.value));
+    if (stacked1Size2b.value == "0") {
+        stacked1Row2b.style.borderRight = "none";
+    } else if (stacked1Size2b.value > "0" && stacked1Size2a.value > "0") {
+        stacked1Row2b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text2b = document.getElementById("stacked1Text2b");
 stacked1Text2b.oninput = function() {
@@ -183,7 +193,7 @@ stacked1Size3a.oninput = function() {
     stacked1Size3a.max = Math.abs((100 - stacked1Size3b.value));
     if (stacked1Size3a.value == "0" || stacked1Size3a.value == "100") {
         stacked1Row3b.style.borderRight = "none";
-    } else if (stacked1Size3a.value > "0") {
+    } else if (stacked1Size3a.value > "0" && stacked1Size3b.value > "0") {
         stacked1Row3b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -204,6 +214,11 @@ stacked1Size3b.oninput = function() {
     stacked1Row3c.style.width = ((Math.abs(stacked1Size3b.value)) * .75) + "%";
     stacked1Size3a.max = Math.abs((100 - stacked1Size3b.value));
     stacked1Size3b.max = Math.abs((100 - stacked1Size3a.value));
+    if (stacked1Size3b.value == "0") {
+        stacked1Row3b.style.borderRight = "none";
+    } else if (stacked1Size3b.value > "0" && stacked1Size3a.value > "0") {
+        stacked1Row3b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text3b = document.getElementById("stacked1Text3b");
 stacked1Text3b.oninput = function() {
@@ -230,7 +245,7 @@ stacked1Size4a.oninput = function() {
     stacked1Size4a.max = Math.abs((100 - stacked1Size4b.value));
     if (stacked1Size4a.value == "0" || stacked1Size4a.value == "100") {
         stacked1Row4b.style.borderRight = "none";
-    } else if (stacked1Size4a.value > "0") {
+    } else if (stacked1Size4a.value > "0" && stacked1Size4b.value > "0") {
         stacked1Row4b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -251,6 +266,11 @@ stacked1Size4b.oninput = function() {
     stacked1Row4c.style.width = ((Math.abs(stacked1Size4b.value)) * .75) + "%";
     stacked1Size4a.max = Math.abs((100 - stacked1Size4b.value));
     stacked1Size4b.max = Math.abs((100 - stacked1Size4a.value));
+    if (stacked1Size4b.value == "0") {
+        stacked1Row4b.style.borderRight = "none";
+    } else if (stacked1Size4b.value > "0" && stacked1Size4a.value > "0") {
+        stacked1Row4b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text4b = document.getElementById("stacked1Text4b");
 stacked1Text4b.oninput = function() {
@@ -277,7 +297,7 @@ stacked1Size5a.oninput = function() {
     stacked1Size5a.max = Math.abs((100 - stacked1Size5b.value));
     if (stacked1Size5a.value == "0" || stacked1Size5a.value == "100") {
         stacked1Row5b.style.borderRight = "none";
-    } else if (stacked1Size5a.value > "0") {
+    } else if (stacked1Size5a.value > "0" && stacked1Size5b.value > "0") {
         stacked1Row5b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -298,6 +318,11 @@ stacked1Size5b.oninput = function() {
     stacked1Row5c.style.width = ((Math.abs(stacked1Size5b.value)) * .75) + "%";
     stacked1Size5a.max = Math.abs((100 - stacked1Size5b.value));
     stacked1Size5b.max = Math.abs((100 - stacked1Size5a.value));
+    if (stacked1Size5b.value == "0") {
+        stacked1Row5b.style.borderRight = "none";
+    } else if (stacked1Size5b.value > "0" && stacked1Size5a.value > "0") {
+        stacked1Row5b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text5b = document.getElementById("stacked1Text5b");
 stacked1Text5b.oninput = function() {
@@ -324,7 +349,7 @@ stacked1Size6a.oninput = function() {
     stacked1Size6a.max = Math.abs((100 - stacked1Size6b.value));
     if (stacked1Size6a.value == "0" || stacked1Size6a.value == "100") {
         stacked1Row6b.style.borderRight = "none";
-    } else if (stacked1Size6a.value > "0") {
+    } else if (stacked1Size6a.value > "0" && stacked1Size6b.value > "0") {
         stacked1Row6b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -345,6 +370,11 @@ stacked1Size6b.oninput = function() {
     stacked1Row6c.style.width = ((Math.abs(stacked1Size6b.value)) * .75) + "%";
     stacked1Size6a.max = Math.abs((100 - stacked1Size6b.value));
     stacked1Size6b.max = Math.abs((100 - stacked1Size6a.value));
+    if (stacked1Size6b.value == "0") {
+        stacked1Row6b.style.borderRight = "none";
+    } else if (stacked1Size6b.value > "0" && stacked1Size6a.value > "0") {
+        stacked1Row6b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text6b = document.getElementById("stacked1Text6b");
 stacked1Text6b.oninput = function() {
@@ -371,7 +401,7 @@ stacked1Size7a.oninput = function() {
     stacked1Size7a.max = Math.abs((100 - stacked1Size7b.value));
     if (stacked1Size7a.value == "0" || stacked1Size7a.value == "100") {
         stacked1Row7b.style.borderRight = "none";
-    } else if (stacked1Size7a.value > "0") {
+    } else if (stacked1Size7a.value > "0" && stacked1Size7b.value > "0") {
         stacked1Row7b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -392,6 +422,11 @@ stacked1Size7b.oninput = function() {
     stacked1Row7c.style.width = ((Math.abs(stacked1Size7b.value)) * .75) + "%";
     stacked1Size7a.max = Math.abs((100 - stacked1Size7b.value));
     stacked1Size7b.max = Math.abs((100 - stacked1Size7a.value));
+    if (stacked1Size7b.value == "0") {
+        stacked1Row7b.style.borderRight = "none";
+    } else if (stacked1Size7b.value > "0" && stacked1Size7a.value > "0") {
+        stacked1Row7b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text7b = document.getElementById("stacked1Text7b");
 stacked1Text7b.oninput = function() {
@@ -418,7 +453,7 @@ stacked1Size8a.oninput = function() {
     stacked1Size8a.max = Math.abs((100 - stacked1Size8b.value));
     if (stacked1Size8a.value == "0" || stacked1Size8a.value == "100") {
         stacked1Row8b.style.borderRight = "none";
-    } else if (stacked1Size8a.value > "0") {
+    } else if (stacked1Size8a.value > "0" && stacked1Size8b.value > "0") {
         stacked1Row8b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -439,6 +474,11 @@ stacked1Size8b.oninput = function() {
     stacked1Row8c.style.width = ((Math.abs(stacked1Size8b.value)) * .75) + "%";
     stacked1Size8a.max = Math.abs((100 - stacked1Size8b.value));
     stacked1Size8b.max = Math.abs((100 - stacked1Size8a.value));
+    if (stacked1Size8b.value == "0") {
+        stacked1Row8b.style.borderRight = "none";
+    } else if (stacked1Size8b.value > "0" && stacked1Size8a.value > "0") {
+        stacked1Row8b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text8b = document.getElementById("stacked1Text8b");
 stacked1Text8b.oninput = function() {
@@ -465,7 +505,7 @@ stacked1Size9a.oninput = function() {
     stacked1Size9a.max = Math.abs((100 - stacked1Size9b.value));
     if (stacked1Size9a.value == "0" || stacked1Size9a.value == "100") {
         stacked1Row9b.style.borderRight = "none";
-    } else if (stacked1Size9a.value > "0") {
+    } else if (stacked1Size9a.value > "0" && stacked1Size9b.value > "0") {
         stacked1Row9b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -486,6 +526,11 @@ stacked1Size9b.oninput = function() {
     stacked1Row9c.style.width = ((Math.abs(stacked1Size9b.value)) * .75) + "%";
     stacked1Size9a.max = Math.abs((100 - stacked1Size9b.value));
     stacked1Size9b.max = Math.abs((100 - stacked1Size9a.value));
+    if (stacked1Size9b.value == "0") {
+        stacked1Row9b.style.borderRight = "none";
+    } else if (stacked1Size9b.value > "0" && stacked1Size9a.value > "0") {
+        stacked1Row9b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text9b = document.getElementById("stacked1Text9b");
 stacked1Text9b.oninput = function() {
@@ -512,7 +557,7 @@ stacked1Size10a.oninput = function() {
     stacked1Size10a.max = Math.abs((100 - stacked1Size10b.value));
     if (stacked1Size10a.value == "0" || stacked1Size10a.value == "100") {
         stacked1Row10b.style.borderRight = "none";
-    } else if (stacked1Size10a.value > "0") {
+    } else if (stacked1Size10a.value > "0" && stacked1Size10b.value > "0") {
         stacked1Row10b.style.borderRight = "1px solid rgb(255, 255, 255)";
     };
 };
@@ -533,6 +578,11 @@ stacked1Size10b.oninput = function() {
     stacked1Row10c.style.width = ((Math.abs(stacked1Size10b.value)) * .75) + "%";
     stacked1Size10a.max = Math.abs((100 - stacked1Size10b.value));
     stacked1Size10b.max = Math.abs((100 - stacked1Size10a.value));
+    if (stacked1Size10b.value == "0") {
+        stacked1Row10b.style.borderRight = "none";
+    } else if (stacked1Size10b.value > "0" && stacked1Size10a.value > "0") {
+        stacked1Row10b.style.borderRight = "1px solid rgb(255, 255, 255)";
+    };
 };
 const stacked1Text10b = document.getElementById("stacked1Text10b");
 stacked1Text10b.oninput = function() {
