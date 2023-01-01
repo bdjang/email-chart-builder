@@ -24,7 +24,7 @@ const horiz2BarsNodes3 = document.querySelectorAll("tr.horiz2Bars table.chartMob
 const horiz3BarsNodes1 = document.querySelectorAll("tr.horiz3Bars table.chartMobile td:nth-of-type(1)");
 const horiz3BarsNodes3 = document.querySelectorAll("tr.horiz3Bars table.chartMobile td:nth-of-type(3)");
 const stacked1BarsNodes1 = document.querySelectorAll("tr.stacked1Bars table.chartMobile td:nth-of-type(1)");
-const stacked1BarsNodes2 = document.querySelectorAll("tr.stacked1Bars table.chartMobile td:nth-of-type(2)");
+const stacked1BarsNodes3 = document.querySelectorAll("tr.stacked1Bars table.chartMobile td:nth-of-type(3)");
 const stacked1BarsNodes4 = document.querySelectorAll("tr.stacked1Bars table.chartMobile td:nth-of-type(4)");
 const stacked2BarsNodes1 = document.querySelectorAll("tr.stacked2Bars table.chartMobile td:nth-of-type(1)");
 const stacked2BarsNodes4 = document.querySelectorAll("tr.stacked2Bars table.chartMobile td:nth-of-type(4)");
@@ -49,7 +49,7 @@ darkMode.addEventListener("click", () => {
         stacked2BarsNodes1[x].classList.toggle("darkStyles");
         stacked2BarsNodes4[x].classList.toggle("darkStyles");
         stacked3BarsNodes1[x].classList.toggle("darkStyles");
-        stacked1BarsNodes2[x].classList.toggle("darkBorder");
+        stacked1BarsNodes3[x].classList.toggle("darkBorder");
     }
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
         combo1BarsNodes1[y].classList.toggle("darkStyles");
@@ -76,7 +76,7 @@ lightMode.addEventListener("click", () => {
         stacked2BarsNodes1[x].classList.toggle("darkStyles");
         stacked2BarsNodes4[x].classList.toggle("darkStyles");
         stacked3BarsNodes1[x].classList.toggle("darkStyles");
-        stacked1BarsNodes2[x].classList.toggle("darkBorder");
+        stacked1BarsNodes3[x].classList.toggle("darkBorder");
     }
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
         combo1BarsNodes1[y].classList.toggle("darkStyles");
