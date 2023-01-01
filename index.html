@@ -48,8 +48,8 @@
 
     /* DARK MODE STYLES */
     .darkStyles { background-color: #0f0f0f !important; color: #ffffff !important; }
-    .darkBorder { border-right: 1px solid #1f1f1f !important; }
-    #darkMode { cursor: pointer; }
+    .darkBorder { border-color: #1f1f1f !important; }
+    #darkMode, #lightMode { cursor: pointer; }
 
      /*MOBILE STYLES 
     @media screen and (max-width: 691px) {
@@ -67,7 +67,7 @@
         <p>A tool to assist with building bar charts for HTML emails.</p>
         <ul>
             <li>100% HTML/CSS Coded Bar Charts ⌨️</li>
-            <li>Compatible in Dark Mode <span id="darkMode">🌙</span></li>
+            <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🌑</span><span id="darkMode">🌕</span></li>
             <li>Mobile Responsive 📲</li>
             <li>No Images ❌</li>
         </ul>
@@ -144,7 +144,7 @@
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz1Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">Data bar #4</td>
-                                            <td id="horiz1Row4b" align="right" style="background-color: #ff0000; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 60%; height: 22px;" height="22">Label #4&nbsp;</td>
+                                            <td id="horiz1Row4b" align="right" style="background-color: #ff0000; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 22px;" height="22">Label #4&nbsp;</td>
                                             <td id="horiz1Row4c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22"></td>
                                         </tr>
                                     </table>
@@ -246,7 +246,6 @@
                 <label for="rowsData1">Select # of Data Rows</label>
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData1" id="rowsData1">
                 <small>*Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
-                <!-- <small>*To move the end data label text from <span style="font-weight: 600;">outside</span> ➡️ <span style="font-weight: 600;">inside</span>, click on <span style="font-weight: 600;">"End Data Label"</span>. Click again to remove the inside label text.</small> -->
             </fieldset>
             <fieldset class="horiz1Controls styleControls">
                 <legend>Row #1</legend>
@@ -289,7 +288,7 @@
                 <label for="horiz1Text4a">Data Label</label>
                 <input type="text" size="10" value="Data bar #4" name="horiz1Text4a" id="horiz1Text4a">
                 <label for="horiz1Size4">Bar Size</label>
-                <input type="number" size="6" value="80" max="100" min="0" name="horiz1Size4" id="horiz1Size4">
+                <input type="number" size="6" value="100" max="100" min="0" name="horiz1Size4" id="horiz1Size4">
                 <br />
                 <label for="horiz1Color4">Bar Color</label>
                 <input type="text" size="6" value="ff0000" name="horiz1Color4" id="horiz1Color4">
@@ -532,7 +531,6 @@
                 <label for="rowsData2">Select # of Data Rows</label>
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData2" id="rowsData2">
                 <small>*Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
-                <!-- <small>*To move the end data label text from <span style="font-weight: 600;">outside</span> ➡️ <span style="font-weight: 600;">inside</span>, click on <span style="font-weight: 600;">"End Data Label"</span>. Click again to remove the inside label text.</small> -->
             </fieldset>
             <fieldset class="horiz2Controls styleControls">
                 <legend>Row #1</legend>
@@ -818,7 +816,6 @@
                 <label for="rowsData3">Select # of Data Rows</label>
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData3" id="rowsData3">
                 <small>*Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
-                <!-- <small>*To move the end data label text from <span style="font-weight: 600;">outside</span> ➡️ <span style="font-weight: 600;">inside</span>, click on <span style="font-weight: 600;">"End Data Label"</span>. Click again to remove the inside label text.</small> -->
             </fieldset>
             <fieldset class="horiz3Controls styleControls">
                 <legend>Row #1</legend>
@@ -2903,7 +2900,7 @@
         <h1>Tips/Advice</h1>
         <ul>
             <li><strong>For Label Text</strong>: to make these bar charts fully mobile responsive, add this snippet of code to your email template:<br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 9px !important;} }</code><br />This will reduce the label text when the bar charts are viewed in smaller screen sizes.</li>
-            <li>Click on the 🌙 to preview dark mode.</li>
+            <li>Click on the 🌕 to preview dark mode.</li>
         </ul>
     </div>
     <!-- end additional info -->
