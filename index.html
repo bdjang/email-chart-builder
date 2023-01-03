@@ -1873,6 +1873,7 @@
                 <input type="text" size="6" value="ffb65d" name="legend3Color3x" id="legend3Color3x">
                 <label for="legend3Text3x">Legend Text #2</label>
                 <input type="text" size="10" value="Orange" name="legend3Text3x" id="legend3Text3x">
+                <small>*Data bar widths must add up to 100.</small>
             </fieldset>
             <fieldset class="stacked3Controls styleControls">
                 <legend>Row #1</legend>
@@ -2897,10 +2898,10 @@
     <div class="charts" id="info" style="display: none;">
         <h1>Instructions</h1>
         <ol>
-            <li>Select a chart type from drop down menu</li>
-            <li>Customize the data bar colors, data bar widths, and label text using the customization tools</li>
-            <li>When you are finished, scroll to the bottom and click on the button to generate your customized HTML bar chart code.</li>
-            <li>Place into your email template</li>
+            <li>Select a chart type from the drop down menu</li>
+            <li>Customize the data bar colors, widths, and label text using the customization tools</li>
+            <li>When you are finished, scroll to the bottom and click on the button to generate your HTML bar chart code</li>
+            <li>Place into your email template, make adjustments as needed, and test</li>
         </ol>
         <hr />
         <h1>Tips/Advice</h1>
@@ -2925,3 +2926,8 @@
 
   </body>
 </html>
+
+
+<!-- switch out "auto" with the calculated width? when width is set to "0" in the input fields, both safari and firefox default the data bar size to 50% :( -->
+
+<!-- update all charts except for 100% stacked which already calculates all the widths to percentages and doesn't use auto -->
