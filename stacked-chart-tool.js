@@ -85,6 +85,7 @@ stacked1Text1.oninput = function() {
 const stacked1Size1a = document.getElementById("stacked1Size1a");
 stacked1Size1a.oninput = function() {
     stacked1Row1b.style.width = ((Math.abs(stacked1Size1a.value)) * .75) + "%";
+    // stacked1Row1d.style.width = (75 - (Math.abs(stacked1Size1a.value) + Math.abs(stacked1Size1b.value))) + "%";
     stacked1Size1b.max = Math.abs((100 - stacked1Size1a.value));
     stacked1Size1a.max = Math.abs((100 - stacked1Size1b.value));
     if (stacked1Size1a.value == "0" || stacked1Size1a.value == "100") {
@@ -108,6 +109,7 @@ stacked1Color1a.oninput = function() {
 const stacked1Size1b = document.getElementById("stacked1Size1b");
 stacked1Size1b.oninput = function() {
     stacked1Row1c.style.width = ((Math.abs(stacked1Size1b.value)) * .75) + "%";
+    // stacked1Row1d.style.width = (75 - (Math.abs(stacked1Size1b.value) + Math.abs(stacked1Size1a.value))) + "%";
     stacked1Size1a.max = Math.abs((100 - stacked1Size1b.value));
     stacked1Size1b.max = Math.abs((100 - stacked1Size1a.value));
     if (stacked1Size1b.value == "0") {
