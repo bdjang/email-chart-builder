@@ -33,6 +33,11 @@ const combo1BarsNodes1 = document.querySelectorAll("tr.combo1Bars table.chartMob
 const combo1BarsNodes3 = document.querySelectorAll("tr.combo1Bars table.chartMobile td:nth-of-type(3)");
 darkMode.addEventListener("click", () => {
     document.body.classList.toggle("darkStyles");
+    prog1Row1a.classList.toggle("darkStyles");
+    prog1Row2a.classList.toggle("darkStyles");
+    prog1Row3a.classList.toggle("darkStyles");
+    prog1Row4a.classList.toggle("darkStyles");
+    prog1Row5a.classList.toggle("darkStyles");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.toggle("darkStyles");
         textarea[i].classList.toggle("darkStyles");
@@ -60,6 +65,11 @@ darkMode.addEventListener("click", () => {
 });
 lightMode.addEventListener("click", () => {
     document.body.classList.toggle("darkStyles");
+    prog1Row1a.classList.toggle("darkStyles");
+    prog1Row2a.classList.toggle("darkStyles");
+    prog1Row3a.classList.toggle("darkStyles");
+    prog1Row4a.classList.toggle("darkStyles");
+    prog1Row5a.classList.toggle("darkStyles");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.toggle("darkStyles");
         textarea[i].classList.toggle("darkStyles");
