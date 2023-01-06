@@ -32,8 +32,9 @@
     .chartLegend input { margin: 0 60px 4px 0; width: 60px; }
     .stacked1Controls label:first-of-type, .stacked2Controls label:first-of-type, .stacked3Controls label:first-of-type, .combo1Controls label:first-of-type { width: 75px; } /* Targets Row # Data Label */
     .stacked1Controls input:first-of-type, .stacked2Controls input:first-of-type, .stacked3Controls input:first-of-type, .combo1Controls input:first-of-type { width: 80px; } /* Targets Row # Data Input */
-    .stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .combo1Controls label { display: inline-block; margin: 10px 10px 0 0; }
-    .stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .combo1Controls input { margin: 0 20px 4px 0; width: 60px; }
+    .prog1Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
+    .stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .combo1Controls label, .prog1Controls label { display: inline-block; margin: 10px 10px 0 0; }
+    .stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .combo1Controls input, .prog1Controls input { margin: 0 20px 4px 0; width: 60px; }
     .splitControls input, .dataCheckboxes label { margin: 10px 10px 0 0; }
     .splitControls label { display: inline-block; width: 130px; }
     .splitControls input { width: 46px; }
@@ -82,6 +83,7 @@
             <option value="oneChart">100% Stacked Chart</option>
             <option value="npChart">Negative|Positive Chart</option>
             <option value="comChart">Combo Chart</option>
+            <option value="progChart">Progress Bar Chart</option>
             <option value="vertChart">Vertical Chart*</option>
             <option value="ampChart">AMP Email Chart*</option>
             <option value="info">Information</option>
@@ -2754,6 +2756,165 @@
         <textarea name="combo1Output" id="combo1Output" cols="30" rows="10"></textarea>
     </div>
     <!-- end combo bar chart -->
+
+    <!-- PROGRESS BAR CHART -->
+    <div class="charts" id="progChart" style="display: none;">
+        <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Progress Bar Chart</h1></div>
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                            <!-- PROGRESS BAR #1 -->
+                            <tr class="prog1Bars">
+                                <td align="left" style="padding: 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">Progress bar #1</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row1b" align="left" style="background-color: #1cf28c; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 66%; height: 28px;" height="28"></td>
+                                            <td id="prog1Row1c" align="right" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 34%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #1 -->
+
+                            <!-- PROGRESS BAR #2 -->
+                            <tr class="prog1Bars">
+                                <td align="left" style="padding: 14px 0 0 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #2</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row2b" align="left" style="background-color: #1cf28c; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 44%; height: 28px;" height="28"></td>
+                                            <td id="prog1Row2c" align="right" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 56%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #2 -->
+
+                            <!-- PROGRESS BAR #3 -->
+                            <tr class="prog1Bars" style="display: none;">
+                                <td align="left" style="padding: 14px 0 0 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #3</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row3b" align="left" style="background-color: #1cf28c; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8%; height: 28px;" height="28"></td>
+                                            <td id="prog1Row3c" align="right" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 92%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #3 -->
+
+                            <!-- PROGRESS BAR #4 -->
+                            <tr class="prog1Bars" style="display: none;">
+                                <td align="left" style="padding: 14px 0 0 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #4</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row4b" align="left" style="background-color: #1cf28c; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 97%; height: 28px;" height="28"></td>
+                                            <td id="prog1Row4c" align="right" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 3%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #4 -->
+
+                            <!-- PROGRESS BAR #5 -->
+                            <tr class="prog1Bars" style="display: none;">
+                                <td align="left" style="padding: 14px 0 0 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #5</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog1Row5b" align="left" style="background-color: #1cf28c; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28"></td>
+                                            <td id="prog1Row5c" align="right" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #5 -->
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div class="scrollBox">
+            <fieldset class="dataCheckboxes">
+                <legend>Chart Customization</legend>
+                <label for="rowsData8">Select # of Bars</label>
+                <input type="number" size="6" value="2" max="5" min="1" name="rowsData8" id="rowsData8">
+            </fieldset>
+            <fieldset class="prog1Controls styleControls">
+                <legend>Progress Bar #1</legend>
+                <label for="prog1Text1a">Progress Bar Label</label>
+                <input type="text" size="10" value="Progress bar #1" name="prog1Text1a" id="prog1Text1a">
+                <label for="prog1Size1">Bar Size</label>
+                <input type="number" size="6" value="66" max="100" min="0" name="prog1Size1" id="prog1Size1">
+                <label for="prog1Color1">Bar Color</label>
+                <input type="text" size="6" value="1cf28c" name="prog1Color1" id="prog1Color1">
+            </fieldset>
+            <fieldset class="prog1Controls styleControls">
+                <legend>Progress Bar #2</legend>
+                <label for="prog1Text2a">Progress Bar Label</label>
+                <input type="text" size="10" value="Progress bar #2" name="prog1Text2a" id="prog1Text2a">
+                <label for="prog1Size2">Bar Size</label>
+                <input type="number" size="6" value="44" max="100" min="0" name="prog1Size2" id="prog1Size2">
+                <label for="prog1Color2">Bar Color</label>
+                <input type="text" size="6" value="1cf28c" name="prog1Color2" id="prog1Color2">
+            </fieldset>
+            <fieldset class="prog1Controls styleControls" style="display: none;">
+                <legend>Progress Bar #3</legend>
+                <label for="prog1Text3a">Progress Bar Label</label>
+                <input type="text" size="10" value="Progress bar #3" name="prog1Text3a" id="prog1Text3a">
+                <label for="prog1Size3">Bar Size</label>
+                <input type="number" size="6" value="8" max="100" min="0" name="prog1Size3" id="prog1Size3">
+                <label for="prog1Color3">Bar Color</label>
+                <input type="text" size="6" value="1cf28c" name="prog1Color3" id="prog1Color3">
+            </fieldset>
+            <fieldset class="prog1Controls styleControls" style="display: none;">
+                <legend>Progress Bar #4</legend>
+                <label for="prog1Text4a">Progress Bar Label</label>
+                <input type="text" size="10" value="Progress bar #4" name="prog1Text4a" id="prog1Text4a">
+                <label for="prog1Size4">Bar Size</label>
+                <input type="number" size="6" value="97" max="100" min="0" name="prog1Size4" id="prog1Size4">
+                <label for="prog1Color4">Bar Color</label>
+                <input type="text" size="6" value="1cf28c" name="prog1Color4" id="prog1Color4">
+            </fieldset>
+            <fieldset class="prog1Controls styleControls" style="display: none;">
+                <legend>Progress Bar #5</legend>
+                <label for="prog1Text5a">Progress Bar Label</label>
+                <input type="text" size="10" value="Progress bar #5" name="prog1Text5a" id="prog1Text5a">
+                <label for="prog1Size5">Bar Size</label>
+                <input type="number" size="6" value="25" max="100" min="0" name="prog1Size5" id="prog1Size5">
+                <label for="prog1Color5">Bar Color</label>
+                <input type="text" size="6" value="1cf28c" name="prog1Color5" id="prog1Color5">
+            </fieldset>
+        </div>
+        <button type="button" id="prog1Button">Generate Progress Bar Code</button>
+        <textarea name="prog1Output" id="prog1Output" cols="30" rows="10"></textarea>
+    </div>
+    <!-- end porgress bar chart -->
 
     <!-- VERTICAL BAR CHART -->
     <!-- consider removing the top label - gets really complicated in email clients and expands the data bar width. better just to have the vertical bar and the x-axis label. -->
