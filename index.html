@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>📨 Email Chart Builder</title>
+    <title>Email Bar Charts Generator</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="bdjang.github.io" />
@@ -22,7 +22,7 @@
     .header { margin: 0 20px; }
     #info { margin: 0 auto; width: 700px; }
     #chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
-    .scrollBox { background-color: #f4f4f4; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
+    .scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
     .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
     .dataCheckboxes label { display: inline-block; width: 150px; }
     .dataCheckboxes small { display: block; margin: 10px 0; }
@@ -40,18 +40,19 @@
     .splitControls input { width: 46px; }
     
     /* BASE STYLES */
-    button { display: block; margin: 20px auto 20px; }
-    button, input { font-family: sans-serif; font-size: 14px;}
+    body { min-width: 740px; }
+    button { display: block; margin: 30px auto 30px; }
+    button, input { font-family: sans-serif; font-size: 14px; }
     code { color: #ff0000; }
     code, legend { font-weight: 600; }
     label { font-family: Times, serif; font-size: 16px; }
-    textarea { background-color: #f8f8f8; border: 2px solid #cccccc; border-radius: 4px; display: block; font-size: 16px; margin: 0 auto 40px; height: 150px; width: 640px; }
+    textarea { background-color: #f8f8f8; border: 2px solid #cccccc; display: block; font-size: 12px; margin: 0 auto 40px; height: 160px; width: 700px; }
     ul li { margin: 8px 0; }
 
     /* DARK MODE STYLES */
     .darkStyles { background-color: #0f0f0f !important; color: #ffffff !important; }
     .darkBorder { border-color: #1f1f1f !important; }
-    #darkMode, #lightMode { cursor: pointer; }
+    button, #darkMode, #lightMode { cursor: pointer; }
 
      /* MOBILE STYLES 
     @media screen and (max-width: 691px) {
@@ -66,7 +67,7 @@
 
     <div class="header">
         <h1>📨 Email Chart Builder</h1>
-        <p>A tool to assist with building bar charts for HTML email templates.</p>
+        <p>A tool for building bar charts for HTML email templates.</p>
         <ul>
             <li>100% HTML/CSS Coded Bar Charts ⌨️</li>
             <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🌑</span><span id="darkMode">🌕</span></li>
@@ -91,13 +92,12 @@
     </div>
 
     <!-- HORIZONTAL BAR CHART I -->
-    <div class="charts" id="horizChart1" style="display: none;">
+    <div class="charts" id="horizChart1" style="display: none;" align="left">
         <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Horizontal Bar Chart I</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-
 
                             <!-- DATA BAR #1 -->
                             <tr class="horiz1Bars">
@@ -248,7 +248,7 @@
                 <legend>Chart Customization</legend>
                 <label for="rowsData1">Select # of Data Rows</label>
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData1" id="rowsData1">
-                <small>*Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
+                <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
             </fieldset>
             <fieldset class="horiz1Controls styleControls">
                 <legend>Row #1</legend>
@@ -258,7 +258,7 @@
                 <input type="number" size="6" value="66" max="100" min="0" name="horiz1Size1" id="horiz1Size1">
                 <br />
                 <label for="horiz1Color1">Bar Color</label>
-                <input type="text" size="6" value="cccccc" name="horiz1Color1" id="horiz1Color1">
+                <input type="text" size="6" value="#cccccc" name="horiz1Color1" id="horiz1Color1">
                 <label for="horiz1Text1b" id="horiz1Label1b">End Data Label</label>
                 <input type="text" size="10" value="" name="horiz1Text1b" id="horiz1Text1b">
             </fieldset>
@@ -270,7 +270,7 @@
                 <input type="number" size="6" value="44" max="100" min="0" name="horiz1Size2" id="horiz1Size2">
                 <br />
                 <label for="horiz1Color2">Bar Color</label>
-                <input type="text" size="6" value="cccccc" name="horiz1Color2" id="horiz1Color2">
+                <input type="text" size="6" value="#cccccc" name="horiz1Color2" id="horiz1Color2">
                 <label for="horiz1Text2b" id="horiz1Label2b">End Data Label</label>
                 <input type="text" size="10" value="Label #2" name="horiz1Text2b" id="horiz1Text2b">
             </fieldset>
@@ -282,7 +282,7 @@
                 <input type="number" size="6" value="8" max="100" min="0" name="horiz1Size3" id="horiz1Size3">
                 <br />
                 <label for="horiz1Color3">Bar Color</label>
-                <input type="text" size="6" value="cccccc" name="horiz1Color3" id="horiz1Color3">
+                <input type="text" size="6" value="#cccccc" name="horiz1Color3" id="horiz1Color3">
                 <label for="horiz1Text3b" id="horiz1Label3b">End Data Label</label>
                 <input type="text" size="10" value="Label #3" name="horiz1Text3b" id="horiz1Text3b">
             </fieldset>
@@ -294,7 +294,7 @@
                 <input type="number" size="6" value="100" max="100" min="0" name="horiz1Size4" id="horiz1Size4">
                 <br />
                 <label for="horiz1Color4">Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="horiz1Color4" id="horiz1Color4">
+                <input type="text" size="6" value="#ff0000" name="horiz1Color4" id="horiz1Color4">
                 <label for="horiz1Text4b" id="horiz1Label4b">End Data Label</label>
                 <input type="text" size="10" value="" name="horiz1Text4b" id="horiz1Text4b">
             </fieldset>
@@ -306,7 +306,7 @@
                 <input type="number" size="6" value="25" max="100" min="0" name="horiz1Size5" id="horiz1Size5">
                 <br />
                 <label for="horiz1Color5">Bar Color</label>
-                <input type="text" size="6" value="cccccc" name="horiz1Color5" id="horiz1Color5">
+                <input type="text" size="6" value="#cccccc" name="horiz1Color5" id="horiz1Color5">
                 <label for="horiz1Text5b" id="horiz1Label5b">End Data Label</label>
                 <input type="text" size="10" value="Label #5" name="horiz1Text5b" id="horiz1Text5b">
             </fieldset>
@@ -318,7 +318,7 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz1Size6" id="horiz1Size6">
                 <br />
                 <label for="horiz1Color6">Bar Color</label>
-                <input type="text" size="6" value="cccccc" name="horiz1Color6" id="horiz1Color6">
+                <input type="text" size="6" value="#cccccc" name="horiz1Color6" id="horiz1Color6">
                 <label for="horiz1Text6b" id="horiz1Label6b">End Data Label</label>
                 <input type="text" size="10" value="Label #6" name="horiz1Text6b" id="horiz1Text6b">
             </fieldset>
@@ -330,7 +330,7 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz1Size7" id="horiz1Size7">
                 <br />
                 <label for="horiz1Color7">Bar Color</label>
-                <input type="text" size="6" value="cccccc" name="horiz1Color7" id="horiz1Color7">
+                <input type="text" size="6" value="#cccccc" name="horiz1Color7" id="horiz1Color7">
                 <label for="horiz1Text7b" id="horiz1Label7b">End Data Label</label>
                 <input type="text" size="10" value="Label #7" name="horiz1Text7b" id="horiz1Text7b">
             </fieldset>
@@ -342,7 +342,7 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz1Size8" id="horiz1Size8">
                 <br />
                 <label for="horiz1Color8">Bar Color</label>
-                <input type="text" size="6" value="cccccc" name="horiz1Color8" id="horiz1Color8">
+                <input type="text" size="6" value="#cccccc" name="horiz1Color8" id="horiz1Color8">
                 <label for="horiz1Text8b" id="horiz1Label8b">End Data Label</label>
                 <input type="text" size="10" value="Label #8" name="horiz1Text8b" id="horiz1Text8b">
             </fieldset>
@@ -354,7 +354,7 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz1Size9" id="horiz1Size9">
                 <br />
                 <label for="horiz1Color9">Bar Color</label>
-                <input type="text" size="6" value="cccccc" name="horiz1Color9" id="horiz1Color9">
+                <input type="text" size="6" value="#cccccc" name="horiz1Color9" id="horiz1Color9">
                 <label for="horiz1Text9b" id="horiz1Label9b">End Data Label</label>
                 <input type="text" size="10" value="Label #9" name="horiz1Text9b" id="horiz1Text9b">
             </fieldset>
@@ -366,13 +366,13 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz1Size10" id="horiz1Size10">
                 <br />
                 <label for="horiz1Color10">Bar Color</label>
-                <input type="text" size="6" value="cccccc" name="horiz1Color10" id="horiz1Color10">
+                <input type="text" size="6" value="#cccccc" name="horiz1Color10" id="horiz1Color10">
                 <label for="horiz1Text10b" id="horiz1Label10b">End Data Label</label>
                 <input type="text" size="10" value="Label #10" name="horiz1Text10b" id="horiz1Text10b">
             </fieldset>
         </div>
-        <button type="button" id="horiz1Button">Generate Bar Chart Code</button>
-        <textarea name="horiz1Output" id="horiz1Output" cols="30" rows="10"></textarea>
+        <button type="button" id="horiz1Button">Generate Email Chart Code</button>
+        <textarea name="horiz1Output" id="horiz1Output" readonly></textarea>
     </div>
     <!-- end horizontal bar chart i -->
 
@@ -533,7 +533,7 @@
                 <legend>Chart Customization</legend>
                 <label for="rowsData2">Select # of Data Rows</label>
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData2" id="rowsData2">
-                <small>*Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
+                <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
             </fieldset>
             <fieldset class="horiz2Controls styleControls">
                 <legend>Row #1</legend>
@@ -543,7 +543,7 @@
                 <input type="number" size="6" value="60" max="100" min="0" name="horiz2Size1" id="horiz2Size1">
                 <br />
                 <label for="horiz2Color1">Bar Color</label>
-                <input type="text" size="6" value="10ed81" name="horiz2Color1" id="horiz2Color1">
+                <input type="text" size="6" value="#10ed81" name="horiz2Color1" id="horiz2Color1">
                 <label for="horiz2Text1b" id="horiz2Label1b">End Data Label</label>
                 <input type="text" size="10" value="$77,241" name="horiz2Text1b" id="horiz2Text1b">
             </fieldset>
@@ -555,7 +555,7 @@
                 <input type="number" size="6" value="44" max="100" min="0" name="horiz2Size2" id="horiz2Size2">
                 <br />
                 <label for="horiz2Color2">Bar Color</label>
-                <input type="text" size="6" value="e2e6ef" name="horiz2Color2" id="horiz2Color2">
+                <input type="text" size="6" value="#e2e6ef" name="horiz2Color2" id="horiz2Color2">
                 <label for="horiz2Text2b" id="horiz2Label2b">End Data Label</label>
                 <input type="text" size="10" value="$37,427" name="horiz2Text2b" id="horiz2Text2b">
             </fieldset>
@@ -567,7 +567,7 @@
                 <input type="number" size="6" value="8" max="100" min="0" name="horiz2Size3" id="horiz2Size3">
                 <br />
                 <label for="horiz2Color3">Bar Color</label>
-                <input type="text" size="6" value="10ed81" name="horiz2Color3" id="horiz2Color3">
+                <input type="text" size="6" value="#10ed81" name="horiz2Color3" id="horiz2Color3">
                 <label for="horiz2Text3b" id="horiz2Label3b">End Data Label</label>
                 <input type="text" size="10" value="$37,427" name="horiz2Text3b" id="horiz2Text3b">
             </fieldset>
@@ -579,7 +579,7 @@
                 <input type="number" size="6" value="51" max="100" min="0" name="horiz2Size4" id="horiz2Size4">
                 <br />
                 <label for="horiz2Color4">Bar Color</label>
-                <input type="text" size="6" value="e2e6ef" name="horiz2Color4" id="horiz2Color4">
+                <input type="text" size="6" value="#e2e6ef" name="horiz2Color4" id="horiz2Color4">
                 <label for="horiz2Text4b" id="horiz2Label4b">End Data Label</label>
                 <input type="text" size="10" value="$45,368" name="horiz2Text4b" id="horiz2Text4b">
             </fieldset>
@@ -591,7 +591,7 @@
                 <input type="number" size="6" value="25" max="100" min="0" name="horiz2Size5" id="horiz2Size5">
                 <br />
                 <label for="horiz2Color5">Bar Color</label>
-                <input type="text" size="6" value="10ed81" name="horiz2Color5" id="horiz2Color5">
+                <input type="text" size="6" value="#10ed81" name="horiz2Color5" id="horiz2Color5">
                 <label for="horiz2Text5b" id="horiz2Label5b">End Data Label</label>
                 <input type="text" size="10" value="$52,419" name="horiz2Text5b" id="horiz2Text5b">
             </fieldset>
@@ -603,7 +603,7 @@
                 <input type="number" size="6" value="73" max="100" min="0" name="horiz2Size6" id="horiz2Size6">
                 <br />
                 <label for="horiz2Color6">Bar Color</label>
-                <input type="text" size="6" value="e2e6ef" name="horiz2Color6" id="horiz2Color6">
+                <input type="text" size="6" value="#e2e6ef" name="horiz2Color6" id="horiz2Color6">
                 <label for="horiz2Text6b" id="horiz2Label6b">End Data Label</label>
                 <input type="text" size="10" value="$24,912" name="horiz2Text6b" id="horiz2Text6b">
             </fieldset>
@@ -615,7 +615,7 @@
                 <input type="number" size="6" value="20" max="100" min="0" name="horiz2Size7" id="horiz2Size7">
                 <br />
                 <label for="horiz2Color7">Bar Color</label>
-                <input type="text" size="6" value="10ed81" name="horiz2Color7" id="horiz2Color7">
+                <input type="text" size="6" value="#10ed81" name="horiz2Color7" id="horiz2Color7">
                 <label for="horiz2Text7b" id="horiz2Label7b">End Data Label</label>
                 <input type="text" size="10" value="$15,713" name="horiz2Text7b" id="horiz2Text7b">
             </fieldset>
@@ -627,7 +627,7 @@
                 <input type="number" size="6" value="47" max="100" min="0" name="horiz2Size8" id="horiz2Size8">
                 <br />
                 <label for="horiz2Color8">Bar Color</label>
-                <input type="text" size="6" value="e2e6ef" name="horiz2Color8" id="horiz2Color8">
+                <input type="text" size="6" value="#e2e6ef" name="horiz2Color8" id="horiz2Color8">
                 <label for="horiz2Text8b" id="horiz2Label8b">End Data Label</label>
                 <input type="text" size="10" value="$33,761" name="horiz2Text8b" id="horiz2Text8b">
             </fieldset>
@@ -639,7 +639,7 @@
                 <input type="number" size="6" value="47" max="100" min="0" name="horiz2Size9" id="horiz2Size9">
                 <br />
                 <label for="horiz2Color9">Bar Color</label>
-                <input type="text" size="6" value="10ed81" name="horiz2Color9" id="horiz2Color9">
+                <input type="text" size="6" value="#10ed81" name="horiz2Color9" id="horiz2Color9">
                 <label for="horiz2Text9b" id="horiz2Label9b">End Data Label</label>
                 <input type="text" size="10" value="$33,761" name="horiz2Text9b" id="horiz2Text9b">
             </fieldset>
@@ -651,13 +651,13 @@
                 <input type="number" size="6" value="47" max="100" min="0" name="horiz2Size10" id="horiz2Size10">
                 <br />
                 <label for="horiz2Color10">Bar Color</label>
-                <input type="text" size="6" value="e2e6ef" name="horiz2Color10" id="horiz2Color10">
+                <input type="text" size="6" value="#e2e6ef" name="horiz2Color10" id="horiz2Color10">
                 <label for="horiz2Text10b" id="horiz2Label10b">End Data Label</label>
                 <input type="text" size="10" value="$33,761" name="horiz2Text1b" id="horiz2Text10b">
             </fieldset>
         </div>
-        <button type="button" id="horiz2Button">Generate Bar Chart Code</button>
-        <textarea name="horiz2Output" id="horiz2Output" cols="30" rows="10"></textarea>
+        <button type="button" id="horiz2Button">Generate Email Chart Code</button>
+        <textarea name="horiz2Output" id="horiz2Output" readonly></textarea>
     </div>
     <!-- end horizontal bar chart ii -->
 
@@ -818,7 +818,7 @@
                 <legend>Chart Customization</legend>
                 <label for="rowsData3">Select # of Data Rows</label>
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData3" id="rowsData3">
-                <small>*Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
+                <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
             </fieldset>
             <fieldset class="horiz3Controls styleControls">
                 <legend>Row #1</legend>
@@ -828,7 +828,7 @@
                 <input type="number" size="6" value="80" max="100" min="0" name="horiz3Size1" id="horiz3Size1">
                 <br />
                 <label for="horiz3Color1">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color1" id="horiz3Color1">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color1" id="horiz3Color1">
                 <label for="horiz3Text1b" id="horiz3Label1b">End Data Label</label>
                 <input type="text" size="10" value="" name="horiz3Text1b" id="horiz3Text1b">
             </fieldset>
@@ -840,7 +840,7 @@
                 <input type="number" size="6" value="44" max="100" min="0" name="horiz3Size2" id="horiz3Size2">
                 <br />
                 <label for="horiz3Color2">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color2" id="horiz3Color2">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color2" id="horiz3Color2">
                 <label for="horiz3Text2b" id="horiz3Label2b">End Data Label</label>
                 <input type="text" size="10" value="Label #2" name="horiz3Text2b" id="horiz3Text2b">
             </fieldset>
@@ -852,7 +852,7 @@
                 <input type="number" size="6" value="8" max="100" min="0" name="horiz3Size3" id="horiz3Size3">
                 <br />
                 <label for="horiz3Color3">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color3" id="horiz3Color3">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color3" id="horiz3Color3">
                 <label for="horiz3Text3b" id="horiz3Label3b">End Data Label</label>
                 <input type="text" size="10" value="Label #3" name="horiz3Text3b" id="horiz3Text3b">
             </fieldset>
@@ -864,7 +864,7 @@
                 <input type="number" size="6" value="38" max="100" min="0" name="horiz3Size4" id="horiz3Size4">
                 <br />
                 <label for="horiz3Color4">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color4" id="horiz3Color4">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color4" id="horiz3Color4">
                 <label for="horiz3Text4b" id="horiz3Label4b">End Data Label</label>
                 <input type="text" size="10" value="Label #4" name="horiz3Text4b" id="horiz3Text4b">
             </fieldset>
@@ -876,7 +876,7 @@
                 <input type="number" size="6" value="25" max="100" min="0" name="horiz3Size5" id="horiz3Size5">
                 <br />
                 <label for="horiz3Color5">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color5" id="horiz3Color5">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color5" id="horiz3Color5">
                 <label for="horiz3Text5b" id="horiz3Label5b">End Data Label</label>
                 <input type="text" size="10" value="Label #5" name="horiz3Text5b" id="horiz3Text5b">
             </fieldset>
@@ -888,7 +888,7 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz3Size6" id="horiz3Size6">
                 <br />
                 <label for="horiz3Color6">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color6" id="horiz3Color6">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color6" id="horiz3Color6">
                 <label for="horiz3Text6b" id="horiz3Label6b">End Data Label</label>
                 <input type="text" size="10" value="Label #6" name="horiz3Text6b" id="horiz3Text6b">
             </fieldset>
@@ -900,7 +900,7 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz3Size7" id="horiz3Size7">
                 <br />
                 <label for="horiz3Color7">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color7" id="horiz3Color7">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color7" id="horiz3Color7">
                 <label for="horiz3Text7b" id="horiz3Label7b">End Data Label</label>
                 <input type="text" size="10" value="Label #7" name="horiz3Text7b" id="horiz3Text7b">
             </fieldset>
@@ -912,7 +912,7 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz3Size8" id="horiz3Size8">
                 <br />
                 <label for="horiz3Color8">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color8" id="horiz3Color8">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color8" id="horiz3Color8">
                 <label for="horiz3Text8b" id="horiz3Label8b">End Data Label</label>
                 <input type="text" size="10" value="Label #8" name="horiz3Text8b" id="horiz3Text8b">
             </fieldset>
@@ -924,7 +924,7 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz3Size9" id="horiz3Size9">
                 <br />
                 <label for="horiz3Color9">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color9" id="horiz3Color9">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color9" id="horiz3Color9">
                 <label for="horiz3Text9b" id="horiz3Label9b">End Data Label</label>
                 <input type="text" size="10" value="Label #9" name="horiz3Text9b" id="horiz3Text9b">
             </fieldset>
@@ -936,13 +936,13 @@
                 <input type="number" size="6" value="10" max="100" min="0" name="horiz3Size10" id="horiz3Size10">
                 <br />
                 <label for="horiz3Color10">Bar Color</label>
-                <input type="text" size="6" value="5a9cff" name="horiz3Color10" id="horiz3Color10">
+                <input type="text" size="6" value="#5a9cff" name="horiz3Color10" id="horiz3Color10">
                 <label for="horiz3Text10b" id="horiz3Label10b">End Data Label</label>
                 <input type="text" size="10" value="Label #10" name="horiz3Text1b" id="horiz3Text10b">
             </fieldset>
         </div>
-        <button type="button" id="horiz3Button">Generate Bar Chart Code</button>
-        <textarea name="horiz3Output" id="horiz3Output" cols="30" rows="10"></textarea>
+        <button type="button" id="horiz3Button">Generate Email Chart Code</button>
+        <textarea name="horiz3Output" id="horiz3Output" readonly></textarea>
     </div>
     <!-- end horizontal bar chart iii -->
 
@@ -1117,11 +1117,11 @@
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData4" id="rowsData4">
                 <br />
                 <label for="legend1Color1x">Legend Color #1</label>
-                <input type="text" size="6" value="ffd700" name="legend1Color1x" id="legend1Color1x">
+                <input type="text" size="6" value="#ffd700" name="legend1Color1x" id="legend1Color1x">
                 <label for="legend1Text1x">Legend Text #1</label>
                 <input type="text" size="10" value="Gold" name="legend1Text1x" id="legend1Text1x">
                 <label for="legend1Color2x">Legend Color #2</label>
-                <input type="text" size="6" value="00a8ff" name="legend1Color2x" id="legend1Color2x">
+                <input type="text" size="6" value="#00a8ff" name="legend1Color2x" id="legend1Color2x">
                 <label for="legend1Text2x">Legend Text #2</label>
                 <input type="text" size="10" value="Blue" name="legend1Text2x" id="legend1Text2x">
             </fieldset>
@@ -1133,14 +1133,14 @@
                 <label for="stacked1Size1a">Bar #1 Size</label>
                 <input type="number" size="6" value="33" max="100" min="0" name="stacked1Size1a" id="stacked1Size1a">
                 <label for="stacked1Color1a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color1a" id="stacked1Color1a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color1a" id="stacked1Color1a">
                 <label for="stacked1Text1a" id="stacked1Label1a">End Data Label #1</label>
                 <input type="text" size="10" value="33%" name="stacked1Text1a" id="stacked1Text1a">
                 <br />
                 <label for="stacked1Size1b">Bar #2 Size</label>
                 <input type="number" size="6" value="33" max="100" min="0" name="stacked1Size1b" id="stacked1Size1b">
                 <label for="stacked1Color1b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color1b" id="stacked1Color1b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color1b" id="stacked1Color1b">
                 <label for="stacked1Text1b" id="stacked1Label1b">End Data Label #2</label>
                 <input type="text" size="10" value="33%" name="stacked1Text1b" id="stacked1Text1b">
             </fieldset>
@@ -1152,14 +1152,14 @@
                 <label for="stacked1Size2a">Bar #1 Size</label>
                 <input type="number" size="6" value="55" max="100" min="0" name="stacked1Size2a" id="stacked1Size2a">
                 <label for="stacked1Color2a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color2a" id="stacked1Color2a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color2a" id="stacked1Color2a">
                 <label for="stacked1Text2a" id="stacked1Label2a">End Data Label #1</label>
                 <input type="text" size="10" value="55%" name="stacked1Text2a" id="stacked1Text2a">
                 <br />
                 <label for="stacked1Size2b">Bar #2 Size</label>
                 <input type="number" size="6" value="16" max="100" min="0" name="stacked1Size2b" id="stacked1Size2b">
                 <label for="stacked1Color2b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color2b" id="stacked1Color2b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color2b" id="stacked1Color2b">
                 <label for="stacked1Text2b" id="stacked1Label2b">End Data Label #2</label>
                 <input type="text" size="10" value="16%" name="stacked1Text2b" id="stacked1Text2b">
             </fieldset>
@@ -1171,14 +1171,14 @@
                 <label for="stacked1Size3a">Bar #1 Size</label>
                 <input type="number" size="6" value="63" max="100" min="0" name="stacked1Size3a" id="stacked1Size3a">
                 <label for="stacked1Color3a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color3a" id="stacked1Color3a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color3a" id="stacked1Color3a">
                 <label for="stacked1Text3a" id="stacked1Label3a">End Data Label #1</label>
                 <input type="text" size="10" value="63%" name="stacked1Text3a" id="stacked1Text3a">
                 <br />
                 <label for="stacked1Size3b">Bar #2 Size</label>
                 <input type="number" size="6" value="30" max="100" min="0" name="stacked1Size3b" id="stacked1Size3b">
                 <label for="stacked1Color3b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color3b" id="stacked1Color3b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color3b" id="stacked1Color3b">
                 <label for="stacked1Text3b" id="stacked1Label3b">End Data Label #2</label>
                 <input type="text" size="10" value="30%" name="stacked1Text3b" id="stacked1Text3b">
             </fieldset>
@@ -1190,14 +1190,14 @@
                 <label for="stacked1Size4a">Bar #1 Size</label>
                 <input type="number" size="6" value="12" max="100" min="0" name="stacked1Size4a" id="stacked1Size4a">
                 <label for="stacked1Color4a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color4a" id="stacked1Color4a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color4a" id="stacked1Color4a">
                 <label for="stacked1Text4a" id="stacked1Label4a">End Data Label #1</label>
                 <input type="text" size="10" value="12%" name="stacked1Text4a" id="stacked1Text4a">
                 <br />
                 <label for="stacked1Size4b">Bar #2 Size</label>
                 <input type="number" size="6" value="53" max="100" min="0" name="stacked1Size4b" id="stacked1Size4b">
                 <label for="stacked1Color4b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color4b" id="stacked1Color4b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color4b" id="stacked1Color4b">
                 <label for="stacked1Text4b" id="stacked1Label4b">End Data Label #2</label>
                 <input type="text" size="10" value="53%" name="stacked1Text4b" id="stacked1Text4b">
             </fieldset>
@@ -1209,14 +1209,14 @@
                 <label for="stacked1Size5a">Bar #1 Size</label>
                 <input type="number" size="6" value="29" max="100" min="0" name="stacked1Size5a" id="stacked1Size5a">
                 <label for="stacked1Color5a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color5a" id="stacked1Color5a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color5a" id="stacked1Color5a">
                 <label for="stacked1Text5a" id="stacked1Label5a">End Data Label #1</label>
                 <input type="text" size="10" value="29%" name="stacked1Text5a" id="stacked1Text5a">
                 <br />
                 <label for="stacked1Size5b">Bar #2 Size</label>
                 <input type="number" size="6" value="24" max="100" min="0" name="stacked1Size5b" id="stacked1Size5b">
                 <label for="stacked1Color5b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color5b" id="stacked1Color5b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color5b" id="stacked1Color5b">
                 <label for="stacked1Text5b" id="stacked1Label5b">End Data Label #2</label>
                 <input type="text" size="10" value="24%" name="stacked1Text5b" id="stacked1Text5b">
             </fieldset>
@@ -1228,14 +1228,14 @@
                 <label for="stacked1Size6a">Bar #1 Size</label>
                 <input type="number" size="6" value="41" max="100" min="0" name="stacked1Size6a" id="stacked1Size6a">
                 <label for="stacked1Color6a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color6a" id="stacked1Color6a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color6a" id="stacked1Color6a">
                 <label for="stacked1Text6a" id="stacked1Label6a">End Data Label #1</label>
                 <input type="text" size="10" value="41%" name="stacked1Text6a" id="stacked1Text6a">
                 <br />
                 <label for="stacked1Size6b">Bar #2 Size</label>
                 <input type="number" size="6" value="39" max="100" min="0" name="stacked1Size6b" id="stacked1Size6b">
                 <label for="stacked1Color6b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color6b" id="stacked1Color6b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color6b" id="stacked1Color6b">
                 <label for="stacked1Text6b" id="stacked1Label6b">End Data Label #2</label>
                 <input type="text" size="10" value="39%" name="stacked1Text6b" id="stacked1Text6b">
             </fieldset>
@@ -1247,14 +1247,14 @@
                 <label for="stacked1Size7a">Bar #1 Size</label>
                 <input type="number" size="6" value="71" max="100" min="0" name="stacked1Size7a" id="stacked1Size7a">
                 <label for="stacked1Color7a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color7a" id="stacked1Color7a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color7a" id="stacked1Color7a">
                 <label for="stacked1Text7a" id="stacked1Label7a">End Data Label #1</label>
                 <input type="text" size="10" value="71%" name="stacked1Text7a" id="stacked1Text7a">
                 <br />
                 <label for="stacked1Size7b">Bar #2 Size</label>
                 <input type="number" size="6" value="21" max="100" min="0" name="stacked1Size7b" id="stacked1Size7b">
                 <label for="stacked1Color7b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color7b" id="stacked1Color7b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color7b" id="stacked1Color7b">
                 <label for="stacked1Text7b" id="stacked1Label7b">End Data Label #2</label>
                 <input type="text" size="10" value="21%" name="stacked1Text7b" id="stacked1Text7b">
             </fieldset>
@@ -1266,14 +1266,14 @@
                 <label for="stacked1Size8a">Bar #1 Size</label>
                 <input type="number" size="6" value="48" max="100" min="0" name="stacked1Size8a" id="stacked1Size8a">
                 <label for="stacked1Color8a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color8a" id="stacked1Color8a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color8a" id="stacked1Color8a">
                 <label for="stacked1Text8a" id="stacked1Label8a">End Data Label #1</label>
                 <input type="text" size="10" value="48%" name="stacked1Text8a" id="stacked1Text8a">
                 <br />
                 <label for="stacked1Size8b">Bar #2 Size</label>
                 <input type="number" size="6" value="36" max="100" min="0" name="stacked1Size8b" id="stacked1Size8b">
                 <label for="stacked1Color8b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color8b" id="stacked1Color8b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color8b" id="stacked1Color8b">
                 <label for="stacked1Text8b" id="stacked1Label8b">End Data Label #2</label>
                 <input type="text" size="10" value="36%" name="stacked1Text8b" id="stacked1Text8b">
             </fieldset>
@@ -1285,14 +1285,14 @@
                 <label for="stacked1Size9a">Bar #1 Size</label>
                 <input type="number" size="6" value="29" max="100" min="0" name="stacked1Size9a" id="stacked1Size9a">
                 <label for="stacked1Color9a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color9a" id="stacked1Color9a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color9a" id="stacked1Color9a">
                 <label for="stacked1Text9a" id="stacked1Label9a">End Data Label #1</label>
                 <input type="text" size="10" value="29%" name="stacked1Text9a" id="stacked1Text9a">
                 <br />
                 <label for="stacked1Size9b">Bar #2 Size</label>
                 <input type="number" size="6" value="64" max="100" min="0" name="stacked1Size9b" id="stacked1Size9b">
                 <label for="stacked1Color9b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color9b" id="stacked1Color9b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color9b" id="stacked1Color9b">
                 <label for="stacked1Text9b" id="stacked1Label9b">End Data Label #2</label>
                 <input type="text" size="10" value="64%" name="stacked1Text9b" id="stacked1Text9b">
             </fieldset>
@@ -1304,20 +1304,20 @@
                 <label for="stacked1Size10a">Bar #1 Size</label>
                 <input type="number" size="6" value="37" max="100" min="0" name="stacked1Size10a" id="stacked1Size10a">
                 <label for="stacked1Color10a">Bar #1 Color</label>
-                <input type="text" size="6" value="ffd700" name="stacked1Color10a" id="stacked1Color10a">
+                <input type="text" size="6" value="#ffd700" name="stacked1Color10a" id="stacked1Color10a">
                 <label for="stacked1Text10a" id="stacked1Label10a">End Data Label #1</label>
                 <input type="text" size="10" value="37%" name="stacked1Text10a" id="stacked1Text10a">
                 <br />
                 <label for="stacked1Size10b">Bar #2 Size</label>
                 <input type="number" size="6" value="31" max="100" min="0" name="stacked1Size10b" id="stacked1Size10b">
                 <label for="stacked1Color10b">Bar #2 Color</label>
-                <input type="text" size="6" value="00a8ff" name="stacked1Color10b" id="stacked1Color10b">
+                <input type="text" size="6" value="#00a8ff" name="stacked1Color10b" id="stacked1Color10b">
                 <label for="stacked1Text10b" id="stacked1Label10b">End Data Label #2</label>
                 <input type="text" size="10" value="31%" name="stacked1Text10b" id="stacked1Text10b">
             </fieldset>
         </div>
-        <button type="button" id="stacked1Button">Generate Bar Chart Code</button>
-        <textarea name="stacked1Output" id="stacked1Output" cols="30" rows="10"></textarea>
+        <button type="button" id="stacked1Button">Generate Email Chart Code</button>
+        <textarea name="stacked1Output" id="stacked1Output" readonly></textarea>
     </div>
     <!-- end stacked bar chart i -->
 
@@ -1491,11 +1491,11 @@
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData5" id="rowsData5">
                 <br />
                 <label for="legend2Color1x">Legend Color #1</label>
-                <input type="text" size="6" value="ff3b44" name="legend2Color1x" id="legend2Color1x">
+                <input type="text" size="6" value="#ff3b44" name="legend2Color1x" id="legend2Color1x">
                 <label for="legend2Text1x">Legend Text #1</label>
                 <input type="text" size="10" value="Red" name="legend2Text1x" id="legend2Text1x">
                 <label for="legend2Color2x">Legend Color #2</label>
-                <input type="text" size="6" value="f1f1f1" name="legend2Color2x" id="legend2Color2x">
+                <input type="text" size="6" value="#f1f1f1" name="legend2Color2x" id="legend2Color2x">
                 <label for="legend2Text2x">Legend Text #2</label>
                 <input type="text" size="10" value="Grey" name="legend2Text2x" id="legend2Text2x">
             </fieldset>
@@ -1507,14 +1507,14 @@
                 <label for="stacked2Size1a">Bar #1 Size</label>
                 <input type="number" size="6" value="34" max="100" min="0" name="stacked2Size1a" id="stacked2Size1a">
                 <label for="stacked2Color1a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color1a" id="stacked2Color1a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color1a" id="stacked2Color1a">
                 <label for="stacked2Text1a" id="stacked2Label1a">End Data Label #1</label>
                 <input type="text" size="10" value="34%" name="stacked2Text1a" id="stacked2Text1a">
                 <br />
                 <label for="stacked2Size1b">Bar #2 Size</label>
                 <input type="number" size="6" value="66" max="100" min="0" name="stacked2Size1b" id="stacked2Size1b">
                 <label for="stacked2Color1b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color1b" id="stacked2Color1b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color1b" id="stacked2Color1b">
                 <label for="stacked2Text1b" id="stacked2Label1b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text1b" id="stacked2Text1b">
             </fieldset>
@@ -1526,14 +1526,14 @@
                 <label for="stacked2Size2a">Bar #1 Size</label>
                 <input type="number" size="6" value="55" max="100" min="0" name="stacked2Size2a" id="stacked2Size2a">
                 <label for="stacked2Color2a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color2a" id="stacked2Color2a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color2a" id="stacked2Color2a">
                 <label for="stacked2Text2a" id="stacked2Label2a">End Data Label #1</label>
                 <input type="text" size="10" value="55%" name="stacked2Text2a" id="stacked2Text2a">
                 <br />
                 <label for="stacked2Size2b">Bar #2 Size</label>
                 <input type="number" size="6" value="45" max="100" min="0" name="stacked2Size2b" id="stacked2Size2b">
                 <label for="stacked2Color2b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color2b" id="stacked2Color2b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color2b" id="stacked2Color2b">
                 <label for="stacked2Text2b" id="stacked2Label2b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text2b" id="stacked2Text2b">
             </fieldset>
@@ -1545,14 +1545,14 @@
                 <label for="stacked2Size3a">Bar #1 Size</label>
                 <input type="number" size="6" value="63" max="100" min="0" name="stacked2Size3a" id="stacked2Size3a">
                 <label for="stacked2Color3a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color3a" id="stacked2Color3a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color3a" id="stacked2Color3a">
                 <label for="stacked2Text3a" id="stacked2Label3a">End Data Label #1</label>
                 <input type="text" size="10" value="63%" name="stacked2Text3a" id="stacked2Text3a">
                 <br />
                 <label for="stacked2Size3b">Bar #2 Size</label>
                 <input type="number" size="6" value="37" max="100" min="0" name="stacked2Size3b" id="stacked2Size3b">
                 <label for="stacked2Color3b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color3b" id="stacked2Color3b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color3b" id="stacked2Color3b">
                 <label for="stacked2Text3b" id="stacked2Label3b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text3b" id="stacked2Text3b">
             </fieldset>
@@ -1564,14 +1564,14 @@
                 <label for="stacked2Size4a">Bar #1 Size</label>
                 <input type="number" size="6" value="12" max="100" min="0" name="stacked2Size4a" id="stacked2Size4a">
                 <label for="stacked2Color4a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color4a" id="stacked2Color4a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color4a" id="stacked2Color4a">
                 <label for="stacked2Text4a" id="stacked2Label4a">End Data Label #1</label>
                 <input type="text" size="10" value="12%" name="stacked2Text4a" id="stacked2Text4a">
                 <br />
                 <label for="stacked2Size4b">Bar #2 Size</label>
                 <input type="number" size="6" value="88" max="100" min="0" name="stacked2Size4b" id="stacked2Size4b">
                 <label for="stacked2Color4b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color4b" id="stacked2Color4b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color4b" id="stacked2Color4b">
                 <label for="stacked2Text4b" id="stacked2Label4b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text4b" id="stacked2Text4b">
             </fieldset>
@@ -1583,14 +1583,14 @@
                 <label for="stacked2Size5a">Bar #1 Size</label>
                 <input type="number" size="6" value="71" max="100" min="0" name="stacked2Size5a" id="stacked2Size5a">
                 <label for="stacked2Color5a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color5a" id="stacked2Color5a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color5a" id="stacked2Color5a">
                 <label for="stacked2Text5a" id="stacked2Label5a">End Data Label #1</label>
                 <input type="text" size="10" value="71%" name="stacked2Text5a" id="stacked2Text5a">
                 <br />
                 <label for="stacked2Size5b">Bar #2 Size</label>
                 <input type="number" size="6" value="29" max="100" min="0" name="stacked2Size5b" id="stacked2Size5b">
                 <label for="stacked2Color5b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color5b" id="stacked2Color5b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color5b" id="stacked2Color5b">
                 <label for="stacked2Text5b" id="stacked2Label5b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text5b" id="stacked2Text5b">
             </fieldset>
@@ -1602,14 +1602,14 @@
                 <label for="stacked2Size6a">Bar #1 Size</label>
                 <input type="number" size="6" value="41" max="100" min="0" name="stacked2Size6a" id="stacked2Size6a">
                 <label for="stacked2Color6a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color6a" id="stacked2Color6a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color6a" id="stacked2Color6a">
                 <label for="stacked2Text6a" id="stacked2Label6a">End Data Label #1</label>
                 <input type="text" size="10" value="41%" name="stacked2Text6a" id="stacked2Text6a">
                 <br />
                 <label for="stacked2Size6b">Bar #2 Size</label>
                 <input type="number" size="6" value="59" max="100" min="0" name="stacked2Size6b" id="stacked2Size6b">
                 <label for="stacked2Color6b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color6b" id="stacked2Color6b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color6b" id="stacked2Color6b">
                 <label for="stacked2Text6b" id="stacked2Label6b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text6b" id="stacked2Text6b">
             </fieldset>
@@ -1621,14 +1621,14 @@
                 <label for="stacked2Size7a">Bar #1 Size</label>
                 <input type="number" size="6" value="71" max="100" min="0" name="stacked2Size7a" id="stacked2Size7a">
                 <label for="stacked2Color7a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color7a" id="stacked2Color7a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color7a" id="stacked2Color7a">
                 <label for="stacked2Text7a" id="stacked2Label7a">End Data Label #1</label>
                 <input type="text" size="10" value="71%" name="stacked2Text7a" id="stacked2Text7a">
                 <br />
                 <label for="stacked2Size7b">Bar #2 Size</label>
                 <input type="number" size="6" value="29" max="100" min="0" name="stacked2Size7b" id="stacked2Size7b">
                 <label for="stacked2Color7b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color7b" id="stacked2Color7b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color7b" id="stacked2Color7b">
                 <label for="stacked2Text7b" id="stacked2Label7b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text7b" id="stacked2Text7b">
             </fieldset>
@@ -1640,14 +1640,14 @@
                 <label for="stacked2Size8a">Bar #1 Size</label>
                 <input type="number" size="6" value="64" max="100" min="0" name="stacked2Size8a" id="stacked2Size8a">
                 <label for="stacked2Color8a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color8a" id="stacked2Color8a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color8a" id="stacked2Color8a">
                 <label for="stacked2Text8a" id="stacked2Label8a">End Data Label #1</label>
                 <input type="text" size="10" value="64%" name="stacked2Text8a" id="stacked2Text8a">
                 <br />
                 <label for="stacked2Size8b">Bar #2 Size</label>
                 <input type="number" size="6" value="36" max="100" min="0" name="stacked2Size8b" id="stacked2Size8b">
                 <label for="stacked2Color8b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color8b" id="stacked2Color8b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color8b" id="stacked2Color8b">
                 <label for="stacked2Text8b" id="stacked2Label8b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text8b" id="stacked2Text8b">
             </fieldset>
@@ -1659,14 +1659,14 @@
                 <label for="stacked2Size9a">Bar #1 Size</label>
                 <input type="number" size="6" value="29" max="100" min="0" name="stacked2Size9a" id="stacked2Size9a">
                 <label for="stacked2Color9a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color9a" id="stacked2Color9a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color9a" id="stacked2Color9a">
                 <label for="stacked2Text9a" id="stacked2Label9a">End Data Label #1</label>
                 <input type="text" size="10" value="29%" name="stacked2Text9a" id="stacked2Text9a">
                 <br />
                 <label for="stacked2Size9b">Bar #2 Size</label>
                 <input type="number" size="6" value="71" max="100" min="0" name="stacked2Size9b" id="stacked2Size9b">
                 <label for="stacked2Color9b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color9b" id="stacked2Color9b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color9b" id="stacked2Color9b">
                 <label for="stacked2Text9b" id="stacked2Label9b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text9b" id="stacked2Text9b">
             </fieldset>
@@ -1678,20 +1678,20 @@
                 <label for="stacked2Size10a">Bar #1 Size</label>
                 <input type="number" size="6" value="69" max="100" min="0" name="stacked2Size10a" id="stacked2Size10a">
                 <label for="stacked2Color10a">Bar #1 Color</label>
-                <input type="text" size="6" value="ff3b44" name="stacked2Color10a" id="stacked2Color10a">
+                <input type="text" size="6" value="#ff3b44" name="stacked2Color10a" id="stacked2Color10a">
                 <label for="stacked2Text10a" id="stacked2Label10a">End Data Label #1</label>
                 <input type="text" size="10" value="69%" name="stacked2Text10a" id="stacked2Text10a">
                 <br />
                 <label for="stacked2Size10b">Bar #2 Size</label>
                 <input type="number" size="6" value="31" max="100" min="0" name="stacked2Size10b" id="stacked2Size10b">
                 <label for="stacked2Color10b">Bar #2 Color</label>
-                <input type="text" size="6" value="f1f1f1" name="stacked2Color10b" id="stacked2Color10b">
+                <input type="text" size="6" value="#f1f1f1" name="stacked2Color10b" id="stacked2Color10b">
                 <label for="stacked2Text10b" id="stacked2Label10b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked2Text10b" id="stacked2Text10b">
             </fieldset>
         </div>
-        <button type="button" id="stacked2Button">Generate Bar Chart Code</button>
-        <textarea name="stacked2Output" id="stacked2Output" cols="30" rows="10"></textarea>
+        <button type="button" id="stacked2Button">Generate Email Chart Code</button>
+        <textarea name="stacked2Output" id="stacked2Output" readonly></textarea>
     </div>
     <!-- end stacked bar chart ii -->
 
@@ -1865,18 +1865,18 @@
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData6" id="rowsData6">
                 <br />
                 <label for="legend3Color1x">Legend Color #1</label>
-                <input type="text" size="6" value="fa4747" name="legend3Color1x" id="legend3Color1x">
+                <input type="text" size="6" value="#fa4747" name="legend3Color1x" id="legend3Color1x">
                 <label for="legend3Text1x">Legend Text #1</label>
                 <input type="text" size="10" value="Red" name="legend3Text1x" id="legend3Text1x">
                 <label for="legend3Color2x">Legend Color #2</label>
-                <input type="text" size="6" value="ff785f" name="legend3Color2x" id="legend3Color2x">
+                <input type="text" size="6" value="#ff785f" name="legend3Color2x" id="legend3Color2x">
                 <label for="legend3Text2x">Legend Text #2</label>
                 <input type="text" size="10" value="Light Red" name="legend3Text2x" id="legend3Text2x">
                 <label for="legend3Color3x">Legend Color #2</label>
-                <input type="text" size="6" value="ffb65d" name="legend3Color3x" id="legend3Color3x">
+                <input type="text" size="6" value="#ffb65d" name="legend3Color3x" id="legend3Color3x">
                 <label for="legend3Text3x">Legend Text #2</label>
                 <input type="text" size="10" value="Orange" name="legend3Text3x" id="legend3Text3x">
-                <small>*Data bar widths must add up to 100.</small>
+                <small>⚠️ Data bar widths in each row must <em>add up to 100</em> to display correctly.</small>
             </fieldset>
             <fieldset class="stacked3Controls styleControls">
                 <legend>Row #1</legend>
@@ -1886,21 +1886,21 @@
                 <label for="stacked3Size1a">Bar #1 Size</label>
                 <input type="number" size="6" value="34" max="100" min="0" name="stacked3Size1a" id="stacked3Size1a">
                 <label for="stacked3Color1a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color1a" id="stacked3Color1a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color1a" id="stacked3Color1a">
                 <label for="stacked3Text1a" id="stacked3Label1a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text1a" id="stacked3Text1a">
                 <br />
                 <label for="stacked3Size1b">Bar #2 Size</label>
                 <input type="number" size="6" value="33" max="100" min="0" name="stacked3Size1b" id="stacked3Size1b">
                 <label for="stacked3Color1b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color1b" id="stacked3Color1b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color1b" id="stacked3Color1b">
                 <label for="stacked3Text1b" id="stacked3Label1b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text1b" id="stacked3Text1b">
                 <br />
                 <label for="stacked3Size1c">Bar #3 Size</label>
                 <input type="number" size="6" value="33" max="100" min="0" name="stacked3Size1c" id="stacked3Size1c">
                 <label for="stacked3Color1c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color1c" id="stacked3Color1c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color1c" id="stacked3Color1c">
                 <label for="stacked3Text1c" id="stacked3Label1c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text1c" id="stacked3Text1c">
             </fieldset>
@@ -1912,21 +1912,21 @@
                 <label for="stacked3Size2a">Bar #1 Size</label>
                 <input type="number" size="6" value="51" max="100" min="0" name="stacked3Size2a" id="stacked3Size2a">
                 <label for="stacked3Color2a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color2a" id="stacked3Color2a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color2a" id="stacked3Color2a">
                 <label for="stacked3Text2a" id="stacked3Label2a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text2a" id="stacked3Text2a">
                 <br />
                 <label for="stacked3Size2b">Bar #2 Size</label>
                 <input type="number" size="6" value="16" max="100" min="0" name="stacked3Size2b" id="stacked3Size2b">
                 <label for="stacked3Color2b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color2b" id="stacked3Color2b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color2b" id="stacked3Color2b">
                 <label for="stacked3Text2b" id="stacked3Label2b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text2b" id="stacked3Text2b">
                 <br />
                 <label for="stacked3Size2c">Bar #3 Size</label>
                 <input type="number" size="6" value="33" max="100" min="0" name="stacked3Size2c" id="stacked3Size2c">
                 <label for="stacked3Color2c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color2c" id="stacked3Color2c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color2c" id="stacked3Color2c">
                 <label for="stacked3Text2c" id="stacked3Label2c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text2c" id="stacked3Text2c">
             </fieldset>
@@ -1938,21 +1938,21 @@
                 <label for="stacked3Size3a">Bar #1 Size</label>
                 <input type="number" size="6" value="63" max="100" min="0" name="stacked3Size3a" id="stacked3Size3a">
                 <label for="stacked3Color3a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color3a" id="stacked3Color3a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color3a" id="stacked3Color3a">
                 <label for="stacked3Text3a" id="stacked3Label3a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text3a" id="stacked3Text3a">
                 <br />
                 <label for="stacked3Size3b">Bar #2 Size</label>
                 <input type="number" size="6" value="10" max="100" min="0" name="stacked3Size3b" id="stacked3Size3b">
                 <label for="stacked3Color3b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color3b" id="stacked3Color3b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color3b" id="stacked3Color3b">
                 <label for="stacked3Text3b" id="stacked3Label3b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text3b" id="stacked3Text3b">
                 <br />
                 <label for="stacked3Size3c">Bar #3 Size</label>
                 <input type="number" size="6" value="27" max="100" min="0" name="stacked3Size3c" id="stacked3Size3c">
                 <label for="stacked3Color3c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color3c" id="stacked3Color3c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color3c" id="stacked3Color3c">
                 <label for="stacked3Text3c" id="stacked3Label3c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text3c" id="stacked3Text3c">
             </fieldset>
@@ -1964,21 +1964,21 @@
                 <label for="stacked3Size4a">Bar #1 Size</label>
                 <input type="number" size="6" value="50" max="100" min="0" name="stacked3Size4a" id="stacked3Size4a">
                 <label for="stacked3Color4a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color4a" id="stacked3Color4a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color4a" id="stacked3Color4a">
                 <label for="stacked3Text4a" id="stacked3Label4a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text4a" id="stacked3Text4a">
                 <br />
                 <label for="stacked3Size4b">Bar #2 Size</label>
                 <input type="number" size="6" value="35" max="100" min="0" name="stacked3Size4b" id="stacked3Size4b">
                 <label for="stacked3Color4b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color4b" id="stacked3Color4b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color4b" id="stacked3Color4b">
                 <label for="stacked3Text4b" id="stacked3Label4b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text4b" id="stacked3Text4b">
                 <br />
                 <label for="stacked3Size4c">Bar #3 Size</label>
                 <input type="number" size="6" value="15" max="100" min="0" name="stacked3Size4c" id="stacked3Size4c">
                 <label for="stacked3Color4c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color4c" id="stacked3Color4c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color4c" id="stacked3Color4c">
                 <label for="stacked3Text4c" id="stacked3Label4c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text4c" id="stacked3Text4c">
             </fieldset>
@@ -1990,21 +1990,21 @@
                 <label for="stacked3Size5a">Bar #1 Size</label>
                 <input type="number" size="6" value="14" max="100" min="0" name="stacked3Size5a" id="stacked3Size5a">
                 <label for="stacked3Color5a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color5a" id="stacked3Color5a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color5a" id="stacked3Color5a">
                 <label for="stacked3Text5a" id="stacked3Label5a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text5a" id="stacked3Text5a">
                 <br />
                 <label for="stacked3Size5b">Bar #2 Size</label>
                 <input type="number" size="6" value="10" max="100" min="0" name="stacked3Size5b" id="stacked3Size5b">
                 <label for="stacked3Color5b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color5b" id="stacked3Color5b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color5b" id="stacked3Color5b">
                 <label for="stacked3Text5b" id="stacked3Label5b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text5b" id="stacked3Text5b">
                 <br />
                 <label for="stacked3Size5c">Bar #3 Size</label>
                 <input type="number" size="6" value="76" max="100" min="0" name="stacked3Size5c" id="stacked3Size5c">
                 <label for="stacked3Color5c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color5c" id="stacked3Color5c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color5c" id="stacked3Color5c">
                 <label for="stacked3Text5c" id="stacked3Label5c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text5c" id="stacked3Text5c">
             </fieldset>
@@ -2016,21 +2016,21 @@
                 <label for="stacked3Size6a">Bar #1 Size</label>
                 <input type="number" size="6" value="11" max="100" min="0" name="stacked3Size6a" id="stacked3Size6a">
                 <label for="stacked3Color6a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color6a" id="stacked3Color6a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color6a" id="stacked3Color6a">
                 <label for="stacked3Text6a" id="stacked3Label6a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text6a" id="stacked3Text6a">
                 <br />
                 <label for="stacked3Size6b">Bar #2 Size</label>
                 <input type="number" size="6" value="71" max="100" min="0" name="stacked3Size6b" id="stacked3Size6b">
                 <label for="stacked3Color6b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color6b" id="stacked3Color6b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color6b" id="stacked3Color6b">
                 <label for="stacked3Text6b" id="stacked3Label6b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text6b" id="stacked3Text6b">
                 <br />
                 <label for="stacked3Size6c">Bar #3 Size</label>
                 <input type="number" size="6" value="18" max="100" min="0" name="stacked3Size6c" id="stacked3Size6c">
                 <label for="stacked3Color6c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color6c" id="stacked3Color6c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color6c" id="stacked3Color6c">
                 <label for="stacked3Text6c" id="stacked3Label6c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text6c" id="stacked3Text6c">
             </fieldset>
@@ -2042,21 +2042,21 @@
                 <label for="stacked3Size7a">Bar #1 Size</label>
                 <input type="number" size="6" value="17" max="100" min="0" name="stacked3Size7a" id="stacked3Size7a">
                 <label for="stacked3Color7a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color7a" id="stacked3Color7a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color7a" id="stacked3Color7a">
                 <label for="stacked3Text7a" id="stacked3Label7a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text7a" id="stacked3Text7a">
                 <br />
                 <label for="stacked3Size7b">Bar #2 Size</label>
                 <input type="number" size="6" value="21" max="100" min="0" name="stacked3Size7b" id="stacked3Size7b">
                 <label for="stacked3Color7b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color7b" id="stacked3Color7b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color7b" id="stacked3Color7b">
                 <label for="stacked3Text7b" id="stacked3Label7b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text7b" id="stacked3Text7b">
                 <br />
                 <label for="stacked3Size7c">Bar #3 Size</label>
                 <input type="number" size="6" value="62" max="100" min="0" name="stacked3Size7c" id="stacked3Size7c">
                 <label for="stacked3Color7c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color7c" id="stacked3Color7c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color7c" id="stacked3Color7c">
                 <label for="stacked3Text7c" id="stacked3Label7c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text7c" id="stacked3Text7c">
             </fieldset>
@@ -2068,21 +2068,21 @@
                 <label for="stacked3Size8a">Bar #1 Size</label>
                 <input type="number" size="6" value="30" max="100" min="0" name="stacked3Size8a" id="stacked3Size8a">
                 <label for="stacked3Color8a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color8a" id="stacked3Color8a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color8a" id="stacked3Color8a">
                 <label for="stacked3Text8a" id="stacked3Label8a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text8a" id="stacked3Text8a">
                 <br />
                 <label for="stacked3Size8b">Bar #2 Size</label>
                 <input type="number" size="6" value="30" max="100" min="0" name="stacked3Size8b" id="stacked3Size8b">
                 <label for="stacked3Color8b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color8b" id="stacked3Color8b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color8b" id="stacked3Color8b">
                 <label for="stacked3Text8b" id="stacked3Label8b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text8b" id="stacked3Text8b">
                 <br />
                 <label for="stacked3Size8c">Bar #3 Size</label>
                 <input type="number" size="6" value="40" max="100" min="0" name="stacked3Size8c" id="stacked3Size8c">
                 <label for="stacked3Color8c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color8c" id="stacked3Color8c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color8c" id="stacked3Color8c">
                 <label for="stacked3Text8c" id="stacked3Label8c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text8c" id="stacked3Text8c">
             </fieldset>
@@ -2094,21 +2094,21 @@
                 <label for="stacked3Size9a">Bar #1 Size</label>
                 <input type="number" size="6" value="61" max="100" min="0" name="stacked3Size9a" id="stacked3Size9a">
                 <label for="stacked3Color9a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color9a" id="stacked3Color9a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color9a" id="stacked3Color9a">
                 <label for="stacked3Text9a" id="stacked3Label9a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text9a" id="stacked3Text9a">
                 <br />
                 <label for="stacked3Size9b">Bar #2 Size</label>
                 <input type="number" size="6" value="19" max="100" min="0" name="stacked3Size9b" id="stacked3Size9b">
                 <label for="stacked3Color9b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color9b" id="stacked3Color9b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color9b" id="stacked3Color9b">
                 <label for="stacked3Text9b" id="stacked3Label9b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text9b" id="stacked3Text9b">
                 <br />
                 <label for="stacked3Size9c">Bar #3 Size</label>
                 <input type="number" size="6" value="20" max="100" min="0" name="stacked3Size9c" id="stacked3Size9c">
                 <label for="stacked3Color9c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color9c" id="stacked3Color9c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color9c" id="stacked3Color9c">
                 <label for="stacked3Text9c" id="stacked3Label9c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text9c" id="stacked3Text9c">
             </fieldset>
@@ -2120,27 +2120,27 @@
                 <label for="stacked3Size10a">Bar #1 Size</label>
                 <input type="number" size="6" value="27" max="100" min="0" name="stacked3Size10a" id="stacked3Size10a">
                 <label for="stacked3Color10a">Bar #1 Color</label>
-                <input type="text" size="6" value="fa4747" name="stacked3Color10a" id="stacked3Color10a">
+                <input type="text" size="6" value="#fa4747" name="stacked3Color10a" id="stacked3Color10a">
                 <label for="stacked3Text10a" id="stacked3Label10a">End Data Label #1</label>
                 <input type="text" size="10" value="" name="stacked3Text10a" id="stacked3Text10a">
                 <br />
                 <label for="stacked3Size10b">Bar #2 Size</label>
                 <input type="number" size="6" value="51" max="100" min="0" name="stacked3Size10b" id="stacked3Size10b">
                 <label for="stacked3Color10b">Bar #2 Color</label>
-                <input type="text" size="6" value="ff785f" name="stacked3Color10b" id="stacked3Color10b">
+                <input type="text" size="6" value="#ff785f" name="stacked3Color10b" id="stacked3Color10b">
                 <label for="stacked3Text10b" id="stacked3Label10b">End Data Label #2</label>
                 <input type="text" size="10" value="" name="stacked3Text10b" id="stacked3Text10b">
                 <br />
                 <label for="stacked3Size10c">Bar #3 Size</label>
                 <input type="number" size="6" value="22" max="100" min="0" name="stacked3Size10c" id="stacked3Size10c">
                 <label for="stacked3Color10c">Bar #3 Color</label>
-                <input type="text" size="6" value="ffb65d" name="stacked3Color10c" id="stacked3Color10c">
+                <input type="text" size="6" value="#ffb65d" name="stacked3Color10c" id="stacked3Color10c">
                 <label for="stacked3Text10c" id="stacked3Label10c">End Data Label #3</label>
                 <input type="text" size="10" value="" name="stacked3Text10c" id="stacked3Text10c">
             </fieldset>
         </div>
-        <button type="button" id="stacked3Button">Generate Bar Chart Code</button>
-        <textarea name="stacked3Output" id="stacked3Output" cols="30" rows="10"></textarea>
+        <button type="button" id="stacked3Button">Generate Email Chart Code</button>
+        <textarea name="stacked3Output" id="stacked3Output" readonly></textarea>
     </div>
     <!-- end 100% stacked bar chart -->
 
@@ -2312,7 +2312,7 @@
                 <legend>Chart Customization</legend>
                 <label for="rowsData">Select # of Data Rows</label>
                 <input type="number" size="6" value="6" max="10" min="1" name="rowsData" id="rowsData">
-                <small>Click on <span style="font-weight: 600;">"Negative Label"</span> to move the data label text out of the data bar. Click again to delete the outer label text.</small><small>Click on <span style="font-weight: 600;">"Positive Label"</span> to move the data label text into the data bar. Click again to delete the inner label text.</small>
+                <small>📌 Click on <span style="font-weight: 600;">"Negative Label"</span> to move the data label text out of the data bar. Click again to delete the outer label text.</small><small>Click on <span style="font-weight: 600;">"Positive Label"</span> to move the data label text into the data bar. Click again to delete the inner label text.</small>
             </fieldset>
             <fieldset class="splitControls styleControls">
                 <legend>Row #1</legend>
@@ -2321,14 +2321,14 @@
                 <label for="rowSize1a">Negative Bar Size</label>
                 <input type="number" size="6" value="-100" max="0" min="-100" name="rowSize1a" id="rowSize1a">
                 <label for="rowColor1a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor1a" id="rowColor1a">
+                <input type="text" size="6" value="#ff0000" name="rowColor1a" id="rowColor1a">
                 <br />
                 <label for="rowText1b" id="row1bLabel">Positive Label</label>
                 <input type="text" size="6" value="0%" name="rowText1b" id="rowText1b">
                 <label for="rowSize1b">Positive Bar Size</label>
                 <input type="number" size="6" value="0" max="100" min="0" name="rowSize1b" id="rowSize1b">
                 <label for="rowColor1b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor1b" id="rowColor1b">
+                <input type="text" size="6" value="#48c20c" name="rowColor1b" id="rowColor1b">
             </fieldset>
             <fieldset class="splitControls styleControls">
                 <legend>Row #2</legend>
@@ -2337,14 +2337,14 @@
                 <label for="rowSize2a">Negative Bar Size</label>
                 <input type="number" size="6" value="-80" max="0" min="-100" name="rowSize2a" id="rowSize2a">
                 <label for="rowColor2a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor2a" id="rowColor2a">
+                <input type="text" size="6" value="#ff0000" name="rowColor2a" id="rowColor2a">
                 <br />
                 <label for="rowText2b" id="row2bLabel">Positive Label</label>
                 <input type="text" size="6" value="20%" name="rowText2b" id="rowText2b">
                 <label for="rowSize2b">Positive Bar Size</label>
                 <input type="number" size="6" value="20" max="100" min="0" name="rowSize2b" id="rowSize2b">
                 <label for="rowColor2b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor2b" id="rowColor2b">
+                <input type="text" size="6" value="#48c20c" name="rowColor2b" id="rowColor2b">
             </fieldset>
             <fieldset class="splitControls styleControls">
                 <legend>Row #3</legend>
@@ -2353,14 +2353,14 @@
                 <label for="rowSize3a">Negative Bar Size</label>
                 <input type="number" size="6" value="-60" max="0" min="-100" name="rowSize3a" id="rowSize3a">
                 <label for="rowColor3a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor3a" id="rowColor3a">
+                <input type="text" size="6" value="#ff0000" name="rowColor3a" id="rowColor3a">
                 <br />
                 <label for="rowText3b" id="row3bLabel">Positive Label</label>
                 <input type="text" size="6" value="40%" name="rowText3b" id="rowText3b">
                 <label for="rowSize3b">Positive Bar Size</label>
                 <input type="number" size="6" value="40" max="100" min="0" name="rowSize3b" id="rowSize3b">
                 <label for="rowColor3b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor3b" id="rowColor3b">
+                <input type="text" size="6" value="#48c20c" name="rowColor3b" id="rowColor3b">
             </fieldset>
             <fieldset class="splitControls styleControls">
                 <legend>Row #4</legend>
@@ -2369,14 +2369,14 @@
                 <label for="rowSize4a">Negative Bar Size</label>
                 <input type="number" size="6" value="-40" max="0" min="-100" name="rowSize4a" id="rowSize4a">
                 <label for="rowColor4a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor4a" id="rowColor4a">
+                <input type="text" size="6" value="#ff0000" name="rowColor4a" id="rowColor4a">
                 <br />
                 <label for="rowText4b" id="row4bLabel">Positive Label</label>
                 <input type="text" size="6" value="60%" name="rowText4b" id="rowText4b">
                 <label for="rowSize4b">Positive Bar Size</label>
                 <input type="number" size="6" value="60" max="100" min="0" name="rowSize4b" id="rowSize4b">
                 <label for="rowColor4b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor4b" id="rowColor4b">
+                <input type="text" size="6" value="#48c20c" name="rowColor4b" id="rowColor4b">
             </fieldset>
             <fieldset class="splitControls styleControls">
                 <legend>Row #5</legend>
@@ -2385,14 +2385,14 @@
                 <label for="rowSize5a">Negative Bar Size</label>
                 <input type="number" size="6" value="-20" max="0" min="-100" name="rowSize5a" id="rowSize5a">
                 <label for="rowColor5a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor5a" id="rowColor5a">
+                <input type="text" size="6" value="#ff0000" name="rowColor5a" id="rowColor5a">
                 <br />
                 <label for="rowText5b" id="row5bLabel">Positive Label</label>
                 <input type="text" size="6" value="" name="rowText5b" id="rowText5b">
                 <label for="rowSize5b">Positive Bar Size</label>
                 <input type="number" size="6" value="80" max="100" min="0" name="rowSize5b" id="rowSize5b">
                 <label for="rowColor5b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor5b" id="rowColor5b">
+                <input type="text" size="6" value="#48c20c" name="rowColor5b" id="rowColor5b">
             </fieldset>
             <fieldset class="splitControls styleControls">
                 <legend>Row #6</legend>
@@ -2401,14 +2401,14 @@
                 <label for="rowSize6a">Negative Bar Size</label>
                 <input type="number" size="6" value="0" max="0" min="-100" name="rowSize6a" id="rowSize6a">
                 <label for="rowColor6a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor6a" id="rowColor6a">
+                <input type="text" size="6" value="#ff0000" name="rowColor6a" id="rowColor6a">
                 <br />
                 <label for="rowText6b" id="row6bLabel">Positive Label</label>
                 <input type="text" size="6" value="" name="rowText6b" id="rowText6b">
                 <label for="rowSize6b">Positive Bar Size</label>
                 <input type="number" size="6" value="100" max="100" min="0" name="rowSize6b" id="rowSize6b">
                 <label for="rowColor6b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor6b" id="rowColor6b">
+                <input type="text" size="6" value="#48c20c" name="rowColor6b" id="rowColor6b">
             </fieldset>
             <fieldset class="splitControls styleControls" style="display: none;">
                 <legend>Row #7</legend>
@@ -2417,14 +2417,14 @@
                 <label for="rowSize7a">Negative Bar Size</label>
                 <input type="number" size="6" value="0" max="0" min="-100" name="rowSize7a" id="rowSize7a">
                 <label for="rowColor7a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor7a" id="rowColor7a">
+                <input type="text" size="6" value="#ff0000" name="rowColor7a" id="rowColor7a">
                 <br />
                 <label for="rowText7b" id="row7bLabel">Positive Label</label>
                 <input type="text" size="6" value="0%" name="rowText7b" id="rowText7b">
                 <label for="rowSize7b">Positive Bar Size</label>
                 <input type="number" size="6" value="0" max="100" min="0" name="rowSize7b" id="rowSize7b">
                 <label for="rowColor7b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor7b" id="rowColor7b">
+                <input type="text" size="6" value="#48c20c" name="rowColor7b" id="rowColor7b">
             </fieldset>
             <fieldset class="splitControls styleControls" style="display: none;">
                 <legend>Row #8</legend>
@@ -2433,14 +2433,14 @@
                 <label for="rowSize8a">Negative Bar Size</label>
                 <input type="number" size="6" value="0" max="0" min="-100" name="rowSize8a" id="rowSize8a">
                 <label for="rowColor8a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor8a" id="rowColor8a">
+                <input type="text" size="6" value="#ff0000" name="rowColor8a" id="rowColor8a">
                 <br />
                 <label for="rowText8b" id="row8bLabel">Positive Label</label>
                 <input type="text" size="6" value="0%" name="rowText8b" id="rowText8b">
                 <label for="rowSize8b">Positive Bar Size</label>
                 <input type="number" size="6" value="0" max="100" min="0" name="rowSize8b" id="rowSize8b">
                 <label for="rowColor8b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor8b" id="rowColor8b">
+                <input type="text" size="6" value="#48c20c" name="rowColor8b" id="rowColor8b">
             </fieldset>
             <fieldset class="splitControls styleControls" style="display: none;">
                 <legend>Row #9</legend>
@@ -2449,14 +2449,14 @@
                 <label for="rowSize9a">Negative Bar Size</label>
                 <input type="number" size="6" value="0" max="0" min="-100" name="rowSize9a" id="rowSize9a">
                 <label for="rowColor9a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor9a" id="rowColor9a">
+                <input type="text" size="6" value="#ff0000" name="rowColor9a" id="rowColor9a">
                 <br />
                 <label for="rowText9b" id="row9bLabel">Positive Label</label>
                 <input type="text" size="6" value="0%" name="rowText9b" id="rowText9b">
                 <label for="rowSize9b">Positive Bar Size</label>
                 <input type="number" size="6" value="0" max="100" min="0" name="rowSize9b" id="rowSize9b">
                 <label for="rowColor9b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor9b" id="rowColor9b">
+                <input type="text" size="6" value="#48c20c" name="rowColor9b" id="rowColor9b">
             </fieldset>
             <fieldset class="splitControls styleControls" style="display: none;">
                 <legend>Row #10</legend>
@@ -2465,18 +2465,18 @@
                 <label for="rowSize10a">Negative Bar Size</label>
                 <input type="number" size="6" value="0" max="0" min="-100" name="rowSize10a" id="rowSize10a">
                 <label for="rowColor10a">Negative Bar Color</label>
-                <input type="text" size="6" value="ff0000" name="rowColor10a" id="rowColor10a">
+                <input type="text" size="6" value="#ff0000" name="rowColor10a" id="rowColor10a">
                 <br />
                 <label for="rowText10b" id="row10bLabel">Positive Label</label>
                 <input type="text" size="6" value="0%" name="rowText10b" id="rowText10b">
                 <label for="rowSize10b">Positive Bar Size</label>
                 <input type="number" size="6" value="0" max="100" min="0" name="rowSize10b" id="rowSize10b">
                 <label for="rowColor10b">Positive Bar Color</label>
-                <input type="text" size="6" value="48c20c" name="rowColor10b" id="rowColor10b">
+                <input type="text" size="6" value="#48c20c" name="rowColor10b" id="rowColor10b">
             </fieldset>
         </div>
-        <button type="button" id="splitButton">Generate Bar Chart Code</button>
-        <textarea name="splitOutput" id="splitOutput" cols="30" rows="10"></textarea>
+        <button type="button" id="splitButton">Generate Email Chart Code</button>
+        <textarea name="splitOutput" id="splitOutput" readonly></textarea>
     </div>
     <!-- end negative|positive bar chart -->
 
@@ -2628,14 +2628,14 @@
                 <input type="number" size="6" value="4" max="6" min="1" name="rowsData7" id="rowsData7">
                 <br />
                 <label for="legend4Color1x">Legend Color #1</label>
-                <input type="text" size="6" value="0058e6" name="legend4Color1x" id="legend4Color1x">
+                <input type="text" size="6" value="#0058e6" name="legend4Color1x" id="legend4Color1x">
                 <label for="legend4Text1x">Legend Text #1</label>
                 <input type="text" size="10" value="Blue" name="legend4Text1x" id="legend4Text1x">
                 <label for="legend4Color2x">Legend Color #2</label>
-                <input type="text" size="6" value="94bdff" name="legend4Color2x" id="legend4Color2x">
+                <input type="text" size="6" value="#94bdff" name="legend4Color2x" id="legend4Color2x">
                 <label for="legend4Text2x">Legend Text #2</label>
                 <input type="text" size="10" value="Light Blue" name="legend4Text2x" id="legend4Text2x">
-                <small>*Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
+                <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
             </fieldset>
             <fieldset class="combo1Controls styleControls">
                 <legend>Row #1</legend>
@@ -2645,14 +2645,14 @@
                 <label for="combo1Size1t">Bar Size</label>
                 <input type="number" size="6" value="60" max="100" min="0" name="combo1Size1t" id="combo1Size1t">
                 <label for="combo1Color1t">Bar Color</label>
-                <input type="text" size="6" value="0058e6" name="combo1Color1t" id="combo1Color1t">
+                <input type="text" size="6" value="#0058e6" name="combo1Color1t" id="combo1Color1t">
                 <label for="combo1Text1t" id="combo1Label1t">End Data Label</label>
                 <input type="text" size="10" value="Label #1" name="combo1Text1t" id="combo1Text1t">
                 <br />
                 <label for="combo1Size1b">Bar Size</label>
                 <input type="number" size="6" value="47" max="100" min="0" name="combo1Size1b" id="combo1Size1b">
                 <label for="combo1Color1b">Bar Color</label>
-                <input type="text" size="6" value="94bdff" name="combo1Color1b" id="combo1Color1b">
+                <input type="text" size="6" value="#94bdff" name="combo1Color1b" id="combo1Color1b">
                 <label for="combo1Text1b" id="combo1Label1b">End Data Label</label>
                 <input type="text" size="10" value="Label #1" name="combo1Text1b" id="combo1Text1b">
             </fieldset>
@@ -2664,14 +2664,14 @@
                 <label for="combo1Size2t">Bar Size</label>
                 <input type="number" size="6" value="44" max="100" min="0" name="combo1Size2t" id="combo1Size2t">
                 <label for="combo1Color2t">Bar Color</label>
-                <input type="text" size="6" value="0058e6" name="combo1Color2t" id="combo1Color2t">
+                <input type="text" size="6" value="#0058e6" name="combo1Color2t" id="combo1Color2t">
                 <label for="combo1Text2t" id="combo1Label2t">End Data Label</label>
                 <input type="text" size="10" value="Label #2" name="combo1Text2t" id="combo1Text2t">
                 <br />
                 <label for="combo1Size2b">Bar Size</label>
                 <input type="number" size="6" value="29" max="100" min="0" name="combo1Size2b" id="combo1Size2b">
                 <label for="combo1Color2b">Bar Color</label>
-                <input type="text" size="6" value="94bdff" name="combo1Color2b" id="combo1Color2b">
+                <input type="text" size="6" value="#94bdff" name="combo1Color2b" id="combo1Color2b">
                 <label for="combo1Text2b" id="combo1Label2b">End Data Label</label>
                 <input type="text" size="10" value="Label #2" name="combo1Text2b" id="combo1Text2b">
             </fieldset>
@@ -2683,14 +2683,14 @@
                 <label for="combo1Size3t">Bar Size</label>
                 <input type="number" size="6" value="19" max="100" min="0" name="combo1Size3t" id="combo1Size3t">
                 <label for="combo1Color3t">Bar Color</label>
-                <input type="text" size="6" value="0058e6" name="combo1Color3t" id="combo1Color3t">
+                <input type="text" size="6" value="#0058e6" name="combo1Color3t" id="combo1Color3t">
                 <label for="combo1Text3t" id="combo1Label3t">End Data Label</label>
                 <input type="text" size="10" value="Label #3" name="combo1Text3t" id="combo1Text3t">
                 <br />
                 <label for="combo1Size3b">Bar Size</label>
                 <input type="number" size="6" value="70" max="100" min="0" name="combo1Size3b" id="combo1Size3b">
                 <label for="combo1Color3b">Bar Color</label>
-                <input type="text" size="6" value="94bdff" name="combo1Color3b" id="combo1Color3b">
+                <input type="text" size="6" value="#94bdff" name="combo1Color3b" id="combo1Color3b">
                 <label for="combo1Text3b" id="combo1Label3b">End Data Label</label>
                 <input type="text" size="10" value="Label #3" name="combo1Text3b" id="combo1Text3b">
             </fieldset>
@@ -2702,14 +2702,14 @@
                 <label for="combo1Size4t">Bar Size</label>
                 <input type="number" size="6" value="35" max="100" min="0" name="combo1Size4t" id="combo1Size4t">
                 <label for="combo1Color4t">Bar Color</label>
-                <input type="text" size="6" value="0058e6" name="combo1Color4t" id="combo1Color4t">
+                <input type="text" size="6" value="#0058e6" name="combo1Color4t" id="combo1Color4t">
                 <label for="combo1Text4t" id="combo1Label4t">End Data Label</label>
                 <input type="text" size="10" value="Label #4" name="combo1Text4t" id="combo1Text4t">
                 <br />
                 <label for="combo1Size4b">Bar Size</label>
                 <input type="number" size="6" value="88" max="100" min="0" name="combo1Size4b" id="combo1Size4b">
                 <label for="combo1Color4b">Bar Color</label>
-                <input type="text" size="6" value="94bdff" name="combo1Color4b" id="combo1Color4b">
+                <input type="text" size="6" value="#94bdff" name="combo1Color4b" id="combo1Color4b">
                 <label for="combo1Text4b" id="combo1Label4b">End Data Label</label>
                 <input type="text" size="10" value="" name="combo1Text4b" id="combo1Text4b">
             </fieldset>
@@ -2721,14 +2721,14 @@
                 <label for="combo1Size5t">Bar Size</label>
                 <input type="number" size="6" value="60" max="100" min="0" name="combo1Size5t" id="combo1Size5t">
                 <label for="combo1Color5t">Bar Color</label>
-                <input type="text" size="6" value="0058e6" name="combo1Color5t" id="combo1Color5t">
+                <input type="text" size="6" value="#0058e6" name="combo1Color5t" id="combo1Color5t">
                 <label for="combo1Text5t" id="combo1Label5t">End Data Label</label>
                 <input type="text" size="10" value="Label #5" name="combo1Text5t" id="combo1Text5t">
                 <br />
                 <label for="combo1Size5b">Bar Size</label>
                 <input type="number" size="6" value="24" max="100" min="0" name="combo1Size5b" id="combo1Size5b">
                 <label for="combo1Color5b">Bar Color</label>
-                <input type="text" size="6" value="94bdff" name="combo1Color5b" id="combo1Color5b">
+                <input type="text" size="6" value="#94bdff" name="combo1Color5b" id="combo1Color5b">
                 <label for="combo1Text5b" id="combo1Label5b">End Data Label</label>
                 <input type="text" size="10" value="Label #5" name="combo1Text5b" id="combo1Text5b">
             </fieldset>
@@ -2740,20 +2740,20 @@
                 <label for="combo1Size6t">Bar Size</label>
                 <input type="number" size="6" value="8" max="100" min="0" name="combo1Size6t" id="combo1Size6t">
                 <label for="combo1Color6t">Bar Color</label>
-                <input type="text" size="6" value="0058e6" name="combo1Color6t" id="combo1Color6t">
+                <input type="text" size="6" value="#0058e6" name="combo1Color6t" id="combo1Color6t">
                 <label for="combo1Text6t" id="combo1Label6t">End Data Label</label>
                 <input type="text" size="10" value="Label #6" name="combo1Text6t" id="combo1Text6t">
                 <br />
                 <label for="combo1Size6b">Bar Size</label>
                 <input type="number" size="6" value="34" max="100" min="0" name="combo1Size6b" id="combo1Size6b">
                 <label for="combo1Color6b">Bar Color</label>
-                <input type="text" size="6" value="94bdff" name="combo1Color6b" id="combo1Color6b">
+                <input type="text" size="6" value="#94bdff" name="combo1Color6b" id="combo1Color6b">
                 <label for="combo1Text6b" id="combo1Label6b">End Data Label</label>
                 <input type="text" size="10" value="Label #6" name="combo1Text6b" id="combo1Text6b">
             </fieldset>
         </div>
-        <button type="button" id="combo1Button">Generate Bar Chart Code</button>
-        <textarea name="combo1Output" id="combo1Output" cols="30" rows="10"></textarea>
+        <button type="button" id="combo1Button">Generate Email Chart Code</button>
+        <textarea name="combo1Output" id="combo1Output" readonly></textarea>
     </div>
     <!-- end combo bar chart -->
 
@@ -2770,13 +2770,13 @@
                                 <td align="left" style="padding: 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="prog1Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">Progress bar #1</td>
+                                            <td id="prog1Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">Candidate #1</td>
                                         </tr>
                                     </table>
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="prog1Row1b" align="right" style="background-color: #1cf28c; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 66%; height: 28px;" height="28"></td>
-                                            <td id="prog1Row1c" align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 34%; height: 28px;" height="28"></td>
+                                            <td id="prog1Row1b" align="right" style="background-color: #e81b23; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 51%; height: 28px;" height="28"></td>
+                                            <td id="prog1Row1c" align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 49%; height: 28px;" height="28">&nbsp;51%</td>
                                         </tr>
                                     </table>
                                 </td>
@@ -2788,13 +2788,13 @@
                                 <td align="left" style="padding: 14px 0 0 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="prog1Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #2</td>
+                                            <td id="prog1Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Candidate #2</td>
                                         </tr>
                                     </table>
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="prog1Row2b" align="right" style="background-color: #1cf28c; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 44%; height: 28px;" height="28"></td>
-                                            <td id="prog1Row2c" align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 56%; height: 28px;" height="28"></td>
+                                            <td id="prog1Row2b" align="right" style="background-color: #00aef3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 43%; height: 28px;" height="28"></td>
+                                            <td id="prog1Row2c" align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 57%; height: 28px;" height="28">&nbsp;43%</td>
                                         </tr>
                                     </table>
                                 </td>
@@ -2864,31 +2864,31 @@
                 <legend>Chart Customization</legend>
                 <label for="rowsData8">Select # of Bars</label>
                 <input type="number" size="6" value="2" max="5" min="1" name="rowsData8" id="rowsData8">
-                <small>*Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
+                <small>📌 Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
             </fieldset>
             <fieldset class="prog1Controls styleControls">
                 <legend>Progress Bar #1</legend>
                 <label for="prog1Text1a">Progress Bar Name</label>
-                <input type="text" size="10" value="Progress bar #1" name="prog1Text1a" id="prog1Text1a">
+                <input type="text" size="10" value="Candidate #1" name="prog1Text1a" id="prog1Text1a">
                 <br />
                 <label for="prog1Size1">Progress Bar Size</label>
-                <input type="number" size="6" value="66" max="100" min="0" name="prog1Size1" id="prog1Size1">
+                <input type="number" size="6" value="51" max="100" min="0" name="prog1Size1" id="prog1Size1">
                 <label for="prog1Color1">Bar Color</label>
-                <input type="text" size="6" value="1cf28c" name="prog1Color1" id="prog1Color1">
+                <input type="text" size="6" value="#e81b23" name="prog1Color1" id="prog1Color1">
                 <label for="prog1Text1" id="prog1Label1">End Label</label>
-                <input type="text" size="10" value="" name="prog1Text1" id="prog1Text1">
+                <input type="text" size="10" value="51%" name="prog1Text1" id="prog1Text1">
             </fieldset>
             <fieldset class="prog1Controls styleControls">
                 <legend>Progress Bar #2</legend>
                 <label for="prog1Text2a">Progress Bar Name</label>
-                <input type="text" size="10" value="Progress bar #2" name="prog1Text2a" id="prog1Text2a">
+                <input type="text" size="10" value="Candidate #2" name="prog1Text2a" id="prog1Text2a">
                 <br />
                 <label for="prog1Size2">Progress Bar Size</label>
-                <input type="number" size="6" value="44" max="100" min="0" name="prog1Size2" id="prog1Size2">
+                <input type="number" size="6" value="43" max="100" min="0" name="prog1Size2" id="prog1Size2">
                 <label for="prog1Color2">Bar Color</label>
-                <input type="text" size="6" value="1cf28c" name="prog1Color2" id="prog1Color2">
+                <input type="text" size="6" value="#00aef3" name="prog1Color2" id="prog1Color2">
                 <label for="prog1Text2" id="prog1Label2">End Label</label>
-                <input type="text" size="10" value="" name="prog1Text2" id="prog1Text2">
+                <input type="text" size="10" value="43%" name="prog1Text2" id="prog1Text2">
             </fieldset>
             <fieldset class="prog1Controls styleControls" style="display: none;">
                 <legend>Progress Bar #3</legend>
@@ -2898,7 +2898,7 @@
                 <label for="prog1Size3">Progress Bar Size</label>
                 <input type="number" size="6" value="8" max="100" min="0" name="prog1Size3" id="prog1Size3">
                 <label for="prog1Color3">Bar Color</label>
-                <input type="text" size="6" value="1cf28c" name="prog1Color3" id="prog1Color3">
+                <input type="text" size="6" value="#1cf28c" name="prog1Color3" id="prog1Color3">
                 <label for="prog1Text3" id="prog1Label3">End Label</label>
                 <input type="text" size="10" value="" name="prog1Text3" id="prog1Text3">
             </fieldset>
@@ -2910,7 +2910,7 @@
                 <label for="prog1Size4">Progress Bar Size</label>
                 <input type="number" size="6" value="97" max="100" min="0" name="prog1Size4" id="prog1Size4">
                 <label for="prog1Color4">Bar Color</label>
-                <input type="text" size="6" value="1cf28c" name="prog1Color4" id="prog1Color4">
+                <input type="text" size="6" value="#1cf28c" name="prog1Color4" id="prog1Color4">
                 <label for="prog1Text4" id="prog1Label4">End Label</label>
                 <input type="text" size="10" value="" name="prog1Text4" id="prog1Text4">
             </fieldset>
@@ -2922,13 +2922,13 @@
                 <label for="prog1Size5">Progress Bar Size</label>
                 <input type="number" size="6" value="25" max="100" min="0" name="prog1Size5" id="prog1Size5">
                 <label for="prog1Color5">Bar Color</label>
-                <input type="text" size="6" value="1cf28c" name="prog1Color5" id="prog1Color5">
+                <input type="text" size="6" value="#1cf28c" name="prog1Color5" id="prog1Color5">
                 <label for="prog1Text5" id="prog1Label5">End Label</label>
                 <input type="text" size="10" value="" name="prog1Text5" id="prog1Text5">
             </fieldset>
         </div>
-        <button type="button" id="prog1Button">Generate Progress Bar Code</button>
-        <textarea name="prog1Output" id="prog1Output" cols="30" rows="10"></textarea>
+        <button type="button" id="prog1Button">Generate Email Chart Code</button>
+        <textarea name="prog1Output" id="prog1Output" readonly></textarea>
     </div>
     <!-- end porgress bar chart -->
 
@@ -3077,9 +3077,9 @@
         <h1>Instructions</h1>
         <ol>
             <li>Select a chart type from the drop down menu</li>
-            <li>Customize the bar colors, widths, and label text using the customization tools</li>
+            <li>Customize the bar colors, widths, and label text using the input tools</li>
             <li>When you are finished, scroll to the bottom and click on the button to generate your HTML chart output code</li>
-            <li>Place into your email template, make adjustments as needed, and <em>test</em></li>
+            <li>Copy & paste into your email template, make adjustments as needed, and make sure to <em>test</em></li>
         </ol>
         <hr />
         <h1>Tips/Advice</h1>
