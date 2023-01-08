@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Email Bar Charts Generator</title>
+    <title>Email Chart Builder</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="bdjang.github.io" />
@@ -20,7 +20,7 @@
     /* SITE STYLES */
     .header, #info, textarea { font-family: Courier, sans-serif;  }
     .header { margin: 0 20px; }
-    #info { margin: 0 auto; width: 700px; }
+    #info { margin: 0 auto 20px; width: 700px; }
     #chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
     .scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
     .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
@@ -1106,7 +1106,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend1Color1" style="color: #ffd700; font-family: Courier; font-size: 18px;">&#9632;</span> <span id="legend1Text1">Gold</span> <span id="legend1Color2" style="color: #00a8ff; font-family: Courier; font-size: 18px;">&#9632;</span> <span id="legend1Text2">Blue</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend1Color1" style="color: #ffd700; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend1Text1">Gold</span> | <span id="legend1Color2" style="color: #00a8ff; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend1Text2">Blue</span></div>
                 </td>
             </tr>
         </table>
@@ -1480,7 +1480,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend2Color1" style="color: #ff3b44; font-family: Courier; font-size: 18px;">&#9632;</span> <span id="legend2Text1">Red</span> <span id="legend2Color2" style="color: #f1f1f1; font-family: Courier; font-size: 18px;">&#9632;</span> <span id="legend2Text2">Grey</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend2Color1" style="color: #ff3b44; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend2Text1">Red</span> | <span id="legend2Color2" style="color: #f1f1f1; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend2Text2">Grey</span></div>
                 </td>
             </tr>
         </table>
@@ -1854,7 +1854,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend3Color1" style="color: #fa4747; font-family: Courier; font-size: 18px;">&#9632;</span> <span id="legend3Text1">Red</span> <span id="legend3Color2" style="color: #ff785f; font-family: Courier; font-size: 18px;">&#9632;</span> <span id="legend3Text2">Light Red</span> <span id="legend3Color3" style="color: #ffb65d; font-family: Courier; font-size: 18px;">&#9632;</span> <span id="legend3Text3">Orange</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend3Color1" style="color: #fa4747; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend3Text1">Red</span> | <span id="legend3Color2" style="color: #ff785f; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend3Text2">Light Red</span> | <span id="legend3Color3" style="color: #ffb65d; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend3Text3">Orange</span></div>
                 </td>
             </tr>
         </table>
@@ -2616,7 +2616,7 @@
 
                     </table>
 
-                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend4Color1" style="color: #0058e6; font-family: Courier; font-size: 18px;">&#9632;</span> <span id="legend4Text1">Blue</span> <span id="legend4Color2" style="color: #94bdff; font-family: Courier; font-size: 18px;">&#9632;</span> <span id="legend4Text2">Light Blue</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend4Color1" style="color: #0058e6; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend4Text1">Blue</span> | <span id="legend4Color2" style="color: #94bdff; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend4Text2">Light Blue</span></div>
 
                 </td>
             </tr>
@@ -3078,14 +3078,13 @@
         <ol>
             <li>Select a chart type from the drop down menu</li>
             <li>Customize the bar colors, widths, and label text using the input tools</li>
-            <li>When you are finished, scroll to the bottom and click on the button to generate your HTML chart output code</li>
-            <li>Copy & paste into your email template, make adjustments as needed, and make sure to <em>test</em></li>
+            <li>When you are finished, scroll to the bottom and click on the button to generate your HTML output code</li>
+            <li>Copy & paste the chart code into your email template, make adjustments as needed, and test</li>
         </ol>
         <hr />
         <h1>Tips/Advice</h1>
         <ul>
-            <li><strong>For Label Text</strong>: to make these bar charts fully mobile responsive, add this snippet of code to your email template:<br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 9px !important;} }</code><br />This will reduce the label text when the bar charts are viewed in smaller screen sizes</li>
-            <li>Click on the top 🌕 emoji to preview <span style="background-color: #0f0f0f; color: #ffffff;">dark mode</span></li>
+            <li>Use <code>media queries</code> to reduce and adjust the size of the label text for smaller screens. The following snippet of code can be applied to all charts generated with this tool:<br /><br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 9px !important;} }</code></li>
         </ul>
         <hr />
         <h1>Contact</h1>
