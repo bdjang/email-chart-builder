@@ -35,16 +35,21 @@
     .scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
     .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
     .dataCheckboxes label { display: inline-block; width: 150px; }
+    .dataCheckboxes label[for="horiz3Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III 'Add bar dividers' */
+    .dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart I 'Add bar dividers' */
     .dataCheckboxes small { display: block; margin: 10px 0; }
     .horiz1Controls label, .horiz2Controls label, .horiz3Controls label { display: inline-block; width: 110px; }
     .horiz1Controls input, .horiz2Controls input, .horiz3Controls input { margin: 10px 60px 0 0; width: 90px; }
     .chartLegend label[for*="legend"] { width: 110px; } /* Targets all labels that start with "legend" */
     .chartLegend input { margin: 0 60px 4px 0; width: 60px; }
+    .chartLegend #combo1Div { width: auto; } /* Combo Chart I checkbox */
+    .chartLegend #rowsData7 { margin: 0 20px 4px 0; width: 60px; } /* Combo Chart I 'Select # of Data Rows' */
     .stacked1Controls label:first-of-type, .stacked2Controls label:first-of-type, .stacked3Controls label:first-of-type, .combo1Controls label:first-of-type { width: 75px; } /* Targets Row # Data Label */
     .stacked1Controls input:first-of-type, .stacked2Controls input:first-of-type, .stacked3Controls input:first-of-type, .combo1Controls input:first-of-type { width: 80px; } /* Targets Row # Data Input */
-    .prog1Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
-    .stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .combo1Controls label, .prog1Controls label { display: inline-block; margin: 10px 10px 0 0; }
-    .stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .combo1Controls input, .prog1Controls input { margin: 0 20px 4px 0; width: 60px; }
+    .prog1Controls input:first-of-type, .prog2Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
+    .stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .combo1Controls label, .prog1Controls label, .prog2Controls label { display: inline-block; margin: 10px 10px 0 0; }
+    .prog1Controls label[for*="prog1Size"], .prog2Controls label[for*="prog2Size"] { margin: 10px 20px 0 0; } /* Targets 'Progress Bar Size' right spacing */
+    .stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .combo1Controls input, .prog1Controls input, .prog2Controls input { margin: 0 20px 4px 0; width: 60px; }
     .splitControls input, .dataCheckboxes label { margin: 10px 10px 0 0; }
     .splitControls label { display: inline-block; width: 130px; }
     .splitControls input { width: 46px; }
@@ -78,7 +83,7 @@
             <option value="st3Chart">Stacked Chart III</option>
             <option value="npChart">Negative|Positive Chart</option>
             <option value="comChart">Combo Chart</option>
-            <option value="progChart">Progress Bar Chart</option>
+            <option value="prog1Chart">Progress Bar Chart I</option>
             <option value="vertChart">Vertical Chart*</option>
             <option value="ampChart">AMP Email Chart*</option>
             <option value="info">More Info</option>
@@ -665,7 +670,7 @@
 
                             <!-- DATA BAR #1 -->
                             <tr class="horiz3Bars">
-                                <td align="left" style="padding: 0;">
+                                <td align="left" style="padding: 0 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #1</td>
@@ -679,7 +684,7 @@
 
                             <!-- DATA BAR #2 -->
                             <tr class="horiz3Bars">
-                                <td align="left" style="padding: 10px 0 0 0;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #2</td>
@@ -693,7 +698,7 @@
 
                             <!-- DATA BAR #3 -->
                             <tr class="horiz3Bars">
-                                <td align="left" style="padding: 10px 0 0 0;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #3</td>
@@ -707,7 +712,7 @@
 
                             <!-- DATA BAR #4 -->
                             <tr class="horiz3Bars">
-                                <td align="left" style="padding: 10px 0 0 0;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #4</td>
@@ -721,7 +726,7 @@
 
                             <!-- DATA BAR #5 -->
                             <tr class="horiz3Bars">
-                                <td align="left" style="padding: 10px 0 0 0;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #5</td>
@@ -735,7 +740,7 @@
 
                             <!-- DATA BAR #6 -->
                             <tr class="horiz3Bars" style="display: none;">
-                                <td align="left" style="padding: 10px 0 0 0;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row6a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #6</td>
@@ -749,7 +754,7 @@
 
                             <!-- DATA BAR #7 -->
                             <tr class="horiz3Bars" style="display: none;">
-                                <td align="left" style="padding: 10px 0 0 0;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row7a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #7</td>
@@ -763,7 +768,7 @@
 
                             <!-- DATA BAR #8 -->
                             <tr class="horiz3Bars" style="display: none;">
-                                <td align="left" style="padding: 10px 0 0 0;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row8a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #8</td>
@@ -777,7 +782,7 @@
 
                             <!-- DATA BAR #9 -->
                             <tr class="horiz3Bars" style="display: none;">
-                                <td align="left" style="padding: 10px 0 0 0;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row9a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #9</td>
@@ -791,7 +796,7 @@
 
                             <!-- DATA BAR #10 -->
                             <tr class="horiz3Bars" style="display: none;">
-                                <td align="left" style="padding: 10px 0 0 0;">
+                                <td align="left" style="padding: 5px 0 0 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="horiz3Row10a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #10</td>
@@ -812,6 +817,8 @@
                 <legend>Chart Customization</legend>
                 <label for="rowsData3">Select # of Data Rows</label>
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData3" id="rowsData3">
+                <label for="horiz3Div">Add Bar Dividers</label>
+                <input type="checkbox" name="horiz3Div" id="horiz3Div">
                 <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
             </fieldset>
             <fieldset class="horiz3Controls styleControls">
@@ -2306,7 +2313,7 @@
                 <legend>Chart Customization</legend>
                 <label for="rowsData">Select # of Data Rows</label>
                 <input type="number" size="6" value="6" max="10" min="1" name="rowsData" id="rowsData">
-                <small>📌 Click on <span style="font-weight: 600;">"Negative Label"</span> to move the data label text out of the data bar. Click again to delete the outer label text.</small><small>Click on <span style="font-weight: 600;">"Positive Label"</span> to move the data label text into the data bar. Click again to delete the inner label text.</small>
+                <small>📌 Click on <span style="font-weight: 600;">"Negative Label"</span> or <span style="font-weight: 600;">"Positive Label"</span> to move the data label text. Click again to delete the label text.</small>
             </fieldset>
             <fieldset class="splitControls styleControls">
                 <legend>Row #1</legend>
@@ -2484,7 +2491,7 @@
 
                             <!-- DATA BAR #1 -->
                             <tr class="combo1Bars">
-                                <td align="left" style="padding: 0;">
+                                <td align="left" style="padding: 0 0 10px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="combo1Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #1</td>
@@ -2505,7 +2512,7 @@
 
                             <!-- DATA BAR #2 -->
                             <tr class="combo1Bars">
-                                <td align="left" style="padding: 20px 0 0 0;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="combo1Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #2</td>
@@ -2526,7 +2533,7 @@
 
                             <!-- DATA BAR #3 -->
                             <tr class="combo1Bars">
-                                <td align="left" style="padding: 20px 0 0 0;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="combo1Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #3</td>
@@ -2547,7 +2554,7 @@
 
                             <!-- DATA BAR #4 -->
                             <tr class="combo1Bars">
-                                <td align="left" style="padding: 20px 0 0 0;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="combo1Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #4</td>
@@ -2568,7 +2575,7 @@
 
                             <!-- DATA BAR #5 -->
                             <tr class="combo1Bars" style="display: none;">
-                                <td align="left" style="padding: 20px 0 0 0;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="combo1Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #5</td>
@@ -2589,7 +2596,7 @@
 
                             <!-- DATA BAR #6 -->
                             <tr class="combo1Bars" style="display: none;">
-                                <td align="left" style="padding: 20px 0 0 0;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
                                             <td id="combo1Row6a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #6</td>
@@ -2620,6 +2627,8 @@
                 <legend>Chart Customization</legend>
                 <label for="rowsData7">Select # of Data Rows</label>
                 <input type="number" size="6" value="4" max="6" min="1" name="rowsData7" id="rowsData7">
+                <label for="combo1Div">Add Bar Dividers</label>
+                <input type="checkbox" name="combo1Div" id="combo1Div">
                 <br />
                 <label for="legend4Color1x">Legend Color #1</label>
                 <input type="text" size="6" value="#0058e6" name="legend4Color1x" id="legend4Color1x">
@@ -2751,9 +2760,9 @@
     </div>
     <!-- end combo bar chart -->
 
-    <!-- PROGRESS BAR CHART -->
-    <div class="charts" id="progChart" style="display: none;">
-        <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Progress Bar Chart</h1></div>
+    <!-- PROGRESS BAR CHART I -->
+    <div class="charts" id="prog1Chart" style="display: none;">
+        <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Progress Bar Chart I</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
@@ -2924,7 +2933,7 @@
         <button type="button" id="prog1Button">Generate Email Chart Code</button>
         <textarea name="prog1Output" id="prog1Output" readonly></textarea>
     </div>
-    <!-- end porgress bar chart -->
+    <!-- end porgress bar chart i -->
 
     <!-- VERTICAL BAR CHART -->
     <!-- consider removing the top label - gets really complicated in email clients and expands the data bar width. better just to have the vertical bar and the x-axis label. -->
@@ -3078,7 +3087,7 @@
         <hr />
         <h1>Tips/Advice</h1>
         <ul>
-            <li>Use <code>media queries</code> to reduce and adjust the size of the label text for smaller screens. The following snippet of code can be applied to all charts generated with this tool:<br /><br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 9px !important;} }</code></li>
+            <li>Use <code>media queries</code> to reduce and adjust the size of the label text for smaller screens. The following snippet of code can be applied to all generated charts:<br /><br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 9px !important;} }</code></li>
         </ul>
         <hr />
         <h1>Contact</h1>
