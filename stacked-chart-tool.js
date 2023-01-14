@@ -1948,3 +1948,765 @@ stacked3Button.addEventListener("click", () => {
 stacked3Output.addEventListener("click", () => {
     stacked3Output.select();
 });
+
+
+// Stacked Chart IV Row Selection
+const stacked4Bars = document.getElementsByClassName("stacked4Bars");
+const stacked4Controls = document.getElementsByClassName("stacked4Controls");
+const rowsData10 = document.getElementById("rowsData10");
+rowsData10.addEventListener("change", () => {
+    for (var i = 0; i < stacked4Controls.length; i++) {
+        stacked4Controls[i].style.display = "none";
+        stacked4Bars[i].style.display = "none";
+        for (var x = 0; x < rowsData10.value; x++) {
+            stacked4Controls[x].style.display = "block";
+            stacked4Bars[x].style.display = "block";
+        }
+    }
+});
+
+// Stacked Chart IV Text/Color Legend
+const legend5Text1 = document.getElementById("legend5Text1");
+const legend5Text1x = document.getElementById("legend5Text1x");
+legend5Text1x.oninput = function() {
+    legend5Text1.innerHTML = legend5Text1x.value;
+};
+const legend5Text2 = document.getElementById("legend5Text2");
+const legend5Text2x = document.getElementById("legend5Text2x");
+legend5Text2x.oninput = function() {
+    legend5Text2.innerHTML = legend5Text2x.value;
+};
+const legend5Text3 = document.getElementById("legend5Text3");
+const legend5Text3x = document.getElementById("legend5Text3x");
+legend5Text3x.oninput = function() {
+    legend5Text3.innerHTML = legend5Text3x.value;
+};
+const legend5Color1 = document.getElementById("legend5Color1");
+const legend5Color1x = document.getElementById("legend5Color1x");
+legend5Color1x.oninput = function() {
+    legend5Color1.style.color = legend5Color1x.value;
+};
+const legend5Color2 = document.getElementById("legend5Color2");
+const legend5Color2x = document.getElementById("legend5Color2x");
+legend5Color2x.oninput = function() {
+    legend5Color2.style.color = legend5Color2x.value;
+};
+const legend5Color3 = document.getElementById("legend5Color3");
+const legend5Color3x = document.getElementById("legend5Color3x");
+legend5Color3x.oninput = function() {
+    legend5Color3.style.color = legend5Color3x.value;
+};
+
+// Stacked Chart IV Row Customization Logic
+const stacked4Row1a = document.getElementById("stacked4Row1a");
+const stacked4Row1b = document.getElementById("stacked4Row1b");
+const stacked4Row1c = document.getElementById("stacked4Row1c");
+const stacked4Row1d = document.getElementById("stacked4Row1d");
+const stacked4Row2a = document.getElementById("stacked4Row2a");
+const stacked4Row2b = document.getElementById("stacked4Row2b");
+const stacked4Row2c = document.getElementById("stacked4Row2c");
+const stacked4Row2d = document.getElementById("stacked4Row2d");
+const stacked4Row3a = document.getElementById("stacked4Row3a");
+const stacked4Row3b = document.getElementById("stacked4Row3b");
+const stacked4Row3c = document.getElementById("stacked4Row3c");
+const stacked4Row3d = document.getElementById("stacked4Row3d");
+const stacked4Row4a = document.getElementById("stacked4Row4a");
+const stacked4Row4b = document.getElementById("stacked4Row4b");
+const stacked4Row4c = document.getElementById("stacked4Row4c");
+const stacked4Row4d = document.getElementById("stacked4Row4d");
+const stacked4Row5a = document.getElementById("stacked4Row5a");
+const stacked4Row5b = document.getElementById("stacked4Row5b");
+const stacked4Row5c = document.getElementById("stacked4Row5c");
+const stacked4Row5d = document.getElementById("stacked4Row5d");
+const stacked4Row6a = document.getElementById("stacked4Row6a");
+const stacked4Row6b = document.getElementById("stacked4Row6b");
+const stacked4Row6c = document.getElementById("stacked4Row6c");
+const stacked4Row6d = document.getElementById("stacked4Row6d");
+const stacked4Row7a = document.getElementById("stacked4Row7a");
+const stacked4Row7b = document.getElementById("stacked4Row7b");
+const stacked4Row7c = document.getElementById("stacked4Row7c");
+const stacked4Row7d = document.getElementById("stacked4Row7d");
+const stacked4Row8a = document.getElementById("stacked4Row8a");
+const stacked4Row8b = document.getElementById("stacked4Row8b");
+const stacked4Row8c = document.getElementById("stacked4Row8c");
+const stacked4Row8d = document.getElementById("stacked4Row8d");
+const stacked4Row9a = document.getElementById("stacked4Row9a");
+const stacked4Row9b = document.getElementById("stacked4Row9b");
+const stacked4Row9c = document.getElementById("stacked4Row9c");
+const stacked4Row9d = document.getElementById("stacked4Row9d");
+const stacked4Row10a = document.getElementById("stacked4Row10a");
+const stacked4Row10b = document.getElementById("stacked4Row10b");
+const stacked4Row10c = document.getElementById("stacked4Row10c");
+const stacked4Row10d = document.getElementById("stacked4Row10d");
+
+// Stacked Chart IV Row 1 Customization Logic
+const stacked4Text1 = document.getElementById("stacked4Text1"); // Data Label
+stacked4Text1.oninput = function() {
+    stacked4Row1a.innerHTML = stacked4Text1.value;
+};
+const stacked4Size1a = document.getElementById("stacked4Size1a");
+stacked4Size1a.oninput = function() {
+    stacked4Row1b.style.width = ((Math.abs(stacked4Size1a.value)) * .75) + "%";
+    stacked4Size1a.max = Math.abs((100 - stacked4Size1b.value - stacked4Size1c.value));
+    stacked4Size1b.max = Math.abs((100 - stacked4Size1a.value - stacked4Size1c.value));
+    stacked4Size1c.max = Math.abs((100 - stacked4Size1a.value - stacked4Size1b.value));
+};
+const stacked4Text1a = document.getElementById("stacked4Text1a"); // End Data Label #1
+stacked4Text1a.oninput = function() {
+    if (stacked4Text1a.value == "") {
+        stacked4Row1b.innerHTML = stacked4Text1a.value;
+    } else if (stacked4Text1a.value) {
+        stacked4Row1b.innerHTML = stacked4Text1a.value + "&nbsp;";
+    }
+};
+const stacked4Color1a = document.getElementById("stacked4Color1a");
+stacked4Color1a.oninput = function() {
+    stacked4Row1b.style.backgroundColor = stacked4Color1a.value;
+};
+const stacked4Size1b = document.getElementById("stacked4Size1b");
+stacked4Size1b.oninput = function() {
+    stacked4Row1c.style.width = ((Math.abs(stacked4Size1b.value)) * .75) + "%";
+    stacked4Size1a.max = Math.abs((100 - stacked4Size1b.value - stacked4Size1c.value));
+    stacked4Size1b.max = Math.abs((100 - stacked4Size1a.value - stacked4Size1c.value));
+    stacked4Size1c.max = Math.abs((100 - stacked4Size1a.value - stacked4Size1b.value));
+};
+const stacked4Text1b = document.getElementById("stacked4Text1b"); // End Data Label #2
+stacked4Text1b.oninput = function() {
+    if (stacked4Text1b.value == "") {
+        stacked4Row1c.innerHTML = stacked4Text1b.value;
+    } else if (stacked4Text1b.value) {
+        stacked4Row1c.innerHTML = stacked4Text1b.value + "&nbsp;";
+    }
+};
+const stacked4Color1b = document.getElementById("stacked4Color1b");
+stacked4Color1b.oninput = function() {
+    stacked4Row1c.style.backgroundColor = stacked4Color1b.value;
+};
+const stacked4Size1c = document.getElementById("stacked4Size1c");
+stacked4Size1c.oninput = function() {
+    stacked4Row1d.style.width = ((Math.abs(stacked4Size1c.value)) * .75) + "%";
+    stacked4Size1a.max = Math.abs((100 - stacked4Size1b.value - stacked4Size1c.value));
+    stacked4Size1b.max = Math.abs((100 - stacked4Size1a.value - stacked4Size1c.value));
+    stacked4Size1c.max = Math.abs((100 - stacked4Size1a.value - stacked4Size1b.value));
+};
+const stacked4Text1c = document.getElementById("stacked4Text1c");
+stacked4Text1c.oninput = function() {
+    if (stacked4Text1c.value == "") {
+        stacked4Row1d.innerHTML = stacked4Text1c.value;
+    } else if (stacked4Text1c.value) {
+        stacked4Row1d.innerHTML = stacked4Text1c.value + "&nbsp;";
+    }
+};
+const stacked4Color1c = document.getElementById("stacked4Color1c");
+stacked4Color1c.oninput = function() {
+    stacked4Row1d.style.backgroundColor = stacked4Color1c.value;
+};
+
+// Stacked Chart IV Row 2 Customization Logic
+const stacked4Text2 = document.getElementById("stacked4Text2");
+stacked4Text2.oninput = function() {
+    stacked4Row2a.innerHTML = stacked4Text2.value;
+};
+const stacked4Size2a = document.getElementById("stacked4Size2a");
+stacked4Size2a.oninput = function() {
+    stacked4Row2b.style.width = ((Math.abs(stacked4Size2a.value)) * .75) + "%";
+    stacked4Size2a.max = Math.abs((100 - stacked4Size2b.value - stacked4Size2c.value));
+    stacked4Size2b.max = Math.abs((100 - stacked4Size2a.value - stacked4Size2c.value));
+    stacked4Size2c.max = Math.abs((100 - stacked4Size2a.value - stacked4Size2b.value));
+};
+const stacked4Text2a = document.getElementById("stacked4Text2a");
+stacked4Text2a.oninput = function() {
+    if (stacked4Text2a.value == "") {
+        stacked4Row2b.innerHTML = stacked4Text2a.value;
+    } else if (stacked4Text2a.value) {
+        stacked4Row2b.innerHTML = stacked4Text2a.value + "&nbsp;";
+    }
+};
+const stacked4Color2a = document.getElementById("stacked4Color2a");
+stacked4Color2a.oninput = function() {
+    stacked4Row2b.style.backgroundColor = stacked4Color2a.value;
+};
+const stacked4Size2b = document.getElementById("stacked4Size2b");
+stacked4Size2b.oninput = function() {
+    stacked4Row2c.style.width = ((Math.abs(stacked4Size2b.value)) * .75) + "%";
+    stacked4Size2a.max = Math.abs((100 - stacked4Size2b.value - stacked4Size2c.value));
+    stacked4Size2b.max = Math.abs((100 - stacked4Size2a.value - stacked4Size2c.value));
+    stacked4Size2c.max = Math.abs((100 - stacked4Size2a.value - stacked4Size2b.value));
+};
+const stacked4Text2b = document.getElementById("stacked4Text2b");
+stacked4Text2b.oninput = function() {
+    if (stacked4Text2b.value == "") {
+        stacked4Row2c.innerHTML = stacked4Text2b.value;
+    } else if (stacked4Text2b.value) {
+        stacked4Row2c.innerHTML = stacked4Text2b.value + "&nbsp;";
+    }
+};
+const stacked4Color2b = document.getElementById("stacked4Color2b");
+stacked4Color2b.oninput = function() {
+    stacked4Row2c.style.backgroundColor = stacked4Color2b.value;
+};
+const stacked4Size2c = document.getElementById("stacked4Size2c");
+stacked4Size2c.oninput = function() {
+    stacked4Row2d.style.width = ((Math.abs(stacked4Size2c.value)) * .75) + "%";
+    stacked4Size2a.max = Math.abs((100 - stacked4Size2b.value - stacked4Size2c.value));
+    stacked4Size2b.max = Math.abs((100 - stacked4Size2a.value - stacked4Size2c.value));
+    stacked4Size2c.max = Math.abs((100 - stacked4Size2a.value - stacked4Size2b.value));
+};
+const stacked4Text2c = document.getElementById("stacked4Text2c");
+stacked4Text2c.oninput = function() {
+    if (stacked4Text2c.value == "") {
+        stacked4Row2d.innerHTML = stacked4Text2c.value;
+    } else if (stacked4Text2c.value) {
+        stacked4Row2d.innerHTML = stacked4Text2c.value + "&nbsp;";
+    }
+};
+const stacked4Color2c = document.getElementById("stacked4Color2c");
+stacked4Color2c.oninput = function() {
+    stacked4Row2d.style.backgroundColor = stacked4Color2c.value;
+};
+
+// Stacked Chart IV Row 3 Customization Logic
+const stacked4Text3 = document.getElementById("stacked4Text3");
+stacked4Text3.oninput = function() {
+    stacked4Row3a.innerHTML = stacked4Text3.value;
+};
+const stacked4Size3a = document.getElementById("stacked4Size3a");
+stacked4Size3a.oninput = function() {
+    stacked4Row3b.style.width = ((Math.abs(stacked4Size3a.value)) * .75) + "%";
+    stacked4Size3a.max = Math.abs((100 - stacked4Size3b.value - stacked4Size3c.value));
+    stacked4Size3b.max = Math.abs((100 - stacked4Size3a.value - stacked4Size3c.value));
+    stacked4Size3c.max = Math.abs((100 - stacked4Size3a.value - stacked4Size3b.value));
+};
+const stacked4Text3a = document.getElementById("stacked4Text3a");
+stacked4Text3a.oninput = function() {
+    if (stacked4Text3a.value == "") {
+        stacked4Row3b.innerHTML = stacked4Text3a.value;
+    } else if (stacked4Text3a.value) {
+        stacked4Row3b.innerHTML = stacked4Text3a.value + "&nbsp;";
+    }
+};
+const stacked4Color3a = document.getElementById("stacked4Color3a");
+stacked4Color3a.oninput = function() {
+    stacked4Row3b.style.backgroundColor = stacked4Color3a.value;
+};
+const stacked4Size3b = document.getElementById("stacked4Size3b");
+stacked4Size3b.oninput = function() {
+    stacked4Row3c.style.width = ((Math.abs(stacked4Size3b.value)) * .75) + "%";
+    stacked4Size3a.max = Math.abs((100 - stacked4Size3b.value - stacked4Size3c.value));
+    stacked4Size3b.max = Math.abs((100 - stacked4Size3a.value - stacked4Size3c.value));
+    stacked4Size3c.max = Math.abs((100 - stacked4Size3a.value - stacked4Size3b.value));
+};
+const stacked4Text3b = document.getElementById("stacked4Text3b");
+stacked4Text3b.oninput = function() {
+    if (stacked4Text3b.value == "") {
+        stacked4Row3c.innerHTML = stacked4Text3b.value;
+    } else if (stacked4Text3b.value) {
+        stacked4Row3c.innerHTML = stacked4Text3b.value + "&nbsp;";
+    }
+};
+const stacked4Color3b = document.getElementById("stacked4Color3b");
+stacked4Color3b.oninput = function() {
+    stacked4Row3c.style.backgroundColor = stacked4Color3b.value;
+};
+const stacked4Size3c = document.getElementById("stacked4Size3c");
+stacked4Size3c.oninput = function() {
+    stacked4Row3d.style.width = ((Math.abs(stacked4Size3c.value)) * .75) + "%";
+    stacked4Size3a.max = Math.abs((100 - stacked4Size3b.value - stacked4Size3c.value));
+    stacked4Size3b.max = Math.abs((100 - stacked4Size3a.value - stacked4Size3c.value));
+    stacked4Size3c.max = Math.abs((100 - stacked4Size3a.value - stacked4Size3b.value));
+};
+const stacked4Text3c = document.getElementById("stacked4Text3c");
+stacked4Text3c.oninput = function() {
+    if (stacked4Text3c.value == "") {
+        stacked4Row3d.innerHTML = stacked4Text3c.value;
+    } else if (stacked4Text3c.value) {
+        stacked4Row3d.innerHTML = stacked4Text3c.value + "&nbsp;";
+    }
+};
+const stacked4Color3c = document.getElementById("stacked4Color3c");
+stacked4Color3c.oninput = function() {
+    stacked4Row3d.style.backgroundColor = stacked4Color3c.value;
+};
+
+// Stacked Chart IV Row 4 Customization Logic
+const stacked4Text4 = document.getElementById("stacked4Text4");
+stacked4Text4.oninput = function() {
+    stacked4Row4a.innerHTML = stacked4Text4.value;
+};
+const stacked4Size4a = document.getElementById("stacked4Size4a");
+stacked4Size4a.oninput = function() {
+    stacked4Row4b.style.width = ((Math.abs(stacked4Size4a.value)) * .75) + "%";
+    stacked4Size4a.max = Math.abs((100 - stacked4Size4b.value - stacked4Size4c.value));
+    stacked4Size4b.max = Math.abs((100 - stacked4Size4a.value - stacked4Size4c.value));
+    stacked4Size4c.max = Math.abs((100 - stacked4Size4a.value - stacked4Size4b.value));
+};
+const stacked4Text4a = document.getElementById("stacked4Text4a");
+stacked4Text4a.oninput = function() {
+    if (stacked4Text4a.value == "") {
+        stacked4Row4b.innerHTML = stacked4Text4a.value;
+    } else if (stacked4Text4a.value) {
+        stacked4Row4b.innerHTML = stacked4Text4a.value + "&nbsp;";
+    }
+};
+const stacked4Color4a = document.getElementById("stacked4Color4a");
+stacked4Color4a.oninput = function() {
+    stacked4Row4b.style.backgroundColor = stacked4Color4a.value;
+};
+const stacked4Size4b = document.getElementById("stacked4Size4b");
+stacked4Size4b.oninput = function() {
+    stacked4Row4c.style.width = ((Math.abs(stacked4Size4b.value)) * .75) + "%";
+    stacked4Size4a.max = Math.abs((100 - stacked4Size4b.value - stacked4Size4c.value));
+    stacked4Size4b.max = Math.abs((100 - stacked4Size4a.value - stacked4Size4c.value));
+    stacked4Size4c.max = Math.abs((100 - stacked4Size4a.value - stacked4Size4b.value));
+};
+const stacked4Text4b = document.getElementById("stacked4Text4b");
+stacked4Text4b.oninput = function() {
+    if (stacked4Text4b.value == "") {
+        stacked4Row4c.innerHTML = stacked4Text4b.value;
+    } else if (stacked4Text4b.value) {
+        stacked4Row4c.innerHTML = stacked4Text4b.value + "&nbsp;";
+    }
+};
+const stacked4Color4b = document.getElementById("stacked4Color4b");
+stacked4Color4b.oninput = function() {
+    stacked4Row4c.style.backgroundColor = stacked4Color4b.value;
+};
+const stacked4Size4c = document.getElementById("stacked4Size4c");
+stacked4Size4c.oninput = function() {
+    stacked4Row4d.style.width = ((Math.abs(stacked4Size4c.value)) * .75) + "%";
+    stacked4Size4a.max = Math.abs((100 - stacked4Size4b.value - stacked4Size4c.value));
+    stacked4Size4b.max = Math.abs((100 - stacked4Size4a.value - stacked4Size4c.value));
+    stacked4Size4c.max = Math.abs((100 - stacked4Size4a.value - stacked4Size4b.value));
+};
+const stacked4Text4c = document.getElementById("stacked4Text4c");
+stacked4Text4c.oninput = function() {
+    if (stacked4Text4c.value == "") {
+        stacked4Row4d.innerHTML = stacked4Text4c.value;
+    } else if (stacked4Text4c.value) {
+        stacked4Row4d.innerHTML = stacked4Text4c.value + "&nbsp;";
+    }
+};
+const stacked4Color4c = document.getElementById("stacked4Color4c");
+stacked4Color4c.oninput = function() {
+    stacked4Row4d.style.backgroundColor = stacked4Color4c.value;
+};
+
+// Stacked Chart IV Row 5 Customization Logic
+const stacked4Text5 = document.getElementById("stacked4Text5");
+stacked4Text5.oninput = function() {
+    stacked4Row5a.innerHTML = stacked4Text5.value;
+};
+const stacked4Size5a = document.getElementById("stacked4Size5a");
+stacked4Size5a.oninput = function() {
+    stacked4Row5b.style.width = ((Math.abs(stacked4Size5a.value)) * .75) + "%";
+    stacked4Size5a.max = Math.abs((100 - stacked4Size5b.value - stacked4Size5c.value));
+    stacked4Size5b.max = Math.abs((100 - stacked4Size5a.value - stacked4Size5c.value));
+    stacked4Size5c.max = Math.abs((100 - stacked4Size5a.value - stacked4Size5b.value));
+};
+const stacked4Text5a = document.getElementById("stacked4Text5a");
+stacked4Text5a.oninput = function() {
+    if (stacked4Text5a.value == "") {
+        stacked4Row5b.innerHTML = stacked4Text5a.value;
+    } else if (stacked4Text5a.value) {
+        stacked4Row5b.innerHTML = stacked4Text5a.value + "&nbsp;";
+    }
+};
+const stacked4Color5a = document.getElementById("stacked4Color5a");
+stacked4Color5a.oninput = function() {
+    stacked4Row5b.style.backgroundColor = stacked4Color5a.value;
+};
+const stacked4Size5b = document.getElementById("stacked4Size5b");
+stacked4Size5b.oninput = function() {
+    stacked4Row5c.style.width = ((Math.abs(stacked4Size5b.value)) * .75) + "%";
+    stacked4Size5a.max = Math.abs((100 - stacked4Size5b.value - stacked4Size5c.value));
+    stacked4Size5b.max = Math.abs((100 - stacked4Size5a.value - stacked4Size5c.value));
+    stacked4Size5c.max = Math.abs((100 - stacked4Size5a.value - stacked4Size5b.value));
+};
+const stacked4Text5b = document.getElementById("stacked4Text5b");
+stacked4Text5b.oninput = function() {
+    if (stacked4Text5b.value == "") {
+        stacked4Row5c.innerHTML = stacked4Text5b.value;
+    } else if (stacked4Text5b.value) {
+        stacked4Row5c.innerHTML = stacked4Text5b.value + "&nbsp;";
+    }
+};
+const stacked4Color5b = document.getElementById("stacked4Color5b");
+stacked4Color5b.oninput = function() {
+    stacked4Row5c.style.backgroundColor = stacked4Color5b.value;
+};
+const stacked4Size5c = document.getElementById("stacked4Size5c");
+stacked4Size5c.oninput = function() {
+    stacked4Row5d.style.width = ((Math.abs(stacked4Size5c.value)) * .75) + "%";
+    stacked4Size5a.max = Math.abs((100 - stacked4Size5b.value - stacked4Size5c.value));
+    stacked4Size5b.max = Math.abs((100 - stacked4Size5a.value - stacked4Size5c.value));
+    stacked4Size5c.max = Math.abs((100 - stacked4Size5a.value - stacked4Size5b.value));
+};
+const stacked4Text5c = document.getElementById("stacked4Text5c");
+stacked4Text5c.oninput = function() {
+    if (stacked4Text5c.value == "") {
+        stacked4Row5d.innerHTML = stacked4Text5c.value;
+    } else if (stacked4Text5c.value) {
+        stacked4Row5d.innerHTML = stacked4Text5c.value + "&nbsp;";
+    }
+};
+const stacked4Color5c = document.getElementById("stacked4Color5c");
+stacked4Color5c.oninput = function() {
+    stacked4Row5d.style.backgroundColor = stacked4Color5c.value;
+};
+
+// Stacked Chart IV Row 6 Customization Logic
+const stacked4Text6 = document.getElementById("stacked4Text6");
+stacked4Text6.oninput = function() {
+    stacked4Row6a.innerHTML = stacked4Text6.value;
+};
+const stacked4Size6a = document.getElementById("stacked4Size6a");
+stacked4Size6a.oninput = function() {
+    stacked4Row6b.style.width = ((Math.abs(stacked4Size6a.value)) * .75) + "%";
+    stacked4Size6a.max = Math.abs((100 - stacked4Size6b.value - stacked4Size6c.value));
+    stacked4Size6b.max = Math.abs((100 - stacked4Size6a.value - stacked4Size6c.value));
+    stacked4Size6c.max = Math.abs((100 - stacked4Size6a.value - stacked4Size6b.value));
+};
+const stacked4Text6a = document.getElementById("stacked4Text6a");
+stacked4Text6a.oninput = function() {
+    if (stacked4Text6a.value == "") {
+        stacked4Row6b.innerHTML = stacked4Text6a.value;
+    } else if (stacked4Text6a.value) {
+        stacked4Row6b.innerHTML = stacked4Text6a.value + "&nbsp;";
+    }
+};
+const stacked4Color6a = document.getElementById("stacked4Color6a");
+stacked4Color6a.oninput = function() {
+    stacked4Row6b.style.backgroundColor = stacked4Color6a.value;
+};
+const stacked4Size6b = document.getElementById("stacked4Size6b");
+stacked4Size6b.oninput = function() {
+    stacked4Row6c.style.width = ((Math.abs(stacked4Size6b.value)) * .75) + "%";
+    stacked4Size6a.max = Math.abs((100 - stacked4Size6b.value - stacked4Size6c.value));
+    stacked4Size6b.max = Math.abs((100 - stacked4Size6a.value - stacked4Size6c.value));
+    stacked4Size6c.max = Math.abs((100 - stacked4Size6a.value - stacked4Size6b.value));
+};
+const stacked4Text6b = document.getElementById("stacked4Text6b");
+stacked4Text6b.oninput = function() {
+    if (stacked4Text6b.value == "") {
+        stacked4Row6c.innerHTML = stacked4Text6b.value;
+    } else if (stacked4Text6b.value) {
+        stacked4Row6c.innerHTML = stacked4Text6b.value + "&nbsp;";
+    }
+};
+const stacked4Color6b = document.getElementById("stacked4Color6b");
+stacked4Color6b.oninput = function() {
+    stacked4Row6c.style.backgroundColor = stacked4Color6b.value;
+};
+const stacked4Size6c = document.getElementById("stacked4Size6c");
+stacked4Size6c.oninput = function() {
+    stacked4Row6d.style.width = ((Math.abs(stacked4Size6c.value)) * .75) + "%";
+    stacked4Size6a.max = Math.abs((100 - stacked4Size6b.value - stacked4Size6c.value));
+    stacked4Size6b.max = Math.abs((100 - stacked4Size6a.value - stacked4Size6c.value));
+    stacked4Size6c.max = Math.abs((100 - stacked4Size6a.value - stacked4Size6b.value));
+};
+const stacked4Text6c = document.getElementById("stacked4Text6c");
+stacked4Text6c.oninput = function() {
+    if (stacked4Text6c.value == "") {
+        stacked4Row6d.innerHTML = stacked4Text6c.value;
+    } else if (stacked4Text6c.value) {
+        stacked4Row6d.innerHTML = stacked4Text6c.value + "&nbsp;";
+    }
+};
+const stacked4Color6c = document.getElementById("stacked4Color6c");
+stacked4Color6c.oninput = function() {
+    stacked4Row6d.style.backgroundColor = stacked4Color6c.value;
+};
+
+// Stacked Chart IV Row 7 Customization Logic
+const stacked4Text7 = document.getElementById("stacked4Text7");
+stacked4Text7.oninput = function() {
+    stacked4Row7a.innerHTML = stacked4Text7.value;
+};
+const stacked4Size7a = document.getElementById("stacked4Size7a");
+stacked4Size7a.oninput = function() {
+    stacked4Row7b.style.width = ((Math.abs(stacked4Size7a.value)) * .75) + "%";
+    stacked4Size7a.max = Math.abs((100 - stacked4Size7b.value - stacked4Size7c.value));
+    stacked4Size7b.max = Math.abs((100 - stacked4Size7a.value - stacked4Size7c.value));
+    stacked4Size7c.max = Math.abs((100 - stacked4Size7a.value - stacked4Size7b.value));
+};
+const stacked4Text7a = document.getElementById("stacked4Text7a");
+stacked4Text7a.oninput = function() {
+    if (stacked4Text7a.value == "") {
+        stacked4Row7b.innerHTML = stacked4Text7a.value;
+    } else if (stacked4Text7a.value) {
+        stacked4Row7b.innerHTML = stacked4Text7a.value + "&nbsp;";
+    }
+};
+const stacked4Color7a = document.getElementById("stacked4Color7a");
+stacked4Color7a.oninput = function() {
+    stacked4Row7b.style.backgroundColor = stacked4Color7a.value;
+};
+const stacked4Size7b = document.getElementById("stacked4Size7b");
+stacked4Size7b.oninput = function() {
+    stacked4Row7c.style.width = ((Math.abs(stacked4Size7b.value)) * .75) + "%";
+    stacked4Size7a.max = Math.abs((100 - stacked4Size7b.value - stacked4Size7c.value));
+    stacked4Size7b.max = Math.abs((100 - stacked4Size7a.value - stacked4Size7c.value));
+    stacked4Size7c.max = Math.abs((100 - stacked4Size7a.value - stacked4Size7b.value));
+};
+const stacked4Text7b = document.getElementById("stacked4Text7b");
+stacked4Text7b.oninput = function() {
+    if (stacked4Text7b.value == "") {
+        stacked4Row7c.innerHTML = stacked4Text7b.value;
+    } else if (stacked4Text7b.value) {
+        stacked4Row7c.innerHTML = stacked4Text7b.value + "&nbsp;";
+    }
+};
+const stacked4Color7b = document.getElementById("stacked4Color7b");
+stacked4Color7b.oninput = function() {
+    stacked4Row7c.style.backgroundColor = stacked4Color7b.value;
+};
+const stacked4Size7c = document.getElementById("stacked4Size7c");
+stacked4Size7c.oninput = function() {
+    stacked4Row7d.style.width = ((Math.abs(stacked4Size7c.value)) * .75) + "%";
+    stacked4Size7a.max = Math.abs((100 - stacked4Size7b.value - stacked4Size7c.value));
+    stacked4Size7b.max = Math.abs((100 - stacked4Size7a.value - stacked4Size7c.value));
+    stacked4Size7c.max = Math.abs((100 - stacked4Size7a.value - stacked4Size7b.value));
+};
+const stacked4Text7c = document.getElementById("stacked4Text7c");
+stacked4Text7c.oninput = function() {
+    if (stacked4Text7c.value == "") {
+        stacked4Row7d.innerHTML = stacked4Text7c.value;
+    } else if (stacked4Text7c.value) {
+        stacked4Row7d.innerHTML = stacked4Text7c.value + "&nbsp;";
+    }
+};
+const stacked4Color7c = document.getElementById("stacked4Color7c");
+stacked4Color7c.oninput = function() {
+    stacked4Row7d.style.backgroundColor = stacked4Color7c.value;
+};
+
+// Stacked Chart IV Row 8 Customization Logic
+const stacked4Text8 = document.getElementById("stacked4Text8");
+stacked4Text8.oninput = function() {
+    stacked4Row8a.innerHTML = stacked4Text8.value;
+};
+const stacked4Size8a = document.getElementById("stacked4Size8a");
+stacked4Size8a.oninput = function() {
+    stacked4Row8b.style.width = ((Math.abs(stacked4Size8a.value)) * .75) + "%";
+    stacked4Size8a.max = Math.abs((100 - stacked4Size8b.value - stacked4Size8c.value));
+    stacked4Size8b.max = Math.abs((100 - stacked4Size8a.value - stacked4Size8c.value));
+    stacked4Size8c.max = Math.abs((100 - stacked4Size8a.value - stacked4Size8b.value));
+};
+const stacked4Text8a = document.getElementById("stacked4Text8a");
+stacked4Text8a.oninput = function() {
+    if (stacked4Text8a.value == "") {
+        stacked4Row8b.innerHTML = stacked4Text8a.value;
+    } else if (stacked4Text8a.value) {
+        stacked4Row8b.innerHTML = stacked4Text8a.value + "&nbsp;";
+    }
+};
+const stacked4Color8a = document.getElementById("stacked4Color8a");
+stacked4Color8a.oninput = function() {
+    stacked4Row8b.style.backgroundColor = stacked4Color8a.value;
+};
+const stacked4Size8b = document.getElementById("stacked4Size8b");
+stacked4Size8b.oninput = function() {
+    stacked4Row8c.style.width = ((Math.abs(stacked4Size8b.value)) * .75) + "%";
+    stacked4Size8a.max = Math.abs((100 - stacked4Size8b.value - stacked4Size8c.value));
+    stacked4Size8b.max = Math.abs((100 - stacked4Size8a.value - stacked4Size8c.value));
+    stacked4Size8c.max = Math.abs((100 - stacked4Size8a.value - stacked4Size8b.value));
+};
+const stacked4Text8b = document.getElementById("stacked4Text8b");
+stacked4Text8b.oninput = function() {
+    if (stacked4Text8b.value == "") {
+        stacked4Row8c.innerHTML = stacked4Text8b.value;
+    } else if (stacked4Text8b.value) {
+        stacked4Row8c.innerHTML = stacked4Text8b.value + "&nbsp;";
+    }
+};
+const stacked4Color8b = document.getElementById("stacked4Color8b");
+stacked4Color8b.oninput = function() {
+    stacked4Row8c.style.backgroundColor = stacked4Color8b.value;
+};
+const stacked4Size8c = document.getElementById("stacked4Size8c");
+stacked4Size8c.oninput = function() {
+    stacked4Row8d.style.width = ((Math.abs(stacked4Size8c.value)) * .75) + "%";
+    stacked4Size8a.max = Math.abs((100 - stacked4Size8b.value - stacked4Size8c.value));
+    stacked4Size8b.max = Math.abs((100 - stacked4Size8a.value - stacked4Size8c.value));
+    stacked4Size8c.max = Math.abs((100 - stacked4Size8a.value - stacked4Size8b.value));
+};
+const stacked4Text8c = document.getElementById("stacked4Text8c");
+stacked4Text8c.oninput = function() {
+    if (stacked4Text8c.value == "") {
+        stacked4Row8d.innerHTML = stacked4Text8c.value;
+    } else if (stacked4Text8c.value) {
+        stacked4Row8d.innerHTML = stacked4Text8c.value + "&nbsp;";
+    }
+};
+const stacked4Color8c = document.getElementById("stacked4Color8c");
+stacked4Color8c.oninput = function() {
+    stacked4Row8d.style.backgroundColor = stacked4Color8c.value;
+};
+
+// Stacked Chart IV Row 9 Customization Logic
+const stacked4Text9 = document.getElementById("stacked4Text9");
+stacked4Text9.oninput = function() {
+    stacked4Row9a.innerHTML = stacked4Text9.value;
+};
+const stacked4Size9a = document.getElementById("stacked4Size9a");
+stacked4Size9a.oninput = function() {
+    stacked4Row9b.style.width = ((Math.abs(stacked4Size9a.value)) * .75) + "%";
+    stacked4Size9a.max = Math.abs((100 - stacked4Size9b.value - stacked4Size9c.value));
+    stacked4Size9b.max = Math.abs((100 - stacked4Size9a.value - stacked4Size9c.value));
+    stacked4Size9c.max = Math.abs((100 - stacked4Size9a.value - stacked4Size9b.value));
+};
+const stacked4Text9a = document.getElementById("stacked4Text9a");
+stacked4Text9a.oninput = function() {
+    if (stacked4Text9a.value == "") {
+        stacked4Row9b.innerHTML = stacked4Text9a.value;
+    } else if (stacked4Text9a.value) {
+        stacked4Row9b.innerHTML = stacked4Text9a.value + "&nbsp;";
+    }
+};
+const stacked4Color9a = document.getElementById("stacked4Color9a");
+stacked4Color9a.oninput = function() {
+    stacked4Row9b.style.backgroundColor = stacked4Color9a.value;
+};
+const stacked4Size9b = document.getElementById("stacked4Size9b");
+stacked4Size9b.oninput = function() {
+    stacked4Row9c.style.width = ((Math.abs(stacked4Size9b.value)) * .75) + "%";
+    stacked4Size9a.max = Math.abs((100 - stacked4Size9b.value - stacked4Size9c.value));
+    stacked4Size9b.max = Math.abs((100 - stacked4Size9a.value - stacked4Size9c.value));
+    stacked4Size9c.max = Math.abs((100 - stacked4Size9a.value - stacked4Size9b.value));
+};
+const stacked4Text9b = document.getElementById("stacked4Text9b");
+stacked4Text9b.oninput = function() {
+    if (stacked4Text9b.value == "") {
+        stacked4Row9c.innerHTML = stacked4Text9b.value;
+    } else if (stacked4Text9b.value) {
+        stacked4Row9c.innerHTML = stacked4Text9b.value + "&nbsp;";
+    }
+};
+const stacked4Color9b = document.getElementById("stacked4Color9b");
+stacked4Color9b.oninput = function() {
+    stacked4Row9c.style.backgroundColor = stacked4Color9b.value;
+};
+const stacked4Size9c = document.getElementById("stacked4Size9c");
+stacked4Size9c.oninput = function() {
+    stacked4Row9d.style.width = ((Math.abs(stacked4Size9c.value)) * .75) + "%";
+    stacked4Size9a.max = Math.abs((100 - stacked4Size9b.value - stacked4Size9c.value));
+    stacked4Size9b.max = Math.abs((100 - stacked4Size9a.value - stacked4Size9c.value));
+    stacked4Size9c.max = Math.abs((100 - stacked4Size9a.value - stacked4Size9b.value));
+};
+const stacked4Text9c = document.getElementById("stacked4Text9c");
+stacked4Text9c.oninput = function() {
+    if (stacked4Text9c.value == "") {
+        stacked4Row9d.innerHTML = stacked4Text9c.value;
+    } else if (stacked4Text9c.value) {
+        stacked4Row9d.innerHTML = stacked4Text9c.value + "&nbsp;";
+    }
+};
+const stacked4Color9c = document.getElementById("stacked4Color9c");
+stacked4Color9c.oninput = function() {
+    stacked4Row9d.style.backgroundColor = stacked4Color9c.value;
+};
+
+// Stacked Chart IV Row 10 Customization Logic
+const stacked4Text10 = document.getElementById("stacked4Text10");
+stacked4Text10.oninput = function() {
+    stacked4Row10a.innerHTML = stacked4Text10.value;
+};
+const stacked4Size10a = document.getElementById("stacked4Size10a");
+stacked4Size10a.oninput = function() {
+    stacked4Row10b.style.width = ((Math.abs(stacked4Size10a.value)) * .75) + "%";
+    stacked4Size10a.max = Math.abs((100 - stacked4Size10b.value - stacked4Size10c.value));
+    stacked4Size10b.max = Math.abs((100 - stacked4Size10a.value - stacked4Size10c.value));
+    stacked4Size10c.max = Math.abs((100 - stacked4Size10a.value - stacked4Size10b.value));
+};
+const stacked4Text10a = document.getElementById("stacked4Text10a");
+stacked4Text10a.oninput = function() {
+    if (stacked4Text10a.value == "") {
+        stacked4Row10b.innerHTML = stacked4Text10a.value;
+    } else if (stacked4Text10a.value) {
+        stacked4Row10b.innerHTML = stacked4Text10a.value + "&nbsp;";
+    }
+};
+const stacked4Color10a = document.getElementById("stacked4Color10a");
+stacked4Color10a.oninput = function() {
+    stacked4Row10b.style.backgroundColor = stacked4Color10a.value;
+};
+const stacked4Size10b = document.getElementById("stacked4Size10b");
+stacked4Size10b.oninput = function() {
+    stacked4Row10c.style.width = ((Math.abs(stacked4Size10b.value)) * .75) + "%";
+    stacked4Size10a.max = Math.abs((100 - stacked4Size10b.value - stacked4Size10c.value));
+    stacked4Size10b.max = Math.abs((100 - stacked4Size10a.value - stacked4Size10c.value));
+    stacked4Size10c.max = Math.abs((100 - stacked4Size10a.value - stacked4Size10b.value));
+};
+const stacked4Text10b = document.getElementById("stacked4Text10b");
+stacked4Text10b.oninput = function() {
+    if (stacked4Text10b.value == "") {
+        stacked4Row10c.innerHTML = stacked4Text10b.value;
+    } else if (stacked4Text10b.value) {
+        stacked4Row10c.innerHTML = stacked4Text10b.value + "&nbsp;";
+    }
+};
+const stacked4Color10b = document.getElementById("stacked4Color10b");
+stacked4Color10b.oninput = function() {
+    stacked4Row10c.style.backgroundColor = stacked4Color10b.value;
+};
+const stacked4Size10c = document.getElementById("stacked4Size10c");
+stacked4Size10c.oninput = function() {
+    stacked4Row10d.style.width = ((Math.abs(stacked4Size10c.value)) * .75) + "%";
+    stacked4Size10a.max = Math.abs((100 - stacked4Size10b.value - stacked4Size10c.value));
+    stacked4Size10b.max = Math.abs((100 - stacked4Size10a.value - stacked4Size10c.value));
+    stacked4Size10c.max = Math.abs((100 - stacked4Size10a.value - stacked4Size10b.value));
+};
+const stacked4Text10c = document.getElementById("stacked4Text10c");
+stacked4Text10c.oninput = function() {
+    if (stacked4Text10c.value == "") {
+        stacked4Row10d.innerHTML = stacked4Text10c.value;
+    } else if (stacked4Text10c.value) {
+        stacked4Row10d.innerHTML = stacked4Text10c.value + "&nbsp;";
+    }
+};
+const stacked4Color10c = document.getElementById("stacked4Color10c");
+stacked4Color10c.oninput = function() {
+    stacked4Row10d.style.backgroundColor = stacked4Color10c.value;
+};
+
+// Generate Stacked Chart IV HTML Chart Logic
+const stacked4Button = document.getElementById("stacked4Button");
+const stacked4Output = document.getElementById("stacked4Output");
+stacked4Button.addEventListener("click", () => {
+    if (rowsData10.value === "1") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    } else if (rowsData10.value === "2") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2b.style.width +'; height: 22px;" height="22">' + stacked4Row2b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2c.style.width + '; height: 22px;" height="22">' + stacked4Row2c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2d.style.width + '; height: 22px;" height="22">' + stacked4Row2d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    } else if (rowsData10.value === "3") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2b.style.width +'; height: 22px;" height="22">' + stacked4Row2b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2c.style.width + '; height: 22px;" height="22">' + stacked4Row2c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2d.style.width + '; height: 22px;" height="22">' + stacked4Row2d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3b.style.width + '; height: 22px;" height="22">' + stacked4Row3b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3c.style.width + '; height: 22px;" height="22">' + stacked4Row3c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3d.style.width + '; height: 22px;" height="22">' + stacked4Row3d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    } else if (rowsData10.value === "4") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2b.style.width +'; height: 22px;" height="22">' + stacked4Row2b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2c.style.width + '; height: 22px;" height="22">' + stacked4Row2c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2d.style.width + '; height: 22px;" height="22">' + stacked4Row2d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3b.style.width + '; height: 22px;" height="22">' + stacked4Row3b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3c.style.width + '; height: 22px;" height="22">' + stacked4Row3c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3d.style.width + '; height: 22px;" height="22">' + stacked4Row3d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4b.style.width + '; height: 22px;" height="22">' + stacked4Row4b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4c.style.width + '; height: 22px;" height="22">' + stacked4Row4c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4d.style.width + '; height: 22px;" height="22">' + stacked4Row4d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    } else if (rowsData10.value === "5") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2b.style.width +'; height: 22px;" height="22">' + stacked4Row2b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2c.style.width + '; height: 22px;" height="22">' + stacked4Row2c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2d.style.width + '; height: 22px;" height="22">' + stacked4Row2d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3b.style.width + '; height: 22px;" height="22">' + stacked4Row3b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3c.style.width + '; height: 22px;" height="22">' + stacked4Row3c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3d.style.width + '; height: 22px;" height="22">' + stacked4Row3d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4b.style.width + '; height: 22px;" height="22">' + stacked4Row4b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4c.style.width + '; height: 22px;" height="22">' + stacked4Row4c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4d.style.width + '; height: 22px;" height="22">' + stacked4Row4d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5b.style.width + '; height: 22px;" height="22">' + stacked4Row5b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5c.style.width + '; height: 22px;" height="22">' + stacked4Row5c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5d.style.width + '; height: 22px;" height="22">' + stacked4Row5d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    } else if (rowsData10.value === "6") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2b.style.width +'; height: 22px;" height="22">' + stacked4Row2b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2c.style.width + '; height: 22px;" height="22">' + stacked4Row2c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2d.style.width + '; height: 22px;" height="22">' + stacked4Row2d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3b.style.width + '; height: 22px;" height="22">' + stacked4Row3b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3c.style.width + '; height: 22px;" height="22">' + stacked4Row3c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3d.style.width + '; height: 22px;" height="22">' + stacked4Row3d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4b.style.width + '; height: 22px;" height="22">' + stacked4Row4b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4c.style.width + '; height: 22px;" height="22">' + stacked4Row4c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4d.style.width + '; height: 22px;" height="22">' + stacked4Row4d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5b.style.width + '; height: 22px;" height="22">' + stacked4Row5b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5c.style.width + '; height: 22px;" height="22">' + stacked4Row5c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5d.style.width + '; height: 22px;" height="22">' + stacked4Row5d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6b.style.width + '; height: 22px;" height="22">' + stacked4Row6b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6c.style.width + '; height: 22px;" height="22">' + stacked4Row6c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6d.style.width + '; height: 22px;" height="22">' + stacked4Row6d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    } else if (rowsData10.value === "7") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2b.style.width +'; height: 22px;" height="22">' + stacked4Row2b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2c.style.width + '; height: 22px;" height="22">' + stacked4Row2c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2d.style.width + '; height: 22px;" height="22">' + stacked4Row2d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3b.style.width + '; height: 22px;" height="22">' + stacked4Row3b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3c.style.width + '; height: 22px;" height="22">' + stacked4Row3c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3d.style.width + '; height: 22px;" height="22">' + stacked4Row3d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4b.style.width + '; height: 22px;" height="22">' + stacked4Row4b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4c.style.width + '; height: 22px;" height="22">' + stacked4Row4c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4d.style.width + '; height: 22px;" height="22">' + stacked4Row4d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5b.style.width + '; height: 22px;" height="22">' + stacked4Row5b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5c.style.width + '; height: 22px;" height="22">' + stacked4Row5c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5d.style.width + '; height: 22px;" height="22">' + stacked4Row5d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6b.style.width + '; height: 22px;" height="22">' + stacked4Row6b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6c.style.width + '; height: 22px;" height="22">' + stacked4Row6c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6d.style.width + '; height: 22px;" height="22">' + stacked4Row6d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row7a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7b.style.width + '; height: 22px;" height="22">' + stacked4Row7b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7c.style.width + '; height: 22px;" height="22">' + stacked4Row7c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7d.style.width + '; height: 22px;" height="22">' + stacked4Row7d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    } else if (rowsData10.value === "8") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2b.style.width +'; height: 22px;" height="22">' + stacked4Row2b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2c.style.width + '; height: 22px;" height="22">' + stacked4Row2c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2d.style.width + '; height: 22px;" height="22">' + stacked4Row2d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3b.style.width + '; height: 22px;" height="22">' + stacked4Row3b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3c.style.width + '; height: 22px;" height="22">' + stacked4Row3c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3d.style.width + '; height: 22px;" height="22">' + stacked4Row3d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4b.style.width + '; height: 22px;" height="22">' + stacked4Row4b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4c.style.width + '; height: 22px;" height="22">' + stacked4Row4c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4d.style.width + '; height: 22px;" height="22">' + stacked4Row4d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5b.style.width + '; height: 22px;" height="22">' + stacked4Row5b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5c.style.width + '; height: 22px;" height="22">' + stacked4Row5c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5d.style.width + '; height: 22px;" height="22">' + stacked4Row5d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6b.style.width + '; height: 22px;" height="22">' + stacked4Row6b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6c.style.width + '; height: 22px;" height="22">' + stacked4Row6c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6d.style.width + '; height: 22px;" height="22">' + stacked4Row6d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row7a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7b.style.width + '; height: 22px;" height="22">' + stacked4Row7b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7c.style.width + '; height: 22px;" height="22">' + stacked4Row7c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7d.style.width + '; height: 22px;" height="22">' + stacked4Row7d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row8a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color8a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row8b.style.width + '; height: 22px;" height="22">' + stacked4Row8b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color8b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row8c.style.width + '; height: 22px;" height="22">' + stacked4Row8c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color8c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row8d.style.width + '; height: 22px;" height="22">' + stacked4Row8d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    } else if (rowsData10.value === "9") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2b.style.width +'; height: 22px;" height="22">' + stacked4Row2b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2c.style.width + '; height: 22px;" height="22">' + stacked4Row2c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2d.style.width + '; height: 22px;" height="22">' + stacked4Row2d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3b.style.width + '; height: 22px;" height="22">' + stacked4Row3b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3c.style.width + '; height: 22px;" height="22">' + stacked4Row3c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3d.style.width + '; height: 22px;" height="22">' + stacked4Row3d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4b.style.width + '; height: 22px;" height="22">' + stacked4Row4b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4c.style.width + '; height: 22px;" height="22">' + stacked4Row4c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4d.style.width + '; height: 22px;" height="22">' + stacked4Row4d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5b.style.width + '; height: 22px;" height="22">' + stacked4Row5b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5c.style.width + '; height: 22px;" height="22">' + stacked4Row5c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5d.style.width + '; height: 22px;" height="22">' + stacked4Row5d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6b.style.width + '; height: 22px;" height="22">' + stacked4Row6b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6c.style.width + '; height: 22px;" height="22">' + stacked4Row6c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6d.style.width + '; height: 22px;" height="22">' + stacked4Row6d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row7a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7b.style.width + '; height: 22px;" height="22">' + stacked4Row7b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7c.style.width + '; height: 22px;" height="22">' + stacked4Row7c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7d.style.width + '; height: 22px;" height="22">' + stacked4Row7d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row8a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color8a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row8b.style.width + '; height: 22px;" height="22">' + stacked4Row8b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color8b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row8c.style.width + '; height: 22px;" height="22">' + stacked4Row8c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color8c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row8d.style.width + '; height: 22px;" height="22">' + stacked4Row8d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row9a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color9a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row9b.style.width + '; height: 22px;" height="22">' + stacked4Row9b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color9b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row9c.style.width + '; height: 22px;" height="22">' + stacked4Row9c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color9c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row9d.style.width + '; height: 22px;" height="22">' + stacked4Row9d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    } else if (rowsData10.value === "10") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1b.style.width + '; height: 22px;" height="22">' + stacked4Row1b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1c.style.width + '; height: 22px;" height="22">' + stacked4Row1c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color1c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row1d.style.width + '; height: 22px;" height="22">' + stacked4Row1d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2b.style.width +'; height: 22px;" height="22">' + stacked4Row2b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2c.style.width + '; height: 22px;" height="22">' + stacked4Row2c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color2c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row2d.style.width + '; height: 22px;" height="22">' + stacked4Row2d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3b.style.width + '; height: 22px;" height="22">' + stacked4Row3b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3c.style.width + '; height: 22px;" height="22">' + stacked4Row3c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color3c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row3d.style.width + '; height: 22px;" height="22">' + stacked4Row3d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4b.style.width + '; height: 22px;" height="22">' + stacked4Row4b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4c.style.width + '; height: 22px;" height="22">' + stacked4Row4c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color4c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row4d.style.width + '; height: 22px;" height="22">' + stacked4Row4d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5b.style.width + '; height: 22px;" height="22">' + stacked4Row5b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5c.style.width + '; height: 22px;" height="22">' + stacked4Row5c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color5c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row5d.style.width + '; height: 22px;" height="22">' + stacked4Row5d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6b.style.width + '; height: 22px;" height="22">' + stacked4Row6b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6c.style.width + '; height: 22px;" height="22">' + stacked4Row6c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color6c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row6d.style.width + '; height: 22px;" height="22">' + stacked4Row6d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row7a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7b.style.width + '; height: 22px;" height="22">' + stacked4Row7b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7c.style.width + '; height: 22px;" height="22">' + stacked4Row7c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color7c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row7d.style.width + '; height: 22px;" height="22">' + stacked4Row7d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row8a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color8a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row8b.style.width + '; height: 22px;" height="22">' + stacked4Row8b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color8b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row8c.style.width + '; height: 22px;" height="22">' + stacked4Row8c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color8c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row8d.style.width + '; height: 22px;" height="22">' + stacked4Row8d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row9a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color9a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row9b.style.width + '; height: 22px;" height="22">' + stacked4Row9b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color9b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row9c.style.width + '; height: 22px;" height="22">' + stacked4Row9c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color9c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row9d.style.width + '; height: 22px;" height="22">' + stacked4Row9d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr><tr> <td align="left" style="padding: 5px 0 5px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + stacked4Row10a.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color10a.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row10b.style.width + '; height: 22px;" height="22">' + stacked4Row10b.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color10b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row10c.style.width + '; height: 22px;" height="22">' + stacked4Row10c.innerHTML + '</td><td align="right" style="background-color: ' + stacked4Color10c.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + stacked4Row10d.style.width + '; height: 22px;" height="22">' + stacked4Row10d.innerHTML + '</td><td style="background-color: #ffffff; margin: 0; padding: 0; width: auto; height: 28px;" height="28"></td></tr></table> </td></tr></table> <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span style="color: ' + legend5Color1x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text1.innerHTML + ' | <span style="color: ' + legend5Color2x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text2.innerHTML + ' | <span style="color: ' + legend5Color3x.value + '; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> ' + legend5Text3.innerHTML + ' </div></td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        stacked4Output.innerHTML = chartCode;
+    }
+});
+
+// Highlight stacked4Output Text
+stacked4Output.addEventListener("click", () => {
+    stacked4Output.select();
+});
