@@ -36,20 +36,20 @@
     .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
     .dataCheckboxes label { display: inline-block; width: 150px; }
     .dataCheckboxes label[for="horiz3Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III 'Add bar dividers' */
-    .dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart I 'Add bar dividers' */
+    .dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart 'Add bar dividers' */
     .dataCheckboxes small { display: block; margin: 10px 0; }
     .horiz1Controls label, .horiz2Controls label, .horiz3Controls label { display: inline-block; width: 110px; }
     .horiz1Controls input, .horiz2Controls input, .horiz3Controls input { margin: 10px 60px 0 0; width: 90px; }
     .chartLegend label[for*="legend"] { width: 110px; } /* Targets all labels that start with "legend" */
     .chartLegend input { margin: 0 60px 4px 0; width: 60px; }
-    .chartLegend #combo1Div { width: auto; } /* Combo Chart I checkbox */
-    .chartLegend #rowsData7 { margin: 0 20px 4px 0; width: 60px; } /* Combo Chart I 'Select # of Data Rows' */
-    .stacked1Controls label:first-of-type, .stacked2Controls label:first-of-type, .stacked3Controls label:first-of-type, .combo1Controls label:first-of-type { width: 75px; } /* Targets Row # Data Label */
-    .stacked1Controls input:first-of-type, .stacked2Controls input:first-of-type, .stacked3Controls input:first-of-type, .combo1Controls input:first-of-type { width: 80px; } /* Targets Row # Data Input */
+    .chartLegend #combo1Div { width: auto; } /* Combo Chart checkbox */
+    .chartLegend #rowsData7 { margin: 0 20px 4px 0; width: 60px; } /* Combo Chart 'Select # of Data Rows' */
+    .stacked1Controls label:first-of-type, .stacked2Controls label:first-of-type, .stacked3Controls label:first-of-type, .stacked4Controls label:first-of-type, .combo1Controls label:first-of-type { width: 75px; } /* Targets Row # Data Label */
+    .stacked1Controls input:first-of-type, .stacked2Controls input:first-of-type, .stacked3Controls input:first-of-type, .stacked4Controls input:first-of-type, .combo1Controls input:first-of-type { width: 80px; } /* Targets Row # Data Input */
     .prog1Controls input:first-of-type, .prog2Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
-    .stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .combo1Controls label, .prog1Controls label, .prog2Controls label { display: inline-block; margin: 10px 10px 0 0; }
+    .stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .stacked4Controls label, .combo1Controls label, .prog1Controls label, .prog2Controls label { display: inline-block; margin: 10px 10px 0 0; }
     .prog1Controls label[for*="prog1Size"], .prog2Controls label[for*="prog2Size"] { margin: 10px 20px 0 0; } /* Targets 'Progress Bar Size' right spacing */
-    .stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .combo1Controls input, .prog1Controls input, .prog2Controls input { margin: 0 20px 4px 0; width: 60px; }
+    .stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .prog1Controls input, .prog2Controls input { margin: 0 10px 4px 0; }
     .splitControls input, .dataCheckboxes label { margin: 10px 10px 0 0; }
     .splitControls label { display: inline-block; width: 130px; }
     .splitControls input { width: 46px; }
@@ -78,14 +78,15 @@
             <option value="horizChart1">Horizontal Chart I</option>
             <option value="horizChart2">Horizontal Chart II</option>
             <option value="horizChart3">Horizontal Chart III</option>
+            <option value="comChart">Combo Chart</option>
             <option value="st1Chart">Stacked Chart I</option>
             <option value="st2Chart">Stacked Chart II</option>
             <option value="st3Chart">Stacked Chart III</option>
+            <option value="st4Chart">Stacked Chart IV</option>
             <option value="npChart">Negative|Positive Chart</option>
-            <option value="comChart">Combo Chart</option>
             <option value="prog1Chart">Progress Bar Chart I</option>
+            <option value="prog2Chart">Progress Bar Chart II</option>
             <option value="vertChart">Vertical Chart*</option>
-            <option value="ampChart">AMP Email Chart*</option>
             <option value="info">More Info</option>
         </select>
     </header>
@@ -946,6 +947,286 @@
         <textarea name="horiz3Output" id="horiz3Output" readonly></textarea>
     </div>
     <!-- end horizontal bar chart iii -->
+
+    <!-- COMBO BAR CHART -->
+    <div class="charts" id="comChart" style="display: none;">
+        <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Combo Bar Chart</h1></div>
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                            <!-- DATA BAR #1 -->
+                            <tr class="combo1Bars">
+                                <td align="left" style="padding: 0 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #1</td>
+                                            <td id="combo1Row1b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row1c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #1</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row1x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row1y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 35.25%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row1z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #1</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #1 -->
+
+                            <!-- DATA BAR #2 -->
+                            <tr class="combo1Bars">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #2</td>
+                                            <td id="combo1Row2b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 33%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row2c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #2</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row2x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row2y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 21.75%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row2z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #2 -->
+
+                            <!-- DATA BAR #3 -->
+                            <tr class="combo1Bars">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #3</td>
+                                            <td id="combo1Row3b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 14.25%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row3c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #3</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row3x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row3y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 52.5%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row3z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #3 -->
+
+                            <!-- DATA BAR #4 -->
+                            <tr class="combo1Bars">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #4</td>
+                                            <td id="combo1Row4b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 26.25%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row4c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #4</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row4x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row4y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 66%; height: 22px;" height="22">Label #4&nbsp;</td>
+                                            <td id="combo1Row4z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #4 -->
+
+                            <!-- DATA BAR #5 -->
+                            <tr class="combo1Bars" style="display: none;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #5</td>
+                                            <td id="combo1Row5b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row5c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #5</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row5x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row5y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 18%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row5z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #5</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #5 -->
+
+                            <!-- DATA BAR #6 -->
+                            <tr class="combo1Bars" style="display: none;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row6a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #6</td>
+                                            <td id="combo1Row6b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 6%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row6c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #6</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="combo1Row6x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row6y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25.5%; height: 22px;" height="22"></td>
+                                            <td id="combo1Row6z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #6</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #6 -->
+
+                    </table>
+
+                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend4Color1" style="color: #0058e6; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend4Text1">Blue</span> | <span id="legend4Color2" style="color: #94bdff; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend4Text2">Light Blue</span></div>
+
+                </td>
+            </tr>
+        </table>
+        <div class="scrollBox">
+            <fieldset class="dataCheckboxes chartLegend">
+                <legend>Chart Customization</legend>
+                <label for="rowsData7">Select # of Data Rows</label>
+                <input type="number" size="6" value="4" max="6" min="1" name="rowsData7" id="rowsData7">
+                <label for="combo1Div">Add Bar Dividers</label>
+                <input type="checkbox" name="combo1Div" id="combo1Div">
+                <br />
+                <label for="legend4Color1x">Legend Color #1</label>
+                <input type="text" size="6" value="#0058e6" name="legend4Color1x" id="legend4Color1x">
+                <label for="legend4Text1x">Legend Text #1</label>
+                <input type="text" size="10" value="Blue" name="legend4Text1x" id="legend4Text1x">
+                <br />
+                <label for="legend4Color2x">Legend Color #2</label>
+                <input type="text" size="6" value="#94bdff" name="legend4Color2x" id="legend4Color2x">
+                <label for="legend4Text2x">Legend Text #2</label>
+                <input type="text" size="10" value="Light Blue" name="legend4Text2x" id="legend4Text2x">
+                <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
+            </fieldset>
+            <fieldset class="combo1Controls styleControls">
+                <legend>Row #1</legend>
+                <label for="combo1Text1">Data Label</label>
+                <input type="text" size="10" value="Data bar #1" name="combo1Text1" id="combo1Text1">
+                <br />
+                <label for="combo1Size1t">Bar Size</label>
+                <input type="number" size="6" value="60" max="100" min="0" name="combo1Size1t" id="combo1Size1t">
+                <label for="combo1Color1t">Bar Color</label>
+                <input type="text" size="6" value="#0058e6" name="combo1Color1t" id="combo1Color1t">
+                <label for="combo1Text1t" id="combo1Label1t">End Data Label</label>
+                <input type="text" size="10" value="Label #1" name="combo1Text1t" id="combo1Text1t">
+                <br />
+                <label for="combo1Size1b">Bar Size</label>
+                <input type="number" size="6" value="47" max="100" min="0" name="combo1Size1b" id="combo1Size1b">
+                <label for="combo1Color1b">Bar Color</label>
+                <input type="text" size="6" value="#94bdff" name="combo1Color1b" id="combo1Color1b">
+                <label for="combo1Text1b" id="combo1Label1b">End Data Label</label>
+                <input type="text" size="10" value="Label #1" name="combo1Text1b" id="combo1Text1b">
+            </fieldset>
+            <fieldset class="combo1Controls styleControls">
+                <legend>Row #2</legend>
+                <label for="combo1Text2">Data Label</label>
+                <input type="text" size="10" value="Data bar #2" name="combo1Text2" id="combo1Text2">
+                <br />
+                <label for="combo1Size2t">Bar Size</label>
+                <input type="number" size="6" value="44" max="100" min="0" name="combo1Size2t" id="combo1Size2t">
+                <label for="combo1Color2t">Bar Color</label>
+                <input type="text" size="6" value="#0058e6" name="combo1Color2t" id="combo1Color2t">
+                <label for="combo1Text2t" id="combo1Label2t">End Data Label</label>
+                <input type="text" size="10" value="Label #2" name="combo1Text2t" id="combo1Text2t">
+                <br />
+                <label for="combo1Size2b">Bar Size</label>
+                <input type="number" size="6" value="29" max="100" min="0" name="combo1Size2b" id="combo1Size2b">
+                <label for="combo1Color2b">Bar Color</label>
+                <input type="text" size="6" value="#94bdff" name="combo1Color2b" id="combo1Color2b">
+                <label for="combo1Text2b" id="combo1Label2b">End Data Label</label>
+                <input type="text" size="10" value="Label #2" name="combo1Text2b" id="combo1Text2b">
+            </fieldset>
+            <fieldset class="combo1Controls styleControls">
+                <legend>Row #3</legend>
+                <label for="combo1Text3">Data Label</label>
+                <input type="text" size="10" value="Data bar #3" name="combo1Text3" id="combo1Text3">
+                <br />
+                <label for="combo1Size3t">Bar Size</label>
+                <input type="number" size="6" value="19" max="100" min="0" name="combo1Size3t" id="combo1Size3t">
+                <label for="combo1Color3t">Bar Color</label>
+                <input type="text" size="6" value="#0058e6" name="combo1Color3t" id="combo1Color3t">
+                <label for="combo1Text3t" id="combo1Label3t">End Data Label</label>
+                <input type="text" size="10" value="Label #3" name="combo1Text3t" id="combo1Text3t">
+                <br />
+                <label for="combo1Size3b">Bar Size</label>
+                <input type="number" size="6" value="70" max="100" min="0" name="combo1Size3b" id="combo1Size3b">
+                <label for="combo1Color3b">Bar Color</label>
+                <input type="text" size="6" value="#94bdff" name="combo1Color3b" id="combo1Color3b">
+                <label for="combo1Text3b" id="combo1Label3b">End Data Label</label>
+                <input type="text" size="10" value="Label #3" name="combo1Text3b" id="combo1Text3b">
+            </fieldset>
+            <fieldset class="combo1Controls styleControls">
+                <legend>Row #4</legend>
+                <label for="combo1Text4">Data Label</label>
+                <input type="text" size="10" value="Data bar #4" name="combo1Text4" id="combo1Text4">
+                <br />
+                <label for="combo1Size4t">Bar Size</label>
+                <input type="number" size="6" value="35" max="100" min="0" name="combo1Size4t" id="combo1Size4t">
+                <label for="combo1Color4t">Bar Color</label>
+                <input type="text" size="6" value="#0058e6" name="combo1Color4t" id="combo1Color4t">
+                <label for="combo1Text4t" id="combo1Label4t">End Data Label</label>
+                <input type="text" size="10" value="Label #4" name="combo1Text4t" id="combo1Text4t">
+                <br />
+                <label for="combo1Size4b">Bar Size</label>
+                <input type="number" size="6" value="88" max="100" min="0" name="combo1Size4b" id="combo1Size4b">
+                <label for="combo1Color4b">Bar Color</label>
+                <input type="text" size="6" value="#94bdff" name="combo1Color4b" id="combo1Color4b">
+                <label for="combo1Text4b" id="combo1Label4b">End Data Label</label>
+                <input type="text" size="10" value="" name="combo1Text4b" id="combo1Text4b">
+            </fieldset>
+            <fieldset class="combo1Controls styleControls" style="display: none;">
+                <legend>Row #5</legend>
+                <label for="combo1Text5">Data Label</label>
+                <input type="text" size="10" value="Data bar #5" name="combo1Text5" id="combo1Text5">
+                <br />
+                <label for="combo1Size5t">Bar Size</label>
+                <input type="number" size="6" value="60" max="100" min="0" name="combo1Size5t" id="combo1Size5t">
+                <label for="combo1Color5t">Bar Color</label>
+                <input type="text" size="6" value="#0058e6" name="combo1Color5t" id="combo1Color5t">
+                <label for="combo1Text5t" id="combo1Label5t">End Data Label</label>
+                <input type="text" size="10" value="Label #5" name="combo1Text5t" id="combo1Text5t">
+                <br />
+                <label for="combo1Size5b">Bar Size</label>
+                <input type="number" size="6" value="24" max="100" min="0" name="combo1Size5b" id="combo1Size5b">
+                <label for="combo1Color5b">Bar Color</label>
+                <input type="text" size="6" value="#94bdff" name="combo1Color5b" id="combo1Color5b">
+                <label for="combo1Text5b" id="combo1Label5b">End Data Label</label>
+                <input type="text" size="10" value="Label #5" name="combo1Text5b" id="combo1Text5b">
+            </fieldset>
+            <fieldset class="combo1Controls styleControls" style="display: none;">
+                <legend>Row #6</legend>
+                <label for="combo1Text6">Data Label</label>
+                <input type="text" size="10" value="Data bar #6" name="combo1Text6" id="combo1Text6">
+                <br />
+                <label for="combo1Size6t">Bar Size</label>
+                <input type="number" size="6" value="8" max="100" min="0" name="combo1Size6t" id="combo1Size6t">
+                <label for="combo1Color6t">Bar Color</label>
+                <input type="text" size="6" value="#0058e6" name="combo1Color6t" id="combo1Color6t">
+                <label for="combo1Text6t" id="combo1Label6t">End Data Label</label>
+                <input type="text" size="10" value="Label #6" name="combo1Text6t" id="combo1Text6t">
+                <br />
+                <label for="combo1Size6b">Bar Size</label>
+                <input type="number" size="6" value="34" max="100" min="0" name="combo1Size6b" id="combo1Size6b">
+                <label for="combo1Color6b">Bar Color</label>
+                <input type="text" size="6" value="#94bdff" name="combo1Color6b" id="combo1Color6b">
+                <label for="combo1Text6b" id="combo1Label6b">End Data Label</label>
+                <input type="text" size="10" value="Label #6" name="combo1Text6b" id="combo1Text6b">
+            </fieldset>
+        </div>
+        <button type="button" id="combo1Button">Generate Email Chart Code</button>
+        <textarea name="combo1Output" id="combo1Output" readonly></textarea>
+    </div>
+    <!-- end combo bar chart -->
 
     <!-- STACKED BAR CHART I -->
     <div class="charts" id="st1Chart" style="display: none;">
@@ -2145,6 +2426,464 @@
     </div>
     <!-- end stacked bar chart iii -->
 
+    <!-- STACKED BAR CHART IV -->
+    <div class="charts" id="st4Chart" style="display: none;">
+        <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Stacked Bar Chart IV</h1></div>
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                            <!-- DATA BAR #1 -->
+                            <tr class="stacked4Bars">
+                                <td align="left" style="padding: 0 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #1</td>
+                                            <td id="stacked4Row1b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row1c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 24.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row1d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 2.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row1e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #1 -->
+
+                            <!-- DATA BAR #2 -->
+                            <tr class="stacked4Bars">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #2</td>
+                                            <td id="stacked4Row2b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 38.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row2c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 12%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row2d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 2.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row2e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #2 -->
+
+                            <!-- DATA BAR #3 -->
+                            <tr class="stacked4Bars">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #3</td>
+                                            <td id="stacked4Row3b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 47.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row3c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 7.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row3d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 2.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row3e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #3 -->
+
+                            <!-- DATA BAR #4 -->
+                            <tr class="stacked4Bars">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #4</td>
+                                            <td id="stacked4Row4b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 37.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row4c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 26.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row4d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 1.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row4e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #4 -->
+
+                            <!-- DATA BAR #5 -->
+                            <tr class="stacked4Bars">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #5</td>
+                                            <td id="stacked4Row5b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 10.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row5c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 7.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row5d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row5e" style="background-color: #ffffff; margin: 0; padding: 0; width: 57100eight: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #5 -->
+
+                            <!-- DATA BAR #6 -->
+                            <tr class="stacked4Bars" style="display: none;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row6a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #6</td>
+                                            <td id="stacked4Row6b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row6c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 53.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row6d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 1.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row6e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #6 -->
+
+                            <!-- DATA BAR #7 -->
+                            <tr class="stacked4Bars" style="display: none;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row7a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #7</td>
+                                            <td id="stacked4Row7b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 12.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row7c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 15.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row7d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 4.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row7e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #7 -->
+
+                            <!-- DATA BAR #8 -->
+                            <tr class="stacked4Bars" style="display: none;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row8a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #8</td>
+                                            <td id="stacked4Row8b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 22.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row8c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 22.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row8d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 3%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row8e" style="background-color: #ffffff; margin: 0; padding: 0; width: 30100eight: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #8 -->
+
+                            <!-- DATA BAR #9 -->
+                            <tr class="stacked4Bars" style="display: none;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row9a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #9</td>
+                                            <td id="stacked4Row9b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row9c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 14.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row9d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 1%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row9e" style="background-color: #ffffff; margin: 0; padding: 0; width: 15100eight: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #9 -->
+
+                            <!-- DATA BAR #10 -->
+                            <tr class="stacked4Bars" style="display: none;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="stacked4Row10a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #10</td>
+                                            <td id="stacked4Row10b" align="right" style="background-color: #fa4747; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 20.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row10c" align="right" style="background-color: #ff785f; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 38.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row10d" align="right" style="background-color: #ffb65d; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 1.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row10e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #10 -->
+
+                    </table>
+                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend5Color1" style="color: #fa4747; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend5Text1">Red</span> | <span id="legend5Color2" style="color: #ff785f; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend5Text2">Light Red</span> | <span id="legend5Color3" style="color: #ffb65d; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend5Text3">Orange</span></div>
+                </td>
+            </tr>
+        </table>
+        <div class="scrollBox">
+            <fieldset class="dataCheckboxes chartLegend">
+                <legend>Chart Customization</legend>
+                <label for="rowsData10">Select # of Data Rows</label>
+                <input type="number" size="6" value="5" max="10" min="1" name="rowsData10" id="rowsData10">
+                <br />
+                <label for="legend5Color1x">Legend Color #1</label>
+                <input type="text" size="6" value="#fa4747" name="legend5Color1x" id="legend5Color1x">
+                <label for="legend5Text1x">Legend Text #1</label>
+                <input type="text" size="10" value="Red" name="legend5Text1x" id="legend5Text1x">
+                <label for="legend5Color2x">Legend Color #2</label>
+                <input type="text" size="6" value="#ff785f" name="legend5Color2x" id="legend5Color2x">
+                <label for="legend5Text2x">Legend Text #2</label>
+                <input type="text" size="10" value="Light Red" name="legend5Text2x" id="legend5Text2x">
+                <label for="legend5Color3x">Legend Color #3</label>
+                <input type="text" size="6" value="#ffb65d" name="legend5Color3x" id="legend5Color3x">
+                <label for="legend5Text3x">Legend Text #3</label>
+                <input type="text" size="10" value="Orange" name="legend5Text3x" id="legend5Text3x">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls">
+                <legend>Row #1</legend>
+                <label for="stacked4Text1">Data Label</label>
+                <input type="text" size="10" value="Data bar #1" name="stacked4Text1" id="stacked4Text1">
+                <br />
+                <label for="stacked4Size1a">Bar #1 Size</label>
+                <input type="number" size="6" value="34" max="100" min="0" name="stacked4Size1a" id="stacked4Size1a">
+                <label for="stacked4Color1a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color1a" id="stacked4Color1a">
+                <label for="stacked4Text1a" id="stacked4Label1a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text1a" id="stacked4Text1a">
+                <br />
+                <label for="stacked4Size1b">Bar #2 Size</label>
+                <input type="number" size="6" value="33" max="100" min="0" name="stacked4Size1b" id="stacked4Size1b">
+                <label for="stacked4Color1b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color1b" id="stacked4Color1b">
+                <label for="stacked4Text1b" id="stacked4Label1b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text1b" id="stacked4Text1b">
+                <br />
+                <label for="stacked4Size1c">Bar #3 Size</label>
+                <input type="number" size="6" value="33" max="100" min="0" name="stacked4Size1c" id="stacked4Size1c">
+                <label for="stacked4Color1c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color1c" id="stacked4Color1c">
+                <label for="stacked4Text1c" id="stacked4Label1c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text1c" id="stacked4Text1c">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls">
+                <legend>Row #2</legend>
+                <label for="stacked4Text2">Data Label</label>
+                <input type="text" size="10" value="Data bar #2" name="stacked4Text2" id="stacked4Text2">
+                <br />
+                <label for="stacked4Size2a">Bar #1 Size</label>
+                <input type="number" size="6" value="51" max="100" min="0" name="stacked4Size2a" id="stacked4Size2a">
+                <label for="stacked4Color2a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color2a" id="stacked4Color2a">
+                <label for="stacked4Text2a" id="stacked4Label2a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text2a" id="stacked4Text2a">
+                <br />
+                <label for="stacked4Size2b">Bar #2 Size</label>
+                <input type="number" size="6" value="16" max="100" min="0" name="stacked4Size2b" id="stacked4Size2b">
+                <label for="stacked4Color2b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color2b" id="stacked4Color2b">
+                <label for="stacked4Text2b" id="stacked4Label2b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text2b" id="stacked4Text2b">
+                <br />
+                <label for="stacked4Size2c">Bar #3 Size</label>
+                <input type="number" size="6" value="33" max="100" min="0" name="stacked4Size2c" id="stacked4Size2c">
+                <label for="stacked4Color2c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color2c" id="stacked4Color2c">
+                <label for="stacked4Text2c" id="stacked4Label2c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text2c" id="stacked4Text2c">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls">
+                <legend>Row #3</legend>
+                <label for="stacked4Text3">Data Label</label>
+                <input type="text" size="10" value="Data bar #3" name="stacked4Text3" id="stacked4Text3">
+                <br />
+                <label for="stacked4Size3a">Bar #1 Size</label>
+                <input type="number" size="6" value="63" max="100" min="0" name="stacked4Size3a" id="stacked4Size3a">
+                <label for="stacked4Color3a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color3a" id="stacked4Color3a">
+                <label for="stacked4Text3a" id="stacked4Label3a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text3a" id="stacked4Text3a">
+                <br />
+                <label for="stacked4Size3b">Bar #2 Size</label>
+                <input type="number" size="6" value="10" max="100" min="0" name="stacked4Size3b" id="stacked4Size3b">
+                <label for="stacked4Color3b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color3b" id="stacked4Color3b">
+                <label for="stacked4Text3b" id="stacked4Label3b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text3b" id="stacked4Text3b">
+                <br />
+                <label for="stacked4Size3c">Bar #3 Size</label>
+                <input type="number" size="6" value="27" max="100" min="0" name="stacked4Size3c" id="stacked4Size3c">
+                <label for="stacked4Color3c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color3c" id="stacked4Color3c">
+                <label for="stacked4Text3c" id="stacked4Label3c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text3c" id="stacked4Text3c">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls">
+                <legend>Row #4</legend>
+                <label for="stacked4Text4">Data Label</label>
+                <input type="text" size="10" value="Data bar #4" name="stacked4Text4" id="stacked4Text4">
+                <br />
+                <label for="stacked4Size4a">Bar #1 Size</label>
+                <input type="number" size="6" value="50" max="100" min="0" name="stacked4Size4a" id="stacked4Size4a">
+                <label for="stacked4Color4a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color4a" id="stacked4Color4a">
+                <label for="stacked4Text4a" id="stacked4Label4a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text4a" id="stacked4Text4a">
+                <br />
+                <label for="stacked4Size4b">Bar #2 Size</label>
+                <input type="number" size="6" value="35" max="100" min="0" name="stacked4Size4b" id="stacked4Size4b">
+                <label for="stacked4Color4b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color4b" id="stacked4Color4b">
+                <label for="stacked4Text4b" id="stacked4Label4b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text4b" id="stacked4Text4b">
+                <br />
+                <label for="stacked4Size4c">Bar #3 Size</label>
+                <input type="number" size="6" value="15" max="100" min="0" name="stacked4Size4c" id="stacked4Size4c">
+                <label for="stacked4Color4c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color4c" id="stacked4Color4c">
+                <label for="stacked4Text4c" id="stacked4Label4c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text4c" id="stacked4Text4c">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls">
+                <legend>Row #5</legend>
+                <label for="stacked4Text5">Data Label</label>
+                <input type="text" size="10" value="Data bar #5" name="stacked4Text5" id="stacked4Text5">
+                <br />
+                <label for="stacked4Size5a">Bar #1 Size</label>
+                <input type="number" size="6" value="14" max="100" min="0" name="stacked4Size5a" id="stacked4Size5a">
+                <label for="stacked4Color5a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color5a" id="stacked4Color5a">
+                <label for="stacked4Text5a" id="stacked4Label5a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text5a" id="stacked4Text5a">
+                <br />
+                <label for="stacked4Size5b">Bar #2 Size</label>
+                <input type="number" size="6" value="10" max="100" min="0" name="stacked4Size5b" id="stacked4Size5b">
+                <label for="stacked4Color5b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color5b" id="stacked4Color5b">
+                <label for="stacked4Text5b" id="stacked4Label5b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text5b" id="stacked4Text5b">
+                <br />
+                <label for="stacked4Size5c">Bar #3 Size</label>
+                <input type="number" size="6" value="76" max="100" min="0" name="stacked4Size5c" id="stacked4Size5c">
+                <label for="stacked4Color5c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color5c" id="stacked4Color5c">
+                <label for="stacked4Text5c" id="stacked4Label5c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text5c" id="stacked4Text5c">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls" style="display: none;">
+                <legend>Row #6</legend>
+                <label for="stacked4Text6">Data Label</label>
+                <input type="text" size="10" value="Data bar #6" name="stacked4Text6" id="stacked4Text6">
+                <br />
+                <label for="stacked4Size6a">Bar #1 Size</label>
+                <input type="number" size="6" value="11" max="100" min="0" name="stacked4Size6a" id="stacked4Size6a">
+                <label for="stacked4Color6a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color6a" id="stacked4Color6a">
+                <label for="stacked4Text6a" id="stacked4Label6a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text6a" id="stacked4Text6a">
+                <br />
+                <label for="stacked4Size6b">Bar #2 Size</label>
+                <input type="number" size="6" value="71" max="100" min="0" name="stacked4Size6b" id="stacked4Size6b">
+                <label for="stacked4Color6b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color6b" id="stacked4Color6b">
+                <label for="stacked4Text6b" id="stacked4Label6b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text6b" id="stacked4Text6b">
+                <br />
+                <label for="stacked4Size6c">Bar #3 Size</label>
+                <input type="number" size="6" value="18" max="100" min="0" name="stacked4Size6c" id="stacked4Size6c">
+                <label for="stacked4Color6c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color6c" id="stacked4Color6c">
+                <label for="stacked4Text6c" id="stacked4Label6c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text6c" id="stacked4Text6c">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls" style="display: none;">
+                <legend>Row #7</legend>
+                <label for="stacked4Text7">Data Label</label>
+                <input type="text" size="10" value="Data bar #7" name="stacked4Text7" id="stacked4Text7">
+                <br />
+                <label for="stacked4Size7a">Bar #1 Size</label>
+                <input type="number" size="6" value="17" max="100" min="0" name="stacked4Size7a" id="stacked4Size7a">
+                <label for="stacked4Color7a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color7a" id="stacked4Color7a">
+                <label for="stacked4Text7a" id="stacked4Label7a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text7a" id="stacked4Text7a">
+                <br />
+                <label for="stacked4Size7b">Bar #2 Size</label>
+                <input type="number" size="6" value="21" max="100" min="0" name="stacked4Size7b" id="stacked4Size7b">
+                <label for="stacked4Color7b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color7b" id="stacked4Color7b">
+                <label for="stacked4Text7b" id="stacked4Label7b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text7b" id="stacked4Text7b">
+                <br />
+                <label for="stacked4Size7c">Bar #3 Size</label>
+                <input type="number" size="6" value="62" max="100" min="0" name="stacked4Size7c" id="stacked4Size7c">
+                <label for="stacked4Color7c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color7c" id="stacked4Color7c">
+                <label for="stacked4Text7c" id="stacked4Label7c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text7c" id="stacked4Text7c">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls" style="display: none;">
+                <legend>Row #8</legend>
+                <label for="stacked4Text8">Data Label</label>
+                <input type="text" size="10" value="Data bar #8" name="stacked4Text8" id="stacked4Text8">
+                <br />
+                <label for="stacked4Size8a">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="stacked4Size8a" id="stacked4Size8a">
+                <label for="stacked4Color8a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color8a" id="stacked4Color8a">
+                <label for="stacked4Text8a" id="stacked4Label8a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text8a" id="stacked4Text8a">
+                <br />
+                <label for="stacked4Size8b">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="stacked4Size8b" id="stacked4Size8b">
+                <label for="stacked4Color8b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color8b" id="stacked4Color8b">
+                <label for="stacked4Text8b" id="stacked4Label8b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text8b" id="stacked4Text8b">
+                <br />
+                <label for="stacked4Size8c">Bar #3 Size</label>
+                <input type="number" size="6" value="40" max="100" min="0" name="stacked4Size8c" id="stacked4Size8c">
+                <label for="stacked4Color8c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color8c" id="stacked4Color8c">
+                <label for="stacked4Text8c" id="stacked4Label8c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text8c" id="stacked4Text8c">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls" style="display: none;">
+                <legend>Row #9</legend>
+                <label for="stacked4Text9">Data Label</label>
+                <input type="text" size="10" value="Data bar #9" name="stacked4Text9" id="stacked4Text9">
+                <br />
+                <label for="stacked4Size9a">Bar #1 Size</label>
+                <input type="number" size="6" value="61" max="100" min="0" name="stacked4Size9a" id="stacked4Size9a">
+                <label for="stacked4Color9a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color9a" id="stacked4Color9a">
+                <label for="stacked4Text9a" id="stacked4Label9a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text9a" id="stacked4Text9a">
+                <br />
+                <label for="stacked4Size9b">Bar #2 Size</label>
+                <input type="number" size="6" value="19" max="100" min="0" name="stacked4Size9b" id="stacked4Size9b">
+                <label for="stacked4Color9b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color9b" id="stacked4Color9b">
+                <label for="stacked4Text9b" id="stacked4Label9b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text9b" id="stacked4Text9b">
+                <br />
+                <label for="stacked4Size9c">Bar #3 Size</label>
+                <input type="number" size="6" value="20" max="100" min="0" name="stacked4Size9c" id="stacked4Size9c">
+                <label for="stacked4Color9c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color9c" id="stacked4Color9c">
+                <label for="stacked4Text9c" id="stacked4Label9c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text9c" id="stacked4Text9c">
+            </fieldset>
+            <fieldset class="stacked4Controls styleControls" style="display: none;">
+                <legend>Row #10</legend>
+                <label for="stacked4Text10">Data Label</label>
+                <input type="text" size="10" value="Data bar #10" name="stacked4Text10" id="stacked4Text10">
+                <br />
+                <label for="stacked4Size10a">Bar #1 Size</label>
+                <input type="number" size="6" value="27" max="100" min="0" name="stacked4Size10a" id="stacked4Size10a">
+                <label for="stacked4Color10a">Bar #1 Color</label>
+                <input type="text" size="6" value="#fa4747" name="stacked4Color10a" id="stacked4Color10a">
+                <label for="stacked4Text10a" id="stacked4Label10a">End Data Label #1</label>
+                <input type="text" size="10" value="" name="stacked4Text10a" id="stacked4Text10a">
+                <br />
+                <label for="stacked4Size10b">Bar #2 Size</label>
+                <input type="number" size="6" value="51" max="100" min="0" name="stacked4Size10b" id="stacked4Size10b">
+                <label for="stacked4Color10b">Bar #2 Color</label>
+                <input type="text" size="6" value="#ff785f" name="stacked4Color10b" id="stacked4Color10b">
+                <label for="stacked4Text10b" id="stacked4Label10b">End Data Label #2</label>
+                <input type="text" size="10" value="" name="stacked4Text10b" id="stacked4Text10b">
+                <br />
+                <label for="stacked4Size10c">Bar #3 Size</label>
+                <input type="number" size="6" value="22" max="100" min="0" name="stacked4Size10c" id="stacked4Size10c">
+                <label for="stacked4Color10c">Bar #3 Color</label>
+                <input type="text" size="6" value="#ffb65d" name="stacked4Color10c" id="stacked4Color10c">
+                <label for="stacked4Text10c" id="stacked4Label10c">End Data Label #3</label>
+                <input type="text" size="10" value="" name="stacked4Text10c" id="stacked4Text10c">
+            </fieldset>
+        </div>
+        <button type="button" id="stacked4Button">Generate Email Chart Code</button>
+        <textarea name="stacked4Output" id="stacked4Output" readonly></textarea>
+    </div>
+    <!-- end stacked bar chart iv -->
+
     <!-- NEGATIVE|POSITIVE BAR CHART -->
     <div class="charts" id="npChart" style="display: none;">
         <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Negative|Positive Bar Chart</h1></div>
@@ -2481,285 +3220,6 @@
     </div>
     <!-- end negative|positive bar chart -->
 
-    <!-- COMBO BAR CHART -->
-    <div class="charts" id="comChart" style="display: none;">
-        <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Combo Bar Chart</h1></div>
-        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-            <tr>
-                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-
-                            <!-- DATA BAR #1 -->
-                            <tr class="combo1Bars">
-                                <td align="left" style="padding: 0 0 10px 0;">
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #1</td>
-                                            <td id="combo1Row1b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row1c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #1</td>
-                                        </tr>
-                                    </table>
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row1x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row1y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 35.25%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row1z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #1</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- end data bar #1 -->
-
-                            <!-- DATA BAR #2 -->
-                            <tr class="combo1Bars">
-                                <td align="left" style="padding: 10px 0 10px 0;">
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #2</td>
-                                            <td id="combo1Row2b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 33%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row2c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #2</td>
-                                        </tr>
-                                    </table>
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row2x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row2y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 21.75%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row2z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #2</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- end data bar #2 -->
-
-                            <!-- DATA BAR #3 -->
-                            <tr class="combo1Bars">
-                                <td align="left" style="padding: 10px 0 10px 0;">
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #3</td>
-                                            <td id="combo1Row3b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 14.25%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row3c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #3</td>
-                                        </tr>
-                                    </table>
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row3x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row3y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 52.5%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row3z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #3</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- end data bar #3 -->
-
-                            <!-- DATA BAR #4 -->
-                            <tr class="combo1Bars">
-                                <td align="left" style="padding: 10px 0 10px 0;">
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #4</td>
-                                            <td id="combo1Row4b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 26.25%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row4c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #4</td>
-                                        </tr>
-                                    </table>
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row4x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row4y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 66%; height: 22px;" height="22">Label #4&nbsp;</td>
-                                            <td id="combo1Row4z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- end data bar #4 -->
-
-                            <!-- DATA BAR #5 -->
-                            <tr class="combo1Bars" style="display: none;">
-                                <td align="left" style="padding: 10px 0 10px 0;">
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #5</td>
-                                            <td id="combo1Row5b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row5c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #5</td>
-                                        </tr>
-                                    </table>
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row5x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row5y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 18%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row5z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #5</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- end data bar #5 -->
-
-                            <!-- DATA BAR #6 -->
-                            <tr class="combo1Bars" style="display: none;">
-                                <td align="left" style="padding: 10px 0 10px 0;">
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row6a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #6</td>
-                                            <td id="combo1Row6b" align="right" style="background-color: #0058e6; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 6%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row6c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #6</td>
-                                        </tr>
-                                    </table>
-                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
-                                        <tr>
-                                            <td id="combo1Row6x" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row6y" align="right" style="background-color: #94bdff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25.5%; height: 22px;" height="22"></td>
-                                            <td id="combo1Row6z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">&nbsp;Label #6</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- end data bar #6 -->
-
-                    </table>
-
-                    <div style="font-family: Courier; font-size: 14px; margin: 20px 0 0 0; text-align: center;"><span id="legend4Color1" style="color: #0058e6; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend4Text1">Blue</span> | <span id="legend4Color2" style="color: #94bdff; font-family: Courier; font-size: 18px; vertical-align: middle;">&#9724;</span> <span id="legend4Text2">Light Blue</span></div>
-
-                </td>
-            </tr>
-        </table>
-        <div class="scrollBox">
-            <fieldset class="dataCheckboxes chartLegend">
-                <legend>Chart Customization</legend>
-                <label for="rowsData7">Select # of Data Rows</label>
-                <input type="number" size="6" value="4" max="6" min="1" name="rowsData7" id="rowsData7">
-                <label for="combo1Div">Add Bar Dividers</label>
-                <input type="checkbox" name="combo1Div" id="combo1Div">
-                <br />
-                <label for="legend4Color1x">Legend Color #1</label>
-                <input type="text" size="6" value="#0058e6" name="legend4Color1x" id="legend4Color1x">
-                <label for="legend4Text1x">Legend Text #1</label>
-                <input type="text" size="10" value="Blue" name="legend4Text1x" id="legend4Text1x">
-                <label for="legend4Color2x">Legend Color #2</label>
-                <input type="text" size="6" value="#94bdff" name="legend4Color2x" id="legend4Color2x">
-                <label for="legend4Text2x">Legend Text #2</label>
-                <input type="text" size="10" value="Light Blue" name="legend4Text2x" id="legend4Text2x">
-                <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
-            </fieldset>
-            <fieldset class="combo1Controls styleControls">
-                <legend>Row #1</legend>
-                <label for="combo1Text1">Data Label</label>
-                <input type="text" size="10" value="Data bar #1" name="combo1Text1" id="combo1Text1">
-                <br />
-                <label for="combo1Size1t">Bar Size</label>
-                <input type="number" size="6" value="60" max="100" min="0" name="combo1Size1t" id="combo1Size1t">
-                <label for="combo1Color1t">Bar Color</label>
-                <input type="text" size="6" value="#0058e6" name="combo1Color1t" id="combo1Color1t">
-                <label for="combo1Text1t" id="combo1Label1t">End Data Label</label>
-                <input type="text" size="10" value="Label #1" name="combo1Text1t" id="combo1Text1t">
-                <br />
-                <label for="combo1Size1b">Bar Size</label>
-                <input type="number" size="6" value="47" max="100" min="0" name="combo1Size1b" id="combo1Size1b">
-                <label for="combo1Color1b">Bar Color</label>
-                <input type="text" size="6" value="#94bdff" name="combo1Color1b" id="combo1Color1b">
-                <label for="combo1Text1b" id="combo1Label1b">End Data Label</label>
-                <input type="text" size="10" value="Label #1" name="combo1Text1b" id="combo1Text1b">
-            </fieldset>
-            <fieldset class="combo1Controls styleControls">
-                <legend>Row #2</legend>
-                <label for="combo1Text2">Data Label</label>
-                <input type="text" size="10" value="Data bar #2" name="combo1Text2" id="combo1Text2">
-                <br />
-                <label for="combo1Size2t">Bar Size</label>
-                <input type="number" size="6" value="44" max="100" min="0" name="combo1Size2t" id="combo1Size2t">
-                <label for="combo1Color2t">Bar Color</label>
-                <input type="text" size="6" value="#0058e6" name="combo1Color2t" id="combo1Color2t">
-                <label for="combo1Text2t" id="combo1Label2t">End Data Label</label>
-                <input type="text" size="10" value="Label #2" name="combo1Text2t" id="combo1Text2t">
-                <br />
-                <label for="combo1Size2b">Bar Size</label>
-                <input type="number" size="6" value="29" max="100" min="0" name="combo1Size2b" id="combo1Size2b">
-                <label for="combo1Color2b">Bar Color</label>
-                <input type="text" size="6" value="#94bdff" name="combo1Color2b" id="combo1Color2b">
-                <label for="combo1Text2b" id="combo1Label2b">End Data Label</label>
-                <input type="text" size="10" value="Label #2" name="combo1Text2b" id="combo1Text2b">
-            </fieldset>
-            <fieldset class="combo1Controls styleControls">
-                <legend>Row #3</legend>
-                <label for="combo1Text3">Data Label</label>
-                <input type="text" size="10" value="Data bar #3" name="combo1Text3" id="combo1Text3">
-                <br />
-                <label for="combo1Size3t">Bar Size</label>
-                <input type="number" size="6" value="19" max="100" min="0" name="combo1Size3t" id="combo1Size3t">
-                <label for="combo1Color3t">Bar Color</label>
-                <input type="text" size="6" value="#0058e6" name="combo1Color3t" id="combo1Color3t">
-                <label for="combo1Text3t" id="combo1Label3t">End Data Label</label>
-                <input type="text" size="10" value="Label #3" name="combo1Text3t" id="combo1Text3t">
-                <br />
-                <label for="combo1Size3b">Bar Size</label>
-                <input type="number" size="6" value="70" max="100" min="0" name="combo1Size3b" id="combo1Size3b">
-                <label for="combo1Color3b">Bar Color</label>
-                <input type="text" size="6" value="#94bdff" name="combo1Color3b" id="combo1Color3b">
-                <label for="combo1Text3b" id="combo1Label3b">End Data Label</label>
-                <input type="text" size="10" value="Label #3" name="combo1Text3b" id="combo1Text3b">
-            </fieldset>
-            <fieldset class="combo1Controls styleControls">
-                <legend>Row #4</legend>
-                <label for="combo1Text4">Data Label</label>
-                <input type="text" size="10" value="Data bar #4" name="combo1Text4" id="combo1Text4">
-                <br />
-                <label for="combo1Size4t">Bar Size</label>
-                <input type="number" size="6" value="35" max="100" min="0" name="combo1Size4t" id="combo1Size4t">
-                <label for="combo1Color4t">Bar Color</label>
-                <input type="text" size="6" value="#0058e6" name="combo1Color4t" id="combo1Color4t">
-                <label for="combo1Text4t" id="combo1Label4t">End Data Label</label>
-                <input type="text" size="10" value="Label #4" name="combo1Text4t" id="combo1Text4t">
-                <br />
-                <label for="combo1Size4b">Bar Size</label>
-                <input type="number" size="6" value="88" max="100" min="0" name="combo1Size4b" id="combo1Size4b">
-                <label for="combo1Color4b">Bar Color</label>
-                <input type="text" size="6" value="#94bdff" name="combo1Color4b" id="combo1Color4b">
-                <label for="combo1Text4b" id="combo1Label4b">End Data Label</label>
-                <input type="text" size="10" value="" name="combo1Text4b" id="combo1Text4b">
-            </fieldset>
-            <fieldset class="combo1Controls styleControls" style="display: none;">
-                <legend>Row #5</legend>
-                <label for="combo1Text5">Data Label</label>
-                <input type="text" size="10" value="Data bar #5" name="combo1Text5" id="combo1Text5">
-                <br />
-                <label for="combo1Size5t">Bar Size</label>
-                <input type="number" size="6" value="60" max="100" min="0" name="combo1Size5t" id="combo1Size5t">
-                <label for="combo1Color5t">Bar Color</label>
-                <input type="text" size="6" value="#0058e6" name="combo1Color5t" id="combo1Color5t">
-                <label for="combo1Text5t" id="combo1Label5t">End Data Label</label>
-                <input type="text" size="10" value="Label #5" name="combo1Text5t" id="combo1Text5t">
-                <br />
-                <label for="combo1Size5b">Bar Size</label>
-                <input type="number" size="6" value="24" max="100" min="0" name="combo1Size5b" id="combo1Size5b">
-                <label for="combo1Color5b">Bar Color</label>
-                <input type="text" size="6" value="#94bdff" name="combo1Color5b" id="combo1Color5b">
-                <label for="combo1Text5b" id="combo1Label5b">End Data Label</label>
-                <input type="text" size="10" value="Label #5" name="combo1Text5b" id="combo1Text5b">
-            </fieldset>
-            <fieldset class="combo1Controls styleControls" style="display: none;">
-                <legend>Row #6</legend>
-                <label for="combo1Text6">Data Label</label>
-                <input type="text" size="10" value="Data bar #6" name="combo1Text6" id="combo1Text6">
-                <br />
-                <label for="combo1Size6t">Bar Size</label>
-                <input type="number" size="6" value="8" max="100" min="0" name="combo1Size6t" id="combo1Size6t">
-                <label for="combo1Color6t">Bar Color</label>
-                <input type="text" size="6" value="#0058e6" name="combo1Color6t" id="combo1Color6t">
-                <label for="combo1Text6t" id="combo1Label6t">End Data Label</label>
-                <input type="text" size="10" value="Label #6" name="combo1Text6t" id="combo1Text6t">
-                <br />
-                <label for="combo1Size6b">Bar Size</label>
-                <input type="number" size="6" value="34" max="100" min="0" name="combo1Size6b" id="combo1Size6b">
-                <label for="combo1Color6b">Bar Color</label>
-                <input type="text" size="6" value="#94bdff" name="combo1Color6b" id="combo1Color6b">
-                <label for="combo1Text6b" id="combo1Label6b">End Data Label</label>
-                <input type="text" size="10" value="Label #6" name="combo1Text6b" id="combo1Text6b">
-            </fieldset>
-        </div>
-        <button type="button" id="combo1Button">Generate Email Chart Code</button>
-        <textarea name="combo1Output" id="combo1Output" readonly></textarea>
-    </div>
-    <!-- end combo bar chart -->
-
     <!-- PROGRESS BAR CHART I -->
     <div class="charts" id="prog1Chart" style="display: none;">
         <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Progress Bar Chart I</h1></div>
@@ -2935,6 +3395,181 @@
     </div>
     <!-- end porgress bar chart i -->
 
+    <!-- PROGRESS BAR CHART II -->
+    <div class="charts" id="prog2Chart" style="display: none;">
+        <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Progress Bar Chart II</h1></div>
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                            <!-- PROGRESS BAR #1 -->
+                            <tr class="prog2Bars">
+                                <td align="left" style="padding: 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">Progress bar #1</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row1b" align="right" style="background-color: #1cf28c; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 30%; height: 28px;" height="28"></td>
+                                            <td id="prog2Row1c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 70%; height: 28px;" height="28">&nbsp;28%</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #1 -->
+
+                            <!-- PROGRESS BAR #2 -->
+                            <tr class="prog2Bars">
+                                <td align="left" style="padding: 14px 0 0 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #2</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row2b" align="right" style="background-color: #1cf28c; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 43%; height: 28px;" height="28"></td>
+                                            <td id="prog2Row2c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 57%; height: 28px;" height="28">&nbsp;43%</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #2 -->
+
+                            <!-- PROGRESS BAR #3 -->
+                            <tr class="prog2Bars" style="display: none;">
+                                <td align="left" style="padding: 14px 0 0 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #3</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row3b" align="right" style="background-color: #1cf28c; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8%; height: 28px;" height="28"></td>
+                                            <td id="prog2Row3c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 92%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #3 -->
+
+                            <!-- PROGRESS BAR #4 -->
+                            <tr class="prog2Bars" style="display: none;">
+                                <td align="left" style="padding: 14px 0 0 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #4</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row4b" align="right" style="background-color: #1cf28c; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 97%; height: 28px;" height="28"></td>
+                                            <td id="prog2Row4c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 3%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #4 -->
+
+                            <!-- PROGRESS BAR #5 -->
+                            <tr class="prog2Bars" style="display: none;">
+                                <td align="left" style="padding: 14px 0 0 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #5</td>
+                                        </tr>
+                                    </table>
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                        <tr>
+                                            <td id="prog2Row5b" align="right" style="background-color: #1cf28c; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28"></td>
+                                            <td id="prog2Row5c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end progress bar #5 -->
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div class="scrollBox">
+            <fieldset class="dataCheckboxes">
+                <legend>Chart Customization</legend>
+                <label for="rowsData9">Select # of Bars</label>
+                <input type="number" size="6" value="2" max="5" min="1" name="rowsData9" id="rowsData9">
+                <small>📌 Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
+            </fieldset>
+            <fieldset class="prog2Controls styleControls">
+                <legend>Progress Bar #1</legend>
+                <label for="prog2Text1a">Progress Bar Name</label>
+                <input type="text" size="10" value="Progress bar #1" name="prog2Text1a" id="prog2Text1a">
+                <br />
+                <label for="prog2Size1">Progress Bar Size</label>
+                <input type="number" size="6" value="51" max="100" min="0" name="prog2Size1" id="prog2Size1">
+                <label for="prog2Color1">Bar Color</label>
+                <input type="text" size="6" value="#1cf28c" name="prog2Color1" id="prog2Color1">
+                <label for="prog2Text1" id="prog2Label1">End Label</label>
+                <input type="text" size="10" value="51%" name="prog2Text1" id="prog2Text1">
+            </fieldset>
+            <fieldset class="prog2Controls styleControls">
+                <legend>Progress Bar #2</legend>
+                <label for="prog2Text2a">Progress Bar Name</label>
+                <input type="text" size="10" value="Progress bar #2" name="prog2Text2a" id="prog2Text2a">
+                <br />
+                <label for="prog2Size2">Progress Bar Size</label>
+                <input type="number" size="6" value="43" max="100" min="0" name="prog2Size2" id="prog2Size2">
+                <label for="prog2Color2">Bar Color</label>
+                <input type="text" size="6" value="#1cf28c" name="prog2Color2" id="prog2Color2">
+                <label for="prog2Text2" id="prog2Label2">End Label</label>
+                <input type="text" size="10" value="43%" name="prog2Text2" id="prog2Text2">
+            </fieldset>
+            <fieldset class="prog2Controls styleControls" style="display: none;">
+                <legend>Progress Bar #3</legend>
+                <label for="prog2Text3a">Progress Bar Name</label>
+                <input type="text" size="10" value="Progress bar #3" name="prog2Text3a" id="prog2Text3a">
+                <br />
+                <label for="prog2Size3">Progress Bar Size</label>
+                <input type="number" size="6" value="8" max="100" min="0" name="prog2Size3" id="prog2Size3">
+                <label for="prog2Color3">Bar Color</label>
+                <input type="text" size="6" value="#1cf28c" name="prog2Color3" id="prog2Color3">
+                <label for="prog2Text3" id="prog2Label3">End Label</label>
+                <input type="text" size="10" value="" name="prog2Text3" id="prog2Text3">
+            </fieldset>
+            <fieldset class="prog2Controls styleControls" style="display: none;">
+                <legend>Progress Bar #4</legend>
+                <label for="prog2Text4a">Progress Bar Name</label>
+                <input type="text" size="10" value="Progress bar #4" name="prog2Text4a" id="prog2Text4a">
+                <br />
+                <label for="prog2Size4">Progress Bar Size</label>
+                <input type="number" size="6" value="97" max="100" min="0" name="prog2Size4" id="prog2Size4">
+                <label for="prog2Color4">Bar Color</label>
+                <input type="text" size="6" value="#1cf28c" name="prog2Color4" id="prog2Color4">
+                <label for="prog2Text4" id="prog2Label4">End Label</label>
+                <input type="text" size="10" value="" name="prog2Text4" id="prog2Text4">
+            </fieldset>
+            <fieldset class="prog2Controls styleControls" style="display: none;">
+                <legend>Progress Bar #5</legend>
+                <label for="prog2Text5a">Progress Bar Name</label>
+                <input type="text" size="10" value="Progress bar #5" name="prog2Text5a" id="prog2Text5a">
+                <br />
+                <label for="prog2Size5">Progress Bar Size</label>
+                <input type="number" size="6" value="25" max="100" min="0" name="prog2Size5" id="prog2Size5">
+                <label for="prog2Color5">Bar Color</label>
+                <input type="text" size="6" value="#1cf28c" name="prog2Color5" id="prog2Color5">
+                <label for="prog2Text5" id="prog2Label5">End Label</label>
+                <input type="text" size="10" value="" name="prog2Text5" id="prog2Text5">
+            </fieldset>
+        </div>
+        <button type="button" id="prog2Button">Generate Email Chart Code</button>
+        <textarea name="prog2Output" id="prog2Output" readonly></textarea>
+    </div>
+    <!-- end porgress bar chart ii -->
+
     <!-- VERTICAL BAR CHART -->
     <!-- consider removing the top label - gets really complicated in email clients and expands the data bar width. better just to have the vertical bar and the x-axis label. -->
     <!-- also limit the number of vertical bars to SIX based on these widths. for gmail app android 10, thats the max number of vertical bars before the chart breaks. -->
@@ -3068,12 +3703,6 @@
 
     </div>
     <!-- end vertical bar chart -->
-
-    <!-- AMP EMAIL BAR CHART -->
-    <div class="charts" id="ampChart" style="display: none;">
-        <div style="font-family: Courier, sans-serif; text-align: center;"><h3 style="color: #ff0000;">Coming soon 🏗️🔨</h3><h1>⚡AMP Email Bar Chart Example</h1></div>
-    </div>
-    <!-- end amp email bar chart -->
 
     <!-- INFO -->
     <div class="charts" id="info" style="display: none;">
