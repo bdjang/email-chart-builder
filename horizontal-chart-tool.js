@@ -1433,562 +1433,472 @@ horiz3Output.addEventListener("click", () => {
     horiz3Output.select();
 });
 
-// Progress Bar Chart I Selection
-const prog1Bars = document.getElementsByClassName("prog1Bars");
-const prog1Controls = document.getElementsByClassName("prog1Controls");
-const rowsData8 = document.getElementById("rowsData8");
-rowsData8.addEventListener("change", () => {
-    for (var i = 0; i < prog1Controls.length; i++) {
-        prog1Controls[i].style.display = "none";
-        prog1Bars[i].style.display = "none";
-        for (var x = 0; x < rowsData8.value; x++) {
-            prog1Controls[x].style.display = "block";
-            prog1Bars[x].style.display = "block";
+
+
+
+// Horizontal Chart I Row Selection
+const horiz4Bars = document.getElementsByClassName("horiz4Bars");
+const horiz4Controls = document.getElementsByClassName("horiz4Controls");
+const rowsData11 = document.getElementById("rowsData11");
+rowsData11.addEventListener("change", () => {
+    for (var i = 0; i < horiz4Controls.length; i++) {
+        horiz4Controls[i].style.display = "none";
+        horiz4Bars[i].style.display = "none";
+        for (var x = 0; x < rowsData11.value; x++) {
+            horiz4Controls[x].style.display = "block";
+            horiz4Bars[x].style.display = "block";
         }
     }
 });
 
-// Progress Bar Chart I Customization Logic
-const prog1Row1a = document.getElementById("prog1Row1a");
-const prog1Row1b = document.getElementById("prog1Row1b");
-const prog1Row1c = document.getElementById("prog1Row1c");
-const prog1Row2a = document.getElementById("prog1Row2a");
-const prog1Row2b = document.getElementById("prog1Row2b");
-const prog1Row2c = document.getElementById("prog1Row2c");
-const prog1Row3a = document.getElementById("prog1Row3a");
-const prog1Row3b = document.getElementById("prog1Row3b");
-const prog1Row3c = document.getElementById("prog1Row3c");
-const prog1Row4a = document.getElementById("prog1Row4a");
-const prog1Row4b = document.getElementById("prog1Row4b");
-const prog1Row4c = document.getElementById("prog1Row4c");
-const prog1Row5a = document.getElementById("prog1Row5a");
-const prog1Row5b = document.getElementById("prog1Row5b");
-const prog1Row5c = document.getElementById("prog1Row5c");
+// Horizontal Chart IV Row Customization Logic
+const horiz4Row1a = document.getElementById("horiz4Row1a");
+const horiz4Row1b = document.getElementById("horiz4Row1b");
+const horiz4Row1c = document.getElementById("horiz4Row1c");
+const horiz4Row2a = document.getElementById("horiz4Row2a");
+const horiz4Row2b = document.getElementById("horiz4Row2b");
+const horiz4Row2c = document.getElementById("horiz4Row2c");
+const horiz4Row3a = document.getElementById("horiz4Row3a");
+const horiz4Row3b = document.getElementById("horiz4Row3b");
+const horiz4Row3c = document.getElementById("horiz4Row3c");
+const horiz4Row4a = document.getElementById("horiz4Row4a");
+const horiz4Row4b = document.getElementById("horiz4Row4b");
+const horiz4Row4c = document.getElementById("horiz4Row4c");
+const horiz4Row5a = document.getElementById("horiz4Row5a");
+const horiz4Row5b = document.getElementById("horiz4Row5b");
+const horiz4Row5c = document.getElementById("horiz4Row5c");
+const horiz4Row6a = document.getElementById("horiz4Row6a");
+const horiz4Row6b = document.getElementById("horiz4Row6b");
+const horiz4Row6c = document.getElementById("horiz4Row6c");
+const horiz4Row7a = document.getElementById("horiz4Row7a");
+const horiz4Row7b = document.getElementById("horiz4Row7b");
+const horiz4Row7c = document.getElementById("horiz4Row7c");
+const horiz4Row8a = document.getElementById("horiz4Row8a");
+const horiz4Row8b = document.getElementById("horiz4Row8b");
+const horiz4Row8c = document.getElementById("horiz4Row8c");
+const horiz4Row9a = document.getElementById("horiz4Row9a");
+const horiz4Row9b = document.getElementById("horiz4Row9b");
+const horiz4Row9c = document.getElementById("horiz4Row9c");
+const horiz4Row10a = document.getElementById("horiz4Row10a");
+const horiz4Row10b = document.getElementById("horiz4Row10b");
+const horiz4Row10c = document.getElementById("horiz4Row10c");
 
-// Progress Bar Row 1 Customization Logic
-const prog1Text1a = document.getElementById("prog1Text1a");
-prog1Text1a.oninput = function() {
-    if (prog1Text1a.value == "") {
-        prog1Row1a.innerHTML = prog1Text1a.value;
-    } else if (prog1Text1a.value) {
-        prog1Row1a.innerHTML = prog1Text1a.value;
+// Row 1 Customization Logic
+const horiz4Text1a = document.getElementById("horiz4Text1a");
+horiz4Text1a.oninput = function() {
+    if (horiz4Text1a.value == "") {
+        horiz4Row1a.innerHTML = horiz4Text1a.value;
+    } else if (horiz4Text1a.value) {
+        horiz4Row1a.innerHTML = horiz4Text1a.value;
     }
 };
-const prog1Size1 = document.getElementById("prog1Size1");
-prog1Size1.oninput = function() {
-    prog1Row1b.style.width = Math.abs(prog1Size1.value) + "%";
-    prog1Row1c.style.width = 100 - (Math.abs(prog1Size1.value)) + "%";
+const horiz4Size1 = document.getElementById("horiz4Size1");
+horiz4Size1.oninput = function() {
+    horiz4Row1b.style.width = ((Math.abs(horiz4Size1.value)) * .75) + "%";
+    horiz4Row1c.style.width = ((75 - (Math.abs(horiz4Size1.value)) * .75)) + "%";
 };
-const prog1Text1 = document.getElementById("prog1Text1");
-prog1Text1.oninput = function() {
-    if (prog1Text1.value == "") {
-        prog1Row1c.innerHTML = prog1Text1.value;
-    } else if (prog1Text1.value) {
-        prog1Row1c.innerHTML = "&nbsp;" + prog1Text1.value;
+const horiz4Text1b = document.getElementById("horiz4Text1b");
+horiz4Text1b.oninput = function() {
+    if (horiz4Text1b.value == "") {
+        horiz4Row1c.innerHTML = horiz4Text1b.value;
+    } else if (horiz4Text1b.value) {
+        horiz4Row1c.innerHTML = "&nbsp;" + horiz4Text1b.value;
     }
 };
-const prog1Label1 = document.getElementById("prog1Label1");
-prog1Label1.addEventListener("click", () => {
-    if (prog1Text1.value == "") {
-        prog1Row1b.innerHTML = "";
-        prog1Row1c.innerHTML = "";
-    } else if (prog1Text1.value) {
-        prog1Row1b.innerHTML = prog1Text1.value + "&nbsp;";
-        prog1Text1.value = "";
-        prog1Row1c.innerHTML = "";
+const horiz4Label1b = document.getElementById("horiz4Label1b");
+horiz4Label1b.addEventListener("click", () => {
+    if (horiz4Text1b.value == "") {
+        horiz4Row1b.innerHTML = "";
+        horiz4Row1c.innerHTML = "";
+    } else if (horiz4Text1b.value) {
+        horiz4Row1b.innerHTML = horiz4Text1b.value + "&nbsp;";
+        horiz4Text1b.value = "";
+        horiz4Row1c.innerHTML = "";
     }
 });
-const prog1Color1 = document.getElementById("prog1Color1");
-prog1Color1.oninput = function() {
-    prog1Row1b.style.backgroundColor = prog1Color1.value;
+const horiz4Color1 = document.getElementById("horiz4Color1");
+horiz4Color1.oninput = function() {
+    horiz4Row1b.style.backgroundColor = horiz4Color1.value;
 };
 
-// Progress Bar Row 2 Customization Logic
-const prog1Text2a = document.getElementById("prog1Text2a");
-prog1Text2a.oninput = function() {
-    if (prog1Text2a.value == "") {
-        prog1Row2a.innerHTML = prog1Text2a.value;
-    } else if (prog1Text2a.value) {
-        prog1Row2a.innerHTML = prog1Text2a.value;
+// Row 2 Customization Logic
+const horiz4Text2a = document.getElementById("horiz4Text2a");
+horiz4Text2a.oninput = function() {
+    if (horiz4Text2a.value == "") {
+        horiz4Row2a.innerHTML = horiz4Text2a.value;
+    } else if (horiz4Text2a.value) {
+        horiz4Row2a.innerHTML = horiz4Text2a.value;
     }
 };
-const prog1Size2 = document.getElementById("prog1Size2");
-prog1Size2.oninput = function() {
-    prog1Row2b.style.width = Math.abs(prog1Size2.value) + "%";
-    prog1Row2c.style.width = 100 - (Math.abs(prog1Size2.value)) + "%";
+const horiz4Size2 = document.getElementById("horiz4Size2");
+horiz4Size2.oninput = function() {
+    horiz4Row2b.style.width = ((Math.abs(horiz4Size2.value)) * .75) + "%";
+    horiz4Row2c.style.width = ((75 - (Math.abs(horiz4Size2.value)) * .75)) + "%";
 };
-const prog1Text2 = document.getElementById("prog1Text2");
-prog1Text2.oninput = function() {
-    if (prog1Text2.value == "") {
-        prog1Row2c.innerHTML = prog1Text2.value;
-    } else if (prog1Text2.value) {
-        prog1Row2c.innerHTML = "&nbsp;" + prog1Text2.value;
+const horiz4Text2b = document.getElementById("horiz4Text2b");
+horiz4Text2b.oninput = function() {
+    if (horiz4Text2b.value == "") {
+        horiz4Row2c.innerHTML = horiz4Text2b.value;
+    } else if (horiz4Text2b.value) {
+        horiz4Row2c.innerHTML = "&nbsp;" + horiz4Text2b.value;
     }
 };
-const prog1Label2 = document.getElementById("prog1Label2");
-prog1Label2.addEventListener("click", () => {
-    if (prog1Text2.value == "") {
-        prog1Row2b.innerHTML = "";
-        prog1Row2c.innerHTML = "";
-    } else if (prog1Text2.value) {
-        prog1Row2b.innerHTML = prog1Text2.value + "&nbsp;";
-        prog1Text2.value = "";
-        prog1Row2c.innerHTML = "";
+const horiz4Label2b = document.getElementById("horiz4Label2b");
+horiz4Label2b.addEventListener("click", () => {
+    if (horiz4Text2b.value == "") {
+        horiz4Row2b.innerHTML = "";
+        horiz4Row2c.innerHTML = "";
+    } else if (horiz4Text2b.value) {
+        horiz4Row2b.innerHTML = horiz4Text2b.value + "&nbsp;";
+        horiz4Text2b.value = "";
+        horiz4Row2c.innerHTML = "";
     }
 });
-const prog1Color2 = document.getElementById("prog1Color2");
-prog1Color2.oninput = function() {
-    prog1Row2b.style.backgroundColor = prog1Color2.value;
+const horiz4Color2 = document.getElementById("horiz4Color2");
+horiz4Color2.oninput = function() {
+    horiz4Row2b.style.backgroundColor = horiz4Color2.value;
 };
 
-// Progress Bar Row 3 Customization Logic
-const prog1Text3a = document.getElementById("prog1Text3a");
-prog1Text3a.oninput = function() {
-    if (prog1Text3a.value == "") {
-        prog1Row3a.innerHTML = prog1Text3a.value;
-    } else if (prog1Text3a.value) {
-        prog1Row3a.innerHTML = prog1Text3a.value;
+// Row 3 Customization Logic
+const horiz4Text3a = document.getElementById("horiz4Text3a");
+horiz4Text3a.oninput = function() {
+    if (horiz4Text3a.value == "") {
+        horiz4Row3a.innerHTML = horiz4Text3a.value;
+    } else if (horiz4Text3a.value) {
+        horiz4Row3a.innerHTML = horiz4Text3a.value;
     }
 };
-const prog1Size3 = document.getElementById("prog1Size3");
-prog1Size3.oninput = function() {
-    prog1Row3b.style.width = Math.abs(prog1Size3.value) + "%";
-    prog1Row3c.style.width = 100 - (Math.abs(prog1Size3.value)) + "%";
+const horiz4Size3 = document.getElementById("horiz4Size3");
+horiz4Size3.oninput = function() {
+    horiz4Row3b.style.width = ((Math.abs(horiz4Size3.value)) * .75) + "%";
+    horiz4Row3c.style.width = ((75 - (Math.abs(horiz4Size3.value)) * .75)) + "%";
 };
-const prog1Text3 = document.getElementById("prog1Text3");
-prog1Text3.oninput = function() {
-    if (prog1Text3.value == "") {
-        prog1Row3c.innerHTML = prog1Text3.value;
-    } else if (prog1Text3.value) {
-        prog1Row3c.innerHTML = "&nbsp;" + prog1Text3.value;
+const horiz4Text3b = document.getElementById("horiz4Text3b");
+horiz4Text3b.oninput = function() {
+    if (horiz4Text3b.value == "") {
+        horiz4Row3c.innerHTML = horiz4Text3b.value;
+    } else if (horiz4Text3b.value) {
+        horiz4Row3c.innerHTML = "&nbsp;" + horiz4Text3b.value;
     }
 };
-const prog1Label3 = document.getElementById("prog1Label3");
-prog1Label3.addEventListener("click", () => {
-    if (prog1Text3.value == "") {
-        prog1Row3b.innerHTML = "";
-        prog1Row3c.innerHTML = "";
-    } else if (prog1Text3.value) {
-        prog1Row3b.innerHTML = prog1Text3.value + "&nbsp;";
-        prog1Text3.value = "";
-        prog1Row3c.innerHTML = "";
+const horiz4Label3b = document.getElementById("horiz4Label3b");
+horiz4Label3b.addEventListener("click", () => {
+    if (horiz4Text3b.value == "") {
+        horiz4Row3b.innerHTML = "";
+        horiz4Row3c.innerHTML = "";
+    } else if (horiz4Text3b.value) {
+        horiz4Row3b.innerHTML = horiz4Text3b.value + "&nbsp;";
+        horiz4Text3b.value = "";
+        horiz4Row3c.innerHTML = "";
     }
 });
-const prog1Color3 = document.getElementById("prog1Color3");
-prog1Color3.oninput = function() {
-    prog1Row3b.style.backgroundColor = prog1Color3.value;
+const horiz4Color3 = document.getElementById("horiz4Color3");
+horiz4Color3.oninput = function() {
+    horiz4Row3b.style.backgroundColor = horiz4Color3.value;
 };
 
-// Progress Bar Row 4 Customization Logic
-const prog1Text4a = document.getElementById("prog1Text4a");
-prog1Text4a.oninput = function() {
-    if (prog1Text4a.value == "") {
-        prog1Row4a.innerHTML = prog1Text4a.value;
-    } else if (prog1Text4a.value) {
-        prog1Row4a.innerHTML = prog1Text4a.value;
+// Row 4 Customization Logic
+const horiz4Text4a = document.getElementById("horiz4Text4a");
+horiz4Text4a.oninput = function() {
+    if (horiz4Text4a.value == "") {
+        horiz4Row4a.innerHTML = horiz4Text4a.value;
+    } else if (horiz4Text4a.value) {
+        horiz4Row4a.innerHTML = horiz4Text4a.value;
     }
 };
-const prog1Size4 = document.getElementById("prog1Size4");
-prog1Size4.oninput = function() {
-    prog1Row4b.style.width = Math.abs(prog1Size4.value) + "%";
-    prog1Row4c.style.width = 100 - (Math.abs(prog1Size4.value)) + "%";
+const horiz4Size4 = document.getElementById("horiz4Size4");
+horiz4Size4.oninput = function() {
+    horiz4Row4b.style.width = ((Math.abs(horiz4Size4.value)) * .75) + "%";
+    horiz4Row4c.style.width = ((75 - (Math.abs(horiz4Size4.value)) * .75)) + "%";
 };
-const prog1Text4 = document.getElementById("prog1Text4");
-prog1Text4.oninput = function() {
-    if (prog1Text4.value == "") {
-        prog1Row4c.innerHTML = prog1Text4.value;
-    } else if (prog1Text4.value) {
-        prog1Row4c.innerHTML = "&nbsp;" + prog1Text4.value;
+const horiz4Text4b = document.getElementById("horiz4Text4b");
+horiz4Text4b.oninput = function() {
+    if (horiz4Text4b.value == "") {
+        horiz4Row4c.innerHTML = horiz4Text4b.value;
+    } else if (horiz4Text4b.value) {
+        horiz4Row4c.innerHTML = "&nbsp;" + horiz4Text4b.value;
     }
 };
-const prog1Label4 = document.getElementById("prog1Label4");
-prog1Label4.addEventListener("click", () => {
-    if (prog1Text4.value == "") {
-        prog1Row4b.innerHTML = "";
-        prog1Row4c.innerHTML = "";
-    } else if (prog1Text4.value) {
-        prog1Row4b.innerHTML = prog1Text4.value + "&nbsp;";
-        prog1Text4.value = "";
-        prog1Row4c.innerHTML = "";
+const horiz4Label4b = document.getElementById("horiz4Label4b");
+horiz4Label4b.addEventListener("click", () => {
+    if (horiz4Text4b.value == "") {
+        horiz4Row4b.innerHTML = "";
+        horiz4Row4c.innerHTML = "";
+    } else if (horiz4Text4b.value) {
+        horiz4Row4b.innerHTML = horiz4Text4b.value + "&nbsp;";
+        horiz4Text4b.value = "";
+        horiz4Row4c.innerHTML = "";
     }
 });
-const prog1Color4 = document.getElementById("prog1Color4");
-prog1Color4.oninput = function() {
-    prog1Row4b.style.backgroundColor = prog1Color4.value;
+const horiz4Color4 = document.getElementById("horiz4Color4");
+horiz4Color4.oninput = function() {
+    horiz4Row4b.style.backgroundColor = horiz4Color4.value;
 };
 
-// Progress Bar Row 5 Customization Logic
-const prog1Text5a = document.getElementById("prog1Text5a");
-prog1Text5a.oninput = function() {
-    if (prog1Text5a.value == "") {
-        prog1Row5a.innerHTML = prog1Text5a.value;
-    } else if (prog1Text5a.value) {
-        prog1Row5a.innerHTML = prog1Text5a.value;
+// Row 5 Customization Logic
+const horiz4Text5a = document.getElementById("horiz4Text5a");
+horiz4Text5a.oninput = function() {
+    if (horiz4Text5a.value == "") {
+        horiz4Row5a.innerHTML = horiz4Text5a.value;
+    } else if (horiz4Text5a.value) {
+        horiz4Row5a.innerHTML = horiz4Text5a.value;
     }
 };
-const prog1Size5 = document.getElementById("prog1Size5");
-prog1Size5.oninput = function() {
-    prog1Row5b.style.width = Math.abs(prog1Size5.value) + "%";
-    prog1Row5c.style.width = 100 - (Math.abs(prog1Size5.value)) + "%";
+const horiz4Size5 = document.getElementById("horiz4Size5");
+horiz4Size5.oninput = function() {
+    horiz4Row5b.style.width = ((Math.abs(horiz4Size5.value)) * .75) + "%";
+    horiz4Row5c.style.width = ((75 - (Math.abs(horiz4Size5.value)) * .75)) + "%";
 };
-const prog1Text5 = document.getElementById("prog1Text5");
-prog1Text5.oninput = function() {
-    if (prog1Text5.value == "") {
-        prog1Row5c.innerHTML = prog1Text5.value;
-    } else if (prog1Text5.value) {
-        prog1Row5c.innerHTML = "&nbsp;" + prog1Text5.value;
+const horiz4Text5b = document.getElementById("horiz4Text5b");
+horiz4Text5b.oninput = function() {
+    if (horiz4Text5b.value == "") {
+        horiz4Row5c.innerHTML = horiz4Text5b.value;
+    } else if (horiz4Text5b.value) {
+        horiz4Row5c.innerHTML = "&nbsp;" + horiz4Text5b.value;
     }
 };
-const prog1Label5 = document.getElementById("prog1Label5");
-prog1Label5.addEventListener("click", () => {
-    if (prog1Text5.value == "") {
-        prog1Row5b.innerHTML = "";
-        prog1Row5c.innerHTML = "";
-    } else if (prog1Text5.value) {
-        prog1Row5b.innerHTML = prog1Text5.value + "&nbsp;";
-        prog1Text5.value = "";
-        prog1Row5c.innerHTML = "";
+const horiz4Label5b = document.getElementById("horiz4Label5b");
+horiz4Label5b.addEventListener("click", () => {
+    if (horiz4Text5b.value == "") {
+        horiz4Row5b.innerHTML = "";
+        horiz4Row5c.innerHTML = "";
+    } else if (horiz4Text5b.value) {
+        horiz4Row5b.innerHTML = horiz4Text5b.value + "&nbsp;";
+        horiz4Text5b.value = "";
+        horiz4Row5c.innerHTML = "";
     }
 });
-const prog1Color5 = document.getElementById("prog1Color5");
-prog1Color5.oninput = function() {
-    prog1Row5b.style.backgroundColor = prog1Color5.value;
+const horiz4Color5 = document.getElementById("horiz4Color5");
+horiz4Color5.oninput = function() {
+    horiz4Row5b.style.backgroundColor = horiz4Color5.value;
 };
 
-// Generate Progress Bar HTML Logic
-const prog1Button = document.getElementById("prog1Button");
-const prog1Output = document.getElementById("prog1Output");
-prog1Button.addEventListener("click", () => {
-    if (rowsData8.value === "1") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog1Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1b.style.width + '; height: 28px;" height="28">' + prog1Row1b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1c.style.width + '; height: 28px;" height="28">' + prog1Row1c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog1Output.innerHTML = chartCode;
-    } else if (rowsData8.value === "2") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog1Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1b.style.width + '; height: 28px;" height="28">' + prog1Row1b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1c.style.width + '; height: 28px;" height="28">' + prog1Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row2a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row2b.style.width + '; height: 28px;" height="28">' + prog1Row2b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row2c.style.width + '; height: 28px;" height="28">' + prog1Row2c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog1Output.innerHTML = chartCode;
-    } else if (rowsData8.value === "3") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog1Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1b.style.width + '; height: 28px;" height="28">' + prog1Row1b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1c.style.width + '; height: 28px;" height="28">' + prog1Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row2a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row2b.style.width + '; height: 28px;" height="28">' + prog1Row2b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row2c.style.width + '; height: 28px;" height="28">' + prog1Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row3a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row3b.style.width + '; height: 28px;" height="28">' + prog1Row3b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row3c.style.width + '; height: 28px;" height="28">' + prog1Row3c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog1Output.innerHTML = chartCode;
-    } else if (rowsData8.value === "4") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog1Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1b.style.width + '; height: 28px;" height="28">' + prog1Row1b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1c.style.width + '; height: 28px;" height="28">' + prog1Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row2a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row2b.style.width + '; height: 28px;" height="28">' + prog1Row2b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row2c.style.width + '; height: 28px;" height="28">' + prog1Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row3a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row3b.style.width + '; height: 28px;" height="28">' + prog1Row3b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row3c.style.width + '; height: 28px;" height="28">' + prog1Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row4a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row4b.style.width + '; height: 28px;" height="28">' + prog1Row4b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row4c.style.width + '; height: 28px;" height="28">' + prog1Row4c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog1Output.innerHTML = chartCode;
-    } else if (rowsData8.value === "5") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog1Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1b.style.width + '; height: 28px;" height="28">' + prog1Row1b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row1c.style.width + '; height: 28px;" height="28">' + prog1Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row2a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row2b.style.width + '; height: 28px;" height="28">' + prog1Row2b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row2c.style.width + '; height: 28px;" height="28">' + prog1Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row3a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row3b.style.width + '; height: 28px;" height="28">' + prog1Row3b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row3c.style.width + '; height: 28px;" height="28">' + prog1Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row4a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row4b.style.width + '; height: 28px;" height="28">' + prog1Row4b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row4c.style.width + '; height: 28px;" height="28">' + prog1Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog1Row5a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog1Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row5b.style.width + '; height: 28px;" height="28">' + prog1Row5b.innerHTML + '</td><td align="left" style="background-color: #e3e3e3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog1Row5c.style.width + '; height: 28px;" height="28">' + prog1Row5c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog1Output.innerHTML = chartCode;
+// Row 6 Customization Logic
+const horiz4Text6a = document.getElementById("horiz4Text6a");
+horiz4Text6a.oninput = function() {
+    if (horiz4Text6a.value == "") {
+        horiz4Row6a.innerHTML = horiz4Text6a.value;
+    } else if (horiz4Text6a.value) {
+        horiz4Row6a.innerHTML = horiz4Text6a.value;
+    }
+};
+const horiz4Size6 = document.getElementById("horiz4Size6");
+horiz4Size6.oninput = function() {
+    horiz4Row6b.style.width = ((Math.abs(horiz4Size6.value)) * .75) + "%";
+    horiz4Row6c.style.width = ((75 - (Math.abs(horiz4Size6.value)) * .75)) + "%";
+};
+const horiz4Text6b = document.getElementById("horiz4Text6b");
+horiz4Text6b.oninput = function() {
+    if (horiz4Text6b.value == "") {
+        horiz4Row6c.innerHTML = horiz4Text6b.value;
+    } else if (horiz4Text6b.value) {
+        horiz4Row6c.innerHTML = "&nbsp;" + horiz4Text6b.value;
+    }
+};
+const horiz4Label6b = document.getElementById("horiz4Label6b");
+horiz4Label6b.addEventListener("click", () => {
+    if (horiz4Text6b.value == "") {
+        horiz4Row6b.innerHTML = "";
+        horiz4Row6c.innerHTML = "";
+    } else if (horiz4Text6b.value) {
+        horiz4Row6b.innerHTML = horiz4Text6b.value + "&nbsp;";
+        horiz4Text6b.value = "";
+        horiz4Row6c.innerHTML = "";
     }
 });
-prog1Output.addEventListener("click", () => {
-    prog1Output.select();
-});
+const horiz4Color6 = document.getElementById("horiz4Color6");
+horiz4Color6.oninput = function() {
+    horiz4Row6b.style.backgroundColor = horiz4Color6.value;
+};
 
-
-// Progress Bar Chart II Selection
-const prog2Bars = document.getElementsByClassName("prog2Bars");
-const prog2Controls = document.getElementsByClassName("prog2Controls");
-const rowsData9 = document.getElementById("rowsData9");
-rowsData9.addEventListener("change", () => {
-    for (var i = 0; i < prog2Controls.length; i++) {
-        prog2Controls[i].style.display = "none";
-        prog2Bars[i].style.display = "none";
-        for (var x = 0; x < rowsData9.value; x++) {
-            prog2Controls[x].style.display = "block";
-            prog2Bars[x].style.display = "block";
-        }
-    }
-});
-
-// Progress Bar Chart II Customization Logic
-const prog2Row1a = document.getElementById("prog2Row1a");
-const prog2Row1b = document.getElementById("prog2Row1b");
-const prog2Row1c = document.getElementById("prog2Row1c");
-const prog2Row2a = document.getElementById("prog2Row2a");
-const prog2Row2b = document.getElementById("prog2Row2b");
-const prog2Row2c = document.getElementById("prog2Row2c");
-const prog2Row3a = document.getElementById("prog2Row3a");
-const prog2Row3b = document.getElementById("prog2Row3b");
-const prog2Row3c = document.getElementById("prog2Row3c");
-const prog2Row4a = document.getElementById("prog2Row4a");
-const prog2Row4b = document.getElementById("prog2Row4b");
-const prog2Row4c = document.getElementById("prog2Row4c");
-const prog2Row5a = document.getElementById("prog2Row5a");
-const prog2Row5b = document.getElementById("prog2Row5b");
-const prog2Row5c = document.getElementById("prog2Row5c");
-
-// Progress Bar Row 1 Customization Logic
-const prog2Text1a = document.getElementById("prog2Text1a");
-prog2Text1a.oninput = function() {
-    if (prog2Text1a.value == "") {
-        prog2Row1a.innerHTML = prog2Text1a.value;
-    } else if (prog2Text1a.value) {
-        prog2Row1a.innerHTML = prog2Text1a.value;
+// Row 7 Customization Logic
+const horiz4Text7a = document.getElementById("horiz4Text7a");
+horiz4Text7a.oninput = function() {
+    if (horiz4Text7a.value == "") {
+        horiz4Row7a.innerHTML = horiz4Text7a.value;
+    } else if (horiz4Text7a.value) {
+        horiz4Row7a.innerHTML = horiz4Text7a.value;
     }
 };
-const prog2Size1 = document.getElementById("prog2Size1");
-prog2Size1.oninput = function() {
-    prog2Row1b.style.width = Math.abs(prog2Size1.value) + "%";
-    prog2Row1c.style.width = 100 - (Math.abs(prog2Size1.value)) + "%";
-    if (prog2Size1.value == 5) { // Remove front data bar curve to prevent bar overlap
-        prog2Row1b.style.borderRadius = "30px 0 0 30px";
-    } else if (prog2Size1.value == 6) {
-        prog2Row1b.style.borderRadius = "30px";
-    }
-    if (prog2Size1.value < 3) { // Set values 1 - 3 as specific width
-        prog2Row1b.style.width = 3 + "%";
-        prog2Row1c.style.width = 97 + "%";
-    }
-    if (prog2Size1.value == 0) { // Define 0 value for data bar
-        prog2Row1b.style.width = 0 + "%";
-        prog2Row1c.style.width = 100 + "%";
+const horiz4Size7 = document.getElementById("horiz4Size7");
+horiz4Size7.oninput = function() {
+    horiz4Row7b.style.width = ((Math.abs(horiz4Size7.value)) * .75) + "%";
+    horiz4Row7c.style.width = ((75 - (Math.abs(horiz4Size7.value)) * .75)) + "%";
+};
+const horiz4Text7b = document.getElementById("horiz4Text7b");
+horiz4Text7b.oninput = function() {
+    if (horiz4Text7b.value == "") {
+        horiz4Row7c.innerHTML = horiz4Text7b.value;
+    } else if (horiz4Text7b.value) {
+        horiz4Row7c.innerHTML = "&nbsp;" + horiz4Text7b.value;
     }
 };
-const prog2Text1 = document.getElementById("prog2Text1");
-prog2Text1.oninput = function() {
-    if (prog2Text1.value == "") {
-        prog2Row1c.innerHTML = prog2Text1.value;
-    } else if (prog2Text1.value) {
-        prog2Row1c.innerHTML = "&nbsp;" + prog2Text1.value;
-    }
-};
-const prog2Label1 = document.getElementById("prog2Label1");
-prog2Label1.addEventListener("click", () => {
-    if (prog2Text1.value == "") {
-        prog2Row1b.innerHTML = "";
-        prog2Row1c.innerHTML = "";
-    } else if (prog2Text1.value) {
-        prog2Row1b.innerHTML = prog2Text1.value + "&nbsp;";
-        prog2Text1.value = "";
-        prog2Row1c.innerHTML = "";
+const horiz4Label7b = document.getElementById("horiz4Label7b");
+horiz4Label7b.addEventListener("click", () => {
+    if (horiz4Text7b.value == "") {
+        horiz4Row7b.innerHTML = "";
+        horiz4Row7c.innerHTML = "";
+    } else if (horiz4Text7b.value) {
+        horiz4Row7b.innerHTML = horiz4Text7b.value + "&nbsp;";
+        horiz4Text7b.value = "";
+        horiz4Row7c.innerHTML = "";
     }
 });
-const prog2Color1 = document.getElementById("prog2Color1");
-prog2Color1.oninput = function() {
-    prog2Row1b.style.backgroundColor = prog2Color1.value;
+const horiz4Color7 = document.getElementById("horiz4Color7");
+horiz4Color7.oninput = function() {
+    horiz4Row7b.style.backgroundColor = horiz4Color7.value;
 };
 
-// Progress Bar Row 2 Customization Logic
-const prog2Text2a = document.getElementById("prog2Text2a");
-prog2Text2a.oninput = function() {
-    if (prog2Text2a.value == "") {
-        prog2Row2a.innerHTML = prog2Text2a.value;
-    } else if (prog2Text2a.value) {
-        prog2Row2a.innerHTML = prog2Text2a.value;
+// Row 8 Customization Logic
+const horiz4Text8a = document.getElementById("horiz4Text8a");
+horiz4Text8a.oninput = function() {
+    if (horiz4Text8a.value == "") {
+        horiz4Row8a.innerHTML = horiz4Text8a.value;
+    } else if (horiz4Text8a.value) {
+        horiz4Row8a.innerHTML = horiz4Text8a.value;
     }
 };
-const prog2Size2 = document.getElementById("prog2Size2");
-prog2Size2.oninput = function() {
-    prog2Row2b.style.width = Math.abs(prog2Size2.value) + "%";
-    prog2Row2c.style.width = 100 - (Math.abs(prog2Size2.value)) + "%";
-    if (prog2Size2.value == 5) {
-        prog2Row2b.style.borderRadius = "30px 0 0 30px";
-    } else if (prog2Size2.value == 6) {
-        prog2Row2b.style.borderRadius = "30px";
-    }
-    if (prog2Size2.value < 3) {
-        prog2Row2b.style.width = 3 + "%";
-        prog2Row2c.style.width = 97 + "%";
-    }
-    if (prog2Size2.value == 0) {
-        prog2Row2b.style.width = 0 + "%";
-        prog2Row2c.style.width = 100 + "%";
+const horiz4Size8 = document.getElementById("horiz4Size8");
+horiz4Size8.oninput = function() {
+    horiz4Row8b.style.width = ((Math.abs(horiz4Size8.value)) * .75) + "%";
+    horiz4Row8c.style.width = ((75 - (Math.abs(horiz4Size8.value)) * .75)) + "%";
+};
+const horiz4Text8b = document.getElementById("horiz4Text8b");
+horiz4Text8b.oninput = function() {
+    if (horiz4Text8b.value == "") {
+        horiz4Row8c.innerHTML = horiz4Text8b.value;
+    } else if (horiz4Text8b.value) {
+        horiz4Row8c.innerHTML = "&nbsp;" + horiz4Text8b.value;
     }
 };
-const prog2Text2 = document.getElementById("prog2Text2");
-prog2Text2.oninput = function() {
-    if (prog2Text2.value == "") {
-        prog2Row2c.innerHTML = prog2Text2.value;
-    } else if (prog2Text2.value) {
-        prog2Row2c.innerHTML = "&nbsp;" + prog2Text2.value;
-    }
-};
-const prog2Label2 = document.getElementById("prog2Label2");
-prog2Label2.addEventListener("click", () => {
-    if (prog2Text2.value == "") {
-        prog2Row2b.innerHTML = "";
-        prog2Row2c.innerHTML = "";
-    } else if (prog2Text2.value) {
-        prog2Row2b.innerHTML = prog2Text2.value + "&nbsp;";
-        prog2Text2.value = "";
-        prog2Row2c.innerHTML = "";
+const horiz4Label8b = document.getElementById("horiz4Label8b");
+horiz4Label8b.addEventListener("click", () => {
+    if (horiz4Text8b.value == "") {
+        horiz4Row8b.innerHTML = "";
+        horiz4Row8c.innerHTML = "";
+    } else if (horiz4Text8b.value) {
+        horiz4Row8b.innerHTML = horiz4Text8b.value + "&nbsp;";
+        horiz4Text8b.value = "";
+        horiz4Row8c.innerHTML = "";
     }
 });
-const prog2Color2 = document.getElementById("prog2Color2");
-prog2Color2.oninput = function() {
-    prog2Row2b.style.backgroundColor = prog2Color2.value;
+const horiz4Color8 = document.getElementById("horiz4Color8");
+horiz4Color8.oninput = function() {
+    horiz4Row8b.style.backgroundColor = horiz4Color8.value;
 };
 
-// Progress Bar Row 3 Customization Logic
-const prog2Text3a = document.getElementById("prog2Text3a");
-prog2Text3a.oninput = function() {
-    if (prog2Text3a.value == "") {
-        prog2Row3a.innerHTML = prog2Text3a.value;
-    } else if (prog2Text3a.value) {
-        prog2Row3a.innerHTML = prog2Text3a.value;
+// Row 9 Customization Logic
+const horiz4Text9a = document.getElementById("horiz4Text9a");
+horiz4Text9a.oninput = function() {
+    if (horiz4Text9a.value == "") {
+        horiz4Row9a.innerHTML = horiz4Text9a.value;
+    } else if (horiz4Text9a.value) {
+        horiz4Row9a.innerHTML = horiz4Text9a.value;
     }
 };
-const prog2Size3 = document.getElementById("prog2Size3");
-prog2Size3.oninput = function() {
-    prog2Row3b.style.width = Math.abs(prog2Size3.value) + "%";
-    prog2Row3c.style.width = 100 - (Math.abs(prog2Size3.value)) + "%";
-    if (prog2Size3.value == 5) {
-        prog2Row3b.style.borderRadius = "30px 0 0 30px";
-    } else if (prog2Size3.value == 6) {
-        prog2Row3b.style.borderRadius = "30px";
-    }
-    if (prog2Size3.value < 3) {
-        prog2Row3b.style.width = 3 + "%";
-        prog2Row3c.style.width = 97 + "%";
-    }
-    if (prog2Size3.value == 0) {
-        prog2Row3b.style.width = 0 + "%";
-        prog2Row3c.style.width = 100 + "%";
+const horiz4Size9 = document.getElementById("horiz4Size9");
+horiz4Size9.oninput = function() {
+    horiz4Row9b.style.width = ((Math.abs(horiz4Size9.value)) * .75) + "%";
+    horiz4Row9c.style.width = ((75 - (Math.abs(horiz4Size9.value)) * .75)) + "%";
+};
+const horiz4Text9b = document.getElementById("horiz4Text9b");
+horiz4Text9b.oninput = function() {
+    if (horiz4Text9b.value == "") {
+        horiz4Row9c.innerHTML = horiz4Text9b.value;
+    } else if (horiz4Text9b.value) {
+        horiz4Row9c.innerHTML = "&nbsp;" + horiz4Text9b.value;
     }
 };
-const prog2Text3 = document.getElementById("prog2Text3");
-prog2Text3.oninput = function() {
-    if (prog2Text3.value == "") {
-        prog2Row3c.innerHTML = prog2Text3.value;
-    } else if (prog2Text3.value) {
-        prog2Row3c.innerHTML = "&nbsp;" + prog2Text3.value;
-    }
-};
-const prog2Label3 = document.getElementById("prog2Label3");
-prog2Label3.addEventListener("click", () => {
-    if (prog2Text3.value == "") {
-        prog2Row3b.innerHTML = "";
-        prog2Row3c.innerHTML = "";
-    } else if (prog2Text3.value) {
-        prog2Row3b.innerHTML = prog2Text3.value + "&nbsp;";
-        prog2Text3.value = "";
-        prog2Row3c.innerHTML = "";
+const horiz4Label9b = document.getElementById("horiz4Label9b");
+horiz4Label9b.addEventListener("click", () => {
+    if (horiz4Text9b.value == "") {
+        horiz4Row9b.innerHTML = "";
+        horiz4Row9c.innerHTML = "";
+    } else if (horiz4Text9b.value) {
+        horiz4Row9b.innerHTML = horiz4Text9b.value + "&nbsp;";
+        horiz4Text9b.value = "";
+        horiz4Row9c.innerHTML = "";
     }
 });
-const prog2Color3 = document.getElementById("prog2Color3");
-prog2Color3.oninput = function() {
-    prog2Row3b.style.backgroundColor = prog2Color3.value;
+const horiz4Color9 = document.getElementById("horiz4Color9");
+horiz4Color9.oninput = function() {
+    horiz4Row9b.style.backgroundColor = horiz4Color9.value;
 };
 
-// Progress Bar Row 4 Customization Logic
-const prog2Text4a = document.getElementById("prog2Text4a");
-prog2Text4a.oninput = function() {
-    if (prog2Text4a.value == "") {
-        prog2Row4a.innerHTML = prog2Text4a.value;
-    } else if (prog2Text4a.value) {
-        prog2Row4a.innerHTML = prog2Text4a.value;
+// Row 10 Customization Logic
+const horiz4Text10a = document.getElementById("horiz4Text10a");
+horiz4Text10a.oninput = function() {
+    if (horiz4Text10a.value == "") {
+        horiz4Row10a.innerHTML = horiz4Text10a.value;
+    } else if (horiz4Text10a.value) {
+        horiz4Row10a.innerHTML = horiz4Text10a.value;
     }
 };
-const prog2Size4 = document.getElementById("prog2Size4");
-prog2Size4.oninput = function() {
-    prog2Row4b.style.width = Math.abs(prog2Size4.value) + "%";
-    prog2Row4c.style.width = 100 - (Math.abs(prog2Size4.value)) + "%";
-    if (prog2Size4.value == 5) {
-        prog2Row4b.style.borderRadius = "30px 0 0 30px";
-    } else if (prog2Size4.value == 6) {
-        prog2Row4b.style.borderRadius = "30px";
-    }
-    if (prog2Size4.value < 3) {
-        prog2Row4b.style.width = 3 + "%";
-        prog2Row4c.style.width = 97 + "%";
-    }
-    if (prog2Size4.value == 0) {
-        prog2Row4b.style.width = 0 + "%";
-        prog2Row4c.style.width = 100 + "%";
+const horiz4Size10 = document.getElementById("horiz4Size10");
+horiz4Size10.oninput = function() {
+    horiz4Row10b.style.width = ((Math.abs(horiz4Size10.value)) * .75) + "%";
+    horiz4Row10c.style.width = ((75 - (Math.abs(horiz4Size10.value)) * .75)) + "%";
+};
+const horiz4Text10b = document.getElementById("horiz4Text10b");
+horiz4Text10b.oninput = function() {
+    if (horiz4Text10b.value == "") {
+        horiz4Row10c.innerHTML = horiz4Text10b.value;
+    } else if (horiz4Text10b.value) {
+        horiz4Row10c.innerHTML = "&nbsp;" + horiz4Text10b.value;
     }
 };
-const prog2Text4 = document.getElementById("prog2Text4");
-prog2Text4.oninput = function() {
-    if (prog2Text4.value == "") {
-        prog2Row4c.innerHTML = prog2Text4.value;
-    } else if (prog2Text4.value) {
-        prog2Row4c.innerHTML = "&nbsp;" + prog2Text4.value;
-    }
-};
-const prog2Label4 = document.getElementById("prog2Label4");
-prog2Label4.addEventListener("click", () => {
-    if (prog2Text4.value == "") {
-        prog2Row4b.innerHTML = "";
-        prog2Row4c.innerHTML = "";
-    } else if (prog2Text4.value) {
-        prog2Row4b.innerHTML = prog2Text4.value + "&nbsp;";
-        prog2Text4.value = "";
-        prog2Row4c.innerHTML = "";
+const horiz4Label10b = document.getElementById("horiz4Label10b");
+horiz4Label10b.addEventListener("click", () => {
+    if (horiz4Text10b.value == "") {
+        horiz4Row10b.innerHTML = "";
+        horiz4Row10c.innerHTML = "";
+    } else if (horiz4Text10b.value) {
+        horiz4Row10b.innerHTML = horiz4Text10b.value + "&nbsp;";
+        horiz4Text10b.value = "";
+        horiz4Row10c.innerHTML = "";
     }
 });
-const prog2Color4 = document.getElementById("prog2Color4");
-prog2Color4.oninput = function() {
-    prog2Row4b.style.backgroundColor = prog2Color4.value;
+const horiz4Color10 = document.getElementById("horiz4Color10");
+horiz4Color10.oninput = function() {
+    horiz4Row10b.style.backgroundColor = horiz4Color10.value;
 };
 
-// Progress Bar Row 5 Customization Logic
-const prog2Text5a = document.getElementById("prog2Text5a");
-prog2Text5a.oninput = function() {
-    if (prog2Text5a.value == "") {
-        prog2Row5a.innerHTML = prog2Text5a.value;
-    } else if (prog2Text5a.value) {
-        prog2Row5a.innerHTML = prog2Text5a.value;
-    }
-};
-const prog2Size5 = document.getElementById("prog2Size5");
-prog2Size5.oninput = function() {
-    prog2Row5b.style.width = Math.abs(prog2Size5.value) + "%";
-    prog2Row5c.style.width = 100 - (Math.abs(prog2Size5.value)) + "%";
-    if (prog2Size5.value == 5) {
-        prog2Row5b.style.borderRadius = "15px 0 0 15px";
-    } else if (prog2Size5.value == 6) {
-        prog2Row5b.style.borderRadius = "15px";
-    }
-    if (prog2Size5.value < 3) {
-        prog2Row5b.style.width = 3 + "%";
-        prog2Row5c.style.width = 97 + "%";
-    }
-    if (prog2Size5.value == 0) {
-        prog2Row5b.style.width = 0 + "%";
-        prog2Row5c.style.width = 100 + "%";
-    }
-};
-const prog2Text5 = document.getElementById("prog2Text5");
-prog2Text5.oninput = function() {
-    if (prog2Text5.value == "") {
-        prog2Row5c.innerHTML = prog2Text5.value;
-    } else if (prog2Text5.value) {
-        prog2Row5c.innerHTML = "&nbsp;" + prog2Text5.value;
-    }
-};
-const prog2Label5 = document.getElementById("prog2Label5");
-prog2Label5.addEventListener("click", () => {
-    if (prog2Text5.value == "") {
-        prog2Row5b.innerHTML = "";
-        prog2Row5c.innerHTML = "";
-    } else if (prog2Text5.value) {
-        prog2Row5b.innerHTML = prog2Text5.value + "&nbsp;";
-        prog2Text5.value = "";
-        prog2Row5c.innerHTML = "";
+// Generate Horiz4 HTML Chart Logic
+const horiz4Button = document.getElementById("horiz4Button");
+const horiz4Output = document.getElementById("horiz4Output");
+horiz4Button.addEventListener("click", () => {
+    if (rowsData11.value === "1") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
+    } else if (rowsData11.value === "2") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2b.style.width + '; height: 34px;" height="34">' + horiz4Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2c.style.width + '; height: 34px;" height="34">' + horiz4Row2c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
+    } else if (rowsData11.value === "3") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2b.style.width + '; height: 34px;" height="34">' + horiz4Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2c.style.width + '; height: 34px;" height="34">' + horiz4Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3b.style.width + '; height: 34px;" height="34">' + horiz4Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3c.style.width + '; height: 34px;" height="34">' + horiz4Row3c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
+    } else if (rowsData11.value === "4") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2b.style.width + '; height: 34px;" height="34">' + horiz4Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2c.style.width + '; height: 34px;" height="34">' + horiz4Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3b.style.width + '; height: 34px;" height="34">' + horiz4Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3c.style.width + '; height: 34px;" height="34">' + horiz4Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4b.style.width + '; height: 34px;" height="34">' + horiz4Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4c.style.width + '; height: 34px;" height="34">' + horiz4Row4c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
+    } else if (rowsData11.value === "5") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2b.style.width + '; height: 34px;" height="34">' + horiz4Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2c.style.width + '; height: 34px;" height="34">' + horiz4Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3b.style.width + '; height: 34px;" height="34">' + horiz4Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3c.style.width + '; height: 34px;" height="34">' + horiz4Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4b.style.width + '; height: 34px;" height="34">' + horiz4Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4c.style.width + '; height: 34px;" height="34">' + horiz4Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5b.style.width + '; height: 34px;" height="34">' + horiz4Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5c.style.width + '; height: 34px;" height="34">' + horiz4Row5c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
+    } else if (rowsData11.value === "6") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2b.style.width + '; height: 34px;" height="34">' + horiz4Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2c.style.width + '; height: 34px;" height="34">' + horiz4Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3b.style.width + '; height: 34px;" height="34">' + horiz4Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3c.style.width + '; height: 34px;" height="34">' + horiz4Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4b.style.width + '; height: 34px;" height="34">' + horiz4Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4c.style.width + '; height: 34px;" height="34">' + horiz4Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5b.style.width + '; height: 34px;" height="34">' + horiz4Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5c.style.width + '; height: 34px;" height="34">' + horiz4Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6b.style.width + '; height: 34px;" height="34">' + horiz4Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6c.style.width + '; height: 34px;" height="34">' + horiz4Row6c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
+    } else if (rowsData11.value === "7") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2b.style.width + '; height: 34px;" height="34">' + horiz4Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2c.style.width + '; height: 34px;" height="34">' + horiz4Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3b.style.width + '; height: 34px;" height="34">' + horiz4Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3c.style.width + '; height: 34px;" height="34">' + horiz4Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4b.style.width + '; height: 34px;" height="34">' + horiz4Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4c.style.width + '; height: 34px;" height="34">' + horiz4Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5b.style.width + '; height: 34px;" height="34">' + horiz4Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5c.style.width + '; height: 34px;" height="34">' + horiz4Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6b.style.width + '; height: 34px;" height="34">' + horiz4Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6c.style.width + '; height: 34px;" height="34">' + horiz4Row6c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row7a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color7.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row7b.style.width + '; height: 34px;" height="34">' + horiz4Row7b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row7c.style.width + '; height: 34px;" height="34">' + horiz4Row7c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
+    } else if (rowsData11.value === "8") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2b.style.width + '; height: 34px;" height="34">' + horiz4Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2c.style.width + '; height: 34px;" height="34">' + horiz4Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3b.style.width + '; height: 34px;" height="34">' + horiz4Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3c.style.width + '; height: 34px;" height="34">' + horiz4Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4b.style.width + '; height: 34px;" height="34">' + horiz4Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4c.style.width + '; height: 34px;" height="34">' + horiz4Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5b.style.width + '; height: 34px;" height="34">' + horiz4Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5c.style.width + '; height: 34px;" height="34">' + horiz4Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6b.style.width + '; height: 34px;" height="34">' + horiz4Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6c.style.width + '; height: 34px;" height="34">' + horiz4Row6c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row7a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color7.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row7b.style.width + '; height: 34px;" height="34">' + horiz4Row7b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row7c.style.width + '; height: 34px;" height="34">' + horiz4Row7c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row8a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color8.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row8b.style.width + '; height: 34px;" height="34">' + horiz4Row8b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row8c.style.width + '; height: 34px;" height="34">' + horiz4Row8c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
+    } else if (rowsData11.value === "9") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2b.style.width + '; height: 34px;" height="34">' + horiz4Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2c.style.width + '; height: 34px;" height="34">' + horiz4Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3b.style.width + '; height: 34px;" height="34">' + horiz4Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3c.style.width + '; height: 34px;" height="34">' + horiz4Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4b.style.width + '; height: 34px;" height="34">' + horiz4Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4c.style.width + '; height: 34px;" height="34">' + horiz4Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5b.style.width + '; height: 34px;" height="34">' + horiz4Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5c.style.width + '; height: 34px;" height="34">' + horiz4Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6b.style.width + '; height: 34px;" height="34">' + horiz4Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6c.style.width + '; height: 34px;" height="34">' + horiz4Row6c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row7a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color7.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row7b.style.width + '; height: 34px;" height="34">' + horiz4Row7b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row7c.style.width + '; height: 34px;" height="34">' + horiz4Row7c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row8a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color8.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row8b.style.width + '; height: 34px;" height="34">' + horiz4Row8b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row8c.style.width + '; height: 34px;" height="34">' + horiz4Row8c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row9a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color9.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row9b.style.width + '; height: 34px;" height="34">' + horiz4Row9b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row9c.style.width + '; height: 34px;" height="34">' + horiz4Row9c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
+    } else if (rowsData11.value === "10") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2b.style.width + '; height: 34px;" height="34">' + horiz4Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row2c.style.width + '; height: 34px;" height="34">' + horiz4Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3b.style.width + '; height: 34px;" height="34">' + horiz4Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row3c.style.width + '; height: 34px;" height="34">' + horiz4Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4b.style.width + '; height: 34px;" height="34">' + horiz4Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row4c.style.width + '; height: 34px;" height="34">' + horiz4Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5b.style.width + '; height: 34px;" height="34">' + horiz4Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row5c.style.width + '; height: 34px;" height="34">' + horiz4Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6b.style.width + '; height: 34px;" height="34">' + horiz4Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row6c.style.width + '; height: 34px;" height="34">' + horiz4Row6c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row7a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color7.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row7b.style.width + '; height: 34px;" height="34">' + horiz4Row7b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row7c.style.width + '; height: 34px;" height="34">' + horiz4Row7c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row8a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color8.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row8b.style.width + '; height: 34px;" height="34">' + horiz4Row8b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row8c.style.width + '; height: 34px;" height="34">' + horiz4Row8c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row9a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color9.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row9b.style.width + '; height: 34px;" height="34">' + horiz4Row9b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row9c.style.width + '; height: 34px;" height="34">' + horiz4Row9c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 10px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row10a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color10.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row10b.style.width + '; height: 34px;" height="34">' + horiz4Row10b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row10c.style.width + '; height: 34px;" height="34">' + horiz4Row10c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz4Output.innerHTML = chartCode;
     }
 });
-const prog2Color5 = document.getElementById("prog2Color5");
-prog2Color5.oninput = function() {
-    prog2Row5b.style.backgroundColor = prog2Color5.value;
-};
-
-// Generate Progress Bar HTML Logic
-const prog2Button = document.getElementById("prog2Button");
-const prog2Output = document.getElementById("prog2Output");
-prog2Button.addEventListener("click", () => {
-    if (rowsData9.value === "1") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog2Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color1.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1b.style.width + '; height: 28px;" height="28">' + prog2Row1b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1c.style.width + '; height: 28px;" height="28">' + prog2Row1c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog2Output.innerHTML = chartCode;
-    } else if (rowsData9.value === "2") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog2Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color1.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1b.style.width + '; height: 28px;" height="28">' + prog2Row1b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1c.style.width + '; height: 28px;" height="28">' + prog2Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row2a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color2.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row2b.style.width + '; height: 28px;" height="28">' + prog2Row2b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row2c.style.width + '; height: 28px;" height="28">' + prog2Row2c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog2Output.innerHTML = chartCode;
-    } else if (rowsData9.value === "3") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog2Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color1.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1b.style.width + '; height: 28px;" height="28">' + prog2Row1b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1c.style.width + '; height: 28px;" height="28">' + prog2Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row2a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color2.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row2b.style.width + '; height: 28px;" height="28">' + prog2Row2b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row2c.style.width + '; height: 28px;" height="28">' + prog2Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row3a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color3.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row3b.style.width + '; height: 28px;" height="28">' + prog2Row3b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row3c.style.width + '; height: 28px;" height="28">' + prog2Row3c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog2Output.innerHTML = chartCode;
-    } else if (rowsData9.value === "4") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog2Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color1.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1b.style.width + '; height: 28px;" height="28">' + prog2Row1b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1c.style.width + '; height: 28px;" height="28">' + prog2Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row2a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color2.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row2b.style.width + '; height: 28px;" height="28">' + prog2Row2b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row2c.style.width + '; height: 28px;" height="28">' + prog2Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row3a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color3.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row3b.style.width + '; height: 28px;" height="28">' + prog2Row3b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row3c.style.width + '; height: 28px;" height="28">' + prog2Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row4a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color4.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row4b.style.width + '; height: 28px;" height="28">' + prog2Row4b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row4c.style.width + '; height: 28px;" height="28">' + prog2Row4c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog2Output.innerHTML = chartCode;
-    } else if (rowsData9.value === "5") {
-        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #e3e3e3; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + prog2Row1a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color1.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1b.style.width + '; height: 28px;" height="28">' + prog2Row1b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row1c.style.width + '; height: 28px;" height="28">' + prog2Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row2a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color2.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row2b.style.width + '; height: 28px;" height="28">' + prog2Row2b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row2c.style.width + '; height: 28px;" height="28">' + prog2Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row3a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color3.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row3b.style.width + '; height: 28px;" height="28">' + prog2Row3b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row3c.style.width + '; height: 28px;" height="28">' + prog2Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row4a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color4.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row4b.style.width + '; height: 28px;" height="28">' + prog2Row4b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row4c.style.width + '; height: 28px;" height="28">' + prog2Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 14px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">' + prog2Row5a.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile"> <tr> <td align="right" style="background-color: ' + prog2Color5.value + '; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row5b.style.width + '; height: 28px;" height="28">' + prog2Row5b.innerHTML + '</td><td align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + prog2Row5c.style.width + '; height: 28px;" height="28">' + prog2Row5c.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
-        prog2Output.innerHTML = chartCode;
-    }
-});
-prog2Output.addEventListener("click", () => {
-    prog2Output.select();
+horiz4Output.addEventListener("click", () => {
+    horiz4Output.select();
 });
