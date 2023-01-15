@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://bdjang.github.io/" />
     <meta property="og:image" content="">
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📨</text></svg>">
     <style type="text/css">
 
     /* NORMALIZE.CSS */
@@ -31,6 +31,7 @@
 
     /* SITE STYLES */
     #info { margin: 0 auto 20px; width: 700px; }
+    #chartEmoji { float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); }
     #chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
     .scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 400px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
     .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
@@ -63,9 +64,8 @@
 </head>
 
 <body>
-
     <header>
-        <h1>📨 Email Chart Builder</h1>
+        <h1><div id="chartEmoji">📊</div>Email Chart Builder</h1>
         <p>A tool for building bar charts for HTML email templates.</p>
         <ul>
             <li>100% HTML/CSS Coded Bar Charts ⌨️</li>
@@ -1084,7 +1084,7 @@
 
                     </table>
 
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend4Color1" style="background-color: #0b467b; color: #0b467b; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend4Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend4Color2" style="background-color: #5fadf3; color: #5fadf3; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend4Text2">Light Blue</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend4Color1" style="background-color: #0b467b; border: 1px solid #1f1f1f; color: #0b467b; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend4Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend4Color2" style="background-color: #5fadf3; border: 1px solid #1f1f1f; color: #5fadf3; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend4Text2">Light Blue</span></div>
 
                 </td>
             </tr>
@@ -1388,7 +1388,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend1Color1" style="background-color: #ffd700; color: #ffd700; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend1Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend1Color2" style="background-color: #00a8ff; color: #00a8ff; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend1Text2">Blue</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend1Color1" style="background-color: #ffd700; border: 1px solid #1f1f1f; color: #ffd700; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend1Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend1Color2" style="background-color: #00a8ff; border: 1px solid #1f1f1f; color: #00a8ff; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend1Text2">Blue</span></div>
                 </td>
             </tr>
         </table>
@@ -1762,7 +1762,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend2Color1" style="background-color: #ff3b44; color: #ff3b44; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend2Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend2Color2" style="background-color: #f1f1f1; color: #f1f1f1; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend2Text2">Grey</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend2Color1" style="background-color: #ff3b44; border: 1px solid #1f1f1f; color: #ff3b44; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend2Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend2Color2" style="background-color: #f1f1f1; border: 1px solid #1f1f1f; color: #f1f1f1; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend2Text2">Grey</span></div>
                 </td>
             </tr>
         </table>
@@ -2136,7 +2136,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend3Color1" style="background-color: #fa4747; color: #fa4747; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend3Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color2" style="background-color: #ff785f; color: #ff785f; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend3Text2">Light Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color3" style="background-color: #ffb65d; color: #ffb65d; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend3Text3">Orange</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend3Color1" style="background-color: #fa4747; border: 1px solid #1f1f1f; color: #fa4747; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend3Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color2" style="background-color: #ff785f; border: 1px solid #1f1f1f; color: #ff785f; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend3Text2">Light Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color3" style="background-color: #ffb65d; border: 1px solid #1f1f1f; color: #ffb65d; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend3Text3">Orange</span></div>
                 </td>
             </tr>
         </table>
@@ -2595,7 +2595,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend5Color1" style="background-color: #d6af36; color: #d6af36; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend5Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color2" style="background-color: #d7d7d7; color: #d7d7d7; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend5Text2">Silver</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color3" style="background-color: #a77044; color: #a77044; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend5Text3">Bronze</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend5Color1" style="background-color: #d6af36; border: 1px solid #1f1f1f; color: #d6af36; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend5Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color2" style="background-color: #d7d7d7; border: 1px solid #1f1f1f; color: #d7d7d7; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend5Text2">Silver</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color3" style="background-color: #a77044; border: 1px solid #1f1f1f; color: #a77044; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend5Text3">Bronze</span></div>
                 </td>
             </tr>
         </table>
