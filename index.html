@@ -36,7 +36,7 @@
     .scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
     .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
     .dataCheckboxes label { display: inline-block; width: 150px; }
-    .dataCheckboxes label[for="horiz3Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III 'Add bar dividers' */
+    .dataCheckboxes label[for="horiz3Div"], .dataCheckboxes label[for="horiz4Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III and IV 'Add bar dividers' */
     .dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart 'Add bar dividers' */
     .dataCheckboxes small { display: block; margin: 10px 0; }
     .horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label { display: inline-block; width: 110px; }
@@ -56,10 +56,11 @@
     .splitControls input { width: 46px; }
 
     /* DARK MODE STYLES */
-    .darkStyles { background-color: #0f0f0f !important; -webkit-transition: background-color 500ms ease-in-out; -ms-transition: background-color 500ms ease-in-out; transition: background-color 500ms ease-in-out; color: #ffffff !important; -webkit-transition: color 500ms ease-in-out; -ms-transition: color 500ms ease-in-out; transition: color 500ms ease-in-out; }
-    .lightStyles { background-color: #ffffff !important; -webkit-transition: background-color 500ms ease-in-out; -ms-transition: background-color 500ms ease-in-out; transition: background-color 500ms ease-in-out; color: #000000 !important; -webkit-transition: color 500ms ease-in-out; -ms-transition: color 500ms ease-in-out; transition: color 500ms ease-in-out; }
-    .darkBorder { border-color: #1f1f1f !important; }
     button, #darkMode, #lightMode { cursor: pointer; }
+    .darkBorder { border-color: #1f1f1f !important; }
+    .darkStyles { background-color: #0f0f0f !important; color: #ffffff !important; }
+    .lightStyles { background-color: #ffffff !important; color: #000000 !important; }
+    .darkStyles, .lightStyles { -webkit-transition: background-color 500ms ease; -ms-transition: background-color 500ms ease; transition: background-color 500ms ease; -webkit-transition: color 500ms ease; -ms-transition: color 500ms ease; transition: color 500ms ease; }
 
     </style>
 </head>
@@ -94,7 +95,7 @@
     </header>
 
     <!-- HORIZONTAL BAR CHART I -->
-    <div class="charts" id="horizChart1" style="display: none;" align="left">
+    <div class="charts" id="horizChart1" style="display: none;">
         <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Horizontal Bar Chart I</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
@@ -951,7 +952,7 @@
     <!-- end horizontal bar chart iii -->
 
     <!-- HORIZONTAL BAR CHART IV -->
-    <div class="charts" id="horizChart4" style="display: none;" align="left">
+    <div class="charts" id="horizChart4" style="display: none;">
         <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Horizontal Bar Chart IV</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
@@ -1107,6 +1108,8 @@
                 <legend>Chart Customization</legend>
                 <label for="rowsData11">Select # of Data Rows</label>
                 <input type="number" size="6" value="5" max="10" min="1" name="rowsData11" id="rowsData11">
+                <label for="horiz4Div">Add Bar Dividers</label>
+                <input type="checkbox" name="horiz4Div" id="horiz4Div">
                 <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
             </fieldset>
             <fieldset class="horiz4Controls styleControls">
