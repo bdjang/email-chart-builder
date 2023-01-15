@@ -39,8 +39,8 @@
     .dataCheckboxes label[for="horiz3Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III 'Add bar dividers' */
     .dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart 'Add bar dividers' */
     .dataCheckboxes small { display: block; margin: 10px 0; }
-    .horiz1Controls label, .horiz2Controls label, .horiz3Controls label { display: inline-block; width: 110px; }
-    .horiz1Controls input, .horiz2Controls input, .horiz3Controls input { margin: 10px 60px 0 0; width: 90px; }
+    .horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label { display: inline-block; width: 110px; }
+    .horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input { margin: 10px 60px 0 0; width: 90px; }
     .chartLegend label[for*="legend"] { width: 110px; } /* Targets all labels that start with "legend" */
     .chartLegend input { margin: 0 60px 4px 0; width: 60px; }
     .chartLegend #combo1Div { width: auto; } /* Combo Chart checkbox */
@@ -56,7 +56,8 @@
     .splitControls input { width: 46px; }
 
     /* DARK MODE STYLES */
-    .darkStyles { background-color: #0f0f0f !important; color: #ffffff !important; }
+    .darkStyles { background-color: #0f0f0f !important; -webkit-transition: background-color 500ms ease-in-out; -ms-transition: background-color 500ms ease-in-out; transition: background-color 500ms ease-in-out; color: #ffffff !important; -webkit-transition: color 500ms ease-in-out; -ms-transition: color 500ms ease-in-out; transition: color 500ms ease-in-out; }
+    .lightStyles { background-color: #ffffff !important; -webkit-transition: background-color 500ms ease-in-out; -ms-transition: background-color 500ms ease-in-out; transition: background-color 500ms ease-in-out; color: #000000 !important; -webkit-transition: color 500ms ease-in-out; -ms-transition: color 500ms ease-in-out; transition: color 500ms ease-in-out; }
     .darkBorder { border-color: #1f1f1f !important; }
     button, #darkMode, #lightMode { cursor: pointer; }
 
@@ -78,6 +79,7 @@
             <option value="horizChart1">Horizontal Chart I</option>
             <option value="horizChart2">Horizontal Chart II</option>
             <option value="horizChart3">Horizontal Chart III</option>
+            <option value="horizChart4">Horizontal Chart IV</option>
             <option value="comChart">Combo Chart</option>
             <option value="st1Chart">Stacked Chart I</option>
             <option value="st2Chart">Stacked Chart II</option>
@@ -947,6 +949,291 @@
         <textarea name="horiz3Output" id="horiz3Output" readonly></textarea>
     </div>
     <!-- end horizontal bar chart iii -->
+
+    <!-- HORIZONTAL BAR CHART IV -->
+    <div class="charts" id="horizChart4" style="display: none;" align="left">
+        <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Horizontal Bar Chart IV</h1></div>
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                            <!-- DATA BAR #1 -->
+                            <tr class="horiz4Bars">
+                                <td align="left" style="padding: 0 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #1</td>
+                                            <td id="horiz4Row1b" align="right" style="background-color: #a05195; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 49.5%; height: 34px;" height="34">Label #1&nbsp;</td>
+                                            <td id="horiz4Row1c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #1 -->
+
+                            <!-- DATA BAR #2 -->
+                            <tr class="horiz4Bars">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #2</td>
+                                            <td id="horiz4Row2b" align="right" style="background-color: #a05195; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 33%; height: 34px;" height="34"></td>
+                                            <td id="horiz4Row2c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34">&nbsp;Label #2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #2 -->
+
+                            <!-- DATA BAR #3 -->
+                            <tr class="horiz4Bars">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #3</td>
+                                            <td id="horiz4Row3b" align="right" style="background-color: #a05195; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 6%; height: 34px;" height="34"></td>
+                                            <td id="horiz4Row3c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34">&nbsp;Label #3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #3 -->
+
+                            <!-- DATA BAR #4 -->
+                            <tr class="horiz4Bars">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #4</td>
+                                            <td id="horiz4Row4b" align="right" style="background-color: #ffa600; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 34px;" height="34">Label #4&nbsp;</td>
+                                            <td id="horiz4Row4c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #4 -->
+
+                            <!-- DATA BAR #5 -->
+                            <tr class="horiz4Bars">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #5</td>
+                                            <td id="horiz4Row5b" align="right" style="background-color: #a05195; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 18%; height: 34px;" height="34"></td>
+                                            <td id="horiz4Row5c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34">&nbsp;Label #5</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #5 -->
+
+                            <!-- DATA BAR #6 -->
+                            <tr class="horiz4Bars" style="display: none;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row6a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #6</td>
+                                            <td id="horiz4Row6b" align="right" style="background-color: #a05195; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8%; height: 34px;" height="34"></td>
+                                            <td id="horiz4Row6c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34">&nbsp;Label #6</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #6 -->
+
+                            <!-- DATA BAR #7 -->
+                            <tr class="horiz4Bars" style="display: none;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row7a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #7</td>
+                                            <td id="horiz4Row7b" align="right" style="background-color: #a05195; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8%; height: 34px;" height="34"></td>
+                                            <td id="horiz4Row7c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34">&nbsp;Label #7</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #7 -->
+
+                            <!-- DATA BAR #8 -->
+                            <tr class="horiz4Bars" style="display: none;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row8a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #8</td>
+                                            <td id="horiz4Row8b" align="right" style="background-color: #a05195; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8%; height: 34px;" height="34"></td>
+                                            <td id="horiz4Row8c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34">&nbsp;Label #8</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #8 -->
+
+                            <!-- DATA BAR #9 -->
+                            <tr class="horiz4Bars" style="display: none;">
+                                <td align="left" style="padding: 10px 0 10px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row9a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #9</td>
+                                            <td id="horiz4Row9b" align="right" style="background-color: #a05195; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8%; height: 34px;" height="34"></td>
+                                            <td id="horiz4Row9c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34">&nbsp;Label #9</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #9 -->
+
+                            <!-- DATA BAR #10 -->
+                            <tr class="horiz4Bars" style="display: none;">
+                                <td align="left" style="padding: 10px 0 0 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="horiz4Row10a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">Data bar #10</td>
+                                            <td id="horiz4Row10b" align="right" style="background-color: #a05195; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8%; height: 34px;" height="34"></td>
+                                            <td id="horiz4Row10c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 34px;" height="34">&nbsp;Label #10</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #10 -->
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div class="scrollBox">
+            <fieldset class="dataCheckboxes">
+                <legend>Chart Customization</legend>
+                <label for="rowsData11">Select # of Data Rows</label>
+                <input type="number" size="6" value="5" max="10" min="1" name="rowsData11" id="rowsData11">
+                <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls">
+                <legend>Row #1</legend>
+                <label for="horiz4Text1a">Data Label</label>
+                <input type="text" size="10" value="Data bar #1" name="horiz4Text1a" id="horiz4Text1a">
+                <label for="horiz4Size1">Bar Size</label>
+                <input type="number" size="6" value="66" max="100" min="0" name="horiz4Size1" id="horiz4Size1">
+                <br />
+                <label for="horiz4Color1">Bar Color</label>
+                <input type="text" size="6" value="#a05195" name="horiz4Color1" id="horiz4Color1">
+                <label for="horiz4Text1b" id="horiz4Label1b">End Data Label</label>
+                <input type="text" size="10" value="" name="horiz4Text1b" id="horiz4Text1b">
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls">
+                <legend>Row #2</legend>
+                <label for="horiz4Text2a">Data Label</label>
+                <input type="text" size="10" value="Data bar #2" name="horiz4Text2a" id="horiz4Text2a">
+                <label for="horiz4Size2">Bar Size</label>
+                <input type="number" size="6" value="44" max="100" min="0" name="horiz4Size2" id="horiz4Size2">
+                <br />
+                <label for="horiz4Color2">Bar Color</label>
+                <input type="text" size="6" value="#a05195" name="horiz4Color2" id="horiz4Color2">
+                <label for="horiz4Text2b" id="horiz4Label2b">End Data Label</label>
+                <input type="text" size="10" value="Label #2" name="horiz4Text2b" id="horiz4Text2b">
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls">
+                <legend>Row #3</legend>
+                <label for="horiz4Text3a">Data Label</label>
+                <input type="text" size="10" value="Data bar #3" name="horiz4Text3a" id="horiz4Text3a">
+                <label for="horiz4Size3">Bar Size</label>
+                <input type="number" size="6" value="8" max="100" min="0" name="horiz4Size3" id="horiz4Size3">
+                <br />
+                <label for="horiz4Color3">Bar Color</label>
+                <input type="text" size="6" value="#a05195" name="horiz4Color3" id="horiz4Color3">
+                <label for="horiz4Text3b" id="horiz4Label3b">End Data Label</label>
+                <input type="text" size="10" value="Label #3" name="horiz4Text3b" id="horiz4Text3b">
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls">
+                <legend>Row #4</legend>
+                <label for="horiz4Text4a">Data Label</label>
+                <input type="text" size="10" value="Data bar #4" name="horiz4Text4a" id="horiz4Text4a">
+                <label for="horiz4Size4">Bar Size</label>
+                <input type="number" size="6" value="100" max="100" min="0" name="horiz4Size4" id="horiz4Size4">
+                <br />
+                <label for="horiz4Color4">Bar Color</label>
+                <input type="text" size="6" value="#ffa600" name="horiz4Color4" id="horiz4Color4">
+                <label for="horiz4Text4b" id="horiz4Label4b">End Data Label</label>
+                <input type="text" size="10" value="" name="horiz4Text4b" id="horiz4Text4b">
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls">
+                <legend>Row #5</legend>
+                <label for="horiz4Text5a">Data Label</label>
+                <input type="text" size="10" value="Data bar #5" name="horiz4Text5a" id="horiz4Text5a">
+                <label for="horiz4Size5">Bar Size</label>
+                <input type="number" size="6" value="25" max="100" min="0" name="horiz4Size5" id="horiz4Size5">
+                <br />
+                <label for="horiz4Color5">Bar Color</label>
+                <input type="text" size="6" value="#a05195" name="horiz4Color5" id="horiz4Color5">
+                <label for="horiz4Text5b" id="horiz4Label5b">End Data Label</label>
+                <input type="text" size="10" value="Label #5" name="horiz4Text5b" id="horiz4Text5b">
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls" style="display: none;">
+                <legend>Row #6</legend>
+                <label for="horiz4Text6a">Data Label</label>
+                <input type="text" size="10" value="Data bar #6" name="horiz4Text6a" id="horiz4Text6a">
+                <label for="horiz4Size6">Bar Size</label>
+                <input type="number" size="6" value="10" max="100" min="0" name="horiz4Size6" id="horiz4Size6">
+                <br />
+                <label for="horiz4Color6">Bar Color</label>
+                <input type="text" size="6" value="#a05195" name="horiz4Color6" id="horiz4Color6">
+                <label for="horiz4Text6b" id="horiz4Label6b">End Data Label</label>
+                <input type="text" size="10" value="Label #6" name="horiz4Text6b" id="horiz4Text6b">
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls" style="display: none;">
+                <legend>Row #7</legend>
+                <label for="horiz4Text7a">Data Label</label>
+                <input type="text" size="10" value="Data bar #7" name="horiz4Text7a" id="horiz4Text7a">
+                <label for="horiz4Size7">Bar Size</label>
+                <input type="number" size="6" value="10" max="100" min="0" name="horiz4Size7" id="horiz4Size7">
+                <br />
+                <label for="horiz4Color7">Bar Color</label>
+                <input type="text" size="6" value="#a05195" name="horiz4Color7" id="horiz4Color7">
+                <label for="horiz4Text7b" id="horiz4Label7b">End Data Label</label>
+                <input type="text" size="10" value="Label #7" name="horiz4Text7b" id="horiz4Text7b">
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls" style="display: none;">
+                <legend>Row #8</legend>
+                <label for="horiz4Text8a">Data Label</label>
+                <input type="text" size="10" value="Data bar #8" name="horiz4Text8a" id="horiz4Text8a">
+                <label for="horiz4Size8">Bar Size</label>
+                <input type="number" size="6" value="10" max="100" min="0" name="horiz4Size8" id="horiz4Size8">
+                <br />
+                <label for="horiz4Color8">Bar Color</label>
+                <input type="text" size="6" value="#a05195" name="horiz4Color8" id="horiz4Color8">
+                <label for="horiz4Text8b" id="horiz4Label8b">End Data Label</label>
+                <input type="text" size="10" value="Label #8" name="horiz4Text8b" id="horiz4Text8b">
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls" style="display: none;">
+                <legend>Row #9</legend>
+                <label for="horiz4Text9a">Data Label</label>
+                <input type="text" size="10" value="Data bar #9" name="horiz4Text9a" id="horiz4Text9a">
+                <label for="horiz4Size9">Bar Size</label>
+                <input type="number" size="6" value="10" max="100" min="0" name="horiz4Size9" id="horiz4Size9">
+                <br />
+                <label for="horiz4Color9">Bar Color</label>
+                <input type="text" size="6" value="#a05195" name="horiz4Color9" id="horiz4Color9">
+                <label for="horiz4Text9b" id="horiz4Label9b">End Data Label</label>
+                <input type="text" size="10" value="Label #9" name="horiz4Text9b" id="horiz4Text9b">
+            </fieldset>
+            <fieldset class="horiz4Controls styleControls" style="display: none;">
+                <legend>Row #10</legend>
+                <label for="horiz4Text10a">Data Label</label>
+                <input type="text" size="10" value="Data bar #10" name="horiz4Text10a" id="horiz4Text10a">
+                <label for="horiz4Size10">Bar Size</label>
+                <input type="number" size="6" value="10" max="100" min="0" name="horiz4Size10" id="horiz4Size10">
+                <br />
+                <label for="horiz4Color10">Bar Color</label>
+                <input type="text" size="6" value="#a05195" name="horiz4Color10" id="horiz4Color10">
+                <label for="horiz4Text10b" id="horiz4Label10b">End Data Label</label>
+                <input type="text" size="10" value="Label #10" name="horiz4Text10b" id="horiz4Text10b">
+            </fieldset>
+        </div>
+        <button type="button" id="horiz4Button">Generate Email Chart Code</button>
+        <textarea name="horiz4Output" id="horiz4Output" readonly></textarea>
+    </div>
+    <!-- end horizontal bar chart iv -->
 
     <!-- COMBO BAR CHART -->
     <div class="charts" id="comChart" style="display: none;">
@@ -2439,10 +2726,10 @@
                                 <td align="left" style="padding: 0 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="stacked4Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #1</td>
-                                            <td id="stacked4Row1b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25.5%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row1c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 24.7%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row1d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 2.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #1</td>
+                                            <td id="stacked4Row1b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row1c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 24.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row1d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 2.7%; height: 28px;" height="28"></td>
                                             <td id="stacked4Row1e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
                                         </tr>
                                     </table>
@@ -2455,10 +2742,10 @@
                                 <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="stacked4Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #2</td>
-                                            <td id="stacked4Row2b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 38.2%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row2c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 12%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row2d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 2.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #2</td>
+                                            <td id="stacked4Row2b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 38.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row2c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 12%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row2d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 2.7%; height: 28px;" height="28"></td>
                                             <td id="stacked4Row2e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
                                         </tr>
                                     </table>
@@ -2471,10 +2758,10 @@
                                 <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="stacked4Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #3</td>
-                                            <td id="stacked4Row3b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 47.2%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row3c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 7.5%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row3d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 2.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #3</td>
+                                            <td id="stacked4Row3b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 47.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row3c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 7.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row3d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 2.2%; height: 28px;" height="28"></td>
                                             <td id="stacked4Row3e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
                                         </tr>
                                     </table>
@@ -2487,10 +2774,10 @@
                                 <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="stacked4Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #4</td>
-                                            <td id="stacked4Row4b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 37.5%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row4c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 26.5%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row4d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 10%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #4</td>
+                                            <td id="stacked4Row4b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 37.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row4c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 26.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row4d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 10%; height: 28px;" height="28"></td>
                                             <td id="stacked4Row4e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
                                         </tr>
                                     </table>
@@ -2503,10 +2790,10 @@
                                 <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="stacked4Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #5</td>
-                                            <td id="stacked4Row5b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 10.5%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row5c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 7.5%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row5d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 15%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #5</td>
+                                            <td id="stacked4Row5b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 10.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row5c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 7.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row5d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 15%; height: 28px;" height="28"></td>
                                             <td id="stacked4Row5e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
                                         </tr>
                                     </table>
@@ -2519,10 +2806,10 @@
                                 <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="stacked4Row6a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #6</td>
-                                            <td id="stacked4Row6b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8.2%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row6c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 53.2%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row6d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 11%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row6a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #6</td>
+                                            <td id="stacked4Row6b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 8.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row6c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 53.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row6d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 11%; height: 28px;" height="28"></td>
                                             <td id="stacked4Row6e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
                                         </tr>
                                     </table>
@@ -2535,10 +2822,10 @@
                                 <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="stacked4Row7a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #7</td>
-                                            <td id="stacked4Row7b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 12.7%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row7c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 15.7%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row7d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 14%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row7a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #7</td>
+                                            <td id="stacked4Row7b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 12.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row7c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 15.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row7d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 14%; height: 28px;" height="28"></td>
                                             <td id="stacked4Row7e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
                                         </tr>
                                     </table>
@@ -2551,10 +2838,10 @@
                                 <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="stacked4Row8a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #8</td>
-                                            <td id="stacked4Row8b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 22.5%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row8c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 22.5%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row8d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 20%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row8a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #8</td>
+                                            <td id="stacked4Row8b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 22.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row8c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 22.5%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row8d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 20%; height: 28px;" height="28"></td>
                                             <td id="stacked4Row8e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
                                         </tr>
                                     </table>
@@ -2567,10 +2854,10 @@
                                 <td align="left" style="padding: 5px 0 5px 0;">
                                     <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
                                         <tr>
-                                            <td id="stacked4Row9a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #9</td>
-                                            <td id="stacked4Row9b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45.7%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row9c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 14.2%; height: 28px;" height="28"></td>
-                                            <td id="stacked4Row9d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 12px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 21%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row9a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #9</td>
+                                            <td id="stacked4Row9b" align="right" style="background-color: #d6af36; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45.7%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row9c" align="right" style="background-color: #d7d7d7; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 14.2%; height: 28px;" height="28"></td>
+                                            <td id="stacked4Row9d" align="right" style="background-color: #a77044; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 21%; height: 28px;" height="28"></td>
                                             <td id="stacked4Row9e" style="background-color: #ffffff; margin: 0; padding: 0; width: 100%; height: 28px;" height="28"></td>
                                         </tr>
                                     </table>
@@ -3732,6 +4019,7 @@
     <script type="text/javascript" src="data-bar-chart-tool.js"></script>
     <script type="text/javascript" src="horizontal-chart-tool.js"></script>
     <script type="text/javascript" src="stacked-chart-tool.js"></script>
+    <script type="text/javascript" src="progress-chart-tool.js"></script>
 
   </body>
 </html>
