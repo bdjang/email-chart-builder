@@ -58,6 +58,8 @@ darkMode.addEventListener("click", () => {
     prog2Row4a.classList.replace("lightStyles", "darkStyles");
     prog2Row5a.classList.toggle("darkStyles");
     prog2Row5a.classList.replace("lightStyles", "darkStyles");
+    horiz4Caption.classList.toggle("darkStyles");
+    horiz4Caption.classList.replace("lightStyles", "darkStyles");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.toggle("darkStyles");
         scrollBox[i].classList.replace("lightStyles", "darkStyles");
@@ -118,6 +120,7 @@ lightMode.addEventListener("click", () => {
     prog2Row3a.classList.replace("darkStyles", "lightStyles");
     prog2Row4a.classList.replace("darkStyles", "lightStyles");
     prog2Row5a.classList.replace("darkStyles", "lightStyles");
+    horiz4Caption.classList.replace("darkStyles", "lightStyles");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.replace("darkStyles", "lightStyles");
         textarea[i].classList.replace("darkStyles", "lightStyles");
