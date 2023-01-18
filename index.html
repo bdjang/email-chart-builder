@@ -40,7 +40,8 @@
     .dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart 'Add bar dividers' */
     .dataCheckboxes small { display: block; margin: 10px 0; }
     .horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label { display: inline-block; width: 110px; }
-    .horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input { margin: 10px 60px 0 0; width: 90px; }
+    .horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input, .negativeControls input { margin: 10px 60px 0 0; width: 90px; }
+    .negativeControls label { display: inline-block; width: 135px; }
     .chartLegend label[for*="legend"] { width: 110px; } /* Targets all labels that start with "legend" */
     .chartLegend input { margin: 0 60px 4px 0; width: 60px; }
     .chartLegend #combo1Div { width: auto; } /* Combo Chart checkbox */
@@ -86,6 +87,7 @@
             <option value="st2Chart">Stacked Chart II</option>
             <option value="st3Chart">Stacked Chart III</option>
             <option value="st4Chart">Stacked Chart IV</option>
+            <option value="nChart">Negative Chart</option>
             <option value="npChart">Negative|Positive Chart</option>
             <option value="prog1Chart">Progress Bar Chart I</option>
             <option value="prog2Chart">Progress Bar Chart II</option>
@@ -1379,7 +1381,7 @@
 
                     </table>
 
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend4Color1" style="background-color: #0b467b; border: 1px solid #1f1f1f; color: #0b467b; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend4Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend4Color2" style="background-color: #5fadf3; border: 1px solid #1f1f1f; color: #5fadf3; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend4Text2">Light Blue</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend4Color1" style="background-color: #0b467b; border: 1px solid #c4c4c4; color: #0b467b; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend4Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend4Color2" style="background-color: #5fadf3; border: 1px solid #c4c4c4; color: #5fadf3; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend4Text2">Light Blue</span></div>
 
                 </td>
             </tr>
@@ -1683,7 +1685,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend1Color1" style="background-color: #ffd700; border: 1px solid #1f1f1f; color: #ffd700; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend1Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend1Color2" style="background-color: #00a8ff; border: 1px solid #1f1f1f; color: #00a8ff; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend1Text2">Blue</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend1Color1" style="background-color: #ffd700; border: 1px solid #c4c4c4; color: #ffd700; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend1Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend1Color2" style="background-color: #00a8ff; border: 1px solid #c4c4c4; color: #00a8ff; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend1Text2">Blue</span></div>
                 </td>
             </tr>
         </table>
@@ -2057,7 +2059,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend2Color1" style="background-color: #ff3b44; border: 1px solid #1f1f1f; color: #ff3b44; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend2Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend2Color2" style="background-color: #f1f1f1; border: 1px solid #1f1f1f; color: #f1f1f1; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend2Text2">Grey</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend2Color1" style="background-color: #ff3b44; border: 1px solid #c4c4c4; color: #ff3b44; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend2Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend2Color2" style="background-color: #f1f1f1; border: 1px solid #c4c4c4; color: #f1f1f1; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend2Text2">Grey</span></div>
                 </td>
             </tr>
         </table>
@@ -2431,7 +2433,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend3Color1" style="background-color: #fa4747; border: 1px solid #1f1f1f; color: #fa4747; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend3Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color2" style="background-color: #ff785f; border: 1px solid #1f1f1f; color: #ff785f; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend3Text2">Light Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color3" style="background-color: #ffb65d; border: 1px solid #1f1f1f; color: #ffb65d; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend3Text3">Orange</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend3Color1" style="background-color: #fa4747; border: 1px solid #c4c4c4; color: #fa4747; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend3Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color2" style="background-color: #ff785f; border: 1px solid #c4c4c4; color: #ff785f; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend3Text2">Light Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color3" style="background-color: #ffb65d; border: 1px solid #c4c4c4; color: #ffb65d; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend3Text3">Orange</span></div>
                 </td>
             </tr>
         </table>
@@ -2890,7 +2892,7 @@
                             <!-- end data bar #10 -->
 
                     </table>
-                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend5Color1" style="background-color: #d6af36; border: 1px solid #1f1f1f; color: #d6af36; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend5Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color2" style="background-color: #d7d7d7; border: 1px solid #1f1f1f; color: #d7d7d7; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend5Text2">Silver</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color3" style="background-color: #a77044; border: 1px solid #1f1f1f; color: #a77044; font-family: Courier; font-size: 18px; vertical-align: middle;">..</span> <span id="legend5Text3">Bronze</span></div>
+                    <div style="font-family: Courier; font-size: 14px; margin: 40px 0 0 0; text-align: center;"><span id="legend5Color1" style="background-color: #d6af36; border: 1px solid #c4c4c4; color: #d6af36; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend5Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color2" style="background-color: #d7d7d7; border: 1px solid #c4c4c4; color: #d7d7d7; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend5Text2">Silver</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color3" style="background-color: #a77044; border: 1px solid #c4c4c4; color: #a77044; font-family: Courier; font-size: 18px; vertical-align: middle;">&nbsp;&nbsp;</span> <span id="legend5Text3">Bronze</span></div>
                 </td>
             </tr>
         </table>
@@ -3179,6 +3181,291 @@
     </div>
     <!-- end stacked bar chart iv -->
 
+    <!-- NEGATIVE BAR CHART -->
+    <div class="charts" id="nChart" style="display: none;">
+        <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Negative Bar Chart</h1></div>
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                            <!-- DATA BAR #1 -->
+                            <tr class="negativeBars">
+                                <td align="left" style="padding: 0 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #1</td>
+                                            <td id="negativeRow1b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 28px;" height="28">0%&nbsp;</td>
+                                            <td id="negativeRow1c" align="left" style="background-color: #fff400; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 0%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #1 -->
+
+                            <!-- DATA BAR #2 -->
+                            <tr class="negativeBars">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #2</td>
+                                            <td id="negativeRow2b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 60%; height: 28px;" height="28">20%&nbsp;</td>
+                                            <td id="negativeRow2c" align="left" style="background-color: #fff400; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 15%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #2 -->
+
+                            <!-- DATA BAR #3 -->
+                            <tr class="negativeBars">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #3</td>
+                                            <td id="negativeRow3b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45%; height: 28px;" height="28">-40%&nbsp;</td>
+                                            <td id="negativeRow3c" align="left" style="background-color: #ffdb00; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 30%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #3 -->
+
+                            <!-- DATA BAR #4 -->
+                            <tr class="negativeBars">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #4</td>
+                                            <td id="negativeRow4b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 30%; height: 28px;" height="28">-60%&nbsp;</td>
+                                            <td id="negativeRow4c" align="left" style="background-color: #ff7a00; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #4 -->
+
+                            <!-- DATA BAR #5 -->
+                            <tr class="negativeBars">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #5</td>
+                                            <td id="negativeRow5b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 15%; height: 28px;" height="28"></td>
+                                            <td id="negativeRow5c" align="left" style="background-color: #ff5000; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 60%; height: 28px;" height="28">&nbsp;-80%</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #5 -->
+
+                            <!-- DATA BAR #6 -->
+                            <tr class="negativeBars">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow6a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #6</td>
+                                            <td id="negativeRow6b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 0%; height: 28px;" height="28"></td>
+                                            <td id="negativeRow6c" align="left" style="background-color: #ff0000; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 28px;" height="28">&nbsp;100%</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #6 -->
+
+                            <!-- DATA BAR #7 -->
+                            <tr class="negativeBars" style="display: none;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow7a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #7</td>
+                                            <td id="negativeRow7b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 28px;" height="28">0%&nbsp;</td>
+                                            <td id="negativeRow7c" align="left" style="background-color: #ff0000; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 0%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #7 -->
+
+                            <!-- DATA BAR #8 -->
+                            <tr class="negativeBars" style="display: none;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow8a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #8</td>
+                                            <td id="negativeRow8b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 28px;" height="28">0%&nbsp;</td>
+                                            <td id="negativeRow8c" align="left" style="background-color: #ff0000; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 0%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #8 -->
+
+                            <!-- DATA BAR #9 -->
+                            <tr class="negativeBars" style="display: none;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow9a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #9</td>
+                                            <td id="negativeRow9b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 28px;" height="28">0%&nbsp;</td>
+                                            <td id="negativeRow9c" align="left" style="background-color: #ff0000; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 0%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #9 -->
+
+                            <!-- DATA BAR #10 -->
+                            <tr class="negativeBars" style="display: none;">
+                                <td align="left" style="padding: 5px 0 5px 0;">
+                                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                        <tr>
+                                            <td id="negativeRow10a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #10</td>
+                                            <td id="negativeRow10b" align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 75%; height: 28px;" height="28">0%&nbsp;</td>
+                                            <td id="negativeRow10c" align="left" style="background-color: #ff0000; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, sans-serif; line-height: normal; margin: 0; padding: 0; width: 0%; height: 28px;" height="28"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end data bar #10 -->
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div class="scrollBox">
+            <fieldset class="dataCheckboxes">
+                <legend>Chart Customization</legend>
+                <label for="rowsData12">Select # of Data Rows</label>
+                <input type="number" size="6" value="6" max="10" min="1" name="rowsData12" id="rowsData12">
+                <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text out of the data bar. Click again to delete the outer label text.</small>
+            </fieldset>
+            <fieldset class="negativeControls styleControls">
+                <legend>Row #1</legend>
+                <label for="negativeText1a">Data Label</label>
+                <input type="text" size="10" value="Data bar #1" name="negativeText1a" id="negativeText1a">
+                <label for="negativeSize1">Negative Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="negativeSize1" id="negativeSize1">
+                <br />
+                <label for="negativeColor1">Negative Bar Color</label>
+                <input type="text" size="6" value="#fff400" name="negativeColor1" id="negativeColor1">
+                <label for="negativeText1b" id="negativeLabel1b">Data End Label</label>
+                <input type="text" size="6" value="" name="negativeText1b" id="negativeText1b">
+            </fieldset>
+            <fieldset class="negativeControls styleControls">
+                <legend>Row #2</legend>
+                <label for="negativeText2a">Data Label</label>
+                <input type="text" size="10" value="Data bar #2" name="negativeText2a" id="negativeText2a">
+                <label for="negativeSize2">Negative Bar Size</label>
+                <input type="number" size="6" value="-20" max="0" min="-100" name="negativeSize2" id="negativeSize2">
+                <br />
+                <label for="negativeColor2">Negative Bar Color</label>
+                <input type="text" size="6" value="#fff400" name="negativeColor2" id="negativeColor2">
+                <label for="negativeText2b" id="negativeLabel2b">Data End Label</label>
+                <input type="text" size="6" value="" name="negativeText2b" id="negativeText2b">
+            </fieldset>
+            <fieldset class="negativeControls styleControls">
+                <legend>Row #3</legend>
+                <label for="negativeText3a">Data Label</label>
+                <input type="text" size="10" value="Data bar #3" name="negativeText3a" id="negativeText3a">
+                <label for="negativeSize3">Negative Bar Size</label>
+                <input type="number" size="6" value="-40" max="0" min="-100" name="negativeSize3" id="negativeSize3">
+                <br />
+                <label for="negativeColor3">Negative Bar Color</label>
+                <input type="text" size="6" value="#ffdb00" name="negativeColor3" id="negativeColor3">
+                <label for="negativeText3b" id="negativeLabel3b">Data End Label</label>
+                <input type="text" size="6" value="" name="negativeText3b" id="negativeText3b">
+            </fieldset>
+            <fieldset class="negativeControls styleControls">
+                <legend>Row #4</legend>
+                <label for="negativeText4a">Data Label</label>
+                <input type="text" size="10" value="Data bar #4" name="negativeText4a" id="negativeText4a">
+                <label for="negativeSize4">Negative Bar Size</label>
+                <input type="number" size="6" value="-60" max="0" min="-100" name="negativeSize4" id="negativeSize4">
+                <br />
+                <label for="negativeColor4">Negative Bar Color</label>
+                <input type="text" size="6" value="#ff7a00" name="negativeColor4" id="negativeColor4">
+                <label for="negativeText4b" id="negativeLabel4b">Data End Label</label>
+                <input type="text" size="6" value="" name="negativeText4b" id="negativeText4b">
+            </fieldset>
+            <fieldset class="negativeControls styleControls">
+                <legend>Row #5</legend>
+                <label for="negativeText5a">Data Label</label>
+                <input type="text" size="10" value="Data bar #5" name="negativeText5a" id="negativeText5a">
+                <label for="negativeSize5">Negative Bar Size</label>
+                <input type="number" size="6" value="-80" max="0" min="-100" name="negativeSize5" id="negativeSize5">
+                <br />
+                <label for="negativeColor5">Negative Bar Color</label>
+                <input type="text" size="6" value="#ff5000" name="negativeColor5" id="negativeColor5">
+                <label for="negativeText5b" id="negativeLabel5b">Data End Label</label>
+                <input type="text" size="6" value="-80%" name="negativeText5b" id="negativeText5b">
+            </fieldset>
+            <fieldset class="negativeControls styleControls">
+                <legend>Row #6</legend>
+                <label for="negativeText6a">Data Label</label>
+                <input type="text" size="10" value="Data bar #6" name="negativeText6a" id="negativeText6a">
+                <label for="negativeSize6">Negative Bar Size</label>
+                <input type="number" size="6" value="-100" max="0" min="-100" name="negativeSize6" id="negativeSize6">
+                <br />
+                <label for="negativeColor6">Negative Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="negativeColor6" id="negativeColor6">
+                <label for="negativeText6b" id="negativeLabel6b">Data End Label</label>
+                <input type="text" size="6" value="-100%" name="negativeText6b" id="negativeText6b">
+            </fieldset>
+            <fieldset class="negativeControls styleControls" style="display: none;">
+                <legend>Row #7</legend>
+                <label for="negativeText7a">Data Label</label>
+                <input type="text" size="10" value="Data bar #7" name="negativeText7a" id="negativeText7a">
+                <label for="negativeSize7">Negative Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="negativeSize7" id="negativeSize7">
+                <br />
+                <label for="negativeColor7">Negative Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="negativeColor7" id="negativeColor7">
+                <label for="negativeText7b" id="negativeLabel7b">Data End Label</label>
+                <input type="text" size="6" value="" name="negativeText7b" id="negativeText7b">
+            </fieldset>
+            <fieldset class="negativeControls styleControls" style="display: none;">
+                <legend>Row #8</legend>
+                <label for="negativeText8a">Data Label</label>
+                <input type="text" size="10" value="Data bar #8" name="negativeText8a" id="negativeText8a">
+                <label for="negativeSize8">Negative Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="negativeSize8" id="negativeSize8">
+                <br />
+                <label for="negativeColor8">Negative Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="negativeColor8" id="negativeColor8">
+                <label for="negativeText8b" id="negativeLabel8b">Data End Label</label>
+                <input type="text" size="6" value="" name="negativeText8b" id="negativeText8b">
+            </fieldset>
+            <fieldset class="negativeControls styleControls" style="display: none;">
+                <legend>Row #9</legend>
+                <label for="negativeText9a">Data Label</label>
+                <input type="text" size="10" value="Data bar #9" name="negativeText9a" id="negativeText9a">
+                <label for="negativeSize9">Negative Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="negativeSize9" id="negativeSize9">
+                <br />
+                <label for="negativeColor9">Negative Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="negativeColor9" id="negativeColor9">
+                <label for="negativeText9b" id="negativeLabel9b">Data End Label</label>
+                <input type="text" size="6" value="" name="negativeText9b" id="negativeText9b">
+            </fieldset>
+            <fieldset class="negativeControls styleControls" style="display: none;">
+                <legend>Row #10</legend>
+                <label for="negativeText10a">Data Label</label>
+                <input type="text" size="10" value="Data bar #10" name="negativeText10a" id="negativeText10a">
+                <label for="negativeSize10">Negative Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="negativeSize10" id="negativeSize10">
+                <br />
+                <label for="negativeColor10">Negative Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="negativeColor10" id="negativeColor10">
+                <label for="negativeText10b" id="negativeLabel10b">Data End Label</label>
+                <input type="text" size="6" value="" name="negativeText10b" id="negativeText10b">
+            </fieldset>
+        </div>
+        <button type="button" id="negativeButton">Generate Email Chart Code</button>
+        <textarea name="negativeOutput" id="negativeOutput" readonly></textarea>
+    </div>
+    <!-- end negative bar chart -->
+
     <!-- NEGATIVE|POSITIVE BAR CHART -->
     <div class="charts" id="npChart" style="display: none;">
         <div style="font-family: Courier, sans-serif; text-align: center;"><h1>Negative|Positive Bar Chart</h1></div>
@@ -3186,7 +3473,6 @@
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-
 
                             <!-- DATA BAR #1 -->
                             <tr class="splitBars">
