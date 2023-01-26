@@ -18,6 +18,7 @@ const darkMode = document.getElementById("darkMode");
 const scrollBox = document.getElementsByClassName("scrollBox");
 const textarea = document.getElementsByTagName("textarea");
 const previewBox = document.querySelectorAll("div.charts td.previewBox");
+const previewBoxVertLabel = document.querySelectorAll("div#vertChart td.previewBox table tr:nth-of-type(1) td"); // Top vertical bar label
 const horiz1BarsNodes1 = document.querySelectorAll("tr.horiz1Bars table.chartMobile td:nth-of-type(1)");
 const horiz1BarsNodes2 = document.querySelectorAll("tr.horiz1Bars table.chartMobile td:nth-of-type(3)");
 const horiz2BarsNodes3 = document.querySelectorAll("tr.horiz2Bars table.chartMobile td:nth-of-type(3)");
@@ -33,8 +34,10 @@ const stacked2BarsNodes4 = document.querySelectorAll("tr.stacked2Bars table.char
 const stacked3BarsNodes1 = document.querySelectorAll("tr.stacked3Bars table.chartMobile td:nth-of-type(1)");
 const stacked4BarsNodes1 = document.querySelectorAll("tr.stacked4Bars table.chartMobile td:nth-of-type(1)");
 const stacked4BarsNodes5 = document.querySelectorAll("tr.stacked4Bars table.chartMobile td:nth-of-type(5)");
-const negativeBarsNodes1 = document.querySelectorAll("tr.negativeBars table.chartMobile td:nth-of-type(1)");
-const negativeBarsNodes2 = document.querySelectorAll("tr.negativeBars table.chartMobile td:nth-of-type(2)");
+const negative1BarsNodes1 = document.querySelectorAll("tr.negative1Bars table.chartMobile td:nth-of-type(1)");
+const negative1BarsNodes2 = document.querySelectorAll("tr.negative1Bars table.chartMobile td:nth-of-type(2)");
+const negative2BarsNodes1 = document.querySelectorAll("tr.negative2Bars table.chartMobile td:nth-of-type(1)");
+const negative2BarsNodes3 = document.querySelectorAll("tr.negative2Bars table.chartMobile td:nth-of-type(3)");
 const splitBarsNodes1 = document.querySelectorAll("tr.splitBars table.chartMobile td:nth-of-type(1)");
 const splitBarsNodes4 = document.querySelectorAll("tr.splitBars table.chartMobile td:nth-of-type(4)");
 const combo1BarsNodes1 = document.querySelectorAll("tr.combo1Bars table.chartMobile td:nth-of-type(1)");
@@ -72,8 +75,8 @@ document.addEventListener("keydown", () => {
         prog2Row4a.classList.replace("lightStyles", "darkStyles");
         prog2Row5a.classList.toggle("darkStyles");
         prog2Row5a.classList.replace("lightStyles", "darkStyles");
-        horiz4Caption.classList.toggle("darkStyles");
-        horiz4Caption.classList.replace("lightStyles", "darkStyles");
+        horiz4Source.classList.toggle("darkStyles");
+        horiz4Source.classList.replace("lightStyles", "darkStyles");
         for (var i = 0; i < scrollBox.length; i++) {
             scrollBox[i].classList.toggle("darkStyles");
             scrollBox[i].classList.replace("lightStyles", "darkStyles");
@@ -112,14 +115,20 @@ document.addEventListener("keydown", () => {
             stacked4BarsNodes5[x].classList.toggle("darkStyles");
             stacked4BarsNodes5[x].classList.replace("lightStyles", "darkStyles");
             stacked1BarsNodes3[x].classList.toggle("darkBorder");
-            negativeBarsNodes1[x].classList.toggle("darkStyles");
-            negativeBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            negativeBarsNodes2[x].classList.toggle("darkStyles");
-            negativeBarsNodes2[x].classList.replace("lightStyles", "darkStyles");
+            negative1BarsNodes1[x].classList.toggle("darkStyles");
+            negative1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+            negative1BarsNodes2[x].classList.toggle("darkStyles");
+            negative1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
+            negative2BarsNodes1[x].classList.toggle("darkStyles");
+            negative2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+            negative2BarsNodes3[x].classList.toggle("darkStyles");
+            negative2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
             splitBarsNodes1[x].classList.toggle("darkStyles");
             splitBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
             splitBarsNodes4[x].classList.toggle("darkStyles");
             splitBarsNodes4[x].classList.replace("lightStyles", "darkStyles");
+            previewBoxVertLabel[x].classList.toggle("darkStyles");
+            previewBoxVertLabel[x].classList.replace("lightStyles", "darkStyles");
         }
         for (var y = 0; y < combo1BarsNodes1.length; y++) {
             combo1BarsNodes1[y].classList.toggle("darkStyles");
@@ -159,8 +168,8 @@ darkMode.addEventListener("click", () => {
     prog2Row4a.classList.replace("lightStyles", "darkStyles");
     prog2Row5a.classList.toggle("darkStyles");
     prog2Row5a.classList.replace("lightStyles", "darkStyles");
-    horiz4Caption.classList.toggle("darkStyles");
-    horiz4Caption.classList.replace("lightStyles", "darkStyles");
+    horiz4Source.classList.toggle("darkStyles");
+    horiz4Source.classList.replace("lightStyles", "darkStyles");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.toggle("darkStyles");
         scrollBox[i].classList.replace("lightStyles", "darkStyles");
@@ -199,14 +208,20 @@ darkMode.addEventListener("click", () => {
         stacked4BarsNodes5[x].classList.toggle("darkStyles");
         stacked4BarsNodes5[x].classList.replace("lightStyles", "darkStyles");
         stacked1BarsNodes3[x].classList.toggle("darkBorder");
-        negativeBarsNodes1[x].classList.toggle("darkStyles");
-        negativeBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        negativeBarsNodes2[x].classList.toggle("darkStyles");
-        negativeBarsNodes2[x].classList.replace("lightStyles", "darkStyles");
+        negative1BarsNodes1[x].classList.toggle("darkStyles");
+        negative1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+        negative1BarsNodes2[x].classList.toggle("darkStyles");
+        negative1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
+        negative2BarsNodes1[x].classList.toggle("darkStyles");
+        negative2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+        negative2BarsNodes3[x].classList.toggle("darkStyles");
+        negative2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
         splitBarsNodes1[x].classList.toggle("darkStyles");
         splitBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
         splitBarsNodes4[x].classList.toggle("darkStyles");
         splitBarsNodes4[x].classList.replace("lightStyles", "darkStyles");
+        previewBoxVertLabel[x].classList.toggle("darkStyles");
+        previewBoxVertLabel[x].classList.replace("lightStyles", "darkStyles");
     }
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
         combo1BarsNodes1[y].classList.toggle("darkStyles");
@@ -229,7 +244,7 @@ lightMode.addEventListener("click", () => {
     prog2Row3a.classList.replace("darkStyles", "lightStyles");
     prog2Row4a.classList.replace("darkStyles", "lightStyles");
     prog2Row5a.classList.replace("darkStyles", "lightStyles");
-    horiz4Caption.classList.replace("darkStyles", "lightStyles");
+    horiz4Source.classList.replace("darkStyles", "lightStyles");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.replace("darkStyles", "lightStyles");
         textarea[i].classList.replace("darkStyles", "lightStyles");
@@ -251,10 +266,13 @@ lightMode.addEventListener("click", () => {
         stacked4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
         stacked4BarsNodes5[x].classList.replace("darkStyles", "lightStyles");
         stacked1BarsNodes3[x].classList.toggle("darkBorder");
-        negativeBarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-        negativeBarsNodes2[x].classList.replace("darkStyles", "lightStyles");
+        negative1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+        negative1BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
+        negative2BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+        negative2BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
         splitBarsNodes1[x].classList.replace("darkStyles", "lightStyles");
         splitBarsNodes4[x].classList.replace("darkStyles", "lightStyles");
+        previewBoxVertLabel[x].classList.replace("darkStyles", "lightStyles");
     }
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
         combo1BarsNodes1[y].classList.replace("darkStyles", "lightStyles");
