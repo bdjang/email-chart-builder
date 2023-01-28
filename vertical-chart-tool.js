@@ -303,3 +303,569 @@ vert1Button.addEventListener("click", () => {
 vert1Output.addEventListener("click", () => {
     vert1Output.select();
 });
+
+
+
+
+
+
+
+// Vertical Chart II Row Selection
+const vert2Width = document.getElementById("vert2Width");
+const vert2Bars = document.getElementsByClassName("vert2Bars");
+const vert2LabelX = document.getElementsByClassName("vert2LabelX");
+const vert2Controls = document.getElementsByClassName("vert2Controls");
+const rowsData15 = document.getElementById("rowsData15");
+rowsData15.addEventListener("change", () => {
+    for (var i = 0; i < vert2Controls.length; i++) {
+        vert2Controls[i].style.display = "none";
+        vert2Bars[i].style.display = "none";
+        vert2LabelX[i].style.display = "none";
+        for (var x = 0; x < rowsData15.value; x++) {
+            vert2Controls[x].style.display = "";
+            vert2Bars[x].style.display = "";
+            vert2LabelX[x].style.display = "";
+        }
+    }
+    vert2Width.width = (rowsData15.value * 50);
+});
+
+// Row 1 Customization Logic
+const vert2Row1a = document.getElementById("vert2Row1a"); // Top vertical bar label
+const vert2Text1a = document.getElementById("vert2Text1a");
+vert2Text1a.oninput = function() {
+    vert2Row1a.innerHTML = vert2Text1a.value;
+};
+const vert2Row1e = document.getElementById("vert2Row1e"); // Bottom vertical bar label
+const vert2Text1e = document.getElementById("vert2Text1e");
+vert2Text1e.oninput = function() {
+    vert2Row1e.innerHTML = vert2Text1e.value;
+};
+const vert2Size1b = document.getElementById("vert2Size1b");
+vert2Size1b.oninput = function() {
+    vert2Row1b.height = ((Math.abs(vert2Size1b.value) / 100) * 300);
+    vert2Size1b.max = Math.abs((100 - vert2Size1c.value - vert2Size1d.value));
+    vert2Size1c.max = Math.abs((100 - vert2Size1d.value - vert2Size1b.value));
+    vert2Size1d.max = Math.abs((100 - vert2Size1b.value - vert2Size1c.value));
+};
+const vert2Color1b = document.getElementById("vert2Color1b");
+vert2Color1b.oninput = function() {
+    vert2Row1b.style.backgroundColor = vert2Color1b.value;
+};
+const vert2Size1c = document.getElementById("vert2Size1c");
+vert2Size1c.oninput = function() {
+    vert2Row1c.height = ((Math.abs(vert2Size1c.value) / 100) * 300);
+    vert2Size1b.max = Math.abs((100 - vert2Size1c.value - vert2Size1d.value));
+    vert2Size1c.max = Math.abs((100 - vert2Size1d.value - vert2Size1b.value));
+    vert2Size1d.max = Math.abs((100 - vert2Size1b.value - vert2Size1c.value));
+};
+const vert2Color1c = document.getElementById("vert2Color1c");
+vert2Color1c.oninput = function() {
+    vert2Row1c.style.backgroundColor = vert2Color1c.value;
+};
+const vert2Size1d = document.getElementById("vert2Size1d");
+vert2Size1d.oninput = function() {
+    vert2Row1d.height = ((Math.abs(vert2Size1d.value) / 100) * 300);
+    vert2Size1b.max = Math.abs((100 - vert2Size1c.value - vert2Size1d.value));
+    vert2Size1c.max = Math.abs((100 - vert2Size1d.value - vert2Size1b.value));
+    vert2Size1d.max = Math.abs((100 - vert2Size1b.value - vert2Size1c.value));
+};
+const vert2Color1d = document.getElementById("vert2Color1d");
+vert2Color1d.oninput = function() {
+    vert2Row1d.style.backgroundColor = vert2Color1d.value;
+};
+
+// Row 2 Customization Logic
+const vert2Row2a = document.getElementById("vert2Row2a"); // Top vertical bar label
+const vert2Text2a = document.getElementById("vert2Text2a");
+vert2Text2a.oninput = function() {
+    vert2Row2a.innerHTML = vert2Text2a.value;
+};
+const vert2Row2e = document.getElementById("vert2Row2e"); // Bottom vertical bar label
+const vert2Text2e = document.getElementById("vert2Text2e");
+vert2Text2e.oninput = function() {
+    vert2Row2e.innerHTML = vert2Text2e.value;
+};
+const vert2Size2b = document.getElementById("vert2Size2b");
+vert2Size2b.oninput = function() {
+    vert2Row2b.height = ((Math.abs(vert2Size2b.value) / 100) * 300);
+    vert2Size2b.max = Math.abs((100 - vert2Size2c.value - vert2Size2d.value));
+    vert2Size2c.max = Math.abs((100 - vert2Size2d.value - vert2Size2b.value));
+    vert2Size2d.max = Math.abs((100 - vert2Size2b.value - vert2Size2c.value));
+};
+const vert2Color2b = document.getElementById("vert2Color2b");
+vert2Color2b.oninput = function() {
+    vert2Row2b.style.backgroundColor = vert2Color2b.value;
+};
+const vert2Size2c = document.getElementById("vert2Size2c");
+vert2Size2c.oninput = function() {
+    vert2Row2c.height = ((Math.abs(vert2Size2c.value) / 100) * 300);
+    vert2Size2b.max = Math.abs((100 - vert2Size2c.value - vert2Size2d.value));
+    vert2Size2c.max = Math.abs((100 - vert2Size2d.value - vert2Size2b.value));
+    vert2Size2d.max = Math.abs((100 - vert2Size2b.value - vert2Size2c.value));
+};
+const vert2Color2c = document.getElementById("vert2Color2c");
+vert2Color2c.oninput = function() {
+    vert2Row2c.style.backgroundColor = vert2Color2c.value;
+};
+const vert2Size2d = document.getElementById("vert2Size2d");
+vert2Size2d.oninput = function() {
+    vert2Row2d.height = ((Math.abs(vert2Size2d.value) / 100) * 300);
+    vert2Size2b.max = Math.abs((100 - vert2Size2c.value - vert2Size2d.value));
+    vert2Size2c.max = Math.abs((100 - vert2Size2d.value - vert2Size2b.value));
+    vert2Size2d.max = Math.abs((100 - vert2Size2b.value - vert2Size2c.value));
+};
+const vert2Color2d = document.getElementById("vert2Color2d");
+vert2Color2d.oninput = function() {
+    vert2Row2d.style.backgroundColor = vert2Color2d.value;
+};
+
+// Row 3 Customization Logic
+const vert2Row3a = document.getElementById("vert2Row3a"); // Top vertical bar label
+const vert2Text3a = document.getElementById("vert2Text3a");
+vert2Text3a.oninput = function() {
+    vert2Row3a.innerHTML = vert2Text3a.value;
+};
+const vert2Row3e = document.getElementById("vert2Row3e"); // Bottom vertical bar label
+const vert2Text3e = document.getElementById("vert2Text3e");
+vert2Text3e.oninput = function() {
+    vert2Row3e.innerHTML = vert2Text3e.value;
+};
+const vert2Size3b = document.getElementById("vert2Size3b");
+vert2Size3b.oninput = function() {
+    vert2Row3b.height = ((Math.abs(vert2Size3b.value) / 100) * 300);
+    vert2Size3b.max = Math.abs((100 - vert2Size3c.value - vert2Size3d.value));
+    vert2Size3c.max = Math.abs((100 - vert2Size3d.value - vert2Size3b.value));
+    vert2Size3d.max = Math.abs((100 - vert2Size3b.value - vert2Size3c.value));
+};
+const vert2Color3b = document.getElementById("vert2Color3b");
+vert2Color3b.oninput = function() {
+    vert2Row3b.style.backgroundColor = vert2Color3b.value;
+};
+const vert2Size3c = document.getElementById("vert2Size3c");
+vert2Size3c.oninput = function() {
+    vert2Row3c.height = ((Math.abs(vert2Size3c.value) / 100) * 300);
+    vert2Size3b.max = Math.abs((100 - vert2Size3c.value - vert2Size3d.value));
+    vert2Size3c.max = Math.abs((100 - vert2Size3d.value - vert2Size3b.value));
+    vert2Size3d.max = Math.abs((100 - vert2Size3b.value - vert2Size3c.value));
+};
+const vert2Color3c = document.getElementById("vert2Color3c");
+vert2Color3c.oninput = function() {
+    vert2Row3c.style.backgroundColor = vert2Color3c.value;
+};
+const vert2Size3d = document.getElementById("vert2Size3d");
+vert2Size3d.oninput = function() {
+    vert2Row3d.height = ((Math.abs(vert2Size3d.value) / 100) * 300);
+    vert2Size3b.max = Math.abs((100 - vert2Size3c.value - vert2Size3d.value));
+    vert2Size3c.max = Math.abs((100 - vert2Size3d.value - vert2Size3b.value));
+    vert2Size3d.max = Math.abs((100 - vert2Size3b.value - vert2Size3c.value));
+};
+const vert2Color3d = document.getElementById("vert2Color3d");
+vert2Color3d.oninput = function() {
+    vert2Row3d.style.backgroundColor = vert2Color3d.value;
+};
+
+// Row 4 Customization Logic
+const vert2Row4a = document.getElementById("vert2Row4a"); // Top vertical bar label
+const vert2Text4a = document.getElementById("vert2Text4a");
+vert2Text4a.oninput = function() {
+    vert2Row4a.innerHTML = vert2Text4a.value;
+};
+const vert2Row4e = document.getElementById("vert2Row4e"); // Bottom vertical bar label
+const vert2Text4e = document.getElementById("vert2Text4e");
+vert2Text4e.oninput = function() {
+    vert2Row4e.innerHTML = vert2Text4e.value;
+};
+const vert2Size4b = document.getElementById("vert2Size4b");
+vert2Size4b.oninput = function() {
+    vert2Row4b.height = ((Math.abs(vert2Size4b.value) / 100) * 300);
+    vert2Size4b.max = Math.abs((100 - vert2Size4c.value - vert2Size4d.value));
+    vert2Size4c.max = Math.abs((100 - vert2Size4d.value - vert2Size4b.value));
+    vert2Size4d.max = Math.abs((100 - vert2Size4b.value - vert2Size4c.value));
+};
+const vert2Color4b = document.getElementById("vert2Color4b");
+vert2Color4b.oninput = function() {
+    vert2Row4b.style.backgroundColor = vert2Color4b.value;
+};
+const vert2Size4c = document.getElementById("vert2Size4c");
+vert2Size4c.oninput = function() {
+    vert2Row4c.height = ((Math.abs(vert2Size4c.value) / 100) * 300);
+    vert2Size4b.max = Math.abs((100 - vert2Size4c.value - vert2Size4d.value));
+    vert2Size4c.max = Math.abs((100 - vert2Size4d.value - vert2Size4b.value));
+    vert2Size4d.max = Math.abs((100 - vert2Size4b.value - vert2Size4c.value));
+};
+const vert2Color4c = document.getElementById("vert2Color4c");
+vert2Color4c.oninput = function() {
+    vert2Row4c.style.backgroundColor = vert2Color4c.value;
+};
+const vert2Size4d = document.getElementById("vert2Size4d");
+vert2Size4d.oninput = function() {
+    vert2Row4d.height = ((Math.abs(vert2Size4d.value) / 100) * 300);
+    vert2Size4b.max = Math.abs((100 - vert2Size4c.value - vert2Size4d.value));
+    vert2Size4c.max = Math.abs((100 - vert2Size4d.value - vert2Size4b.value));
+    vert2Size4d.max = Math.abs((100 - vert2Size4b.value - vert2Size4c.value));
+};
+const vert2Color4d = document.getElementById("vert2Color4d");
+vert2Color4d.oninput = function() {
+    vert2Row4d.style.backgroundColor = vert2Color4d.value;
+};
+
+// Row 5 Customization Logic
+const vert2Row5a = document.getElementById("vert2Row5a"); // Top vertical bar label
+const vert2Text5a = document.getElementById("vert2Text5a");
+vert2Text5a.oninput = function() {
+    vert2Row5a.innerHTML = vert2Text5a.value;
+};
+const vert2Row5e = document.getElementById("vert2Row5e"); // Bottom vertical bar label
+const vert2Text5e = document.getElementById("vert2Text5e");
+vert2Text5e.oninput = function() {
+    vert2Row5e.innerHTML = vert2Text5e.value;
+};
+const vert2Size5b = document.getElementById("vert2Size5b");
+vert2Size5b.oninput = function() {
+    vert2Row5b.height = ((Math.abs(vert2Size5b.value) / 100) * 300);
+    vert2Size5b.max = Math.abs((100 - vert2Size5c.value - vert2Size5d.value));
+    vert2Size5c.max = Math.abs((100 - vert2Size5d.value - vert2Size5b.value));
+    vert2Size5d.max = Math.abs((100 - vert2Size5b.value - vert2Size5c.value));
+};
+const vert2Color5b = document.getElementById("vert2Color5b");
+vert2Color5b.oninput = function() {
+    vert2Row5b.style.backgroundColor = vert2Color5b.value;
+};
+const vert2Size5c = document.getElementById("vert2Size5c");
+vert2Size5c.oninput = function() {
+    vert2Row5c.height = ((Math.abs(vert2Size5c.value) / 100) * 300);
+    vert2Size5b.max = Math.abs((100 - vert2Size5c.value - vert2Size5d.value));
+    vert2Size5c.max = Math.abs((100 - vert2Size5d.value - vert2Size5b.value));
+    vert2Size5d.max = Math.abs((100 - vert2Size5b.value - vert2Size5c.value));
+};
+const vert2Color5c = document.getElementById("vert2Color5c");
+vert2Color5c.oninput = function() {
+    vert2Row5c.style.backgroundColor = vert2Color5c.value;
+};
+const vert2Size5d = document.getElementById("vert2Size5d");
+vert2Size5d.oninput = function() {
+    vert2Row5d.height = ((Math.abs(vert2Size5d.value) / 100) * 300);
+    vert2Size5b.max = Math.abs((100 - vert2Size5c.value - vert2Size5d.value));
+    vert2Size5c.max = Math.abs((100 - vert2Size5d.value - vert2Size5b.value));
+    vert2Size5d.max = Math.abs((100 - vert2Size5b.value - vert2Size5c.value));
+};
+const vert2Color5d = document.getElementById("vert2Color5d");
+vert2Color5d.oninput = function() {
+    vert2Row5d.style.backgroundColor = vert2Color5d.value;
+};
+
+// Row 6 Customization Logic
+const vert2Row6a = document.getElementById("vert2Row6a"); // Top vertical bar label
+const vert2Text6a = document.getElementById("vert2Text6a");
+vert2Text6a.oninput = function() {
+    vert2Row6a.innerHTML = vert2Text6a.value;
+};
+const vert2Row6e = document.getElementById("vert2Row6e"); // Bottom vertical bar label
+const vert2Text6e = document.getElementById("vert2Text6e");
+vert2Text6e.oninput = function() {
+    vert2Row6e.innerHTML = vert2Text6e.value;
+};
+const vert2Size6b = document.getElementById("vert2Size6b");
+vert2Size6b.oninput = function() {
+    vert2Row6b.height = ((Math.abs(vert2Size6b.value) / 100) * 300);
+    vert2Size6b.max = Math.abs((100 - vert2Size6c.value - vert2Size6d.value));
+    vert2Size6c.max = Math.abs((100 - vert2Size6d.value - vert2Size6b.value));
+    vert2Size6d.max = Math.abs((100 - vert2Size6b.value - vert2Size6c.value));
+};
+const vert2Color6b = document.getElementById("vert2Color6b");
+vert2Color6b.oninput = function() {
+    vert2Row6b.style.backgroundColor = vert2Color6b.value;
+};
+const vert2Size6c = document.getElementById("vert2Size6c");
+vert2Size6c.oninput = function() {
+    vert2Row6c.height = ((Math.abs(vert2Size6c.value) / 100) * 300);
+    vert2Size6b.max = Math.abs((100 - vert2Size6c.value - vert2Size6d.value));
+    vert2Size6c.max = Math.abs((100 - vert2Size6d.value - vert2Size6b.value));
+    vert2Size6d.max = Math.abs((100 - vert2Size6b.value - vert2Size6c.value));
+};
+const vert2Color6c = document.getElementById("vert2Color6c");
+vert2Color6c.oninput = function() {
+    vert2Row6c.style.backgroundColor = vert2Color6c.value;
+};
+const vert2Size6d = document.getElementById("vert2Size6d");
+vert2Size6d.oninput = function() {
+    vert2Row6d.height = ((Math.abs(vert2Size6d.value) / 100) * 300);
+    vert2Size6b.max = Math.abs((100 - vert2Size6c.value - vert2Size6d.value));
+    vert2Size6c.max = Math.abs((100 - vert2Size6d.value - vert2Size6b.value));
+    vert2Size6d.max = Math.abs((100 - vert2Size6b.value - vert2Size6c.value));
+};
+const vert2Color6d = document.getElementById("vert2Color6d");
+vert2Color6d.oninput = function() {
+    vert2Row6d.style.backgroundColor = vert2Color6d.value;
+};
+
+// Row 7 Customization Logic
+const vert2Row7a = document.getElementById("vert2Row7a"); // Top vertical bar label
+const vert2Text7a = document.getElementById("vert2Text7a");
+vert2Text7a.oninput = function() {
+    vert2Row7a.innerHTML = vert2Text7a.value;
+};
+const vert2Row7e = document.getElementById("vert2Row7e"); // Bottom vertical bar label
+const vert2Text7e = document.getElementById("vert2Text7e");
+vert2Text7e.oninput = function() {
+    vert2Row7e.innerHTML = vert2Text7e.value;
+};
+const vert2Size7b = document.getElementById("vert2Size7b");
+vert2Size7b.oninput = function() {
+    vert2Row7b.height = ((Math.abs(vert2Size7b.value) / 100) * 300);
+    vert2Size7b.max = Math.abs((100 - vert2Size7c.value - vert2Size7d.value));
+    vert2Size7c.max = Math.abs((100 - vert2Size7d.value - vert2Size7b.value));
+    vert2Size7d.max = Math.abs((100 - vert2Size7b.value - vert2Size7c.value));
+};
+const vert2Color7b = document.getElementById("vert2Color7b");
+vert2Color7b.oninput = function() {
+    vert2Row7b.style.backgroundColor = vert2Color7b.value;
+};
+const vert2Size7c = document.getElementById("vert2Size7c");
+vert2Size7c.oninput = function() {
+    vert2Row7c.height = ((Math.abs(vert2Size7c.value) / 100) * 300);
+    vert2Size7b.max = Math.abs((100 - vert2Size7c.value - vert2Size7d.value));
+    vert2Size7c.max = Math.abs((100 - vert2Size7d.value - vert2Size7b.value));
+    vert2Size7d.max = Math.abs((100 - vert2Size7b.value - vert2Size7c.value));
+};
+const vert2Color7c = document.getElementById("vert2Color7c");
+vert2Color7c.oninput = function() {
+    vert2Row7c.style.backgroundColor = vert2Color7c.value;
+};
+const vert2Size7d = document.getElementById("vert2Size7d");
+vert2Size7d.oninput = function() {
+    vert2Row7d.height = ((Math.abs(vert2Size7d.value) / 100) * 300);
+    vert2Size7b.max = Math.abs((100 - vert2Size7c.value - vert2Size7d.value));
+    vert2Size7c.max = Math.abs((100 - vert2Size7d.value - vert2Size7b.value));
+    vert2Size7d.max = Math.abs((100 - vert2Size7b.value - vert2Size7c.value));
+};
+const vert2Color7d = document.getElementById("vert2Color7d");
+vert2Color7d.oninput = function() {
+    vert2Row7d.style.backgroundColor = vert2Color7d.value;
+};
+
+// Row 8 Customization Logic
+const vert2Row8a = document.getElementById("vert2Row8a"); // Top vertical bar label
+const vert2Text8a = document.getElementById("vert2Text8a");
+vert2Text8a.oninput = function() {
+    vert2Row8a.innerHTML = vert2Text8a.value;
+};
+const vert2Row8e = document.getElementById("vert2Row8e"); // Bottom vertical bar label
+const vert2Text8e = document.getElementById("vert2Text8e");
+vert2Text8e.oninput = function() {
+    vert2Row8e.innerHTML = vert2Text8e.value;
+};
+const vert2Size8b = document.getElementById("vert2Size8b");
+vert2Size8b.oninput = function() {
+    vert2Row8b.height = ((Math.abs(vert2Size8b.value) / 100) * 300);
+    vert2Size8b.max = Math.abs((100 - vert2Size8c.value - vert2Size8d.value));
+    vert2Size8c.max = Math.abs((100 - vert2Size8d.value - vert2Size8b.value));
+    vert2Size8d.max = Math.abs((100 - vert2Size8b.value - vert2Size8c.value));
+};
+const vert2Color8b = document.getElementById("vert2Color8b");
+vert2Color8b.oninput = function() {
+    vert2Row8b.style.backgroundColor = vert2Color8b.value;
+};
+const vert2Size8c = document.getElementById("vert2Size8c");
+vert2Size8c.oninput = function() {
+    vert2Row8c.height = ((Math.abs(vert2Size8c.value) / 100) * 300);
+    vert2Size8b.max = Math.abs((100 - vert2Size8c.value - vert2Size8d.value));
+    vert2Size8c.max = Math.abs((100 - vert2Size8d.value - vert2Size8b.value));
+    vert2Size8d.max = Math.abs((100 - vert2Size8b.value - vert2Size8c.value));
+};
+const vert2Color8c = document.getElementById("vert2Color8c");
+vert2Color8c.oninput = function() {
+    vert2Row8c.style.backgroundColor = vert2Color8c.value;
+};
+const vert2Size8d = document.getElementById("vert2Size8d");
+vert2Size8d.oninput = function() {
+    vert2Row8d.height = ((Math.abs(vert2Size8d.value) / 100) * 300);
+    vert2Size8b.max = Math.abs((100 - vert2Size8c.value - vert2Size8d.value));
+    vert2Size8c.max = Math.abs((100 - vert2Size8d.value - vert2Size8b.value));
+    vert2Size8d.max = Math.abs((100 - vert2Size8b.value - vert2Size8c.value));
+};
+const vert2Color8d = document.getElementById("vert2Color8d");
+vert2Color8d.oninput = function() {
+    vert2Row8d.style.backgroundColor = vert2Color8d.value;
+};
+
+// Row 9 Customization Logic
+const vert2Row9a = document.getElementById("vert2Row9a"); // Top vertical bar label
+const vert2Text9a = document.getElementById("vert2Text9a");
+vert2Text9a.oninput = function() {
+    vert2Row9a.innerHTML = vert2Text9a.value;
+};
+const vert2Row9e = document.getElementById("vert2Row9e"); // Bottom vertical bar label
+const vert2Text9e = document.getElementById("vert2Text9e");
+vert2Text9e.oninput = function() {
+    vert2Row9e.innerHTML = vert2Text9e.value;
+};
+const vert2Size9b = document.getElementById("vert2Size9b");
+vert2Size9b.oninput = function() {
+    vert2Row9b.height = ((Math.abs(vert2Size9b.value) / 100) * 300);
+    vert2Size9b.max = Math.abs((100 - vert2Size9c.value - vert2Size9d.value));
+    vert2Size9c.max = Math.abs((100 - vert2Size9d.value - vert2Size9b.value));
+    vert2Size9d.max = Math.abs((100 - vert2Size9b.value - vert2Size9c.value));
+};
+const vert2Color9b = document.getElementById("vert2Color9b");
+vert2Color9b.oninput = function() {
+    vert2Row9b.style.backgroundColor = vert2Color9b.value;
+};
+const vert2Size9c = document.getElementById("vert2Size9c");
+vert2Size9c.oninput = function() {
+    vert2Row9c.height = ((Math.abs(vert2Size9c.value) / 100) * 300);
+    vert2Size9b.max = Math.abs((100 - vert2Size9c.value - vert2Size9d.value));
+    vert2Size9c.max = Math.abs((100 - vert2Size9d.value - vert2Size9b.value));
+    vert2Size9d.max = Math.abs((100 - vert2Size9b.value - vert2Size9c.value));
+};
+const vert2Color9c = document.getElementById("vert2Color9c");
+vert2Color9c.oninput = function() {
+    vert2Row9c.style.backgroundColor = vert2Color9c.value;
+};
+const vert2Size9d = document.getElementById("vert2Size9d");
+vert2Size9d.oninput = function() {
+    vert2Row9d.height = ((Math.abs(vert2Size9d.value) / 100) * 300);
+    vert2Size9b.max = Math.abs((100 - vert2Size9c.value - vert2Size9d.value));
+    vert2Size9c.max = Math.abs((100 - vert2Size9d.value - vert2Size9b.value));
+    vert2Size9d.max = Math.abs((100 - vert2Size9b.value - vert2Size9c.value));
+};
+const vert2Color9d = document.getElementById("vert2Color9d");
+vert2Color9d.oninput = function() {
+    vert2Row9d.style.backgroundColor = vert2Color9d.value;
+};
+
+// Row 10 Customization Logic
+const vert2Row10a = document.getElementById("vert2Row10a"); // Top vertical bar label
+const vert2Text10a = document.getElementById("vert2Text10a");
+vert2Text10a.oninput = function() {
+    vert2Row10a.innerHTML = vert2Text10a.value;
+};
+const vert2Row10e = document.getElementById("vert2Row10e"); // Bottom vertical bar label
+const vert2Text10e = document.getElementById("vert2Text10e");
+vert2Text10e.oninput = function() {
+    vert2Row10e.innerHTML = vert2Text10e.value;
+};
+const vert2Size10b = document.getElementById("vert2Size10b");
+vert2Size10b.oninput = function() {
+    vert2Row10b.height = ((Math.abs(vert2Size10b.value) / 100) * 300);
+    vert2Size10b.max = Math.abs((100 - vert2Size10c.value - vert2Size10d.value));
+    vert2Size10c.max = Math.abs((100 - vert2Size10d.value - vert2Size10b.value));
+    vert2Size10d.max = Math.abs((100 - vert2Size10b.value - vert2Size10c.value));
+};
+const vert2Color10b = document.getElementById("vert2Color10b");
+vert2Color10b.oninput = function() {
+    vert2Row10b.style.backgroundColor = vert2Color10b.value;
+};
+const vert2Size10c = document.getElementById("vert2Size10c");
+vert2Size10c.oninput = function() {
+    vert2Row10c.height = ((Math.abs(vert2Size10c.value) / 100) * 300);
+    vert2Size10b.max = Math.abs((100 - vert2Size10c.value - vert2Size10d.value));
+    vert2Size10c.max = Math.abs((100 - vert2Size10d.value - vert2Size10b.value));
+    vert2Size10d.max = Math.abs((100 - vert2Size10b.value - vert2Size10c.value));
+};
+const vert2Color10c = document.getElementById("vert2Color10c");
+vert2Color10c.oninput = function() {
+    vert2Row10c.style.backgroundColor = vert2Color10c.value;
+};
+const vert2Size10d = document.getElementById("vert2Size10d");
+vert2Size10d.oninput = function() {
+    vert2Row10d.height = ((Math.abs(vert2Size10d.value) / 100) * 300);
+    vert2Size10b.max = Math.abs((100 - vert2Size10c.value - vert2Size10d.value));
+    vert2Size10c.max = Math.abs((100 - vert2Size10d.value - vert2Size10b.value));
+    vert2Size10d.max = Math.abs((100 - vert2Size10b.value - vert2Size10c.value));
+};
+const vert2Color10d = document.getElementById("vert2Color10d");
+vert2Color10d.oninput = function() {
+    vert2Row10d.style.backgroundColor = vert2Color10d.value;
+};
+
+// Row 11 Customization Logic
+const vert2Row11a = document.getElementById("vert2Row11a"); // Top vertical bar label
+const vert2Text11a = document.getElementById("vert2Text11a");
+vert2Text11a.oninput = function() {
+    vert2Row11a.innerHTML = vert2Text11a.value;
+};
+const vert2Row11e = document.getElementById("vert2Row11e"); // Bottom vertical bar label
+const vert2Text11e = document.getElementById("vert2Text11e");
+vert2Text11e.oninput = function() {
+    vert2Row11e.innerHTML = vert2Text11e.value;
+};
+const vert2Size11b = document.getElementById("vert2Size11b");
+vert2Size11b.oninput = function() {
+    vert2Row11b.height = ((Math.abs(vert2Size11b.value) / 100) * 300);
+    vert2Size11b.max = Math.abs((100 - vert2Size11c.value - vert2Size11d.value));
+    vert2Size11c.max = Math.abs((100 - vert2Size11d.value - vert2Size11b.value));
+    vert2Size11d.max = Math.abs((100 - vert2Size11b.value - vert2Size11c.value));
+};
+const vert2Color11b = document.getElementById("vert2Color11b");
+vert2Color11b.oninput = function() {
+    vert2Row11b.style.backgroundColor = vert2Color11b.value;
+};
+const vert2Size11c = document.getElementById("vert2Size11c");
+vert2Size11c.oninput = function() {
+    vert2Row11c.height = ((Math.abs(vert2Size11c.value) / 100) * 300);
+    vert2Size11b.max = Math.abs((100 - vert2Size11c.value - vert2Size11d.value));
+    vert2Size11c.max = Math.abs((100 - vert2Size11d.value - vert2Size11b.value));
+    vert2Size11d.max = Math.abs((100 - vert2Size11b.value - vert2Size11c.value));
+};
+const vert2Color11c = document.getElementById("vert2Color11c");
+vert2Color11c.oninput = function() {
+    vert2Row11c.style.backgroundColor = vert2Color11c.value;
+};
+const vert2Size11d = document.getElementById("vert2Size11d");
+vert2Size11d.oninput = function() {
+    vert2Row11d.height = ((Math.abs(vert2Size11d.value) / 100) * 300);
+    vert2Size11b.max = Math.abs((100 - vert2Size11c.value - vert2Size11d.value));
+    vert2Size11c.max = Math.abs((100 - vert2Size11d.value - vert2Size11b.value));
+    vert2Size11d.max = Math.abs((100 - vert2Size11b.value - vert2Size11c.value));
+};
+const vert2Color11d = document.getElementById("vert2Color11d");
+vert2Color11d.oninput = function() {
+    vert2Row11d.style.backgroundColor = vert2Color11d.value;
+};
+
+// Row 12 Customization Logic
+const vert2Row12a = document.getElementById("vert2Row12a"); // Top vertical bar label
+const vert2Text12a = document.getElementById("vert2Text12a");
+vert2Text12a.oninput = function() {
+    vert2Row12a.innerHTML = vert2Text12a.value;
+};
+const vert2Row12e = document.getElementById("vert2Row12e"); // Bottom vertical bar label
+const vert2Text12e = document.getElementById("vert2Text12e");
+vert2Text12e.oninput = function() {
+    vert2Row12e.innerHTML = vert2Text12e.value;
+};
+const vert2Size12b = document.getElementById("vert2Size12b");
+vert2Size12b.oninput = function() {
+    vert2Row12b.height = ((Math.abs(vert2Size12b.value) / 100) * 300);
+    vert2Size12b.max = Math.abs((100 - vert2Size12c.value - vert2Size12d.value));
+    vert2Size12c.max = Math.abs((100 - vert2Size12d.value - vert2Size12b.value));
+    vert2Size12d.max = Math.abs((100 - vert2Size12b.value - vert2Size12c.value));
+};
+const vert2Color12b = document.getElementById("vert2Color12b");
+vert2Color12b.oninput = function() {
+    vert2Row12b.style.backgroundColor = vert2Color12b.value;
+};
+const vert2Size12c = document.getElementById("vert2Size12c");
+vert2Size12c.oninput = function() {
+    vert2Row12c.height = ((Math.abs(vert2Size12c.value) / 100) * 300);
+    vert2Size12b.max = Math.abs((100 - vert2Size12c.value - vert2Size12d.value));
+    vert2Size12c.max = Math.abs((100 - vert2Size12d.value - vert2Size12b.value));
+    vert2Size12d.max = Math.abs((100 - vert2Size12b.value - vert2Size12c.value));
+};
+const vert2Color12c = document.getElementById("vert2Color12c");
+vert2Color12c.oninput = function() {
+    vert2Row12c.style.backgroundColor = vert2Color12c.value;
+};
+const vert2Size12d = document.getElementById("vert2Size12d");
+vert2Size12d.oninput = function() {
+    vert2Row12d.height = ((Math.abs(vert2Size12d.value) / 100) * 300);
+    vert2Size12b.max = Math.abs((100 - vert2Size12c.value - vert2Size12d.value));
+    vert2Size12c.max = Math.abs((100 - vert2Size12d.value - vert2Size12b.value));
+    vert2Size12d.max = Math.abs((100 - vert2Size12b.value - vert2Size12c.value));
+};
+const vert2Color12d = document.getElementById("vert2Color12d");
+vert2Color12d.oninput = function() {
+    vert2Row12d.style.backgroundColor = vert2Color12d.value;
+};
