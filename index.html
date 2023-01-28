@@ -36,13 +36,13 @@
     .scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
     .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
     .dataCheckboxes label { display: inline-block; width: 150px; }
-    .dataCheckboxes label[for="rowsData14"] { width: 160px; } /* Vertical Bar Select Label */
+    .dataCheckboxes label[for="rowsData14"], .dataCheckboxes label[for="rowsData15"] { width: 160px; } /* Vertical Bar Charts Select Label */
     .dataCheckboxes label[for="horiz3Div"], .dataCheckboxes label[for="horiz4Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III and IV 'Add bar dividers' */
     .dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart 'Add bar dividers' */
     .dataCheckboxes small { display: block; margin: 10px 0; }
     .horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label { display: inline-block; width: 110px; }
-    .vert1Controls label { display: inline-block; width: 100px; }
-    .horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input, .negative1Controls input, .negative2Controls input, .vert1Controls input { margin: 10px 60px 0 0; width: 90px; }
+    .vert1Controls label, .vert2Controls label { display: inline-block; width: 100px; }
+    .horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input, .negative1Controls input, .negative2Controls input, .vert1Controls input, .vert2Controls input { margin: 10px 60px 0 0; width: 90px; }
     .negative1Controls label, .negative2Controls label { display: inline-block; width: 135px; }
     .chartLegend label[for*="legend"] { width: 110px; } /* Targets all labels that start with "legend" */
     .chartLegend input { margin: 0 60px 4px 0; width: 60px; }
@@ -95,6 +95,7 @@
             <option value="prog1Chart">Chart: Progress Bar I</option>
             <option value="prog2Chart">Chart: Progress Bar II</option>
             <option value="vert1Chart">Chart: Vertical I</option>
+            <option value="vert2Chart">Chart: Vertical II</option>
             <option value="info">Chart: More Info</option>
         </select>
     </header>
@@ -4440,7 +4441,7 @@
     <!-- end porgress bar chart ii -->
 
     <!-- VERTICAL BAR CHART I -->
-    <div class="charts" id="vert1Chart" style="display: block;">
+    <div class="charts" id="vert1Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart I</h1></div>
 
         <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" height="350" style="border: 1px solid #c4c4c4; margin: 0 auto; padding: 0;">
@@ -4800,6 +4801,560 @@
         <textarea name="vert1Output" id="vert1Output" readonly></textarea>
     </div>
     <!-- end vertical bar chart I -->
+
+    <!-- VERTICAL BAR CHART II -->
+    <div class="charts" id="vert2Chart" style="display: block;">
+        <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart II</h1></div>
+
+        <table id="vert2Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" height="350" style="border: 1px solid #c4c4c4; margin: 0 auto; padding: 0;">
+            <tr>
+                
+                <!-- VERTICAL BAR #1 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row1a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$4,234</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row1b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row1c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row1d" width="35" height="82" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #1 -->
+                
+                <!-- VERTICAL BAR #2 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$11,234</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2d" width="35" height="214" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #2 -->
+                
+                <!-- VERTICAL BAR #3 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row3a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$13,123</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row3d" width="35" height="250" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #3 -->
+                
+                <!-- VERTICAL BAR #4 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row4a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$7,108</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row4d" width="35" height="135" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #4 -->
+                
+                <!-- VERTICAL BAR #5 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row5a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$9,583</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row5d" width="35" height="183" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #5 -->
+                
+                <!-- VERTICAL BAR #6 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row6a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$10,019</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row6d" width="35" height="191" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #6 -->
+                
+                <!-- VERTICAL BAR #7 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row7a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$9,863</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row7d" width="35" height="185" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #7 -->
+                
+                <!-- VERTICAL BAR #8 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row8a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$4,566</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row8d" width="35" height="86" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #8 -->
+                
+                <!-- VERTICAL BAR #9 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row9a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$2,109</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row9d" width="35" height="42" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #9 -->
+                
+                <!-- VERTICAL BAR #10 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row10a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$7,012</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row10d" width="35" height="130" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #10 -->
+
+                <!-- VERTICAL BAR #11 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row11a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$15,191</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row11d" width="35" height="285" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #11 -->
+
+                <!-- VERTICAL BAR #12 -->
+                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row12a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$7,012</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert2Row2b" width="35" height="10" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row2c" width="35" height="10" style="background-color: #fcb514; margin: 0; padding: 0;"></td>
+                        </tr>
+                        <tr>
+                            <td id="vert2Row12d" width="35" height="130" style="background-color: #000db8; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end vertical bar #12 -->
+            </tr>
+
+            <!-- X-axis Labels -->
+            <tr>
+                <td class="vert2LabelX" id="vert2Row1e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2013</td>
+                <td class="vert2LabelX" id="vert2Row2e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2014</td>
+                <td class="vert2LabelX" id="vert2Row3e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2015</td>
+                <td class="vert2LabelX" id="vert2Row4e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2016</td>
+                <td class="vert2LabelX" id="vert2Row5e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2017</td>
+                <td class="vert2LabelX" id="vert2Row6e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2018</td>
+                <td class="vert2LabelX" id="vert2Row7e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2019</td>
+                <td class="vert2LabelX" id="vert2Row8e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2020</td>
+                <td class="vert2LabelX" id="vert2Row9e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2021</td>
+                <td class="vert2LabelX" id="vert2Row10e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2022</td>
+                <td class="vert2LabelX" id="vert2Row11e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2023</td>
+                <td class="vert2LabelX" id="vert2Row12e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2024</td>
+            </tr>
+            <!-- end x-axis labels -->
+
+        </table>
+        <div class="scrollBox">
+            <fieldset class="dataCheckboxes">
+                <legend>Chart Customization</legend>
+                <label for="rowsData15">Select # of Vertical Bars</label>
+                <input type="number" size="6" value="12" max="12" min="1" name="rowsData15" id="rowsData15">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #1</legend>
+                <label for="vert2Text1a">Top Label</label>
+                <input type="text" size="10" value="$4,234" name="vert2Text1a" id="vert2Text1a">
+                <label for="vert2Text1e">Bottom Label</label>
+                <input type="text" size="10" value="2013" name="vert2Text1e" id="vert2Text1e">
+                <br />
+                <label for="vert2Size1b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size1b" id="vert2Size1b">
+                <label for="vert2Color1b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color1b" id="vert2Color1b">
+                <br />
+                <label for="vert2Size1c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size1c" id="vert2Size1c">
+                <label for="vert2Color1c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color1c" id="vert2Color1c">
+                <br />
+                <label for="vert2Size1d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size1d" id="vert2Size1d">
+                <label for="vert2Color1d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color1d" id="vert2Color1d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #2</legend>
+                <label for="vert2Text2a">Top Label</label>
+                <input type="text" size="10" value="$11,234" name="vert2Text2a" id="vert2Text2a">
+                <label for="vert2Text2e">Bottom Label</label>
+                <input type="text" size="10" value="2014" name="vert2Text2e" id="vert2Text2e">
+                <br />
+                <label for="vert2Size2b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size2b" id="vert2Size2b">
+                <label for="vert2Color2b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color2b" id="vert2Color2b">
+                <br />
+                <label for="vert2Size2c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size2c" id="vert2Size2c">
+                <label for="vert2Color2c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color2c" id="vert2Color2c">
+                <br />
+                <label for="vert2Size2d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size2d" id="vert2Size2d">
+                <label for="vert2Color2d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color2d" id="vert2Color2d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #3</legend>
+                <label for="vert2Text3a">Top Label</label>
+                <input type="text" size="10" value="$13,123" name="vert2Text3a" id="vert2Text3a">
+                <label for="vert2Text3e">Bottom Label</label>
+                <input type="text" size="10" value="2015" name="vert2Text3e" id="vert2Text3e">
+                <br />
+                <label for="vert2Size3b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size3b" id="vert2Size3b">
+                <label for="vert2Color3b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color3b" id="vert2Color3b">
+                <br />
+                <label for="vert2Size3c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size3c" id="vert2Size3c">
+                <label for="vert2Color3c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color3c" id="vert2Color3c">
+                <br />
+                <label for="vert2Size3d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size3d" id="vert2Size3d">
+                <label for="vert2Color3d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color3d" id="vert2Color3d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #4</legend>
+                <label for="vert2Text4a">Top Label</label>
+                <input type="text" size="10" value="$7,108" name="vert2Text4a" id="vert2Text4a">
+                <label for="vert2Text4e">Bottom Label</label>
+                <input type="text" size="10" value="2016" name="vert2Text4e" id="vert2Text4e">
+                <br />
+                <label for="vert2Size4b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size4b" id="vert2Size4b">
+                <label for="vert2Color4b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color4b" id="vert2Color4b">
+                <br />
+                <label for="vert2Size4c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size4c" id="vert2Size4c">
+                <label for="vert2Color4c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color4c" id="vert2Color4c">
+                <br />
+                <label for="vert2Size4d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size4d" id="vert2Size4d">
+                <label for="vert2Color4d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color4d" id="vert2Color4d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #5</legend>
+                <label for="vert2Text5a">Top Label</label>
+                <input type="text" size="10" value="$9,583" name="vert2Text5a" id="vert2Text5a">
+                <label for="vert2Text5e">Bottom Label</label>
+                <input type="text" size="10" value="2017" name="vert2Text5e" id="vert2Text5e">
+                <br />
+                <label for="vert2Size5b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size5b" id="vert2Size5b">
+                <label for="vert2Color5b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color5b" id="vert2Color5b">
+                <br />
+                <label for="vert2Size5c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size5c" id="vert2Size5c">
+                <label for="vert2Color5c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color5c" id="vert2Color5c">
+                <br />
+                <label for="vert2Size5d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size5d" id="vert2Size5d">
+                <label for="vert2Color5d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color5d" id="vert2Color5d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #6</legend>
+                <label for="vert2Text6a">Top Label</label>
+                <input type="text" size="10" value="$10,019" name="vert2Text6a" id="vert2Text6a">
+                <label for="vert2Text6e">Bottom Label</label>
+                <input type="text" size="10" value="2018" name="vert2Text6e" id="vert2Text6e">
+                <br />
+                <label for="vert2Size6b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size6b" id="vert2Size6b">
+                <label for="vert2Color6b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color6b" id="vert2Color6b">
+                <br />
+                <label for="vert2Size6c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size6c" id="vert2Size6c">
+                <label for="vert2Color6c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color6c" id="vert2Color6c">
+                <br />
+                <label for="vert2Size6d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size6d" id="vert2Size6d">
+                <label for="vert2Color6d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color6d" id="vert2Color6d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #7</legend>
+                <label for="vert2Text7a">Top Label</label>
+                <input type="text" size="10" value="$9,863" name="vert2Text7a" id="vert2Text7a">
+                <label for="vert2Text7e">Bottom Label</label>
+                <input type="text" size="10" value="2019" name="vert2Text7e" id="vert2Text7e">
+                <br />
+                <label for="vert2Size7b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size7b" id="vert2Size7b">
+                <label for="vert2Color7b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color7b" id="vert2Color7b">
+                <br />
+                <label for="vert2Size7c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size7c" id="vert2Size7c">
+                <label for="vert2Color7c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color7c" id="vert2Color7c">
+                <br />
+                <label for="vert2Size7d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size7d" id="vert2Size7d">
+                <label for="vert2Color7d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color7d" id="vert2Color7d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #8</legend>
+                <label for="vert2Text8a">Top Label</label>
+                <input type="text" size="10" value="$4,566" name="vert2Text8a" id="vert2Text8a">
+                <label for="vert2Text8e">Bottom Label</label>
+                <input type="text" size="10" value="2020" name="vert2Text8e" id="vert2Text8e">
+                <br />
+                <label for="vert2Size8b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size8b" id="vert2Size8b">
+                <label for="vert2Color8b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color8b" id="vert2Color8b">
+                <br />
+                <label for="vert2Size8c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size8c" id="vert2Size8c">
+                <label for="vert2Color8c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color8c" id="vert2Color8c">
+                <br />
+                <label for="vert2Size8d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size8d" id="vert2Size8d">
+                <label for="vert2Color8d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color8d" id="vert2Color8d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #9</legend>
+                <label for="vert2Text9a">Top Label</label>
+                <input type="text" size="10" value="$2,109" name="vert2Text9a" id="vert2Text9a">
+                <label for="vert2Text9e">Bottom Label</label>
+                <input type="text" size="10" value="2021" name="vert2Text9e" id="vert2Text9e">
+                <br />
+                <label for="vert2Size9b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size9b" id="vert2Size9b">
+                <label for="vert2Color9b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color9b" id="vert2Color9b">
+                <br />
+                <label for="vert2Size9c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size9c" id="vert2Size9c">
+                <label for="vert2Color9c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color9c" id="vert2Color9c">
+                <br />
+                <label for="vert2Size9d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size9d" id="vert2Size9d">
+                <label for="vert2Color9d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color9d" id="vert2Color9d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #10</legend>
+                <label for="vert2Text10a">Top Label</label>
+                <input type="text" size="10" value="$7,012" name="vert2Text10a" id="vert2Text10a">
+                <label for="vert2Text10e">Bottom Label</label>
+                <input type="text" size="10" value="2022" name="vert2Text10e" id="vert2Text10e">
+                <br />
+                <label for="vert2Size10b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size10b" id="vert2Size10b">
+                <label for="vert2Color10b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color10b" id="vert2Color10b">
+                <br />
+                <label for="vert2Size10c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size10c" id="vert2Size10c">
+                <label for="vert2Color10c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color10c" id="vert2Color10c">
+                <br />
+                <label for="vert2Size10d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size10d" id="vert2Size10d">
+                <label for="vert2Color10d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color10d" id="vert2Color10d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #11</legend>
+                <label for="vert2Text11a">Top Label</label>
+                <input type="text" size="10" value="$7,012" name="vert2Text11a" id="vert2Text11a">
+                <label for="vert2Text11e">Bottom Label</label>
+                <input type="text" size="10" value="2023" name="vert2Text11e" id="vert2Text11e">
+                <br />
+                <label for="vert2Size11b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size11b" id="vert2Size11b">
+                <label for="vert2Color11b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color11b" id="vert2Color11b">
+                <br />
+                <label for="vert2Size11c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size11c" id="vert2Size11c">
+                <label for="vert2Color11c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color11c" id="vert2Color11c">
+                <br />
+                <label for="vert2Size11d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size11d" id="vert2Size11d">
+                <label for="vert2Color11d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color11d" id="vert2Color11d">
+            </fieldset>
+            <fieldset class="vert2Controls styleControls">
+                <legend>Vertical Bar #12</legend>
+                <label for="vert2Text12a">Top Label</label>
+                <input type="text" size="10" value="$7,012" name="vert2Text12a" id="vert2Text12a">
+                <label for="vert2Text12e">Bottom Label</label>
+                <input type="text" size="10" value="2024" name="vert2Text12e" id="vert2Text12e">
+                <br />
+                <label for="vert2Size12b">Bar #1 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size12b" id="vert2Size12b">
+                <label for="vert2Color12b">Bar #1 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color12b" id="vert2Color12b">
+                <br />
+                <label for="vert2Size12c">Bar #2 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size12c" id="vert2Size12c">
+                <label for="vert2Color12c">Bar #2 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color12c" id="vert2Color12c">
+                <br />
+                <label for="vert2Size12d">Bar #3 Size</label>
+                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size12d" id="vert2Size12d">
+                <label for="vert2Color12d">Bar #3 Color</label>
+                <input type="text" size="6" value="#000db8" name="vert2Color12d" id="vert2Color12d">
+            </fieldset>
+        </div>
+        <button type="button" id="vert2Button">Generate Email Chart Code</button>
+        <textarea name="vert2Output" id="vert2Output" readonly></textarea>
+    </div>
+    <!-- end vertical bar chart II -->
 
     <!-- INFO -->
     <div class="charts" id="info" style="display: none;">
