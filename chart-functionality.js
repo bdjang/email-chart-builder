@@ -18,7 +18,8 @@ const darkMode = document.getElementById("darkMode");
 const scrollBox = document.getElementsByClassName("scrollBox");
 const textarea = document.getElementsByTagName("textarea");
 const previewBox = document.querySelectorAll("div.charts td.previewBox");
-const previewBoxVertLabel = document.querySelectorAll("div#vert1Chart td.previewBox table:nth-of-type(1) tr:nth-of-type(1) td"); // Top vertical bar label
+const previewBoxVert1Label = document.querySelectorAll("div#vert1Chart td.previewBox table:nth-of-type(1) tr:nth-of-type(1) td"); // Top vertical bar label
+const previewBoxVert2Label = document.querySelectorAll("div#vert2Chart td.previewBox table:nth-of-type(1) tr:nth-of-type(1) td"); // Top vertical bar label
 const horiz1BarsNodes1 = document.querySelectorAll("tr.horiz1Bars table.chartMobile td:nth-of-type(1)");
 const horiz1BarsNodes2 = document.querySelectorAll("tr.horiz1Bars table.chartMobile td:nth-of-type(3)");
 const horiz2BarsNodes3 = document.querySelectorAll("tr.horiz2Bars table.chartMobile td:nth-of-type(3)");
@@ -133,8 +134,10 @@ document.addEventListener("keydown", () => {
             combo1BarsNodes1[y].classList.replace("lightStyles", "darkStyles");
             combo1BarsNodes3[y].classList.toggle("darkStyles");
             combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
-            previewBoxVertLabel[y].classList.toggle("darkStyles");
-            previewBoxVertLabel[y].classList.replace("lightStyles", "darkStyles");
+            previewBoxVert1Label[y].classList.toggle("darkStyles");
+            previewBoxVert1Label[y].classList.replace("lightStyles", "darkStyles");
+            previewBoxVert2Label[y].classList.toggle("darkStyles");
+            previewBoxVert2Label[y].classList.replace("lightStyles", "darkStyles");
         }
         if (lightMode.style.display == "none") {
             lightMode.style.display = "inline-block";
@@ -226,8 +229,10 @@ darkMode.addEventListener("click", () => {
         combo1BarsNodes1[y].classList.replace("lightStyles", "darkStyles");
         combo1BarsNodes3[y].classList.toggle("darkStyles");
         combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
-        previewBoxVertLabel[y].classList.toggle("darkStyles");
-        previewBoxVertLabel[y].classList.replace("lightStyles", "darkStyles");
+        previewBoxVert1Label[y].classList.toggle("darkStyles");
+        previewBoxVert1Label[y].classList.replace("lightStyles", "darkStyles");
+        previewBoxVert2Label[y].classList.toggle("darkStyles");
+        previewBoxVert2Label[y].classList.replace("lightStyles", "darkStyles");
     }
     darkMode.style.display = "none";
     lightMode.style.display = "inline-block";
@@ -276,7 +281,8 @@ lightMode.addEventListener("click", () => {
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
         combo1BarsNodes1[y].classList.replace("darkStyles", "lightStyles");
         combo1BarsNodes3[y].classList.replace("darkStyles", "lightStyles");
-        previewBoxVertLabel[y].classList.replace("darkStyles", "lightStyles");
+        previewBoxVert1Label[y].classList.replace("darkStyles", "lightStyles");
+        previewBoxVert2Label[y].classList.replace("darkStyles", "lightStyles");
     }
     darkMode.style.display = "inline-block";
     lightMode.style.display = "none";
