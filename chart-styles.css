@@ -1,0 +1,54 @@
+/* NORMALIZE.CSS */
+html{line-height: 1.15; -webkit-text-size-adjust: 100%;}body{margin: 0;}main{display: block;}h1{font-size: 2em; margin: 0.67em 0;}hr{box-sizing: content-box; height: 0; overflow: visible;}pre{font-family: monospace, monospace; font-size: 1em;}a{background-color: transparent;}abbr[title]{border-bottom: none; text-decoration: underline; text-decoration: underline dotted;}b,strong{font-weight: bolder;}code,kbd,samp{font-family: monospace, monospace; font-size: 1em;}small{font-size: 80%;}sub,sup{font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}sub{bottom: -0.25em;}sup{top: -0.5em;}img{border-style: none;}button,input,optgroup,select,textarea{font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0;}button,input{overflow: visible;}button,select{text-transform: none;}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style: none; padding: 0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline: 1px dotted ButtonText;}fieldset{padding: 0.35em 0.75em 0.625em;}legend{box-sizing: border-box; color: inherit; display: table; max-width: 100%; padding: 0; white-space: normal;}progress{vertical-align: baseline;}textarea{overflow: auto;}[type="checkbox"],[type="radio"]{box-sizing: border-box; padding: 0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height: auto;}[type="search"]{-webkit-appearance: textfield; outline-offset: -2px;}[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}::-webkit-file-upload-button{-webkit-appearance: button; font: inherit;}details{display: block;}summary{display: list-item;}template{display: none;}[hidden]{display: none;}
+
+/* BASE STYLES */
+body { min-width: 740px; }
+button { display: block; margin: 30px auto 30px; }
+button, input { font-family: sans-serif; font-size: 14px; }
+code { color: #ff0000; }
+code, legend { font-weight: 600; }
+header { margin: 0 20px; }
+header, textarea, #info { font-family: Courier, serif; }
+label { font-family: Times, serif; font-size: 16px; }
+textarea { background-color: #f8f8f8; border: 2px solid #cccccc; display: block; font-size: 12px; margin: 0 auto 40px; resize: none; height: 160px; width: 700px; }
+ul li { margin: 8px 0; }
+
+/* SITE STYLES */
+#info { margin: 0 auto 20px; width: 700px; }
+#chartEmoji { float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); }
+#chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
+.scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
+.dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
+.dataCheckboxes label { display: inline-block; width: 150px; }
+.dataCheckboxes label[for="rowsData14"], .dataCheckboxes label[for="rowsData15"], .dataCheckboxes label[for="rowsData16"], .dataCheckboxes label[for="rowsData18"] { width: 160px; } /* Vertical Bar Charts Select Label */
+.dataCheckboxes label[for="horiz3Div"], .dataCheckboxes label[for="horiz4Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III and IV 'Add bar dividers' */
+.dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart 'Add bar dividers' */
+.dataCheckboxes small { display: block; margin: 10px 0; }
+.horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label { display: inline-block; width: 110px; }
+.vert1Controls label, .vert2Controls label, .vert3Controls label { display: inline-block; width: 100px; }
+.horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input, .negative1Controls input, .negative2Controls input, .vert1Controls input, .vert2Controls input, .vert3Controls input { margin: 10px 60px 0 0; width: 90px; }
+.negative1Controls label, .negative2Controls label { display: inline-block; width: 135px; }
+.chartLegend label[for*="legend"] { width: 110px; } /* Targets all labels that start with "legend" */
+.chartLegend input { margin: 0 60px 4px 0; width: 60px; }
+.chartLegend #combo1Div { width: auto; } /* Combo Chart checkbox */
+.chartLegend #rowsData7 { margin: 0 20px 4px 0; width: 60px; } /* Combo Chart 'Select # of Data Rows' */
+.stacked1Controls label:first-of-type, .stacked2Controls label:first-of-type, .stacked3Controls label:first-of-type, .stacked4Controls label:first-of-type, .combo1Controls label:first-of-type { width: 75px; } /* Targets Row # Data Label */
+.stacked1Controls input:first-of-type, .stacked2Controls input:first-of-type, .stacked3Controls input:first-of-type, .stacked4Controls input:first-of-type, .combo1Controls input:first-of-type { width: 80px; } /* Targets Row # Data Input */
+.prog1Controls input:first-of-type, .prog2Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
+.stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .stacked4Controls label, .combo1Controls label, .prog1Controls label, .prog2Controls label { display: inline-block; margin: 10px 10px 0 0; }
+.prog1Controls label[for*="prog1Size"], .prog2Controls label[for*="prog2Size"] { margin: 10px 20px 0 0; } /* Targets 'Progress Bar Size' right spacing */
+.stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .prog1Controls input, .prog2Controls input { margin: 0 15px 4px 0; width: 50px; }
+.splitControls input, .dataCheckboxes label, .vert5Controls label { margin: 10px 10px 0 0; }
+.splitControls label { display: inline-block; width: 130px; }
+.splitControls input { width: 46px; }
+.vert5Controls label { display: inline-block; }
+.vert5Controls label[for*="vert5Text"] { width: 100px; } /* Targets all "Positive/Negative" label width */
+.vert5Controls input { margin: 0 40px 0 0; width: 50px; }
+
+/* DARK MODE STYLES */
+button, #darkMode, #lightMode { cursor: pointer; }
+.darkBorder { border-color: #1f1f1f !important; }
+.lightBorder { border-color: #ffffff !important; }
+.darkStyles { background-color: #0f0f0f !important; color: #ffffff !important; }
+.lightStyles { background-color: #ffffff !important; color: #000000 !important; }
+.darkStyles, .lightStyles { -webkit-transition: background-color 300ms ease; -ms-transition: background-color 300ms ease; transition: background-color 300ms ease; -webkit-transition: color 300ms ease; -ms-transition: color 300ms ease; transition: color 300ms ease; }
