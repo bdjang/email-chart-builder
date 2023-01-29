@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Email Chart Builder</title>
     <meta name="description" content="">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> mobile -->
     <meta name="viewport" content="width=740">
     <meta property="og:title" content="" />
     <meta property="og:type" content="website" />
@@ -13,6 +14,12 @@
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📨</text></svg>">
     <style type="text/css">
+
+    /** { border: 1px dotted red !important; }
+    td { border: 1px dotted violet !important; }
+    img { border: 1px solid blue !important; }
+    br { border: 1px dashed limegreen !important; content: "A" !important; display: block !important; }
+    a { border: 1px solid #f441d0 !important; }*/
 
     /* NORMALIZE.CSS */
     html{line-height: 1.15; -webkit-text-size-adjust: 100%;}body{margin: 0;}main{display: block;}h1{font-size: 2em; margin: 0.67em 0;}hr{box-sizing: content-box; height: 0; overflow: visible;}pre{font-family: monospace, monospace; font-size: 1em;}a{background-color: transparent;}abbr[title]{border-bottom: none; text-decoration: underline; text-decoration: underline dotted;}b,strong{font-weight: bolder;}code,kbd,samp{font-family: monospace, monospace; font-size: 1em;}small{font-size: 80%;}sub,sup{font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}sub{bottom: -0.25em;}sup{top: -0.5em;}img{border-style: none;}button,input,optgroup,select,textarea{font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0;}button,input{overflow: visible;}button,select{text-transform: none;}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style: none; padding: 0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline: 1px dotted ButtonText;}fieldset{padding: 0.35em 0.75em 0.625em;}legend{box-sizing: border-box; color: inherit; display: table; max-width: 100%; padding: 0; white-space: normal;}progress{vertical-align: baseline;}textarea{overflow: auto;}[type="checkbox"],[type="radio"]{box-sizing: border-box; padding: 0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height: auto;}[type="search"]{-webkit-appearance: textfield; outline-offset: -2px;}[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}::-webkit-file-upload-button{-webkit-appearance: button; font: inherit;}details{display: block;}summary{display: list-item;}template{display: none;}[hidden]{display: none;}
@@ -71,10 +78,15 @@
 
 <body>
     <header>
+        <!-- <h1>Email Bar Charts Generator</h1> -->
+        <!-- <h1>📨 Email Chart Builder</h1> -->
         <h1><div id="chartEmoji">📊</div>Email Chart Builder</h1>
+        <!-- <p>A tool to assist with building bar charts for HTML emails.</p> -->
         <p>A tool for building bar charts for HTML email templates.</p>
         <ul>
             <li>100% HTML/CSS Coded Bar Charts ⌨️</li>
+            <!-- <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🌑</span><span id="darkMode">🌕</span></li> -->
+            <!-- <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🕯️</span><span id="darkMode">⛱️</span></li> -->
             <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🌙</span><span id="darkMode">☀️</span></li>
             <li>Mobile Responsive 📲</li>
             <li>No Images ❌</li>
@@ -4446,7 +4458,7 @@
     <div class="charts" id="vert1Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart I</h1></div>
 
-        <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" height="350" style="margin: 0 auto; padding: 0;">
+        <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 600px; margin: 0 auto; padding: 0;" class="chartMobile">
             <tr>
                 
                 <!-- VERTICAL BAR #1 -->
@@ -4812,7 +4824,7 @@
     <div class="charts" id="vert2Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart II</h1></div>
 
-        <table id="vert2Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" height="350" style="margin: 0 auto; padding: 0;">
+        <table id="vert2Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 600px; margin: 0 auto; padding: 0;" class="chartMobile">
             <tr>
                 
                 <!-- VERTICAL BAR #1 -->
@@ -5370,7 +5382,7 @@
     <div class="charts" id="vert3Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart III</h1></div>
 
-        <table id="vert3Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" height="350" style="margin: 0 auto; padding: 0;">
+        <table id="vert3Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 600px; margin: 0 auto; padding: 0;" class="chartMobile">
 
             <!-- X-axis Labels -->
             <tr>
@@ -5744,7 +5756,8 @@
         <hr />
         <h1>Tips/Advice</h1>
         <ul>
-            <li>Use <code>media queries</code> to reduce and adjust the size of the label text for smaller screens. The following snippet of code can be applied to all generated charts:<br /><br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 9px !important;} }</code></li>
+            <li>Use <code>media queries</code> to reduce and adjust the size of the label text for smaller screens. The following snippet of code can be applied to all horizontal and progress bar charts:<br /><br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 9px !important;} }</code><br /><br /></li>
+            <li>The following snippet of code can be applied to all vertical bar charts:<br /><br /><code>@media screen and (max-width: 525px) { .chartVertMobile td {font-size: 9px !important; width: 25px !important;} }</code></li>
         </ul>
         <hr />
         <h1>Contact</h1>
@@ -5766,3 +5779,33 @@
 
   </body>
 </html>
+
+<!--
+Notes:
+- Horizontal charts I, II, III and combo chart all swapped the last <td> width from auto to a calculated one due to the Firefox/Safari width auto issue
+- Stacked charts I and II and IV were not able to make the same changes due to calculating issues with the width. the solution was to set the last <td> cell in these charts to 100% and that prevented the issue from occurring in Firefox/Safari. The width in the generated HTML chart stayed as "auto" for the last <td> cell
+- meta description: Build HTML/CSS coded bar charts for email templates.   
+- meta og:title: Email Chart Builder
+
+1.13.23:
+- make these charts BIG, BOLD, and EASY TO IMMEDIATELY READ AND DIGEST. Surprise and delight
+- keep the smaller charts you already made, just make bigger variations and then let feedback, user research guide which ones to adjust, build new ones, or retire old versions
+
+
+CLEAN UP CODE;
+Remove unecessary code especially from the stacked I and stacked II with the last <td> of width auto/100%. TEST STACKED IV before doing this to make sure removing that code doesn't affect the rendering
+
+
+
+1.26.23
+- don't think i need to have these sections
+
+const horiz1Row1a = document.getElementById("horiz1Row1a");
+const horiz1Row1b = document.getElementById("horiz1Row1b");
+const horiz1Row1c = document.getElementById("horiz1Row1c");
+const horiz1Row2a = document.getElementById("horiz1Row2a");
+const horiz1Row2b = document.getElementById("horiz1Row2b");
+const horiz1Row2c = document.getElementById("horiz1Row2c");
+
+delete and see if chart tool still functions, if so, remove
+-->
