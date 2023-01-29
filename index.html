@@ -13,65 +13,14 @@
     <meta property="og:image" content="">
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📨</text></svg>">
+    <link rel="stylesheet" type="text/css" href="chart-styles.css" />
     <style type="text/css">
 
-    /** { border: 1px dotted red !important; }
-    td { border: 1px dotted violet !important; }
-    img { border: 1px solid blue !important; }
-    br { border: 1px dashed limegreen !important; content: "A" !important; display: block !important; }
-    a { border: 1px solid #f441d0 !important; }*/
-
-    /* NORMALIZE.CSS */
-    html{line-height: 1.15; -webkit-text-size-adjust: 100%;}body{margin: 0;}main{display: block;}h1{font-size: 2em; margin: 0.67em 0;}hr{box-sizing: content-box; height: 0; overflow: visible;}pre{font-family: monospace, monospace; font-size: 1em;}a{background-color: transparent;}abbr[title]{border-bottom: none; text-decoration: underline; text-decoration: underline dotted;}b,strong{font-weight: bolder;}code,kbd,samp{font-family: monospace, monospace; font-size: 1em;}small{font-size: 80%;}sub,sup{font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}sub{bottom: -0.25em;}sup{top: -0.5em;}img{border-style: none;}button,input,optgroup,select,textarea{font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0;}button,input{overflow: visible;}button,select{text-transform: none;}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style: none; padding: 0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline: 1px dotted ButtonText;}fieldset{padding: 0.35em 0.75em 0.625em;}legend{box-sizing: border-box; color: inherit; display: table; max-width: 100%; padding: 0; white-space: normal;}progress{vertical-align: baseline;}textarea{overflow: auto;}[type="checkbox"],[type="radio"]{box-sizing: border-box; padding: 0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height: auto;}[type="search"]{-webkit-appearance: textfield; outline-offset: -2px;}[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}::-webkit-file-upload-button{-webkit-appearance: button; font: inherit;}details{display: block;}summary{display: list-item;}template{display: none;}[hidden]{display: none;}
-
-    /* BASE STYLES */
-    body { min-width: 740px; }
-    button { display: block; margin: 30px auto 30px; }
-    button, input { font-family: sans-serif; font-size: 14px; }
-    code { color: #ff0000; }
-    code, legend { font-weight: 600; }
-    header { margin: 0 20px; }
-    header, textarea, #info { font-family: Courier, serif; }
-    label { font-family: Times, serif; font-size: 16px; }
-    textarea { background-color: #f8f8f8; border: 2px solid #cccccc; display: block; font-size: 12px; margin: 0 auto 40px; resize: none; height: 160px; width: 700px; }
-    ul li { margin: 8px 0; }
-
-    /* SITE STYLES */
-    #info { margin: 0 auto 20px; width: 700px; }
-    #chartEmoji { float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); }
-    #chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
-    .scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
-    .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
-    .dataCheckboxes label { display: inline-block; width: 150px; }
-    .dataCheckboxes label[for="rowsData14"], .dataCheckboxes label[for="rowsData15"], .dataCheckboxes label[for="rowsData16"] { width: 160px; } /* Vertical Bar Charts Select Label */
-    .dataCheckboxes label[for="horiz3Div"], .dataCheckboxes label[for="horiz4Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III and IV 'Add bar dividers' */
-    .dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart 'Add bar dividers' */
-    .dataCheckboxes small { display: block; margin: 10px 0; }
-    .horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label { display: inline-block; width: 110px; }
-    .vert1Controls label, .vert2Controls label, .vert3Controls label { display: inline-block; width: 100px; }
-    .horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input, .negative1Controls input, .negative2Controls input, .vert1Controls input, .vert2Controls input, .vert3Controls input { margin: 10px 60px 0 0; width: 90px; }
-    .negative1Controls label, .negative2Controls label { display: inline-block; width: 135px; }
-    .chartLegend label[for*="legend"] { width: 110px; } /* Targets all labels that start with "legend" */
-    .chartLegend input { margin: 0 60px 4px 0; width: 60px; }
-    .chartLegend #combo1Div { width: auto; } /* Combo Chart checkbox */
-    .chartLegend #rowsData7 { margin: 0 20px 4px 0; width: 60px; } /* Combo Chart 'Select # of Data Rows' */
-    .stacked1Controls label:first-of-type, .stacked2Controls label:first-of-type, .stacked3Controls label:first-of-type, .stacked4Controls label:first-of-type, .combo1Controls label:first-of-type { width: 75px; } /* Targets Row # Data Label */
-    .stacked1Controls input:first-of-type, .stacked2Controls input:first-of-type, .stacked3Controls input:first-of-type, .stacked4Controls input:first-of-type, .combo1Controls input:first-of-type { width: 80px; } /* Targets Row # Data Input */
-    .prog1Controls input:first-of-type, .prog2Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
-    .stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .stacked4Controls label, .combo1Controls label, .prog1Controls label, .prog2Controls label { display: inline-block; margin: 10px 10px 0 0; }
-    .prog1Controls label[for*="prog1Size"], .prog2Controls label[for*="prog2Size"] { margin: 10px 20px 0 0; } /* Targets 'Progress Bar Size' right spacing */
-    .stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .prog1Controls input, .prog2Controls input { margin: 0 15px 4px 0; width: 50px; }
-    .splitControls input, .dataCheckboxes label { margin: 10px 10px 0 0; }
-    .splitControls label { display: inline-block; width: 130px; }
-    .splitControls input { width: 46px; }
-
-    /* DARK MODE STYLES */
-    button, #darkMode, #lightMode { cursor: pointer; }
-    .darkBorder { border-color: #1f1f1f !important; }
-    .lightBorder { border-color: #ffffff !important; }
-    .darkStyles { background-color: #0f0f0f !important; color: #ffffff !important; }
-    .lightStyles { background-color: #ffffff !important; color: #000000 !important; }
-    .darkStyles, .lightStyles { -webkit-transition: background-color 300ms ease; -ms-transition: background-color 300ms ease; transition: background-color 300ms ease; -webkit-transition: color 300ms ease; -ms-transition: color 300ms ease; transition: color 300ms ease; }
+        /** { border: 1px dotted red !important; }
+        td { border: 1px dotted violet !important; }
+        img { border: 1px solid blue !important; }
+        br { border: 1px dashed limegreen !important; content: "A" !important; display: block !important; }
+        a { border: 1px solid #f441d0 !important; }*/
 
     </style>
 </head>
@@ -110,6 +59,7 @@
             <option value="vert1Chart">Chart: Vertical I</option>
             <option value="vert2Chart">Chart: Vertical II</option>
             <option value="vert3Chart">Chart: Vertical III</option>
+            <option value="vert5Chart">Chart: Vertical V</option>
             <option value="info">Chart: More Info</option>
         </select>
     </header>
@@ -5741,6 +5691,493 @@
         </div>
         <button type="button" id="vert3Button">Generate Email Chart Code</button>
         <textarea name="vert3Output" id="vert3Output" readonly></textarea>
+    </div>
+    <!-- end vertical bar chart iii -->
+
+    <!-- VERTICAL BAR CHART V -->
+    <div class="charts" id="vert5Chart" style="display: block;">
+        <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart V</h1></div>
+
+        <table id="vert5Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
+
+            <tr>
+                <!-- TOP VERTICAL BAR #1 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row1a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$5M</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row1b" width="35" height="150" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #1 -->
+                
+                <!-- TOP VERTICAL BAR #2 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row2a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$4M</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row2b" width="35" height="120" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #2 -->
+                
+                <!-- TOP VERTICAL BAR #3 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row3a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$3M</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row3b" width="35" height="90" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #3 -->
+                
+                <!-- TOP VERTICAL BAR #4 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row4a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$2M</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row4b" width="35" height="60" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #4 -->
+                
+                <!-- TOP VERTICAL BAR #5 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row5a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$1M</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row5b" width="35" height="30" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #5 -->
+                
+                <!-- TOP VERTICAL BAR #6 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row6a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2018</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row6b" width="35" height="0" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #6 -->
+                
+                <!-- TOP VERTICAL BAR #7 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row7a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2019</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row7b" width="35" height="0" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #7 -->
+                
+                <!-- TOP VERTICAL BAR #8 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row8a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2020</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row8b" width="35" height="0" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #8 -->
+                
+                <!-- TOP VERTICAL BAR #9 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row9a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2021</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row9b" width="35" height="0" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #9 -->
+                
+                <!-- TOP VERTICAL BAR #10 -->
+                <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row10a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2022</td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row10b" width="35" height="0" style="background-color: #10ed81; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end top vertical bar #10 -->
+            </tr>
+
+            <tr>
+                <td id="vert5AxisLine" colspan="12" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
+            </tr>
+
+            <tr>
+                <!-- BOTTOM VERTICAL BAR #1 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row1c" width="35" height="0" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row1d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2013</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #1 -->
+                
+                <!-- BOTTOM VERTICAL BAR #2 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row2c" width="35" height="0" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row2d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2014</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #2 -->
+                
+                <!-- BOTTOM VERTICAL BAR #3 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row3c" width="35" height="0" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row3d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2015</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #3 -->
+                
+                <!-- BOTTOM VERTICAL BAR #4 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row4c" width="35" height="0" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row4d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2016</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #4 -->
+                
+                <!-- BOTTOM VERTICAL BAR #5 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row5c" width="35" height="0" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row5d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2017</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #5 -->
+                
+                <!-- BOTTOM VERTICAL BAR #6 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row6c" width="35" height="30" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row6d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$1M</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #6 -->
+                
+                <!-- BOTTOM VERTICAL BAR #7 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row7c" width="35" height="60" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row7d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$2M</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #7 -->
+                
+                <!-- BOTTOM VERTICAL BAR #8 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row8c" width="35" height="90" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row8d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$3M</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #8 -->
+                
+                <!-- BOTTOM VERTICAL BAR #9 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row9c" width="35" height="120" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row9d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$4M</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #9 -->
+                
+                <!-- BOTTOM VERTICAL BAR #10 -->
+                <td class="previewBox vert5Bars vert5Bottom" width="50" valign="top" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row10c" width="35" height="150" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
+                        </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td id="vert5Row10d" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$5M</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end bottom vertical bar #10 -->
+            </tr>
+
+        </table>
+        <div class="scrollBox">
+            <fieldset class="dataCheckboxes">
+                <legend>Chart Customization</legend>
+                <label for="rowsData18">Select # of Vertical Bars</label>
+                <input type="number" size="6" value="10" max="10" min="1" name="rowsData18" id="rowsData18">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #1</legend>
+                <label for="vert5Text1a">Positive Label</label>
+                <input type="text" size="10" value="$5M" name="vert5Text1a" id="vert5Text1a">
+                <label for="vert5Size1b">Bar Size</label>
+                <input type="number" size="6" value="100" max="100" min="0" name="vert5Size1b" id="vert5Size1b">
+                <label for="vert5Color1b">Bar Color</label>
+                <input type="text" size="6" value="#10ed81" name="vert5Color1b" id="vert5Color1b">
+                <br />
+                <label for="vert5Text1c">Negative Label</label>
+                <input type="text" size="10" value="2013" name="vert5Text1c" id="vert5Text1c">
+                <label for="vert5Size1d">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size1d" id="vert5Size1d">
+                <label for="vert5Color1d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color1d" id="vert5Color1d">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #2</legend>
+                <label for="vert5Text2a">Positive Label</label>
+                <input type="text" size="10" value="$4M" name="vert5Text2a" id="vert5Text2a">
+                <label for="vert5Size2b">Bar Size</label>
+                <input type="number" size="6" value="80" max="100" min="0" name="vert5Size2b" id="vert5Size2b">
+                <label for="vert5Color2b">Bar Color</label>
+                <input type="text" size="6" value="#10ed81" name="vert5Color2b" id="vert5Color2b">
+                <br />
+                <label for="vert5Text2c">Negative Label</label>
+                <input type="text" size="10" value="2014" name="vert5Text2c" id="vert5Text2c">
+                <label for="vert5Size2d">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size2d" id="vert5Size2d">
+                <label for="vert5Color2d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color2d" id="vert5Color2d">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #3</legend>
+                <label for="vert5Text3a">Positive Label</label>
+                <input type="text" size="10" value="$3M" name="vert5Text3a" id="vert5Text3a">
+                <label for="vert5Size3b">Bar Size</label>
+                <input type="number" size="6" value="60" max="100" min="0" name="vert5Size3b" id="vert5Size3b">
+                <label for="vert5Color3b">Bar Color</label>
+                <input type="text" size="6" value="#10ed81" name="vert5Color3b" id="vert5Color3b">
+                <br />
+                <label for="vert5Text3c">Negative Label</label>
+                <input type="text" size="10" value="2015" name="vert5Text3c" id="vert5Text3c">
+                <label for="vert5Size3d">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size3d" id="vert5Size3d">
+                <label for="vert5Color3d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color3d" id="vert5Color3d">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #4</legend>
+                <label for="vert5Text4a">Positive Label</label>
+                <input type="text" size="10" value="$2M" name="vert5Text4a" id="vert5Text4a">
+                <label for="vert5Size4b">Bar Size</label>
+                <input type="number" size="6" value="40" max="100" min="0" name="vert5Size4b" id="vert5Size4b">
+                <label for="vert5Color4b">Bar Color</label>
+                <input type="text" size="6" value="#10ed81" name="vert5Color4b" id="vert5Color4b">
+                <br />
+                <label for="vert5Text4c">Negative Label</label>
+                <input type="text" size="10" value="2016" name="vert5Text4c" id="vert5Text4c">
+                <label for="vert5Size4d">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size4d" id="vert5Size4d">
+                <label for="vert5Color4d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color4d" id="vert5Color4d">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #5</legend>
+                <label for="vert5Text5a">Positive Label</label>
+                <input type="text" size="10" value="$1M" name="vert5Text5a" id="vert5Text5a">
+                <label for="vert5Size5b">Bar Size</label>
+                <input type="number" size="6" value="20" max="100" min="0" name="vert5Size5b" id="vert5Size5b">
+                <label for="vert5Color5b">Bar Color</label>
+                <input type="text" size="6" value="#10ed81" name="vert5Color5b" id="vert5Color5b">
+                <br />
+                <label for="vert5Text5c">Negative Label</label>
+                <input type="text" size="10" value="2017" name="vert5Text5c" id="vert5Text5c">
+                <label for="vert5Size5d">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size5d" id="vert5Size5d">
+                <label for="vert5Color5d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color5d" id="vert5Color5d">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #6</legend>
+                <label for="vert5Text6a">Positive Label</label>
+                <input type="text" size="10" value="2018" name="vert5Text6a" id="vert5Text6a">
+                <label for="vert5Size6b">Bar Size</label>
+                <input type="number" size="6" value="0" max="100" min="0" name="vert5Size6b" id="vert5Size6b">
+                <label for="vert5Color6b">Bar Color</label>
+                <input type="text" size="6" value="#10ed81" name="vert5Color6b" id="vert5Color6b">
+                <br />
+                <label for="vert5Text6c">Negative Label</label>
+                <input type="text" size="10" value="-$1M" name="vert5Text6c" id="vert5Text6c">
+                <label for="vert5Size6d">Bar Size</label>
+                <input type="number" size="6" value="-20" max="0" min="-100" name="vert5Size6d" id="vert5Size6d">
+                <label for="vert5Color6d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color6d" id="vert5Color6d">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #7</legend>
+                <label for="vert5Text7a">Positive Label</label>
+                <input type="text" size="10" value="2019" name="vert5Text7a" id="vert5Text7a">
+                <label for="vert5Size7b">Bar Size</label>
+                <input type="number" size="6" value="0" max="100" min="0" name="vert5Size7b" id="vert5Size7b">
+                <label for="vert5Color7b">Bar Color</label>
+                <input type="text" size="6" value="#10ed81" name="vert5Color7b" id="vert5Color7b">
+                <br />
+                <label for="vert5Text7c">Negative Label</label>
+                <input type="text" size="10" value="-$2M" name="vert5Text7c" id="vert5Text7c">
+                <label for="vert5Size7d">Bar Size</label>
+                <input type="number" size="6" value="-40" max="0" min="-100" name="vert5Size7d" id="vert5Size7d">
+                <label for="vert5Color7d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color7d" id="vert5Color7d">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #8</legend>
+                <label for="vert5Text8a">Positive Label</label>
+                <input type="text" size="10" value="2020" name="vert5Text8a" id="vert5Text8a">
+                <label for="vert5Size8b">Bar Size</label>
+                <input type="number" size="6" value="0" max="100" min="0" name="vert5Size8b" id="vert5Size8b">
+                <label for="vert5Color8b">Bar Color</label>
+                <input type="text" size="6" value="#10ed81" name="vert5Color8b" id="vert5Color8b">
+                <br />
+                <label for="vert5Text8c">Negative Label</label>
+                <input type="text" size="10" value="-$3M" name="vert5Text8c" id="vert5Text8c">
+                <label for="vert5Size8d">Bar Size</label>
+                <input type="number" size="6" value="-60" max="0" min="-100" name="vert5Size8d" id="vert5Size8d">
+                <label for="vert5Color8d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color8d" id="vert5Color8d">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #9</legend>
+                <label for="vert5Text9a">Positive Label</label>
+                <input type="text" size="10" value="2021" name="vert5Text9a" id="vert5Text9a">
+                <label for="vert5Size9b">Bar Size</label>
+                <input type="number" size="6" value="0" max="100" min="0" name="vert5Size9b" id="vert5Size9b">
+                <label for="vert5Color9b">Bar Color</label>
+                <input type="text" size="6" value="#10ed81" name="vert5Color9b" id="vert5Color9b">
+                <br />
+                <label for="vert5Text9c">Negative Label</label>
+                <input type="text" size="10" value="-$4M" name="vert5Text9c" id="vert5Text9c">
+                <label for="vert5Size9d">Bar Size</label>
+                <input type="number" size="6" value="-80" max="0" min="-100" name="vert5Size9d" id="vert5Size9d">
+                <label for="vert5Color9d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color9d" id="vert5Color9d">
+            </fieldset>
+            <fieldset class="vert5Controls styleControls">
+                <legend>Vertical Bar #10</legend>
+                <label for="vert5Text10a">Positive Label</label>
+                <input type="text" size="10" value="2022" name="vert5Text10a" id="vert5Text10a">
+                <label for="vert5Size10b">Bar Size</label>
+                <input type="number" size="6" value="0" max="100" min="0" name="vert5Size10b" id="vert5Size10b">
+                <label for="vert5Color10b">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" 10ed81="vert5Color10b" id="vert5Color10b">
+                <br />
+                <label for="vert5Text10c">Negative Label</label>
+                <input type="text" size="10" value="-$5M" name="vert5Text10c" id="vert5Text10c">
+                <label for="vert5Size10d">Bar Size</label>
+                <input type="number" size="6" value="-100" max="0" min="-100" name="vert5Size10d" id="vert5Size10d">
+                <label for="vert5Color10d">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color10d" id="vert5Color10d">
+            </fieldset>
+        </div>
+        <button type="button" id="vert5Button">Generate Email Chart Code</button>
+        <textarea name="vert5Output" id="vert5Output" readonly></textarea>
     </div>
     <!-- end vertical bar chart iii -->
 
