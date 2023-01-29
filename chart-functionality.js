@@ -20,6 +20,7 @@ const textarea = document.getElementsByTagName("textarea");
 const previewBox = document.querySelectorAll("div.charts td.previewBox");
 const previewBoxVert1Label = document.querySelectorAll("div#vert1Chart td.previewBox table:nth-of-type(1) tr:nth-of-type(1) td"); // Top vertical bar label
 const previewBoxVert2Label = document.querySelectorAll("div#vert2Chart td.previewBox table:nth-of-type(1) tr:nth-of-type(1) td"); // Top vertical bar label
+const previewBoxVert3Label = document.querySelectorAll("div#vert3Chart td.previewBox table:nth-of-type(2) tr:nth-of-type(1) td"); // Bottom vertical bar label
 const horiz1BarsNodes1 = document.querySelectorAll("tr.horiz1Bars table.chartMobile td:nth-of-type(1)");
 const horiz1BarsNodes2 = document.querySelectorAll("tr.horiz1Bars table.chartMobile td:nth-of-type(3)");
 const horiz2BarsNodes3 = document.querySelectorAll("tr.horiz2Bars table.chartMobile td:nth-of-type(3)");
@@ -78,6 +79,9 @@ document.addEventListener("keydown", () => {
         prog2Row5a.classList.replace("lightStyles", "darkStyles");
         horiz4Source.classList.toggle("darkStyles");
         horiz4Source.classList.replace("lightStyles", "darkStyles");
+        vert1AxisLine.classList.toggle("lightBorder");
+        vert2AxisLine.classList.toggle("lightBorder");
+        vert3AxisLine.classList.toggle("lightBorder");
         for (var i = 0; i < scrollBox.length; i++) {
             scrollBox[i].classList.toggle("darkStyles");
             scrollBox[i].classList.replace("lightStyles", "darkStyles");
@@ -138,6 +142,8 @@ document.addEventListener("keydown", () => {
             previewBoxVert1Label[y].classList.replace("lightStyles", "darkStyles");
             previewBoxVert2Label[y].classList.toggle("darkStyles");
             previewBoxVert2Label[y].classList.replace("lightStyles", "darkStyles");
+            previewBoxVert3Label[y].classList.toggle("darkStyles");
+            previewBoxVert3Label[y].classList.replace("lightStyles", "darkStyles");
         }
         if (lightMode.style.display == "none") {
             lightMode.style.display = "inline-block";
@@ -173,6 +179,9 @@ darkMode.addEventListener("click", () => {
     prog2Row5a.classList.replace("lightStyles", "darkStyles");
     horiz4Source.classList.toggle("darkStyles");
     horiz4Source.classList.replace("lightStyles", "darkStyles");
+    vert1AxisLine.classList.toggle("lightBorder");
+    vert2AxisLine.classList.toggle("lightBorder");
+    vert3AxisLine.classList.toggle("lightBorder");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.toggle("darkStyles");
         scrollBox[i].classList.replace("lightStyles", "darkStyles");
@@ -233,6 +242,8 @@ darkMode.addEventListener("click", () => {
         previewBoxVert1Label[y].classList.replace("lightStyles", "darkStyles");
         previewBoxVert2Label[y].classList.toggle("darkStyles");
         previewBoxVert2Label[y].classList.replace("lightStyles", "darkStyles");
+        previewBoxVert3Label[y].classList.toggle("darkStyles");
+        previewBoxVert3Label[y].classList.replace("lightStyles", "darkStyles");
     }
     darkMode.style.display = "none";
     lightMode.style.display = "inline-block";
@@ -250,6 +261,9 @@ lightMode.addEventListener("click", () => {
     prog2Row4a.classList.replace("darkStyles", "lightStyles");
     prog2Row5a.classList.replace("darkStyles", "lightStyles");
     horiz4Source.classList.replace("darkStyles", "lightStyles");
+    vert1AxisLine.classList.toggle("lightBorder");
+    vert2AxisLine.classList.toggle("lightBorder");
+    vert3AxisLine.classList.toggle("lightBorder");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.replace("darkStyles", "lightStyles");
         textarea[i].classList.replace("darkStyles", "lightStyles");
@@ -283,6 +297,7 @@ lightMode.addEventListener("click", () => {
         combo1BarsNodes3[y].classList.replace("darkStyles", "lightStyles");
         previewBoxVert1Label[y].classList.replace("darkStyles", "lightStyles");
         previewBoxVert2Label[y].classList.replace("darkStyles", "lightStyles");
+        previewBoxVert3Label[y].classList.replace("darkStyles", "lightStyles");
     }
     darkMode.style.display = "inline-block";
     lightMode.style.display = "none";
