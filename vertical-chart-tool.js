@@ -1221,3 +1221,26 @@ vert3Button.addEventListener("click", () => {
 vert3Output.addEventListener("click", () => {
     vert3Output.select();
 });
+
+// Vertical Chart V Row Selection
+const vert5AxisLine = document.getElementById("vert5AxisLine");
+const vert5Width = document.getElementById("vert5Width");
+const vert5Bars = document.getElementsByClassName("vert5Bars");
+const vert5Top = document.getElementsByClassName("vert5Top");
+const vert5Bottom = document.getElementsByClassName("vert5Bottom");
+const vert5Controls = document.getElementsByClassName("vert5Controls");
+const rowsData18 = document.getElementById("rowsData18");
+rowsData18.addEventListener("change", () => {
+    for (var i = 0; i < vert5Controls.length; i++) {
+        vert5Controls[i].style.display = "none";
+        vert5Top[i].style.display = "none";
+        vert5Bottom[i].style.display = "none";
+        for (var x = 0; x < rowsData18.value; x++) {
+            vert5Controls[x].style.display = "";
+            vert5Top[x].style.display = ""
+            vert5Bottom[x].style.display = "";
+        }
+    }
+    vert5Width.style.maxWidth = rowsData18.value * 50 + 'px';
+    vert5AxisLine.colSpan = rowsData18.value;
+});
