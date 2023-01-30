@@ -4405,10 +4405,10 @@
     <!-- end porgress bar chart ii -->
 
     <!-- VERTICAL BAR CHART I -->
-    <div class="charts" id="vert1Chart" style="display: none;">
+    <div class="charts" id="vert1Chart" style="display: block;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart I</h1></div>
 
-        <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 600px; margin: 0 auto; padding: 0;" class="chartMobile">
+        <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
             <tr>
                 
                 <!-- VERTICAL BAR #1 -->
@@ -4560,40 +4560,10 @@
                     </table>
                 </td>
                 <!-- end vertical bar #10 -->
-
-                <!-- VERTICAL BAR #11 -->
-                <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert1Row11a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$15,191</td>
-                        </tr>
-                    </table>
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert1Row11b" width="35" height="285" style="background-color: #000db8; margin: 0; padding: 0;"></td>
-                        </tr>
-                    </table>
-                </td>
-                <!-- end vertical bar #11 -->
-
-                <!-- VERTICAL BAR #12 -->
-                <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert1Row12a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$7,012</td>
-                        </tr>
-                    </table>
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert1Row12b" width="35" height="130" style="background-color: #000db8; margin: 0; padding: 0;"></td>
-                        </tr>
-                    </table>
-                </td>
-                <!-- end vertical bar #12 -->
             </tr>
 
             <tr>
-                <td id="vert1AxisLine" colspan="12" width="100%" style="border-top: 1px solid #000000; width: 100%;"></td>
+                <td id="vert1AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
             </tr>
 
             <!-- X-axis Labels -->
@@ -4608,8 +4578,6 @@
                 <td class="vert1AxisLabel" id="vert1Row8c" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2020</td>
                 <td class="vert1AxisLabel" id="vert1Row9c" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2021</td>
                 <td class="vert1AxisLabel" id="vert1Row10c" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2022</td>
-                <td class="vert1AxisLabel" id="vert1Row11c" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2023</td>
-                <td class="vert1AxisLabel" id="vert1Row12c" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2024</td>
             </tr>
             <!-- end x-axis labels -->
 
@@ -4618,7 +4586,7 @@
             <fieldset class="dataCheckboxes">
                 <legend>Chart Customization</legend>
                 <label for="rowsData14">Select # of Vertical Bars</label>
-                <input type="number" size="6" value="12" max="12" min="1" name="rowsData14" id="rowsData14">
+                <input type="number" size="6" value="10" max="10" min="1" name="rowsData14" id="rowsData14">
             </fieldset>
             <fieldset class="vert1Controls styleControls">
                 <legend>Vertical Bar #1</legend>
@@ -4740,30 +4708,6 @@
                 <label for="vert1Color10">Bar Color</label>
                 <input type="text" size="6" value="#000db8" name="vert1Color10" id="vert1Color10">
             </fieldset>
-            <fieldset class="vert1Controls styleControls">
-                <legend>Vertical Bar #11</legend>
-                <label for="vert1Text11c">Axis Label</label>
-                <input type="text" size="10" value="2023" name="vert1Text11c" id="vert1Text11c">
-                <label for="vert1Text11a">Bar Label</label>
-                <input type="text" size="10" value="$7,012" name="vert1Text11a" id="vert1Text11a">
-                <br />
-                <label for="vert1Size11">Bar Size</label>
-                <input type="number" size="6" value="95" max="100" min="0" name="vert1Size11" id="vert1Size11">
-                <label for="vert1Color11">Bar Color</label>
-                <input type="text" size="6" value="#000db8" name="vert1Color11" id="vert1Color11">
-            </fieldset>
-            <fieldset class="vert1Controls styleControls">
-                <legend>Vertical Bar #12</legend>
-                <label for="vert1Text12c">Axis Label</label>
-                <input type="text" size="10" value="2024" name="vert1Text12c" id="vert1Text12c">
-                <label for="vert1Text12a">Bar Label</label>
-                <input type="text" size="10" value="$7,012" name="vert1Text12a" id="vert1Text12a">
-                <br />
-                <label for="vert1Size12">Bar Size</label>
-                <input type="number" size="6" value="48" max="100" min="0" name="vert1Size12" id="vert1Size12">
-                <label for="vert1Color12">Bar Color</label>
-                <input type="text" size="6" value="#000db8" name="vert1Color12" id="vert1Color12">
-            </fieldset>
         </div>
         <button type="button" id="vert1Button">Generate Email Chart Code</button>
         <textarea name="vert1Output" id="vert1Output" readonly></textarea>
@@ -4774,7 +4718,7 @@
     <div class="charts" id="vert2Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart II</h1></div>
 
-        <table id="vert2Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 600px; margin: 0 auto; padding: 0;" class="chartMobile">
+        <table id="vert2Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
             <tr>
                 
                 <!-- VERTICAL BAR #1 -->
@@ -4987,51 +4931,8 @@
                 </td>
                 <!-- end vertical bar #10 -->
 
-                <!-- VERTICAL BAR #11 -->
-                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert2Row11a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$15,191</td>
-                        </tr>
-                    </table>
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert2Row11b" width="35" height="10" style="background-color: #47bd39; margin: 0; padding: 0;"></td>
-                        </tr>
-                        <tr>
-                            <td id="vert2Row11c" width="35" height="10" style="background-color: #12802b; margin: 0; padding: 0;"></td>
-                        </tr>
-                        <tr>
-                            <td id="vert2Row11d" width="35" height="285" style="background-color: #08584c; margin: 0; padding: 0;"></td>
-                        </tr>
-                    </table>
-                </td>
-                <!-- end vertical bar #11 -->
-
-                <!-- VERTICAL BAR #12 -->
-                <td class="previewBox vert2Bars" width="50" valign="bottom" align="center">
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert2Row12a" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$7,012</td>
-                        </tr>
-                    </table>
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert2Row12b" width="35" height="10" style="background-color: #47bd39; margin: 0; padding: 0;"></td>
-                        </tr>
-                        <tr>
-                            <td id="vert2Row12c" width="35" height="10" style="background-color: #12802b; margin: 0; padding: 0;"></td>
-                        </tr>
-                        <tr>
-                            <td id="vert2Row12d" width="35" height="130" style="background-color: #08584c; margin: 0; padding: 0;"></td>
-                        </tr>
-                    </table>
-                </td>
-                <!-- end vertical bar #12 -->
-            </tr>
-
             <tr>
-                <td id="vert2AxisLine" colspan="12" width="100%" style="border-top: 1px solid #000000; width: 100%;"></td>
+                <td id="vert2AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
             </tr>
 
             <!-- X-axis Labels -->
@@ -5046,8 +4947,6 @@
                 <td class="vert2AxisLabel" id="vert2Row8e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2020</td>
                 <td class="vert2AxisLabel" id="vert2Row9e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2021</td>
                 <td class="vert2AxisLabel" id="vert2Row10e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2022</td>
-                <td class="vert2AxisLabel" id="vert2Row11e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2023</td>
-                <td class="vert2AxisLabel" id="vert2Row12e" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center;">2024</td>
             </tr>
             <!-- end x-axis labels -->
 
@@ -5056,7 +4955,7 @@
             <fieldset class="dataCheckboxes">
                 <legend>Chart Customization</legend>
                 <label for="rowsData15">Select # of Vertical Bars</label>
-                <input type="number" size="6" value="12" max="12" min="1" name="rowsData15" id="rowsData15">
+                <input type="number" size="6" value="10" max="10" min="1" name="rowsData15" id="rowsData15">
             </fieldset>
             <fieldset class="vert2Controls styleControls">
                 <legend>Vertical Bar #1</legend>
@@ -5278,50 +5177,6 @@
                 <label for="vert2Color10d">Bar #3 Color</label>
                 <input type="text" size="6" value="#08584c" name="vert2Color10d" id="vert2Color10d">
             </fieldset>
-            <fieldset class="vert2Controls styleControls">
-                <legend>Vertical Bar #11</legend>
-                <label for="vert2Text11e">Axis Label</label>
-                <input type="text" size="10" value="2023" name="vert2Text11e" id="vert2Text11e">
-                <label for="vert2Text11a">Bar Label</label>
-                <input type="text" size="10" value="$7,012" name="vert2Text11a" id="vert2Text11a">
-                <br />
-                <label for="vert2Size11b">Bar #1 Size</label>
-                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size11b" id="vert2Size11b">
-                <label for="vert2Color11b">Bar #1 Color</label>
-                <input type="text" size="6" value="#47bd39" name="vert2Color11b" id="vert2Color11b">
-                <br />
-                <label for="vert2Size11c">Bar #2 Size</label>
-                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size11c" id="vert2Size11c">
-                <label for="vert2Color11c">Bar #2 Color</label>
-                <input type="text" size="6" value="#12802b" name="vert2Color11c" id="vert2Color11c">
-                <br />
-                <label for="vert2Size11d">Bar #3 Size</label>
-                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size11d" id="vert2Size11d">
-                <label for="vert2Color11d">Bar #3 Color</label>
-                <input type="text" size="6" value="#08584c" name="vert2Color11d" id="vert2Color11d">
-            </fieldset>
-            <fieldset class="vert2Controls styleControls">
-                <legend>Vertical Bar #12</legend>
-                <label for="vert2Text12e">Axis Label</label>
-                <input type="text" size="10" value="2024" name="vert2Text12e" id="vert2Text12e">
-                <label for="vert2Text12a">Bar Label</label>
-                <input type="text" size="10" value="$7,012" name="vert2Text12a" id="vert2Text12a">
-                <br />
-                <label for="vert2Size12b">Bar #1 Size</label>
-                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size12b" id="vert2Size12b">
-                <label for="vert2Color12b">Bar #1 Color</label>
-                <input type="text" size="6" value="#47bd39" name="vert2Color12b" id="vert2Color12b">
-                <br />
-                <label for="vert2Size12c">Bar #2 Size</label>
-                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size12c" id="vert2Size12c">
-                <label for="vert2Color12c">Bar #2 Color</label>
-                <input type="text" size="6" value="#12802b" name="vert2Color12c" id="vert2Color12c">
-                <br />
-                <label for="vert2Size12d">Bar #3 Size</label>
-                <input type="number" size="6" value="30" max="100" min="0" name="vert2Size12d" id="vert2Size12d">
-                <label for="vert2Color12d">Bar #3 Color</label>
-                <input type="text" size="6" value="#08584c" name="vert2Color12d" id="vert2Color12d">
-            </fieldset>
         </div>
         <button type="button" id="vert2Button">Generate Email Chart Code</button>
         <textarea name="vert2Output" id="vert2Output" readonly></textarea>
@@ -5332,7 +5187,7 @@
     <div class="charts" id="vert3Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart III</h1></div>
 
-        <table id="vert3Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 600px; margin: 0 auto; padding: 0;" class="chartMobile">
+        <table id="vert3Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
 
             <!-- X-axis Labels -->
             <tr>
@@ -5346,13 +5201,11 @@
                 <td class="vert3AxisLabel" id="vert3Row8a" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center;">2020</td>
                 <td class="vert3AxisLabel" id="vert3Row9a" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center;">2021</td>
                 <td class="vert3AxisLabel" id="vert3Row10a" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center;">2022</td>
-                <td class="vert3AxisLabel" id="vert3Row11a" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center;">2023</td>
-                <td class="vert3AxisLabel" id="vert3Row12a" height="10" style="font-family: Courier, serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center;">2024</td>
             </tr>
             <!-- end x-axis labels -->
 
             <tr>
-                <td id="vert3AxisLine" colspan="12" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
+                <td id="vert3AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
             </tr>
 
             <tr>
@@ -5505,36 +5358,6 @@
                     </table>
                 </td>
                 <!-- end vertical bar #10 -->
-
-                <!-- VERTICAL BAR #11 -->
-                <td class="previewBox vert3Bars" width="50" valign="top" align="center">
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert3Row11b" width="35" height="285" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
-                        </tr>
-                    </table>
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert3Row11c" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$15,191</td>
-                        </tr>
-                    </table>
-                </td>
-                <!-- end vertical bar #11 -->
-
-                <!-- VERTICAL BAR #12 -->
-                <td class="previewBox vert3Bars" width="50" valign="top" align="center">
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert3Row12b" width="35" height="130" style="background-color: #ff0000; margin: 0; padding: 0;"></td>
-                        </tr>
-                    </table>
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td id="vert3Row12c" style="color: #000000; font-family: Courier, serif; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$7,012</td>
-                        </tr>
-                    </table>
-                </td>
-                <!-- end vertical bar #12 -->
             </tr>
 
         </table>
@@ -5542,7 +5365,7 @@
             <fieldset class="dataCheckboxes">
                 <legend>Chart Customization</legend>
                 <label for="rowsData16">Select # of Vertical Bars</label>
-                <input type="number" size="6" value="12" max="12" min="1" name="rowsData16" id="rowsData16">
+                <input type="number" size="6" value="10" max="10" min="1" name="rowsData16" id="rowsData16">
             </fieldset>
             <fieldset class="vert3Controls styleControls">
                 <legend>Vertical Bar #1</legend>
@@ -5664,30 +5487,6 @@
                 <label for="vert3Color10">Bar Color</label>
                 <input type="text" size="6" value="#ff0000" name="vert3Color10" id="vert3Color10">
             </fieldset>
-            <fieldset class="vert3Controls styleControls">
-                <legend>Vertical Bar #11</legend>
-                <label for="vert3Text11a">Axis Label</label>
-                <input type="text" size="10" value="2023" name="vert3Text11a" id="vert3Text11a">
-                <label for="vert3Text11c">Bar Label</label>
-                <input type="text" size="10" value="$7,012" name="vert3Text11c" id="vert3Text11c">
-                <br />
-                <label for="vert3Size11">Bar Size</label>
-                <input type="number" size="6" value="-95" max="0" min="-100" name="vert3Size11" id="vert3Size11">
-                <label for="vert3Color11">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert3Color11" id="vert3Color11">
-            </fieldset>
-            <fieldset class="vert3Controls styleControls">
-                <legend>Vertical Bar #12</legend>
-                <label for="vert3Text12a">Axis Label</label>
-                <input type="text" size="10" value="2024" name="vert3Text12a" id="vert3Text12a">
-                <label for="vert3Text12c">Bar Label</label>
-                <input type="text" size="10" value="$7,012" name="vert3Text12c" id="vert3Text12c">
-                <br />
-                <label for="vert3Size12">Bar Size</label>
-                <input type="number" size="6" value="-48" max="0" min="-100" name="vert3Size12" id="vert3Size12">
-                <label for="vert3Color12">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert3Color12" id="vert3Color12">
-            </fieldset>
         </div>
         <button type="button" id="vert3Button">Generate Email Chart Code</button>
         <textarea name="vert3Output" id="vert3Output" readonly></textarea>
@@ -5695,7 +5494,7 @@
     <!-- end vertical bar chart iii -->
 
     <!-- VERTICAL BAR CHART V -->
-    <div class="charts" id="vert5Chart" style="display: block;">
+    <div class="charts" id="vert5Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart V</h1></div>
 
         <table id="vert5Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
@@ -5853,7 +5652,7 @@
             </tr>
 
             <tr>
-                <td id="vert5AxisLine" colspan="12" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
+                <td id="vert5AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
             </tr>
 
             <tr>

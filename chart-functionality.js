@@ -136,6 +136,12 @@ document.addEventListener("keydown", () => {
             splitBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
             splitBarsNodes4[x].classList.toggle("darkStyles");
             splitBarsNodes4[x].classList.replace("lightStyles", "darkStyles");
+            previewBoxVert1Label[x].classList.toggle("darkStyles");
+            previewBoxVert1Label[x].classList.replace("lightStyles", "darkStyles");
+            previewBoxVert2Label[x].classList.toggle("darkStyles");
+            previewBoxVert2Label[x].classList.replace("lightStyles", "darkStyles");
+            previewBoxVert3Label[x].classList.toggle("darkStyles");
+            previewBoxVert3Label[x].classList.replace("lightStyles", "darkStyles");
             previewBoxVert5LabelTop[x].classList.toggle("darkStyles");
             previewBoxVert5LabelTop[x].classList.replace("lightStyles", "darkStyles");
             previewBoxVert5LabelBottom[x].classList.toggle("darkStyles");
@@ -146,12 +152,6 @@ document.addEventListener("keydown", () => {
             combo1BarsNodes1[y].classList.replace("lightStyles", "darkStyles");
             combo1BarsNodes3[y].classList.toggle("darkStyles");
             combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
-            previewBoxVert1Label[y].classList.toggle("darkStyles");
-            previewBoxVert1Label[y].classList.replace("lightStyles", "darkStyles");
-            previewBoxVert2Label[y].classList.toggle("darkStyles");
-            previewBoxVert2Label[y].classList.replace("lightStyles", "darkStyles");
-            previewBoxVert3Label[y].classList.toggle("darkStyles");
-            previewBoxVert3Label[y].classList.replace("lightStyles", "darkStyles");
         }
         if (lightMode.style.display == "none") {
             lightMode.style.display = "inline-block";
@@ -241,22 +241,22 @@ darkMode.addEventListener("click", () => {
         splitBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
         splitBarsNodes4[x].classList.toggle("darkStyles");
         splitBarsNodes4[x].classList.replace("lightStyles", "darkStyles");
+        previewBoxVert1Label[x].classList.toggle("darkStyles");
+        previewBoxVert1Label[x].classList.replace("lightStyles", "darkStyles");
+        previewBoxVert2Label[x].classList.toggle("darkStyles");
+        previewBoxVert2Label[x].classList.replace("lightStyles", "darkStyles");
+        previewBoxVert3Label[x].classList.toggle("darkStyles");
+        previewBoxVert3Label[x].classList.replace("lightStyles", "darkStyles");
+        previewBoxVert5LabelTop[x].classList.toggle("darkStyles");
+        previewBoxVert5LabelTop[x].classList.replace("lightStyles", "darkStyles");
+        previewBoxVert5LabelBottom[x].classList.toggle("darkStyles");
+        previewBoxVert5LabelBottom[x].classList.replace("lightStyles", "darkStyles");
     }
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
         combo1BarsNodes1[y].classList.toggle("darkStyles");
         combo1BarsNodes1[y].classList.replace("lightStyles", "darkStyles");
         combo1BarsNodes3[y].classList.toggle("darkStyles");
         combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert1Label[y].classList.toggle("darkStyles");
-        previewBoxVert1Label[y].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert2Label[y].classList.toggle("darkStyles");
-        previewBoxVert2Label[y].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert3Label[y].classList.toggle("darkStyles");
-        previewBoxVert3Label[y].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert5LabelTop[y].classList.toggle("darkStyles");
-        previewBoxVert5LabelTop[y].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert5LabelBottom[y].classList.toggle("darkStyles");
-        previewBoxVert5LabelBottom[y].classList.replace("lightStyles", "darkStyles");
     }
     darkMode.style.display = "none";
     lightMode.style.display = "inline-block";
@@ -305,15 +305,15 @@ lightMode.addEventListener("click", () => {
         negative2BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
         splitBarsNodes1[x].classList.replace("darkStyles", "lightStyles");
         splitBarsNodes4[x].classList.replace("darkStyles", "lightStyles");
+        previewBoxVert1Label[x].classList.replace("darkStyles", "lightStyles");
+        previewBoxVert2Label[x].classList.replace("darkStyles", "lightStyles");
+        previewBoxVert3Label[x].classList.replace("darkStyles", "lightStyles");
+        previewBoxVert5LabelTop[x].classList.replace("darkStyles", "lightStyles");
+        previewBoxVert5LabelBottom[x].classList.replace("darkStyles", "lightStyles");
     }
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
         combo1BarsNodes1[y].classList.replace("darkStyles", "lightStyles");
         combo1BarsNodes3[y].classList.replace("darkStyles", "lightStyles");
-        previewBoxVert1Label[y].classList.replace("darkStyles", "lightStyles");
-        previewBoxVert2Label[y].classList.replace("darkStyles", "lightStyles");
-        previewBoxVert3Label[y].classList.replace("darkStyles", "lightStyles");
-        previewBoxVert5LabelTop[y].classList.replace("darkStyles", "lightStyles");
-        previewBoxVert5LabelBottom[y].classList.replace("darkStyles", "lightStyles");
     }
     darkMode.style.display = "inline-block";
     lightMode.style.display = "none";
