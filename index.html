@@ -4227,7 +4227,7 @@
         <button type="button" id="prog1Button">Generate Email Chart Code</button>
         <textarea name="prog1Output" id="prog1Output" readonly></textarea>
     </div>
-    <!-- end porgress bar chart i -->
+    <!-- end progress bar chart i -->
 
     <!-- PROGRESS BAR CHART II -->
     <div class="charts" id="prog2Chart" style="display: none;">
@@ -4402,13 +4402,13 @@
         <button type="button" id="prog2Button">Generate Email Chart Code</button>
         <textarea name="prog2Output" id="prog2Output" readonly></textarea>
     </div>
-    <!-- end porgress bar chart ii -->
+    <!-- end progress bar chart ii -->
 
     <!-- VERTICAL BAR CHART I -->
-    <div class="charts" id="vert1Chart" style="display: block;">
+    <div class="charts" id="vert1Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart I</h1></div>
 
-        <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
+        <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
             <tr>
                 
                 <!-- VERTICAL BAR #1 -->
@@ -4562,7 +4562,7 @@
                 <!-- end vertical bar #10 -->
             </tr>
 
-            <tr>
+            <tr height="0"> <!-- 1.30.23: Extra spacing being created here in Safari browser clients. After setting height to "0", spacing was removed -->
                 <td id="vert1AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
             </tr>
 
@@ -4718,7 +4718,7 @@
     <div class="charts" id="vert2Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart II</h1></div>
 
-        <table id="vert2Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
+        <table id="vert2Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
             <tr>
                 
                 <!-- VERTICAL BAR #1 -->
@@ -4931,7 +4931,7 @@
                 </td>
                 <!-- end vertical bar #10 -->
 
-            <tr>
+            <tr height="0">
                 <td id="vert2AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
             </tr>
 
@@ -5187,7 +5187,7 @@
     <div class="charts" id="vert3Chart" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart III</h1></div>
 
-        <table id="vert3Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
+        <table id="vert3Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
 
             <!-- X-axis Labels -->
             <tr>
@@ -5204,7 +5204,7 @@
             </tr>
             <!-- end x-axis labels -->
 
-            <tr>
+            <tr height="0">
                 <td id="vert3AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
             </tr>
 
@@ -5494,10 +5494,10 @@
     <!-- end vertical bar chart iii -->
 
     <!-- VERTICAL BAR CHART V -->
-    <div class="charts" id="vert5Chart" style="display: none;">
+    <div class="charts" id="vert5Chart" style="display: block;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart V</h1></div>
 
-        <table id="vert5Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 500px; margin: 0 auto; padding: 0;" class="chartMobile">
+        <table id="vert5Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 500px; min-height: 350px; margin: 0 auto; padding: 0;" class="chartMobile">
 
             <tr>
                 <!-- TOP VERTICAL BAR #1 -->
@@ -5651,7 +5651,7 @@
                 <!-- end top vertical bar #10 -->
             </tr>
 
-            <tr>
+            <tr height="0">
                 <td id="vert5AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
             </tr>
 
@@ -5823,12 +5823,12 @@
                 <label for="vert5Color1b">Bar Color</label>
                 <input type="text" size="6" value="#10ed81" name="vert5Color1b" id="vert5Color1b">
                 <br />
-                <label for="vert5Text1c">Negative Label</label>
-                <input type="text" size="10" value="2013" name="vert5Text1c" id="vert5Text1c">
-                <label for="vert5Size1d">Bar Size</label>
-                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size1d" id="vert5Size1d">
-                <label for="vert5Color1d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color1d" id="vert5Color1d">
+                <label for="vert5Text1d">Negative Label</label>
+                <input type="text" size="10" value="2013" name="vert5Text1d" id="vert5Text1d">
+                <label for="vert5Size1c">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size1c" id="vert5Size1c">
+                <label for="vert5Color1c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color1c" id="vert5Color1c">
             </fieldset>
             <fieldset class="vert5Controls styleControls">
                 <legend>Vertical Bar #2</legend>
@@ -5839,12 +5839,12 @@
                 <label for="vert5Color2b">Bar Color</label>
                 <input type="text" size="6" value="#10ed81" name="vert5Color2b" id="vert5Color2b">
                 <br />
-                <label for="vert5Text2c">Negative Label</label>
-                <input type="text" size="10" value="2014" name="vert5Text2c" id="vert5Text2c">
-                <label for="vert5Size2d">Bar Size</label>
-                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size2d" id="vert5Size2d">
-                <label for="vert5Color2d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color2d" id="vert5Color2d">
+                <label for="vert5Text2d">Negative Label</label>
+                <input type="text" size="10" value="2014" name="vert5Text2d" id="vert5Text2d">
+                <label for="vert5Size2c">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size2c" id="vert5Size2c">
+                <label for="vert5Color2c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color2c" id="vert5Color2c">
             </fieldset>
             <fieldset class="vert5Controls styleControls">
                 <legend>Vertical Bar #3</legend>
@@ -5855,12 +5855,12 @@
                 <label for="vert5Color3b">Bar Color</label>
                 <input type="text" size="6" value="#10ed81" name="vert5Color3b" id="vert5Color3b">
                 <br />
-                <label for="vert5Text3c">Negative Label</label>
-                <input type="text" size="10" value="2015" name="vert5Text3c" id="vert5Text3c">
-                <label for="vert5Size3d">Bar Size</label>
-                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size3d" id="vert5Size3d">
-                <label for="vert5Color3d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color3d" id="vert5Color3d">
+                <label for="vert5Text3d">Negative Label</label>
+                <input type="text" size="10" value="2015" name="vert5Text3d" id="vert5Text3d">
+                <label for="vert5Size3c">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size3c" id="vert5Size3c">
+                <label for="vert5Color3c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color3c" id="vert5Color3c">
             </fieldset>
             <fieldset class="vert5Controls styleControls">
                 <legend>Vertical Bar #4</legend>
@@ -5871,12 +5871,12 @@
                 <label for="vert5Color4b">Bar Color</label>
                 <input type="text" size="6" value="#10ed81" name="vert5Color4b" id="vert5Color4b">
                 <br />
-                <label for="vert5Text4c">Negative Label</label>
-                <input type="text" size="10" value="2016" name="vert5Text4c" id="vert5Text4c">
-                <label for="vert5Size4d">Bar Size</label>
-                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size4d" id="vert5Size4d">
-                <label for="vert5Color4d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color4d" id="vert5Color4d">
+                <label for="vert5Text4d">Negative Label</label>
+                <input type="text" size="10" value="2016" name="vert5Text4d" id="vert5Text4d">
+                <label for="vert5Size4c">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size4c" id="vert5Size4c">
+                <label for="vert5Color4c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color4c" id="vert5Color4c">
             </fieldset>
             <fieldset class="vert5Controls styleControls">
                 <legend>Vertical Bar #5</legend>
@@ -5887,12 +5887,12 @@
                 <label for="vert5Color5b">Bar Color</label>
                 <input type="text" size="6" value="#10ed81" name="vert5Color5b" id="vert5Color5b">
                 <br />
-                <label for="vert5Text5c">Negative Label</label>
-                <input type="text" size="10" value="2017" name="vert5Text5c" id="vert5Text5c">
-                <label for="vert5Size5d">Bar Size</label>
-                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size5d" id="vert5Size5d">
-                <label for="vert5Color5d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color5d" id="vert5Color5d">
+                <label for="vert5Text5d">Negative Label</label>
+                <input type="text" size="10" value="2017" name="vert5Text5d" id="vert5Text5d">
+                <label for="vert5Size5c">Bar Size</label>
+                <input type="number" size="6" value="0" max="0" min="-100" name="vert5Size5c" id="vert5Size5c">
+                <label for="vert5Color5c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color5c" id="vert5Color5c">
             </fieldset>
             <fieldset class="vert5Controls styleControls">
                 <legend>Vertical Bar #6</legend>
@@ -5903,12 +5903,12 @@
                 <label for="vert5Color6b">Bar Color</label>
                 <input type="text" size="6" value="#10ed81" name="vert5Color6b" id="vert5Color6b">
                 <br />
-                <label for="vert5Text6c">Negative Label</label>
-                <input type="text" size="10" value="-$1M" name="vert5Text6c" id="vert5Text6c">
-                <label for="vert5Size6d">Bar Size</label>
-                <input type="number" size="6" value="-20" max="0" min="-100" name="vert5Size6d" id="vert5Size6d">
-                <label for="vert5Color6d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color6d" id="vert5Color6d">
+                <label for="vert5Text6d">Negative Label</label>
+                <input type="text" size="10" value="-$1M" name="vert5Text6d" id="vert5Text6d">
+                <label for="vert5Size6c">Bar Size</label>
+                <input type="number" size="6" value="-20" max="0" min="-100" name="vert5Size6c" id="vert5Size6c">
+                <label for="vert5Color6c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color6c" id="vert5Color6c">
             </fieldset>
             <fieldset class="vert5Controls styleControls">
                 <legend>Vertical Bar #7</legend>
@@ -5919,12 +5919,12 @@
                 <label for="vert5Color7b">Bar Color</label>
                 <input type="text" size="6" value="#10ed81" name="vert5Color7b" id="vert5Color7b">
                 <br />
-                <label for="vert5Text7c">Negative Label</label>
-                <input type="text" size="10" value="-$2M" name="vert5Text7c" id="vert5Text7c">
-                <label for="vert5Size7d">Bar Size</label>
-                <input type="number" size="6" value="-40" max="0" min="-100" name="vert5Size7d" id="vert5Size7d">
-                <label for="vert5Color7d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color7d" id="vert5Color7d">
+                <label for="vert5Text7d">Negative Label</label>
+                <input type="text" size="10" value="-$2M" name="vert5Text7d" id="vert5Text7d">
+                <label for="vert5Size7c">Bar Size</label>
+                <input type="number" size="6" value="-40" max="0" min="-100" name="vert5Size7c" id="vert5Size7c">
+                <label for="vert5Color7c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color7c" id="vert5Color7c">
             </fieldset>
             <fieldset class="vert5Controls styleControls">
                 <legend>Vertical Bar #8</legend>
@@ -5935,12 +5935,12 @@
                 <label for="vert5Color8b">Bar Color</label>
                 <input type="text" size="6" value="#10ed81" name="vert5Color8b" id="vert5Color8b">
                 <br />
-                <label for="vert5Text8c">Negative Label</label>
-                <input type="text" size="10" value="-$3M" name="vert5Text8c" id="vert5Text8c">
-                <label for="vert5Size8d">Bar Size</label>
-                <input type="number" size="6" value="-60" max="0" min="-100" name="vert5Size8d" id="vert5Size8d">
-                <label for="vert5Color8d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color8d" id="vert5Color8d">
+                <label for="vert5Text8d">Negative Label</label>
+                <input type="text" size="10" value="-$3M" name="vert5Text8d" id="vert5Text8d">
+                <label for="vert5Size8c">Bar Size</label>
+                <input type="number" size="6" value="-60" max="0" min="-100" name="vert5Size8c" id="vert5Size8c">
+                <label for="vert5Color8c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color8c" id="vert5Color8c">
             </fieldset>
             <fieldset class="vert5Controls styleControls">
                 <legend>Vertical Bar #9</legend>
@@ -5955,8 +5955,8 @@
                 <input type="text" size="10" value="-$4M" name="vert5Text9c" id="vert5Text9c">
                 <label for="vert5Size9d">Bar Size</label>
                 <input type="number" size="6" value="-80" max="0" min="-100" name="vert5Size9d" id="vert5Size9d">
-                <label for="vert5Color9d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color9d" id="vert5Color9d">
+                <label for="vert5Color9c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color9c" id="vert5Color9c">
             </fieldset>
             <fieldset class="vert5Controls styleControls">
                 <legend>Vertical Bar #10</legend>
@@ -5967,12 +5967,12 @@
                 <label for="vert5Color10b">Bar Color</label>
                 <input type="text" size="6" value="#ff0000" 10ed81="vert5Color10b" id="vert5Color10b">
                 <br />
-                <label for="vert5Text10c">Negative Label</label>
-                <input type="text" size="10" value="-$5M" name="vert5Text10c" id="vert5Text10c">
-                <label for="vert5Size10d">Bar Size</label>
-                <input type="number" size="6" value="-100" max="0" min="-100" name="vert5Size10d" id="vert5Size10d">
-                <label for="vert5Color10d">Bar Color</label>
-                <input type="text" size="6" value="#ff0000" name="vert5Color10d" id="vert5Color10d">
+                <label for="vert5Text10d">Negative Label</label>
+                <input type="text" size="10" value="-$5M" name="vert5Text10d" id="vert5Text10d">
+                <label for="vert5Size10c">Bar Size</label>
+                <input type="number" size="6" value="-100" max="0" min="-100" name="vert5Size10c" id="vert5Size10c">
+                <label for="vert5Color10c">Bar Color</label>
+                <input type="text" size="6" value="#ff0000" name="vert5Color10c" id="vert5Color10c">
             </fieldset>
         </div>
         <button type="button" id="vert5Button">Generate Email Chart Code</button>
