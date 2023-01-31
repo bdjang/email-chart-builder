@@ -84,7 +84,6 @@ document.addEventListener("keydown", () => {
         vert1AxisLine.classList.toggle("lightBorder");
         vert2AxisLine.classList.toggle("lightBorder");
         vert3AxisLine.classList.toggle("lightBorder");
-        vert3AxisLine.classList.toggle("lightBorder");
         vert5AxisLine.classList.toggle("lightBorder");
         for (var i = 0; i < scrollBox.length; i++) {
             scrollBox[i].classList.toggle("darkStyles");
