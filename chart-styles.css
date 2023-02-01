@@ -20,13 +20,13 @@ ul li { margin: 8px 0; }
 .scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
 .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
 .dataCheckboxes label { display: inline-block; width: 150px; }
-.dataCheckboxes label[for="rowsData14"], .dataCheckboxes label[for="rowsData15"], .dataCheckboxes label[for="rowsData16"], .dataCheckboxes label[for="rowsData18"] { width: 160px; } /* Vertical Bar Charts Select Label */
+.dataCheckboxes label[for="rowsData14"], .dataCheckboxes label[for="rowsData15"], .dataCheckboxes label[for="rowsData16"], .dataCheckboxes label[for="rowsData17"], .dataCheckboxes label[for="rowsData18"] { width: 160px; } /* Vertical Bar Charts Select Label */
 .dataCheckboxes label[for="horiz3Div"], .dataCheckboxes label[for="horiz4Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III and IV 'Add bar dividers' */
 .dataCheckboxes label[for="combo1Div"] { width: 130px; } /* Combo Chart 'Add bar dividers' */
 .dataCheckboxes small { display: block; margin: 10px 0; }
 .horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label { display: inline-block; width: 110px; }
-.vert1Controls label, .vert2Controls label, .vert3Controls label { display: inline-block; width: 100px; }
-.horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input, .negative1Controls input, .negative2Controls input, .vert1Controls input, .vert2Controls input, .vert3Controls input { margin: 10px 60px 0 0; width: 90px; }
+.vert1Controls label, .vert2Controls label, .vert3Controls label, .vert4Controls label { display: inline-block; width: 100px; }
+.horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input, .negative1Controls input, .negative2Controls input, .vert1Controls input, .vert2Controls input, .vert3Controls input, .vert4Controls input { margin: 10px 60px 0 0; width: 90px; }
 .negative1Controls label, .negative2Controls label { display: inline-block; width: 135px; }
 .chartLegend label[for*="legend"] { width: 110px; } /* Targets all labels that start with "legend" */
 .chartLegend input { margin: 0 60px 4px 0; width: 60px; }
