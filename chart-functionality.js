@@ -21,6 +21,7 @@ const previewBox = document.querySelectorAll("div.charts td.previewBox");
 const previewBoxVert1Label = document.querySelectorAll("div#vert1Chart td.previewBox table:nth-of-type(1) tr:nth-of-type(1) td"); // Top vertical bar label
 const previewBoxVert2Label = document.querySelectorAll("div#vert2Chart td.previewBox table:nth-of-type(1) tr:nth-of-type(1) td"); // Top vertical bar label
 const previewBoxVert3Label = document.querySelectorAll("div#vert3Chart td.previewBox table:nth-of-type(2) tr:nth-of-type(1) td"); // Bottom vertical bar label
+const previewBoxVert4Label = document.querySelectorAll("div#vert4Chart td.previewBox table:nth-of-type(2) tr:nth-of-type(1) td"); // Bottom vertical bar label
 const previewBoxVert5LabelTop = document.querySelectorAll("div#vert5Chart td.vert5Top table:nth-of-type(1) tr:nth-of-type(1) td"); // Top vertical bar label
 const previewBoxVert5LabelBottom = document.querySelectorAll("div#vert5Chart td.vert5Bottom table:nth-of-type(2) tr:nth-of-type(1) td"); // Bottom vertical bar label
 const horiz1BarsNodes1 = document.querySelectorAll("tr.horiz1Bars table.chartMobile td:nth-of-type(1)");
@@ -84,6 +85,7 @@ document.addEventListener("keydown", () => {
         vert1AxisLine.classList.toggle("lightBorder");
         vert2AxisLine.classList.toggle("lightBorder");
         vert3AxisLine.classList.toggle("lightBorder");
+        vert4AxisLine.classList.toggle("lightBorder");
         vert5AxisLine.classList.toggle("lightBorder");
         for (var i = 0; i < scrollBox.length; i++) {
             scrollBox[i].classList.toggle("darkStyles");
@@ -141,6 +143,8 @@ document.addEventListener("keydown", () => {
             previewBoxVert2Label[x].classList.replace("lightStyles", "darkStyles");
             previewBoxVert3Label[x].classList.toggle("darkStyles");
             previewBoxVert3Label[x].classList.replace("lightStyles", "darkStyles");
+            previewBoxVert4Label[x].classList.toggle("darkStyles");
+            previewBoxVert4Label[x].classList.replace("lightStyles", "darkStyles");
             previewBoxVert5LabelTop[x].classList.toggle("darkStyles");
             previewBoxVert5LabelTop[x].classList.replace("lightStyles", "darkStyles");
             previewBoxVert5LabelBottom[x].classList.toggle("darkStyles");
@@ -189,6 +193,7 @@ darkMode.addEventListener("click", () => {
     vert1AxisLine.classList.toggle("lightBorder");
     vert2AxisLine.classList.toggle("lightBorder");
     vert3AxisLine.classList.toggle("lightBorder");
+    vert4AxisLine.classList.toggle("lightBorder");
     vert5AxisLine.classList.toggle("lightBorder");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.toggle("darkStyles");
@@ -246,6 +251,8 @@ darkMode.addEventListener("click", () => {
         previewBoxVert2Label[x].classList.replace("lightStyles", "darkStyles");
         previewBoxVert3Label[x].classList.toggle("darkStyles");
         previewBoxVert3Label[x].classList.replace("lightStyles", "darkStyles");
+        previewBoxVert4Label[x].classList.toggle("darkStyles");
+        previewBoxVert4Label[x].classList.replace("lightStyles", "darkStyles");
         previewBoxVert5LabelTop[x].classList.toggle("darkStyles");
         previewBoxVert5LabelTop[x].classList.replace("lightStyles", "darkStyles");
         previewBoxVert5LabelBottom[x].classList.toggle("darkStyles");
@@ -276,6 +283,7 @@ lightMode.addEventListener("click", () => {
     vert1AxisLine.classList.toggle("lightBorder");
     vert2AxisLine.classList.toggle("lightBorder");
     vert3AxisLine.classList.toggle("lightBorder");
+    vert4AxisLine.classList.toggle("lightBorder");
     vert5AxisLine.classList.toggle("lightBorder");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.replace("darkStyles", "lightStyles");
@@ -307,6 +315,7 @@ lightMode.addEventListener("click", () => {
         previewBoxVert1Label[x].classList.replace("darkStyles", "lightStyles");
         previewBoxVert2Label[x].classList.replace("darkStyles", "lightStyles");
         previewBoxVert3Label[x].classList.replace("darkStyles", "lightStyles");
+        previewBoxVert4Label[x].classList.replace("darkStyles", "lightStyles");
         previewBoxVert5LabelTop[x].classList.replace("darkStyles", "lightStyles");
         previewBoxVert5LabelBottom[x].classList.replace("darkStyles", "lightStyles");
     }
