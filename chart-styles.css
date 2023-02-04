@@ -52,4 +52,4 @@ button, #darkMode, #lightMode { cursor: pointer; }
 .darkStyles { background-color: #0f0f0f !important; color: #ffffff !important; }
 .lightStyles { background-color: #ffffff !important; color: #000000 !important; }
 .scrollBoxLight, .textareaLight { background-color: #f8f8f8 !important; }
-.darkStyles, .lightStyles, .scrollBoxLight, .textareaLight { -webkit-transition: background-color 400ms ease; -ms-transition: background-color 400ms ease; transition: background-color 400ms ease; -webkit-transition: color 400ms ease; -ms-transition: color 400ms ease; transition: color 400ms ease; }
+.darkStyles, .lightStyles, .scrollBoxLight, .textareaLight { -webkit-transition: background-color 250ms ease-out; -ms-transition: background-color 250ms ease-out; -moz-transition: background-color 250ms ease-out; transition: background-color 250ms ease-out; -webkit-transition: color 250ms ease-out; -ms-transition: color 250ms ease-out; -moz-transition: color 250ms ease-out; transition: color 250ms ease-out; }
