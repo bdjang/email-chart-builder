@@ -10,14 +10,14 @@ code, legend { font-weight: 600; }
 header { margin: 0 20px; }
 header, textarea, #info { font-family: Courier, serif; }
 label { font-family: Times, serif; font-size: 16px; }
-textarea { background-color: #f8f8f8; border: 2px solid #cccccc; display: block; font-size: 12px; margin: 0 auto 40px; resize: none; height: 160px; width: 700px; }
+textarea { background-color: #f8f8f8; border: 1px solid #c4c4c4; display: block; font-size: 12px; margin: 0 auto 40px; resize: none; height: 160px; width: 700px; }
 ul li { margin: 8px 0; }
 
 /* SITE STYLES */
 #info { margin: 0 auto 20px; width: 700px; }
 #chartEmoji { float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); }
 #chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
-.scrollBox { background-color: #f8f8f8; border: 2px solid #cccccc; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
+.scrollBox { background-color: #f8f8f8; border: 1px solid #c4c4c4; height: 300px; width: 700px; margin: 20px auto; padding: 10px 0; overflow-x: hidden; overflow-y: auto; }
 .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
 .dataCheckboxes label { display: inline-block; width: 150px; }
 .dataCheckboxes label[for="rowsData14"], .dataCheckboxes label[for="rowsData15"], .dataCheckboxes label[for="rowsData16"], .dataCheckboxes label[for="rowsData17"], .dataCheckboxes label[for="rowsData18"] { width: 160px; } /* Vertical Bar Charts Select Label */
