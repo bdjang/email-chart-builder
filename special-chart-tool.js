@@ -1578,12 +1578,14 @@ const legend4Color1x = document.getElementById("legend4Color1x");
 legend4Color1x.oninput = function() {
     legend4Color1.style.color = legend4Color1x.value;
     legend4Color1.style.backgroundColor = legend4Color1x.value;
+    legend4Color1.style.borderColor = legend4Color1x.value;
 };
 const legend4Color2 = document.getElementById("legend4Color2");
 const legend4Color2x = document.getElementById("legend4Color2x");
 legend4Color2x.oninput = function() {
     legend4Color2.style.color = legend4Color2x.value;
     legend4Color2.style.backgroundColor = legend4Color2x.value;
+    legend4Color2.style.borderColor = legend4Color2x.value;
 };
 
 // Combo Chart Row Customization Logic
