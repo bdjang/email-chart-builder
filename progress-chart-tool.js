@@ -291,9 +291,9 @@ const prog2Size1 = document.getElementById("prog2Size1");
 prog2Size1.oninput = function() {
     prog2Row1b.style.width = Math.abs(prog2Size1.value) + "%";
     prog2Row1c.style.width = 100 - (Math.abs(prog2Size1.value)) + "%";
-    if (prog2Size1.value == 5) { // Remove front data bar curve to prevent bar overlap
+    if (prog2Size1.value < 5) { // Remove front data bar curve to prevent bar overlap
         prog2Row1b.style.borderRadius = "30px 0 0 30px";
-    } else if (prog2Size1.value == 6) {
+    } else if (prog2Size1.value > 5) {
         prog2Row1b.style.borderRadius = "30px";
     }
     if (prog2Size1.value < 3) { // Set values 1 - 3 as specific width
@@ -342,9 +342,9 @@ const prog2Size2 = document.getElementById("prog2Size2");
 prog2Size2.oninput = function() {
     prog2Row2b.style.width = Math.abs(prog2Size2.value) + "%";
     prog2Row2c.style.width = 100 - (Math.abs(prog2Size2.value)) + "%";
-    if (prog2Size2.value == 5) {
+    if (prog2Size2.value < 5) {
         prog2Row2b.style.borderRadius = "30px 0 0 30px";
-    } else if (prog2Size2.value == 6) {
+    } else if (prog2Size2.value > 5) {
         prog2Row2b.style.borderRadius = "30px";
     }
     if (prog2Size2.value < 3) {
@@ -393,9 +393,9 @@ const prog2Size3 = document.getElementById("prog2Size3");
 prog2Size3.oninput = function() {
     prog2Row3b.style.width = Math.abs(prog2Size3.value) + "%";
     prog2Row3c.style.width = 100 - (Math.abs(prog2Size3.value)) + "%";
-    if (prog2Size3.value == 5) {
+    if (prog2Size3.value < 5) {
         prog2Row3b.style.borderRadius = "30px 0 0 30px";
-    } else if (prog2Size3.value == 6) {
+    } else if (prog2Size3.value > 5) {
         prog2Row3b.style.borderRadius = "30px";
     }
     if (prog2Size3.value < 3) {
@@ -444,9 +444,9 @@ const prog2Size4 = document.getElementById("prog2Size4");
 prog2Size4.oninput = function() {
     prog2Row4b.style.width = Math.abs(prog2Size4.value) + "%";
     prog2Row4c.style.width = 100 - (Math.abs(prog2Size4.value)) + "%";
-    if (prog2Size4.value == 5) {
+    if (prog2Size4.value < 5) {
         prog2Row4b.style.borderRadius = "30px 0 0 30px";
-    } else if (prog2Size4.value == 6) {
+    } else if (prog2Size4.value > 5) {
         prog2Row4b.style.borderRadius = "30px";
     }
     if (prog2Size4.value < 3) {
@@ -495,9 +495,9 @@ const prog2Size5 = document.getElementById("prog2Size5");
 prog2Size5.oninput = function() {
     prog2Row5b.style.width = Math.abs(prog2Size5.value) + "%";
     prog2Row5c.style.width = 100 - (Math.abs(prog2Size5.value)) + "%";
-    if (prog2Size5.value == 5) {
+    if (prog2Size5.value < 5) {
         prog2Row5b.style.borderRadius = "15px 0 0 15px";
-    } else if (prog2Size5.value == 6) {
+    } else if (prog2Size5.value > 5) {
         prog2Row5b.style.borderRadius = "15px";
     }
     if (prog2Size5.value < 3) {
