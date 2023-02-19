@@ -106,137 +106,141 @@ document.addEventListener("keydown", () => {
     // if (event.keyCode == 67 && document.activeElement == bodyEl[0]) { // c
         chartSelect.focus();
     }
-    if (event.keyCode == 82) { // r
+    // if (event.keyCode == 82) { // r
     // if (event.keyCode == 81) { // q
-        chartSelect.blur();
-    }
-    if (event.keyCode == 68 && document.activeElement == bodyEl[0] && document.body.classList.contains("lightStyles")) { // d
-        chartSelect.blur();
-        document.body.classList.replace("lightStyles", "darkStyles");
-        prog1Row1a.classList.replace("lightStyles", "darkStyles");
-        prog1Row2a.classList.replace("lightStyles", "darkStyles");
-        prog1Row3a.classList.replace("lightStyles", "darkStyles");
-        prog1Row4a.classList.replace("lightStyles", "darkStyles");
-        prog1Row5a.classList.replace("lightStyles", "darkStyles");
-        prog2Row1a.classList.replace("lightStyles", "darkStyles");
-        prog2Row2a.classList.replace("lightStyles", "darkStyles");
-        prog2Row3a.classList.replace("lightStyles", "darkStyles");
-        prog2Row4a.classList.replace("lightStyles", "darkStyles");
-        prog2Row5a.classList.replace("lightStyles", "darkStyles");
-        horiz4Source.classList.replace("lightStyles", "darkStyles");
-        vert1AxisLine.classList.toggle("lightBorder");
-        vert2AxisLine.classList.toggle("lightBorder");
-        vert3AxisLine.classList.toggle("lightBorder");
-        vert4AxisLine.classList.toggle("lightBorder");
-        vert5AxisLine.classList.toggle("lightBorder");
-        for (var i = 0; i < scrollBox.length; i++) {
-            scrollBox[i].classList.replace("scrollBoxLight", "darkStyles");
-            textarea[i].classList.replace("textareaLight", "darkStyles");
-            previewBox[i].classList.replace("lightStyles", "darkStyles");
+        // chartSelect.blur();
+    // }
+    if (event.keyCode == 68 && document.body.classList.contains("lightStyles")) { // d
+        if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
+            chartSelect.blur();
+            document.body.classList.replace("lightStyles", "darkStyles");
+            prog1Row1a.classList.replace("lightStyles", "darkStyles");
+            prog1Row2a.classList.replace("lightStyles", "darkStyles");
+            prog1Row3a.classList.replace("lightStyles", "darkStyles");
+            prog1Row4a.classList.replace("lightStyles", "darkStyles");
+            prog1Row5a.classList.replace("lightStyles", "darkStyles");
+            prog2Row1a.classList.replace("lightStyles", "darkStyles");
+            prog2Row2a.classList.replace("lightStyles", "darkStyles");
+            prog2Row3a.classList.replace("lightStyles", "darkStyles");
+            prog2Row4a.classList.replace("lightStyles", "darkStyles");
+            prog2Row5a.classList.replace("lightStyles", "darkStyles");
+            horiz4Source.classList.replace("lightStyles", "darkStyles");
+            vert1AxisLine.classList.toggle("lightBorder");
+            vert2AxisLine.classList.toggle("lightBorder");
+            vert3AxisLine.classList.toggle("lightBorder");
+            vert4AxisLine.classList.toggle("lightBorder");
+            vert5AxisLine.classList.toggle("lightBorder");
+            for (var i = 0; i < scrollBox.length; i++) {
+                scrollBox[i].classList.replace("scrollBoxLight", "darkStyles");
+                textarea[i].classList.replace("textareaLight", "darkStyles");
+                previewBox[i].classList.replace("lightStyles", "darkStyles");
+            }
+            for (var x = 0; x < horiz1Bars.length; x++) {
+                horiz1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                horiz1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
+                horiz2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
+                horiz3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                horiz3BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
+                horiz4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                horiz4BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
+                stacked1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                stacked1BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
+                stacked2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                stacked2BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
+                stacked3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                stacked4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                stacked4BarsNodes5[x].classList.replace("lightStyles", "darkStyles");
+                stacked1BarsNodes3[x].classList.toggle("darkBorder");
+                negative1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                negative1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
+                negative2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                negative2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
+                splitBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                splitBarsNodes4[x].classList.replace("lightStyles", "darkStyles");
+                previewBoxVert1Label[x].classList.replace("lightStyles", "darkStyles");
+                previewBoxVert2Label[x].classList.replace("lightStyles", "darkStyles");
+                previewBoxVert3Label[x].classList.replace("lightStyles", "darkStyles");
+                previewBoxVert4Label[x].classList.replace("lightStyles", "darkStyles");
+                previewBoxVert5LabelTop[x].classList.replace("lightStyles", "darkStyles");
+                previewBoxVert5LabelBottom[x].classList.replace("lightStyles", "darkStyles");
+            }
+            for (var y = 0; y < combo1BarsNodes1.length; y++) {
+                combo1BarsNodes1[y].classList.replace("lightStyles", "darkStyles");
+                combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
+            }
+            if (lightMode.style.display == "none") {
+                lightMode.style.display = "inline-block";
+                darkMode.style.display = "none";
+            } else if (lightMode.style.display == "inline-block") {
+                lightMode.style.display = "none";
+                darkMode.style.display = "inline-block";
+            }
         }
-        for (var x = 0; x < horiz1Bars.length; x++) {
-            horiz1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            horiz1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-            horiz2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
-            horiz3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            horiz3BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
-            horiz4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            horiz4BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-            stacked1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            stacked1BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-            stacked2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            stacked2BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-            stacked3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            stacked4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            stacked4BarsNodes5[x].classList.replace("lightStyles", "darkStyles");
-            stacked1BarsNodes3[x].classList.toggle("darkBorder");
-            negative1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            negative1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-            negative2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            negative2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
-            splitBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-            splitBarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-            previewBoxVert1Label[x].classList.replace("lightStyles", "darkStyles");
-            previewBoxVert2Label[x].classList.replace("lightStyles", "darkStyles");
-            previewBoxVert3Label[x].classList.replace("lightStyles", "darkStyles");
-            previewBoxVert4Label[x].classList.replace("lightStyles", "darkStyles");
-            previewBoxVert5LabelTop[x].classList.replace("lightStyles", "darkStyles");
-            previewBoxVert5LabelBottom[x].classList.replace("lightStyles", "darkStyles");
-        }
-        for (var y = 0; y < combo1BarsNodes1.length; y++) {
-            combo1BarsNodes1[y].classList.replace("lightStyles", "darkStyles");
-            combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
-        }
-        if (lightMode.style.display == "none") {
-            lightMode.style.display = "inline-block";
-            darkMode.style.display = "none";
-        } else if (lightMode.style.display == "inline-block") {
-            lightMode.style.display = "none";
-            darkMode.style.display = "inline-block";
-        }
-    } else if (event.keyCode == 68 && document.activeElement == bodyEl[0] && document.body.classList.contains("darkStyles")) {
-        chartSelect.blur();
-        document.body.classList.replace("darkStyles", "lightStyles");
-        prog1Row1a.classList.replace("darkStyles", "lightStyles");
-        prog1Row2a.classList.replace("darkStyles", "lightStyles");
-        prog1Row3a.classList.replace("darkStyles", "lightStyles");
-        prog1Row4a.classList.replace("darkStyles", "lightStyles");
-        prog1Row5a.classList.replace("darkStyles", "lightStyles");
-        prog2Row1a.classList.replace("darkStyles", "lightStyles");
-        prog2Row2a.classList.replace("darkStyles", "lightStyles");
-        prog2Row3a.classList.replace("darkStyles", "lightStyles");
-        prog2Row4a.classList.replace("darkStyles", "lightStyles");
-        prog2Row5a.classList.replace("darkStyles", "lightStyles");
-        horiz4Source.classList.replace("darkStyles", "lightStyles");
-        vert1AxisLine.classList.toggle("lightBorder");
-        vert2AxisLine.classList.toggle("lightBorder");
-        vert3AxisLine.classList.toggle("lightBorder");
-        vert4AxisLine.classList.toggle("lightBorder");
-        vert5AxisLine.classList.toggle("lightBorder");
-        for (var i = 0; i < scrollBox.length; i++) {
-            scrollBox[i].classList.replace("darkStyles", "scrollBoxLight");
-            textarea[i].classList.replace("darkStyles", "textareaLight");
-            previewBox[i].classList.replace("darkStyles", "lightStyles");
-        }
-        for (var x = 0; x < horiz1Bars.length; x++) {
-            horiz1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            horiz1BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
-            horiz2BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
-            horiz3BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            horiz3BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
-            horiz4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            horiz4BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
-            stacked1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            stacked1BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
-            stacked2BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            stacked2BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
-            stacked3BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            stacked4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            stacked4BarsNodes5[x].classList.replace("darkStyles", "lightStyles");
-            stacked1BarsNodes3[x].classList.toggle("darkBorder");
-            negative1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            negative1BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
-            negative2BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            negative2BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
-            splitBarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-            splitBarsNodes4[x].classList.replace("darkStyles", "lightStyles");
-            previewBoxVert1Label[x].classList.replace("darkStyles", "lightStyles");
-            previewBoxVert2Label[x].classList.replace("darkStyles", "lightStyles");
-            previewBoxVert3Label[x].classList.replace("darkStyles", "lightStyles");
-            previewBoxVert4Label[x].classList.replace("darkStyles", "lightStyles");
-            previewBoxVert5LabelTop[x].classList.replace("darkStyles", "lightStyles");
-            previewBoxVert5LabelBottom[x].classList.replace("darkStyles", "lightStyles");
-        }
-        for (var y = 0; y < combo1BarsNodes1.length; y++) {
-            combo1BarsNodes1[y].classList.replace("darkStyles", "lightStyles");
-            combo1BarsNodes3[y].classList.replace("darkStyles", "lightStyles");
-        }
-        if (lightMode.style.display == "none") {
-            lightMode.style.display = "inline-block";
-            darkMode.style.display = "none";
-        } else if (lightMode.style.display == "inline-block") {
-            lightMode.style.display = "none";
-            darkMode.style.display = "inline-block";
+    } else if (event.keyCode == 68 && document.body.classList.contains("darkStyles")) {
+        if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
+            chartSelect.blur();
+            document.body.classList.replace("darkStyles", "lightStyles");
+            prog1Row1a.classList.replace("darkStyles", "lightStyles");
+            prog1Row2a.classList.replace("darkStyles", "lightStyles");
+            prog1Row3a.classList.replace("darkStyles", "lightStyles");
+            prog1Row4a.classList.replace("darkStyles", "lightStyles");
+            prog1Row5a.classList.replace("darkStyles", "lightStyles");
+            prog2Row1a.classList.replace("darkStyles", "lightStyles");
+            prog2Row2a.classList.replace("darkStyles", "lightStyles");
+            prog2Row3a.classList.replace("darkStyles", "lightStyles");
+            prog2Row4a.classList.replace("darkStyles", "lightStyles");
+            prog2Row5a.classList.replace("darkStyles", "lightStyles");
+            horiz4Source.classList.replace("darkStyles", "lightStyles");
+            vert1AxisLine.classList.toggle("lightBorder");
+            vert2AxisLine.classList.toggle("lightBorder");
+            vert3AxisLine.classList.toggle("lightBorder");
+            vert4AxisLine.classList.toggle("lightBorder");
+            vert5AxisLine.classList.toggle("lightBorder");
+            for (var i = 0; i < scrollBox.length; i++) {
+                scrollBox[i].classList.replace("darkStyles", "scrollBoxLight");
+                textarea[i].classList.replace("darkStyles", "textareaLight");
+                previewBox[i].classList.replace("darkStyles", "lightStyles");
+            }
+            for (var x = 0; x < horiz1Bars.length; x++) {
+                horiz1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                horiz1BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
+                horiz2BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
+                horiz3BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                horiz3BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
+                horiz4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                horiz4BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
+                stacked1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                stacked1BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
+                stacked2BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                stacked2BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
+                stacked3BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                stacked4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                stacked4BarsNodes5[x].classList.replace("darkStyles", "lightStyles");
+                stacked1BarsNodes3[x].classList.toggle("darkBorder");
+                negative1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                negative1BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
+                negative2BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                negative2BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
+                splitBarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                splitBarsNodes4[x].classList.replace("darkStyles", "lightStyles");
+                previewBoxVert1Label[x].classList.replace("darkStyles", "lightStyles");
+                previewBoxVert2Label[x].classList.replace("darkStyles", "lightStyles");
+                previewBoxVert3Label[x].classList.replace("darkStyles", "lightStyles");
+                previewBoxVert4Label[x].classList.replace("darkStyles", "lightStyles");
+                previewBoxVert5LabelTop[x].classList.replace("darkStyles", "lightStyles");
+                previewBoxVert5LabelBottom[x].classList.replace("darkStyles", "lightStyles");
+            }
+            for (var y = 0; y < combo1BarsNodes1.length; y++) {
+                combo1BarsNodes1[y].classList.replace("darkStyles", "lightStyles");
+                combo1BarsNodes3[y].classList.replace("darkStyles", "lightStyles");
+            }
+            if (lightMode.style.display == "none") {
+                lightMode.style.display = "inline-block";
+                darkMode.style.display = "none";
+            } else if (lightMode.style.display == "inline-block") {
+                lightMode.style.display = "none";
+                darkMode.style.display = "inline-block";
+            }
         }
     }
 });
