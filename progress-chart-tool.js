@@ -304,7 +304,7 @@ prog2Size1.oninput = function() {
         prog2Row1c.style.width = 97 + "%";
     }
     prog2VML1b = Math.max((Math.abs(prog2Size1.value / 100) * 560), 30);
-    prog2VML1bInset = Math.max(((Math.abs(prog2Size1.value / 100) * 560) - 65), 103);
+    prog2VML1bInset = Math.max(((Math.abs(prog2Size1.value / 100) * 560) - 50), 103);
     prog2VML1cInset = Math.max((Math.abs(prog2Size1.value / 100) * 560), 30);
     if (prog2Size1.value == 0) { // Define 0 value for data bar
         prog2Row1b.style.width = 0 + "%";
@@ -364,7 +364,7 @@ prog2Size2.oninput = function() {
         prog2Row2c.style.width = 97 + "%";
     }
     prog2VML2b = Math.max((Math.abs(prog2Size2.value / 100) * 560), 30);
-    prog2VML2bInset = Math.max(((Math.abs(prog2Size2.value / 100) * 560) - 65), 103);
+    prog2VML2bInset = Math.max(((Math.abs(prog2Size2.value / 100) * 560) - 50), 103);
     prog2VML2cInset = Math.max((Math.abs(prog2Size2.value / 100) * 560), 30);
     if (prog2Size2.value == 0) { // Define 0 value for data bar
         prog2Row2b.style.width = 0 + "%";
@@ -424,7 +424,7 @@ prog2Size3.oninput = function() {
         prog2Row3c.style.width = 97 + "%";
     }
     prog2VML3b = Math.max((Math.abs(prog2Size3.value / 100) * 560), 30);
-    prog2VML3bInset = Math.max(((Math.abs(prog2Size3.value / 100) * 560) - 65), 103);
+    prog2VML3bInset = Math.max(((Math.abs(prog2Size3.value / 100) * 560) - 50), 103);
     prog2VML3cInset = Math.max((Math.abs(prog2Size3.value / 100) * 560), 30);
     if (prog2Size3.value == 0) { // Define 0 value for data bar
         prog2Row3b.style.width = 0 + "%";
@@ -484,7 +484,7 @@ prog2Size4.oninput = function() {
         prog2Row4c.style.width = 97 + "%";
     }
     prog2VML4b = Math.max((Math.abs(prog2Size4.value / 100) * 560), 30);
-    prog2VML4bInset = Math.max(((Math.abs(prog2Size4.value / 100) * 560) - 65), 103);
+    prog2VML4bInset = Math.max(((Math.abs(prog2Size4.value / 100) * 560) - 50), 103);
     prog2VML4cInset = Math.max((Math.abs(prog2Size4.value / 100) * 560), 30);
     if (prog2Size4.value == 0) { // Define 0 value for data bar
         prog2Row4b.style.width = 0 + "%";
@@ -544,7 +544,7 @@ prog2Size5.oninput = function() {
         prog2Row5c.style.width = 97 + "%";
     }
     prog2VML5b = Math.max((Math.abs(prog2Size5.value / 100) * 560), 30);
-    prog2VML5bInset = Math.max(((Math.abs(prog2Size5.value / 100) * 560) - 65), 103);
+    prog2VML5bInset = Math.max(((Math.abs(prog2Size5.value / 100) * 560) - 50), 103);
     prog2VML5cInset = Math.max((Math.abs(prog2Size5.value / 100) * 560), 30);
     if (prog2Size5.value == 0) { // Define 0 value for data bar
         prog2Row5b.style.width = 0 + "%";
