@@ -56,11 +56,15 @@ button, #darkMode, #lightMode { cursor: pointer; }
 .darkStyles, .lightStyles, .scrollBoxLight, .textareaLight { -webkit-transition: background-color 250ms ease-out; -ms-transition: background-color 250ms ease-out; -moz-transition: background-color 250ms ease-out; transition: background-color 250ms ease-out; -webkit-transition: color 250ms ease-out; -ms-transition: color 250ms ease-out; -moz-transition: color 250ms ease-out; transition: color 250ms ease-out; }
 
 /* PRE-MOBILE STYLES */
-.scrollBox, .charts div:first-of-type + table:first-of-type { display: inline-block; margin: 0 30px 0 0; vertical-align: top; } /* Targets non-vertical charts */
-.charts div:first-of-type + section { display: inline-block; min-width: 550px; } /* Targets outer div vertical preview charts */
+.chartBuild /* Targets .scrollBox and code output section */, .charts div:first-of-type + table:first-of-type /* Targets non-vertical charts */ { display: inline-block; margin: 0 30px 0 0; vertical-align: top; }
+.charts div:first-of-type + .vertWrap { display: inline-block; min-width: 550px; } /* Targets outer div vertical preview charts */
 
 /* MOBILE STYLES */
 @media screen and (max-width: 1366px) {
     .charts div:first-of-type + table:first-of-type { margin: 0; }
-    .scrollBox { display: block; margin: 30px 0 0 0; }
+    .chartBuild { display: block; margin: 30px 0 0 0; }
+}
+@media screen and (max-width: 1405px) { /* Targeting negative|positive chart */
+    #npChart div:first-of-type + table:first-of-type { margin: 0; }
+    #npChart .chartBuild { display: block; margin: 30px 0 0 0; }
 }
