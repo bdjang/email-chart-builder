@@ -42,7 +42,8 @@
             <option value="horizChart2">Type: Horizontal II</option>
             <option value="horizChart3">Type: Horizontal III</option>
             <option value="horizChart4">Type: Horizontal IV</option>
-            <option value="comChart">Type: Combo</option>
+            <option value="com1Chart">Type: Combo I</option>
+            <option value="com2Chart">Type: Combo II</option>
             <option value="st1Chart">Type: Stacked I</option>
             <option value="st2Chart">Type: Stacked II</option>
             <option value="st3Chart">Type: Stacked III</option>
@@ -1218,9 +1219,9 @@
     </div>
     <!-- end horizontal bar chart iv -->
 
-    <!-- COMBO BAR CHART -->
-    <div class="charts" id="comChart" align="center" style="display: none;">
-        <div style="font-family: Courier, serif; text-align: center;"><h1>Combo Bar Chart</h1></div>
+    <!-- COMBO BAR CHART I -->
+    <div class="charts" id="com1Chart" align="center" style="display: none;">
+        <div style="font-family: Courier, serif; text-align: center;"><h1>Combo Bar Chart I</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
@@ -1500,7 +1501,276 @@
             <textarea name="combo1Output" id="combo1Output" readonly></textarea>
         </section>
     </div>
-    <!-- end combo bar chart -->
+    <!-- end combo bar chart i -->
+
+    <!-- COMBO BAR CHART II -->
+    <div class="charts" id="com2Chart" align="center" style="display: block;">
+        <div style="font-family: Courier, serif; text-align: center;"><h1>Combo Bar Chart II</h1></div>
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- DATA BAR #1 -->
+                        <tr class="combo2Bars">
+                            <td align="left" style="padding: 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="2" id="combo2Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">Combo bar #1</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo2Row1b" align="right" style="background-color: #00aef3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 41%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row1c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 59%; height: 22px;" height="22">&nbsp;41%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo2Bars">
+                            <td style="padding: 4px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo2Row1d" align="right" style="background-color: #e81b23; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 51%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row1e" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 49%; height: 22px;" height="22">&nbsp;51%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #1 -->
+
+                        <!-- DATA BAR #2 -->
+                        <tr class="combo2Bars">
+                            <td align="left" style="padding: 14px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="2" id="combo2Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">Combo bar #2</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo2Row2b" align="right" style="background-color: #00aef3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 31%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row2c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 69%; height: 22px;" height="22">&nbsp;31%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo2Bars">
+                            <td style="padding: 4px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo2Row2d" align="right" style="background-color: #e81b23; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 63%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row2e" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 37%; height: 22px;" height="22">&nbsp;63%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #2 -->
+
+                        <!-- DATA BAR #3 -->
+                        <tr class="combo2Bars">
+                            <td align="left" style="padding: 14px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="2" id="combo2Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">Combo bar #3</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo2Row3b" align="right" style="background-color: #00aef3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 29%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row3c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 71%; height: 22px;" height="22">&nbsp;29%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo2Bars">
+                            <td style="padding: 4px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo2Row3d" align="right" style="background-color: #e81b23; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 26%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row3e" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 74%; height: 22px;" height="22">&nbsp;26%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #3 -->
+
+                        <!-- DATA BAR #4 -->
+                        <tr class="combo2Bars">
+                            <td align="left" style="padding: 14px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="2" id="combo2Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">Combo bar #4</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo2Row4b" align="right" style="background-color: #00aef3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 88%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row4c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 12%; height: 22px;" height="22">&nbsp;88%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo2Bars">
+                            <td style="padding: 4px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo2Row4d" align="right" style="background-color: #e81b23; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 74%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row4e" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 26%; height: 22px;" height="22">&nbsp;74%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #4 -->
+
+                        <!-- DATA BAR #5 -->
+                        <tr class="combo2Bars">
+                            <td align="left" style="padding: 14px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="2" id="combo2Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">Combo bar #5</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo2Row5b" align="right" style="background-color: #00aef3; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 34%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row5c" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 66%; height: 22px;" height="22">&nbsp;34%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo2Bars">
+                            <td style="padding: 4px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo2Row5d" align="right" style="background-color: #e81b23; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 14%; height: 22px;" height="22"></td>
+                                        <td id="combo2Row5e" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Courier, serif; line-height: normal; margin: 0; padding: 0; width: 86%; height: 22px;" height="22">&nbsp;14%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #5 -->
+
+                    </table>
+
+                    <!-- LEGEND 8 -->
+                    <div style="font-family: Courier; font-size: 12px; margin: 40px 0 0 0; text-align: center;"><span id="legend8Color1" style="background-color: #00aef3; border: 1px solid #00aef3; color: #00aef3; font-family: Courier; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend8Color2" style="background-color: #e81b23; border: 1px solid #e81b23; color: #e81b23; font-family: Courier; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text2">Red</span></div>
+                    <!-- end legend 8 -->
+
+                </td>
+            </tr>
+        </table>
+        <section class="chartBuild">
+            <div class="scrollBox">
+                <fieldset class="dataCheckboxes chartLegend">
+                    <legend>Chart Customization</legend>
+                    <label for="rowsData19">Select # of Data Rows</label>
+                    <input type="number" size="6" value="4" max="5" min="1" name="rowsData19" id="rowsData19">
+                    <label for="combo2Div">Add Bar Dividers</label>
+                    <input type="checkbox" name="combo2Div" id="combo2Div">
+                    <br />
+                    <label for="legend8Color1x">Legend Color #1</label>
+                    <input type="text" size="6" value="#0b467b" name="legend8Color1x" id="legend8Color1x">
+                    <label for="legend8Text1x">Legend Text #1</label>
+                    <input type="text" size="10" value="Blue" name="legend8Text1x" id="legend8Text1x">
+                    <br />
+                    <label for="legend8Color2x">Legend Color #2</label>
+                    <input type="text" size="6" value="#5fadf3" name="legend8Color2x" id="legend8Color2x">
+                    <label for="legend8Text2x">Legend Text #2</label>
+                    <input type="text" size="10" value="Light Blue" name="legend8Text2x" id="legend8Text2x">
+                    <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
+                </fieldset>
+                <fieldset class="combo2Controls styleControls">
+                    <legend>Row #1</legend>
+                    <label for="combo2Text1">Data Label</label>
+                    <input type="text" size="10" value="Data bar #1" name="combo2Text1" id="combo2Text1">
+                    <br />
+                    <label for="combo2Size1t">Bar Size</label>
+                    <input type="number" size="6" value="60" max="100" min="0" name="combo2Size1t" id="combo2Size1t">
+                    <label for="combo2Color1t">Bar Color</label>
+                    <input type="text" size="6" value="#0b467b" name="combo2Color1t" id="combo2Color1t">
+                    <label for="combo2Text1t" id="combo2Label1t">End Data Label</label>
+                    <input type="text" size="10" value="Label #1" name="combo2Text1t" id="combo2Text1t">
+                    <br />
+                    <label for="combo2Size1b">Bar Size</label>
+                    <input type="number" size="6" value="47" max="100" min="0" name="combo2Size1b" id="combo2Size1b">
+                    <label for="combo2Color1b">Bar Color</label>
+                    <input type="text" size="6" value="#5fadf3" name="combo2Color1b" id="combo2Color1b">
+                    <label for="combo2Text1b" id="combo2Label1b">End Data Label</label>
+                    <input type="text" size="10" value="Label #1" name="combo2Text1b" id="combo2Text1b">
+                </fieldset>
+                <fieldset class="combo2Controls styleControls">
+                    <legend>Row #2</legend>
+                    <label for="combo2Text2">Data Label</label>
+                    <input type="text" size="10" value="Data bar #2" name="combo2Text2" id="combo2Text2">
+                    <br />
+                    <label for="combo2Size2t">Bar Size</label>
+                    <input type="number" size="6" value="44" max="100" min="0" name="combo2Size2t" id="combo2Size2t">
+                    <label for="combo2Color2t">Bar Color</label>
+                    <input type="text" size="6" value="#0b467b" name="combo2Color2t" id="combo2Color2t">
+                    <label for="combo2Text2t" id="combo2Label2t">End Data Label</label>
+                    <input type="text" size="10" value="Label #2" name="combo2Text2t" id="combo2Text2t">
+                    <br />
+                    <label for="combo2Size2b">Bar Size</label>
+                    <input type="number" size="6" value="29" max="100" min="0" name="combo2Size2b" id="combo2Size2b">
+                    <label for="combo2Color2b">Bar Color</label>
+                    <input type="text" size="6" value="#5fadf3" name="combo2Color2b" id="combo2Color2b">
+                    <label for="combo2Text2b" id="combo2Label2b">End Data Label</label>
+                    <input type="text" size="10" value="Label #2" name="combo2Text2b" id="combo2Text2b">
+                </fieldset>
+                <fieldset class="combo2Controls styleControls">
+                    <legend>Row #3</legend>
+                    <label for="combo2Text3">Data Label</label>
+                    <input type="text" size="10" value="Data bar #3" name="combo2Text3" id="combo2Text3">
+                    <br />
+                    <label for="combo2Size3t">Bar Size</label>
+                    <input type="number" size="6" value="19" max="100" min="0" name="combo2Size3t" id="combo2Size3t">
+                    <label for="combo2Color3t">Bar Color</label>
+                    <input type="text" size="6" value="#0b467b" name="combo2Color3t" id="combo2Color3t">
+                    <label for="combo2Text3t" id="combo2Label3t">End Data Label</label>
+                    <input type="text" size="10" value="Label #3" name="combo2Text3t" id="combo2Text3t">
+                    <br />
+                    <label for="combo2Size3b">Bar Size</label>
+                    <input type="number" size="6" value="70" max="100" min="0" name="combo2Size3b" id="combo2Size3b">
+                    <label for="combo2Color3b">Bar Color</label>
+                    <input type="text" size="6" value="#5fadf3" name="combo2Color3b" id="combo2Color3b">
+                    <label for="combo2Text3b" id="combo2Label3b">End Data Label</label>
+                    <input type="text" size="10" value="Label #3" name="combo2Text3b" id="combo2Text3b">
+                </fieldset>
+                <fieldset class="combo2Controls styleControls">
+                    <legend>Row #4</legend>
+                    <label for="combo2Text4">Data Label</label>
+                    <input type="text" size="10" value="Data bar #4" name="combo2Text4" id="combo2Text4">
+                    <br />
+                    <label for="combo2Size4t">Bar Size</label>
+                    <input type="number" size="6" value="35" max="100" min="0" name="combo2Size4t" id="combo2Size4t">
+                    <label for="combo2Color4t">Bar Color</label>
+                    <input type="text" size="6" value="#0b467b" name="combo2Color4t" id="combo2Color4t">
+                    <label for="combo2Text4t" id="combo2Label4t">End Data Label</label>
+                    <input type="text" size="10" value="Label #4" name="combo2Text4t" id="combo2Text4t">
+                    <br />
+                    <label for="combo2Size4b">Bar Size</label>
+                    <input type="number" size="6" value="88" max="100" min="0" name="combo2Size4b" id="combo2Size4b">
+                    <label for="combo2Color4b">Bar Color</label>
+                    <input type="text" size="6" value="#5fadf3" name="combo2Color4b" id="combo2Color4b">
+                    <label for="combo2Text4b" id="combo2Label4b">End Data Label</label>
+                    <input type="text" size="10" value="" name="combo2Text4b" id="combo2Text4b">
+                </fieldset>
+                <fieldset class="combo2Controls styleControls" style="display: none;">
+                    <legend>Row #5</legend>
+                    <label for="combo2Text5">Data Label</label>
+                    <input type="text" size="10" value="Data bar #5" name="combo2Text5" id="combo2Text5">
+                    <br />
+                    <label for="combo2Size5t">Bar Size</label>
+                    <input type="number" size="6" value="60" max="100" min="0" name="combo2Size5t" id="combo2Size5t">
+                    <label for="combo2Color5t">Bar Color</label>
+                    <input type="text" size="6" value="#0b467b" name="combo2Color5t" id="combo2Color5t">
+                    <label for="combo2Text5t" id="combo2Label5t">End Data Label</label>
+                    <input type="text" size="10" value="Label #5" name="combo2Text5t" id="combo2Text5t">
+                    <br />
+                    <label for="combo2Size5b">Bar Size</label>
+                    <input type="number" size="6" value="24" max="100" min="0" name="combo2Size5b" id="combo2Size5b">
+                    <label for="combo2Color5b">Bar Color</label>
+                    <input type="text" size="6" value="#5fadf3" name="combo2Color5b" id="combo2Color5b">
+                    <label for="combo2Text5b" id="combo2Label5b">End Data Label</label>
+                    <input type="text" size="10" value="Label #5" name="combo2Text5b" id="combo2Text5b">
+                </fieldset>
+            </div>
+            <button type="button" id="combo2Button">Generate Email Chart Code</button>
+            <textarea name="combo2Output" id="combo2Output" readonly></textarea>
+        </section>
+    </div>
+    <!-- end combo bar chart ii -->
 
     <!-- STACKED BAR CHART I -->
     <div class="charts" id="st1Chart" align="center" style="display: none;">
@@ -3922,8 +4192,8 @@
             <div class="scrollBox">
                 <fieldset class="dataCheckboxes">
                     <legend>Chart Customization</legend>
-                    <label for="rowsData">Select # of Data Rows</label>
-                    <input type="number" size="6" value="6" max="10" min="1" name="rowsData" id="rowsData">
+                    <label for="rowsData20">Select # of Data Rows</label>
+                    <input type="number" size="6" value="6" max="10" min="1" name="rowsData20" id="rowsData20">
                     <small>📌 Click on <span style="font-weight: 600;">"Negative Label"</span> or <span style="font-weight: 600;">"Positive Label"</span> to move the data label text. Click again to delete the label text.</small>
                 </fieldset>
                 <fieldset class="splitControls styleControls">
@@ -6643,4 +6913,9 @@ https://nypost.com/2023/01/30/americans-pick-the-government-as-the-countrys-top-
 
 
 02/21/23: figure out a way to indicate visually that after you click to generate the chart text, the textarea updates. like opacity 0 to 1 or something.
+
+
+02/23/23
+- consider removing the "border: 1px solid #e3e3e3;" and changing "padding: 20px;" to "padding: 0;"
+- consider changing the font from "font-family: Courier, serif;" to "font-family: Trebuchet, sans-serif;"
 -->
