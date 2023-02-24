@@ -2039,40 +2039,23 @@ combo1Output.addEventListener("click", () => {
 
 
 // Combo Chart II Row Selection
-const combo2Bars = document.getElementsByClassName("combo2Bars");
+const combo2BarsT = document.getElementsByClassName("combo2BarsT"); // Title + Top Bar
+const combo2BarsB = document.getElementsByClassName("combo2BarsB"); // Bottom Bar
 const combo2Controls = document.getElementsByClassName("combo2Controls");
 const rowsData19 = document.getElementById("rowsData19");
 rowsData19.addEventListener("change", () => {
     for (var i = 0; i < combo2Controls.length; i++) {
         combo2Controls[i].style.display = "none";
-        // combo2Bars[i].style.display = "none";
         for (var x = 0; x < rowsData19.value; x++) {
             combo2Controls[x].style.display = "block";
-            // combo2Bars[x].style.display = "block";
         }
     }
-    for (var i = 0; i < combo2Bars.length; i++) {
-        combo2Bars[i].style.display = "none";
+    for (var i = 0; i < combo2BarsT.length; i++) {
+        combo2BarsT[i].style.display = "none";
+        combo2BarsB[i].style.display = "none";
         for (var x = 0; x < rowsData19.value; x++) {
-            combo2Bars[x].style.display = "block";
-        }
-    }
-});
-
-// Combo Chart II Add Divider
-const combo2DivNodes1 = document.querySelectorAll("tr.combo2Bars");
-const combo2Div = document.getElementById("combo2Div");
-window.addEventListener("load", () => { // Adds "none" to border-top on load
-    for (var i = 1; i < combo2DivNodes1.length; i++) {
-        combo2DivNodes1[i].firstElementChild.style.borderTop = "none";
-    }
-});
-combo2Div.addEventListener("click", () => { // Toggles chart data bar dividers
-    for (var i = 1; i < combo2DivNodes1.length; i++) {
-        if (combo2Div.checked == true) {
-            combo2DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
-        } else if (combo2Div.checked == false) {
-            combo2DivNodes1[i].firstElementChild.style.borderTop = "none";
+            combo2BarsT[x].style.display = "block";
+            combo2BarsB[x].style.display = "block";
         }
     }
 });
