@@ -1504,11 +1504,16 @@
     <!-- end combo bar chart i -->
 
     <!-- COMBO BAR CHART II -->
-    <div class="charts" id="com2Chart" align="center" style="display: block;">
+    <div class="charts" id="com2Chart" align="center" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Combo Bar Chart II</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+
+                    <!-- LEGEND 8 -->
+                    <article style="font-family: Courier; font-size: 12px; margin: 0 0 20px 0; text-align: left;"><span id="legend8Color1" style="background-color: #00aef3; border: 1px solid #00aef3; color: #00aef3; font-family: Courier; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend8Color2" style="background-color: #e81b23; border: 1px solid #e81b23; color: #e81b23; font-family: Courier; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text2">Red</span></article>
+                    <!-- end legend 8 -->
+
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 
                         <!-- DATA BAR #1 -->
@@ -1643,10 +1648,6 @@
 
                     </table>
 
-                    <!-- LEGEND 8 -->
-                    <div style="font-family: Courier; font-size: 12px; margin: 40px 0 0 0; text-align: center;"><span id="legend8Color1" style="background-color: #00aef3; border: 1px solid #00aef3; color: #00aef3; font-family: Courier; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend8Color2" style="background-color: #e81b23; border: 1px solid #e81b23; color: #e81b23; font-family: Courier; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text2">Red</span></div>
-                    <!-- end legend 8 -->
-
                 </td>
             </tr>
         </table>
@@ -1658,14 +1659,14 @@
                     <input type="number" size="6" value="2" max="5" min="1" name="rowsData19" id="rowsData19">
                     <br />
                     <label for="legend8Color1x">Legend Color #1</label>
-                    <input type="text" size="6" value="#0b467b" name="legend8Color1x" id="legend8Color1x">
+                    <input type="text" size="6" value="#00aef3" name="legend8Color1x" id="legend8Color1x">
                     <label for="legend8Text1x">Legend Text #1</label>
                     <input type="text" size="10" value="Blue" name="legend8Text1x" id="legend8Text1x">
                     <br />
                     <label for="legend8Color2x">Legend Color #2</label>
-                    <input type="text" size="6" value="#5fadf3" name="legend8Color2x" id="legend8Color2x">
+                    <input type="text" size="6" value="#e81b23" name="legend8Color2x" id="legend8Color2x">
                     <label for="legend8Text2x">Legend Text #2</label>
-                    <input type="text" size="10" value="Light Blue" name="legend8Text2x" id="legend8Text2x">
+                    <input type="text" size="10" value="Red" name="legend8Text2x" id="legend8Text2x">
                     <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
                 </fieldset>
                 <fieldset class="combo2Controls styleControls">
@@ -1674,18 +1675,18 @@
                     <input type="text" size="10" value="Data bar #1" name="combo2Text1" id="combo2Text1">
                     <br />
                     <label for="combo2Size1t">Bar Size</label>
-                    <input type="number" size="6" value="60" max="100" min="0" name="combo2Size1t" id="combo2Size1t">
+                    <input type="number" size="6" value="41" max="100" min="0" name="combo2Size1t" id="combo2Size1t">
                     <label for="combo2Color1t">Bar Color</label>
-                    <input type="text" size="6" value="#0b467b" name="combo2Color1t" id="combo2Color1t">
+                    <input type="text" size="6" value="#00aef3" name="combo2Color1t" id="combo2Color1t">
                     <label for="combo2Text1t" id="combo2Label1t">End Data Label</label>
-                    <input type="text" size="10" value="Label #1" name="combo2Text1t" id="combo2Text1t">
+                    <input type="text" size="10" value="41%" name="combo2Text1t" id="combo2Text1t">
                     <br />
                     <label for="combo2Size1b">Bar Size</label>
-                    <input type="number" size="6" value="47" max="100" min="0" name="combo2Size1b" id="combo2Size1b">
+                    <input type="number" size="6" value="51" max="100" min="0" name="combo2Size1b" id="combo2Size1b">
                     <label for="combo2Color1b">Bar Color</label>
-                    <input type="text" size="6" value="#5fadf3" name="combo2Color1b" id="combo2Color1b">
+                    <input type="text" size="6" value="#e81b23" name="combo2Color1b" id="combo2Color1b">
                     <label for="combo2Text1b" id="combo2Label1b">End Data Label</label>
-                    <input type="text" size="10" value="Label #1" name="combo2Text1b" id="combo2Text1b">
+                    <input type="text" size="10" value="51%" name="combo2Text1b" id="combo2Text1b">
                 </fieldset>
                 <fieldset class="combo2Controls styleControls">
                     <legend>Row #2</legend>
@@ -1693,18 +1694,18 @@
                     <input type="text" size="10" value="Data bar #2" name="combo2Text2" id="combo2Text2">
                     <br />
                     <label for="combo2Size2t">Bar Size</label>
-                    <input type="number" size="6" value="44" max="100" min="0" name="combo2Size2t" id="combo2Size2t">
+                    <input type="number" size="6" value="31" max="100" min="0" name="combo2Size2t" id="combo2Size2t">
                     <label for="combo2Color2t">Bar Color</label>
-                    <input type="text" size="6" value="#0b467b" name="combo2Color2t" id="combo2Color2t">
+                    <input type="text" size="6" value="#00aef3" name="combo2Color2t" id="combo2Color2t">
                     <label for="combo2Text2t" id="combo2Label2t">End Data Label</label>
-                    <input type="text" size="10" value="Label #2" name="combo2Text2t" id="combo2Text2t">
+                    <input type="text" size="10" value="31%" name="combo2Text2t" id="combo2Text2t">
                     <br />
                     <label for="combo2Size2b">Bar Size</label>
-                    <input type="number" size="6" value="29" max="100" min="0" name="combo2Size2b" id="combo2Size2b">
+                    <input type="number" size="6" value="63" max="100" min="0" name="combo2Size2b" id="combo2Size2b">
                     <label for="combo2Color2b">Bar Color</label>
-                    <input type="text" size="6" value="#5fadf3" name="combo2Color2b" id="combo2Color2b">
+                    <input type="text" size="6" value="#e81b23" name="combo2Color2b" id="combo2Color2b">
                     <label for="combo2Text2b" id="combo2Label2b">End Data Label</label>
-                    <input type="text" size="10" value="Label #2" name="combo2Text2b" id="combo2Text2b">
+                    <input type="text" size="10" value="63%" name="combo2Text2b" id="combo2Text2b">
                 </fieldset>
                 <fieldset class="combo2Controls styleControls" style="display: none;">
                     <legend>Row #3</legend>
@@ -1712,18 +1713,18 @@
                     <input type="text" size="10" value="Data bar #3" name="combo2Text3" id="combo2Text3">
                     <br />
                     <label for="combo2Size3t">Bar Size</label>
-                    <input type="number" size="6" value="19" max="100" min="0" name="combo2Size3t" id="combo2Size3t">
+                    <input type="number" size="6" value="29" max="100" min="0" name="combo2Size3t" id="combo2Size3t">
                     <label for="combo2Color3t">Bar Color</label>
-                    <input type="text" size="6" value="#0b467b" name="combo2Color3t" id="combo2Color3t">
+                    <input type="text" size="6" value="#00aef3" name="combo2Color3t" id="combo2Color3t">
                     <label for="combo2Text3t" id="combo2Label3t">End Data Label</label>
-                    <input type="text" size="10" value="Label #3" name="combo2Text3t" id="combo2Text3t">
+                    <input type="text" size="10" value="29%" name="combo2Text3t" id="combo2Text3t">
                     <br />
                     <label for="combo2Size3b">Bar Size</label>
-                    <input type="number" size="6" value="70" max="100" min="0" name="combo2Size3b" id="combo2Size3b">
+                    <input type="number" size="6" value="26" max="100" min="0" name="combo2Size3b" id="combo2Size3b">
                     <label for="combo2Color3b">Bar Color</label>
-                    <input type="text" size="6" value="#5fadf3" name="combo2Color3b" id="combo2Color3b">
+                    <input type="text" size="6" value="#e81b23" name="combo2Color3b" id="combo2Color3b">
                     <label for="combo2Text3b" id="combo2Label3b">End Data Label</label>
-                    <input type="text" size="10" value="Label #3" name="combo2Text3b" id="combo2Text3b">
+                    <input type="text" size="10" value="26%" name="combo2Text3b" id="combo2Text3b">
                 </fieldset>
                 <fieldset class="combo2Controls styleControls" style="display: none;">
                     <legend>Row #4</legend>
@@ -1731,18 +1732,18 @@
                     <input type="text" size="10" value="Data bar #4" name="combo2Text4" id="combo2Text4">
                     <br />
                     <label for="combo2Size4t">Bar Size</label>
-                    <input type="number" size="6" value="35" max="100" min="0" name="combo2Size4t" id="combo2Size4t">
+                    <input type="number" size="6" value="88" max="100" min="0" name="combo2Size4t" id="combo2Size4t">
                     <label for="combo2Color4t">Bar Color</label>
-                    <input type="text" size="6" value="#0b467b" name="combo2Color4t" id="combo2Color4t">
+                    <input type="text" size="6" value="#00aef3" name="combo2Color4t" id="combo2Color4t">
                     <label for="combo2Text4t" id="combo2Label4t">End Data Label</label>
-                    <input type="text" size="10" value="Label #4" name="combo2Text4t" id="combo2Text4t">
+                    <input type="text" size="10" value="88%" name="combo2Text4t" id="combo2Text4t">
                     <br />
                     <label for="combo2Size4b">Bar Size</label>
-                    <input type="number" size="6" value="88" max="100" min="0" name="combo2Size4b" id="combo2Size4b">
+                    <input type="number" size="6" value="74" max="100" min="0" name="combo2Size4b" id="combo2Size4b">
                     <label for="combo2Color4b">Bar Color</label>
-                    <input type="text" size="6" value="#5fadf3" name="combo2Color4b" id="combo2Color4b">
+                    <input type="text" size="6" value="#e81b23" name="combo2Color4b" id="combo2Color4b">
                     <label for="combo2Text4b" id="combo2Label4b">End Data Label</label>
-                    <input type="text" size="10" value="" name="combo2Text4b" id="combo2Text4b">
+                    <input type="text" size="10" value="74%" name="combo2Text4b" id="combo2Text4b">
                 </fieldset>
                 <fieldset class="combo2Controls styleControls" style="display: none;">
                     <legend>Row #5</legend>
@@ -1750,18 +1751,18 @@
                     <input type="text" size="10" value="Data bar #5" name="combo2Text5" id="combo2Text5">
                     <br />
                     <label for="combo2Size5t">Bar Size</label>
-                    <input type="number" size="6" value="60" max="100" min="0" name="combo2Size5t" id="combo2Size5t">
+                    <input type="number" size="6" value="34" max="100" min="0" name="combo2Size5t" id="combo2Size5t">
                     <label for="combo2Color5t">Bar Color</label>
-                    <input type="text" size="6" value="#0b467b" name="combo2Color5t" id="combo2Color5t">
+                    <input type="text" size="6" value="#00aef3" name="combo2Color5t" id="combo2Color5t">
                     <label for="combo2Text5t" id="combo2Label5t">End Data Label</label>
-                    <input type="text" size="10" value="Label #5" name="combo2Text5t" id="combo2Text5t">
+                    <input type="text" size="10" value="34%" name="combo2Text5t" id="combo2Text5t">
                     <br />
                     <label for="combo2Size5b">Bar Size</label>
-                    <input type="number" size="6" value="24" max="100" min="0" name="combo2Size5b" id="combo2Size5b">
+                    <input type="number" size="6" value="14" max="100" min="0" name="combo2Size5b" id="combo2Size5b">
                     <label for="combo2Color5b">Bar Color</label>
-                    <input type="text" size="6" value="#5fadf3" name="combo2Color5b" id="combo2Color5b">
+                    <input type="text" size="6" value="#e81b23" name="combo2Color5b" id="combo2Color5b">
                     <label for="combo2Text5b" id="combo2Label5b">End Data Label</label>
-                    <input type="text" size="10" value="Label #5" name="combo2Text5b" id="combo2Text5b">
+                    <input type="text" size="10" value="14%" name="combo2Text5b" id="combo2Text5b">
                 </fieldset>
             </div>
             <button type="button" id="combo2Button">Generate Email Chart Code</button>
