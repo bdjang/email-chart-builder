@@ -54,6 +54,9 @@ const splitBarsNodes1 = document.querySelectorAll("tr.splitBars table.chartMobil
 const splitBarsNodes4 = document.querySelectorAll("tr.splitBars table.chartMobile td:nth-of-type(4)");
 const combo1BarsNodes1 = document.querySelectorAll("tr.combo1Bars table.chartMobile td:nth-of-type(1)");
 const combo1BarsNodes3 = document.querySelectorAll("tr.combo1Bars table.chartMobile td:nth-of-type(3)");
+const combo2BarsTNodes1 = document.querySelectorAll("tr.combo2BarsT table.chartMobile tr:first-of-type td:nth-of-type(1)"); // Targets combo bar II title text
+const combo2BarsTNodes2 = document.querySelectorAll("tr.combo2BarsT table.chartMobile td:nth-of-type(2)"); // Targets top row 2nd td cell
+const combo2BarsBNodes2 = document.querySelectorAll("tr.combo2BarsB table.chartMobile td:nth-of-type(2)"); // Targets bottom row 2nd td cell
 const bodyEl = document.querySelectorAll("body");
 
 window.addEventListener("load", () => { // Adds "lightStyles" class to all relevant elements
@@ -105,6 +108,11 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
         combo1BarsNodes1[y].classList.add("lightStyles");
         combo1BarsNodes3[y].classList.add("lightStyles");
+    }
+    for (var z = 0; z < combo2BarsTNodes1.length; z++) {
+        combo2BarsTNodes1[z].classList.add("lightStyles");
+        combo2BarsTNodes2[z].classList.add("lightStyles");
+        combo2BarsBNodes2[z].classList.add("lightStyles");
     }
 });
 
@@ -175,6 +183,11 @@ document.addEventListener("keydown", () => {
                 combo1BarsNodes1[y].classList.replace("lightStyles", "darkStyles");
                 combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
             }
+            for (var z = 0; z < combo2BarsTNodes1.length; z++) {
+                combo2BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
+                combo2BarsTNodes2[z].classList.replace("lightStyles", "darkStyles");
+                combo2BarsBNodes2[z].classList.replace("lightStyles", "darkStyles");
+            }
             if (lightMode.style.display == "none") {
                 lightMode.style.display = "inline-block";
                 darkMode.style.display = "none";
@@ -240,6 +253,11 @@ document.addEventListener("keydown", () => {
             for (var y = 0; y < combo1BarsNodes1.length; y++) {
                 combo1BarsNodes1[y].classList.replace("darkStyles", "lightStyles");
                 combo1BarsNodes3[y].classList.replace("darkStyles", "lightStyles");
+            }
+            for (var z = 0; z < combo2BarsTNodes1.length; z++) {
+                combo2BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
+                combo2BarsTNodes2[z].classList.replace("darkStyles", "lightStyles");
+                combo2BarsBNodes2[z].classList.replace("darkStyles", "lightStyles");
             }
             if (lightMode.style.display == "none") {
                 lightMode.style.display = "inline-block";
@@ -350,6 +368,14 @@ darkMode.addEventListener("click", () => {
         combo1BarsNodes3[y].classList.toggle("darkStyles");
         combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
     }
+    for (var z = 0; z < combo2BarsTNodes1.length; z++) {
+        combo2BarsTNodes1[z].classList.toggle("darkStyles");
+        combo2BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
+        combo2BarsTNodes2[z].classList.toggle("darkStyles");
+        combo2BarsTNodes2[z].classList.replace("lightStyles", "darkStyles");
+        combo2BarsBNodes2[z].classList.toggle("darkStyles");
+        combo2BarsBNodes2[z].classList.replace("lightStyles", "darkStyles");
+    }
     darkMode.style.display = "none";
     lightMode.style.display = "inline-block";
 });
@@ -408,6 +434,11 @@ lightMode.addEventListener("click", () => {
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
         combo1BarsNodes1[y].classList.replace("darkStyles", "lightStyles");
         combo1BarsNodes3[y].classList.replace("darkStyles", "lightStyles");
+    }
+    for (var z = 0; z < combo2BarsTNodes1.length; z++) {
+        combo2BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
+        combo2BarsTNodes2[z].classList.replace("darkStyles", "lightStyles");
+        combo2BarsBNodes2[z].classList.replace("darkStyles", "lightStyles");
     }
     darkMode.style.display = "inline-block";
     lightMode.style.display = "none";
