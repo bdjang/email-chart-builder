@@ -5,7 +5,7 @@ html{line-height: 1.15; -webkit-text-size-adjust: 100%;}body{margin: 0;}main{dis
 h1 { font-weight: 300; }
 body { min-width: 740px; }
 button { display: block; margin: 30px auto 30px; }
-button, input { font-family: sans-serif; font-size: 14px; }
+button, input { font-family: Arial, sans-serif; font-size: 14px; }
 code { color: #ff0000; }
 code, legend { font-weight: 600; }
 header { margin: 0 20px; }
