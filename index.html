@@ -4899,7 +4899,8 @@
                 </tr>
 
                 <tr height="0"> <!-- 1.30.23: Extra spacing being created here in Safari browser clients. After setting height to "0", spacing was removed; NEED TO ADD TO ALL GENERATED CHART HTML CODE -->
-                    <td id="vert1AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
+                    <td id="vert1AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
+                    <!-- 2.25.23: Outlook email clients were setting height to this td cell and pushing the x-axis values down. Solution: add "line-height: 0;" and "&nbsp;" to this td cell and the extra height is removed -->
                 </tr>
 
                 <!-- X-axis Labels -->
@@ -5272,7 +5273,7 @@
                     <!-- end vertical bar #10 -->
 
                 <tr height="0">
-                    <td id="vert2AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
+                    <td id="vert2AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
                 </tr>
 
                 <!-- X-axis Labels -->
@@ -5567,7 +5568,7 @@
                 <!-- end x-axis labels -->
 
                 <tr height="0">
-                    <td id="vert3AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
+                    <td id="vert3AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
                 </tr>
 
                 <tr>
@@ -5886,7 +5887,7 @@
                 <!-- end x-axis labels -->
 
                 <tr height="0">
-                    <td id="vert4AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
+                    <td id="vert4AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
                 </tr>
 
                 <tr>
@@ -6510,7 +6511,7 @@
                 </tr>
 
                 <tr height="0">
-                    <td id="vert5AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; height: 0; width: 100%;"></td>
+                    <td id="vert5AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
                 </tr>
 
                 <tr>
@@ -6853,7 +6854,7 @@
         <hr />
         <h1>Tips/Advice</h1>
         <ul>
-            <li>Press "t" to cycle through chart types quickly</li>
+            <li>Press "t" to cycle through chart types</li>
             <li>Press "d" to toggle dark mode</li>
             <li>Use <code>media queries</code> to adjust the size of the chart text for smaller screens. The following snippet of code can be applied to all horizontal and progress bar charts:<br /><br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 9px !important;} }</code><br /><br /></li>
             <li>The following snippet of code can be applied to all vertical bar charts:<br /><br /><code>@media screen and (max-width: 525px) { .chartVertMobile td {font-size: 9px !important; width: 25px !important;} }</code></li>
