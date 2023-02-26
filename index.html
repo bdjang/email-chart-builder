@@ -933,7 +933,9 @@
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 
-                        <caption style="caption-side: bottom; color: #666666; font-family: Verdana, sans-serif; font-size: 12px; padding-top: 40px; text-align: left;" id="horiz4Source">Source: Company A, Jan. 2023</caption>
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; padding-bottom: 20px; text-align: left;" id="horiz4Cap">Chart Title</caption>
+                        <!-- end chart title text -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="horiz4Bars">
@@ -1075,6 +1077,12 @@
                         </tr>
                         <!-- end data bar #10 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; padding-top: 40px; text-align: left;" id="horiz4Source">Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
                 </td>
             </tr>
@@ -1088,8 +1096,11 @@
                     <label for="horiz4Div">Add Bar Dividers</label>
                     <input type="checkbox" name="horiz4Div" id="horiz4Div">
                     <br />
-                    <label for="horiz4capText">Data Chart Source</label>
-                    <input type="text" size="35" value="Source: Company A, Jan. 2023" name="horiz4capText" id="horiz4capText">
+                    <label for="horiz4capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Chart Title" name="horiz4capText" id="horiz4capText">
+                    <br />
+                    <label for="horiz4sorText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Source: Company A, Jan. 2023" name="horiz4sorText" id="horiz4sorText">
                     <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
                 </fieldset>
                 <fieldset class="horiz4Controls styleControls">
@@ -4899,7 +4910,7 @@
                 </tr>
 
                 <tr height="0"> <!-- 1.30.23: Extra spacing being created here in Safari browser clients. After setting height to "0", spacing was removed; NEED TO ADD TO ALL GENERATED CHART HTML CODE -->
-                    <td id="vert1AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
+                    <td id="vert1AxisLine" colspan="8" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
                     <!-- 2.25.23: Outlook email clients were setting height to this td cell and pushing the x-axis values down. Solution: add "line-height: 0;" and "&nbsp;" to this td cell and the extra height is removed -->
                 </tr>
 
@@ -5273,7 +5284,7 @@
                     <!-- end vertical bar #10 -->
 
                 <tr height="0">
-                    <td id="vert2AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
+                    <td id="vert2AxisLine" colspan="8" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
                 </tr>
 
                 <!-- X-axis Labels -->
@@ -5568,7 +5579,7 @@
                 <!-- end x-axis labels -->
 
                 <tr height="0">
-                    <td id="vert3AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
+                    <td id="vert3AxisLine" colspan="8" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
                 </tr>
 
                 <tr>
@@ -5887,7 +5898,7 @@
                 <!-- end x-axis labels -->
 
                 <tr height="0">
-                    <td id="vert4AxisLine" colspan="10" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
+                    <td id="vert4AxisLine" colspan="8" height="0" width="100%" style="border-top: 1px solid #000000; line-height: 0; height: 0; width: 100%;">&nbsp;</td>
                 </tr>
 
                 <tr>
