@@ -6,7 +6,7 @@ h1 { font-weight: 300; }
 body { min-width: 740px; }
 button { display: block; margin: 30px auto 30px; }
 button, input { font-family: Arial, sans-serif; font-size: 14px; }
-code { color: #ff0000; }
+code { color: #e83e8c; font-size: 14px; }
 code, legend { font-weight: 600; }
 header { margin: 0 20px; }
 header, textarea, #info { font-family: Courier, serif; }
@@ -57,7 +57,7 @@ button, #darkMode, #lightMode { cursor: pointer; }
 .darkStyles, .lightStyles, .lightStylesSRC, .scrollBoxLight, .textareaLight { -webkit-transition: background-color 250ms ease-out; -ms-transition: background-color 250ms ease-out; -moz-transition: background-color 250ms ease-out; transition: background-color 250ms ease-out; -webkit-transition: color 250ms ease-out; -ms-transition: color 250ms ease-out; -moz-transition: color 250ms ease-out; transition: color 250ms ease-out; }
 
 /* PRE-MOBILE STYLES */
-.chartBuild /* Targets .scrollBox and code output section */, .charts div:first-of-type + table:first-of-type /* Targets non-vertical charts */ { display: inline-block; margin: 0 30px 0 0; vertical-align: top; }
+.chartBuild /* Targets .scrollBox and code output section */, .charts > div + table:first-of-type /* Targets non-vertical charts */ { display: inline-block; margin: 0 30px 0 0; vertical-align: top; }
 .charts div:first-of-type + .vertWrap { display: inline-block; min-width: 550px; } /* Targets outer div vertical preview charts */
 
 /* MOBILE STYLES */
