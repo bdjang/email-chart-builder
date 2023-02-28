@@ -71,6 +71,12 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     prog2Row3a.classList.add("lightStyles");
     prog2Row4a.classList.add("lightStyles");
     prog2Row5a.classList.add("lightStyles");
+    horiz1Cap.classList.add("lightStyles");
+    horiz1Source.classList.add("lightStylesSRC");
+    horiz2Cap.classList.add("lightStyles");
+    horiz2Source.classList.add("lightStylesSRC");
+    horiz3Cap.classList.add("lightStyles");
+    horiz3Source.classList.add("lightStylesSRC");
     horiz4Cap.classList.add("lightStyles");
     horiz4Source.classList.add("lightStylesSRC");
     for (var i = 0; i < scrollBox.length; i++) {
@@ -140,6 +146,12 @@ document.addEventListener("keydown", () => {
             prog2Row3a.classList.replace("lightStyles", "darkStyles");
             prog2Row4a.classList.replace("lightStyles", "darkStyles");
             prog2Row5a.classList.replace("lightStyles", "darkStyles");
+            horiz1Cap.classList.replace("lightStyles", "darkStyles");
+            horiz1Source.classList.replace("lightStylesSRC", "darkStyles");
+            horiz2Cap.classList.replace("lightStyles", "darkStyles");
+            horiz2Source.classList.replace("lightStylesSRC", "darkStyles");
+            horiz3Cap.classList.replace("lightStyles", "darkStyles");
+            horiz3Source.classList.replace("lightStylesSRC", "darkStyles");
             horiz4Cap.classList.replace("lightStyles", "darkStyles");
             horiz4Source.classList.replace("lightStylesSRC", "darkStyles");
             vert1AxisLine.classList.toggle("lightBorder");
@@ -212,6 +224,12 @@ document.addEventListener("keydown", () => {
             prog2Row3a.classList.replace("darkStyles", "lightStyles");
             prog2Row4a.classList.replace("darkStyles", "lightStyles");
             prog2Row5a.classList.replace("darkStyles", "lightStyles");
+            horiz1Cap.classList.replace("darkStyles", "lightStyles");
+            horiz1Source.classList.replace("darkStyles", "lightStylesSRC");
+            horiz2Cap.classList.replace("darkStyles", "lightStyles");
+            horiz2Source.classList.replace("darkStyles", "lightStylesSRC");
+            horiz3Cap.classList.replace("darkStyles", "lightStyles");
+            horiz3Source.classList.replace("darkStyles", "lightStylesSRC");
             horiz4Cap.classList.replace("darkStyles", "lightStyles");
             horiz4Source.classList.replace("darkStyles", "lightStylesSRC");
             vert1AxisLine.classList.toggle("lightBorder");
@@ -295,6 +313,12 @@ darkMode.addEventListener("click", () => {
     prog2Row4a.classList.replace("lightStyles", "darkStyles");
     prog2Row5a.classList.toggle("darkStyles");
     prog2Row5a.classList.replace("lightStyles", "darkStyles");
+    horiz1Cap.classList.toggle("darkStyles");
+    horiz1Cap.classList.replace("lightStyles", "darkStyles");
+    horiz2Cap.classList.toggle("darkStyles");
+    horiz2Cap.classList.replace("lightStyles", "darkStyles");
+    horiz3Cap.classList.toggle("darkStyles");
+    horiz3Cap.classList.replace("lightStyles", "darkStyles");
     horiz4Cap.classList.toggle("darkStyles");
     horiz4Cap.classList.replace("lightStyles", "darkStyles");
     horiz4Source.classList.toggle("darkStyles");
@@ -396,6 +420,12 @@ lightMode.addEventListener("click", () => {
     prog2Row3a.classList.replace("darkStyles", "lightStyles");
     prog2Row4a.classList.replace("darkStyles", "lightStyles");
     prog2Row5a.classList.replace("darkStyles", "lightStyles");
+    horiz1Cap.classList.replace("darkStyles", "lightStyles");
+    horiz1Source.classList.replace("darkStyles", "lightStylesSRC");
+    horiz2Cap.classList.replace("darkStyles", "lightStyles");
+    horiz2Source.classList.replace("darkStyles", "lightStylesSRC");
+    horiz3Cap.classList.replace("darkStyles", "lightStyles");
+    horiz3Source.classList.replace("darkStyles", "lightStylesSRC");
     horiz4Cap.classList.replace("darkStyles", "lightStyles");
     horiz4Source.classList.replace("darkStyles", "lightStylesSRC");
     vert1AxisLine.classList.toggle("lightBorder");
