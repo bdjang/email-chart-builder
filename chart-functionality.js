@@ -79,6 +79,10 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     horiz3Source.classList.add("lightStylesSRC");
     horiz4Cap.classList.add("lightStyles");
     horiz4Source.classList.add("lightStylesSRC");
+    prog1Cap.classList.add("lightStyles");
+    prog1Source.classList.add("lightStylesSRC");
+    prog2Cap.classList.add("lightStyles");
+    prog2Source.classList.add("lightStylesSRC");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.add("scrollBoxLight");
         textarea[i].classList.add("textareaLight");
@@ -154,6 +158,10 @@ document.addEventListener("keydown", () => {
             horiz3Source.classList.replace("lightStylesSRC", "darkStyles");
             horiz4Cap.classList.replace("lightStyles", "darkStyles");
             horiz4Source.classList.replace("lightStylesSRC", "darkStyles");
+            prog1Cap.classList.replace("lightStyles", "darkStyles");
+            prog1Source.classList.replace("lightStylesSRC", "darkStyles");
+            prog2Cap.classList.replace("lightStyles", "darkStyles");
+            prog2Source.classList.replace("lightStylesSRC", "darkStyles");
             vert1AxisLine.classList.toggle("lightBorder");
             vert2AxisLine.classList.toggle("lightBorder");
             vert3AxisLine.classList.toggle("lightBorder");
@@ -232,6 +240,10 @@ document.addEventListener("keydown", () => {
             horiz3Source.classList.replace("darkStyles", "lightStylesSRC");
             horiz4Cap.classList.replace("darkStyles", "lightStyles");
             horiz4Source.classList.replace("darkStyles", "lightStylesSRC");
+            prog1Cap.classList.replace("darkStyles", "lightStyles");
+            prog1Source.classList.replace("darkStyles", "lightStylesSRC");
+            prog2Cap.classList.replace("darkStyles", "lightStyles");
+            prog2Source.classList.replace("darkStyles", "lightStylesSRC");
             vert1AxisLine.classList.toggle("lightBorder");
             vert2AxisLine.classList.toggle("lightBorder");
             vert3AxisLine.classList.toggle("lightBorder");
@@ -428,6 +440,10 @@ lightMode.addEventListener("click", () => {
     horiz3Source.classList.replace("darkStyles", "lightStylesSRC");
     horiz4Cap.classList.replace("darkStyles", "lightStyles");
     horiz4Source.classList.replace("darkStyles", "lightStylesSRC");
+    prog1Cap.classList.replace("darkStyles", "lightStyles");
+    prog1Source.classList.replace("darkStyles", "lightStylesSRC");
+    prog2Cap.classList.replace("darkStyles", "lightStyles");
+    prog2Source.classList.replace("darkStyles", "lightStylesSRC");
     vert1AxisLine.classList.toggle("lightBorder");
     vert2AxisLine.classList.toggle("lightBorder");
     vert3AxisLine.classList.toggle("lightBorder");
