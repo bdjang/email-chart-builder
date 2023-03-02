@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://bdjang.github.io/" />
     <meta property="og:image" content="">
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📩</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
     <link rel="stylesheet" type="text/css" href="chart-styles.css" />
     <style type="text/css">
 
@@ -31,7 +31,7 @@
         <p>A tool for building bar charts for HTML email templates.</p>
         <ul>
             <li>100% HTML/CSS Coded Bar Charts ⌨️</li>
-            <!-- <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🌑</span><span id="darkMode">🌕</span></li> -->
+            <!-- <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🌑</span><span id="darkMode">🌕</span></li> 📩-->
             <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🌙</span><span id="darkMode">☀️</span></li>
             <li>Mobile Responsive 📲</li>
             <li>No Images ❌</li>
@@ -374,7 +374,7 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 
                         <!-- CHART TITLE TEXT -->
-                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="horiz2Cap">Optional Chart Title</caption>
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="horiz2Cap">Optional Chart Title</caption>
                         <!-- end chart title text -->
 
                         <!-- DATA BAR #1 -->
@@ -677,7 +677,7 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 
                         <!-- CHART TITLE TEXT -->
-                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="horiz3Cap">Optional Chart Title</caption>
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="horiz3Cap">Optional Chart Title</caption>
                         <!-- end chart title text -->
 
                         <!-- DATA BAR #1 -->
@@ -982,7 +982,7 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 
                         <!-- CHART TITLE TEXT -->
-                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="horiz4Cap">Optional Chart Title</caption>
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="horiz4Cap">Optional Chart Title</caption>
                         <!-- end chart title text -->
 
                         <!-- DATA BAR #1 -->
@@ -3523,6 +3523,10 @@
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="negative1Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
+
                         <!-- DATA BAR #1 -->
                         <tr class="negative1Bars">
                             <td align="left" style="padding: 0;">
@@ -3663,6 +3667,12 @@
                         </tr>
                         <!-- end data bar #10 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="negative1Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
                 </td>
             </tr>
@@ -3673,6 +3683,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData12">Select # of Data Rows</label>
                     <input type="number" size="6" value="6" max="10" min="1" name="rowsData12" id="rowsData12">
+                    <br />
+                    <label for="negative1capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="negative1capText" id="negative1capText">
+                    <br />
+                    <label for="negative1srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="negative1srcText" id="negative1srcText">
                     <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text out of the data bar. Click again to delete the outer label text.</small>
                 </fieldset>
                 <fieldset class="negative1Controls styleControls">
@@ -3809,6 +3825,10 @@
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="negative2Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="negative2Bars">
@@ -3950,6 +3970,12 @@
                         </tr>
                         <!-- end data bar #10 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="negative2Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
                 </td>
             </tr>
@@ -3960,6 +3986,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData13">Select # of Data Rows</label>
                     <input type="number" size="6" value="6" max="10" min="1" name="rowsData13" id="rowsData13">
+                    <br />
+                    <label for="negative2capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="negative2capText" id="negative2capText">
+                    <br />
+                    <label for="negative2srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="negative2srcText" id="negative2srcText">
                     <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text out of the data bar. Click again to delete the outer label text.</small>
                 </fieldset>
                 <fieldset class="negative2Controls styleControls">
@@ -4096,6 +4128,10 @@
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="splitCap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="splitBars">
@@ -4247,6 +4283,12 @@
                         </tr>
                         <!-- end data bar #10 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="splitSource">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
                 </td>
             </tr>
@@ -4257,6 +4299,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData20">Select # of Data Rows</label>
                     <input type="number" size="6" value="6" max="10" min="1" name="rowsData20" id="rowsData20">
+                    <br />
+                    <label for="splitcapText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="splitcapText" id="splitcapText">
+                    <br />
+                    <label for="splitsrcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="splitsrcText" id="splitsrcText">
                     <small>📌 Click on <span style="font-weight: 600;">"Negative Label"</span> or <span style="font-weight: 600;">"Positive Label"</span> to move the data label text. Click again to delete the label text.</small>
                 </fieldset>
                 <fieldset class="splitControls styleControls">
@@ -4435,7 +4483,7 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 
                         <!-- CHART TITLE TEXT -->
-                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="prog1Cap">Optional Chart Title</caption>
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="prog1Cap">Optional Chart Title</caption>
                         <!-- end chart title text -->
 
                         <!-- PROGRESS BAR #1 -->
@@ -4628,7 +4676,7 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 
                         <!-- CHART TITLE TEXT -->
-                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="prog2Cap">Optional Chart Title</caption>
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="prog2Cap">Optional Chart Title</caption>
                         <!-- end chart title text -->
 
                         <!-- PROGRESS BAR #1 -->
