@@ -522,8 +522,8 @@ horiz2capText.oninput = function() {
         horiz2Cap.style.marginBottom = "0";
         return horiz2capCode = "";
     } else if (horiz2capText.value) {
-        horiz2Cap.style.marginBottom = "20px";
-        return horiz2capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + horiz2Cap.innerHTML + '</caption>';
+        horiz2Cap.style.marginBottom = "30px";
+        return horiz2capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + horiz2Cap.innerHTML + '</caption>';
     }
 };
 // Horizontal Chart II Source
@@ -1049,8 +1049,8 @@ horiz3capText.oninput = function() {
         horiz3Cap.style.marginBottom = "0";
         return horiz3capCode = "";
     } else if (horiz3capText.value) {
-        horiz3Cap.style.marginBottom = "20px";
-        return horiz3capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + horiz3Cap.innerHTML + '</caption>';
+        horiz3Cap.style.marginBottom = "30px";
+        return horiz3capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + horiz3Cap.innerHTML + '</caption>';
     }
 };
 // Horizontal Chart III Source
@@ -1566,8 +1566,8 @@ horiz4capText.oninput = function() {
         horiz4Cap.style.marginBottom = "0";
         return horiz4capCode = "";
     } else if (horiz4capText.value) {
-        horiz4Cap.style.marginBottom = "20px";
-        return horiz4capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + horiz4Cap.innerHTML + '</caption>';
+        horiz4Cap.style.marginBottom = "30px";
+        return horiz4capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + horiz4Cap.innerHTML + '</caption>';
     }
 };
 // Horizontal Chart IV Source
