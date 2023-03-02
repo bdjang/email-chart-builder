@@ -24,7 +24,7 @@ prog1capText.oninput = function() {
         return prog1capCode = "";
     } else if (prog1capText.value) {
         prog1Cap.style.marginBottom = "20px";
-        return prog1capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + prog1Cap.innerHTML + '</caption>';
+        return prog1capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + prog1Cap.innerHTML + '</caption>';
     }
 };
 // Progress Bar I Source
@@ -301,7 +301,7 @@ prog2capText.oninput = function() {
         return prog2capCode = "";
     } else if (prog2capText.value) {
         prog2Cap.style.marginBottom = "20px";
-        return prog2capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + prog2Cap.innerHTML + '</caption>';
+        return prog2capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + prog2Cap.innerHTML + '</caption>';
     }
 };
 // Progress Bar II Source
