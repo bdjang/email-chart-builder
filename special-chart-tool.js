@@ -1634,7 +1634,7 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 combo1Div.addEventListener("click", () => { // Toggles chart data bar dividers
     for (var i = 1; i < combo1DivNodes1.length; i++) {
         if (combo1Div.checked == true) {
-            combo1DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
+            combo1DivNodes1[i].firstElementChild.style.borderTop = "1px solid lightgray";
         } else if (combo1Div.checked == false) {
             combo1DivNodes1[i].firstElementChild.style.borderTop = "none";
         }

@@ -1032,7 +1032,7 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 horiz3Div.addEventListener("click", () => { // Toggles chart data bar dividers
     for (var i = 1; i < horiz3DivNodes1.length; i++) {
         if (horiz3Div.checked == true) {
-            horiz3DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
+            horiz3DivNodes1[i].firstElementChild.style.borderTop = "1px solid lightgray";
         } else if (horiz3Div.checked == false) {
             horiz3DivNodes1[i].firstElementChild.style.borderTop = "none";
         }
@@ -1549,7 +1549,7 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 horiz4Div.addEventListener("click", () => { // Toggles chart data bar dividers
     for (var i = 1; i < horiz4DivNodes1.length; i++) {
         if (horiz4Div.checked == true) {
-            horiz4DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
+            horiz4DivNodes1[i].firstElementChild.style.borderTop = '1px solid lightgray';
         } else if (horiz4Div.checked == false) {
             horiz4DivNodes1[i].firstElementChild.style.borderTop = "none";
         }
