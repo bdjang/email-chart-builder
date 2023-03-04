@@ -14,7 +14,7 @@ rowsData8.addEventListener("change", () => {
 });
 
 // Progress Bar I Caption
-let prog1capCode;
+let prog1capCode = "";
 const prog1Cap = document.getElementById("prog1Cap"); // Caption or chart title
 const prog1capText = document.getElementById("prog1capText"); // Caption or chart title text
 prog1capText.oninput = function() {
@@ -28,7 +28,7 @@ prog1capText.oninput = function() {
     }
 };
 // Progress Bar I Source
-let prog1srcCode;
+let prog1srcCode = "";
 const prog1Source = document.getElementById("prog1Source"); // Chart source
 const prog1srcText = document.getElementById("prog1srcText"); // Chart source text
 prog1srcText.oninput = function() {
@@ -291,7 +291,7 @@ rowsData9.addEventListener("change", () => {
 });
 
 // Progress Bar II Caption
-let prog2capCode;
+let prog2capCode = "";
 const prog2Cap = document.getElementById("prog2Cap"); // Caption or chart title
 const prog2capText = document.getElementById("prog2capText"); // Caption or chart title text
 prog2capText.oninput = function() {
@@ -305,7 +305,7 @@ prog2capText.oninput = function() {
     }
 };
 // Progress Bar II Source
-let prog2srcCode;
+let prog2srcCode = "";
 const prog2Source = document.getElementById("prog2Source"); // Chart source
 const prog2srcText = document.getElementById("prog2srcText"); // Chart source text
 prog2srcText.oninput = function() {

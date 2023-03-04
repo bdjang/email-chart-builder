@@ -14,7 +14,7 @@ rowsData4.addEventListener("change", () => {
 });
 
 // Stacked Chart I Caption
-let stacked1capCode;
+let stacked1capCode = "";
 const stacked1Cap = document.getElementById("stacked1Cap"); // Caption or chart title
 const stacked1capText = document.getElementById("stacked1capText"); // Caption or chart title text
 stacked1capText.oninput = function() {
@@ -28,7 +28,7 @@ stacked1capText.oninput = function() {
     }
 };
 // Stacked Chart I Source
-let stacked1srcCode;
+let stacked1srcCode = "";
 const stacked1Source = document.getElementById("stacked1Source"); // Chart source
 const stacked1srcText = document.getElementById("stacked1srcText"); // Chart source text
 stacked1srcText.oninput = function() {
@@ -693,7 +693,7 @@ rowsData5.addEventListener("change", () => {
 });
 
 // Stacked Chart II Caption
-let stacked2capCode;
+let stacked2capCode = "";
 const stacked2Cap = document.getElementById("stacked2Cap"); // Caption or chart title
 const stacked2capText = document.getElementById("stacked2capText"); // Caption or chart title text
 stacked2capText.oninput = function() {
@@ -707,7 +707,7 @@ stacked2capText.oninput = function() {
     }
 };
 // Stacked Chart II Source
-let stacked2srcCode;
+let stacked2srcCode = "";
 const stacked2Source = document.getElementById("stacked2Source"); // Chart source
 const stacked2srcText = document.getElementById("stacked2srcText"); // Chart source text
 stacked2srcText.oninput = function() {
@@ -1270,7 +1270,7 @@ rowsData6.addEventListener("change", () => {
 });
 
 // Stacked Chart III Caption
-let stacked3capCode;
+let stacked3capCode = "";
 const stacked3Cap = document.getElementById("stacked3Cap"); // Caption or chart title
 const stacked3capText = document.getElementById("stacked3capText"); // Caption or chart title text
 stacked3capText.oninput = function() {
@@ -1284,7 +1284,7 @@ stacked3capText.oninput = function() {
     }
 };
 // Stacked Chart III Source
-let stacked3srcCode;
+let stacked3srcCode = "";
 const stacked3Source = document.getElementById("stacked3Source"); // Chart source
 const stacked3srcText = document.getElementById("stacked3srcText"); // Chart source text
 stacked3srcText.oninput = function() {
@@ -2067,7 +2067,7 @@ rowsData10.addEventListener("change", () => {
 });
 
 // Stacked Chart IV Caption
-let stacked4capCode;
+let stacked4capCode = "";
 const stacked4Cap = document.getElementById("stacked4Cap"); // Caption or chart title
 const stacked4capText = document.getElementById("stacked4capText"); // Caption or chart title text
 stacked4capText.oninput = function() {
@@ -2081,7 +2081,7 @@ stacked4capText.oninput = function() {
     }
 };
 // Stacked Chart IV Source
-let stacked4srcCode;
+let stacked4srcCode = "";
 const stacked4Source = document.getElementById("stacked4Source"); // Chart source
 const stacked4srcText = document.getElementById("stacked4srcText"); // Chart source text
 stacked4srcText.oninput = function() {
