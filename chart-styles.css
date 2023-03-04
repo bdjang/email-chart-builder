@@ -31,6 +31,7 @@ ul li { margin: 8px 0; }
 .negative1Controls label, .negative2Controls label { display: inline-block; width: 135px; }
 .chartLegend label[for*="legend"] { width: 110px; } /* Targets all labels that start with "legend" */
 .chartLegend input { margin: 0 60px 4px 0; width: 60px; }
+.chartLegend input[name*="capText"], .chartLegend input[name*="srcText"] { width: 251px; } /* Targets Caption + Source for all Combo and Stacked charts */
 .chartLegend #combo1Div { width: auto; } /* Combo Chart checkbox */
 .chartLegend #rowsData7, .chartLegend #rowsData19 { margin: 0 20px 4px 0; width: 60px; } /* Combo Charts 'Select # of Data Rows' */
 .stacked1Controls label:first-of-type, .stacked2Controls label:first-of-type, .stacked3Controls label:first-of-type, .stacked4Controls label:first-of-type, .combo1Controls label:first-of-type, .combo2Controls label:first-of-type { width: 75px; } /* Targets Row # Data Label */
