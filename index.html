@@ -70,6 +70,7 @@
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 
+                        <!-- 3/3/23: Used "margin-bottom" for caption element because the JS logic targets marginBottom -->
                         <!-- CHART TITLE TEXT -->
                         <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="horiz1Cap">Optional Chart Title</caption>
                         <!-- end chart title text -->
@@ -214,6 +215,7 @@
                         </tr>
                         <!-- end data bar #10 -->
 
+                        <!-- 3/3/23: Used "padding-top" for caption element because the JS logic targets paddingTop -->
                         <!-- CHART SOURCE TEXT -->
                         <tr>
                             <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="horiz1Source">Optional Source: Company A, Jan. 2023</td>
@@ -1285,11 +1287,19 @@
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
 
-                    <!-- LEGEND 4 -->
-                    <div style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 20px 0; text-align: left;"><span id="legend4Color1" style="background-color: #0b467b; border: 1px solid #0b467b; color: #0b467b; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend4Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend4Color2" style="background-color: #5fadf3; border: 1px solid #5fadf3; color: #5fadf3; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend4Text2">Light Blue</span></div>
-                    <!-- end legend 4 -->
-
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="combo1Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
+
+                        <!-- LEGEND 4 -->
+                        <tr>
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; padding: 0 0 20px 0; text-align: left;">
+                                <span id="legend4Color1" style="background-color: #0b467b; border: 1px solid #0b467b; color: #0b467b; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend4Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend4Color2" style="background-color: #5fadf3; border: 1px solid #5fadf3; color: #5fadf3; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend4Text2">Light Blue</span>
+                            </td>
+                        </tr>
+                        <!-- end legend 4 -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="combo1Bars">
@@ -1417,6 +1427,12 @@
                         </tr>
                         <!-- end data bar #6 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="combo1Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
 
                 </td>
@@ -1430,6 +1446,12 @@
                     <input type="number" size="6" value="4" max="6" min="1" name="rowsData7" id="rowsData7">
                     <label for="combo1Div">Add Bar Dividers</label>
                     <input type="checkbox" name="combo1Div" id="combo1Div">
+                    <br />
+                    <label for="combo1capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="combo1capText" id="combo1capText">
+                    <br />
+                    <label for="combo1srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="combo1srcText" id="combo1srcText">
                     <br />
                     <label for="legend4Color1x">Legend Color #1</label>
                     <input type="text" size="6" value="#0b467b" name="legend4Color1x" id="legend4Color1x">
@@ -1570,13 +1592,24 @@
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
 
-                    <!-- LEGEND 8 -->
                     <!-- 2.24.23: Changed div HTML element to article to avoid interfering with pre-mobile styles. Output code will use div HTML element -->
                     <!-- 2.27.23: Changed back to DIV element since using ">" child combinator to target direct children -->
-                    <div style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 20px 0; text-align: left;"><span id="legend8Color1" style="background-color: #00aef3; border: 1px solid #00aef3; color: #00aef3; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend8Color2" style="background-color: #e81b23; border: 1px solid #e81b23; color: #e81b23; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text2">Red</span></div>
-                    <!-- end legend 8 -->
+                    <!-- <div style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 20px 0; text-align: left;"><span id="legend8Color1" style="background-color: #00aef3; border: 1px solid #00aef3; color: #00aef3; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend8Color2" style="background-color: #e81b23; border: 1px solid #e81b23; color: #e81b23; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text2">Red</span></div> -->
+                    <!-- 3.3.23: Moved legend to inside table element -->
 
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="combo2Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
+
+                        <!-- LEGEND 8 -->
+                        <tr>
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; padding: 0 0 20px 0; text-align: left;">
+                                <span id="legend8Color1" style="background-color: #00aef3; border: 1px solid #00aef3; color: #00aef3; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend8Color2" style="background-color: #e81b23; border: 1px solid #e81b23; color: #e81b23; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text2">Red</span>
+                            </td>
+                        </tr>
+                        <!-- end legend 8 -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="combo2BarsT">
@@ -1708,6 +1741,12 @@
                         </tr>
                         <!-- end data bar #5 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="combo2Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
 
                 </td>
@@ -1719,6 +1758,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData19">Select # of Data Rows</label>
                     <input type="number" size="6" value="2" max="5" min="1" name="rowsData19" id="rowsData19">
+                    <br />
+                    <label for="combo2capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="combo2capText" id="combo2capText">
+                    <br />
+                    <label for="combo2srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="combo2srcText" id="combo2srcText">
                     <br />
                     <label for="legend8Color1x">Legend Color #1</label>
                     <input type="text" size="6" value="#00aef3" name="legend8Color1x" id="legend8Color1x">
@@ -1840,11 +1885,19 @@
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
 
-                    <!-- LEGEND 1 -->
-                    <div style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 20px 0; text-align: left;"><span id="legend1Color1" style="background-color: #ffd700; border: 1px solid #ffd700; color: #ffd700; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend1Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend1Color2" style="background-color: #00a8ff; border: 1px solid #00a8ff; color: #00a8ff; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend1Text2">Blue</span></div>
-                    <!-- end legend 1 -->
-
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="stacked1Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
+
+                        <!-- LEGEND 1 -->
+                        <tr>
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; padding: 0 0 20px 0; text-align: left;">
+                                <span id="legend1Color1" style="background-color: #ffd700; border: 1px solid #ffd700; color: #ffd700; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend1Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend1Color2" style="background-color: #00a8ff; border: 1px solid #00a8ff; color: #00a8ff; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend1Text2">Blue</span>
+                            </td>
+                        </tr>
+                        <!-- end legend 1 -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="stacked1Bars">
@@ -1997,6 +2050,12 @@
                         </tr>
                         <!-- end data bar #10 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="stacked1Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
 
                 </td>
@@ -2008,6 +2067,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData4">Select # of Data Rows</label>
                     <input type="number" size="6" value="5" max="10" min="1" name="rowsData4" id="rowsData4">
+                    <br />
+                    <label for="stacked1capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="stacked1capText" id="stacked1capText">
+                    <br />
+                    <label for="stacked1srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="stacked1srcText" id="stacked1srcText">
                     <br />
                     <label for="legend1Color1x">Legend Color #1</label>
                     <input type="text" size="6" value="#ffd700" name="legend1Color1x" id="legend1Color1x">
@@ -2222,11 +2287,19 @@
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
 
-                    <!-- LEGEND 2 -->
-                    <div style="font-family: Verdana, sans-serif; font-size: 14px; line-height: normal; margin: 0 0 30px 0; text-align: left;"><span id="legend2Color1" style="background-color: #ff3b44; border: 1px solid #ff3b44; color: #ff3b44; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend2Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend2Color2" style="background-color: #f1f1f1; border: 1px solid #f1f1f1; color: #f1f1f1; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend2Text2">Grey</span></div>
-                    <!-- end legend 2 -->
-
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="stacked2Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
+
+                        <!-- LEGEND 2 -->
+                        <tr>
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; padding: 0 0 20px 0; text-align: left;">
+                                <span id="legend2Color1" style="background-color: #ff3b44; border: 1px solid #ff3b44; color: #ff3b44; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend2Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend2Color2" style="background-color: #f1f1f1; border: 1px solid #f1f1f1; color: #f1f1f1; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend2Text2">Grey</span>
+                            </td>
+                        </tr>
+                        <!-- end legend 2 -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="stacked2Bars">
@@ -2378,6 +2451,12 @@
                         </tr>
                         <!-- end data bar #10 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="stacked2Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
 
                 </td>
@@ -2389,6 +2468,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData5">Select # of Data Rows</label>
                     <input type="number" size="6" value="5" max="10" min="1" name="rowsData5" id="rowsData5">
+                    <br />
+                    <label for="stacked2capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="stacked2capText" id="stacked2capText">
+                    <br />
+                    <label for="stacked2srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="stacked2srcText" id="stacked2srcText">
                     <br />
                     <label for="legend2Color1x">Legend Color #1</label>
                     <input type="text" size="6" value="#ff3b44" name="legend2Color1x" id="legend2Color1x">
@@ -2603,11 +2688,19 @@
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
 
-                    <!-- LEGEND 3 -->
-                    <div style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 20px 0; text-align: left;"><span id="legend3Color1" style="background-color: #fa4747; border: 1px solid #fa4747; color: #fa4747; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend3Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color2" style="background-color: #ff785f; border: 1px solid #ff785f; color: #ff785f; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend3Text2">Light Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color3" style="background-color: #ffb65d; border: 1px solid #ffb65d; color: #ffb65d; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend3Text3">Orange</span></div>
-                    <!-- end legend 3 -->
-
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="stacked3Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
+
+                        <!-- LEGEND 3 -->
+                        <tr>
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; padding: 0 0 20px 0; text-align: left;">
+                                <span id="legend3Color1" style="background-color: #fa4747; border: 1px solid #fa4747; color: #fa4747; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend3Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color2" style="background-color: #ff785f; border: 1px solid #ff785f; color: #ff785f; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend3Text2">Light Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color3" style="background-color: #ffb65d; border: 1px solid #ffb65d; color: #ffb65d; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend3Text3">Orange</span>
+                            </td>
+                        </tr>
+                        <!-- end legend 3 -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="stacked3Bars">
@@ -2759,6 +2852,12 @@
                         </tr>
                         <!-- end data bar #10 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="stacked3Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
                 </td>
             </tr>
@@ -2769,6 +2868,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData6">Select # of Data Rows</label>
                     <input type="number" size="6" value="5" max="10" min="1" name="rowsData6" id="rowsData6">
+                    <br />
+                    <label for="stacked3capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="stacked3capText" id="stacked3capText">
+                    <br />
+                    <label for="stacked3srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="stacked3srcText" id="stacked3srcText">
                     <br />
                     <label for="legend3Color1x">Legend Color #1</label>
                     <input type="text" size="6" value="#fa4747" name="legend3Color1x" id="legend3Color1x">
@@ -3058,11 +3163,19 @@
             <tr>
                 <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
 
-                    <!-- LEGEND 5 -->
-                    <div style="font-family: Verdana, sans-serif; font-size: 14px; line-height: normal; margin: 0 0 30px 0; text-align: left;"><span id="legend5Color1" style="background-color: #d6af36; border: 1px solid #d6af36; color: #d6af36; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend5Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color2" style="background-color: #d7d7d7; border: 1px solid #d7d7d7; color: #d7d7d7; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend5Text2">Silver</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color3" style="background-color: #a77044; border: 1px solid #a77044; color: #a77044; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend5Text3">Bronze</span></div>
-                    <!-- end legend 5 -->
-
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="stacked4Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
+
+                        <!-- LEGEND 5 -->
+                        <tr>
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; padding: 0 0 20px 0; text-align: left;">
+                                <span id="legend5Color1" style="background-color: #d6af36; border: 1px solid #d6af36; color: #d6af36; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend5Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color2" style="background-color: #d7d7d7; border: 1px solid #d7d7d7; color: #d7d7d7; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend5Text2">Silver</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color3" style="background-color: #a77044; border: 1px solid #a77044; color: #a77044; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend5Text3">Bronze</span>
+                            </td>
+                        </tr>
+                        <!-- end legend 5 -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="stacked4Bars">
@@ -3224,6 +3337,12 @@
                         </tr>
                         <!-- end data bar #10 -->
 
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="stacked4Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
                     </table>
                 </td>
             </tr>
@@ -3234,6 +3353,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData10">Select # of Data Rows</label>
                     <input type="number" size="6" value="5" max="10" min="1" name="rowsData10" id="rowsData10">
+                    <br />
+                    <label for="stacked4capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="stacked4capText" id="stacked4capText">
+                    <br />
+                    <label for="stacked4srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="stacked4srcText" id="stacked4srcText">
                     <br />
                     <label for="legend5Color1x">Legend Color #1</label>
                     <input type="text" size="6" value="#d6af36" name="legend5Color1x" id="legend5Color1x">
@@ -7068,5 +7193,8 @@ https://nypost.com/2023/01/30/americans-pick-the-government-as-the-countrys-top-
 - To get these generated charts working in newsletters, first thing to adjust is the outer wrapping table width and max-width values. 
 
 [if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif] <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+
+"Perfect is the enemy of the good"
+- Voltaire
 
 -->
