@@ -4716,7 +4716,7 @@
                 <fieldset class="dataCheckboxes">
                     <legend>Chart Customization</legend>
                     <label for="rowsData8">Select # of Bars</label>
-                    <input type="number" size="6" value="2" max="5" min="1" name="rowsData8" id="rowsData8">
+                    <input type="number" size="2" value="2" max="5" min="1" name="rowsData8" id="rowsData8">
                     <br />
                     <label for="prog1capText">Bar Chart Title</label>
                     <input type="text" size="35" value="Optional Chart Title" name="prog1capText" id="prog1capText">
@@ -4823,14 +4823,22 @@
                                     <v:textbox inset="495px, 0px, 0px, 0px">
                                         <span style="font-family: Verdana, sans-serif; font-size: 14px; color: #000000;">Test2</span>
                                     </v:textbox>
-                                </v:roundrect>&nbsp;
+                                </v:roundrect>
+                                <div>&nbsp;</div>
                                 <![endif]-->
 
-                                <!-- 3/4/23: Added a "&nbsp;" after the closing roundrect to create a line in-between each progress bar for MSO clients -->
 
-                                <!-- For the colored bar, the text inset value is the roundrect width subtract 65. So 100 width for the roundrect will make the text inset value 35 -->
-                                <!-- For the grey bar, the text inset value is the roundrect width plus 10. So 100 width for the roundrect will make the text inset value 110 -->
-                                <!-- The minimum value of the colored bar is width 30px. Copy the same logic with the original progress bar so smaller values won't create an oblong shape. -->
+                                <!-- 
+                                    - For the colored bar, the text inset value is the roundrect width subtract 65. So 100 width for the roundrect will make the text inset value 35
+                                    - For the grey bar, the text inset value is the roundrect width plus 10. So 100 width for the roundrect will make the text inset value 110
+                                    - The minimum value of the colored bar is width 30px. Copy the same logic with the original progress bar so smaller values won't create an oblong shape.
+
+                                    - Relied on VML and z-index to create the progress bar effect
+                                    - Reference: https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-z-index-attribute
+                                -->
+
+                                <!-- 3/4/23: Added a div element with "&nbsp;" after the closing roundrect to create spacing between each progress bar for MSO clients -->
+
 
                                 <!--[if !mso]>
                                 <!-->
@@ -4932,7 +4940,7 @@
                 <fieldset class="dataCheckboxes">
                     <legend>Chart Customization</legend>
                     <label for="rowsData9">Select # of Bars</label>
-                    <input type="number" size="6" value="2" max="5" min="1" name="rowsData9" id="rowsData9">
+                    <input type="number" size="2" value="2" max="5" min="1" name="rowsData9" id="rowsData9">
                     <br />
                     <label for="prog2capText">Bar Chart Title</label>
                     <input type="text" size="35" value="Optional Chart Title" name="prog2capText" id="prog2capText">
@@ -5014,6 +5022,7 @@
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart I</h1></div>
 
         <section class="vertWrap">
+            <!-- <div style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Title</div> -->
             <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 400px; margin: 0 auto; padding: 0;" class="chartVertMobile">
                 <tr>
                     
@@ -5189,6 +5198,7 @@
                 <!-- end x-axis labels -->
 
             </table>
+            <!-- <div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: center;">Optional Source: Company A, Jan. 2023</div> -->
         </section>
         <section class="chartBuild">
             <div class="scrollBox">
@@ -7161,12 +7171,6 @@ Notes:
 - make these charts BIG, BOLD, and EASY TO IMMEDIATELY READ AND DIGEST. Surprise and delight
 - keep the smaller charts you already made, just make bigger variations and then let feedback, user research guide which ones to adjust, build new ones, or retire old versions
 
-
-CLEAN UP CODE;
-Remove unecessary code especially from the stacked I and stacked II with the last <td> of width auto/100%. TEST STACKED IV before doing this to make sure removing that code doesn't affect the rendering
-
-
-
 1.26.23
 - don't think i need to have these sections
 
@@ -7179,10 +7183,8 @@ const horiz1Row2c = document.getElementById("horiz1Row2c");
 
 delete and see if chart tool still functions, if so, remove
 
-https://nypost.com/2023/01/30/americans-pick-the-government-as-the-countrys-top-problem-poll/
-
-02/21/23: figure out a way to indicate visually that after you click to generate the chart text, the textarea updates. like opacity 0 to 1 or something.
-
+02/21/23
+- figure out a way to indicate visually that after you click to generate the chart text, the textarea updates. like opacity 0 to 1 or something.
 
 02/23/23
 - consider removing the "border: 1px solid #e3e3e3;" and changing "padding: 20px;" to "padding: 0;"
