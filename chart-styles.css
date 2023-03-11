@@ -45,7 +45,8 @@ ul li { margin: 8px 0; }
 .vert5Controls label { display: inline-block; }
 .vert5Controls label[for*="vert5Text"] { width: 100px; } /* Targets all "Positive/Negative" label width */
 .vert5Controls input { margin: 0 40px 0 0; width: 50px; }
-label[for*="Output"] {display: block; font-family: Arial, sans-serif; font-size: 11px; font-weight: 600; text-align: left; width: 700px; margin: 4px 0 40px;} /* Estimate HTML Weight */
+label[for*="Output"] { display: block; font-family: Arial, sans-serif; font-size: 11px; font-weight: 600; text-align: left; width: 700px; margin: 4px 0 40px; } /* Estimate HTML Weight */
+label[for*="Output"] span { text-decoration: underline; }
 
 /* DARK MODE STYLES */
 button, #darkMode, #lightMode { cursor: pointer; }
