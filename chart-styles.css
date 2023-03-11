@@ -35,10 +35,10 @@ ul li { margin: 8px 0; }
 .chartLegend #rowsData7, .chartLegend #rowsData19 { margin: 0 7px 0 0; } /* Combo Charts 'Select # of Data Rows' */
 .stacked1Controls label:first-of-type, .stacked2Controls label:first-of-type, .stacked3Controls label:first-of-type, .stacked4Controls label:first-of-type, .combo1Controls label:first-of-type, .combo2Controls label:first-of-type { width: 75px; } /* Targets Row # Data Label */
 .stacked1Controls input:first-of-type, .stacked2Controls input:first-of-type, .stacked3Controls input:first-of-type, .stacked4Controls input:first-of-type, .combo1Controls input:first-of-type, .combo2Controls input:first-of-type { width: 80px; } /* Targets Row # Data Input */
-.prog1Controls input:first-of-type, .prog2Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
-.stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .stacked4Controls label, .combo1Controls label, .combo2Controls label, .prog1Controls label, .prog2Controls label { display: inline-block; margin: 10px 10px 0 0; }
-.prog1Controls label[for*="prog1Size"], .prog2Controls label[for*="prog2Size"] { margin: 10px 20px 0 0; } /* Targets 'Progress Bar Size' right spacing */
-.stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .combo2Controls input, .prog1Controls input, .prog2Controls input { margin: 0 15px 4px 0; width: 50px; }
+.prog1Controls input:first-of-type, .prog2Controls input:first-of-type, .prog4Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
+.stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .stacked4Controls label, .combo1Controls label, .combo2Controls label, .prog1Controls label, .prog2Controls label, .prog4Controls label { display: inline-block; margin: 10px 10px 0 0; }
+.prog1Controls label[for*="prog1Size"], .prog2Controls label[for*="prog2Size"], .prog4Controls label[for*="prog2Size"] { margin: 10px 20px 0 0; } /* Targets 'Progress Bar Size' right spacing */
+.stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .combo2Controls input, .prog1Controls input, .prog2Controls input, .prog4Controls input { margin: 0 15px 4px 0; width: 50px; }
 .splitControls input, .dataCheckboxes label, .vert5Controls label { margin: 10px 10px 0 0; }
 .splitControls label { display: inline-block; width: 130px; }
 .splitControls input { width: 46px; }
