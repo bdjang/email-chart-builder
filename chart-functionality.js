@@ -9,10 +9,10 @@ selectElement.addEventListener("change", () => {
             charts[i].style.display = "none";
             charts[selectElement.selectedIndex - 1].style.display = "block";
         }
-        if (selectElement.selectedIndex >= 17 && selectElement.selectedIndex < 22) {
+        if (selectElement.selectedIndex >= 18 && selectElement.selectedIndex < 23) {
             chartEmoji.style.transform = "rotate(0deg)"; // For vertical bar charts
             chartEmoji.style.marginRight = "13px";
-        } else if (selectElement.selectedIndex < 17) {
+        } else if (selectElement.selectedIndex < 18) {
             chartEmoji.style.transform = "rotate(90deg)"; // For horizontal bar charts
             chartEmoji.style.marginRight = "19px";
         }
@@ -71,6 +71,16 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     prog2Row3a.classList.add("lightStyles");
     prog2Row4a.classList.add("lightStyles");
     prog2Row5a.classList.add("lightStyles");
+    prog3Row1a.classList.add("lightStyles");
+    prog3Row2a.classList.add("lightStyles");
+    prog3Row3a.classList.add("lightStyles");
+    prog3Row4a.classList.add("lightStyles");
+    prog3Row5a.classList.add("lightStyles");
+    prog3Row1a.classList.add("lightStyles");
+    prog3Row2a.classList.add("lightStyles");
+    prog3Row3a.classList.add("lightStyles");
+    prog3Row4a.classList.add("lightStyles");
+    prog3Row5a.classList.add("lightStyles");
     prog4Row1a.classList.add("lightStyles");
     prog4Row2a.classList.add("lightStyles");
     prog4Row3a.classList.add("lightStyles");
@@ -100,6 +110,8 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     prog1Source.classList.add("lightStylesSRC");
     prog2Cap.classList.add("lightStyles");
     prog2Source.classList.add("lightStylesSRC");
+    prog3Cap.classList.add("lightStyles");
+    prog3Source.classList.add("lightStylesSRC");
     prog4Cap.classList.add("lightStyles");
     prog4Source.classList.add("lightStylesSRC");
     negative1Cap.classList.add("lightStyles");
@@ -175,6 +187,11 @@ document.addEventListener("keydown", () => {
             prog2Row3a.classList.replace("lightStyles", "darkStyles");
             prog2Row4a.classList.replace("lightStyles", "darkStyles");
             prog2Row5a.classList.replace("lightStyles", "darkStyles");
+            prog3Row1a.classList.replace("lightStyles", "darkStyles");
+            prog3Row2a.classList.replace("lightStyles", "darkStyles");
+            prog3Row3a.classList.replace("lightStyles", "darkStyles");
+            prog3Row4a.classList.replace("lightStyles", "darkStyles");
+            prog3Row5a.classList.replace("lightStyles", "darkStyles");
             prog4Row1a.classList.replace("lightStyles", "darkStyles");
             prog4Row2a.classList.replace("lightStyles", "darkStyles");
             prog4Row3a.classList.replace("lightStyles", "darkStyles");
@@ -204,6 +221,8 @@ document.addEventListener("keydown", () => {
             prog1Source.classList.replace("lightStylesSRC", "darkStyles");
             prog2Cap.classList.replace("lightStyles", "darkStyles");
             prog2Source.classList.replace("lightStylesSRC", "darkStyles");
+            prog3Cap.classList.replace("lightStyles", "darkStyles");
+            prog3Source.classList.replace("lightStylesSRC", "darkStyles");
             prog4Cap.classList.replace("lightStyles", "darkStyles");
             prog4Source.classList.replace("lightStylesSRC", "darkStyles");
             negative1Cap.classList.replace("lightStyles", "darkStyles");
@@ -282,6 +301,11 @@ document.addEventListener("keydown", () => {
             prog2Row3a.classList.replace("darkStyles", "lightStyles");
             prog2Row4a.classList.replace("darkStyles", "lightStyles");
             prog2Row5a.classList.replace("darkStyles", "lightStyles");
+            prog3Row1a.classList.replace("darkStyles", "lightStyles");
+            prog3Row2a.classList.replace("darkStyles", "lightStyles");
+            prog3Row3a.classList.replace("darkStyles", "lightStyles");
+            prog3Row4a.classList.replace("darkStyles", "lightStyles");
+            prog3Row5a.classList.replace("darkStyles", "lightStyles");
             prog4Row1a.classList.replace("darkStyles", "lightStyles");
             prog4Row2a.classList.replace("darkStyles", "lightStyles");
             prog4Row3a.classList.replace("darkStyles", "lightStyles");
@@ -311,6 +335,8 @@ document.addEventListener("keydown", () => {
             prog1Source.classList.replace("darkStyles", "lightStylesSRC");
             prog2Cap.classList.replace("darkStyles", "lightStyles");
             prog2Source.classList.replace("darkStyles", "lightStylesSRC");
+            prog3Cap.classList.replace("darkStyles", "lightStyles");
+            prog3Source.classList.replace("darkStyles", "lightStylesSRC");
             prog4Cap.classList.replace("darkStyles", "lightStyles");
             prog4Source.classList.replace("darkStyles", "lightStylesSRC");
             negative1Cap.classList.replace("darkStyles", "lightStyles");
@@ -400,6 +426,16 @@ darkMode.addEventListener("click", () => {
     prog2Row4a.classList.replace("lightStyles", "darkStyles");
     prog2Row5a.classList.toggle("darkStyles");
     prog2Row5a.classList.replace("lightStyles", "darkStyles");
+    prog3Row1a.classList.toggle("darkStyles");
+    prog3Row1a.classList.replace("lightStyles", "darkStyles");
+    prog3Row2a.classList.toggle("darkStyles");
+    prog3Row2a.classList.replace("lightStyles", "darkStyles");
+    prog3Row3a.classList.toggle("darkStyles");
+    prog3Row3a.classList.replace("lightStyles", "darkStyles");
+    prog3Row4a.classList.toggle("darkStyles");
+    prog3Row4a.classList.replace("lightStyles", "darkStyles");
+    prog3Row5a.classList.toggle("darkStyles");
+    prog3Row5a.classList.replace("lightStyles", "darkStyles");
     prog4Row1a.classList.toggle("darkStyles");
     prog4Row1a.classList.replace("lightStyles", "darkStyles");
     prog4Row2a.classList.toggle("darkStyles");
@@ -458,6 +494,10 @@ darkMode.addEventListener("click", () => {
     prog2Cap.classList.replace("lightStyles", "darkStyles");
     prog2Source.classList.toggle("darkStyles");
     prog2Source.classList.replace("lightStylesSRC", "darkStyles");
+    prog3Cap.classList.toggle("darkStyles");
+    prog3Cap.classList.replace("lightStyles", "darkStyles");
+    prog3Source.classList.toggle("darkStyles");
+    prog3Source.classList.replace("lightStylesSRC", "darkStyles");
     prog4Cap.classList.toggle("darkStyles");
     prog4Cap.classList.replace("lightStyles", "darkStyles");
     prog4Source.classList.toggle("darkStyles");
@@ -571,6 +611,11 @@ lightMode.addEventListener("click", () => {
     prog2Row3a.classList.replace("darkStyles", "lightStyles");
     prog2Row4a.classList.replace("darkStyles", "lightStyles");
     prog2Row5a.classList.replace("darkStyles", "lightStyles");
+    prog3Row1a.classList.replace("darkStyles", "lightStyles");
+    prog3Row2a.classList.replace("darkStyles", "lightStyles");
+    prog3Row3a.classList.replace("darkStyles", "lightStyles");
+    prog3Row4a.classList.replace("darkStyles", "lightStyles");
+    prog3Row5a.classList.replace("darkStyles", "lightStyles");
     prog4Row1a.classList.replace("darkStyles", "lightStyles");
     prog4Row2a.classList.replace("darkStyles", "lightStyles");
     prog4Row3a.classList.replace("darkStyles", "lightStyles");
@@ -600,6 +645,8 @@ lightMode.addEventListener("click", () => {
     prog1Source.classList.replace("darkStyles", "lightStylesSRC");
     prog2Cap.classList.replace("darkStyles", "lightStyles");
     prog2Source.classList.replace("darkStyles", "lightStylesSRC");
+    prog3Cap.classList.replace("darkStyles", "lightStyles");
+    prog3Source.classList.replace("darkStyles", "lightStylesSRC");
     prog4Cap.classList.replace("darkStyles", "lightStyles");
     prog4Source.classList.replace("darkStyles", "lightStylesSRC");
     negative1Cap.classList.replace("darkStyles", "lightStyles");
