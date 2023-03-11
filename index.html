@@ -53,6 +53,7 @@
             <option value="npChart">Type: Negative|Positive</option>
             <option value="prog1Chart">Type: Progress Bar I</option>
             <option value="prog2Chart">Type: Progress Bar II</option>
+            <option value="prog4Chart">Type: Progress Bar IV</option>
             <option value="vert1Chart">Type: Vertical I</option>
             <option value="vert2Chart">Type: Vertical II</option>
             <option value="vert3Chart">Type: Vertical III</option>
@@ -4948,7 +4949,7 @@
                     <label for="prog2srcText">Bar Chart Source</label>
                     <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="prog2srcText" id="prog2srcText">
                     <small>📌 Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
-                    <small>📝 Contains <span style="font-weight: 600;">VML</span> code to display rounded corners in Outlook email clients.</small>
+                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code to display rounded corners in Outlook email clients.</small>
                 </fieldset>
                 <fieldset class="prog2Controls styleControls">
                     <legend>Progress Bar #1</legend>
@@ -5016,6 +5017,231 @@
         </section>
     </div>
     <!-- end progress bar chart ii -->
+
+    <!-- PROGRESS BAR CHART IV -->
+    <div class="charts" id="prog4Chart" align="center" style="display: none;">
+        <div style="font-family: Courier, serif; text-align: center;"><h1>Progress Bar Chart IV</h1></div>
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="prog4Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
+
+                        <!-- PROGRESS BAR #1 -->
+                        <tr class="prog4Bars">
+                            <td align="left" style="padding: 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #1</td>
+                                    </tr>
+                                </table>
+
+                                <!--[if mso]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" style="height: 28px; width: 560px; position: relative; z-index: 0;" arcsize="50%" fill="true" fillcolor="#e3e3e3" stroke="false" class="test">
+                                    <v:textbox inset="40px, 1px, 0px, 0px">
+                                        <span style="font-family: Verdana, sans-serif; font-size: 14px; color: #000000;">Test1</span>
+                                    </v:textbox>
+                                </v:roundrect>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" style="height: 28px; width: 560px; position: relative; z-index: 1;" arcsize="50%" fill="true" fillcolor="#ff3860" stroke="false">
+                                    <v:fill type="gradient" color="#ff3860" color2="#ff3860" angle="90" />
+                                    <v:textbox inset="495px, 1px, 0px, 0px">
+                                        <span style="font-family: Verdana, sans-serif; font-size: 14px; color: #000000;">Test2</span>
+                                    </v:textbox>
+                                </v:roundrect>
+                                <div>&nbsp;</div>
+                                <![endif]-->
+
+                                <!-- 3/10/23: added "<v:fill type="gradient" color="#ff3860" color2="#ff3860" angle="90" />" to VML code above -->
+
+                                <!--[if !mso]>
+                                <!-->
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row1b" align="right" style="background: linear-gradient(90deg, #0dbd67, #10ed81); background-color: #0dbd67; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 28%; height: 28px;" height="28"></td>
+                                        <td id="prog4Row1c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 72%; height: 28px;" height="28">&nbsp;28%</td>
+                                    </tr>
+                                </table>
+                                <!--<![endif]-->
+                            </td>
+                        </tr>
+                        <!-- end progress bar #1 -->
+
+                        <!-- PROGRESS BAR #2 -->
+                        <tr class="prog4Bars">
+                            <td align="left" style="padding: 14px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #2</td>
+                                    </tr>
+                                </table>
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row2b" align="right" style="background: linear-gradient(90deg, #fcf003, #ff0000); background-color: #fcf003; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 67%; height: 28px;" height="28"></td>
+                                        <td id="prog4Row2c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 33%; height: 28px;" height="28">&nbsp;67%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end progress bar #2 -->
+
+                        <!-- PROGRESS BAR #3 -->
+                        <tr class="prog4Bars" style="display: none;">
+                            <td align="left" style="padding: 14px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #3</td>
+                                    </tr>
+                                </table>
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row3b" align="right" style="background: linear-gradient(90deg, #c90e34, #ff0026); background-color: #c90e34; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 81%; height: 28px;" height="28"></td>
+                                        <td id="prog4Row3c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 19%; height: 28px;" height="28"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end progress bar #3 -->
+
+                        <!-- PROGRESS BAR #4 -->
+                        <tr class="prog4Bars" style="display: none;">
+                            <td align="left" style="padding: 14px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #4</td>
+                                    </tr>
+                                </table>
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row4b" align="right" style="background: linear-gradient(90deg, #2f50bd, #144bff); background-color: #2f50bd; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 97%; height: 28px;" height="28"></td>
+                                        <td id="prog4Row4c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 3%; height: 28px;" height="28"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end progress bar #4 -->
+
+                        <!-- PROGRESS BAR #5 -->
+                        <tr class="prog4Bars" style="display: none;">
+                            <td align="left" style="padding: 14px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 28px;" height="28">Progress bar #5</td>
+                                    </tr>
+                                </table>
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" style="background-color: #e3e3e3; border-radius: 15px;" class="chartMobile">
+                                    <tr>
+                                        <td id="prog4Row5b" align="right" style="background: linear-gradient(90deg, #ff8300, #ffaa00); background-color: #ff8300; border-radius: 15px; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 55%; height: 28px;" height="28"></td>
+                                        <td id="prog4Row5c" align="left" style="color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 45%; height: 28px;" height="28"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end progress bar #5 -->
+
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="prog4Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <section class="chartBuild">
+            <div class="scrollBox">
+                <fieldset class="dataCheckboxes">
+                    <legend>Chart Customization</legend>
+                    <label for="rowsData21">Select # of Bars</label>
+                    <input type="number" size="2" value="2" max="5" min="1" name="rowsData21" id="rowsData21">
+                    <br />
+                    <label for="prog4capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="prog4capText" id="prog4capText">
+                    <br />
+                    <label for="prog4srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="prog4srcText" id="prog4srcText">
+                    <small>📌 Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
+                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code to display rounded corners in Outlook email clients and <a href="https://www.caniemail.com/search/?s=linear-gradient" target="_blank">linear-gradient()</a>.</small>
+                </fieldset>
+                <fieldset class="prog4Controls styleControls">
+                    <legend>Progress Bar #1</legend>
+                    <label for="prog4Text1a">Progress Bar Name</label>
+                    <input type="text" size="10" value="Progress bar #1" name="prog4Text1a" id="prog4Text1a">
+                    <label for="prog4Text1" id="prog4Label1">End Label</label>
+                    <input type="text" size="10" value="28%" name="prog4Text1" id="prog4Text1">
+                    <br />
+                    <label for="prog4Size1">Progress Bar Size</label>
+                    <input type="number" size="6" value="28" max="100" min="0" name="prog4Size1" id="prog4Size1">
+                    <label for="prog4Color1a">Bar Color #1</label>
+                    <input type="text" size="6" value="#0dbd67" name="prog4Color1a" id="prog4Color1a">
+                    <label for="prog4Color1b">Bar Color #2</label>
+                    <input type="text" size="6" value="#10ed81" name="prog4Color1b" id="prog4Color1b">
+                </fieldset>
+                <fieldset class="prog4Controls styleControls">
+                    <legend>Progress Bar #2</legend>
+                    <label for="prog4Text2a">Progress Bar Name</label>
+                    <input type="text" size="10" value="Progress bar #2" name="prog4Text2a" id="prog4Text2a">
+                    <label for="prog4Text2" id="prog4Label2">End Label</label>
+                    <input type="text" size="10" value="67%" name="prog4Text2" id="prog4Text2">
+                    <br />
+                    <label for="prog4Size2">Progress Bar Size</label>
+                    <input type="number" size="6" value="67" max="100" min="0" name="prog4Size2" id="prog4Size2">
+                    <label for="prog4Color2a">Bar Color #1</label>
+                    <input type="text" size="6" value="#fcf003" name="prog4Color2a" id="prog4Color2a">
+                    <label for="prog4Color2b">Bar Color #2</label>
+                    <input type="text" size="6" value="#ff0000" name="prog4Color2b" id="prog4Color2b">
+                </fieldset>
+                <fieldset class="prog4Controls styleControls" style="display: none;">
+                    <legend>Progress Bar #3</legend>
+                    <label for="prog4Text3a">Progress Bar Name</label>
+                    <input type="text" size="10" value="Progress bar #3" name="prog4Text3a" id="prog4Text3a">
+                    <label for="prog4Text3" id="prog4Label3">End Label</label>
+                    <input type="text" size="10" value="" name="prog4Text3" id="prog4Text3">
+                    <br />
+                    <label for="prog4Size3">Progress Bar Size</label>
+                    <input type="number" size="6" value="81" max="100" min="0" name="prog4Size3" id="prog4Size3">
+                    <label for="prog4Color3a">Bar Color #1</label>
+                    <input type="text" size="6" value="#c90e34" name="prog4Color3a" id="prog4Color3a">
+                    <label for="prog4Color3b">Bar Color #2</label>
+                    <input type="text" size="6" value="#ff0026" name="prog4Color3b" id="prog4Color3b">
+                </fieldset>
+                <fieldset class="prog4Controls styleControls" style="display: none;">
+                    <legend>Progress Bar #4</legend>
+                    <label for="prog4Text4a">Progress Bar Name</label>
+                    <input type="text" size="10" value="Progress bar #4" name="prog4Text4a" id="prog4Text4a">
+                    <label for="prog4Text4" id="prog4Label4">End Label</label>
+                    <input type="text" size="10" value="" name="prog4Text4" id="prog4Text4">
+                    <br />
+                    <label for="prog4Size4">Progress Bar Size</label>
+                    <input type="number" size="6" value="97" max="100" min="0" name="prog4Size4" id="prog4Size4">
+                    <label for="prog4Color4a">Bar Color #1</label>
+                    <input type="text" size="6" value="#2f50bd" name="prog4Color4a" id="prog4Color4a">
+                    <label for="prog4Color4b">Bar Color #2</label>
+                    <input type="text" size="6" value="#144bff" name="prog4Color4b" id="prog4Color4b">
+                </fieldset>
+                <fieldset class="prog4Controls styleControls" style="display: none;">
+                    <legend>Progress Bar #5</legend>
+                    <label for="prog4Text5a">Progress Bar Name</label>
+                    <input type="text" size="10" value="Progress bar #5" name="prog4Text5a" id="prog4Text5a">
+                    <label for="prog4Text5" id="prog4Label5">End Label</label>
+                    <input type="text" size="10" value="" name="prog4Text5" id="prog4Text5">
+                    <br />
+                    <label for="prog4Size5">Progress Bar Size</label>
+                    <input type="number" size="6" value="55" max="100" min="0" name="prog4Size5" id="prog4Size5">
+                    <label for="prog4Color5a">Bar Color #1</label>
+                    <input type="text" size="6" value="#ff8300" name="prog4Color5a" id="prog4Color5a">
+                    <label for="prog4Color5b">Bar Color #2</label>
+                    <input type="text" size="6" value="#ffaa00" name="prog4Color5b" id="prog4Color5b">
+                </fieldset>
+            </div>
+            <button type="button" id="prog4Button">Generate Email Chart Code</button>
+            <textarea name="prog4Output" id="prog4Output" readonly></textarea>
+        </section>
+    </div>
+    <!-- end progress bar chart iv -->
 
     <!-- VERTICAL BAR CHART I -->
     <div class="charts" id="vert1Chart" align="center" style="display: none;">
@@ -7201,4 +7427,3 @@ delete and see if chart tool still functions, if so, remove
 "Perfect is the enemy of the good"
 - Voltaire
 
--->
