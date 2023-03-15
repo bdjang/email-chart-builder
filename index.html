@@ -5491,15 +5491,24 @@
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart I</h1></div>
 
         <section class="vertWrap">
-            <!-- <div style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Title</div> -->
-            <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 400px; margin: 0 auto; padding: 0;" class="chartVertMobile">
+
+            <!-- CHART TITLE TEXT -->
+            <div id="vert1Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 10px; text-align: center;">Optional Chart Title</div>
+            <!-- end chart title text -->
+
+            <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 400px; margin: 0 auto; padding: 0;" class="chartVertMobile">
+
+                <!-- 3.14.23: Decided to move caption title text and source text OUTSIDE of the main table element due to the text becoming jumbled when reducing the number of vertical bars. Also, weird issue of vertical bar at 100% pushing the caption text up -->
+                <!-- <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 10px; text-align: center;" id="vert1Cap">Optional Chart Title</caption> -->
                 <tr>
                     
                     <!-- VERTICAL BAR #1 -->
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row1a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$4,234</td>
+                                <!-- 3.14.23: Issue seen in Outlook.com email clients - the top label text is breaking into multiple lines and not expanding to one line -->
+                                <!-- 3.14.23 Update: I removed the max-width to all vertical bars and it fixed the issue seen in Outlook.com and there were no issues in other email clients. Still need to continue testing but this looks promising -->
+                                <td id="vert1Row1a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$4,234</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5514,7 +5523,7 @@
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row2a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$11,234</td>
+                                <td id="vert1Row2a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$11,234</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5529,7 +5538,7 @@
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row3a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$13,123</td>
+                                <td id="vert1Row3a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$13,123</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5544,7 +5553,7 @@
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row4a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$7,108</td>
+                                <td id="vert1Row4a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$7,108</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5559,7 +5568,7 @@
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row5a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$9,583</td>
+                                <td id="vert1Row5a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$9,583</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5574,7 +5583,7 @@
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row6a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$10,019</td>
+                                <td id="vert1Row6a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$10,019</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5589,7 +5598,7 @@
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row7a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$9,863</td>
+                                <td id="vert1Row7a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$9,863</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5604,7 +5613,7 @@
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row8a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$4,566</td>
+                                <td id="vert1Row8a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$4,566</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5619,7 +5628,7 @@
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center" style="display: none;">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row9a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$2,109</td>
+                                <td id="vert1Row9a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$2,109</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5634,7 +5643,7 @@
                     <td class="previewBox vert1Bars" width="50" valign="bottom" align="center" style="display: none;">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert1Row10a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$7,012</td>
+                                <td id="vert1Row10a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$7,012</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -5653,21 +5662,27 @@
 
                 <!-- X-axis Labels -->
                 <tr>
-                    <td class="vert1AxisLabel" id="vert1Row1c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2013</td>
-                    <td class="vert1AxisLabel" id="vert1Row2c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2014</td>
-                    <td class="vert1AxisLabel" id="vert1Row3c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2015</td>
-                    <td class="vert1AxisLabel" id="vert1Row4c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2016</td>
-                    <td class="vert1AxisLabel" id="vert1Row5c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2017</td>
-                    <td class="vert1AxisLabel" id="vert1Row6c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2018</td>
-                    <td class="vert1AxisLabel" id="vert1Row7c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2019</td>
-                    <td class="vert1AxisLabel" id="vert1Row8c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2020</td>
-                    <td class="vert1AxisLabel" id="vert1Row9c" height="10" valign="top" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2021</td>
-                    <td class="vert1AxisLabel" id="vert1Row10c" height="10" valign="top" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2022</td>
+                    <td class="vert1AxisLabel" id="vert1Row1c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2013</td>
+                    <!-- 3.14.23: Added line-height: normal to attach text to the top of x-axis line; issue seen in Gmail -->
+                    <td class="vert1AxisLabel" id="vert1Row2c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2014</td>
+                    <td class="vert1AxisLabel" id="vert1Row3c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2015</td>
+                    <td class="vert1AxisLabel" id="vert1Row4c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2016</td>
+                    <td class="vert1AxisLabel" id="vert1Row5c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2017</td>
+                    <td class="vert1AxisLabel" id="vert1Row6c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2018</td>
+                    <td class="vert1AxisLabel" id="vert1Row7c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2019</td>
+                    <td class="vert1AxisLabel" id="vert1Row8c" height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2020</td>
+                    <td class="vert1AxisLabel" id="vert1Row9c" height="10" valign="top" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2021</td>
+                    <td class="vert1AxisLabel" id="vert1Row10c" height="10" valign="top" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">2022</td>
                 </tr>
                 <!-- end x-axis labels -->
 
             </table>
-            <!-- <div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: center;">Optional Source: Company A, Jan. 2023</div> -->
+
+            <!-- CHART SOURCE TEXT -->
+            <div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; margin-top: 20px; text-align: center;" id="vert1Source">Optional Source: Company A, Jan. 2023</div>
+            <!-- end chart source text -->
+            <!-- 3.14.23: changed padding-top to margin-top for Outlook email clients -->
+
         </section>
         <section class="chartBuild">
             <div class="scrollBox">
@@ -5675,6 +5690,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData14">Select # of Vertical Bars</label>
                     <input type="number" size="6" value="8" max="10" min="1" name="rowsData14" id="rowsData14">
+                    <br />
+                    <label for="vert1capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="vert1capText" id="vert1capText">
+                    <br />
+                    <label for="vert1srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="vert1srcText" id="vert1srcText">
                 </fieldset>
                 <fieldset class="vert1Controls styleControls">
                     <legend>Vertical Bar #1</legend>
@@ -7613,7 +7634,7 @@
             <li>Use <code>media queries</code> to adjust the size of the chart text for smaller screens. The following snippet of code can be applied to all horizontal and progress bar charts:<br /><br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 10px !important;} caption {font-size: 12px !important;} }</code><br /><br /></li>
             <li>The following snippet of code can be applied to all vertical bar charts:<br /><br /><code>@media screen and (max-width: 525px) { .chartVertMobile td {font-size: 10px !important; width: 25px !important;} caption {font-size: 12px !important;} }</code></li>
         </ul>
-        <p>For more information about the advantages and disadvantages of using HTML/CSS bar charts compared to images in email templates, read the "<span style="font-weight: 600;">📊 Non-Image Approach to Data Viz in Email</span>" <a href="https://dev.to/bdjang/non-image-approach-to-data-viz-in-email-o0k">blog post</a>.</p>
+        <p>For more information about the advantages and disadvantages of using HTML/CSS bar charts compared to images in email templates, read the "<span style="font-weight: 600;">📊 Non-Image Approach to Data Viz in Email</span>" <a href="https://dev.to/bdjang/non-image-approach-to-data-viz-in-email-o0k" target="_blank">blog post</a>.</p>
         <hr />
         <h1>Contact</h1>
         <ul>
@@ -7631,6 +7652,7 @@
     <script type="text/javascript" src="special-chart-tool.js"></script>
     <script type="text/javascript" src="progress-chart-tool.js"></script>
     <script type="text/javascript" src="vertical-chart-tool.js"></script>
+    <!-- end chart javascript -->
 
   </body>
 </html>
