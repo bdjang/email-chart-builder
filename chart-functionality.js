@@ -120,6 +120,8 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     negative2Source.classList.add("lightStylesSRC");
     splitCap.classList.add("lightStyles");
     splitSource.classList.add("lightStylesSRC");
+    vert1Cap.classList.add("lightStyles");
+    vert1Source.classList.add("lightStylesSRC");
     for (var i = 0; i < scrollBox.length; i++) {
         scrollBox[i].classList.add("scrollBoxLight");
         textarea[i].classList.add("textareaLight");
@@ -231,6 +233,8 @@ document.addEventListener("keydown", () => {
             negative2Source.classList.replace("lightStylesSRC", "darkStyles");
             splitCap.classList.replace("lightStyles", "darkStyles");
             splitSource.classList.replace("lightStylesSRC", "darkStyles");
+            vert1Cap.classList.replace("lightStyles", "darkStyles");
+            vert1Source.classList.replace("lightStylesSRC", "darkStyles");
             vert1AxisLine.classList.toggle("lightBorder");
             vert2AxisLine.classList.toggle("lightBorder");
             vert3AxisLine.classList.toggle("lightBorder");
@@ -345,6 +349,8 @@ document.addEventListener("keydown", () => {
             negative2Source.classList.replace("darkStyles", "lightStylesSRC");
             splitCap.classList.replace("darkStyles", "lightStyles");
             splitSource.classList.replace("darkStyles", "lightStylesSRC");
+            vert1Cap.classList.replace("darkStyles", "lightStyles");
+            vert1Source.classList.replace("darkStyles", "lightStylesSRC");
             vert1AxisLine.classList.toggle("lightBorder");
             vert2AxisLine.classList.toggle("lightBorder");
             vert3AxisLine.classList.toggle("lightBorder");
@@ -514,6 +520,10 @@ darkMode.addEventListener("click", () => {
     splitCap.classList.replace("lightStyles", "darkStyles");
     splitSource.classList.toggle("darkStyles");
     splitSource.classList.replace("lightStylesSRC", "darkStyles");
+    vert1Cap.classList.toggle("darkStyles");
+    vert1Cap.classList.replace("lightStyles", "darkStyles");
+    vert1Source.classList.toggle("darkStyles");
+    vert1Source.classList.replace("lightStylesSRC", "darkStyles");
     vert1AxisLine.classList.toggle("lightBorder");
     vert2AxisLine.classList.toggle("lightBorder");
     vert3AxisLine.classList.toggle("lightBorder");
@@ -655,6 +665,8 @@ lightMode.addEventListener("click", () => {
     negative2Source.classList.replace("darkStyles", "lightStylesSRC");
     splitCap.classList.replace("darkStyles", "lightStyles");
     splitSource.classList.replace("darkStyles", "lightStylesSRC");
+    vert1Cap.classList.replace("darkStyles", "lightStyles");
+    vert1Source.classList.replace("darkStyles", "lightStylesSRC");
     vert1AxisLine.classList.toggle("lightBorder");
     vert2AxisLine.classList.toggle("lightBorder");
     vert3AxisLine.classList.toggle("lightBorder");
