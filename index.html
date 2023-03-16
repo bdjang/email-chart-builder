@@ -5180,7 +5180,7 @@
                     <label for="prog3srcText">Bar Chart Source</label>
                     <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="prog3srcText" id="prog3srcText">
                     <small>📌 Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
-                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code and <a href="https://www.caniemail.com/search/?s=linear-gradient" target="_blank">linear-gradient()</a>.</small>
+                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code and <a href="https://www.caniemail.com/search/?s=linear-gradient" target="_blank">linear-gradient()</a>. The fallback color is <span style="font-weight: 600;">Bar Color #1</span>.</small>
                 </fieldset>
                 <fieldset class="prog3Controls styleControls">
                     <legend>Progress Bar #1</legend>
@@ -5406,7 +5406,7 @@
                     <label for="prog4srcText">Bar Chart Source</label>
                     <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="prog4srcText" id="prog4srcText">
                     <small>📌 Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
-                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code and <a href="https://www.caniemail.com/search/?s=linear-gradient" target="_blank">linear-gradient()</a>.</small>
+                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code and <a href="https://www.caniemail.com/search/?s=linear-gradient" target="_blank">linear-gradient()</a>. The fallback color is <span style="font-weight: 600;">Bar Color #1</span>.</small>
                 </fieldset>
                 <fieldset class="prog4Controls styleControls">
                     <legend>Progress Bar #1</legend>
@@ -5493,10 +5493,11 @@
         <section class="vertWrap">
 
             <!-- CHART TITLE TEXT -->
-            <div id="vert1Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 10px; text-align: center;">Optional Chart Title</div>
+            <div id="vert1Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Title</div>
             <!-- end chart title text -->
 
-            <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="max-width: 400px; margin: 0 auto; padding: 0;" class="chartVertMobile">
+            <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 400px; margin: 0 auto; padding: 0;" class="chartVertMobile">
+                <!-- 3.15.23: Possible experiment ~~> try changing the height from "350" to "auto" and see if this works in email clients. The change adjusts the chart height to the tallest vertical bar so the chart title is not hanging up at the top if there are low vertical bars -->
 
                 <!-- 3.14.23: Decided to move caption title text and source text OUTSIDE of the main table element due to the text becoming jumbled when reducing the number of vertical bars. Also, weird issue of vertical bar at 100% pushing the caption text up -->
                 <!-- <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 10px; text-align: center;" id="vert1Cap">Optional Chart Title</caption> -->
@@ -6322,18 +6323,23 @@
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart III</h1></div>
 
         <section class="vertWrap">
+
+            <!-- CHART TITLE TEXT -->
+            <div id="vert3Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Title</div>
+            <!-- end chart title text -->
+
             <table id="vert3Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 400px; margin: 0 auto; padding: 0;" class="chartVertMobile">
 
                 <!-- X-axis Labels -->
                 <tr>
-                    <td class="vert3AxisLabel" id="vert3Row1a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2013</td>
-                    <td class="vert3AxisLabel" id="vert3Row2a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2014</td>
-                    <td class="vert3AxisLabel" id="vert3Row3a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2015</td>
-                    <td class="vert3AxisLabel" id="vert3Row4a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2016</td>
-                    <td class="vert3AxisLabel" id="vert3Row5a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2017</td>
-                    <td class="vert3AxisLabel" id="vert3Row6a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2018</td>
-                    <td class="vert3AxisLabel" id="vert3Row7a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2019</td>
-                    <td class="vert3AxisLabel" id="vert3Row8a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2020</td>
+                    <td class="vert3AxisLabel" id="vert3Row1a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2013</td>
+                    <td class="vert3AxisLabel" id="vert3Row2a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2014</td>
+                    <td class="vert3AxisLabel" id="vert3Row3a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2015</td>
+                    <td class="vert3AxisLabel" id="vert3Row4a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2016</td>
+                    <td class="vert3AxisLabel" id="vert3Row5a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2017</td>
+                    <td class="vert3AxisLabel" id="vert3Row6a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2018</td>
+                    <td class="vert3AxisLabel" id="vert3Row7a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2019</td>
+                    <td class="vert3AxisLabel" id="vert3Row8a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2020</td>
                     <td class="vert3AxisLabel" id="vert3Row9a" height="10" valign="bottom" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2021</td>
                     <td class="vert3AxisLabel" id="vert3Row10a" height="10" valign="bottom" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2022</td>
                 </tr>
@@ -6353,7 +6359,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert3Row1c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$4,234</td>
+                                <td id="vert3Row1c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$4,234</td>
                             </tr>
                         </table>
                     </td>
@@ -6368,7 +6374,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert3Row2c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$11,234</td>
+                                <td id="vert3Row2c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$11,234</td>
                             </tr>
                         </table>
                     </td>
@@ -6383,7 +6389,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert3Row3c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$13,123</td>
+                                <td id="vert3Row3c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$13,123</td>
                             </tr>
                         </table>
                     </td>
@@ -6398,7 +6404,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert3Row4c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$8,908</td>
+                                <td id="vert3Row4c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$8,908</td>
                             </tr>
                         </table>
                     </td>
@@ -6413,7 +6419,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert3Row5c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$9,583</td>
+                                <td id="vert3Row5c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$9,583</td>
                             </tr>
                         </table>
                     </td>
@@ -6428,7 +6434,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert3Row6c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$10,019</td>
+                                <td id="vert3Row6c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$10,019</td>
                             </tr>
                         </table>
                     </td>
@@ -6443,7 +6449,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert3Row7c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$9,863</td>
+                                <td id="vert3Row7c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$9,863</td>
                             </tr>
                         </table>
                     </td>
@@ -6458,7 +6464,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert3Row8c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$4,566</td>
+                                <td id="vert3Row8c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$4,566</td>
                             </tr>
                         </table>
                     </td>
@@ -6473,7 +6479,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert3Row9c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$2,109</td>
+                                <td id="vert3Row9c" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$2,109</td>
                             </tr>
                         </table>
                     </td>
@@ -6496,6 +6502,11 @@
                 </tr>
 
             </table>
+
+            <!-- CHART SOURCE TEXT -->
+            <div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; margin-top: 20px; text-align: center;" id="vert3Source">Optional Source: Company A, Jan. 2023</div>
+            <!-- end chart source text -->
+
         </section>
         <section class="chartBuild">
             <div class="scrollBox">
@@ -6503,6 +6514,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData16">Select # of Vertical Bars</label>
                     <input type="number" size="6" value="8" max="10" min="1" name="rowsData16" id="rowsData16">
+                    <br />
+                    <label for="vert3capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="vert3capText" id="vert3capText">
+                    <br />
+                    <label for="vert3srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="vert3srcText" id="vert3srcText">
                 </fieldset>
                 <fieldset class="vert3Controls styleControls">
                     <legend>Vertical Bar #1</legend>
@@ -7130,6 +7147,11 @@
         <div style="font-family: Courier, serif; text-align: center;"><h1>Vertical Bar Chart V</h1></div>
 
         <section class="vertWrap">
+
+            <!-- CHART TITLE TEXT -->
+            <div id="vert5Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Title</div>
+            <!-- end chart title text -->
+
             <table id="vert5Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 500px; min-height: 350px; margin: 0 auto; padding: 0;" class="chartVertMobile">
 
                 <tr>
@@ -7137,7 +7159,8 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row1a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$5M</td>
+                                <!-- 3.15.23: Removed max-width: 35px; in each of the vertical data bars but did not add line-height: normal since all data bars have 1.5em already -->
+                                <td id="vert5Row1a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$5M</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7152,7 +7175,7 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row2a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$4M</td>
+                                <td id="vert5Row2a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$4M</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7167,7 +7190,7 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row3a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$3M</td>
+                                <td id="vert5Row3a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$3M</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7182,7 +7205,7 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row4a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$2M</td>
+                                <td id="vert5Row4a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$2M</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7197,7 +7220,7 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row5a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">$1M</td>
+                                <td id="vert5Row5a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">$1M</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7212,7 +7235,7 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row6a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2018</td>
+                                <td id="vert5Row6a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2018</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7227,7 +7250,7 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row7a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2019</td>
+                                <td id="vert5Row7a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2019</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7242,7 +7265,7 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row8a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2020</td>
+                                <td id="vert5Row8a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2020</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7257,7 +7280,7 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row9a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2021</td>
+                                <td id="vert5Row9a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2021</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7272,7 +7295,7 @@
                     <td class="previewBox vert5Bars vert5Top" width="50" valign="bottom" align="center">
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row10a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2022</td>
+                                <td id="vert5Row10a" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2022</td>
                             </tr>
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -7298,7 +7321,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row1d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2013</td>
+                                <td id="vert5Row1d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2013</td>
                             </tr>
                         </table>
                     </td>
@@ -7313,7 +7336,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row2d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2014</td>
+                                <td id="vert5Row2d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2014</td>
                             </tr>
                         </table>
                     </td>
@@ -7328,7 +7351,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row3d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2015</td>
+                                <td id="vert5Row3d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2015</td>
                             </tr>
                         </table>
                     </td>
@@ -7343,7 +7366,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row4d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2016</td>
+                                <td id="vert5Row4d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2016</td>
                             </tr>
                         </table>
                     </td>
@@ -7358,7 +7381,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row5d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">2017</td>
+                                <td id="vert5Row5d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">2017</td>
                             </tr>
                         </table>
                     </td>
@@ -7373,7 +7396,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row6d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$1M</td>
+                                <td id="vert5Row6d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$1M</td>
                             </tr>
                         </table>
                     </td>
@@ -7388,7 +7411,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row7d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$2M</td>
+                                <td id="vert5Row7d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$2M</td>
                             </tr>
                         </table>
                     </td>
@@ -7403,7 +7426,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row8d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$3M</td>
+                                <td id="vert5Row8d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$3M</td>
                             </tr>
                         </table>
                     </td>
@@ -7418,7 +7441,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row9d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$4M</td>
+                                <td id="vert5Row9d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$4M</td>
                             </tr>
                         </table>
                     </td>
@@ -7433,7 +7456,7 @@
                         </table>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td id="vert5Row10d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">-$5M</td>
+                                <td id="vert5Row10d" style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: 1.5em; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">-$5M</td>
                             </tr>
                         </table>
                     </td>
@@ -7441,6 +7464,11 @@
                 </tr>
 
             </table>
+
+            <!-- CHART SOURCE TEXT -->
+            <div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; margin-top: 20px; text-align: center;" id="vert5Source">Optional Source: Company A, Jan. 2023</div>
+            <!-- end chart source text -->
+
         </section>
         <section class="chartBuild">
             <div class="scrollBox">
@@ -7448,6 +7476,12 @@
                     <legend>Chart Customization</legend>
                     <label for="rowsData18">Select # of Vertical Bars</label>
                     <input type="number" size="6" value="10" max="10" min="1" name="rowsData18" id="rowsData18">
+                    <br />
+                    <label for="vert5capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="vert5capText" id="vert5capText">
+                    <br />
+                    <label for="vert5srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="vert5srcText" id="vert5srcText">
                 </fieldset>
                 <fieldset class="vert5Controls styleControls">
                     <legend>Vertical Bar #1</legend>
