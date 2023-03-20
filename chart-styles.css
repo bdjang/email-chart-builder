@@ -6,7 +6,7 @@ a { color: #0a47ff; }
 body { min-width: 740px; }
 button { display: block; margin: 30px auto 30px; }
 button, input { font-family: Arial, sans-serif; font-size: 14px; }
-code { color: #d72e29; font-size: 14px; }
+code { color: red; font-size: 14px; }
 code, legend { font-weight: 600; }
 h1 { font-weight: 300; }
 header { margin: 0 20px; }
@@ -16,7 +16,7 @@ textarea { background-color: #f8f8f8; border: 1px solid #c4c4c4; display: block;
 ul li { margin: 8px 0; }
 
 /* SITE STYLES */
-#info { margin: 0 auto 20px; width: 700px; }
+#info { margin: 0 auto 40px; width: 700px; }
 #chartEmoji { float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: transform 250ms ease-out, margin 250ms ease-out; -ms-transition: transform 250ms ease-out, margin 250ms ease-out; -moz-transition: transform 250ms ease-out, margin 250ms ease-out; transition: transform 250ms ease-out, margin 250ms ease-out; }
 #chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
 .scrollBox { background-color: #f8f8f8; border: 1px solid #c4c4c4; height: 300px; width: 700px; margin: 0 auto; padding: 10px 0; text-align: left; overflow-x: hidden; overflow-y: auto; }
