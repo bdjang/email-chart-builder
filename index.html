@@ -31,7 +31,6 @@
         <p>A tool for building bar charts for HTML email templates.</p>
         <ul>
             <li>100% HTML/CSS Coded Bar Charts ⌨️</li>
-            <!-- <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🌑</span><span id="darkMode">🌕</span></li> 📩-->
             <li>Compatible in Dark Mode <span id="lightMode" style="display: none;">🌙</span><span id="darkMode">☀️</span></li>
             <li>Mobile Responsive 📲</li>
             <li>No Images ❌</li>
@@ -7735,32 +7734,16 @@ Notes:
 - make these charts BIG, BOLD, and EASY TO IMMEDIATELY READ AND DIGEST. Surprise and delight
 - keep the smaller charts you already made, just make bigger variations and then let feedback, user research guide which ones to adjust, build new ones, or retire old versions
 
-1.26.23
-- don't think i need to have these sections
-
-const horiz1Row1a = document.getElementById("horiz1Row1a");
-const horiz1Row1b = document.getElementById("horiz1Row1b");
-const horiz1Row1c = document.getElementById("horiz1Row1c");
-const horiz1Row2a = document.getElementById("horiz1Row2a");
-const horiz1Row2b = document.getElementById("horiz1Row2b");
-const horiz1Row2c = document.getElementById("horiz1Row2c");
-
-delete and see if chart tool still functions, if so, remove
-
-02/21/23
-- figure out a way to indicate visually that after you click to generate the chart text, the textarea updates. like opacity 0 to 1 or something.
-
-02/23/23
+2.23.23:
 - consider removing the "border: 1px solid #e3e3e3;" and changing "padding: 20px;" to "padding: 0;"
 
-02/26/23
-- keep testing generated chart code
-- consider adding caption title text and source text to all charts?
-
-02/27/23
-- To get these generated charts working in newsletters, first thing to adjust is the outer wrapping table width and max-width values. 
+2.27.23:
+- To get these generated charts working in newsletters, first thing to adjust is the outer wrapping table width and max-width values.
 
 [if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif] <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+
+3.19.23:
+- Need to test long text titles and captions in both desktop and mobile. Last time I used a chart, the caption text had too much spacing between each line
 
 "Perfect is the enemy of the good"
 - Voltaire
