@@ -13,7 +13,7 @@
     <meta property="og:image" content="">
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
-    <link rel="stylesheet" type="text/css" href="chart-styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/chart-styles.css" />
     <style type="text/css">
 
         /** { border: 1px dotted red !important; }
@@ -37,10 +37,10 @@
         </ul>
         <select id="chartSelect">
             <option value="empty">Select chart type</option>
-            <option value="horizChart1">Type: Horizontal I</option>
-            <option value="horizChart2">Type: Horizontal II</option>
-            <option value="horizChart3">Type: Horizontal III</option>
-            <option value="horizChart4">Type: Horizontal IV</option>
+            <option value="horiz1Chart">Type: Horizontal I</option>
+            <option value="horiz2Chart">Type: Horizontal II</option>
+            <option value="horiz3Chart">Type: Horizontal III</option>
+            <option value="horiz4Chart">Type: Horizontal IV</option>
             <option value="com1Chart">Type: Combo I</option>
             <option value="com2Chart">Type: Combo II</option>
             <option value="st1Chart">Type: Stacked I</option>
@@ -64,7 +64,7 @@
     </header>
 
     <!-- HORIZONTAL BAR CHART I -->
-    <div class="charts" id="horizChart1" align="center" style="display: none;">
+    <div class="charts" id="horiz1Chart" align="center" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Horizontal Bar Chart I</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
@@ -370,7 +370,7 @@
     <!-- end horizontal bar chart i -->
 
     <!-- HORIZONTAL BAR CHART II -->
-    <div class="charts" id="horizChart2" align="center" style="display: none;">
+    <div class="charts" id="horiz2Chart" align="center" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Horizontal Bar Chart II</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
@@ -674,7 +674,7 @@
     <!-- end horizontal bar chart ii -->
 
     <!-- HORIZONTAL BAR CHART III -->
-    <div class="charts" id="horizChart3" align="center" style="display: none;">
+    <div class="charts" id="horiz3Chart" align="center" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Horizontal Bar Chart III</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
@@ -980,7 +980,7 @@
     <!-- end horizontal bar chart iii -->
 
     <!-- HORIZONTAL BAR CHART IV -->
-    <div class="charts" id="horizChart4" align="center" style="display: none;">
+    <div class="charts" id="horiz4Chart" align="center" style="display: none;">
         <div style="font-family: Courier, serif; text-align: center;"><h1>Horizontal Bar Chart IV</h1></div>
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
@@ -7713,12 +7713,12 @@
     <!-- end info -->
 
     <!-- CHART JAVASCRIPT -->
-    <script type="text/javascript" src="chart-functionality.js"></script>
-    <script type="text/javascript" src="horizontal-chart-tool.js"></script>
-    <script type="text/javascript" src="stacked-chart-tool.js"></script>
-    <script type="text/javascript" src="special-chart-tool.js"></script>
-    <script type="text/javascript" src="progress-chart-tool.js"></script>
-    <script type="text/javascript" src="vertical-chart-tool.js"></script>
+    <script type="text/javascript" src="scripts/chart-functionality.js"></script>
+    <script type="text/javascript" src="scripts/horizontal-chart-tool.js"></script>
+    <script type="text/javascript" src="scripts/stacked-chart-tool.js"></script>
+    <script type="text/javascript" src="scripts/special-chart-tool.js"></script>
+    <script type="text/javascript" src="scripts/progress-chart-tool.js"></script>
+    <script type="text/javascript" src="scripts/vertical-chart-tool.js"></script>
     <!-- end chart javascript -->
 
   </body>
