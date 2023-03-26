@@ -2669,3 +2669,553 @@ combo2Button.addEventListener("click", () => {
 combo2Output.addEventListener("click", () => {
     combo2Output.select();
 });
+
+
+
+
+// Combo Chart III Row Selection
+const combo3BarsT = document.getElementsByClassName("combo3BarsT"); // Title + Top Bar
+const combo3BarsB = document.getElementsByClassName("combo3BarsB"); // Bottom Bar
+const combo3Controls = document.getElementsByClassName("combo3Controls");
+const rowsData23 = document.getElementById("rowsData23");
+rowsData23.addEventListener("change", () => {
+    for (var i = 0; i < combo3Controls.length; i++) {
+        combo3Controls[i].style.display = "none";
+        for (var x = 0; x < rowsData23.value; x++) {
+            combo3Controls[x].style.display = "block";
+        }
+    }
+    for (var i = 0; i < combo3BarsT.length; i++) {
+        combo3BarsT[i].style.display = "none";
+        combo3BarsB[i].style.display = "none";
+        for (var x = 0; x < rowsData23.value; x++) {
+            combo3BarsT[x].style.display = "block";
+            combo3BarsB[x].style.display = "block";
+        }
+    }
+});
+
+// Combo Chart II Caption
+let combo3capCode = "";
+const combo3Cap = document.getElementById("combo3Cap"); // Caption or chart title
+const combo3capText = document.getElementById("combo3capText"); // Caption or chart title text
+combo3capText.oninput = function() {
+    combo3Cap.innerHTML = combo3capText.value;
+    if (combo3capText.value == "") {
+        combo3Cap.style.paddingBottom = "0";
+        return combo3capCode = "";
+    } else if (combo3capText.value) {
+        combo3Cap.style.paddingBottom = "30px";
+        return combo3capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; padding-bottom: 30px; text-align: left;">' + combo3Cap.innerHTML + '</caption>';
+    }
+};
+// Combo Chart II Source
+let combo3srcCode = "";
+const combo3Source = document.getElementById("combo3Source"); // Chart source
+const combo3srcText = document.getElementById("combo3srcText"); // Chart source text
+combo3srcText.oninput = function() {
+    combo3Source.innerHTML = combo3srcText.value;
+    if (combo3srcText.value == "") {
+        combo3Source.style.paddingTop = "0";
+        return combo3srcCode = "";
+    } else if (combo3srcText.value) {
+        combo3Source.style.paddingTop = "40px";
+        return combo3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;">' + combo3Source.innerHTML + '</td></tr>';
+    }
+};
+
+// Combo Chart II Row Customization Logic
+const combo3Row1a = document.getElementById("combo3Row1a");
+const combo3Row1b = document.getElementById("combo3Row1b");
+const combo3Row1c = document.getElementById("combo3Row1c");
+const combo3Row1d = document.getElementById("combo3Row1d");
+const combo3Row1x = document.getElementById("combo3Row1x");
+const combo3Row1y = document.getElementById("combo3Row1y");
+const combo3Row1z = document.getElementById("combo3Row1z");
+const combo3Row2a = document.getElementById("combo3Row2a");
+const combo3Row2b = document.getElementById("combo3Row2b");
+const combo3Row2c = document.getElementById("combo3Row2c");
+const combo3Row2d = document.getElementById("combo3Row2d");
+const combo3Row2x = document.getElementById("combo3Row2x");
+const combo3Row2y = document.getElementById("combo3Row2y");
+const combo3Row2z = document.getElementById("combo3Row2z");
+const combo3Row3a = document.getElementById("combo3Row3a");
+const combo3Row3b = document.getElementById("combo3Row3b");
+const combo3Row3c = document.getElementById("combo3Row3c");
+const combo3Row3d = document.getElementById("combo3Row3d");
+const combo3Row3x = document.getElementById("combo3Row3x");
+const combo3Row3y = document.getElementById("combo3Row3y");
+const combo3Row3z = document.getElementById("combo3Row3z");
+const combo3Row4a = document.getElementById("combo3Row4a");
+const combo3Row4b = document.getElementById("combo3Row4b");
+const combo3Row4c = document.getElementById("combo3Row4c");
+const combo3Row4d = document.getElementById("combo3Row4d");
+const combo3Row4x = document.getElementById("combo3Row4x");
+const combo3Row4y = document.getElementById("combo3Row4y");
+const combo3Row4z = document.getElementById("combo3Row4z");
+const combo3Row5a = document.getElementById("combo3Row5a");
+const combo3Row5b = document.getElementById("combo3Row5b");
+const combo3Row5c = document.getElementById("combo3Row5c");
+const combo3Row5d = document.getElementById("combo3Row5d");
+const combo3Row5x = document.getElementById("combo3Row5x");
+const combo3Row5y = document.getElementById("combo3Row5y");
+const combo3Row5z = document.getElementById("combo3Row5z");
+const combo3Row6a = document.getElementById("combo3Row6a");
+const combo3Row6b = document.getElementById("combo3Row6b");
+const combo3Row6c = document.getElementById("combo3Row6c");
+const combo3Row6d = document.getElementById("combo3Row6c");
+const combo3Row6x = document.getElementById("combo3Row6y");
+const combo3Row6y = document.getElementById("combo3Row6y");
+const combo3Row6z = document.getElementById("combo3Row6z");
+
+// Row 1 Customization Logic
+const combo3Text1 = document.getElementById("combo3Text1"); // Combo bar title text (not caption)
+combo3Text1.oninput = function() {
+    if (combo3Text1.value == "") {
+        combo3Row1a.innerHTML = combo3Text1.value;
+    } else if (combo3Text1.value) {
+        combo3Row1a.innerHTML = combo3Text1.value;
+    }
+};
+const combo3Size1t = document.getElementById("combo3Size1t");
+combo3Size1t.oninput = function() {
+    combo3Row1c.style.width = ((Math.abs(combo3Size1t.value)) * .75) + "%";
+    combo3Row1d.style.width = ((75 - (Math.abs(combo3Size1t.value)) * .75))+ "%";
+};
+const combo3Text1tf = document.getElementById("combo3Text1tf"); // Top combo bar front label text
+combo3Text1tf.oninput = function() {
+    if (combo3Text1tf.value == "") {
+        combo3Row1b.innerHTML = combo3Text1tf.value;
+    } else if (combo3Text1tf.value) {
+        combo3Row1b.innerHTML = "&nbsp;" + combo3Text1tf.value;
+    }
+};
+const combo3Text1te = document.getElementById("combo3Text1te"); // Top combo bar end label text
+combo3Text1te.oninput = function() {
+    if (combo3Text1te.value == "") {
+        combo3Row1d.innerHTML = combo3Text1te.value;
+    } else if (combo3Text1te.value) {
+        combo3Row1d.innerHTML = "&nbsp;" + combo3Text1te.value;
+    }
+};
+const combo3Label1te = document.getElementById("combo3Label1te"); // Top combo bar end label click logic
+combo3Label1te.addEventListener("click", () => {
+    if (combo3Text1te.value == "") {
+        combo3Row1c.innerHTML = "";
+        combo3Row1d.innerHTML = "";
+    } else if (combo3Text1te.value) {
+        combo3Row1c.innerHTML = combo3Text1te.value + "&nbsp;";
+        combo3Text1te.value = "";
+        combo3Row1d.innerHTML = "";
+    }
+});
+const combo3Color1t = document.getElementById("combo3Color1t");
+combo3Color1t.oninput = function() {
+    combo3Row1b.style.backgroundColor = combo3Color1t.value;
+    combo3Row1c.style.backgroundColor = combo3Color1t.value;
+};
+const combo3Size1b = document.getElementById("combo3Size1b");
+combo3Size1b.oninput = function() {
+    combo3Row1y.style.width = ((Math.abs(combo3Size1b.value)) * .75) + "%";
+    combo3Row1z.style.width = ((75 - (Math.abs(combo3Size1b.value)) * .75))+ "%";
+};
+const combo3Text1bf = document.getElementById("combo3Text1bf"); // Bottom combo bar front label text
+combo3Text1bf.oninput = function() {
+    if (combo3Text1bf.value == "") {
+        combo3Row1x.innerHTML = combo3Text1bf.value;
+    } else if (combo3Text1bf.value) {
+        combo3Row1x.innerHTML = "&nbsp;" + combo3Text1bf.value;
+    }
+};
+const combo3Text1be = document.getElementById("combo3Text1be"); // Bottom combo bar end label text
+combo3Text1be.oninput = function() {
+    if (combo3Text1be.value == "") {
+        combo3Row1z.innerHTML = combo3Text1be.value;
+    } else if (combo3Text1be.value) {
+        combo3Row1z.innerHTML = "&nbsp;" + combo3Text1be.value;
+    }
+};
+const combo3Label1be = document.getElementById("combo3Label1be"); // Bottom combo bar end label click logic
+combo3Label1be.addEventListener("click", () => {
+    if (combo3Text1be.value == "") {
+        combo3Row1y.innerHTML = "";
+        combo3Row1z.innerHTML = "";
+    } else if (combo3Text1be.value) {
+        combo3Row1y.innerHTML = combo3Text1be.value + "&nbsp;";
+        combo3Text1be.value = "";
+        combo3Row1z.innerHTML = "";
+    }
+});
+const combo3Color1b = document.getElementById("combo3Color1b");
+combo3Color1b.oninput = function() {
+    combo3Row1x.style.backgroundColor = combo3Color1b.value;
+    combo3Row1y.style.backgroundColor = combo3Color1b.value;
+};
+
+// Row 2 Customization Logic
+const combo3Text2 = document.getElementById("combo3Text2"); // Combo bar title text (not caption)
+combo3Text2.oninput = function() {
+    if (combo3Text2.value == "") {
+        combo3Row2a.innerHTML = combo3Text2.value;
+    } else if (combo3Text2.value) {
+        combo3Row2a.innerHTML = combo3Text2.value;
+    }
+};
+const combo3Size2t = document.getElementById("combo3Size2t");
+combo3Size2t.oninput = function() {
+    combo3Row2c.style.width = ((Math.abs(combo3Size2t.value)) * .75) + "%";
+    combo3Row2d.style.width = ((75 - (Math.abs(combo3Size2t.value)) * .75))+ "%";
+};
+const combo3Text2tf = document.getElementById("combo3Text2tf"); // Top combo bar front label text
+combo3Text2tf.oninput = function() {
+    if (combo3Text2tf.value == "") {
+        combo3Row2b.innerHTML = combo3Text2tf.value;
+    } else if (combo3Text2tf.value) {
+        combo3Row2b.innerHTML = "&nbsp;" + combo3Text2tf.value;
+    }
+};
+const combo3Text2te = document.getElementById("combo3Text2te"); // Top combo bar end label text
+combo3Text2te.oninput = function() {
+    if (combo3Text2te.value == "") {
+        combo3Row2d.innerHTML = combo3Text2te.value;
+    } else if (combo3Text2te.value) {
+        combo3Row2d.innerHTML = "&nbsp;" + combo3Text2te.value;
+    }
+};
+const combo3Label2te = document.getElementById("combo3Label2te"); // Top combo bar end label click logic
+combo3Label2te.addEventListener("click", () => {
+    if (combo3Text2te.value == "") {
+        combo3Row2c.innerHTML = "";
+        combo3Row2d.innerHTML = "";
+    } else if (combo3Text2te.value) {
+        combo3Row2c.innerHTML = combo3Text2te.value + "&nbsp;";
+        combo3Text2te.value = "";
+        combo3Row2d.innerHTML = "";
+    }
+});
+const combo3Color2t = document.getElementById("combo3Color2t");
+combo3Color2t.oninput = function() {
+    combo3Row2b.style.backgroundColor = combo3Color2t.value;
+    combo3Row2c.style.backgroundColor = combo3Color2t.value;
+};
+const combo3Size2b = document.getElementById("combo3Size2b");
+combo3Size2b.oninput = function() {
+    combo3Row2y.style.width = ((Math.abs(combo3Size2b.value)) * .75) + "%";
+    combo3Row2z.style.width = ((75 - (Math.abs(combo3Size2b.value)) * .75))+ "%";
+};
+const combo3Text2bf = document.getElementById("combo3Text2bf"); // Bottom combo bar front label text
+combo3Text2bf.oninput = function() {
+    if (combo3Text2bf.value == "") {
+        combo3Row2x.innerHTML = combo3Text2bf.value;
+    } else if (combo3Text2bf.value) {
+        combo3Row2x.innerHTML = "&nbsp;" + combo3Text2bf.value;
+    }
+};
+const combo3Text2be = document.getElementById("combo3Text2be"); // Bottom combo bar end label text
+combo3Text2be.oninput = function() {
+    if (combo3Text2be.value == "") {
+        combo3Row2z.innerHTML = combo3Text2be.value;
+    } else if (combo3Text2be.value) {
+        combo3Row2z.innerHTML = "&nbsp;" + combo3Text2be.value;
+    }
+};
+const combo3Label2be = document.getElementById("combo3Label2be"); // Bottom combo bar end label click logic
+combo3Label2be.addEventListener("click", () => {
+    if (combo3Text2be.value == "") {
+        combo3Row2y.innerHTML = "";
+        combo3Row2z.innerHTML = "";
+    } else if (combo3Text2be.value) {
+        combo3Row2y.innerHTML = combo3Text2be.value + "&nbsp;";
+        combo3Text2be.value = "";
+        combo3Row2z.innerHTML = "";
+    }
+});
+const combo3Color2b = document.getElementById("combo3Color2b");
+combo3Color2b.oninput = function() {
+    combo3Row2x.style.backgroundColor = combo3Color2b.value;
+    combo3Row2y.style.backgroundColor = combo3Color2b.value;
+};
+
+// Row 3 Customization Logic
+const combo3Text3 = document.getElementById("combo3Text3"); // Combo bar title text (not caption)
+combo3Text3.oninput = function() {
+    if (combo3Text3.value == "") {
+        combo3Row3a.innerHTML = combo3Text3.value;
+    } else if (combo3Text3.value) {
+        combo3Row3a.innerHTML = combo3Text3.value;
+    }
+};
+const combo3Size3t = document.getElementById("combo3Size3t");
+combo3Size3t.oninput = function() {
+    combo3Row3c.style.width = ((Math.abs(combo3Size3t.value)) * .75) + "%";
+    combo3Row3d.style.width = ((75 - (Math.abs(combo3Size3t.value)) * .75))+ "%";
+};
+const combo3Text3tf = document.getElementById("combo3Text3tf"); // Top combo bar front label text
+combo3Text3tf.oninput = function() {
+    if (combo3Text3tf.value == "") {
+        combo3Row3b.innerHTML = combo3Text3tf.value;
+    } else if (combo3Text3tf.value) {
+        combo3Row3b.innerHTML = "&nbsp;" + combo3Text3tf.value;
+    }
+};
+const combo3Text3te = document.getElementById("combo3Text3te"); // Top combo bar end label text
+combo3Text3te.oninput = function() {
+    if (combo3Text3te.value == "") {
+        combo3Row3d.innerHTML = combo3Text3te.value;
+    } else if (combo3Text3te.value) {
+        combo3Row3d.innerHTML = "&nbsp;" + combo3Text3te.value;
+    }
+};
+const combo3Label3te = document.getElementById("combo3Label3te"); // Top combo bar end label click logic
+combo3Label3te.addEventListener("click", () => {
+    if (combo3Text3te.value == "") {
+        combo3Row3c.innerHTML = "";
+        combo3Row3d.innerHTML = "";
+    } else if (combo3Text3te.value) {
+        combo3Row3c.innerHTML = combo3Text3te.value + "&nbsp;";
+        combo3Text3te.value = "";
+        combo3Row3d.innerHTML = "";
+    }
+});
+const combo3Color3t = document.getElementById("combo3Color3t");
+combo3Color3t.oninput = function() {
+    combo3Row3b.style.backgroundColor = combo3Color3t.value;
+    combo3Row3c.style.backgroundColor = combo3Color3t.value;
+};
+const combo3Size3b = document.getElementById("combo3Size3b");
+combo3Size3b.oninput = function() {
+    combo3Row3y.style.width = ((Math.abs(combo3Size3b.value)) * .75) + "%";
+    combo3Row3z.style.width = ((75 - (Math.abs(combo3Size3b.value)) * .75))+ "%";
+};
+const combo3Text3bf = document.getElementById("combo3Text3bf"); // Bottom combo bar front label text
+combo3Text3bf.oninput = function() {
+    if (combo3Text3bf.value == "") {
+        combo3Row3x.innerHTML = combo3Text3bf.value;
+    } else if (combo3Text3bf.value) {
+        combo3Row3x.innerHTML = "&nbsp;" + combo3Text3bf.value;
+    }
+};
+const combo3Text3be = document.getElementById("combo3Text3be"); // Bottom combo bar end label text
+combo3Text3be.oninput = function() {
+    if (combo3Text3be.value == "") {
+        combo3Row3z.innerHTML = combo3Text3be.value;
+    } else if (combo3Text3be.value) {
+        combo3Row3z.innerHTML = "&nbsp;" + combo3Text3be.value;
+    }
+};
+const combo3Label3be = document.getElementById("combo3Label3be"); // Bottom combo bar end label click logic
+combo3Label3be.addEventListener("click", () => {
+    if (combo3Text3be.value == "") {
+        combo3Row3y.innerHTML = "";
+        combo3Row3z.innerHTML = "";
+    } else if (combo3Text3be.value) {
+        combo3Row3y.innerHTML = combo3Text3be.value + "&nbsp;";
+        combo3Text3be.value = "";
+        combo3Row3z.innerHTML = "";
+    }
+});
+const combo3Color3b = document.getElementById("combo3Color3b");
+combo3Color3b.oninput = function() {
+    combo3Row3x.style.backgroundColor = combo3Color3b.value;
+    combo3Row3y.style.backgroundColor = combo3Color3b.value;
+};
+
+// Row 4 Customization Logic
+const combo3Text4 = document.getElementById("combo3Text4"); // Combo bar title text (not caption)
+combo3Text4.oninput = function() {
+    if (combo3Text4.value == "") {
+        combo3Row4a.innerHTML = combo3Text4.value;
+    } else if (combo3Text4.value) {
+        combo3Row4a.innerHTML = combo3Text4.value;
+    }
+};
+const combo3Size4t = document.getElementById("combo3Size4t");
+combo3Size4t.oninput = function() {
+    combo3Row4c.style.width = ((Math.abs(combo3Size4t.value)) * .75) + "%";
+    combo3Row4d.style.width = ((75 - (Math.abs(combo3Size4t.value)) * .75))+ "%";
+};
+const combo3Text4tf = document.getElementById("combo3Text4tf"); // Top combo bar front label text
+combo3Text4tf.oninput = function() {
+    if (combo3Text4tf.value == "") {
+        combo3Row4b.innerHTML = combo3Text4tf.value;
+    } else if (combo3Text4tf.value) {
+        combo3Row4b.innerHTML = "&nbsp;" + combo3Text4tf.value;
+    }
+};
+const combo3Text4te = document.getElementById("combo3Text4te"); // Top combo bar end label text
+combo3Text4te.oninput = function() {
+    if (combo3Text4te.value == "") {
+        combo3Row4d.innerHTML = combo3Text4te.value;
+    } else if (combo3Text4te.value) {
+        combo3Row4d.innerHTML = "&nbsp;" + combo3Text4te.value;
+    }
+};
+const combo3Label4te = document.getElementById("combo3Label4te"); // Top combo bar end label click logic
+combo3Label4te.addEventListener("click", () => {
+    if (combo3Text4te.value == "") {
+        combo3Row4c.innerHTML = "";
+        combo3Row4d.innerHTML = "";
+    } else if (combo3Text4te.value) {
+        combo3Row4c.innerHTML = combo3Text4te.value + "&nbsp;";
+        combo3Text4te.value = "";
+        combo3Row4d.innerHTML = "";
+    }
+});
+const combo3Color4t = document.getElementById("combo3Color4t");
+combo3Color4t.oninput = function() {
+    combo3Row4b.style.backgroundColor = combo3Color4t.value;
+    combo3Row4c.style.backgroundColor = combo3Color4t.value;
+};
+const combo3Size4b = document.getElementById("combo3Size4b");
+combo3Size4b.oninput = function() {
+    combo3Row4y.style.width = ((Math.abs(combo3Size4b.value)) * .75) + "%";
+    combo3Row4z.style.width = ((75 - (Math.abs(combo3Size4b.value)) * .75))+ "%";
+};
+const combo3Text4bf = document.getElementById("combo3Text4bf"); // Bottom combo bar front label text
+combo3Text4bf.oninput = function() {
+    if (combo3Text4bf.value == "") {
+        combo3Row4x.innerHTML = combo3Text4bf.value;
+    } else if (combo3Text4bf.value) {
+        combo3Row4x.innerHTML = "&nbsp;" + combo3Text4bf.value;
+    }
+};
+const combo3Text4be = document.getElementById("combo3Text4be"); // Bottom combo bar end label text
+combo3Text4be.oninput = function() {
+    if (combo3Text4be.value == "") {
+        combo3Row4z.innerHTML = combo3Text4be.value;
+    } else if (combo3Text4be.value) {
+        combo3Row4z.innerHTML = "&nbsp;" + combo3Text4be.value;
+    }
+};
+const combo3Label4be = document.getElementById("combo3Label4be"); // Bottom combo bar end label click logic
+combo3Label4be.addEventListener("click", () => {
+    if (combo3Text4be.value == "") {
+        combo3Row4y.innerHTML = "";
+        combo3Row4z.innerHTML = "";
+    } else if (combo3Text4be.value) {
+        combo3Row4y.innerHTML = combo3Text4be.value + "&nbsp;";
+        combo3Text4be.value = "";
+        combo3Row4z.innerHTML = "";
+    }
+});
+const combo3Color4b = document.getElementById("combo3Color4b");
+combo3Color4b.oninput = function() {
+    combo3Row4x.style.backgroundColor = combo3Color4b.value;
+    combo3Row4y.style.backgroundColor = combo3Color4b.value;
+};
+
+// Row 5 Customization Logic
+const combo3Text5 = document.getElementById("combo3Text5"); // Combo bar title text (not caption)
+combo3Text5.oninput = function() {
+    if (combo3Text5.value == "") {
+        combo3Row5a.innerHTML = combo3Text5.value;
+    } else if (combo3Text5.value) {
+        combo3Row5a.innerHTML = combo3Text5.value;
+    }
+};
+const combo3Size5t = document.getElementById("combo3Size5t");
+combo3Size5t.oninput = function() {
+    combo3Row5c.style.width = ((Math.abs(combo3Size5t.value)) * .75) + "%";
+    combo3Row5d.style.width = ((75 - (Math.abs(combo3Size5t.value)) * .75))+ "%";
+};
+const combo3Text5tf = document.getElementById("combo3Text5tf"); // Top combo bar front label text
+combo3Text5tf.oninput = function() {
+    if (combo3Text5tf.value == "") {
+        combo3Row5b.innerHTML = combo3Text5tf.value;
+    } else if (combo3Text5tf.value) {
+        combo3Row5b.innerHTML = "&nbsp;" + combo3Text5tf.value;
+    }
+};
+const combo3Text5te = document.getElementById("combo3Text5te"); // Top combo bar end label text
+combo3Text5te.oninput = function() {
+    if (combo3Text5te.value == "") {
+        combo3Row5d.innerHTML = combo3Text5te.value;
+    } else if (combo3Text5te.value) {
+        combo3Row5d.innerHTML = "&nbsp;" + combo3Text5te.value;
+    }
+};
+const combo3Label5te = document.getElementById("combo3Label5te"); // Top combo bar end label click logic
+combo3Label5te.addEventListener("click", () => {
+    if (combo3Text5te.value == "") {
+        combo3Row5c.innerHTML = "";
+        combo3Row5d.innerHTML = "";
+    } else if (combo3Text5te.value) {
+        combo3Row5c.innerHTML = combo3Text5te.value + "&nbsp;";
+        combo3Text5te.value = "";
+        combo3Row5d.innerHTML = "";
+    }
+});
+const combo3Color5t = document.getElementById("combo3Color5t");
+combo3Color5t.oninput = function() {
+    combo3Row5b.style.backgroundColor = combo3Color5t.value;
+    combo3Row5c.style.backgroundColor = combo3Color5t.value;
+};
+const combo3Size5b = document.getElementById("combo3Size5b");
+combo3Size5b.oninput = function() {
+    combo3Row5y.style.width = ((Math.abs(combo3Size5b.value)) * .75) + "%";
+    combo3Row5z.style.width = ((75 - (Math.abs(combo3Size5b.value)) * .75))+ "%";
+};
+const combo3Text5bf = document.getElementById("combo3Text5bf"); // Bottom combo bar front label text
+combo3Text5bf.oninput = function() {
+    if (combo3Text5bf.value == "") {
+        combo3Row5x.innerHTML = combo3Text5bf.value;
+    } else if (combo3Text5bf.value) {
+        combo3Row5x.innerHTML = "&nbsp;" + combo3Text5bf.value;
+    }
+};
+const combo3Text5be = document.getElementById("combo3Text5be"); // Bottom combo bar end label text
+combo3Text5be.oninput = function() {
+    if (combo3Text5be.value == "") {
+        combo3Row5z.innerHTML = combo3Text5be.value;
+    } else if (combo3Text5be.value) {
+        combo3Row5z.innerHTML = "&nbsp;" + combo3Text5be.value;
+    }
+};
+const combo3Label5be = document.getElementById("combo3Label5be"); // Bottom combo bar end label click logic
+combo3Label5be.addEventListener("click", () => {
+    if (combo3Text5be.value == "") {
+        combo3Row5y.innerHTML = "";
+        combo3Row5z.innerHTML = "";
+    } else if (combo3Text5be.value) {
+        combo3Row5y.innerHTML = combo3Text5be.value + "&nbsp;";
+        combo3Text5be.value = "";
+        combo3Row5z.innerHTML = "";
+    }
+});
+const combo3Color5b = document.getElementById("combo3Color5b");
+combo3Color5b.oninput = function() {
+    combo3Row5x.style.backgroundColor = combo3Color5b.value;
+    combo3Row5y.style.backgroundColor = combo3Color5b.value;
+};
+
+
+// Generate Combo3 HTML Chart Logic
+const combo3Weight = document.getElementById("combo3Weight");
+const combo3Button = document.getElementById("combo3Button");
+const combo3Output = document.getElementById("combo3Output");
+combo3Button.addEventListener("click", () => {
+    if (rowsData23.value === "1") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + combo3capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row1a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1c.style.width + '; height: 31px;" height="31">' + combo3Row1c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1d.style.width + '; height: 31px;" height="31">' + combo3Row1d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1y.style.width + '; height: 31px;" height="31">' + combo3Row1y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1z.style.width + '; height: 31px;" height="31">' + combo3Row1z.innerHTML + '</td></tr></table> </td></tr>' + combo3srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        combo3Output.innerHTML = chartCode;
+        combo3Weight.textContent = Math.ceil(combo3Output.value.length / 1024) + 'KB';
+    } else if (rowsData23.value === "2") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + combo3capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row1a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1c.style.width + '; height: 31px;" height="31">' + combo3Row1c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1d.style.width + '; height: 31px;" height="31">' + combo3Row1d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1y.style.width + '; height: 31px;" height="31">' + combo3Row1y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1z.style.width + '; height: 31px;" height="31">' + combo3Row1z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row2a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color2t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row2b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color2t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2c.style.width + '; height: 31px;" height="31">' + combo3Row2c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2d.style.width + '; height: 31px;" height="31">' + combo3Row3d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color2b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row2x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color2b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2y.style.width + '; height: 31px;" height="31">' + combo3Row2y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2z.style.width + '; height: 31px;" height="31">' + combo3Row2z.innerHTML + '</td></tr></table> </td></tr>' + combo3srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        combo3Output.innerHTML = chartCode;
+        combo3Weight.textContent = Math.ceil(combo3Output.value.length / 1024) + 'KB';
+    } else if (rowsData23.value === "3") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + combo3capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row1a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1c.style.width + '; height: 31px;" height="31">' + combo3Row1c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1d.style.width + '; height: 31px;" height="31">' + combo3Row1d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1y.style.width + '; height: 31px;" height="31">' + combo3Row1y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1z.style.width + '; height: 31px;" height="31">' + combo3Row1z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row2a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color2t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row2b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color2t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2c.style.width + '; height: 31px;" height="31">' + combo3Row2c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2d.style.width + '; height: 31px;" height="31">' + combo3Row3d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color2b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row2x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color2b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2y.style.width + '; height: 31px;" height="31">' + combo3Row2y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2z.style.width + '; height: 31px;" height="31">' + combo3Row2z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row3a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color3t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row3b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color3t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3c.style.width + '; height: 31px;" height="31">' + combo3Row3c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3d.style.width + '; height: 31px;" height="31">' + combo3Row3d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color3b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row3x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color3b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3y.style.width + '; height: 31px;" height="31">' + combo3Row3y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3z.style.width + '; height: 31px;" height="31">' + combo3Row3z.innerHTML + '</td></tr></table> </td></tr>' + combo3srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        combo3Output.innerHTML = chartCode;
+        combo3Weight.textContent = Math.ceil(combo3Output.value.length / 1024) + 'KB';
+    } else if (rowsData23.value === "4") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + combo3capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row1a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1c.style.width + '; height: 31px;" height="31">' + combo3Row1c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1d.style.width + '; height: 31px;" height="31">' + combo3Row1d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1y.style.width + '; height: 31px;" height="31">' + combo3Row1y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1z.style.width + '; height: 31px;" height="31">' + combo3Row1z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row2a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color2t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row2b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color2t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2c.style.width + '; height: 31px;" height="31">' + combo3Row2c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2d.style.width + '; height: 31px;" height="31">' + combo3Row3d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color2b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row2x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color2b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2y.style.width + '; height: 31px;" height="31">' + combo3Row2y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2z.style.width + '; height: 31px;" height="31">' + combo3Row2z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row3a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color3t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row3b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color3t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3c.style.width + '; height: 31px;" height="31">' + combo3Row3c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3d.style.width + '; height: 31px;" height="31">' + combo3Row3d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color3b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row3x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color3b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3y.style.width + '; height: 31px;" height="31">' + combo3Row3y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3z.style.width + '; height: 31px;" height="31">' + combo3Row3z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row4a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color4t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row4b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color4t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row4c.style.width + '; height: 31px;" height="31">' + combo3Row4c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row4d.style.width + '; height: 31px;" height="31">' + combo3Row4d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color4b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row4x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color4b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row4y.style.width + '; height: 31px;" height="31">' + combo3Row4y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row4z.style.width + '; height: 31px;" height="31">' + combo3Row4z.innerHTML + '</td></tr></table> </td></tr>' + combo3srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        combo3Output.innerHTML = chartCode;
+        combo3Weight.textContent = Math.ceil(combo3Output.value.length / 1024) + 'KB';
+    } else if (rowsData23.value === "5") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + combo3capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row1a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1c.style.width + '; height: 31px;" height="31">' + combo3Row1c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1d.style.width + '; height: 31px;" height="31">' + combo3Row1d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1y.style.width + '; height: 31px;" height="31">' + combo3Row1y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1z.style.width + '; height: 31px;" height="31">' + combo3Row1z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row2a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color2t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row2b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color2t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2c.style.width + '; height: 31px;" height="31">' + combo3Row2c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2d.style.width + '; height: 31px;" height="31">' + combo3Row3d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color2b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row2x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color2b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2y.style.width + '; height: 31px;" height="31">' + combo3Row2y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row2z.style.width + '; height: 31px;" height="31">' + combo3Row2z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row3a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color3t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row3b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color3t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3c.style.width + '; height: 31px;" height="31">' + combo3Row3c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3d.style.width + '; height: 31px;" height="31">' + combo3Row3d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color3b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row3x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color3b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3y.style.width + '; height: 31px;" height="31">' + combo3Row3y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row3z.style.width + '; height: 31px;" height="31">' + combo3Row3z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row4a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color4t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row4b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color4t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row4c.style.width + '; height: 31px;" height="31">' + combo3Row4c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row4d.style.width + '; height: 31px;" height="31">' + combo3Row4d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color4b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row4x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color4b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row4y.style.width + '; height: 31px;" height="31">' + combo3Row4y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row4z.style.width + '; height: 31px;" height="31">' + combo3Row4z.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="padding: 40px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row5a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color5t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row5b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color5t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row5c.style.width + '; height: 31px;" height="31">' + combo3Row5c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row5d.style.width + '; height: 31px;" height="31">' + combo3Row5d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile"> <tr> <td align="left" style="background-color: ' + combo3Color5b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row5x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color5b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row5y.style.width + '; height: 31px;" height="31">' + combo3Row5y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row5z.style.width + '; height: 31px;" height="31">' + combo3Row5z.innerHTML + '</td></tr></table> </td></tr><tr>' + combo3srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        combo3Output.innerHTML = chartCode;
+        combo3Weight.textContent = Math.ceil(combo3Output.value.length / 1024) + 'KB';
+    }
+});
+combo3Output.addEventListener("click", () => {
+    combo3Output.select();
+});
