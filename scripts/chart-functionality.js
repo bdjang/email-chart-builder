@@ -9,10 +9,10 @@ selectElement.addEventListener("change", () => {
             charts[i].style.display = "none";
             charts[selectElement.selectedIndex - 1].style.display = "block";
         }
-        if (selectElement.selectedIndex >= 18 && selectElement.selectedIndex < 23) {
+        if (selectElement.selectedIndex >= 19 && selectElement.selectedIndex < 24) {
             chartEmoji.style.transform = "rotate(0deg)"; // For vertical bar charts
             chartEmoji.style.marginRight = "13px";
-        } else if (selectElement.selectedIndex < 18) {
+        } else if (selectElement.selectedIndex < 19) {
             chartEmoji.style.transform = "rotate(90deg)"; // For horizontal bar charts
             chartEmoji.style.marginRight = "19px";
         }
@@ -57,6 +57,9 @@ const combo1BarsNodes3 = document.querySelectorAll("tr.combo1Bars table.chartMob
 const combo2BarsTNodes1 = document.querySelectorAll("tr.combo2BarsT table.chartMobile tr:first-of-type td:nth-of-type(1)"); // Targets combo bar II title text
 const combo2BarsTNodes2 = document.querySelectorAll("tr.combo2BarsT table.chartMobile td:nth-of-type(2)"); // Targets top row 2nd td cell
 const combo2BarsBNodes2 = document.querySelectorAll("tr.combo2BarsB table.chartMobile td:nth-of-type(2)"); // Targets bottom row 2nd td cell
+const combo3BarsTNodes1 = document.querySelectorAll("tr.combo3BarsT table.chartMobile tr:first-of-type td:nth-of-type(1)");
+const combo3BarsTNodes3 = document.querySelectorAll("tr.combo3BarsT table.chartMobile td:nth-of-type(3)");
+const combo3BarsBNodes3 = document.querySelectorAll("tr.combo3BarsB table.chartMobile td:nth-of-type(3)");
 const bodyEl = document.querySelectorAll("body");
 
 window.addEventListener("load", () => { // Adds "lightStyles" class to all relevant elements
@@ -98,6 +101,8 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     combo1Source.classList.add("lightStylesSRC");
     combo2Cap.classList.add("lightStyles");
     combo2Source.classList.add("lightStylesSRC");
+    combo3Cap.classList.add("lightStyles");
+    combo3Source.classList.add("lightStylesSRC");
     stacked1Cap.classList.add("lightStyles");
     stacked1Source.classList.add("lightStylesSRC");
     stacked2Cap.classList.add("lightStyles");
@@ -171,6 +176,9 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
         combo2BarsTNodes1[z].classList.add("lightStyles");
         combo2BarsTNodes2[z].classList.add("lightStyles");
         combo2BarsBNodes2[z].classList.add("lightStyles");
+        combo3BarsTNodes1[z].classList.add("lightStyles");
+        combo3BarsTNodes3[z].classList.add("lightStyles");
+        combo3BarsBNodes3[z].classList.add("lightStyles");
     }
 });
 
@@ -219,6 +227,8 @@ document.addEventListener("keydown", () => {
             combo1Source.classList.replace("lightStylesSRC", "darkStyles");
             combo2Cap.classList.replace("lightStyles", "darkStyles");
             combo2Source.classList.replace("lightStylesSRC", "darkStyles");
+            combo3Cap.classList.replace("lightStyles", "darkStyles");
+            combo3Source.classList.replace("lightStylesSRC", "darkStyles");
             stacked1Cap.classList.replace("lightStyles", "darkStyles");
             stacked1Source.classList.replace("lightStylesSRC", "darkStyles");
             stacked2Cap.classList.replace("lightStyles", "darkStyles");
@@ -298,6 +308,9 @@ document.addEventListener("keydown", () => {
                 combo2BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
                 combo2BarsTNodes2[z].classList.replace("lightStyles", "darkStyles");
                 combo2BarsBNodes2[z].classList.replace("lightStyles", "darkStyles");
+                combo3BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
+                combo3BarsTNodes3[z].classList.replace("lightStyles", "darkStyles");
+                combo3BarsBNodes3[z].classList.replace("lightStyles", "darkStyles");
             }
             if (lightMode.style.display == "none") {
                 lightMode.style.display = "inline-block";
@@ -343,6 +356,8 @@ document.addEventListener("keydown", () => {
             combo1Source.classList.replace("darkStyles", "lightStylesSRC");
             combo2Cap.classList.replace("darkStyles", "lightStyles");
             combo2Source.classList.replace("darkStyles", "lightStylesSRC");
+            combo3Cap.classList.replace("darkStyles", "lightStyles");
+            combo3Source.classList.replace("darkStyles", "lightStylesSRC");
             stacked1Cap.classList.replace("darkStyles", "lightStyles");
             stacked1Source.classList.replace("darkStyles", "lightStylesSRC");
             stacked2Cap.classList.replace("darkStyles", "lightStyles");
@@ -422,6 +437,9 @@ document.addEventListener("keydown", () => {
                 combo2BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
                 combo2BarsTNodes2[z].classList.replace("darkStyles", "lightStyles");
                 combo2BarsBNodes2[z].classList.replace("darkStyles", "lightStyles");
+                combo3BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
+                combo3BarsTNodes3[z].classList.replace("darkStyles", "lightStyles");
+                combo3BarsBNodes3[z].classList.replace("darkStyles", "lightStyles");
             }
             if (lightMode.style.display == "none") {
                 lightMode.style.display = "inline-block";
@@ -500,6 +518,10 @@ darkMode.addEventListener("click", () => {
     combo2Cap.classList.replace("lightStyles", "darkStyles");
     combo2Source.classList.toggle("darkStyles");
     combo2Source.classList.replace("lightStylesSRC", "darkStyles");
+    combo3Cap.classList.toggle("darkStyles");
+    combo3Cap.classList.replace("lightStyles", "darkStyles");
+    combo3Source.classList.toggle("darkStyles");
+    combo3Source.classList.replace("lightStylesSRC", "darkStyles");
     stacked1Cap.classList.toggle("darkStyles");
     stacked1Cap.classList.replace("lightStyles", "darkStyles");
     stacked1Source.classList.toggle("darkStyles");
@@ -645,6 +667,12 @@ darkMode.addEventListener("click", () => {
         combo2BarsTNodes2[z].classList.replace("lightStyles", "darkStyles");
         combo2BarsBNodes2[z].classList.toggle("darkStyles");
         combo2BarsBNodes2[z].classList.replace("lightStyles", "darkStyles");
+        combo3BarsTNodes1[z].classList.toggle("darkStyles");
+        combo3BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
+        combo3BarsTNodes3[z].classList.toggle("darkStyles");
+        combo3BarsTNodes3[z].classList.replace("lightStyles", "darkStyles");
+        combo3BarsBNodes3[z].classList.toggle("darkStyles");
+        combo3BarsBNodes3[z].classList.replace("lightStyles", "darkStyles");
     }
     darkMode.style.display = "none";
     lightMode.style.display = "inline-block";
@@ -683,6 +711,8 @@ lightMode.addEventListener("click", () => {
     combo1Source.classList.replace("darkStyles", "lightStylesSRC");
     combo2Cap.classList.replace("darkStyles", "lightStyles");
     combo2Source.classList.replace("darkStyles", "lightStylesSRC");
+    combo3Cap.classList.replace("darkStyles", "lightStyles");
+    combo3Source.classList.replace("darkStyles", "lightStylesSRC");
     stacked1Cap.classList.replace("darkStyles", "lightStyles");
     stacked1Source.classList.replace("darkStyles", "lightStylesSRC");
     stacked2Cap.classList.replace("darkStyles", "lightStyles");
@@ -762,6 +792,9 @@ lightMode.addEventListener("click", () => {
         combo2BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
         combo2BarsTNodes2[z].classList.replace("darkStyles", "lightStyles");
         combo2BarsBNodes2[z].classList.replace("darkStyles", "lightStyles");
+        combo3BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
+        combo3BarsTNodes3[z].classList.replace("darkStyles", "lightStyles");
+        combo3BarsBNodes3[z].classList.replace("darkStyles", "lightStyles");
     }
     darkMode.style.display = "inline-block";
     lightMode.style.display = "none";
