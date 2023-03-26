@@ -43,6 +43,7 @@
             <option value="horiz4Chart">Type: Horizontal IV</option>
             <option value="com1Chart">Type: Combo I</option>
             <option value="com2Chart">Type: Combo II</option>
+            <option value="com3Chart">Type: Combo III</option>
             <option value="st1Chart">Type: Stacked I</option>
             <option value="st2Chart">Type: Stacked II</option>
             <option value="st3Chart">Type: Stacked III</option>
@@ -1784,8 +1785,8 @@
                 </fieldset>
                 <fieldset class="combo2Controls styleControls">
                     <legend>Row #1</legend>
-                    <label for="combo2Text1">Data Label</label>
-                    <input type="text" size="10" value="Data bar #1" name="combo2Text1" id="combo2Text1">
+                    <label for="combo2Text1">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #1" name="combo2Text1" id="combo2Text1">
                     <br />
                     <label for="combo2Size1t">Bar Size</label>
                     <input type="number" size="6" value="41" max="100" min="0" name="combo2Size1t" id="combo2Size1t">
@@ -1803,8 +1804,8 @@
                 </fieldset>
                 <fieldset class="combo2Controls styleControls">
                     <legend>Row #2</legend>
-                    <label for="combo2Text2">Data Label</label>
-                    <input type="text" size="10" value="Data bar #2" name="combo2Text2" id="combo2Text2">
+                    <label for="combo2Text2">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #2" name="combo2Text2" id="combo2Text2">
                     <br />
                     <label for="combo2Size2t">Bar Size</label>
                     <input type="number" size="6" value="31" max="100" min="0" name="combo2Size2t" id="combo2Size2t">
@@ -1822,8 +1823,8 @@
                 </fieldset>
                 <fieldset class="combo2Controls styleControls" style="display: none;">
                     <legend>Row #3</legend>
-                    <label for="combo2Text3">Data Label</label>
-                    <input type="text" size="10" value="Data bar #3" name="combo2Text3" id="combo2Text3">
+                    <label for="combo2Text3">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #3" name="combo2Text3" id="combo2Text3">
                     <br />
                     <label for="combo2Size3t">Bar Size</label>
                     <input type="number" size="6" value="29" max="100" min="0" name="combo2Size3t" id="combo2Size3t">
@@ -1841,8 +1842,8 @@
                 </fieldset>
                 <fieldset class="combo2Controls styleControls" style="display: none;">
                     <legend>Row #4</legend>
-                    <label for="combo2Text4">Data Label</label>
-                    <input type="text" size="10" value="Data bar #4" name="combo2Text4" id="combo2Text4">
+                    <label for="combo2Text4">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #4" name="combo2Text4" id="combo2Text4">
                     <br />
                     <label for="combo2Size4t">Bar Size</label>
                     <input type="number" size="6" value="88" max="100" min="0" name="combo2Size4t" id="combo2Size4t">
@@ -1860,8 +1861,8 @@
                 </fieldset>
                 <fieldset class="combo2Controls styleControls" style="display: none;">
                     <legend>Row #5</legend>
-                    <label for="combo2Text5">Data Label</label>
-                    <input type="text" size="10" value="Data bar #5" name="combo2Text5" id="combo2Text5">
+                    <label for="combo2Text5">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #5" name="combo2Text5" id="combo2Text5">
                     <br />
                     <label for="combo2Size5t">Bar Size</label>
                     <input type="number" size="6" value="34" max="100" min="0" name="combo2Size5t" id="combo2Size5t">
@@ -1884,6 +1885,307 @@
         </section>
     </div>
     <!-- end combo bar chart ii -->
+
+    <!-- COMBO BAR CHART III -->
+    <div class="charts" id="com3Chart" align="center" style="display: none;">
+        <div style="font-family: Courier, serif; text-align: center;"><h1>Combo Bar Chart III</h1></div>
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="previewBox">
+
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                        <!-- CHART TITLE TEXT -->
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; padding-bottom: 30px; text-align: left;" id="combo3Cap">Optional Chart Title</caption>
+                        <!-- end chart title text -->
+
+                        <!-- DATA BAR #1 -->
+                        <tr class="combo3BarsT">
+                            <td align="left" style="padding: 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="3" id="combo3Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">Combo bar #1</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo3Row1b" align="left" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar A</td>
+                                        <td id="combo3Row1c" align="right" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 41%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row1d" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 34%; height: 31px;" height="31">&nbsp;$83M</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo3BarsB">
+                            <td style="padding: 2px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo3Row1x" align="left" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar B</td>
+                                        <td id="combo3Row1y" align="right" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 51%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row1z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 24%; height: 31px;" height="31">&nbsp;$103M</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #1 -->
+
+                        <!-- DATA BAR #2 -->
+                        <tr class="combo3BarsT">
+                            <td align="left" style="padding: 40px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="3" id="combo3Row2a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">Combo bar #2</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo3Row2b" align="left" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar A</td>
+                                        <td id="combo3Row2c" align="right" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 31%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row2d" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 44%; height: 31px;" height="31">&nbsp;€14M</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo3BarsB">
+                            <td style="padding: 2px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo3Row2x" align="left" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar B</td>
+                                        <td id="combo3Row2y" align="right" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 61%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row2z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 14%; height: 31px;" height="31">&nbsp;€31M</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #2 -->
+
+                        <!-- DATA BAR #3 -->
+                        <tr class="combo3BarsT" style="display: none;">
+                            <td align="left" style="padding: 40px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="3" id="combo3Row3a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">Combo bar #3</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo3Row3b" align="left" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar A</td>
+                                        <td id="combo3Row3c" align="right" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 29%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row3d" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 46%; height: 31px;" height="31">&nbsp;¥10M</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo3BarsB" style="display: none;">
+                            <td style="padding: 2px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo3Row3x" align="left" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar B</td>
+                                        <td id="combo3Row3y" align="right" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 26%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row3z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 49%; height: 31px;" height="31">&nbsp;¥9.5M</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #3 -->
+
+                        <!-- DATA BAR #4 -->
+                        <tr class="combo3BarsT" style="display: none;">
+                            <td align="left" style="padding: 40px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="3" id="combo3Row4a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">Combo bar #4</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo3Row4b" align="left" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar A</td>
+                                        <td id="combo3Row4c" align="right" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 63%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row4d" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 12%; height: 31px;" height="31">&nbsp;£61M</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo3BarsB" style="display: none;">
+                            <td style="padding: 2px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo3Row4x" align="left" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar B</td>
+                                        <td id="combo3Row4y" align="right" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 37.5%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row4z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 37.5%; height: 31px;" height="31">&nbsp;£43M</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #4 -->
+
+                        <!-- DATA BAR #5 -->
+                        <tr class="combo3BarsT" style="display: none;">
+                            <td align="left" style="padding: 40px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td colspan="3" id="combo3Row5a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">Combo bar #5</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="combo3Row5b" align="left" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar A</td>
+                                        <td id="combo3Row5c" align="right" style="background-color: #ffdf29; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 34%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row5d" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 41%; height: 31px;" height="31">&nbsp;A$7.3B</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="combo3BarsB" style="display: none;">
+                            <td style="padding: 2px 0 0 0;">
+                                <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartMobile">
+                                    <tr>
+                                        <td id="combo3Row5x" align="left" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">&nbsp;Data bar B</td>
+                                        <td id="combo3Row5y" align="right" style="background-color: #ffa500; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 14%; height: 31px;" height="31"></td>
+                                        <td id="combo3Row5z" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 61%; height: 31px;" height="31">&nbsp;A$4.9B</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end data bar #5 -->
+
+                        <!-- CHART SOURCE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;" id="combo3Source">Optional Source: Company A, Jan. 2023</td>
+                        </tr>
+                        <!-- end chart source text -->
+
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+        <section class="chartBuild">
+            <div class="scrollBox">
+                <fieldset class="dataCheckboxes chartLegend">
+                    <legend>Chart Customization</legend>
+                    <label for="rowsData23">Select # of Data Rows</label>
+                    <input type="number" size="2" value="2" max="5" min="1" name="rowsData23" id="rowsData23">
+                    <br />
+                    <label for="combo3capText">Bar Chart Title</label>
+                    <input type="text" size="35" value="Optional Chart Title" name="combo3capText" id="combo3capText">
+                    <br />
+                    <label for="combo3srcText">Bar Chart Source</label>
+                    <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="combo3srcText" id="combo3srcText">
+                    <small>📌 Click on <span style="font-weight: 600;">"End Data Label"</span> to move the label text into the data bar. Click again to delete the inside label text.</small>
+                </fieldset>
+                <fieldset class="combo3Controls styleControls">
+                    <legend>Row #1</legend>
+                    <label for="combo3Text1">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #1" name="combo3Text1" id="combo3Text1">
+                    <br />
+                    <label for="combo3Text1tf" id="combo3Label1tf">Front Label</label>
+                    <input type="text" size="10" value="Data bar A" name="combo3Text1tf" id="combo3Text1tf">
+                    <label for="combo3Size1t">Size</label>
+                    <input type="number" size="6" value="55" max="100" min="0" name="combo3Size1t" id="combo3Size1t">
+                    <label for="combo3Color1t">Color</label>
+                    <input type="text" size="6" value="#ffdf29" name="combo3Color1t" id="combo3Color1t">
+                    <label for="combo3Text1te" id="combo3Label1te">End Label</label>
+                    <input type="text" size="10" value="$83M" name="combo3Text1te" id="combo3Text1te">
+                    <br />
+                    <label for="combo3Text1bf" id="combo3Label1bf">Front Label</label>
+                    <input type="text" size="10" value="Data bar B" name="combo3Text1bf" id="combo3Text1bf">
+                    <label for="combo3Size1b">Size</label>
+                    <input type="number" size="6" value="68" max="100" min="0" name="combo3Size1b" id="combo3Size1b">
+                    <label for="combo3Color1b">Color</label>
+                    <input type="text" size="6" value="#ffa500" name="combo3Color1b" id="combo3Color1b">
+                    <label for="combo3Text1be" id="combo3Label1be">End Label</label>
+                    <input type="text" size="10" value="$103M" name="combo3Text1be" id="combo3Text1be">
+                </fieldset>
+                <fieldset class="combo3Controls styleControls">
+                    <legend>Row #2</legend>
+                    <label for="combo3Text2">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #2" name="combo3Text2" id="combo3Text2">
+                    <br />
+                    <label for="combo3Text2tf" id="combo3Label2tf">Front Label</label>
+                    <input type="text" size="10" value="Data bar A" name="combo3Text2tf" id="combo3Text2tf">
+                    <label for="combo3Size2t">Size</label>
+                    <input type="number" size="6" value="41" max="100" min="0" name="combo3Size2t" id="combo3Size2t">
+                    <label for="combo3Color2t">Color</label>
+                    <input type="text" size="6" value="#ffdf29" name="combo3Color2t" id="combo3Color2t">
+                    <label for="combo3Text2te" id="combo3Label2te">End Label</label>
+                    <input type="text" size="10" value="€14M" name="combo3Text2te" id="combo3Text2te">
+                    <br />
+                    <label for="combo3Text2bf" id="combo3Label2bf">Front Label</label>
+                    <input type="text" size="10" value="Data bar B" name="combo3Text2bf" id="combo3Text2bf">
+                    <label for="combo3Size2b">Size</label>
+                    <input type="number" size="6" value="81" max="100" min="0" name="combo3Size2b" id="combo3Size2b">
+                    <label for="combo3Color2b">Color</label>
+                    <input type="text" size="6" value="#ffa500" name="combo3Color2b" id="combo3Color2b">
+                    <label for="combo3Text2be" id="combo3Label2be">End Label</label>
+                    <input type="text" size="10" value="€31M" name="combo3Text2be" id="combo3Text2be">
+                </fieldset>
+                <fieldset class="combo3Controls styleControls" style="display: none;">
+                    <legend>Row #3</legend>
+                    <label for="combo3Text3">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #3" name="combo3Text3" id="combo3Text3">
+                    <br />
+                    <label for="combo3Text3tf" id="combo3Label3tf">Front Label</label>
+                    <input type="text" size="10" value="Data bar A" name="combo3Text3tf" id="combo3Text3tf">
+                    <label for="combo3Size3t">Size</label>
+                    <input type="number" size="6" value="39" max="100" min="0" name="combo3Size3t" id="combo3Size3t">
+                    <label for="combo3Color3t">Color</label>
+                    <input type="text" size="6" value="#ffdf29" name="combo3Color3t" id="combo3Color3t">
+                    <label for="combo3Text3te" id="combo3Label3te">End Label</label>
+                    <input type="text" size="10" value="¥10M" name="combo3Text3te" id="combo3Text3te">
+                    <br />
+                    <label for="combo3Text3bf" id="combo3Label3bf">Front Label</label>
+                    <input type="text" size="10" value="Data bar B" name="combo3Text3bf" id="combo3Text3bf">
+                    <label for="combo3Size3b">Size</label>
+                    <input type="number" size="6" value="34" max="100" min="0" name="combo3Size3b" id="combo3Size3b">
+                    <label for="combo3Color3b">Color</label>
+                    <input type="text" size="6" value="#ffa500" name="combo3Color3b" id="combo3Color3b">
+                    <label for="combo3Text3be" id="combo3Label3be">End Label</label>
+                    <input type="text" size="10" value="¥9.5M" name="combo3Text3be" id="combo3Text3be">
+                </fieldset>
+                <fieldset class="combo3Controls styleControls" style="display: none;">
+                    <legend>Row #4</legend>
+                    <label for="combo3Text4">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #4" name="combo3Text4" id="combo3Text4">
+                    <br />
+                    <label for="combo3Text4tf" id="combo3Label4tf">Front Label</label>
+                    <input type="text" size="10" value="Data bar A" name="combo3Text4tf" id="combo3Text4tf">
+                    <label for="combo3Size4t">Size</label>
+                    <input type="number" size="6" value="84" max="100" min="0" name="combo3Size4t" id="combo3Size4t">
+                    <label for="combo3Color4t">Color</label>
+                    <input type="text" size="6" value="#ffdf29" name="combo3Color4t" id="combo3Color4t">
+                    <label for="combo3Text4te" id="combo3Label4te">End Label</label>
+                    <input type="text" size="10" value="£61M" name="combo3Text4te" id="combo3Text4te">
+                    <br />
+                    <label for="combo3Text4bf" id="combo3Label4bf">Front Label</label>
+                    <input type="text" size="10" value="Data bar B" name="combo3Text4bf" id="combo3Text4bf">
+                    <label for="combo3Size4b">Size</label>
+                    <input type="number" size="6" value="50" max="100" min="0" name="combo3Size4b" id="combo3Size4b">
+                    <label for="combo3Color4b">Color</label>
+                    <input type="text" size="6" value="#ffa500" name="combo3Color4b" id="combo3Color4b">
+                    <label for="combo3Text4be" id="combo3Label4be">End Label</label>
+                    <input type="text" size="10" value="£43M" name="combo3Text4be" id="combo3Text4be">
+                </fieldset>
+                <fieldset class="combo3Controls styleControls" style="display: none;">
+                    <legend>Row #5</legend>
+                    <label for="combo3Text5">Top Label</label>
+                    <input type="text" size="10" value="Combo bar #5" name="combo3Text5" id="combo3Text5">
+                    <br />
+                    <label for="combo3Text5tf" id="combo3Label5tf">Front Label</label>
+                    <input type="text" size="10" value="Data bar A" name="combo3Text5tf" id="combo3Text5tf">
+                    <label for="combo3Size5t">Size</label>
+                    <input type="number" size="6" value="45" max="100" min="0" name="combo3Size5t" id="combo3Size5t">
+                    <label for="combo3Color5t">Color</label>
+                    <input type="text" size="6" value="#ffdf29" name="combo3Color5t" id="combo3Color5t">
+                    <label for="combo3Text5te" id="combo3Label5te">End Label</label>
+                    <input type="text" size="10" value="A$7.3B" name="combo3Text5te" id="combo3Text5te">
+                    <br />
+                    <label for="combo3Text5bf" id="combo3Label5bf">Front Label</label>
+                    <input type="text" size="10" value="Data bar B" name="combo3Text5bf" id="combo3Text5bf">
+                    <label for="combo3Size5b">Size</label>
+                    <input type="number" size="6" value="19" max="100" min="0" name="combo3Size5b" id="combo3Size5b">
+                    <label for="combo3Color5b">Color</label>
+                    <input type="text" size="6" value="#ffa500" name="combo3Color5b" id="combo3Color5b">
+                    <label for="combo3Text5be" id="combo3Label5be">End Label</label>
+                    <input type="text" size="10" value="A$4.9B" name="combo3Text5be" id="combo3Text5be">
+                </fieldset>
+            </div>
+            <button type="button" id="combo3Button">Generate Email Chart Code</button>
+            <textarea name="combo3Output" id="combo3Output" readonly></textarea>
+            <label for="combo3Output">⬆️Estimated HTML Chart Weight: <span id="combo3Weight">___</span></label>
+        </section>
+    </div>
+    <!-- end combo bar chart iii -->
 
     <!-- STACKED BAR CHART I -->
     <div class="charts" id="st1Chart" align="center" style="display: none;">
