@@ -39,7 +39,7 @@ ul li { margin: 8px 0; }
 .prog1Controls input:first-of-type, .prog2Controls input:first-of-type, .prog3Controls input:first-of-type, .prog4Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
 .stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .stacked4Controls label, .combo1Controls label, .combo2Controls label, .combo3Controls label, .prog1Controls label, .prog2Controls label, .prog3Controls label, .prog4Controls label { display: inline-block; margin: 10px 10px 0 0; }
 .prog1Controls label[for*="prog1Size"], .prog2Controls label[for*="prog2Size"], .prog3Controls label[for*="prog3Size"], .prog4Controls label[for*="prog4Size"] { margin: 10px 20px 0 0; } /* Targets 'Progress Bar Size' right spacing */
-.stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .combo2Controls input, .combo3Controls input, .prog1Controls input, .prog2Controls input, .prog3Controls input, .prog4Controls input { margin: 0 22px 0 0; width: 50px; }
+.stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .combo2Controls input, .combo3Controls input, .prog1Controls input, .prog2Controls input, .prog3Controls input, .prog4Controls input { margin: 0 20px 0 0; width: 50px; }
 .splitControls input, .dataCheckboxes label, .vert5Controls label { margin: 10px 10px 0 0; }
 .splitControls input { width: 50px; }
 .vert5Controls label { display: inline-block; }
