@@ -22,7 +22,6 @@ ul li { margin: 8px 0; }
 .scrollBox { background-color: #f8f8f8; border: 1px solid #c4c4c4; height: 300px; width: 700px; margin: 0 auto; padding: 10px 0; text-align: left; overflow-x: hidden; overflow-y: auto; }
 .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
 .dataCheckboxes label { display: inline-block; width: 150px; }
-.dataCheckboxes label[for="rowsData14"], .dataCheckboxes label[for="rowsData15"], .dataCheckboxes label[for="rowsData16"], .dataCheckboxes label[for="rowsData17"], .dataCheckboxes label[for="rowsData18"] { width: 160px; } /* Vertical Bar Charts Select Label */
 .dataCheckboxes label[for="horiz3Div"], .dataCheckboxes label[for="horiz4Div"], .dataCheckboxes label[for="combo1Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III and IV and Combo Chart I 'Add bar dividers' */
 .dataCheckboxes small { display: block; margin: 10px 0; }
 .horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label, .splitControls label { display: inline-block; width: 110px; }
@@ -39,7 +38,8 @@ ul li { margin: 8px 0; }
 .prog1Controls input:first-of-type, .prog2Controls input:first-of-type, .prog3Controls input:first-of-type, .prog4Controls input:first-of-type { width: 110px; } /* Targets Row # Data Input */
 .stacked1Controls label, .stacked2Controls label, .stacked3Controls label, .stacked4Controls label, .combo1Controls label, .combo2Controls label, .combo3Controls label, .prog1Controls label, .prog2Controls label, .prog3Controls label, .prog4Controls label { display: inline-block; margin: 10px 10px 0 0; }
 .prog1Controls label[for*="prog1Size"], .prog2Controls label[for*="prog2Size"], .prog3Controls label[for*="prog3Size"], .prog4Controls label[for*="prog4Size"] { margin: 10px 20px 0 0; } /* Targets 'Progress Bar Size' right spacing */
-.stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .combo2Controls input, .combo3Controls input, .prog1Controls input, .prog2Controls input, .prog3Controls input, .prog4Controls input { margin: 0 20px 0 0; width: 50px; }
+.stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .combo2Controls input, .prog1Controls input, .prog2Controls input, .prog3Controls input, .prog4Controls input { margin: 0 22px 0 0; width: 50px; }
+.combo3Controls input { margin: 0 18px 0 0; width: 50px; } /* Adjusts Combo Chart III input spacing; Required for mobile view */
 .splitControls input, .dataCheckboxes label, .vert5Controls label { margin: 10px 10px 0 0; }
 .splitControls input { width: 50px; }
 .vert5Controls label { display: inline-block; }
