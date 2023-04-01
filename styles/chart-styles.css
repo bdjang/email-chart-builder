@@ -17,6 +17,7 @@ ul li { margin: 8px 0; }
 
 /* SITE STYLES */
 #info { margin: 0 auto 40px; width: 700px; }
+#info h3 + p code { color #0a47ff; font-weight: 300; } /* Targets <img> text */
 #chartEmoji { float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: transform 250ms ease-out, margin 250ms ease-out; -ms-transition: transform 250ms ease-out, margin 250ms ease-out; -moz-transition: transform 250ms ease-out, margin 250ms ease-out; transition: transform 250ms ease-out, margin 250ms ease-out; }
 #chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
 .scrollBox { background-color: #f8f8f8; border: 1px solid #c4c4c4; height: 300px; width: 700px; margin: 0 auto; padding: 10px 0; text-align: left; overflow-x: hidden; overflow-y: auto; }
