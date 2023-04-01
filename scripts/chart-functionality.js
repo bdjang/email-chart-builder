@@ -61,6 +61,9 @@ const combo3BarsTNodes1 = document.querySelectorAll("tr.combo3BarsT table.chartM
 const combo3BarsTNodes3 = document.querySelectorAll("tr.combo3BarsT table.chartMobile td:nth-of-type(3)");
 const combo3BarsBNodes3 = document.querySelectorAll("tr.combo3BarsB table.chartMobile td:nth-of-type(3)");
 const bodyEl = document.querySelectorAll("body");
+const anchorTags = document.querySelectorAll("a"); // Targets all anchor link tags
+const anchorCode = document.querySelectorAll("div#readme p code"); // Targets code element in anchor tag
+const codeText = document.querySelectorAll("code");
 
 window.addEventListener("load", () => { // Adds "lightStyles" class to all relevant elements
     document.body.classList.add("lightStyles");
@@ -319,6 +322,13 @@ document.addEventListener("keydown", () => {
                 lightMode.style.display = "none";
                 darkMode.style.display = "inline-block";
             }
+            for (var a = 0; a < codeText.length; a++) {
+                codeText[a].style.color = "#ff2424";
+            }
+            for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
+                anchorTags[b].style.color = "#0099ff";
+                anchorCode[0].style.color = "#0099ff";
+            }
         }
     } else if (event.keyCode == 68 && document.body.classList.contains("darkStyles")) {
         if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
@@ -447,6 +457,13 @@ document.addEventListener("keydown", () => {
             } else if (lightMode.style.display == "inline-block") {
                 lightMode.style.display = "none";
                 darkMode.style.display = "inline-block";
+            }
+            for (var a = 0; a < codeText.length; a++) {
+                codeText[a].style.color = "#de0d0d";
+            }
+            for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
+                anchorTags[b].style.color = "#0a47ff";
+                anchorCode[0].style.color = "#0a47ff";
             }
         }
     }
@@ -674,6 +691,13 @@ darkMode.addEventListener("click", () => {
         combo3BarsBNodes3[z].classList.toggle("darkStyles");
         combo3BarsBNodes3[z].classList.replace("lightStyles", "darkStyles");
     }
+    for (var a = 0; a < codeText.length; a++) {
+        codeText[a].style.color = "#ff2424";
+    }
+    for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
+        anchorTags[b].style.color = "#0099ff";
+        anchorCode[0].style.color = "#0099ff";
+    }
     darkMode.style.display = "none";
     lightMode.style.display = "inline-block";
 });
@@ -795,6 +819,13 @@ lightMode.addEventListener("click", () => {
         combo3BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
         combo3BarsTNodes3[z].classList.replace("darkStyles", "lightStyles");
         combo3BarsBNodes3[z].classList.replace("darkStyles", "lightStyles");
+    }
+    for (var a = 0; a < codeText.length; a++) {
+        codeText[a].style.color = "#de0d0d";
+    }
+    for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
+        anchorTags[b].style.color = "#0a47ff";
+        anchorCode[0].style.color = "#0a47ff";
     }
     darkMode.style.display = "inline-block";
     lightMode.style.display = "none";
