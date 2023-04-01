@@ -63,7 +63,7 @@ const combo3BarsBNodes3 = document.querySelectorAll("tr.combo3BarsB table.chartM
 const bodyEl = document.querySelectorAll("body");
 const anchorTags = document.querySelectorAll("a"); // Targets all anchor link tags
 const anchorCode = document.querySelectorAll("div#readme p code"); // Targets code element in anchor tag
-const codeText = document.querySelectorAll("code");
+const codeText = document.querySelectorAll("div#readme ul li code");
 
 window.addEventListener("load", () => { // Adds "lightStyles" class to all relevant elements
     document.body.classList.add("lightStyles");
