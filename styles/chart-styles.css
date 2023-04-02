@@ -7,28 +7,32 @@ body { min-width: 740px; }
 button { display: block; margin: 30px auto 30px; }
 button, input { font-family: Arial, sans-serif; font-size: 14px; }
 code { color: #de0d0d; font-size: 14px; }
-legend { font-weight: 600; }
 h1 { font-weight: 300; }
 header { margin: 0 20px; }
 header, textarea, #readme { font-family: Courier, serif; }
 label { font-family: Times, serif; font-size: 16px; }
+legend { font-weight: 600; }
 textarea { background-color: #f8f8f8; border: 1px solid #c4c4c4; display: block; font-size: 12px; margin: 0 auto; padding: 0; resize: none; height: 160px; width: 700px; }
 ul li { margin: 8px 0; }
 
 /* SITE STYLES */
+#chartEmoji { float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: transform 250ms ease-out, margin 250ms ease-out; -ms-transition: transform 250ms ease-out, margin 250ms ease-out; -moz-transition: transform 250ms ease-out, margin 250ms ease-out; transition: transform 250ms ease-out, margin 250ms ease-out; }
+#chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
+.scrollBox { background-color: #f8f8f8; border: 1px solid #c4c4c4; height: 300px; width: 700px; margin: 0 auto; padding: 10px 0; text-align: left; overflow-x: hidden; overflow-y: auto; }
+.dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
+
+/* README SECTION */
 #readme { margin: 0 auto 40px; width: 700px; }
 #readme h3 { font-style: italic; font-weight: 300; }
 #readme h3 + hr { width: 50%; }
 #readme p code { color: #0a47ff; font-weight: 300; } /* Targets <img> text */
 #readme p + p span { font-family: monospace; } /* Targets <table> text */
-#chartEmoji { float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: transform 250ms ease-out, margin 250ms ease-out; -ms-transition: transform 250ms ease-out, margin 250ms ease-out; -moz-transition: transform 250ms ease-out, margin 250ms ease-out; transition: transform 250ms ease-out, margin 250ms ease-out; }
-#chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
-.scrollBox { background-color: #f8f8f8; border: 1px solid #c4c4c4; height: 300px; width: 700px; margin: 0 auto; padding: 10px 0; text-align: left; overflow-x: hidden; overflow-y: auto; }
-.dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
-.dataCheckboxes label { display: inline-block; width: 150px; }
+
+/* CHART STYLES */
+.dataCheckboxes label { display: inline-block; width: 150px; } /* Chart Customization labels */
 .dataCheckboxes label[for="horiz3Div"], .dataCheckboxes label[for="horiz4Div"], .dataCheckboxes label[for="combo1Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III and IV and Combo Chart I 'Add bar dividers' */
 .dataCheckboxes small { display: block; margin: 10px 0; }
-.horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label, .splitControls label { display: inline-block; width: 110px; }
+.horiz1Controls label, .horiz2Controls label, .horiz3Controls label, .horiz4Controls label, .splitControls label, .vert5Controls label { display: inline-block; width: 110px; }
 .vert1Controls label, .vert2Controls label, .vert3Controls label, .vert4Controls label { display: inline-block; width: 100px; }
 .horiz1Controls input, .horiz2Controls input, .horiz3Controls input, .horiz4Controls input, .negative1Controls input, .negative2Controls input, .vert1Controls input, .vert2Controls input, .vert3Controls input, .vert4Controls input { margin: 10px 60px 0 0; width: 90px; }
 .negative1Controls label, .negative2Controls label { display: inline-block; width: 135px; }
@@ -44,12 +48,12 @@ ul li { margin: 8px 0; }
 .prog1Controls label[for*="prog1Size"], .prog2Controls label[for*="prog2Size"], .prog3Controls label[for*="prog3Size"], .prog4Controls label[for*="prog4Size"] { margin: 10px 20px 0 0; } /* Targets 'Progress Bar Size' right spacing */
 .stacked1Controls input, .stacked2Controls input, .stacked3Controls input, .stacked4Controls input, .combo1Controls input, .combo2Controls input, .prog1Controls input, .prog2Controls input, .prog3Controls input, .prog4Controls input { margin: 0 22px 0 0; width: 50px; }
 .combo3Controls input { margin: 0 18px 0 0; width: 50px; } /* Adjusts Combo Chart III input spacing; Required for mobile view */
-.splitControls input, .dataCheckboxes label, .vert5Controls label { margin: 10px 10px 0 0; }
+.splitControls input, .dataCheckboxes label { margin: 10px 10px 0 0; }
 .splitControls input { width: 50px; }
-.vert5Controls label { display: inline-block; }
-.vert5Controls label[for*="vert5Text"] { width: 100px; } /* Targets all "Positive/Negative" label width */
-.vert5Controls input { margin: 0 40px 0 0; width: 50px; }
-label[for*="Output"] { display: block; font-family: Arial, sans-serif; font-size: 12px; font-weight: 600; text-align: left; width: 700px; margin: 4px 0 40px; } /* Estimate HTML Weight */
+.vert5Controls input { margin: 10px 10px 0 0; width: 50px; }
+
+/* ESTIMATED HTML CHART WEIGHT */
+label[for*="Output"] { display: block; font-family: Arial, sans-serif; font-size: 12px; font-weight: 600; text-align: left; width: 700px; margin: 4px 0 40px; } /* HTML Weight Text */
 label[for*="Output"] span { text-decoration: underline; }
 
 /* DARK MODE STYLES */
@@ -67,11 +71,14 @@ button, #darkMode, #lightMode { cursor: pointer; }
 .charts div:first-of-type + .vertWrap { display: inline-block; min-width: 550px; } /* Targets outer div vertical preview charts */
 
 /* MOBILE STYLES */
-@media screen and (max-width: 1366px) {
-    .charts div:first-of-type + table:first-of-type { margin: 0; }
-    .chartBuild { display: block; margin: 30px 0 0 0; }
+@media screen and (max-width: 1295px) {
+    [id^="vert"] .chartBuild { display: block; margin: 30px 0 0 0; } /* Targets all vertical charts; "^=" means STARTS WITH; "*=" means CONTAINS */
 }
-@media screen and (max-width: 1407px) { /* Targeting negative|positive chart */
+@media screen and (max-width: 1365px) {
+    .charts div:first-of-type + table:first-of-type { margin: 0; }
+    div:not([id^="vert"]) .chartBuild { display: block; margin: 30px 0 0 0; } /* Targets all non-vertical charts */
+}
+@media screen and (max-width: 1405px) { /* Targets negative|positive chart */
     #npChart div:first-of-type + table:first-of-type { margin: 0; }
     #npChart .chartBuild { display: block; margin: 30px 0 0 0; }
 }
