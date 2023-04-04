@@ -24,7 +24,7 @@ stacked1capText.oninput = function() {
         return stacked1capCode = "";
     } else if (stacked1capText.value) {
         stacked1Cap.style.paddingBottom = "30px";
-        return stacked1capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; padding-bottom: 30px; text-align: left;">' + stacked1Cap.innerHTML + '</caption>';
+        return stacked1capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + stacked1Cap.innerHTML + '</caption>';
     }
 };
 // Stacked Chart I Source
@@ -38,7 +38,7 @@ stacked1srcText.oninput = function() {
         return stacked1srcCode = "";
     } else if (stacked1srcText.value) {
         stacked1Source.style.paddingTop = "40px";
-        return stacked1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;">' + stacked1Source.innerHTML + '</td></tr>';
+        return stacked1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked1Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -714,7 +714,7 @@ stacked2capText.oninput = function() {
         return stacked2capCode = "";
     } else if (stacked2capText.value) {
         stacked2Cap.style.paddingBottom = "30px";
-        return stacked2capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; padding-bottom: 30px; text-align: left;">' + stacked2Cap.innerHTML + '</caption>';
+        return stacked2capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + stacked2Cap.innerHTML + '</caption>';
     }
 };
 // Stacked Chart II Source
@@ -728,7 +728,7 @@ stacked2srcText.oninput = function() {
         return stacked2srcCode = "";
     } else if (stacked2srcText.value) {
         stacked2Source.style.paddingTop = "40px";
-        return stacked2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;">' + stacked2Source.innerHTML + '</td></tr>';
+        return stacked2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked2Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -1302,7 +1302,7 @@ stacked3capText.oninput = function() {
         return stacked3capCode = "";
     } else if (stacked3capText.value) {
         stacked3Cap.style.paddingBottom = "30px";
-        return stacked3capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; padding-bottom: 30px; text-align: left;">' + stacked3Cap.innerHTML + '</caption>';
+        return stacked3capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + stacked3Cap.innerHTML + '</caption>';
     }
 };
 // Stacked Chart III Source
@@ -1316,7 +1316,7 @@ stacked3srcText.oninput = function() {
         return stacked3srcCode = "";
     } else if (stacked3srcText.value) {
         stacked3Source.style.paddingTop = "40px";
-        return stacked3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;">' + stacked3Source.innerHTML + '</td></tr>';
+        return stacked3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked3Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -2110,7 +2110,7 @@ stacked4capText.oninput = function() {
         return stacked4capCode = "";
     } else if (stacked4capText.value) {
         stacked4Cap.style.paddingBottom = "30px";
-        return stacked4capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; padding-bottom: 30px; text-align: left;">' + stacked4Cap.innerHTML + '</caption>';
+        return stacked4capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + stacked4Cap.innerHTML + '</caption>';
     }
 };
 // Stacked Chart IV Source
@@ -2124,7 +2124,7 @@ stacked4srcText.oninput = function() {
         return stacked4srcCode = "";
     } else if (stacked4srcText.value) {
         stacked4Source.style.paddingTop = "40px";
-        return stacked4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; padding-top: 40px; text-align: left;">' + stacked4Source.innerHTML + '</td></tr>';
+        return stacked4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked4Source.innerHTML + '</td></tr>';
     }
 };
 

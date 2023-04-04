@@ -45,7 +45,7 @@ vert1srcText.oninput = function() {
         return vert1srcCode = "";
     } else if (vert1srcText.value) {
         vert1Source.style.marginTop = "20px";
-        return vert1srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; margin-top: 20px; text-align: center;">' + vert1Source.innerHTML + '</div>';
+        return vert1srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin-top: 20px; text-align: center;">' + vert1Source.innerHTML + '</div>';
     }
 };
 
@@ -347,7 +347,7 @@ vert2srcText.oninput = function() {
         return vert2srcCode = "";
     } else if (vert2srcText.value) {
         vert2Source.style.marginTop = "20px";
-        return vert2srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; margin-top: 20px; text-align: center;">' + vert2Source.innerHTML + '</div>';
+        return vert2srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin-top: 20px; text-align: center;">' + vert2Source.innerHTML + '</div>';
     }
 };
 
@@ -937,7 +937,7 @@ vert3srcText.oninput = function() {
         return vert3srcCode = "";
     } else if (vert3srcText.value) {
         vert3Source.style.marginTop = "20px";
-        return vert3srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; margin-top: 20px; text-align: center;">' + vert3Source.innerHTML + '</div>';
+        return vert3srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin-top: 20px; text-align: center;">' + vert3Source.innerHTML + '</div>';
     }
 };
 
@@ -1239,7 +1239,7 @@ vert4srcText.oninput = function() {
         return vert4srcCode = "";
     } else if (vert4srcText.value) {
         vert4Source.style.marginTop = "20px";
-        return vert4srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; margin-top: 20px; text-align: center;">' + vert4Source.innerHTML + '</div>';
+        return vert4srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin-top: 20px; text-align: center;">' + vert4Source.innerHTML + '</div>';
     }
 };
 
@@ -1833,7 +1833,7 @@ vert5srcText.oninput = function() {
         return vert5srcCode = "";
     } else if (vert5srcText.value) {
         vert5Source.style.marginTop = "20px";
-        return vert5srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; margin-top: 20px; text-align: center;">' + vert5Source.innerHTML + '</div>';
+        return vert5srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin-top: 20px; text-align: center;">' + vert5Source.innerHTML + '</div>';
     }
 };
 
