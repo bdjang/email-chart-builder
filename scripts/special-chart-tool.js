@@ -1687,10 +1687,10 @@ const combo1capText = document.getElementById("combo1capText"); // Caption or ch
 combo1capText.oninput = function() {
     combo1Cap.innerHTML = combo1capText.value;
     if (combo1capText.value == "") {
-        combo1Cap.style.paddingBottom = "0";
+        combo1Cap.style.marginBottom = "0";
         return combo1capCode = "";
     } else if (combo1capText.value) {
-        combo1Cap.style.paddingBottom = "30px";
+        combo1Cap.style.marginBottom = "30px";
         return combo1capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + combo1Cap.innerHTML + '</caption>';
     }
 };
@@ -2229,10 +2229,10 @@ const combo2capText = document.getElementById("combo2capText"); // Caption or ch
 combo2capText.oninput = function() {
     combo2Cap.innerHTML = combo2capText.value;
     if (combo2capText.value == "") {
-        combo2Cap.style.paddingBottom = "0";
+        combo2Cap.style.marginBottom = "0";
         return combo2capCode = "";
     } else if (combo2capText.value) {
-        combo2Cap.style.paddingBottom = "30px";
+        combo2Cap.style.marginBottom = "30px";
         return combo2capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + combo2Cap.innerHTML + '</caption>';
     }
 };
@@ -2702,10 +2702,10 @@ const combo3capText = document.getElementById("combo3capText"); // Caption or ch
 combo3capText.oninput = function() {
     combo3Cap.innerHTML = combo3capText.value;
     if (combo3capText.value == "") {
-        combo3Cap.style.paddingBottom = "0";
+        combo3Cap.style.marginBottom = "0";
         return combo3capCode = "";
     } else if (combo3capText.value) {
-        combo3Cap.style.paddingBottom = "30px";
+        combo3Cap.style.marginBottom = "30px";
         return combo3capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + combo3Cap.innerHTML + '</caption>';
     }
 };

@@ -20,10 +20,10 @@ const stacked1capText = document.getElementById("stacked1capText"); // Caption o
 stacked1capText.oninput = function() {
     stacked1Cap.innerHTML = stacked1capText.value;
     if (stacked1capText.value == "") {
-        stacked1Cap.style.paddingBottom = "0";
+        stacked1Cap.style.marginBottom = "0";
         return stacked1capCode = "";
     } else if (stacked1capText.value) {
-        stacked1Cap.style.paddingBottom = "30px";
+        stacked1Cap.style.marginBottom = "30px";
         return stacked1capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + stacked1Cap.innerHTML + '</caption>';
     }
 };
@@ -710,10 +710,10 @@ const stacked2capText = document.getElementById("stacked2capText"); // Caption o
 stacked2capText.oninput = function() {
     stacked2Cap.innerHTML = stacked2capText.value;
     if (stacked2capText.value == "") {
-        stacked2Cap.style.paddingBottom = "0";
+        stacked2Cap.style.marginBottom = "0";
         return stacked2capCode = "";
     } else if (stacked2capText.value) {
-        stacked2Cap.style.paddingBottom = "30px";
+        stacked2Cap.style.marginBottom = "30px";
         return stacked2capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + stacked2Cap.innerHTML + '</caption>';
     }
 };
@@ -1298,10 +1298,10 @@ const stacked3capText = document.getElementById("stacked3capText"); // Caption o
 stacked3capText.oninput = function() {
     stacked3Cap.innerHTML = stacked3capText.value;
     if (stacked3capText.value == "") {
-        stacked3Cap.style.paddingBottom = "0";
+        stacked3Cap.style.marginBottom = "0";
         return stacked3capCode = "";
     } else if (stacked3capText.value) {
-        stacked3Cap.style.paddingBottom = "30px";
+        stacked3Cap.style.marginBottom = "30px";
         return stacked3capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + stacked3Cap.innerHTML + '</caption>';
     }
 };
@@ -2106,10 +2106,10 @@ const stacked4capText = document.getElementById("stacked4capText"); // Caption o
 stacked4capText.oninput = function() {
     stacked4Cap.innerHTML = stacked4capText.value;
     if (stacked4capText.value == "") {
-        stacked4Cap.style.paddingBottom = "0";
+        stacked4Cap.style.marginBottom = "0";
         return stacked4capCode = "";
     } else if (stacked4capText.value) {
-        stacked4Cap.style.paddingBottom = "30px";
+        stacked4Cap.style.marginBottom = "30px";
         return stacked4capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + stacked4Cap.innerHTML + '</caption>';
     }
 };
