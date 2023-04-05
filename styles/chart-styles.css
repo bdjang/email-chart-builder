@@ -6,7 +6,7 @@ a { color: #0a47ff; }
 body { min-width: 740px; }
 button { display: block; margin: 30px auto 30px; }
 button, input { font-family: Arial, sans-serif; font-size: 14px; }
-code { color: #de0d0d; }
+code { color: #de0d0d; font-size: 14px; }
 h1 { font-weight: 300; }
 header { margin: 0 20px; }
 header, textarea, #readme { font-family: Courier, serif; }
@@ -26,7 +26,7 @@ ul li { margin: 8px 0; }
 #readme h3 { font-style: italic; font-weight: 300; }
 #readme h3 + hr { width: 50%; }
 #readme p code { color: #0a47ff; font-weight: 300; } /* Targets <img> text */
-#readme p + p span { font-family: monospace; font-size: 16px; } /* Targets <table> text */
+#readme p + p span { font-family: monospace; font-size: 14px; } /* Targets <table> text */
 
 /* CHART STYLES */
 .dataCheckboxes label { display: inline-block; width: 150px; } /* Chart Customization labels */
