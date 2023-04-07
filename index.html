@@ -68,17 +68,17 @@
     <div class="charts" id="readme" style="display: none;">
         <h1>Project Information</h1>
         <h3>The first objective of this project is to enable email marketers and developers to create clear, colorful visuals and bar charts that are mobile responsive, dark mode compatible, and accessible to screen readers quickly and efficiently.</h3>
-        <h3>The second objective is to reimagine and change how representations of data are displayed in email templates and newsletters.</h3>
+        <h3>The second objective is to reimagine and change how data graphics are displayed in email templates and newsletters.</h3>
         <hr />
         <p>The Email Chart Builder tool is the result of knowledge gained from previously completed projects focused on data visualization in email. This includes my Litmus Live 2020 conference talk "<a href="https://github.com/bdjang/litmus-live-2020" target="_blank">Dropping the <code>&lt;img&gt;</code> Tag: Data Visualization Without Images</a>", experimentation with <a href="https://github.com/bdjang/amp-email-data" target="_blank">⚡AMP for Email</a>, and <a href="https://github.com/bdjang/data-bars-email-templates" target="_blank">other projects</a>.</p>
-        <p>Each of the 20+ bar charts have been built using <span>&lt;table&gt;</span> elements and CSS styling specifically for email templates. All code adjustments required for creating individual data bars with customized widths, label text, colors, and more have been taken care of with vanilla JavaScript.</p>
+        <p>Each of the 20+ bar charts have been built using <span>&lt;table&gt;</span> elements and CSS styling specifically for email templates. All coding required for creating individual data bars with customized widths, label text, colors, and more have been taken care of with vanilla JavaScript.</p>
         <p>For additional information about the advantages and disadvantages of using HTML/CSS bar charts compared to images in email templates, read the "<a href="https://dev.to/bdjang/non-image-approach-to-data-viz-in-email-o0k" target="_blank">📊 Non-Image Approach to Data Viz in Email</a>" blog post.</p>
         <hr>
         <h1>Instructions</h1>
         <ol>
             <li>Select a chart type from the drop down menu</li>
             <li>Customize the bar colors, widths, and chart text using the input tools</li>
-            <li>When the chart is ready, scroll to the bottom and click the button to generate your HTML output code. (The chart's estimated HTML weight will display below)</li>
+            <li>When the chart is ready, scroll to the bottom and click the button to generate your HTML output code</li>
             <li>Copy &amp; paste the chart code into your email template, make adjustments as needed, and test</li>
         </ol>
         <hr />
@@ -86,10 +86,10 @@
         <ul>
             <li>Press "t" to cycle through chart types</li>
             <li>Press "d" to toggle dark mode or click on the sun emoji at the top</li>
-            <li>The <code>chartMobile</code> class can be used to adjust the chart's padding and border values.</li>
-            <li>Use <code>media queries</code> to adjust the size of the chart text for smaller screens. The following snippet of code can be applied to all <em>non-vertical bar charts</em>:<br /><br /><code>@media screen and (max-width: 525px) { .chartMobile td {font-size: 10px !important;} .chartMobile caption {font-size: 12px !important;} }</code><br /><br /></li>
-            <!-- <li>For additional bar chart spacing in mobile view, consider removing the left/right padding and the left/right borders with the following line:<br /><br /><code>@media screen and (max-width: 525px) { .chartPB {border: none !important; border-bottom: 1px solid #e3e3e3 !important; border-top: 1px solid #e3e3e3 !important; padding: 20px 0 !important;} }</code><br /><br /></li> -->
-            <li>The following snippet of code can be applied to all <em>vertical bar charts</em>:<br /><br /><code>@media screen and (max-width: 525px) { .chartVertMobile td {font-size: 10px !important; width: 25px !important;} .chartVertCap, .chartVertSrc {font-size: 12px !important;} }</code></li>
+            <li>After clicking the button to generate your HTML output code, the chart's estimated HTML weight will display below</li>
+            <li>The <code>chartMobile</code> class can be used to adjust the chart's padding and border values</li>
+            <li>Use <code>media queries</code> to adjust the size of the chart text and the height of the data bars for smaller screens. The following snippet of code can be applied to all <em>non-vertical bar charts</em>:<br /><br /><code>@media screen and (max-width: 600px) { .chartMobile td {font-size: 10px !important; height: 22px !important;} .chartMobile caption {font-size: 12px !important;} }</code><br /><br /></li>
+            <li>The following snippet of code can be applied to all <em>vertical bar charts</em>:<br /><br /><code>@media screen and (max-width: 600px) { .chartVertMobile td {font-size: 10px !important; width: 25px !important;} .chartVertCap, .chartVertSrc {font-size: 12px !important;} }</code></li>
         </ul>
         <hr />
         <h1>Contact</h1>
@@ -404,7 +404,7 @@
             </div>
             <button type="button" id="horiz1Button">Generate Email Chart Code</button>
             <textarea name="horiz1Output" id="horiz1Output" readonly></textarea>
-            <label for="horiz1Output">⬆️Estimated HTML Chart Weight: <span id="horiz1Weight">___</span></label>
+            <label for="horiz1Output">⬆️ Estimated HTML Chart Weight: <span id="horiz1Weight">___</span></label>
         </section>
     </div>
     <!-- end horizontal bar chart i -->
@@ -708,7 +708,7 @@
             </div>
             <button type="button" id="horiz2Button">Generate Email Chart Code</button>
             <textarea name="horiz2Output" id="horiz2Output" readonly></textarea>
-            <label for="horiz2Output">⬆️Estimated HTML Chart Weight: <span id="horiz2Weight">___</span></label>
+            <label for="horiz2Output">⬆️ Estimated HTML Chart Weight: <span id="horiz2Weight">___</span></label>
         </section>
     </div>
     <!-- end horizontal bar chart ii -->
@@ -1014,7 +1014,7 @@
             </div>
             <button type="button" id="horiz3Button">Generate Email Chart Code</button>
             <textarea name="horiz3Output" id="horiz3Output" readonly></textarea>
-            <label for="horiz3Output">⬆️Estimated HTML Chart Weight: <span id="horiz3Weight">___</span></label>
+            <label for="horiz3Output">⬆️ Estimated HTML Chart Weight: <span id="horiz3Weight">___</span></label>
         </section>
     </div>
     <!-- end horizontal bar chart iii -->
@@ -1320,7 +1320,7 @@
             </div>
             <button type="button" id="horiz4Button">Generate Email Chart Code</button>
             <textarea name="horiz4Output" id="horiz4Output" readonly></textarea>
-            <label for="horiz4Output">⬆️Estimated HTML Chart Weight: <span id="horiz4Weight">___</span></label>
+            <label for="horiz4Output">⬆️ Estimated HTML Chart Weight: <span id="horiz4Weight">___</span></label>
         </section>
     </div>
     <!-- end horizontal bar chart iv -->
@@ -1340,7 +1340,7 @@
 
                         <!-- LEGEND 4 -->
                         <tr>
-                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 10px 0; padding: 0 0 20px 0; text-align: left;">
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">
                                 <span id="legend4Color1" style="background-color: #0b467b; border: 1px solid #0b467b; color: #0b467b; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend4Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend4Color2" style="background-color: #5fadf3; border: 1px solid #5fadf3; color: #5fadf3; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend4Text2">Light Blue</span>
                             </td>
                         </tr>
@@ -1348,7 +1348,7 @@
 
                         <!-- DATA BAR #1 -->
                         <tr class="combo1Bars">
-                            <td align="left" style="padding: 0 0 10px 0;">
+                            <td align="left" style="padding: 20px 0 10px 0;">
                                 <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartTable">
                                     <tr>
                                         <td id="combo1Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">Data bar #1</td>
@@ -1626,7 +1626,7 @@
             </div>
             <button type="button" id="combo1Button">Generate Email Chart Code</button>
             <textarea name="combo1Output" id="combo1Output" readonly></textarea>
-            <label for="combo1Output">⬆️Estimated HTML Chart Weight: <span id="combo1Weight">___</span></label>
+            <label for="combo1Output">⬆️ Estimated HTML Chart Weight: <span id="combo1Weight">___</span></label>
         </section>
     </div>
     <!-- end combo bar chart i -->
@@ -1649,9 +1649,10 @@
                         <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;" id="combo2Cap">Optional Chart Title</caption>
                         <!-- end chart title text -->
 
+                        <!-- 4.6.23: Outlook email clients were adding spacing ABOVE the legend even though "padding: 0 0 20px 0;". This was creating a large gap between the caption and the legend. Solution is to remove ALL margin and spacing CSS values in the legend and add the padding to the first data bar. -->
                         <!-- LEGEND 8 -->
                         <tr>
-                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 10px 0; padding: 0 0 20px 0; text-align: left;">
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">
                                 <span id="legend8Color1" style="background-color: #00aef3; border: 1px solid #00aef3; color: #00aef3; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text1">Blue</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend8Color2" style="background-color: #e81b23; border: 1px solid #e81b23; color: #e81b23; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend8Text2">Red</span>
                             </td>
                         </tr>
@@ -1659,7 +1660,7 @@
 
                         <!-- DATA BAR #1 -->
                         <tr class="combo2BarsT">
-                            <td align="left" style="padding: 0;">
+                            <td align="left" style="padding: 20px 0 0 0;">
                                 <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartTable">
                                     <tr>
                                         <td colspan="2" id="combo2Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">Combo bar #1</td>
@@ -1920,7 +1921,7 @@
             </div>
             <button type="button" id="combo2Button">Generate Email Chart Code</button>
             <textarea name="combo2Output" id="combo2Output" readonly></textarea>
-            <label for="combo2Output">⬆️Estimated HTML Chart Weight: <span id="combo2Weight">___</span></label>
+            <label for="combo2Output">⬆️ Estimated HTML Chart Weight: <span id="combo2Weight">___</span></label>
         </section>
     </div>
     <!-- end combo bar chart ii -->
@@ -2221,7 +2222,7 @@
             </div>
             <button type="button" id="combo3Button">Generate Email Chart Code</button>
             <textarea name="combo3Output" id="combo3Output" readonly></textarea>
-            <label for="combo3Output">⬆️Estimated HTML Chart Weight: <span id="combo3Weight">___</span></label>
+            <label for="combo3Output">⬆️ Estimated HTML Chart Weight: <span id="combo3Weight">___</span></label>
         </section>
     </div>
     <!-- end combo bar chart iii -->
@@ -2241,7 +2242,7 @@
 
                         <!-- LEGEND 1 -->
                         <tr>
-                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 10px 0; padding: 0 0 20px 0; text-align: left;">
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">
                                 <span id="legend1Color1" style="background-color: #ffd700; border: 1px solid #ffd700; color: #ffd700; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend1Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend1Color2" style="background-color: #00a8ff; border: 1px solid #00a8ff; color: #00a8ff; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend1Text2">Blue</span>
                             </td>
                         </tr>
@@ -2249,7 +2250,7 @@
 
                         <!-- DATA BAR #1 -->
                         <tr class="stacked1Bars">
-                            <td align="left" style="padding: 0;">
+                            <td align="left" style="padding: 20px 0 0 0;">
                                 <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartTable">
                                     <tr>
                                         <td id="stacked1Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">Data bar #1</td>
@@ -2624,7 +2625,7 @@
             </div>
             <button type="button" id="stacked1Button">Generate Email Chart Code</button>
             <textarea name="stacked1Output" id="stacked1Output" readonly></textarea>
-            <label for="stacked1Output">⬆️Estimated HTML Chart Weight: <span id="stacked1Weight">___</span></label>
+            <label for="stacked1Output">⬆️ Estimated HTML Chart Weight: <span id="stacked1Weight">___</span></label>
         </section>
     </div>
     <!-- end stacked bar chart i -->
@@ -2644,7 +2645,7 @@
 
                         <!-- LEGEND 2 -->
                         <tr>
-                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 10px 0; padding: 0 0 20px 0; text-align: left;">
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">
                                 <span id="legend2Color1" style="background-color: #ff3b44; border: 1px solid #ff3b44; color: #ff3b44; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend2Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend2Color2" style="background-color: #f1f1f1; border: 1px solid #f1f1f1; color: #f1f1f1; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend2Text2">Grey</span>
                             </td>
                         </tr>
@@ -2652,7 +2653,7 @@
 
                         <!-- DATA BAR #1 -->
                         <tr class="stacked2Bars">
-                            <td align="left" style="padding: 0;">
+                            <td align="left" style="padding: 20px 0 0 0;">
                                 <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartTable">
                                     <tr>
                                         <td id="stacked2Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">Data bar #1</td>
@@ -3026,7 +3027,7 @@
             </div>
             <button type="button" id="stacked2Button">Generate Email Chart Code</button>
             <textarea name="stacked2Output" id="stacked2Output" readonly></textarea>
-            <label for="stacked2Output">⬆️Estimated HTML Chart Weight: <span id="stacked2Weight">___</span></label>
+            <label for="stacked2Output">⬆️ Estimated HTML Chart Weight: <span id="stacked2Weight">___</span></label>
         </section>
     </div>
     <!-- end stacked bar chart ii -->
@@ -3046,7 +3047,7 @@
 
                         <!-- LEGEND 3 -->
                         <tr>
-                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 10px 0; padding: 0 0 20px 0; text-align: left;">
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">
                                 <span id="legend3Color1" style="background-color: #fa4747; border: 1px solid #fa4747; color: #fa4747; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend3Text1">Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color2" style="background-color: #ff785f; border: 1px solid #ff785f; color: #ff785f; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend3Text2">Light Red</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend3Color3" style="background-color: #ffb65d; border: 1px solid #ffb65d; color: #ffb65d; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend3Text3">Orange</span>
                             </td>
                         </tr>
@@ -3054,7 +3055,7 @@
 
                         <!-- DATA BAR #1 -->
                         <tr class="stacked3Bars">
-                            <td align="left" style="padding: 0;">
+                            <td align="left" style="padding: 20px 0 0 0;">
                                 <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartTable">
                                     <tr>
                                         <td id="stacked3Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #1</td>
@@ -3502,7 +3503,7 @@
             </div>
             <button type="button" id="stacked3Button">Generate Email Chart Code</button>
             <textarea name="stacked3Output" id="stacked3Output" readonly></textarea>
-            <label for="stacked3Output">⬆️Estimated HTML Chart Weight: <span id="stacked3Weight">___</span></label>
+            <label for="stacked3Output">⬆️ Estimated HTML Chart Weight: <span id="stacked3Weight">___</span></label>
         </section>
     </div>
     <!-- end stacked bar chart iii -->
@@ -3522,7 +3523,7 @@
 
                         <!-- LEGEND 5 -->
                         <tr>
-                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0 0 10px 0; padding: 0 0 20px 0; text-align: left;">
+                            <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">
                                 <span id="legend5Color1" style="background-color: #d6af36; border: 1px solid #d6af36; color: #d6af36; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend5Text1">Gold</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color2" style="background-color: #d7d7d7; border: 1px solid #d7d7d7; color: #d7d7d7; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend5Text2">Silver</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend5Color3" style="background-color: #a77044; border: 1px solid #a77044; color: #a77044; font-family: Verdana, sans-serif; font-size: 14px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend5Text3">Bronze</span>
                             </td>
                         </tr>
@@ -3530,7 +3531,7 @@
 
                         <!-- DATA BAR #1 -->
                         <tr class="stacked4Bars">
-                            <td align="left" style="padding: 0;">
+                            <td align="left" style="padding: 20px 0 0 0;">
                                 <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="chartTable">
                                     <tr>
                                         <td id="stacked4Row1a" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">Data bar #1</td>
@@ -3987,7 +3988,7 @@
             </div>
             <button type="button" id="stacked4Button">Generate Email Chart Code</button>
             <textarea name="stacked4Output" id="stacked4Output" readonly></textarea>
-            <label for="stacked4Output">⬆️Estimated HTML Chart Weight: <span id="stacked4Weight">___</span></label>
+            <label for="stacked4Output">⬆️ Estimated HTML Chart Weight: <span id="stacked4Weight">___</span></label>
         </section>
     </div>
     <!-- end stacked bar chart iv -->
@@ -4291,7 +4292,7 @@
             </div>
             <button type="button" id="negative1Button">Generate Email Chart Code</button>
             <textarea name="negative1Output" id="negative1Output" readonly></textarea>
-            <label for="negative1Output">⬆️Estimated HTML Chart Weight: <span id="negative1Weight">___</span></label>
+            <label for="negative1Output">⬆️ Estimated HTML Chart Weight: <span id="negative1Weight">___</span></label>
         </section>
     </div>
     <!-- end negative bar chart i -->
@@ -4595,7 +4596,7 @@
             </div>
             <button type="button" id="negative2Button">Generate Email Chart Code</button>
             <textarea name="negative2Output" id="negative2Output" readonly></textarea>
-            <label for="negative2Output">⬆️Estimated HTML Chart Weight: <span id="negative2Weight">___</span></label>
+            <label for="negative2Output">⬆️ Estimated HTML Chart Weight: <span id="negative2Weight">___</span></label>
         </section>
     </div>
     <!-- end negative bar chart i -->
@@ -4949,7 +4950,7 @@
             </div>
             <button type="button" id="splitButton">Generate Email Chart Code</button>
             <textarea name="splitOutput" id="splitOutput" readonly></textarea>
-            <label for="splitOutput">⬆️Estimated HTML Chart Weight: <span id="splitWeight">___</span></label>
+            <label for="splitOutput">⬆️ Estimated HTML Chart Weight: <span id="splitWeight">___</span></label>
         </section>
     </div>
     <!-- end negative|positive bar chart -->
@@ -5143,7 +5144,7 @@
             </div>
             <button type="button" id="prog1Button">Generate Email Chart Code</button>
             <textarea name="prog1Output" id="prog1Output" readonly></textarea>
-            <label for="prog1Output">⬆️Estimated HTML Chart Weight: <span id="prog1Weight">___</span></label>
+            <label for="prog1Output">⬆️ Estimated HTML Chart Weight: <span id="prog1Weight">___</span></label>
         </section>
     </div>
     <!-- end progress bar chart i -->
@@ -5369,7 +5370,7 @@
             </div>
             <button type="button" id="prog2Button">Generate Email Chart Code</button>
             <textarea name="prog2Output" id="prog2Output" readonly></textarea>
-            <label for="prog2Output">⬆️Estimated HTML Chart Weight: <span id="prog2Weight">___</span></label>
+            <label for="prog2Output">⬆️ Estimated HTML Chart Weight: <span id="prog2Weight">___</span></label>
         </section>
     </div>
     <!-- end progress bar chart ii -->
@@ -5595,7 +5596,7 @@
             </div>
             <button type="button" id="prog3Button">Generate Email Chart Code</button>
             <textarea name="prog3Output" id="prog3Output" readonly></textarea>
-            <label for="prog3Output">⬆️Estimated HTML Chart Weight: <span id="prog3Weight">___</span></label>
+            <label for="prog3Output">⬆️ Estimated HTML Chart Weight: <span id="prog3Weight">___</span></label>
         </section>
     </div>
     <!-- end progress bar chart iii -->
@@ -5821,7 +5822,7 @@
             </div>
             <button type="button" id="prog4Button">Generate Email Chart Code</button>
             <textarea name="prog4Output" id="prog4Output" readonly></textarea>
-            <label for="prog4Output">⬆️Estimated HTML Chart Weight: <span id="prog4Weight">___</span></label>
+            <label for="prog4Output">⬆️ Estimated HTML Chart Weight: <span id="prog4Weight">___</span></label>
         </section>
     </div>
     <!-- end progress bar chart iv -->
@@ -6162,7 +6163,7 @@
             </div>
             <button type="button" id="vert1Button">Generate Email Chart Code</button>
             <textarea name="vert1Output" id="vert1Output" readonly></textarea>
-            <label for="vert1Output">⬆️Estimated HTML Chart Weight: <span id="vert1Weight">___</span></label>
+            <label for="vert1Output">⬆️ Estimated HTML Chart Weight: <span id="vert1Weight">___</span></label>
         </section>
     </div>
     <!-- end vertical bar chart i -->
@@ -6671,7 +6672,7 @@
             </div>
             <button type="button" id="vert2Button">Generate Email Chart Code</button>
             <textarea name="vert2Output" id="vert2Output" readonly></textarea>
-            <label for="vert2Output">⬆️Estimated HTML Chart Weight: <span id="vert2Weight">___</span></label>
+            <label for="vert2Output">⬆️ Estimated HTML Chart Weight: <span id="vert2Weight">___</span></label>
         </section>
     </div>
     <!-- end vertical bar chart ii -->
@@ -7002,7 +7003,7 @@
             </div>
             <button type="button" id="vert3Button">Generate Email Chart Code</button>
             <textarea name="vert3Output" id="vert3Output" readonly></textarea>
-            <label for="vert3Output">⬆️Estimated HTML Chart Weight: <span id="vert3Weight">___</span></label>
+            <label for="vert3Output">⬆️ Estimated HTML Chart Weight: <span id="vert3Weight">___</span></label>
         </section>
     </div>
     <!-- end vertical bar chart iii -->
@@ -7510,7 +7511,7 @@
             </div>
             <button type="button" id="vert4Button">Generate Email Chart Code</button>
             <textarea name="vert4Output" id="vert4Output" readonly></textarea>
-            <label for="vert4Output">⬆️Estimated HTML Chart Weight: <span id="vert4Weight">___</span></label>
+            <label for="vert4Output">⬆️ Estimated HTML Chart Weight: <span id="vert4Weight">___</span></label>
         </section>
     </div>
     <!-- end vertical bar chart iv -->
@@ -8019,7 +8020,7 @@
             </div>
             <button type="button" id="vert5Button">Generate Email Chart Code</button>
             <textarea name="vert5Output" id="vert5Output" readonly></textarea>
-            <label for="vert5Output">⬆️Estimated HTML Chart Weight: <span id="vert5Weight">___</span></label>
+            <label for="vert5Output">⬆️ Estimated HTML Chart Weight: <span id="vert5Weight">___</span></label>
         </section>
     </div>
     <!-- end vertical bar chart v -->
@@ -8061,6 +8062,10 @@ Notes:
 4.3.23:
 - For mobile view, some of the chart text is still squeezed despite add media queries. Consider removing the left/right padding and and the left/right borders. Keep the border-top and border-bottom with the padding to free up some much needed space in mobile.
 - Do this: (1). Rename all "chartMobile" classes to "chartTable" in both the index.html and chart-functionality files. (2). Add the "chartMobile" class to the <td> cell with the border and padding CSS styling. (3). Remove all instances of "chartMobile" in the non-vertical charts and relocate it to the <td> cell with the border and padding CSS styling. (4). Need to figure out what, if anything, needs to be changed for the vertical bar charts.
+
+4.6.23:
+- Consider changing caption element to a tr + td element; witnessing extra spacing that I am not able to get rid of in caption elements in some Outlook Windows clients; change margin-bottom to padding-bottom in this case
+- Consider changing the data bar heights in mobile view? YES, this looks much better in mobile. change height to 22px
 
 "Perfect is the enemy of the good"
 - Voltaire
