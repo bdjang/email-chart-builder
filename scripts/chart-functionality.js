@@ -38,6 +38,8 @@ const horiz3BarsNodes1 = document.querySelectorAll("tr.horiz3Bars table.chartTab
 const horiz3BarsNodes3 = document.querySelectorAll("tr.horiz3Bars table.chartTable td:nth-of-type(3)");
 const horiz4BarsNodes1 = document.querySelectorAll("tr.horiz4Bars table.chartTable td:nth-of-type(1)");
 const horiz4BarsNodes2 = document.querySelectorAll("tr.horiz4Bars table.chartTable td:nth-of-type(3)");
+const horiz5BarsNodes1 = document.querySelectorAll("tr.horiz5Bars table.chartTable td:nth-of-type(1)");
+const horiz5BarsNodes2 = document.querySelectorAll("tr.horiz5Bars table.chartTable td:nth-of-type(3)");
 const stacked1BarsNodes1 = document.querySelectorAll("tr.stacked1Bars table.chartTable td:nth-of-type(1)");
 const stacked1BarsNodes3 = document.querySelectorAll("tr.stacked1Bars table.chartTable td:nth-of-type(3)");
 const stacked1BarsNodes4 = document.querySelectorAll("tr.stacked1Bars table.chartTable td:nth-of-type(4)");
@@ -100,6 +102,8 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     horiz3Source.classList.add("lightStylesSRC");
     horiz4Cap.classList.add("lightStyles");
     horiz4Source.classList.add("lightStylesSRC");
+    horiz5Cap.classList.add("lightStyles");
+    horiz5Source.classList.add("lightStylesSRC");
     combo1Cap.classList.add("lightStyles");
     combo1Source.classList.add("lightStylesSRC");
     combo2Cap.classList.add("lightStyles");
@@ -151,6 +155,8 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
         horiz3BarsNodes3[x].classList.add("lightStyles");
         horiz4BarsNodes1[x].classList.add("lightStyles");
         horiz4BarsNodes2[x].classList.add("lightStyles");
+        horiz5BarsNodes1[x].classList.add("lightStyles");
+        horiz5BarsNodes2[x].classList.add("lightStyles");
         stacked1BarsNodes1[x].classList.add("lightStyles");
         stacked1BarsNodes4[x].classList.add("lightStyles");
         stacked2BarsNodes1[x].classList.add("lightStyles");
@@ -226,6 +232,8 @@ document.addEventListener("keydown", () => {
             horiz3Source.classList.replace("lightStylesSRC", "darkStyles");
             horiz4Cap.classList.replace("lightStyles", "darkStyles");
             horiz4Source.classList.replace("lightStylesSRC", "darkStyles");
+            horiz5Cap.classList.replace("lightStyles", "darkStyles");
+            horiz5Source.classList.replace("lightStylesSRC", "darkStyles");
             combo1Cap.classList.replace("lightStyles", "darkStyles");
             combo1Source.classList.replace("lightStylesSRC", "darkStyles");
             combo2Cap.classList.replace("lightStyles", "darkStyles");
@@ -282,6 +290,8 @@ document.addEventListener("keydown", () => {
                 horiz3BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
                 horiz4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
                 horiz4BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
+                horiz5BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+                horiz5BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
                 stacked1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
                 stacked1BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
                 stacked2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
@@ -362,6 +372,8 @@ document.addEventListener("keydown", () => {
             horiz3Source.classList.replace("darkStyles", "lightStylesSRC");
             horiz4Cap.classList.replace("darkStyles", "lightStyles");
             horiz4Source.classList.replace("darkStyles", "lightStylesSRC");
+            horiz5Cap.classList.replace("darkStyles", "lightStyles");
+            horiz5Source.classList.replace("darkStyles", "lightStylesSRC");
             combo1Cap.classList.replace("darkStyles", "lightStyles");
             combo1Source.classList.replace("darkStyles", "lightStylesSRC");
             combo2Cap.classList.replace("darkStyles", "lightStyles");
@@ -418,6 +430,8 @@ document.addEventListener("keydown", () => {
                 horiz3BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
                 horiz4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
                 horiz4BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
+                horiz5BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+                horiz5BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
                 stacked1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
                 stacked1BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
                 stacked2BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
@@ -527,6 +541,10 @@ darkMode.addEventListener("click", () => {
     horiz4Cap.classList.replace("lightStyles", "darkStyles");
     horiz4Source.classList.toggle("darkStyles");
     horiz4Source.classList.replace("lightStylesSRC", "darkStyles");
+    horiz5Cap.classList.toggle("darkStyles");
+    horiz5Cap.classList.replace("lightStyles", "darkStyles");
+    horiz5Source.classList.toggle("darkStyles");
+    horiz5Source.classList.replace("lightStylesSRC", "darkStyles");
     combo1Cap.classList.toggle("darkStyles");
     combo1Cap.classList.replace("lightStyles", "darkStyles");
     combo1Source.classList.toggle("darkStyles");
@@ -631,6 +649,10 @@ darkMode.addEventListener("click", () => {
         horiz4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
         horiz4BarsNodes2[x].classList.toggle("darkStyles");
         horiz4BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
+        horiz5BarsNodes1[x].classList.toggle("darkStyles");
+        horiz5BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
+        horiz5BarsNodes2[x].classList.toggle("darkStyles");
+        horiz5BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
         stacked1BarsNodes1[x].classList.toggle("darkStyles");
         stacked1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
         stacked1BarsNodes4[x].classList.toggle("darkStyles");
@@ -731,6 +753,8 @@ lightMode.addEventListener("click", () => {
     horiz3Source.classList.replace("darkStyles", "lightStylesSRC");
     horiz4Cap.classList.replace("darkStyles", "lightStyles");
     horiz4Source.classList.replace("darkStyles", "lightStylesSRC");
+    horiz5Cap.classList.replace("darkStyles", "lightStyles");
+    horiz5Source.classList.replace("darkStyles", "lightStylesSRC");
     combo1Cap.classList.replace("darkStyles", "lightStyles");
     combo1Source.classList.replace("darkStyles", "lightStylesSRC");
     combo2Cap.classList.replace("darkStyles", "lightStyles");
@@ -787,6 +811,8 @@ lightMode.addEventListener("click", () => {
         horiz3BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
         horiz4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
         horiz4BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
+        horiz5BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
+        horiz5BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
         stacked1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
         stacked1BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
         stacked2BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
