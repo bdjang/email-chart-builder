@@ -82,6 +82,8 @@ horiz1Text1a.oninput = function() {
     } else if (horiz1Text1a.value) {
         horiz1Row1a.innerHTML = horiz1Text1a.value;
     }
+    // 04.22.23: Consider simplifying this logic to the following
+    // horiz1Row1a.innerHTML = horiz1Text1a.value;
 };
 const horiz1Size1 = document.getElementById("horiz1Size1");
 horiz1Size1.oninput = function() {
@@ -1562,7 +1564,7 @@ horiz3Output.addEventListener("click", () => {
 
 
 
-// Horizontal Chart I Row Selection
+// Horizontal Chart IV Row Selection
 const horiz4Bars = document.getElementsByClassName("horiz4Bars");
 const horiz4Controls = document.getElementsByClassName("horiz4Controls");
 const rowsData11 = document.getElementById("rowsData11");
@@ -2091,4 +2093,579 @@ horiz4Button.addEventListener("click", () => {
 });
 horiz4Output.addEventListener("click", () => {
     horiz4Output.select();
+});
+
+
+
+
+
+// Horizontal Chart V Row Selection
+const horiz5Bars = document.getElementsByClassName("horiz5Bars");
+const horiz5Controls = document.getElementsByClassName("horiz5Controls");
+const rowsData24 = document.getElementById("rowsData24");
+rowsData24.addEventListener("change", () => {
+    for (var i = 0; i < horiz5Controls.length; i++) {
+        horiz5Controls[i].style.display = "none";
+        horiz5Bars[i].style.display = "none";
+        for (var x = 0; x < rowsData24.value; x++) {
+            horiz5Controls[x].style.display = "block";
+            horiz5Bars[x].style.display = "block";
+        }
+    }
+});
+
+// Horizontal Chart V Add Divider
+const horiz5DivNodes1 = document.querySelectorAll("tr.horiz5Bars");
+const horiz5Div = document.getElementById("horiz5Div");
+window.addEventListener("load", () => { // Adds "none" to border-top on load
+    for (var i = 1; i < horiz5DivNodes1.length; i++) {
+        horiz5DivNodes1[i].firstElementChild.style.borderTop = "none";
+    }
+});
+let horiz5borderTop = "";
+horiz5Div.addEventListener("click", () => { // Toggles chart data bar dividers in chart preview
+    for (var i = 1; i < horiz5DivNodes1.length; i++) {
+        if (horiz5Div.checked == true) {
+            horiz5DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
+        } else if (horiz5Div.checked == false) {
+            horiz5DivNodes1[i].firstElementChild.style.borderTop = "none";
+        }
+    }
+    if (horiz5Div.checked == true) { // Adds border-top to output code if checked
+        return horiz5borderTop = 'border-top: 1px solid #e3e3e3; ';
+    } else if (horiz5Div.checked == false) {
+        return horiz5borderTop = "";
+    }
+});
+
+// Horizontal Chart V Caption
+let horiz5capCode = "";
+const horiz5Cap = document.getElementById("horiz5Cap"); // Caption or chart title
+const horiz5capText = document.getElementById("horiz5capText"); // Caption or chart title text
+horiz5capText.oninput = function() {
+    horiz5Cap.innerHTML = horiz5capText.value;
+    if (horiz5capText.value == "") {
+        horiz5Cap.style.marginBottom = "0";
+        return horiz5capCode = "";
+    } else if (horiz5capText.value) {
+        horiz5Cap.style.marginBottom = "30px";
+        return horiz5capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + horiz5Cap.innerHTML + '</caption>';
+    }
+};
+// Horizontal Chart V Source
+let horiz5srcCode = "";
+const horiz5Source = document.getElementById("horiz5Source"); // Chart source
+const horiz5srcText = document.getElementById("horiz5srcText"); // Chart source text
+horiz5srcText.oninput = function() {
+    horiz5Source.innerHTML = horiz5srcText.value;
+    if (horiz5srcText.value == "") {
+        horiz5Source.style.paddingTop = "0";
+        return horiz5srcCode = "";
+    } else if (horiz5srcText.value) {
+        horiz5Source.style.paddingTop = "40px";
+        return horiz5srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + horiz5Source.innerHTML + '</td></tr>';
+    }
+};
+
+// Horizontal Chart V Row Customization Logic
+const horiz5Row1a = document.getElementById("horiz5Row1a");
+const horiz5Row1b = document.getElementById("horiz5Row1b");
+const horiz5Row1c = document.getElementById("horiz5Row1c");
+const horiz5Row2a = document.getElementById("horiz5Row2a");
+const horiz5Row2b = document.getElementById("horiz5Row2b");
+const horiz5Row2c = document.getElementById("horiz5Row2c");
+const horiz5Row3a = document.getElementById("horiz5Row3a");
+const horiz5Row3b = document.getElementById("horiz5Row3b");
+const horiz5Row3c = document.getElementById("horiz5Row3c");
+const horiz5Row4a = document.getElementById("horiz5Row4a");
+const horiz5Row4b = document.getElementById("horiz5Row4b");
+const horiz5Row4c = document.getElementById("horiz5Row4c");
+const horiz5Row5a = document.getElementById("horiz5Row5a");
+const horiz5Row5b = document.getElementById("horiz5Row5b");
+const horiz5Row5c = document.getElementById("horiz5Row5c");
+const horiz5Row6a = document.getElementById("horiz5Row6a");
+const horiz5Row6b = document.getElementById("horiz5Row6b");
+const horiz5Row6c = document.getElementById("horiz5Row6c");
+const horiz5Row7a = document.getElementById("horiz5Row7a");
+const horiz5Row7b = document.getElementById("horiz5Row7b");
+const horiz5Row7c = document.getElementById("horiz5Row7c");
+const horiz5Row8a = document.getElementById("horiz5Row8a");
+const horiz5Row8b = document.getElementById("horiz5Row8b");
+const horiz5Row8c = document.getElementById("horiz5Row8c");
+const horiz5Row9a = document.getElementById("horiz5Row9a");
+const horiz5Row9b = document.getElementById("horiz5Row9b");
+const horiz5Row9c = document.getElementById("horiz5Row9c");
+const horiz5Row10a = document.getElementById("horiz5Row10a");
+const horiz5Row10b = document.getElementById("horiz5Row10b");
+const horiz5Row10c = document.getElementById("horiz5Row10c");
+
+// Row 1 Customization Logic
+const horiz5Text1a = document.getElementById("horiz5Text1a");
+horiz5Text1a.oninput = function() {
+    if (horiz5Text1a.value.startsWith("http") && horiz5Text1a.value.endsWith(".png") || horiz5Text1a.value.endsWith(".jpg") || horiz5Text1a.value.endsWith(".gif")) {
+        horiz5Row1a.innerHTML = `<img src="` + horiz5Text1a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #1">`;
+    } else {
+        horiz5Row1a.innerHTML = horiz5Text1a.value;
+    }
+};
+const horiz5Size1 = document.getElementById("horiz5Size1");
+horiz5Size1.oninput = function() {
+    horiz5Row1b.style.width = ((Math.abs(horiz5Size1.value)) * .75) + "%";
+    horiz5Row1c.style.width = ((75 - (Math.abs(horiz5Size1.value)) * .75)) + "%";
+};
+const horiz5Text1b = document.getElementById("horiz5Text1b");
+horiz5Text1b.oninput = function() {
+    if (horiz5Text1b.value.startsWith("http") && horiz5Text1b.value.endsWith(".png") || horiz5Text1b.value.endsWith(".jpg") || horiz5Text1b.value.endsWith(".gif")) {
+        horiz5Row1c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text1b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #1">`;
+    } else {
+        horiz5Row1c.innerHTML = "&nbsp;" + horiz5Text1b.value;
+    }
+};
+const horiz5Label1b = document.getElementById("horiz5Label1b");
+horiz5Label1b.addEventListener("click", () => {
+    if (horiz5Text1b.value == "") {
+        horiz5Row1b.innerHTML = "";
+        horiz5Row1c.innerHTML = "";
+    } else if (horiz5Text1b.value.includes(".png") || horiz5Text1b.value.includes(".jpg") || horiz5Text1b.value.includes(".gif")) {
+        horiz5Row1b.innerHTML = `<img src="` + horiz5Text1b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #1">` + "&nbsp;" ;
+        horiz5Text1b.value = "";
+        horiz5Row1c.innerHTML = "";
+    } else if (horiz5Text1b.value) {
+        horiz5Row1b.innerHTML = horiz5Text1b.value + "&nbsp;";
+        horiz5Text1b.value = "";
+        horiz5Row1c.innerHTML = "";
+    }
+});
+const horiz5Color1 = document.getElementById("horiz5Color1");
+horiz5Color1.oninput = function() {
+    horiz5Row1b.style.backgroundColor = horiz5Color1.value;
+};
+
+// Row 2 Customization Logic
+const horiz5Text2a = document.getElementById("horiz5Text2a");
+horiz5Text2a.oninput = function() {
+    if (horiz5Text2a.value.startsWith("http") && horiz5Text2a.value.endsWith(".png") || horiz5Text2a.value.endsWith(".jpg") || horiz5Text2a.value.endsWith(".gif")) {
+        horiz5Row2a.innerHTML = `<img src="` + horiz5Text2a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #2">`;
+    } else {
+        horiz5Row2a.innerHTML = horiz5Text2a.value;
+    }
+};
+const horiz5Size2 = document.getElementById("horiz5Size2");
+horiz5Size2.oninput = function() {
+    horiz5Row2b.style.width = ((Math.abs(horiz5Size2.value)) * .75) + "%";
+    horiz5Row2c.style.width = ((75 - (Math.abs(horiz5Size2.value)) * .75)) + "%";
+};
+const horiz5Text2b = document.getElementById("horiz5Text2b");
+horiz5Text2b.oninput = function() {
+    if (horiz5Text2b.value.startsWith("http") && horiz5Text2b.value.endsWith(".png") || horiz5Text2b.value.endsWith(".jpg") || horiz5Text2b.value.endsWith(".gif")) {
+        horiz5Row2c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text2b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #2">`;
+    } else {
+        horiz5Row2c.innerHTML = "&nbsp;" + horiz5Text2b.value;
+    }
+};
+const horiz5Label2b = document.getElementById("horiz5Label2b");
+horiz5Label2b.addEventListener("click", () => {
+    if (horiz5Text2b.value == "") {
+        horiz5Row2b.innerHTML = "";
+        horiz5Row2c.innerHTML = "";
+    } else if (horiz5Text2b.value.includes(".png") || horiz5Text2b.value.includes(".jpg") || horiz5Text2b.value.includes(".gif")) {
+        horiz5Row2b.innerHTML = `<img src="` + horiz5Text2b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #2">` + "&nbsp;" ;
+        horiz5Text2b.value = "";
+        horiz5Row2c.innerHTML = "";
+    } else if (horiz5Text2b.value) {
+        horiz5Row2b.innerHTML = horiz5Text2b.value + "&nbsp;";
+        horiz5Text2b.value = "";
+        horiz5Row2c.innerHTML = "";
+    }
+});
+const horiz5Color2 = document.getElementById("horiz5Color2");
+horiz5Color2.oninput = function() {
+    horiz5Row2b.style.backgroundColor = horiz5Color2.value;
+};
+
+// Row 3 Customization Logic
+const horiz5Text3a = document.getElementById("horiz5Text3a");
+horiz5Text3a.oninput = function() {
+    if (horiz5Text3a.value.startsWith("http") && horiz5Text3a.value.endsWith(".png") || horiz5Text3a.value.endsWith(".jpg") || horiz5Text3a.value.endsWith(".gif")) {
+        horiz5Row3a.innerHTML = `<img src="` + horiz5Text3a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #3">`;
+    } else {
+        horiz5Row3a.innerHTML = horiz5Text3a.value;
+    }
+};
+const horiz5Size3 = document.getElementById("horiz5Size3");
+horiz5Size3.oninput = function() {
+    horiz5Row3b.style.width = ((Math.abs(horiz5Size3.value)) * .75) + "%";
+    horiz5Row3c.style.width = ((75 - (Math.abs(horiz5Size3.value)) * .75)) + "%";
+};
+const horiz5Text3b = document.getElementById("horiz5Text3b");
+horiz5Text3b.oninput = function() {
+    if (horiz5Text3b.value.startsWith("http") && horiz5Text3b.value.endsWith(".png") || horiz5Text3b.value.endsWith(".jpg") || horiz5Text3b.value.endsWith(".gif")) {
+        horiz5Row3c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text3b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #3">`;
+    } else {
+        horiz5Row3c.innerHTML = "&nbsp;" + horiz5Text3b.value;
+    }
+};
+const horiz5Label3b = document.getElementById("horiz5Label3b");
+horiz5Label3b.addEventListener("click", () => {
+    if (horiz5Text3b.value == "") {
+        horiz5Row3b.innerHTML = "";
+        horiz5Row3c.innerHTML = "";
+    } else if (horiz5Text3b.value.includes(".png") || horiz5Text3b.value.includes(".jpg") || horiz5Text3b.value.includes(".gif")) {
+        horiz5Row3b.innerHTML = `<img src="` + horiz5Text3b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #3">` + "&nbsp;" ;
+        horiz5Text3b.value = "";
+        horiz5Row3c.innerHTML = "";
+    } else if (horiz5Text3b.value) {
+        horiz5Row3b.innerHTML = horiz5Text3b.value + "&nbsp;";
+        horiz5Text3b.value = "";
+        horiz5Row3c.innerHTML = "";
+    }
+});
+const horiz5Color3 = document.getElementById("horiz5Color3");
+horiz5Color3.oninput = function() {
+    horiz5Row3b.style.backgroundColor = horiz5Color3.value;
+};
+
+// Row 4 Customization Logic
+const horiz5Text4a = document.getElementById("horiz5Text4a");
+horiz5Text4a.oninput = function() {
+    if (horiz5Text4a.value.startsWith("http") && horiz5Text4a.value.endsWith(".png") || horiz5Text4a.value.endsWith(".jpg") || horiz5Text4a.value.endsWith(".gif")) {
+        horiz5Row4a.innerHTML = `<img src="` + horiz5Text4a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #4">`;
+    } else {
+        horiz5Row4a.innerHTML = horiz5Text4a.value;
+    }
+};
+const horiz5Size4 = document.getElementById("horiz5Size4");
+horiz5Size4.oninput = function() {
+    horiz5Row4b.style.width = ((Math.abs(horiz5Size4.value)) * .75) + "%";
+    horiz5Row4c.style.width = ((75 - (Math.abs(horiz5Size4.value)) * .75)) + "%";
+};
+const horiz5Text4b = document.getElementById("horiz5Text4b");
+horiz5Text4b.oninput = function() {
+    if (horiz5Text4b.value.startsWith("http") && horiz5Text4b.value.endsWith(".png") || horiz5Text4b.value.endsWith(".jpg") || horiz5Text4b.value.endsWith(".gif")) {
+        horiz5Row4c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text4b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #4">`;
+    } else {
+        horiz5Row4c.innerHTML = "&nbsp;" + horiz5Text4b.value;
+    }
+};
+const horiz5Label4b = document.getElementById("horiz5Label4b");
+horiz5Label4b.addEventListener("click", () => {
+    if (horiz5Text4b.value == "") {
+        horiz5Row4b.innerHTML = "";
+        horiz5Row4c.innerHTML = "";
+    } else if (horiz5Text4b.value.includes(".png") || horiz5Text4b.value.includes(".jpg") || horiz5Text4b.value.includes(".gif")) {
+        horiz5Row4b.innerHTML = `<img src="` + horiz5Text4b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #4">` + "&nbsp;" ;
+        horiz5Text4b.value = "";
+        horiz5Row4c.innerHTML = "";
+    } else if (horiz5Text4b.value) {
+        horiz5Row4b.innerHTML = horiz5Text4b.value + "&nbsp;";
+        horiz5Text4b.value = "";
+        horiz5Row4c.innerHTML = "";
+    }
+});
+const horiz5Color4 = document.getElementById("horiz5Color4");
+horiz5Color4.oninput = function() {
+    horiz5Row4b.style.backgroundColor = horiz5Color4.value;
+};
+
+// Row 5 Customization Logic
+const horiz5Text5a = document.getElementById("horiz5Text5a");
+horiz5Text5a.oninput = function() {
+    if (horiz5Text5a.value.startsWith("http") && horiz5Text5a.value.endsWith(".png") || horiz5Text5a.value.endsWith(".jpg") || horiz5Text5a.value.endsWith(".gif")) {
+        horiz5Row5a.innerHTML = `<img src="` + horiz5Text5a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #5">`;
+    } else {
+        horiz5Row5a.innerHTML = horiz5Text5a.value;
+    }
+};
+const horiz5Size5 = document.getElementById("horiz5Size5");
+horiz5Size5.oninput = function() {
+    horiz5Row5b.style.width = ((Math.abs(horiz5Size5.value)) * .75) + "%";
+    horiz5Row5c.style.width = ((75 - (Math.abs(horiz5Size5.value)) * .75)) + "%";
+};
+const horiz5Text5b = document.getElementById("horiz5Text5b");
+horiz5Text5b.oninput = function() {
+    if (horiz5Text5b.value.startsWith("http") && horiz5Text5b.value.endsWith(".png") || horiz5Text5b.value.endsWith(".jpg") || horiz5Text5b.value.endsWith(".gif")) {
+        horiz5Row5c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text5b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #5">`;
+    } else {
+        horiz5Row5c.innerHTML = "&nbsp;" + horiz5Text5b.value;
+    }
+};
+const horiz5Label5b = document.getElementById("horiz5Label5b");
+horiz5Label5b.addEventListener("click", () => {
+    if (horiz5Text5b.value == "") {
+        horiz5Row5b.innerHTML = "";
+        horiz5Row5c.innerHTML = "";
+    } else if (horiz5Text5b.value.includes(".png") || horiz5Text5b.value.includes(".jpg") || horiz5Text5b.value.includes(".gif")) {
+        horiz5Row5b.innerHTML = `<img src="` + horiz5Text5b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #5">` + "&nbsp;" ;
+        horiz5Text5b.value = "";
+        horiz5Row5c.innerHTML = "";
+    } else if (horiz5Text5b.value) {
+        horiz5Row5b.innerHTML = horiz5Text5b.value + "&nbsp;";
+        horiz5Text5b.value = "";
+        horiz5Row5c.innerHTML = "";
+    }
+});
+const horiz5Color5 = document.getElementById("horiz5Color5");
+horiz5Color5.oninput = function() {
+    horiz5Row5b.style.backgroundColor = horiz5Color5.value;
+};
+
+// Row 6 Customization Logic
+const horiz5Text6a = document.getElementById("horiz5Text6a");
+horiz5Text6a.oninput = function() {
+    if (horiz5Text6a.value.startsWith("http") && horiz5Text6a.value.endsWith(".png") || horiz5Text6a.value.endsWith(".jpg") || horiz5Text6a.value.endsWith(".gif")) {
+        horiz5Row6a.innerHTML = `<img src="` + horiz5Text6a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #6">`;
+    } else {
+        horiz5Row6a.innerHTML = horiz5Text6a.value;
+    }
+};
+const horiz5Size6 = document.getElementById("horiz5Size6");
+horiz5Size6.oninput = function() {
+    horiz5Row6b.style.width = ((Math.abs(horiz5Size6.value)) * .75) + "%";
+    horiz5Row6c.style.width = ((75 - (Math.abs(horiz5Size6.value)) * .75)) + "%";
+};
+const horiz5Text6b = document.getElementById("horiz5Text6b");
+horiz5Text6b.oninput = function() {
+    if (horiz5Text6b.value.startsWith("http") && horiz5Text6b.value.endsWith(".png") || horiz5Text6b.value.endsWith(".jpg") || horiz5Text6b.value.endsWith(".gif")) {
+        horiz5Row6c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text6b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #6">`;
+    } else {
+        horiz5Row6c.innerHTML = "&nbsp;" + horiz5Text6b.value;
+    }
+};
+const horiz5Label6b = document.getElementById("horiz5Label6b");
+horiz5Label6b.addEventListener("click", () => {
+    if (horiz5Text6b.value == "") {
+        horiz5Row6b.innerHTML = "";
+        horiz5Row6c.innerHTML = "";
+    } else if (horiz5Text6b.value.includes(".png") || horiz5Text6b.value.includes(".jpg") || horiz5Text6b.value.includes(".gif")) {
+        horiz5Row6b.innerHTML = `<img src="` + horiz5Text6b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #6">` + "&nbsp;" ;
+        horiz5Text6b.value = "";
+        horiz5Row6c.innerHTML = "";
+    } else if (horiz5Text6b.value) {
+        horiz5Row6b.innerHTML = horiz5Text6b.value + "&nbsp;";
+        horiz5Text6b.value = "";
+        horiz5Row6c.innerHTML = "";
+    }
+});
+const horiz5Color6 = document.getElementById("horiz5Color6");
+horiz5Color6.oninput = function() {
+    horiz5Row6b.style.backgroundColor = horiz5Color6.value;
+};
+
+// Row 7 Customization Logic
+const horiz5Text7a = document.getElementById("horiz5Text7a");
+horiz5Text7a.oninput = function() {
+    if (horiz5Text7a.value.startsWith("http") && horiz5Text7a.value.endsWith(".png") || horiz5Text7a.value.endsWith(".jpg") || horiz5Text7a.value.endsWith(".gif")) {
+        horiz5Row7a.innerHTML = `<img src="` + horiz5Text7a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #7">`;
+    } else {
+        horiz5Row7a.innerHTML = horiz5Text7a.value;
+    }
+};
+const horiz5Size7 = document.getElementById("horiz5Size7");
+horiz5Size7.oninput = function() {
+    horiz5Row7b.style.width = ((Math.abs(horiz5Size7.value)) * .75) + "%";
+    horiz5Row7c.style.width = ((75 - (Math.abs(horiz5Size7.value)) * .75)) + "%";
+};
+const horiz5Text7b = document.getElementById("horiz5Text7b");
+horiz5Text7b.oninput = function() {
+    if (horiz5Text7b.value.startsWith("http") && horiz5Text7b.value.endsWith(".png") || horiz5Text7b.value.endsWith(".jpg") || horiz5Text7b.value.endsWith(".gif")) {
+        horiz5Row7c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text7b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #7">`;
+    } else {
+        horiz5Row7c.innerHTML = "&nbsp;" + horiz5Text7b.value;
+    }
+};
+const horiz5Label7b = document.getElementById("horiz5Label7b");
+horiz5Label7b.addEventListener("click", () => {
+    if (horiz5Text7b.value == "") {
+        horiz5Row7b.innerHTML = "";
+        horiz5Row7c.innerHTML = "";
+    } else if (horiz5Text7b.value.includes(".png") || horiz5Text7b.value.includes(".jpg") || horiz5Text7b.value.includes(".gif")) {
+        horiz5Row7b.innerHTML = `<img src="` + horiz5Text7b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #7">` + "&nbsp;" ;
+        horiz5Text7b.value = "";
+        horiz5Row7c.innerHTML = "";
+    } else if (horiz5Text7b.value) {
+        horiz5Row7b.innerHTML = horiz5Text7b.value + "&nbsp;";
+        horiz5Text7b.value = "";
+        horiz5Row7c.innerHTML = "";
+    }
+});
+const horiz5Color7 = document.getElementById("horiz5Color7");
+horiz5Color7.oninput = function() {
+    horiz5Row7b.style.backgroundColor = horiz5Color7.value;
+};
+
+// Row 8 Customization Logic
+const horiz5Text8a = document.getElementById("horiz5Text8a");
+horiz5Text8a.oninput = function() {
+    if (horiz5Text8a.value.startsWith("http") && horiz5Text8a.value.endsWith(".png") || horiz5Text8a.value.endsWith(".jpg") || horiz5Text8a.value.endsWith(".gif")) {
+        horiz5Row8a.innerHTML = `<img src="` + horiz5Text8a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #8">`;
+    } else {
+        horiz5Row8a.innerHTML = horiz5Text8a.value;
+    }
+};
+const horiz5Size8 = document.getElementById("horiz5Size8");
+horiz5Size8.oninput = function() {
+    horiz5Row8b.style.width = ((Math.abs(horiz5Size8.value)) * .75) + "%";
+    horiz5Row8c.style.width = ((75 - (Math.abs(horiz5Size8.value)) * .75)) + "%";
+};
+const horiz5Text8b = document.getElementById("horiz5Text8b");
+horiz5Text8b.oninput = function() {
+    if (horiz5Text8b.value.startsWith("http") && horiz5Text8b.value.endsWith(".png") || horiz5Text8b.value.endsWith(".jpg") || horiz5Text8b.value.endsWith(".gif")) {
+        horiz5Row8c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text8b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #8">`;
+    } else {
+        horiz5Row8c.innerHTML = "&nbsp;" + horiz5Text8b.value;
+    }
+};
+const horiz5Label8b = document.getElementById("horiz5Label8b");
+horiz5Label8b.addEventListener("click", () => {
+    if (horiz5Text8b.value == "") {
+        horiz5Row8b.innerHTML = "";
+        horiz5Row8c.innerHTML = "";
+    } else if (horiz5Text8b.value.includes(".png") || horiz5Text8b.value.includes(".jpg") || horiz5Text8b.value.includes(".gif")) {
+        horiz5Row8b.innerHTML = `<img src="` + horiz5Text8b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #8">` + "&nbsp;" ;
+        horiz5Text8b.value = "";
+        horiz5Row8c.innerHTML = "";
+    } else if (horiz5Text8b.value) {
+        horiz5Row8b.innerHTML = horiz5Text8b.value + "&nbsp;";
+        horiz5Text8b.value = "";
+        horiz5Row8c.innerHTML = "";
+    }
+});
+const horiz5Color8 = document.getElementById("horiz5Color8");
+horiz5Color8.oninput = function() {
+    horiz5Row8b.style.backgroundColor = horiz5Color8.value;
+};
+
+// Row 9 Customization Logic
+const horiz5Text9a = document.getElementById("horiz5Text9a");
+horiz5Text9a.oninput = function() {
+    if (horiz5Text9a.value.startsWith("http") && horiz5Text9a.value.endsWith(".png") || horiz5Text9a.value.endsWith(".jpg") || horiz5Text9a.value.endsWith(".gif")) {
+        horiz5Row9a.innerHTML = `<img src="` + horiz5Text9a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #9">`;
+    } else {
+        horiz5Row9a.innerHTML = horiz5Text9a.value;
+    }
+};
+const horiz5Size9 = document.getElementById("horiz5Size9");
+horiz5Size9.oninput = function() {
+    horiz5Row9b.style.width = ((Math.abs(horiz5Size9.value)) * .75) + "%";
+    horiz5Row9c.style.width = ((75 - (Math.abs(horiz5Size9.value)) * .75)) + "%";
+};
+const horiz5Text9b = document.getElementById("horiz5Text9b");
+horiz5Text9b.oninput = function() {
+    if (horiz5Text9b.value.startsWith("http") && horiz5Text9b.value.endsWith(".png") || horiz5Text9b.value.endsWith(".jpg") || horiz5Text9b.value.endsWith(".gif")) {
+        horiz5Row9c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text9b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #9">`;
+    } else {
+        horiz5Row9c.innerHTML = "&nbsp;" + horiz5Text9b.value;
+    }
+};
+const horiz5Label9b = document.getElementById("horiz5Label9b");
+horiz5Label9b.addEventListener("click", () => {
+    if (horiz5Text9b.value == "") {
+        horiz5Row9b.innerHTML = "";
+        horiz5Row9c.innerHTML = "";
+    } else if (horiz5Text9b.value.includes(".png") || horiz5Text9b.value.includes(".jpg") || horiz5Text9b.value.includes(".gif")) {
+        horiz5Row9b.innerHTML = `<img src="` + horiz5Text9b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #9">` + "&nbsp;" ;
+        horiz5Text9b.value = "";
+        horiz5Row9c.innerHTML = "";
+    } else if (horiz5Text9b.value) {
+        horiz5Row9b.innerHTML = horiz5Text9b.value + "&nbsp;";
+        horiz5Text9b.value = "";
+        horiz5Row9c.innerHTML = "";
+    }
+});
+const horiz5Color9 = document.getElementById("horiz5Color9");
+horiz5Color9.oninput = function() {
+    horiz5Row9b.style.backgroundColor = horiz5Color9.value;
+};
+
+// Row 10 Customization Logic
+const horiz5Text10a = document.getElementById("horiz5Text10a");
+horiz5Text10a.oninput = function() {
+    if (horiz5Text10a.value.startsWith("http") && horiz5Text10a.value.endsWith(".png") || horiz5Text10a.value.endsWith(".jpg") || horiz5Text10a.value.endsWith(".gif")) {
+        horiz5Row10a.innerHTML = `<img src="` + horiz5Text10a.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Data bar #10">`;
+    } else {
+        horiz5Row10a.innerHTML = horiz5Text10a.value;
+    }
+};
+const horiz5Size10 = document.getElementById("horiz5Size10");
+horiz5Size10.oninput = function() {
+    horiz5Row10b.style.width = ((Math.abs(horiz5Size10.value)) * .75) + "%";
+    horiz5Row10c.style.width = ((75 - (Math.abs(horiz5Size10.value)) * .75)) + "%";
+};
+const horiz5Text10b = document.getElementById("horiz5Text10b");
+horiz5Text10b.oninput = function() {
+    if (horiz5Text10b.value.startsWith("http") && horiz5Text10b.value.endsWith(".png") || horiz5Text10b.value.endsWith(".jpg") || horiz5Text10b.value.endsWith(".gif")) {
+        horiz5Row10c.innerHTML = "&nbsp;" + `<img src="` + horiz5Text10b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #10">`;
+    } else {
+        horiz5Row10c.innerHTML = "&nbsp;" + horiz5Text10b.value;
+    }
+};
+const horiz5Label10b = document.getElementById("horiz5Label10b");
+horiz5Label10b.addEventListener("click", () => {
+    if (horiz5Text10b.value == "") {
+        horiz5Row10b.innerHTML = "";
+        horiz5Row10c.innerHTML = "";
+    } else if (horiz5Text10b.value.includes(".png") || horiz5Text10b.value.includes(".jpg") || horiz5Text10b.value.includes(".gif")) {
+        horiz5Row10b.innerHTML = `<img src="` + horiz5Text10b.value + `" width="auto" height="24" border="0" valign="middle" style="width: auto; height: 24px;" alt="Label #10">` + "&nbsp;" ;
+        horiz5Text10b.value = "";
+        horiz5Row10c.innerHTML = "";
+    } else if (horiz5Text10b.value) {
+        horiz5Row10b.innerHTML = horiz5Text10b.value + "&nbsp;";
+        horiz5Text10b.value = "";
+        horiz5Row10c.innerHTML = "";
+    }
+});
+const horiz5Color10 = document.getElementById("horiz5Color10");
+horiz5Color10.oninput = function() {
+    horiz5Row10b.style.backgroundColor = horiz5Color10.value;
+};
+
+// Generate Horiz5 HTML Chart Logic
+const horiz5Weight = document.getElementById("horiz5Weight");
+const horiz5Button = document.getElementById("horiz5Button");
+const horiz5Output = document.getElementById("horiz5Output");
+horiz5Button.addEventListener("click", () => {
+    if (rowsData24.value === "1") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    } else if (rowsData24.value === "2") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2b.style.width + '; height: 34px;" height="34">' + horiz5Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2c.style.width + '; height: 34px;" height="34">' + horiz5Row2c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    } else if (rowsData24.value === "3") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2b.style.width + '; height: 34px;" height="34">' + horiz5Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2c.style.width + '; height: 34px;" height="34">' + horiz5Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3b.style.width + '; height: 34px;" height="34">' + horiz5Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3c.style.width + '; height: 34px;" height="34">' + horiz5Row3c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    } else if (rowsData24.value === "4") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2b.style.width + '; height: 34px;" height="34">' + horiz5Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2c.style.width + '; height: 34px;" height="34">' + horiz5Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3b.style.width + '; height: 34px;" height="34">' + horiz5Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3c.style.width + '; height: 34px;" height="34">' + horiz5Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4b.style.width + '; height: 34px;" height="34">' + horiz5Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4c.style.width + '; height: 34px;" height="34">' + horiz5Row4c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    } else if (rowsData24.value === "5") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2b.style.width + '; height: 34px;" height="34">' + horiz5Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2c.style.width + '; height: 34px;" height="34">' + horiz5Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3b.style.width + '; height: 34px;" height="34">' + horiz5Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3c.style.width + '; height: 34px;" height="34">' + horiz5Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4b.style.width + '; height: 34px;" height="34">' + horiz5Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4c.style.width + '; height: 34px;" height="34">' + horiz5Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5b.style.width + '; height: 34px;" height="34">' + horiz5Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5c.style.width + '; height: 34px;" height="34">' + horiz5Row5c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    } else if (rowsData24.value === "6") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2b.style.width + '; height: 34px;" height="34">' + horiz5Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2c.style.width + '; height: 34px;" height="34">' + horiz5Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3b.style.width + '; height: 34px;" height="34">' + horiz5Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3c.style.width + '; height: 34px;" height="34">' + horiz5Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4b.style.width + '; height: 34px;" height="34">' + horiz5Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4c.style.width + '; height: 34px;" height="34">' + horiz5Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5b.style.width + '; height: 34px;" height="34">' + horiz5Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5c.style.width + '; height: 34px;" height="34">' + horiz5Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6b.style.width + '; height: 34px;" height="34">' + horiz5Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6c.style.width + '; height: 34px;" height="34">' + horiz5Row6c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    } else if (rowsData24.value === "7") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2b.style.width + '; height: 34px;" height="34">' + horiz5Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2c.style.width + '; height: 34px;" height="34">' + horiz5Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3b.style.width + '; height: 34px;" height="34">' + horiz5Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3c.style.width + '; height: 34px;" height="34">' + horiz5Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4b.style.width + '; height: 34px;" height="34">' + horiz5Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4c.style.width + '; height: 34px;" height="34">' + horiz5Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5b.style.width + '; height: 34px;" height="34">' + horiz5Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5c.style.width + '; height: 34px;" height="34">' + horiz5Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6b.style.width + '; height: 34px;" height="34">' + horiz5Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6c.style.width + '; height: 34px;" height="34">' + horiz5Row6c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row7a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color7.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row7b.style.width + '; height: 34px;" height="34">' + horiz5Row7b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row7c.style.width + '; height: 34px;" height="34">' + horiz5Row7c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    } else if (rowsData24.value === "8") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2b.style.width + '; height: 34px;" height="34">' + horiz5Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2c.style.width + '; height: 34px;" height="34">' + horiz5Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3b.style.width + '; height: 34px;" height="34">' + horiz5Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3c.style.width + '; height: 34px;" height="34">' + horiz5Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4b.style.width + '; height: 34px;" height="34">' + horiz5Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4c.style.width + '; height: 34px;" height="34">' + horiz5Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5b.style.width + '; height: 34px;" height="34">' + horiz5Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5c.style.width + '; height: 34px;" height="34">' + horiz5Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6b.style.width + '; height: 34px;" height="34">' + horiz5Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6c.style.width + '; height: 34px;" height="34">' + horiz5Row6c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row7a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color7.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row7b.style.width + '; height: 34px;" height="34">' + horiz5Row7b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row7c.style.width + '; height: 34px;" height="34">' + horiz5Row7c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row8a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color8.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row8b.style.width + '; height: 34px;" height="34">' + horiz5Row8b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row8c.style.width + '; height: 34px;" height="34">' + horiz5Row8c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    } else if (rowsData24.value === "9") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2b.style.width + '; height: 34px;" height="34">' + horiz5Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2c.style.width + '; height: 34px;" height="34">' + horiz5Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3b.style.width + '; height: 34px;" height="34">' + horiz5Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3c.style.width + '; height: 34px;" height="34">' + horiz5Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4b.style.width + '; height: 34px;" height="34">' + horiz5Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4c.style.width + '; height: 34px;" height="34">' + horiz5Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5b.style.width + '; height: 34px;" height="34">' + horiz5Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5c.style.width + '; height: 34px;" height="34">' + horiz5Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6b.style.width + '; height: 34px;" height="34">' + horiz5Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6c.style.width + '; height: 34px;" height="34">' + horiz5Row6c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row7a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color7.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row7b.style.width + '; height: 34px;" height="34">' + horiz5Row7b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row7c.style.width + '; height: 34px;" height="34">' + horiz5Row7c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row8a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color8.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row8b.style.width + '; height: 34px;" height="34">' + horiz5Row8b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row8c.style.width + '; height: 34px;" height="34">' + horiz5Row8c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row9a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color9.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row9b.style.width + '; height: 34px;" height="34">' + horiz5Row9b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row9c.style.width + '; height: 34px;" height="34">' + horiz5Row9c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    } else if (rowsData24.value === "10") {
+        const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row2a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color2.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2b.style.width + '; height: 34px;" height="34">' + horiz5Row2b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row2c.style.width + '; height: 34px;" height="34">' + horiz5Row2c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row3a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color3.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3b.style.width + '; height: 34px;" height="34">' + horiz5Row3b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row3c.style.width + '; height: 34px;" height="34">' + horiz5Row3c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row4a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color4.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4b.style.width + '; height: 34px;" height="34">' + horiz5Row4b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row4c.style.width + '; height: 34px;" height="34">' + horiz5Row4c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row5a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color5.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5b.style.width + '; height: 34px;" height="34">' + horiz5Row5b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row5c.style.width + '; height: 34px;" height="34">' + horiz5Row5c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row6a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color6.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6b.style.width + '; height: 34px;" height="34">' + horiz5Row6b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row6c.style.width + '; height: 34px;" height="34">' + horiz5Row6c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row7a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color7.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row7b.style.width + '; height: 34px;" height="34">' + horiz5Row7b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row7c.style.width + '; height: 34px;" height="34">' + horiz5Row7c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row8a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color8.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row8b.style.width + '; height: 34px;" height="34">' + horiz5Row8b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row8c.style.width + '; height: 34px;" height="34">' + horiz5Row8c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 4px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row9a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color9.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row9b.style.width + '; height: 34px;" height="34">' + horiz5Row9b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row9c.style.width + '; height: 34px;" height="34">' + horiz5Row9c.innerHTML + '</td></tr></table> </td></tr><tr> <td align="left" style="' + horiz5borderTop + 'padding: 4px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row10a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color10.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row10b.style.width + '; height: 34px;" height="34">' + horiz5Row10b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row10c.style.width + '; height: 34px;" height="34">' + horiz5Row10c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->';
+        horiz5Output.innerHTML = chartCode;
+        horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
+    }
+});
+horiz5Output.addEventListener("click", () => {
+    horiz5Output.select();
 });
