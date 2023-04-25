@@ -90,6 +90,7 @@
             <li>After clicking the button to generate your HTML output code, the chart's estimated HTML weight will display below</li>
             <li>The <code>chartMobile</code> class can be used to adjust the chart's padding and border values</li>
             <li>Use <code>media queries</code> to adjust the size of the chart text and the height of the data bars for smaller screens. The following snippet of code can be applied to all <em>non-vertical bar charts</em>:<br /><br /><code>@media screen and (max-width: 600px) { .chartMobile td {font-size: 10px !important; height: 22px !important;} .chartMobile caption {font-size: 12px !important;} }</code><br /><br /></li>
+            <li>To reduce the image sizes in mobile view for Horizontal Bar Chart V, use the following snippet of code:<br /><br /><code>@media screen and (max-width: 600px) { .chartMobile img {height: 24px !important;} }</code><br /><br /></li>
             <li>The following snippet of code can be applied to all <em>vertical bar charts</em>:<br /><br /><code>@media screen and (max-width: 600px) { .chartVertMobile td {font-size: 10px !important; width: 25px !important;} .chartVertCap, .chartVertSrc {font-size: 12px !important;} }</code></li>
         </ul>
         <hr />
