@@ -9,10 +9,10 @@ selectElement.addEventListener("change", () => {
             charts[i].style.display = "none";
             charts[selectElement.selectedIndex - 1].style.display = "block";
         }
-        if (selectElement.selectedIndex >= 20 && selectElement.selectedIndex < 25) {
+        if (selectElement.selectedIndex >= 21 && selectElement.selectedIndex < 26) {
             chartEmoji.style.transform = "rotate(0deg)"; // For vertical bar charts
             chartEmoji.style.marginRight = "13px";
-        } else if (selectElement.selectedIndex < 20) {
+        } else if (selectElement.selectedIndex < 21) {
             chartEmoji.style.transform = "rotate(90deg)"; // For horizontal bar charts
             chartEmoji.style.marginRight = "19px";
         }
