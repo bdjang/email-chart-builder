@@ -29,6 +29,7 @@ ul li { margin: 8px 0; }
 #readme p + p span { font-family: monospace; font-size: 14px; } /* Targets <table> text */
 
 /* CHART STYLES */
+.endLabel:hover { cursor: pointer; text-decoration: underline; } /* Adds interactivity for label text switching */
 .dataCheckboxes label { display: inline-block; width: 150px; } /* Chart Customization labels */
 .dataCheckboxes label[for="horiz3Div"], .dataCheckboxes label[for="horiz4Div"], .dataCheckboxes label[for="horiz5Div"], .dataCheckboxes label[for="combo1Div"] { margin: 0 0 0 65px; width: 130px; } /* Horizontal Chart III and IV and Combo Chart I 'Add bar dividers' */
 .dataCheckboxes small { display: block; margin: 10px 0; }
