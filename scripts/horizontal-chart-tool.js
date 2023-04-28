@@ -1,6 +1,3 @@
-// Bottom Chart Spacing
-const botSpace = `<div height="40" style="font-size:40px;line-height:40px;">&nbsp;</div>`;
-
 // Horizontal Chart I Row Selection
 const horiz1Bars = document.getElementsByClassName("horiz1Bars");
 const horiz1Controls = document.getElementsByClassName("horiz1Controls");

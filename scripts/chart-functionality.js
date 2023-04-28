@@ -19,6 +19,9 @@ selectElement.addEventListener("change", () => {
     }
 });
 
+// Bottom Spacing for Non-Vertical Charts
+const botSpace = `<div height="24" style="font-size:24px;line-height:24px;">&nbsp;</div>`;
+
 // Preview Dark Mode
 const lightMode = document.getElementById("lightMode");
 const darkMode = document.getElementById("darkMode");
