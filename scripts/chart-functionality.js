@@ -195,14 +195,9 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
 });
 
 document.addEventListener("keydown", () => {
-    if (event.keyCode == 84 && document.activeElement == bodyEl[0]) { // t
-    // if (event.keyCode == 67 && document.activeElement == bodyEl[0]) { // c
+    if (event.keyCode == 82 || event.keyCode == 84 && document.activeElement == bodyEl[0]) { // r and t
         chartSelect.focus();
     }
-    // if (event.keyCode == 82) { // r
-    // if (event.keyCode == 81) { // q
-        // chartSelect.blur();
-    // }
     if (event.keyCode == 68 && document.body.classList.contains("lightStyles")) { // d
         if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
             chartSelect.blur();
