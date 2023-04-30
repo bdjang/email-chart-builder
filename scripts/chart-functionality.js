@@ -195,7 +195,12 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
 });
 
 document.addEventListener("keydown", () => {
-    if (event.keyCode == 82 || event.keyCode == 84 && document.activeElement == bodyEl[0]) { // r and t
+    if (event.keyCode == 82 && document.activeElement == bodyEl[0]) { // r
+        chartSelect.blur();
+        chartSelect.focus();
+    }
+    if (event.keyCode == 84 && document.activeElement == bodyEl[0]) { // t
+        chartSelect.blur();
         chartSelect.focus();
     }
     if (event.keyCode == 68 && document.body.classList.contains("lightStyles")) { // d
