@@ -526,6 +526,7 @@ horiz1Button.addEventListener("click", () => {
         horiz1Output.innerHTML = chartCode;
         horiz1Weight.textContent = Math.ceil(horiz1Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(horiz1Output.value);
 });
 horiz1Output.addEventListener("click", () => {
     horiz1Output.select();
@@ -1046,6 +1047,7 @@ horiz2Button.addEventListener("click", () => {
         horiz2Output.innerHTML = chartCode;
         horiz2Weight.textContent = Math.ceil(horiz2Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(horiz2Output.value);
 });
 horiz2Output.addEventListener("click", () => {
     horiz2Output.select();
@@ -1580,6 +1582,7 @@ horiz3Button.addEventListener("click", () => {
         horiz3Output.innerHTML = chartCode;
         horiz3Weight.textContent = Math.ceil(horiz3Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(horiz3Output.value);
 });
 horiz3Output.addEventListener("click", () => {
     horiz3Output.select();
@@ -2114,6 +2117,7 @@ horiz4Button.addEventListener("click", () => {
         horiz4Output.innerHTML = chartCode;
         horiz4Weight.textContent = Math.ceil(horiz4Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(horiz4Output.value);
 });
 horiz4Output.addEventListener("click", () => {
     horiz4Output.select();
@@ -2689,6 +2693,7 @@ horiz5Button.addEventListener("click", () => {
         horiz5Output.innerHTML = chartCode;
         horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(horiz5Output.value);
 });
 horiz5Output.addEventListener("click", () => {
     horiz5Output.select();

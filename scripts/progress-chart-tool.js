@@ -275,6 +275,7 @@ prog1Button.addEventListener("click", () => {
         prog1Output.innerHTML = chartCode;
         prog1Weight.textContent = Math.ceil(prog1Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(prog1Output.value);
 });
 prog1Output.addEventListener("click", () => {
     prog1Output.select();
@@ -668,6 +669,7 @@ prog2Button.addEventListener("click", () => {
         prog2Output.innerHTML = chartCode;
         prog2Weight.textContent = Math.ceil(prog2Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(prog2Output.value);
 });
 prog2Output.addEventListener("click", () => {
     prog2Output.select();
@@ -1040,6 +1042,7 @@ prog3Button.addEventListener("click", () => {
         prog3Output.innerHTML = chartCode;
         prog3Weight.textContent = Math.ceil(prog3Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(prog3Output.value);
 });
 prog3Output.addEventListener("click", () => {
     prog3Output.select();
@@ -1457,6 +1460,7 @@ prog4Button.addEventListener("click", () => {
         prog4Output.innerHTML = chartCode;
         prog4Weight.textContent = Math.ceil(prog4Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(prog4Output.value);
 });
 prog4Output.addEventListener("click", () => {
     prog4Output.select();

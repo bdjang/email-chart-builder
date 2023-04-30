@@ -676,6 +676,7 @@ stacked1Button.addEventListener("click", () => {
         stacked1Output.innerHTML = chartCode;
         stacked1Weight.textContent = Math.ceil(stacked1Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(stacked1Output.value);
 });
 
 // Highlight stacked1Output Text
@@ -1266,6 +1267,7 @@ stacked2Button.addEventListener("click", () => {
         stacked2Output.innerHTML = chartCode;
         stacked2Weight.textContent = Math.ceil(stacked2Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(stacked2Output.value);
 });
 
 // Highlight stacked2Output Text
@@ -2076,6 +2078,7 @@ stacked3Button.addEventListener("click", () => {
         stacked3Output.innerHTML = chartCode;
         stacked3Weight.textContent = Math.ceil(stacked3Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(stacked3Output.value);
 });
 
 // Highlight stacked3Output Text
@@ -2884,6 +2887,7 @@ stacked4Button.addEventListener("click", () => {
         stacked4Output.innerHTML = chartCode;
         stacked4Weight.textContent = Math.ceil(stacked4Output.value.length / 1024) + 'KB';
     }
+    navigator.clipboard.writeText(stacked4Output.value);
 });
 
 // Highlight stacked4Output Text
