@@ -418,6 +418,8 @@ negative1Color10.oninput = function() {
 const negative1Weight = document.getElementById("negative1Weight");
 const negative1Button = document.getElementById("negative1Button");
 const negative1Output = document.getElementById("negative1Output");
+negative1Button.addEventListener("mouseenter", () => { negative1Weight.style.opacity = ".25"; });
+negative1Button.addEventListener("mouseleave", () => { negative1Weight.style.opacity = "1"; });
 negative1Button.addEventListener("click", () => {
     if (rowsData12.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + negative1capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">' + negative1Row1a.innerHTML + '</td><td align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + negative1Row1b.style.width + '; height: 28px;" height="28">' + negative1Row1b.innerHTML + '</td><td align="left" style="background-color: ' + negative1Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + negative1Row1c.style.width + '; height: 28px;" height="28">' + negative1Row1c.innerHTML + '</td></tr></table> </td></tr>' + negative1srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -460,6 +462,7 @@ negative1Button.addEventListener("click", () => {
         negative1Output.innerHTML = chartCode;
         negative1Weight.textContent = Math.ceil(negative1Output.value.length / 1024) + 'KB';
     }
+    negative1Weight.style.opacity = "1";
     navigator.clipboard.writeText(negative1Output.value);
 });
 negative1Output.addEventListener("click", () => {
@@ -886,6 +889,8 @@ negative2Color10.oninput = function() {
 const negative2Weight = document.getElementById("negative2Weight");
 const negative2Button = document.getElementById("negative2Button");
 const negative2Output = document.getElementById("negative2Output");
+negative2Button.addEventListener("mouseenter", () => { negative2Weight.style.opacity = ".25"; });
+negative2Button.addEventListener("mouseleave", () => { negative2Weight.style.opacity = "1"; });
 negative2Button.addEventListener("click", () => {
     if (rowsData13.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + negative2capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + negative2Row1b.style.width + '; height: 28px;" height="28">' + negative2Row1b.innerHTML + '</td><td align="left" style="background-color: ' + negative2Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + negative2Row1c.style.width + '; height: 28px;" height="28">' + negative2Row1c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">' + negative2Row1a.innerHTML + '</td></tr></table> </td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -928,6 +933,7 @@ negative2Button.addEventListener("click", () => {
         negative2Output.innerHTML = chartCode;
         negative2Weight.textContent = Math.ceil(negative2Output.value.length / 1024) + 'KB';
     }
+    negative2Weight.style.opacity = "1";
     navigator.clipboard.writeText(negative2Output.value);
 });
 negative2Output.addEventListener("click", () => {
@@ -1594,6 +1600,8 @@ rowColor10b.oninput = function() {
 const splitWeight = document.getElementById("splitWeight");
 const splitButton = document.getElementById("splitButton");
 const splitOutput = document.getElementById("splitOutput");
+splitButton.addEventListener("mouseenter", () => { splitWeight.style.opacity = ".25"; });
+splitButton.addEventListener("mouseleave", () => { splitWeight.style.opacity = "1"; });
 splitButton.addEventListener("click", () => {
     if (rowsData20.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + splitcapCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="right" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + row1a.style.width + '; height: 22px;" height="22">' + row1a.innerHTML + '</td><td align="left" style="background-color: ' + rowColor1a.value + '; border-right: 1px solid #000000; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + row1b.style.width + '; height: 22px;" height="22">' + row1b.innerHTML + '</td><td align="right" style="background-color: ' + rowColor1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + row1c.style.width + '; height: 22px;" height="22">' + row1c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + row1d.style.width + '; height: 22px;" height="22">' + row1d.innerHTML + '</td></tr></table> </td></tr>' + splitsrcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -1636,6 +1644,7 @@ splitButton.addEventListener("click", () => {
         splitOutput.innerHTML = chartCode;
         splitWeight.textContent = Math.ceil(splitOutput.value.length / 1024) + 'KB';
     }
+    splitWeight.style.opacity = "1";
     navigator.clipboard.writeText(splitOutput.value);
 });
 
@@ -2170,6 +2179,8 @@ combo1Color6b.oninput = function() {
 const combo1Weight = document.getElementById("combo1Weight");
 const combo1Button = document.getElementById("combo1Button");
 const combo1Output = document.getElementById("combo1Output");
+combo1Button.addEventListener("mouseenter", () => { combo1Weight.style.opacity = ".25"; });
+combo1Button.addEventListener("mouseleave", () => { combo1Weight.style.opacity = "1"; });
 combo1Button.addEventListener("click", () => {
     if (rowsData7.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + combo1capCode + ' <tr> <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;"><span style="background-color: ' + legend4Color1x.value + '; border: 1px solid ' + legend4Color1x.value + '; color: ' + legend4Color1x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend4Text1.innerHTML + '&nbsp;&nbsp;|&nbsp;&nbsp;<span style="background-color: ' + legend4Color2x.value + '; border: 1px solid ' + legend4Color2x.value + '; color: ' + legend4Color2x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend4Text2.innerHTML + '</td></tr><tr> <td align="left" style="padding: 20px 0 10px 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; vertical-align: bottom; width: 25%; height: 22px;" height="22">' + combo1Row1a.innerHTML + '</td><td align="right" style="background-color: ' + combo1Color1t.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo1Row1b.style.width + '; height: 22px;" height="22">' + combo1Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo1Row1c.style.width + '; height: 22px;" height="22">' + combo1Row1c.innerHTML + '</td></tr></table> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22"></td><td align="right" style="background-color: ' + combo1Color1b.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo1Row1y.style.width +'; height: 22px;" height="22">' + combo1Row1y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo1Row1z.style.width + '; height: 22px;" height="22">' + combo1Row1z.innerHTML + '</td></tr></table> </td></tr>' + combo1srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -2196,6 +2207,7 @@ combo1Button.addEventListener("click", () => {
         combo1Output.innerHTML = chartCode;
         combo1Weight.textContent = Math.ceil(combo1Output.value.length / 1024) + 'KB';
     }
+    combo1Weight.style.opacity = "1";
     navigator.clipboard.writeText(combo1Output.value);
 });
 combo1Output.addEventListener("click", () => {
@@ -2647,6 +2659,8 @@ combo2Color5b.oninput = function() {
 const combo2Weight = document.getElementById("combo2Weight");
 const combo2Button = document.getElementById("combo2Button");
 const combo2Output = document.getElementById("combo2Output");
+combo2Button.addEventListener("mouseenter", () => { combo2Weight.style.opacity = ".25"; });
+combo2Button.addEventListener("mouseleave", () => { combo2Weight.style.opacity = "1"; });
 combo2Button.addEventListener("click", () => {
     if (rowsData19.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + combo2capCode + ' <tr> <td style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;"><span style="background-color: ' + legend8Color1x.value + '; border: 1px solid ' + legend8Color1x.value + '; color: ' + legend8Color1x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend8Text1.innerHTML + '&nbsp;&nbsp;|&nbsp;&nbsp;<span style="background-color: ' + legend8Color2x.value + '; border: 1px solid ' + legend8Color2x.value + '; color: ' + legend8Color2x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend8Text2.innerHTML + '</td></tr><tr> <td align="left" style="padding: 20px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td colspan="2" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 22px;" height="22">' + combo2Row1a.innerHTML + '</td></tr><tr> <td align="right" style="background-color: ' + combo2Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo2Row1b.style.width + '; height: 22px;" height="22">' + combo2Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo2Row1c.style.width + '; height: 22px;" height="22">' + combo2Row1c.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="right" style="background-color: ' + combo2Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo2Row1y.style.width + '; height: 22px;" height="22">' + combo2Row1y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo2Row1z.style.width + '; height: 22px;" height="22">' + combo2Row1z.innerHTML + '</td></tr></table> </td></tr>' + combo2srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -2669,6 +2683,7 @@ combo2Button.addEventListener("click", () => {
         combo2Output.innerHTML = chartCode;
         combo2Weight.textContent = Math.ceil(combo2Output.value.length / 1024) + 'KB';
     }
+    combo2Weight.style.opacity = "1";
     navigator.clipboard.writeText(combo2Output.value);
 });
 combo2Output.addEventListener("click", () => {
@@ -3198,6 +3213,8 @@ combo3Color5b.oninput = function() {
 const combo3Weight = document.getElementById("combo3Weight");
 const combo3Button = document.getElementById("combo3Button");
 const combo3Output = document.getElementById("combo3Output");
+combo3Button.addEventListener("mouseenter", () => { combo3Weight.style.opacity = ".25"; });
+combo3Button.addEventListener("mouseleave", () => { combo3Weight.style.opacity = "1"; });
 combo3Button.addEventListener("click", () => {
     if (rowsData23.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + combo3capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td colspan="3" align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: auto; height: 31px;" height="31">' + combo3Row1a.innerHTML + '</td></tr><tr> <td align="left" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1b.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1t.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1c.style.width + '; height: 31px;" height="31">' + combo3Row1c.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1d.style.width + '; height: 31px;" height="31">' + combo3Row1d.innerHTML + '</td></tr></table> </td></tr><tr> <td style="padding: 2px 0 0 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + combo3Row1x.innerHTML + '</td><td align="right" style="background-color: ' + combo3Color1b.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1y.style.width + '; height: 31px;" height="31">' + combo3Row1y.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + combo3Row1z.style.width + '; height: 31px;" height="31">' + combo3Row1z.innerHTML + '</td></tr></table> </td></tr>' + combo3srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -3220,6 +3237,7 @@ combo3Button.addEventListener("click", () => {
         combo3Output.innerHTML = chartCode;
         combo3Weight.textContent = Math.ceil(combo3Output.value.length / 1024) + 'KB';
     }
+    combo3Weight.style.opacity = "1";
     navigator.clipboard.writeText(combo3Output.value);
 });
 combo3Output.addEventListener("click", () => {
