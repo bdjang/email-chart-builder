@@ -12,7 +12,7 @@ header { margin: 0 20px; }
 header, textarea, #readme { font-family: Courier, serif; }
 label { font-family: Times, serif; font-size: 16px; }
 legend { font-weight: 600; }
-textarea { background-color: #f8f8f8; border: 1px solid #c4c4c4; display: block; font-size: 12px; margin: 0 auto; padding: 0; resize: none; height: 160px; width: 700px; }
+textarea { background-color: #f8f8f8; border: 1px solid #c4c4c4; display: block; font-size: 12px; margin: 0 auto; padding: 0; resize: none; width: 700px; height: 160px; }
 ul li { margin: 8px 0; }
 
 /* SITE STYLES */
@@ -54,8 +54,9 @@ ul li { margin: 8px 0; }
 .vert5Controls input { margin: 10px 10px 0 0; width: 50px; }
 
 /* ESTIMATED HTML CHART WEIGHT */
+.chartWeight { -webkit-transition: opacity 350ms ease-out; -ms-transition: opacity 350ms ease-out; -moz-transition: opacity 350ms ease-out; transition: opacity 350ms ease-out; }
 label[for*="Output"] { display: block; font-family: Arial, sans-serif; font-size: 12px; font-weight: 600; text-align: left; width: 700px; margin: 4px 0 40px; } /* HTML Weight Text */
-label[for*="Output"] span { text-decoration: underline; }
+label[for*="Output"] span { text-decoration: underline; text-decoration-thickness: 2px; }
 
 /* DARK MODE STYLES */
 button, #darkMode, #lightMode { cursor: pointer; }
