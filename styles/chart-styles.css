@@ -53,8 +53,9 @@ ul li { margin: 8px 0; }
 .splitControls input { width: 50px; }
 .vert5Controls input { margin: 10px 10px 0 0; width: 50px; }
 
-/* ESTIMATED HTML CHART WEIGHT */
-.chartWeight { -webkit-transition: opacity 350ms ease-out; -ms-transition: opacity 350ms ease-out; -moz-transition: opacity 350ms ease-out; transition: opacity 350ms ease-out; }
+/* OUTPUT CODE + ESTIMATED HTML CHART WEIGHT */
+textarea[name*="Output"] { -webkit-transition: border-color 250ms ease, color 250ms ease, opacity 250ms ease; -ms-transition: border-color 250ms ease, color 250ms ease, opacity 250ms ease; -moz-transition: border-color 250ms ease, color 250ms ease, opacity 250ms ease; transition: border-color 250ms ease, color 250ms ease, opacity 250ms ease; } /* Selects all textarea elements with 'Output' in the name value using the attribute selector */
+.chartWeight { -webkit-transition: color 250ms ease, opacity 250ms ease; -ms-transition: color 250ms ease, opacity 250ms ease; -moz-transition: color 250ms ease, opacity 250ms ease; transition: color 250ms ease, opacity 250ms ease; }
 label[for*="Output"] { display: block; font-family: Arial, sans-serif; font-size: 12px; font-weight: 600; text-align: left; width: 700px; margin: 4px 0 40px; } /* HTML Weight Text */
 label[for*="Output"] span { text-decoration: underline; text-decoration-thickness: 2px; }
 
