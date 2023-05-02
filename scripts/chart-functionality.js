@@ -479,8 +479,8 @@ document.addEventListener("keydown", () => {
                 codeText[a].style.color = "#de0d0d";
             }
             for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
-                anchorTags[b].style.color = "#0a47ff";
-                anchorCode[0].style.color = "#0a47ff";
+                anchorTags[b].style.color = "#166dfc";
+                anchorCode[0].style.color = "#166dfc";
             }
         }
     }
@@ -853,8 +853,8 @@ lightMode.addEventListener("click", () => {
         codeText[a].style.color = "#de0d0d";
     }
     for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
-        anchorTags[b].style.color = "#0a47ff";
-        anchorCode[0].style.color = "#0a47ff";
+        anchorTags[b].style.color = "#166dfc";
+        anchorCode[0].style.color = "#166dfc";
     }
     darkMode.style.display = "inline-block";
     lightMode.style.display = "none";
