@@ -61,8 +61,8 @@ horiz1srcText.oninput = function() {
         horiz1Source.style.paddingTop = "0";
         return horiz1srcCode = "";
     } else if (horiz1srcText.value) {
-        horiz1Source.style.paddingTop = "40px";
-        return horiz1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + horiz1Source.innerHTML + '</td></tr>';
+        horiz1Source.style.paddingTop = "30px";
+        return horiz1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + horiz1Source.innerHTML + '</td></tr>';
     }
 };
 
