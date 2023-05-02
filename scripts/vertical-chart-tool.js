@@ -253,8 +253,8 @@ vert1Color10.oninput = function() {
 const vert1Weight = document.getElementById("vert1Weight");
 const vert1Button = document.getElementById("vert1Button");
 const vert1Output = document.getElementById("vert1Output");
-vert1Button.addEventListener("mouseenter", () => { vert1Weight.style.opacity = ".25"; });
-vert1Button.addEventListener("mouseleave", () => { vert1Weight.style.opacity = "1"; });
+vert1Button.addEventListener("mouseenter", () => { vert1Output.style.opacity = ".4"; vert1Weight.style.opacity = ".4"; } );
+vert1Button.addEventListener("mouseleave", () => { vert1Output.style.opacity = ""; vert1Weight.style.opacity = ""; vert1Output.style.borderColor = ""; vert1Weight.style.color = ""; } );
 vert1Button.addEventListener("click", () => {
     if (rowsData14.value === "1") {
         const chartCode = '' + vert1capCode + '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="' + vert1Width.style.maxWidth + '"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: ' + vert1Width.style.maxWidth + '; margin: 0 auto; padding: 0;" class="chartVertMobile"> <tr> <td width="50" valign="bottom" align="center"> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: normal; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">' + vert1Row1a.innerHTML + '</td></tr></table> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="35" height="' + vert1Row1b.height + '" style="background-color: ' + vert1Color1.value + '; margin: 0; padding: 0;"></td></tr></table> </td></tr><tr height="0"> <td colspan="' + rowsData14.value + '" height="0" width="100%" style="border-top: 1px solid #111111; font-size: 0; line-height: 0; height: 0; width: 100%;">&nbsp;</td></tr><tr> <td height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">' + vert1Row1c.innerHTML + '</td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->' + vert1srcCode + '';
@@ -297,7 +297,10 @@ vert1Button.addEventListener("click", () => {
         vert1Output.innerHTML = chartCode;
         vert1Weight.textContent = Math.ceil(vert1Output.value.length / 1024) + 'KB';
     }
-    vert1Weight.style.opacity = "1";
+    vert1Output.style.opacity = "";
+    vert1Weight.style.opacity = "";
+    vert1Output.style.borderColor = "#166dfc";
+    vert1Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(vert1Output.value);
 });
 vert1Output.addEventListener("click", () => {
@@ -847,8 +850,8 @@ vert2Color10d.oninput = function() {
 const vert2Weight = document.getElementById("vert2Weight");
 const vert2Button = document.getElementById("vert2Button");
 const vert2Output = document.getElementById("vert2Output");
-vert2Button.addEventListener("mouseenter", () => { vert2Weight.style.opacity = ".25"; });
-vert2Button.addEventListener("mouseleave", () => { vert2Weight.style.opacity = "1"; });
+vert2Button.addEventListener("mouseenter", () => { vert2Output.style.opacity = ".4"; vert2Weight.style.opacity = ".4"; } );
+vert2Button.addEventListener("mouseleave", () => { vert2Output.style.opacity = ""; vert2Weight.style.opacity = ""; vert2Output.style.borderColor = ""; vert2Weight.style.color = ""; } );
 vert2Button.addEventListener("click", () => {
     if (rowsData15.value === "1") {
         const chartCode = '' + vert2capCode + '<div style="font-family: Verdana, sans-serif; font-size: 11px; margin: 0 0 30px 0; text-align: center;"><span style="background-color: ' + legend6Color1x.value + '; border: 1px solid ' + legend6Color1x.value + '; color: ' + legend6Color1x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend6Text1.innerHTML + '&nbsp;&nbsp;|&nbsp;&nbsp;<span style="background-color: ' + legend6Color2x.value + '; border: 1px solid ' + legend6Color2x.value + '; color: ' + legend6Color2x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend6Text2.innerHTML + '&nbsp;&nbsp;|&nbsp;&nbsp;<span style="background-color: ' + legend6Color3x.value + '; border: 1px solid ' + legend6Color3x.value + '; color: ' + legend6Color3x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend6Text3.innerHTML + '</div><!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="' + vert2Width.style.maxWidth + '"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: ' + vert2Width.style.maxWidth + '; margin: 0 auto; padding: 0;" class="chartVertMobile"> <tr> <td width="50" valign="bottom" align="center"> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: normal; mso-line-height-rule: exactly; margin: 0; max-width: 35px; padding: 0; text-align: center; white-space: nowrap;">' + vert2Row1a.innerHTML + '</td></tr></table> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="35" height="' + vert2Row1b.height + '" style="background-color: ' + vert2Color1b.value + '; margin: 0; padding: 0;"></td></tr><tr> <td width="35" height="' + vert2Row1c.height + '" style="background-color: ' + vert2Color1c.value + '; margin: 0; padding: 0;"></td></tr><tr> <td width="35" height="' + vert2Row1d.height + '" style="background-color: ' + vert2Color1d.value + '; margin: 0; padding: 0;"></td></tr></table> </td></tr><tr height="0"> <td colspan="' + rowsData15.value + '" height="0" width="100%" style="border-top: 1px solid #111111; font-size: 0; line-height: 0; height: 0; width: 100%;">&nbsp;</td></tr><tr> <td height="10" valign="top" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 2px 0 8px; text-align: center; vertical-align: top;">' + vert2Row1e.innerHTML + '</td></tr></table><!--[if mso 15 | mso 16]></td></tr></table><![endif]-->' + vert2srcCode + '';
@@ -891,7 +894,10 @@ vert2Button.addEventListener("click", () => {
         vert2Output.innerHTML = chartCode;
         vert2Weight.textContent = Math.ceil(vert2Output.value.length / 1024) + 'KB';
     }
-    vert2Weight.style.opacity = "1";
+    vert2Output.style.opacity = "";
+    vert2Weight.style.opacity = "";
+    vert2Output.style.borderColor = "#166dfc";
+    vert2Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(vert2Output.value);
 });
 vert2Output.addEventListener("click", () => {
@@ -1153,8 +1159,8 @@ vert3Color10.oninput = function() {
 const vert3Weight = document.getElementById("vert3Weight");
 const vert3Button = document.getElementById("vert3Button");
 const vert3Output = document.getElementById("vert3Output");
-vert3Button.addEventListener("mouseenter", () => { vert3Weight.style.opacity = ".25"; });
-vert3Button.addEventListener("mouseleave", () => { vert3Weight.style.opacity = "1"; });
+vert3Button.addEventListener("mouseenter", () => { vert3Output.style.opacity = ".4"; vert3Weight.style.opacity = ".4"; } );
+vert3Button.addEventListener("mouseleave", () => { vert3Output.style.opacity = ""; vert3Weight.style.opacity = ""; vert3Output.style.borderColor = ""; vert3Weight.style.color = ""; } );
 vert3Button.addEventListener("click", () => {
     if (rowsData16.value === "1") {
         const chartCode = '' + vert3capCode + '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="' + vert3Width.style.maxWidth + '"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: ' + vert3Width.style.maxWidth + '; margin: 0 auto; padding: 0;" class="chartVertMobile"> <tr> valign="bottom" <td height="10" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0  vertical-align: bottom;2px; text-align: center;">' + vert3Row1a.innerHTML + '</td></tr><tr height="0"> <td colspan="' + rowsData16.value + '" height="0" width="100%" style="border-top: 1px solid #111111; font-size: 0; line-height: 0; height: 0; width: 100%;">&nbsp;</td></tr><tr> <td width="50" valign="top" align="center"> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="35" height="' + vert3Row1b.height + '" style="background-color: ' + vert3Color1.value + '; margin: 0; padding: 0;"></td></tr></table> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: normal; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">' + vert3Row1c.innerHTML + '</td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->' + vert3srcCode + '';
@@ -1197,7 +1203,10 @@ vert3Button.addEventListener("click", () => {
         vert3Output.innerHTML = chartCode;
         vert3Weight.textContent = Math.ceil(vert3Output.value.length / 1024) + 'KB';
     }
-    vert3Weight.style.opacity = "1";
+    vert3Output.style.opacity = "";
+    vert3Weight.style.opacity = "";
+    vert3Output.style.borderColor = "#166dfc";
+    vert3Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(vert3Output.value);
 });
 vert3Output.addEventListener("click", () => {
@@ -1747,8 +1756,8 @@ vert4Color10d.oninput = function() {
 const vert4Weight = document.getElementById("vert4Weight");
 const vert4Button = document.getElementById("vert4Button");
 const vert4Output = document.getElementById("vert4Output");
-vert4Button.addEventListener("mouseenter", () => { vert4Weight.style.opacity = ".25"; });
-vert4Button.addEventListener("mouseleave", () => { vert4Weight.style.opacity = "1"; });
+vert4Button.addEventListener("mouseenter", () => { vert4Output.style.opacity = ".4"; vert4Weight.style.opacity = ".4"; } );
+vert4Button.addEventListener("mouseleave", () => { vert4Output.style.opacity = ""; vert4Weight.style.opacity = ""; vert4Output.style.borderColor = ""; vert4Weight.style.color = ""; } );
 vert4Button.addEventListener("click", () => {
     if (rowsData17.value === "1") {
         const chartCode = '' + vert4capCode + '<div style="font-family: Verdana, sans-serif; font-size: 11px; margin: 0 0 30px 0; text-align: center;"><span style="background-color: ' + legend7Color1x.value + '; border: 1px solid ' + legend7Color1x.value + '; color: ' + legend7Color1x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend7Text1.innerHTML + '&nbsp;&nbsp;|&nbsp;&nbsp;<span style="background-color: ' + legend7Color2x.value + '; border: 1px solid ' + legend7Color2x.value + '; color: ' + legend7Color2x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend7Text2.innerHTML + '&nbsp;&nbsp;|&nbsp;&nbsp;<span style="background-color: ' + legend7Color3x.value + '; border: 1px solid ' + legend7Color3x.value + '; color: ' + legend7Color3x.value + '; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;' + legend7Text3.innerHTML + '</div><!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="' + vert4Width.style.maxWidth + '"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: ' + vert4Width.style.maxWidth + '; margin: 0 auto; padding: 0;" class="chartVertMobile"> <tr> <td height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">' + vert4Row1a.innerHTML + '</td></tr><tr height="0"> <td colspan="' + rowsData17.value + '" height="0" width="100%" style="border-top: 1px solid #111111; font-size: 0; line-height: 0; height: 0; width: 100%;">&nbsp;</td></tr><tr> <td width="50" valign="top" align="center"> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="35" height="' + vert4Row1b.height + '" style="background-color: ' + vert4Color1b.value + '; margin: 0; padding: 0;"></td></tr><tr> <td width="35" height="' + vert4Row1c.height + '" style="background-color: ' + vert4Color1c.value + '; margin: 0; padding: 0;"></td></tr><tr> <td width="35" height="' + vert4Row1c.height + '" style="background-color: ' + vert4Color1d.value + '; margin: 0; padding: 0;"></td></tr></table> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: normal; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">' + vert4Row1e.innerHTML + '</td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->' + vert4srcCode + '';
@@ -1791,7 +1800,10 @@ vert4Button.addEventListener("click", () => {
         vert4Output.innerHTML = chartCode;
         vert4Weight.textContent = Math.ceil(vert4Output.value.length / 1024) + 'KB';
     }
-    vert4Weight.style.opacity = "1";
+    vert4Output.style.opacity = "";
+    vert4Weight.style.opacity = "";
+    vert4Output.style.borderColor = "#166dfc";
+    vert4Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(vert4Output.value);
 });
 vert4Output.addEventListener("click", () => {
@@ -2147,8 +2159,8 @@ vert5Color10c.oninput = function() {
 const vert5Weight = document.getElementById("vert5Weight");
 const vert5Button = document.getElementById("vert5Button");
 const vert5Output = document.getElementById("vert5Output");
-vert5Button.addEventListener("mouseenter", () => { vert5Weight.style.opacity = ".25"; });
-vert5Button.addEventListener("mouseleave", () => { vert5Weight.style.opacity = "1"; });
+vert5Button.addEventListener("mouseenter", () => { vert5Output.style.opacity = ".4"; vert5Weight.style.opacity = ".4"; } );
+vert5Button.addEventListener("mouseleave", () => { vert5Output.style.opacity = ""; vert5Weight.style.opacity = ""; vert5Output.style.borderColor = ""; vert5Weight.style.color = ""; } );
 vert5Button.addEventListener("click", () => {
     if (rowsData18.value === "1") {
         const chartCode = '' + vert5capCode + '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="' + vert5Width.style.maxWidth + '"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: ' + vert5Width.style.maxWidth + '; min-height: 350px; margin: 0 auto; padding: 0;" class="chartVertMobile"> <tr> <td width="50" valign="bottom" align="center"> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: normal; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">' + vert5Row1a.innerHTML + '</td></tr></table> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="35" height="' + vert5Row1b.height + '" style="background-color: ' + vert5Color1b.value + '; margin: 0; padding: 0;"></td></tr></table> </td></tr><tr height="0"> <td colspan="' + rowsData18.value + '" height="0" width="100%" style="border-top: 1px solid #111111; font-size: 0; line-height: 0; height: 0; width: 100%;">&nbsp;</td></tr><tr> <td width="50" valign="top" align="center"> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="35" height="' + vert5Row1c.height + '" style="background-color: ' + vert5Color1c.value + '; margin: 0; padding: 0;"></td></tr></table> <table role="presentation" border="0" cellspacing="0" cellpadding="0"> <tr> <td style="color: #000000; font-family: Verdana, sans-serif; font-weight: 500; font-size: 11px; line-height: normal; mso-line-height-rule: exactly; margin: 0; padding: 0; text-align: center; white-space: nowrap;">' + vert5Row1d.innerHTML + '</td></tr></table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]-->' + vert5srcCode + '';
@@ -2191,7 +2203,10 @@ vert5Button.addEventListener("click", () => {
         vert5Output.innerHTML = chartCode;
         vert5Weight.textContent = Math.ceil(vert5Output.value.length / 1024) + 'KB';
     }
-    vert5Weight.style.opacity = "1";
+    vert5Output.style.opacity = "";
+    vert5Weight.style.opacity = "";
+    vert5Output.style.borderColor = "#166dfc";
+    vert5Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(vert5Output.value);
 });
 vert5Output.addEventListener("click", () => {

@@ -484,8 +484,8 @@ horiz1Color10.oninput = function() {
 const horiz1Weight = document.getElementById("horiz1Weight");
 const horiz1Button = document.getElementById("horiz1Button");
 const horiz1Output = document.getElementById("horiz1Output");
-horiz1Button.addEventListener("mouseenter", () => { horiz1Weight.style.opacity = ".25"; });
-horiz1Button.addEventListener("mouseleave", () => { horiz1Weight.style.opacity = "1"; });
+horiz1Button.addEventListener("mouseenter", () => { horiz1Output.style.opacity = ".4"; horiz1Weight.style.opacity = ".4"; } );
+horiz1Button.addEventListener("mouseleave", () => { horiz1Output.style.opacity = ""; horiz1Weight.style.opacity = ""; horiz1Output.style.borderColor = ""; horiz1Weight.style.color = ""; } );
 horiz1Button.addEventListener("click", () => {
     if (rowsData1.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz1capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 22px;" height="22">' + horiz1Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz1Color1.value + '; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz1Row1b.style.width + '; height: 22px;" height="22">' + horiz1Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 12px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz1Row1c.style.width + '; height: 22px;" height="22">' + horiz1Row1c.innerHTML + '</td></tr></table> </td></tr>' + horiz1srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -528,7 +528,10 @@ horiz1Button.addEventListener("click", () => {
         horiz1Output.innerHTML = chartCode;
         horiz1Weight.textContent = Math.ceil(horiz1Output.value.length / 1024) + 'KB';
     }
-    horiz1Weight.style.opacity = "1";
+    horiz1Output.style.opacity = "";
+    horiz1Weight.style.opacity = "";
+    horiz1Output.style.borderColor = "#166dfc";
+    horiz1Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(horiz1Output.value);
 });
 horiz1Output.addEventListener("click", () => {
@@ -1008,8 +1011,8 @@ horiz2Color10.oninput = function() {
 const horiz2Weight = document.getElementById("horiz2Weight");
 const horiz2Button = document.getElementById("horiz2Button");
 const horiz2Output = document.getElementById("horiz2Output");
-horiz2Button.addEventListener("mouseenter", () => { horiz2Weight.style.opacity = ".25"; });
-horiz2Button.addEventListener("mouseleave", () => { horiz2Weight.style.opacity = "1"; });
+horiz2Button.addEventListener("mouseenter", () => { horiz2Output.style.opacity = ".4"; horiz2Weight.style.opacity = ".4"; } );
+horiz2Button.addEventListener("mouseleave", () => { horiz2Output.style.opacity = ""; horiz2Weight.style.opacity = ""; horiz2Output.style.borderColor = ""; horiz2Weight.style.color = ""; } );
 horiz2Button.addEventListener("click", () => {
     if (rowsData2.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz2capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: ' + horiz2Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 31px;" height="31">' + horiz2Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz2Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz2Row1b.style.width + '; height: 31px;" height="31">' + horiz2Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz2Row1c.style.width + '; height: 31px;" height="31">' + horiz2Row1c.innerHTML + '</td></tr></table> </td></tr>' + horiz2srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -1052,7 +1055,10 @@ horiz2Button.addEventListener("click", () => {
         horiz2Output.innerHTML = chartCode;
         horiz2Weight.textContent = Math.ceil(horiz2Output.value.length / 1024) + 'KB';
     }
-    horiz2Weight.style.opacity = "1";
+    horiz2Output.style.opacity = "";
+    horiz2Weight.style.opacity = "";
+    horiz2Output.style.borderColor = "#166dfc";
+    horiz2Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(horiz2Output.value);
 });
 horiz2Output.addEventListener("click", () => {
@@ -1546,8 +1552,8 @@ horiz3Color10.oninput = function() {
 const horiz3Weight = document.getElementById("horiz3Weight");
 const horiz3Button = document.getElementById("horiz3Button");
 const horiz3Output = document.getElementById("horiz3Output");
-horiz3Button.addEventListener("mouseenter", () => { horiz3Weight.style.opacity = ".25"; });
-horiz3Button.addEventListener("mouseleave", () => { horiz3Weight.style.opacity = "1"; });
+horiz3Button.addEventListener("mouseenter", () => { horiz3Output.style.opacity = ".4"; horiz3Weight.style.opacity = ".4"; } );
+horiz3Button.addEventListener("mouseleave", () => { horiz3Output.style.opacity = ""; horiz3Weight.style.opacity = ""; horiz3Output.style.borderColor = ""; horiz3Weight.style.color = ""; } );
 horiz3Button.addEventListener("click", () => {
     if (rowsData3.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz3capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 28px;" height="28">' + horiz3Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz3Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz3Row1b.style.width + '; height: 28px;" height="28">' + horiz3Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz3Row1c.style.width + '; height: 28px;" height="28">' + horiz3Row1c.innerHTML + '</td></tr></table> </td></tr>' + horiz3srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -1590,7 +1596,10 @@ horiz3Button.addEventListener("click", () => {
         horiz3Output.innerHTML = chartCode;
         horiz3Weight.textContent = Math.ceil(horiz3Output.value.length / 1024) + 'KB';
     }
-    horiz3Weight.style.opacity = "1";
+    horiz3Output.style.opacity = "";
+    horiz3Weight.style.opacity = "";
+    horiz3Output.style.borderColor = "#166dfc";
+    horiz3Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(horiz3Output.value);
 });
 horiz3Output.addEventListener("click", () => {
@@ -2084,8 +2093,8 @@ horiz4Color10.oninput = function() {
 const horiz4Weight = document.getElementById("horiz4Weight");
 const horiz4Button = document.getElementById("horiz4Button");
 const horiz4Output = document.getElementById("horiz4Output");
-horiz4Button.addEventListener("mouseenter", () => { horiz4Weight.style.opacity = ".25"; });
-horiz4Button.addEventListener("mouseleave", () => { horiz4Weight.style.opacity = "1"; });
+horiz4Button.addEventListener("mouseenter", () => { horiz4Output.style.opacity = ".4"; horiz4Weight.style.opacity = ".4"; } );
+horiz4Button.addEventListener("mouseleave", () => { horiz4Output.style.opacity = ""; horiz4Weight.style.opacity = ""; horiz4Output.style.borderColor = ""; horiz4Weight.style.color = ""; } );
 horiz4Button.addEventListener("click", () => {
     if (rowsData11.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz4capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz4Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz4Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1b.style.width + '; height: 34px;" height="34">' + horiz4Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz4Row1c.style.width + '; height: 34px;" height="34">' + horiz4Row1c.innerHTML + '</td></tr></table> </td></tr>' + horiz4srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -2128,7 +2137,10 @@ horiz4Button.addEventListener("click", () => {
         horiz4Output.innerHTML = chartCode;
         horiz4Weight.textContent = Math.ceil(horiz4Output.value.length / 1024) + 'KB';
     }
-    horiz4Weight.style.opacity = "1";
+    horiz4Output.style.opacity = "";
+    horiz4Weight.style.opacity = "";
+    horiz4Output.style.borderColor = "#166dfc";
+    horiz4Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(horiz4Output.value);
 });
 horiz4Output.addEventListener("click", () => {
@@ -2663,8 +2675,8 @@ horiz5Color10.oninput = function() {
 const horiz5Weight = document.getElementById("horiz5Weight");
 const horiz5Button = document.getElementById("horiz5Button");
 const horiz5Output = document.getElementById("horiz5Output");
-horiz5Button.addEventListener("mouseenter", () => { horiz5Weight.style.opacity = ".25"; });
-horiz5Button.addEventListener("mouseleave", () => { horiz5Weight.style.opacity = "1"; });
+horiz5Button.addEventListener("mouseenter", () => { horiz5Output.style.opacity = ".4"; horiz5Weight.style.opacity = ".4"; } );
+horiz5Button.addEventListener("mouseleave", () => { horiz5Output.style.opacity = ""; horiz5Weight.style.opacity = ""; horiz5Output.style.borderColor = ""; horiz5Weight.style.color = ""; } );
 horiz5Button.addEventListener("click", () => {
     if (rowsData24.value === "1") {
         const chartCode = '<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]--> <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;"> <tr> <td align="left" valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border: 1px solid #c4c4c4; margin: 0; padding: 20px; width: 100%;" class="chartMobile"> <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> ' + horiz5capCode + ' <tr> <td align="left" style="padding: 0;"> <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: 25%; height: 34px;" height="34">' + horiz5Row1a.innerHTML + '</td><td align="right" style="background-color: ' + horiz5Color1.value + '; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1b.style.width + '; height: 34px;" height="34">' + horiz5Row1b.innerHTML + '</td><td align="left" style="background-color: #ffffff; color: #000000; font-weight: 400; font-size: 14px; font-family: Verdana, sans-serif; line-height: normal; margin: 0; padding: 0; width: ' + horiz5Row1c.style.width + '; height: 34px;" height="34">' + horiz5Row1c.innerHTML + '</td></tr></table> </td></tr>' + horiz5srcCode + ' </table> </td></tr></table> <!--[if mso 15 | mso 16]></td></tr></table><![endif]--> ' + botSpace;
@@ -2707,7 +2719,10 @@ horiz5Button.addEventListener("click", () => {
         horiz5Output.innerHTML = chartCode;
         horiz5Weight.textContent = Math.ceil(horiz5Output.value.length / 1024) + 'KB';
     }
-    horiz5Weight.style.opacity = "1";
+    horiz5Output.style.opacity = "";
+    horiz5Weight.style.opacity = "";
+    horiz5Output.style.borderColor = "#166dfc";
+    horiz5Weight.style.color = "#166dfc";
     navigator.clipboard.writeText(horiz5Output.value);
 });
 horiz5Output.addEventListener("click", () => {
