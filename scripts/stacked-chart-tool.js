@@ -42,6 +42,66 @@ stacked1srcText.oninput = function() {
     }
 };
 
+// Stacked I Chart Color Picker
+const stacked1colorPickL = document.getElementById("stacked1colorPickL");
+stacked1colorPickL.addEventListener("change", (evt) => {
+    stacked1Row1b.style.backgroundColor = evt.detail.hex;
+    stacked1Color1a.value = evt.detail.hex;
+    stacked1Row2b.style.backgroundColor = evt.detail.hex;
+    stacked1Color2a.value = evt.detail.hex;
+    stacked1Row3b.style.backgroundColor = evt.detail.hex;
+    stacked1Color3a.value = evt.detail.hex;
+    stacked1Row4b.style.backgroundColor = evt.detail.hex;
+    stacked1Color4a.value = evt.detail.hex;
+    stacked1Row5b.style.backgroundColor = evt.detail.hex;
+    stacked1Color5a.value = evt.detail.hex;
+    stacked1Row6b.style.backgroundColor = evt.detail.hex;
+    stacked1Color6a.value = evt.detail.hex;
+    stacked1Row7b.style.backgroundColor = evt.detail.hex;
+    stacked1Color7a.value = evt.detail.hex;
+    stacked1Row8b.style.backgroundColor = evt.detail.hex;
+    stacked1Color8a.value = evt.detail.hex;
+    stacked1Row9b.style.backgroundColor = evt.detail.hex;
+    stacked1Color9a.value = evt.detail.hex;
+    stacked1Row10b.style.backgroundColor = evt.detail.hex;
+    stacked1Color10a.value = evt.detail.hex;
+    legend1Color1.style.color = evt.detail.hex;
+    legend1Color1.style.backgroundColor = evt.detail.hex;
+    legend1Color1.style.borderColor = evt.detail.hex;
+    legend1Color1x.value = evt.detail.hex;
+    legend1Color1x.value = evt.detail.hex;
+    legend1Color1x.value = evt.detail.hex;
+});
+const stacked1colorPickR = document.getElementById("stacked1colorPickR");
+stacked1colorPickR.addEventListener("change", (evt) => {
+    stacked1Row1c.style.backgroundColor = evt.detail.hex;
+    stacked1Color1b.value = evt.detail.hex;
+    stacked1Row2c.style.backgroundColor = evt.detail.hex;
+    stacked1Color2b.value = evt.detail.hex;
+    stacked1Row3c.style.backgroundColor = evt.detail.hex;
+    stacked1Color3b.value = evt.detail.hex;
+    stacked1Row4c.style.backgroundColor = evt.detail.hex;
+    stacked1Color4b.value = evt.detail.hex;
+    stacked1Row5c.style.backgroundColor = evt.detail.hex;
+    stacked1Color5b.value = evt.detail.hex;
+    stacked1Row6c.style.backgroundColor = evt.detail.hex;
+    stacked1Color6b.value = evt.detail.hex;
+    stacked1Row7c.style.backgroundColor = evt.detail.hex;
+    stacked1Color7b.value = evt.detail.hex;
+    stacked1Row8c.style.backgroundColor = evt.detail.hex;
+    stacked1Color8b.value = evt.detail.hex;
+    stacked1Row9c.style.backgroundColor = evt.detail.hex;
+    stacked1Color9b.value = evt.detail.hex;
+    stacked1Row10c.style.backgroundColor = evt.detail.hex;
+    stacked1Color10b.value = evt.detail.hex;
+    legend1Color2.style.color = evt.detail.hex;
+    legend1Color2.style.backgroundColor = evt.detail.hex;
+    legend1Color2.style.borderColor = evt.detail.hex;
+    legend1Color2x.value = evt.detail.hex;
+    legend1Color2x.value = evt.detail.hex;
+    legend1Color2x.value = evt.detail.hex;
+});
+
 // Stacked Chart I Text/Color Legend
 const legend1Text1 = document.getElementById("legend1Text1");
 const legend1Text1x = document.getElementById("legend1Text1x");
@@ -739,6 +799,66 @@ stacked2srcText.oninput = function() {
     }
 };
 
+// Stacked II Chart Color Picker
+const stacked2colorPickL = document.getElementById("stacked2colorPickL");
+stacked2colorPickL.addEventListener("change", (evt) => {
+    stacked2Row1b.style.backgroundColor = evt.detail.hex;
+    stacked2Color1a.value = evt.detail.hex;
+    stacked2Row2b.style.backgroundColor = evt.detail.hex;
+    stacked2Color2a.value = evt.detail.hex;
+    stacked2Row3b.style.backgroundColor = evt.detail.hex;
+    stacked2Color3a.value = evt.detail.hex;
+    stacked2Row4b.style.backgroundColor = evt.detail.hex;
+    stacked2Color4a.value = evt.detail.hex;
+    stacked2Row5b.style.backgroundColor = evt.detail.hex;
+    stacked2Color5a.value = evt.detail.hex;
+    stacked2Row6b.style.backgroundColor = evt.detail.hex;
+    stacked2Color6a.value = evt.detail.hex;
+    stacked2Row7b.style.backgroundColor = evt.detail.hex;
+    stacked2Color7a.value = evt.detail.hex;
+    stacked2Row8b.style.backgroundColor = evt.detail.hex;
+    stacked2Color8a.value = evt.detail.hex;
+    stacked2Row9b.style.backgroundColor = evt.detail.hex;
+    stacked2Color9a.value = evt.detail.hex;
+    stacked2Row10b.style.backgroundColor = evt.detail.hex;
+    stacked2Color10a.value = evt.detail.hex;
+    legend2Color1.style.color = evt.detail.hex;
+    legend2Color1.style.backgroundColor = evt.detail.hex;
+    legend2Color1.style.borderColor = evt.detail.hex;
+    legend2Color1x.value = evt.detail.hex;
+    legend2Color1x.value = evt.detail.hex;
+    legend2Color1x.value = evt.detail.hex;
+});
+const stacked2colorPickR = document.getElementById("stacked2colorPickR");
+stacked2colorPickR.addEventListener("change", (evt) => {
+    stacked2Row1c.style.backgroundColor = evt.detail.hex;
+    stacked2Color1b.value = evt.detail.hex;
+    stacked2Row2c.style.backgroundColor = evt.detail.hex;
+    stacked2Color2b.value = evt.detail.hex;
+    stacked2Row3c.style.backgroundColor = evt.detail.hex;
+    stacked2Color3b.value = evt.detail.hex;
+    stacked2Row4c.style.backgroundColor = evt.detail.hex;
+    stacked2Color4b.value = evt.detail.hex;
+    stacked2Row5c.style.backgroundColor = evt.detail.hex;
+    stacked2Color5b.value = evt.detail.hex;
+    stacked2Row6c.style.backgroundColor = evt.detail.hex;
+    stacked2Color6b.value = evt.detail.hex;
+    stacked2Row7c.style.backgroundColor = evt.detail.hex;
+    stacked2Color7b.value = evt.detail.hex;
+    stacked2Row8c.style.backgroundColor = evt.detail.hex;
+    stacked2Color8b.value = evt.detail.hex;
+    stacked2Row9c.style.backgroundColor = evt.detail.hex;
+    stacked2Color9b.value = evt.detail.hex;
+    stacked2Row10c.style.backgroundColor = evt.detail.hex;
+    stacked2Color10b.value = evt.detail.hex;
+    legend2Color2.style.color = evt.detail.hex;
+    legend2Color2.style.backgroundColor = evt.detail.hex;
+    legend2Color2.style.borderColor = evt.detail.hex;
+    legend2Color2x.value = evt.detail.hex;
+    legend2Color2x.value = evt.detail.hex;
+    legend2Color2x.value = evt.detail.hex;
+});
+
 // Stacked Chart II Text/Color Legend
 const legend2Text1 = document.getElementById("legend2Text1");
 const legend2Text1x = document.getElementById("legend2Text1x");
@@ -1333,6 +1453,95 @@ stacked3srcText.oninput = function() {
         return stacked3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked3Source.innerHTML + '</td></tr>';
     }
 };
+
+// Stacked III Chart Color Picker
+const stacked3colorPickL = document.getElementById("stacked3colorPickL");
+stacked3colorPickL.addEventListener("change", (evt) => {
+    stacked3Row1b.style.backgroundColor = evt.detail.hex;
+    stacked3Color1a.value = evt.detail.hex;
+    stacked3Row2b.style.backgroundColor = evt.detail.hex;
+    stacked3Color2a.value = evt.detail.hex;
+    stacked3Row3b.style.backgroundColor = evt.detail.hex;
+    stacked3Color3a.value = evt.detail.hex;
+    stacked3Row4b.style.backgroundColor = evt.detail.hex;
+    stacked3Color4a.value = evt.detail.hex;
+    stacked3Row5b.style.backgroundColor = evt.detail.hex;
+    stacked3Color5a.value = evt.detail.hex;
+    stacked3Row6b.style.backgroundColor = evt.detail.hex;
+    stacked3Color6a.value = evt.detail.hex;
+    stacked3Row7b.style.backgroundColor = evt.detail.hex;
+    stacked3Color7a.value = evt.detail.hex;
+    stacked3Row8b.style.backgroundColor = evt.detail.hex;
+    stacked3Color8a.value = evt.detail.hex;
+    stacked3Row9b.style.backgroundColor = evt.detail.hex;
+    stacked3Color9a.value = evt.detail.hex;
+    stacked3Row10b.style.backgroundColor = evt.detail.hex;
+    stacked3Color10a.value = evt.detail.hex;
+    legend3Color1.style.color = evt.detail.hex;
+    legend3Color1.style.backgroundColor = evt.detail.hex;
+    legend3Color1.style.borderColor = evt.detail.hex;
+    legend3Color1x.value = evt.detail.hex;
+    legend3Color1x.value = evt.detail.hex;
+    legend3Color1x.value = evt.detail.hex;
+});
+const stacked3colorPickC = document.getElementById("stacked3colorPickC");
+stacked3colorPickC.addEventListener("change", (evt) => {
+    stacked3Row1c.style.backgroundColor = evt.detail.hex;
+    stacked3Color1b.value = evt.detail.hex;
+    stacked3Row2c.style.backgroundColor = evt.detail.hex;
+    stacked3Color2b.value = evt.detail.hex;
+    stacked3Row3c.style.backgroundColor = evt.detail.hex;
+    stacked3Color3b.value = evt.detail.hex;
+    stacked3Row4c.style.backgroundColor = evt.detail.hex;
+    stacked3Color4b.value = evt.detail.hex;
+    stacked3Row5c.style.backgroundColor = evt.detail.hex;
+    stacked3Color5b.value = evt.detail.hex;
+    stacked3Row6c.style.backgroundColor = evt.detail.hex;
+    stacked3Color6b.value = evt.detail.hex;
+    stacked3Row7c.style.backgroundColor = evt.detail.hex;
+    stacked3Color7b.value = evt.detail.hex;
+    stacked3Row8c.style.backgroundColor = evt.detail.hex;
+    stacked3Color8b.value = evt.detail.hex;
+    stacked3Row9c.style.backgroundColor = evt.detail.hex;
+    stacked3Color9b.value = evt.detail.hex;
+    stacked3Row10c.style.backgroundColor = evt.detail.hex;
+    stacked3Color10b.value = evt.detail.hex;
+    legend3Color2.style.color = evt.detail.hex;
+    legend3Color2.style.backgroundColor = evt.detail.hex;
+    legend3Color2.style.borderColor = evt.detail.hex;
+    legend3Color2x.value = evt.detail.hex;
+    legend3Color2x.value = evt.detail.hex;
+    legend3Color2x.value = evt.detail.hex;
+});
+const stacked3colorPickR = document.getElementById("stacked3colorPickR");
+stacked3colorPickR.addEventListener("change", (evt) => {
+    stacked3Row1d.style.backgroundColor = evt.detail.hex;
+    stacked3Color1c.value = evt.detail.hex;
+    stacked3Row2d.style.backgroundColor = evt.detail.hex;
+    stacked3Color2c.value = evt.detail.hex;
+    stacked3Row3d.style.backgroundColor = evt.detail.hex;
+    stacked3Color3c.value = evt.detail.hex;
+    stacked3Row4d.style.backgroundColor = evt.detail.hex;
+    stacked3Color4c.value = evt.detail.hex;
+    stacked3Row5d.style.backgroundColor = evt.detail.hex;
+    stacked3Color5c.value = evt.detail.hex;
+    stacked3Row6d.style.backgroundColor = evt.detail.hex;
+    stacked3Color6c.value = evt.detail.hex;
+    stacked3Row7d.style.backgroundColor = evt.detail.hex;
+    stacked3Color7c.value = evt.detail.hex;
+    stacked3Row8d.style.backgroundColor = evt.detail.hex;
+    stacked3Color8c.value = evt.detail.hex;
+    stacked3Row9d.style.backgroundColor = evt.detail.hex;
+    stacked3Color9c.value = evt.detail.hex;
+    stacked3Row10d.style.backgroundColor = evt.detail.hex;
+    stacked3Color10c.value = evt.detail.hex;
+    legend3Color3.style.color = evt.detail.hex;
+    legend3Color3.style.backgroundColor = evt.detail.hex;
+    legend3Color3.style.borderColor = evt.detail.hex;
+    legend3Color3x.value = evt.detail.hex;
+    legend3Color3x.value = evt.detail.hex;
+    legend3Color3x.value = evt.detail.hex;
+});
 
 // Stacked Chart III Text/Color Legend
 const legend3Text1 = document.getElementById("legend3Text1");
@@ -2148,6 +2357,95 @@ stacked4srcText.oninput = function() {
         return stacked4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked4Source.innerHTML + '</td></tr>';
     }
 };
+
+// Stacked IV Chart Color Picker
+const stacked4colorPickL = document.getElementById("stacked4colorPickL");
+stacked4colorPickL.addEventListener("change", (evt) => {
+    stacked4Row1b.style.backgroundColor = evt.detail.hex;
+    stacked4Color1a.value = evt.detail.hex;
+    stacked4Row2b.style.backgroundColor = evt.detail.hex;
+    stacked4Color2a.value = evt.detail.hex;
+    stacked4Row3b.style.backgroundColor = evt.detail.hex;
+    stacked4Color3a.value = evt.detail.hex;
+    stacked4Row4b.style.backgroundColor = evt.detail.hex;
+    stacked4Color4a.value = evt.detail.hex;
+    stacked4Row5b.style.backgroundColor = evt.detail.hex;
+    stacked4Color5a.value = evt.detail.hex;
+    stacked4Row6b.style.backgroundColor = evt.detail.hex;
+    stacked4Color6a.value = evt.detail.hex;
+    stacked4Row7b.style.backgroundColor = evt.detail.hex;
+    stacked4Color7a.value = evt.detail.hex;
+    stacked4Row8b.style.backgroundColor = evt.detail.hex;
+    stacked4Color8a.value = evt.detail.hex;
+    stacked4Row9b.style.backgroundColor = evt.detail.hex;
+    stacked4Color9a.value = evt.detail.hex;
+    stacked4Row10b.style.backgroundColor = evt.detail.hex;
+    stacked4Color10a.value = evt.detail.hex;
+    legend5Color1.style.color = evt.detail.hex;
+    legend5Color1.style.backgroundColor = evt.detail.hex;
+    legend5Color1.style.borderColor = evt.detail.hex;
+    legend5Color1x.value = evt.detail.hex;
+    legend5Color1x.value = evt.detail.hex;
+    legend5Color1x.value = evt.detail.hex;
+});
+const stacked4colorPickC = document.getElementById("stacked4colorPickC");
+stacked4colorPickC.addEventListener("change", (evt) => {
+    stacked4Row1c.style.backgroundColor = evt.detail.hex;
+    stacked4Color1b.value = evt.detail.hex;
+    stacked4Row2c.style.backgroundColor = evt.detail.hex;
+    stacked4Color2b.value = evt.detail.hex;
+    stacked4Row3c.style.backgroundColor = evt.detail.hex;
+    stacked4Color3b.value = evt.detail.hex;
+    stacked4Row4c.style.backgroundColor = evt.detail.hex;
+    stacked4Color4b.value = evt.detail.hex;
+    stacked4Row5c.style.backgroundColor = evt.detail.hex;
+    stacked4Color5b.value = evt.detail.hex;
+    stacked4Row6c.style.backgroundColor = evt.detail.hex;
+    stacked4Color6b.value = evt.detail.hex;
+    stacked4Row7c.style.backgroundColor = evt.detail.hex;
+    stacked4Color7b.value = evt.detail.hex;
+    stacked4Row8c.style.backgroundColor = evt.detail.hex;
+    stacked4Color8b.value = evt.detail.hex;
+    stacked4Row9c.style.backgroundColor = evt.detail.hex;
+    stacked4Color9b.value = evt.detail.hex;
+    stacked4Row10c.style.backgroundColor = evt.detail.hex;
+    stacked4Color10b.value = evt.detail.hex;
+    legend5Color2.style.color = evt.detail.hex;
+    legend5Color2.style.backgroundColor = evt.detail.hex;
+    legend5Color2.style.borderColor = evt.detail.hex;
+    legend5Color2x.value = evt.detail.hex;
+    legend5Color2x.value = evt.detail.hex;
+    legend5Color2x.value = evt.detail.hex;
+});
+const stacked4colorPickR = document.getElementById("stacked4colorPickR");
+stacked4colorPickR.addEventListener("change", (evt) => {
+    stacked4Row1d.style.backgroundColor = evt.detail.hex;
+    stacked4Color1c.value = evt.detail.hex;
+    stacked4Row2d.style.backgroundColor = evt.detail.hex;
+    stacked4Color2c.value = evt.detail.hex;
+    stacked4Row3d.style.backgroundColor = evt.detail.hex;
+    stacked4Color3c.value = evt.detail.hex;
+    stacked4Row4d.style.backgroundColor = evt.detail.hex;
+    stacked4Color4c.value = evt.detail.hex;
+    stacked4Row5d.style.backgroundColor = evt.detail.hex;
+    stacked4Color5c.value = evt.detail.hex;
+    stacked4Row6d.style.backgroundColor = evt.detail.hex;
+    stacked4Color6c.value = evt.detail.hex;
+    stacked4Row7d.style.backgroundColor = evt.detail.hex;
+    stacked4Color7c.value = evt.detail.hex;
+    stacked4Row8d.style.backgroundColor = evt.detail.hex;
+    stacked4Color8c.value = evt.detail.hex;
+    stacked4Row9d.style.backgroundColor = evt.detail.hex;
+    stacked4Color9c.value = evt.detail.hex;
+    stacked4Row10d.style.backgroundColor = evt.detail.hex;
+    stacked4Color10c.value = evt.detail.hex;
+    legend5Color3.style.color = evt.detail.hex;
+    legend5Color3.style.backgroundColor = evt.detail.hex;
+    legend5Color3.style.borderColor = evt.detail.hex;
+    legend5Color3x.value = evt.detail.hex;
+    legend5Color3x.value = evt.detail.hex;
+    legend5Color3x.value = evt.detail.hex;
+});
 
 // Stacked Chart IV Text/Color Legend
 const legend5Text1 = document.getElementById("legend5Text1");
