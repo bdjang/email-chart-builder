@@ -42,6 +42,31 @@ prog1srcText.oninput = function() {
     }
 };
 
+// Progress Bar I Chart Color Picker
+const prog1colorPick = document.getElementById("prog1colorPick");
+prog1colorPick.addEventListener("change", (evt) => {
+    prog1Row1b.style.backgroundColor = evt.detail.hex;
+    prog1Color1.value = evt.detail.hex;
+    prog1Row2b.style.backgroundColor = evt.detail.hex;
+    prog1Color2.value = evt.detail.hex;
+    prog1Row3b.style.backgroundColor = evt.detail.hex;
+    prog1Color3.value = evt.detail.hex;
+    prog1Row4b.style.backgroundColor = evt.detail.hex;
+    prog1Color4.value = evt.detail.hex;
+    prog1Row5b.style.backgroundColor = evt.detail.hex;
+    prog1Color5.value = evt.detail.hex;
+    prog1Row6b.style.backgroundColor = evt.detail.hex;
+    prog1Color6.value = evt.detail.hex;
+    prog1Row7b.style.backgroundColor = evt.detail.hex;
+    prog1Color7.value = evt.detail.hex;
+    prog1Row8b.style.backgroundColor = evt.detail.hex;
+    prog1Color8.value = evt.detail.hex;
+    prog1Row9b.style.backgroundColor = evt.detail.hex;
+    prog1Color9.value = evt.detail.hex;
+    prog1Row10b.style.backgroundColor = evt.detail.hex;
+    prog1Color10.value = evt.detail.hex;
+});
+
 // Progress Bar Chart I Customization Logic
 const prog1Row1a = document.getElementById("prog1Row1a");
 const prog1Row1b = document.getElementById("prog1Row1b");
@@ -331,6 +356,31 @@ prog2srcText.oninput = function() {
         return prog2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + prog2Source.innerHTML + '</td></tr>';
     }
 };
+
+// Progress Bar II Chart Color Picker
+const prog2colorPick = document.getElementById("prog2colorPick");
+prog2colorPick.addEventListener("change", (evt) => {
+    prog2Row1b.style.backgroundColor = evt.detail.hex;
+    prog2Color1.value = evt.detail.hex;
+    prog2Row2b.style.backgroundColor = evt.detail.hex;
+    prog2Color2.value = evt.detail.hex;
+    prog2Row3b.style.backgroundColor = evt.detail.hex;
+    prog2Color3.value = evt.detail.hex;
+    prog2Row4b.style.backgroundColor = evt.detail.hex;
+    prog2Color4.value = evt.detail.hex;
+    prog2Row5b.style.backgroundColor = evt.detail.hex;
+    prog2Color5.value = evt.detail.hex;
+    prog2Row6b.style.backgroundColor = evt.detail.hex;
+    prog2Color6.value = evt.detail.hex;
+    prog2Row7b.style.backgroundColor = evt.detail.hex;
+    prog2Color7.value = evt.detail.hex;
+    prog2Row8b.style.backgroundColor = evt.detail.hex;
+    prog2Color8.value = evt.detail.hex;
+    prog2Row9b.style.backgroundColor = evt.detail.hex;
+    prog2Color9.value = evt.detail.hex;
+    prog2Row10b.style.backgroundColor = evt.detail.hex;
+    prog2Color10.value = evt.detail.hex;
+});
 
 // Progress Bar Chart II Customization Logic
 const prog2Row1a = document.getElementById("prog2Row1a");
@@ -731,6 +781,44 @@ prog3srcText.oninput = function() {
     }
 };
 
+// Progress Bar III Chart Color Picker
+const prog3colorPickFB = document.getElementById("prog3colorPickFB");
+prog3colorPickFB.addEventListener("change", (evt) => {
+    prog3Row1b.style.backgroundColor = evt.detail.hex;
+    prog3Row1b.style.background = 'linear-gradient(90deg, ' + prog3Color1a.value + ', ' + prog3Color1b.value + ')';
+    prog3Color1a.value = evt.detail.hex;
+    prog3Row2b.style.backgroundColor = evt.detail.hex;
+    prog3Row2b.style.background = 'linear-gradient(90deg, ' + prog3Color2a.value + ', ' + prog3Color2b.value + ')';
+    prog3Color2a.value = evt.detail.hex;
+    prog3Row3b.style.backgroundColor = evt.detail.hex;
+    prog3Row3b.style.background = 'linear-gradient(90deg, ' + prog3Color3a.value + ', ' + prog3Color3b.value + ')';
+    prog3Color3a.value = evt.detail.hex;
+    prog3Row4b.style.backgroundColor = evt.detail.hex;
+    prog3Row4b.style.background = 'linear-gradient(90deg, ' + prog3Color4a.value + ', ' + prog3Color4b.value + ')';
+    prog3Color4a.value = evt.detail.hex;
+    prog3Row5b.style.backgroundColor = evt.detail.hex;
+    prog3Row5b.style.background = 'linear-gradient(90deg, ' + prog3Color5a.value + ', ' + prog3Color5b.value + ')';
+    prog3Color5a.value = evt.detail.hex;
+});
+const prog3colorPickLG = document.getElementById("prog3colorPickLG");
+prog3colorPickLG.addEventListener("change", (evt) => {
+    prog3Row1b.style.backgroundColor = evt.detail.hex;
+    prog3Row1b.style.background = 'linear-gradient(90deg, ' + prog3Color1a.value + ', ' + prog3Color1b.value + ')';
+    prog3Color1b.value = evt.detail.hex;
+    prog3Row2b.style.backgroundColor = evt.detail.hex;
+    prog3Row2b.style.background = 'linear-gradient(90deg, ' + prog3Color2a.value + ', ' + prog3Color2b.value + ')';
+    prog3Color2b.value = evt.detail.hex;
+    prog3Row3b.style.backgroundColor = evt.detail.hex;
+    prog3Row3b.style.background = 'linear-gradient(90deg, ' + prog3Color3a.value + ', ' + prog3Color3b.value + ')';
+    prog3Color3b.value = evt.detail.hex;
+    prog3Row4b.style.backgroundColor = evt.detail.hex;
+    prog3Row4b.style.background = 'linear-gradient(90deg, ' + prog3Color4a.value + ', ' + prog3Color4b.value + ')';
+    prog3Color4b.value = evt.detail.hex;
+    prog3Row5b.style.backgroundColor = evt.detail.hex;
+    prog3Row5b.style.background = 'linear-gradient(90deg, ' + prog3Color5a.value + ', ' + prog3Color5b.value + ')';
+    prog3Color5b.value = evt.detail.hex;
+});
+
 // Progress Bar Chart III Customization Logic
 const prog3Row1a = document.getElementById("prog3Row1a");
 const prog3Row1b = document.getElementById("prog3Row1b");
@@ -1109,6 +1197,44 @@ prog4srcText.oninput = function() {
         return prog4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + prog4Source.innerHTML + '</td></tr>';
     }
 };
+
+// Progress Bar IV Chart Color Picker
+const prog4colorPickFB = document.getElementById("prog4colorPickFB");
+prog4colorPickFB.addEventListener("change", (evt) => {
+    prog4Row1b.style.backgroundColor = evt.detail.hex;
+    prog4Row1b.style.background = 'linear-gradient(90deg, ' + prog4Color1a.value + ', ' + prog4Color1b.value + ')';
+    prog4Color1a.value = evt.detail.hex;
+    prog4Row2b.style.backgroundColor = evt.detail.hex;
+    prog4Row2b.style.background = 'linear-gradient(90deg, ' + prog4Color2a.value + ', ' + prog4Color2b.value + ')';
+    prog4Color2a.value = evt.detail.hex;
+    prog4Row3b.style.backgroundColor = evt.detail.hex;
+    prog4Row3b.style.background = 'linear-gradient(90deg, ' + prog4Color3a.value + ', ' + prog4Color3b.value + ')';
+    prog4Color3a.value = evt.detail.hex;
+    prog4Row4b.style.backgroundColor = evt.detail.hex;
+    prog4Row4b.style.background = 'linear-gradient(90deg, ' + prog4Color4a.value + ', ' + prog4Color4b.value + ')';
+    prog4Color4a.value = evt.detail.hex;
+    prog4Row5b.style.backgroundColor = evt.detail.hex;
+    prog4Row5b.style.background = 'linear-gradient(90deg, ' + prog4Color5a.value + ', ' + prog4Color5b.value + ')';
+    prog4Color5a.value = evt.detail.hex;
+});
+const prog4colorPickLG = document.getElementById("prog4colorPickLG");
+prog4colorPickLG.addEventListener("change", (evt) => {
+    prog4Row1b.style.backgroundColor = evt.detail.hex;
+    prog4Row1b.style.background = 'linear-gradient(90deg, ' + prog4Color1a.value + ', ' + prog4Color1b.value + ')';
+    prog4Color1b.value = evt.detail.hex;
+    prog4Row2b.style.backgroundColor = evt.detail.hex;
+    prog4Row2b.style.background = 'linear-gradient(90deg, ' + prog4Color2a.value + ', ' + prog4Color2b.value + ')';
+    prog4Color2b.value = evt.detail.hex;
+    prog4Row3b.style.backgroundColor = evt.detail.hex;
+    prog4Row3b.style.background = 'linear-gradient(90deg, ' + prog4Color3a.value + ', ' + prog4Color3b.value + ')';
+    prog4Color3b.value = evt.detail.hex;
+    prog4Row4b.style.backgroundColor = evt.detail.hex;
+    prog4Row4b.style.background = 'linear-gradient(90deg, ' + prog4Color4a.value + ', ' + prog4Color4b.value + ')';
+    prog4Color4b.value = evt.detail.hex;
+    prog4Row5b.style.backgroundColor = evt.detail.hex;
+    prog4Row5b.style.background = 'linear-gradient(90deg, ' + prog4Color5a.value + ', ' + prog4Color5b.value + ')';
+    prog4Color5b.value = evt.detail.hex;
+});
 
 // Progress Bar Chart IV Customization Logic
 const prog4Row1a = document.getElementById("prog4Row1a");
