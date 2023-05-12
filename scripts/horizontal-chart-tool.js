@@ -66,6 +66,31 @@ horiz1srcText.oninput = function() {
     }
 };
 
+// Horizontal Chart I Color Picker
+const horiz1colorPick = document.getElementById("horiz1colorPick");
+horiz1colorPick.addEventListener("change", (evt) => {
+    horiz1Row1b.style.backgroundColor = evt.detail.hex;
+    horiz1Color1.value = evt.detail.hex;
+    horiz1Row2b.style.backgroundColor = evt.detail.hex;
+    horiz1Color2.value = evt.detail.hex;
+    horiz1Row3b.style.backgroundColor = evt.detail.hex;
+    horiz1Color3.value = evt.detail.hex;
+    horiz1Row4b.style.backgroundColor = evt.detail.hex;
+    horiz1Color4.value = evt.detail.hex;
+    horiz1Row5b.style.backgroundColor = evt.detail.hex;
+    horiz1Color5.value = evt.detail.hex;
+    horiz1Row6b.style.backgroundColor = evt.detail.hex;
+    horiz1Color6.value = evt.detail.hex;
+    horiz1Row7b.style.backgroundColor = evt.detail.hex;
+    horiz1Color7.value = evt.detail.hex;
+    horiz1Row8b.style.backgroundColor = evt.detail.hex;
+    horiz1Color8.value = evt.detail.hex;
+    horiz1Row9b.style.backgroundColor = evt.detail.hex;
+    horiz1Color9.value = evt.detail.hex;
+    horiz1Row10b.style.backgroundColor = evt.detail.hex;
+    horiz1Color10.value = evt.detail.hex;
+});
+
 // Horizontal Chart I Row Customization Logic
 const horiz1Row1a = document.getElementById("horiz1Row1a");
 const horiz1Row1b = document.getElementById("horiz1Row1b");
@@ -584,6 +609,41 @@ horiz2srcText.oninput = function() {
         return horiz2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + horiz2Source.innerHTML + '</td></tr>';
     }
 };
+
+// Horizontal Chart II Color Picker
+const horiz2colorPick = document.getElementById("horiz2colorPick");
+horiz2colorPick.addEventListener("change", (evt) => {
+    horiz2Row1a.style.backgroundColor = evt.detail.hex;
+    horiz2Row1b.style.backgroundColor = evt.detail.hex;
+    horiz2Color1.value = evt.detail.hex;
+    horiz2Row2a.style.backgroundColor = evt.detail.hex;
+    horiz2Row2b.style.backgroundColor = evt.detail.hex;
+    horiz2Color2.value = evt.detail.hex;
+    horiz2Row3a.style.backgroundColor = evt.detail.hex;
+    horiz2Row3b.style.backgroundColor = evt.detail.hex;
+    horiz2Color3.value = evt.detail.hex;
+    horiz2Row4a.style.backgroundColor = evt.detail.hex;
+    horiz2Row4b.style.backgroundColor = evt.detail.hex;
+    horiz2Color4.value = evt.detail.hex;
+    horiz2Row5a.style.backgroundColor = evt.detail.hex;
+    horiz2Row5b.style.backgroundColor = evt.detail.hex;
+    horiz2Color5.value = evt.detail.hex;
+    horiz2Row6a.style.backgroundColor = evt.detail.hex;
+    horiz2Row6b.style.backgroundColor = evt.detail.hex;
+    horiz2Color6.value = evt.detail.hex;
+    horiz2Row7a.style.backgroundColor = evt.detail.hex;
+    horiz2Row7b.style.backgroundColor = evt.detail.hex;
+    horiz2Color7.value = evt.detail.hex;
+    horiz2Row8a.style.backgroundColor = evt.detail.hex;
+    horiz2Row8b.style.backgroundColor = evt.detail.hex;
+    horiz2Color8.value = evt.detail.hex;
+    horiz2Row9a.style.backgroundColor = evt.detail.hex;
+    horiz2Row9b.style.backgroundColor = evt.detail.hex;
+    horiz2Color9.value = evt.detail.hex;
+    horiz2Row10a.style.backgroundColor = evt.detail.hex;
+    horiz2Row10b.style.backgroundColor = evt.detail.hex;
+    horiz2Color10.value = evt.detail.hex;
+});
 
 // Horizontal Chart II Row Customization Logic
 const horiz2Row1a = document.getElementById("horiz2Row1a");
@@ -1136,6 +1196,31 @@ horiz3srcText.oninput = function() {
     }
 };
 
+// Horizontal Chart III Color Picker
+const horiz3colorPick = document.getElementById("horiz3colorPick");
+horiz3colorPick.addEventListener("change", (evt) => {
+    horiz3Row1b.style.backgroundColor = evt.detail.hex;
+    horiz3Color1.value = evt.detail.hex;
+    horiz3Row2b.style.backgroundColor = evt.detail.hex;
+    horiz3Color2.value = evt.detail.hex;
+    horiz3Row3b.style.backgroundColor = evt.detail.hex;
+    horiz3Color3.value = evt.detail.hex;
+    horiz3Row4b.style.backgroundColor = evt.detail.hex;
+    horiz3Color4.value = evt.detail.hex;
+    horiz3Row5b.style.backgroundColor = evt.detail.hex;
+    horiz3Color5.value = evt.detail.hex;
+    horiz3Row6b.style.backgroundColor = evt.detail.hex;
+    horiz3Color6.value = evt.detail.hex;
+    horiz3Row7b.style.backgroundColor = evt.detail.hex;
+    horiz3Color7.value = evt.detail.hex;
+    horiz3Row8b.style.backgroundColor = evt.detail.hex;
+    horiz3Color8.value = evt.detail.hex;
+    horiz3Row9b.style.backgroundColor = evt.detail.hex;
+    horiz3Color9.value = evt.detail.hex;
+    horiz3Row10b.style.backgroundColor = evt.detail.hex;
+    horiz3Color10.value = evt.detail.hex;
+});
+
 // Horizontal Chart I Row Customization Logic
 const horiz3Row1a = document.getElementById("horiz3Row1a");
 const horiz3Row1b = document.getElementById("horiz3Row1b");
@@ -1676,6 +1761,31 @@ horiz4srcText.oninput = function() {
         return horiz4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + horiz4Source.innerHTML + '</td></tr>';
     }
 };
+
+// Horizontal Chart IV Color Picker
+const horiz4colorPick = document.getElementById("horiz4colorPick");
+horiz4colorPick.addEventListener("change", (evt) => {
+    horiz4Row1b.style.backgroundColor = evt.detail.hex;
+    horiz4Color1.value = evt.detail.hex;
+    horiz4Row2b.style.backgroundColor = evt.detail.hex;
+    horiz4Color2.value = evt.detail.hex;
+    horiz4Row3b.style.backgroundColor = evt.detail.hex;
+    horiz4Color3.value = evt.detail.hex;
+    horiz4Row4b.style.backgroundColor = evt.detail.hex;
+    horiz4Color4.value = evt.detail.hex;
+    horiz4Row5b.style.backgroundColor = evt.detail.hex;
+    horiz4Color5.value = evt.detail.hex;
+    horiz4Row6b.style.backgroundColor = evt.detail.hex;
+    horiz4Color6.value = evt.detail.hex;
+    horiz4Row7b.style.backgroundColor = evt.detail.hex;
+    horiz4Color7.value = evt.detail.hex;
+    horiz4Row8b.style.backgroundColor = evt.detail.hex;
+    horiz4Color8.value = evt.detail.hex;
+    horiz4Row9b.style.backgroundColor = evt.detail.hex;
+    horiz4Color9.value = evt.detail.hex;
+    horiz4Row10b.style.backgroundColor = evt.detail.hex;
+    horiz4Color10.value = evt.detail.hex;
+});
 
 // Horizontal Chart IV Row Customization Logic
 const horiz4Row1a = document.getElementById("horiz4Row1a");
@@ -2218,6 +2328,31 @@ horiz5srcText.oninput = function() {
         return horiz5srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + horiz5Source.innerHTML + '</td></tr>';
     }
 };
+
+// Horizontal Chart V Color Picker
+const horiz5colorPick = document.getElementById("horiz5colorPick");
+horiz5colorPick.addEventListener("change", (evt) => {
+    horiz5Row1b.style.backgroundColor = evt.detail.hex;
+    horiz5Color1.value = evt.detail.hex;
+    horiz5Row2b.style.backgroundColor = evt.detail.hex;
+    horiz5Color2.value = evt.detail.hex;
+    horiz5Row3b.style.backgroundColor = evt.detail.hex;
+    horiz5Color3.value = evt.detail.hex;
+    horiz5Row4b.style.backgroundColor = evt.detail.hex;
+    horiz5Color4.value = evt.detail.hex;
+    horiz5Row5b.style.backgroundColor = evt.detail.hex;
+    horiz5Color5.value = evt.detail.hex;
+    horiz5Row6b.style.backgroundColor = evt.detail.hex;
+    horiz5Color6.value = evt.detail.hex;
+    horiz5Row7b.style.backgroundColor = evt.detail.hex;
+    horiz5Color7.value = evt.detail.hex;
+    horiz5Row8b.style.backgroundColor = evt.detail.hex;
+    horiz5Color8.value = evt.detail.hex;
+    horiz5Row9b.style.backgroundColor = evt.detail.hex;
+    horiz5Color9.value = evt.detail.hex;
+    horiz5Row10b.style.backgroundColor = evt.detail.hex;
+    horiz5Color10.value = evt.detail.hex;
+});
 
 // Horizontal Chart V Row Customization Logic
 const horiz5Row1a = document.getElementById("horiz5Row1a");
