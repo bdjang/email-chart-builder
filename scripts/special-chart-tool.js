@@ -66,6 +66,31 @@ negative1srcText.oninput = function() {
     }
 };
 
+// Negative I Chart Color Picker
+const negative1colorPick = document.getElementById("negative1colorPick");
+negative1colorPick.addEventListener("change", (evt) => {
+    negative1Row1c.style.backgroundColor = evt.detail.hex;
+    negative1Color1.value = evt.detail.hex;
+    negative1Row2c.style.backgroundColor = evt.detail.hex;
+    negative1Color2.value = evt.detail.hex;
+    negative1Row3c.style.backgroundColor = evt.detail.hex;
+    negative1Color3.value = evt.detail.hex;
+    negative1Row4c.style.backgroundColor = evt.detail.hex;
+    negative1Color4.value = evt.detail.hex;
+    negative1Row5c.style.backgroundColor = evt.detail.hex;
+    negative1Color5.value = evt.detail.hex;
+    negative1Row6c.style.backgroundColor = evt.detail.hex;
+    negative1Color6.value = evt.detail.hex;
+    negative1Row7c.style.backgroundColor = evt.detail.hex;
+    negative1Color7.value = evt.detail.hex;
+    negative1Row8c.style.backgroundColor = evt.detail.hex;
+    negative1Color8.value = evt.detail.hex;
+    negative1Row9c.style.backgroundColor = evt.detail.hex;
+    negative1Color9.value = evt.detail.hex;
+    negative1Row10c.style.backgroundColor = evt.detail.hex;
+    negative1Color10.value = evt.detail.hex;
+});
+
 // Negative I Row Customization Logic
 const negative1Row1a = document.getElementById("negative1Row1a");
 const negative1Row1b = document.getElementById("negative1Row1b");
@@ -564,6 +589,31 @@ negative2srcText.oninput = function() {
     }
 };
 
+// Negative II Chart Color Picker
+const negative2colorPick = document.getElementById("negative2colorPick");
+negative2colorPick.addEventListener("change", (evt) => {
+    negative2Row1c.style.backgroundColor = evt.detail.hex;
+    negative2Color1.value = evt.detail.hex;
+    negative2Row2c.style.backgroundColor = evt.detail.hex;
+    negative2Color2.value = evt.detail.hex;
+    negative2Row3c.style.backgroundColor = evt.detail.hex;
+    negative2Color3.value = evt.detail.hex;
+    negative2Row4c.style.backgroundColor = evt.detail.hex;
+    negative2Color4.value = evt.detail.hex;
+    negative2Row5c.style.backgroundColor = evt.detail.hex;
+    negative2Color5.value = evt.detail.hex;
+    negative2Row6c.style.backgroundColor = evt.detail.hex;
+    negative2Color6.value = evt.detail.hex;
+    negative2Row7c.style.backgroundColor = evt.detail.hex;
+    negative2Color7.value = evt.detail.hex;
+    negative2Row8c.style.backgroundColor = evt.detail.hex;
+    negative2Color8.value = evt.detail.hex;
+    negative2Row9c.style.backgroundColor = evt.detail.hex;
+    negative2Color9.value = evt.detail.hex;
+    negative2Row10c.style.backgroundColor = evt.detail.hex;
+    negative2Color10.value = evt.detail.hex;
+});
+
 // Negative II Row Customization Logic
 const negative2Row1a = document.getElementById("negative2Row1a");
 const negative2Row1b = document.getElementById("negative2Row1b");
@@ -1037,6 +1087,54 @@ splitsrcText.oninput = function() {
         return splitsrcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + splitSource.innerHTML + '</td></tr>';
     }
 };
+
+// Negative/Positive (Split) Chart Color Picker
+const splitcolorPickN = document.getElementById("splitcolorPickN");
+splitcolorPickN.addEventListener("change", (evt) => {
+    row1b.style.backgroundColor = evt.detail.hex;
+    rowColor1a.value = evt.detail.hex;
+    row2b.style.backgroundColor = evt.detail.hex;
+    rowColor2a.value = evt.detail.hex;
+    row3b.style.backgroundColor = evt.detail.hex;
+    rowColor3a.value = evt.detail.hex;
+    row4b.style.backgroundColor = evt.detail.hex;
+    rowColor4a.value = evt.detail.hex;
+    row5b.style.backgroundColor = evt.detail.hex;
+    rowColor5a.value = evt.detail.hex;
+    row6b.style.backgroundColor = evt.detail.hex;
+    rowColor6a.value = evt.detail.hex;
+    row7b.style.backgroundColor = evt.detail.hex;
+    rowColor7a.value = evt.detail.hex;
+    row8b.style.backgroundColor = evt.detail.hex;
+    rowColor8a.value = evt.detail.hex;
+    row9b.style.backgroundColor = evt.detail.hex;
+    rowColor9a.value = evt.detail.hex;
+    row10b.style.backgroundColor = evt.detail.hex;
+    rowColor10a.value = evt.detail.hex;
+});
+const splitcolorPickP = document.getElementById("splitcolorPickP");
+splitcolorPickP.addEventListener("change", (evt) => {
+    row1c.style.backgroundColor = evt.detail.hex;
+    rowColor1b.value = evt.detail.hex;
+    row2c.style.backgroundColor = evt.detail.hex;
+    rowColor2b.value = evt.detail.hex;
+    row3c.style.backgroundColor = evt.detail.hex;
+    rowColor3b.value = evt.detail.hex;
+    row4c.style.backgroundColor = evt.detail.hex;
+    rowColor4b.value = evt.detail.hex;
+    row5c.style.backgroundColor = evt.detail.hex;
+    rowColor5b.value = evt.detail.hex;
+    row6c.style.backgroundColor = evt.detail.hex;
+    rowColor6b.value = evt.detail.hex;
+    row7c.style.backgroundColor = evt.detail.hex;
+    rowColor7b.value = evt.detail.hex;
+    row8c.style.backgroundColor = evt.detail.hex;
+    rowColor8b.value = evt.detail.hex;
+    row9c.style.backgroundColor = evt.detail.hex;
+    rowColor9b.value = evt.detail.hex;
+    row10c.style.backgroundColor = evt.detail.hex;
+    rowColor10b.value = evt.detail.hex;
+});
 
 // Split Chart Row Customization Logic
 const row1a = document.getElementById("row1a");
@@ -1778,6 +1876,50 @@ combo1srcText.oninput = function() {
     }
 };
 
+// Combo I Chart Color Picker
+const combo1colorPickT = document.getElementById("combo1colorPickT");
+combo1colorPickT.addEventListener("change", (evt) => {
+    combo1Row1b.style.backgroundColor = evt.detail.hex;
+    combo1Color1t.value = evt.detail.hex;
+    combo1Row2b.style.backgroundColor = evt.detail.hex;
+    combo1Color2t.value = evt.detail.hex;
+    combo1Row3b.style.backgroundColor = evt.detail.hex;
+    combo1Color3t.value = evt.detail.hex;
+    combo1Row4b.style.backgroundColor = evt.detail.hex;
+    combo1Color4t.value = evt.detail.hex;
+    combo1Row5b.style.backgroundColor = evt.detail.hex;
+    combo1Color5t.value = evt.detail.hex;
+    combo1Row6b.style.backgroundColor = evt.detail.hex;
+    combo1Color6t.value = evt.detail.hex;
+    legend4Color1.style.color = evt.detail.hex;
+    legend4Color1.style.backgroundColor = evt.detail.hex;
+    legend4Color1.style.borderColor = evt.detail.hex;
+    legend4Color1x.value = evt.detail.hex;
+    legend4Color1x.value = evt.detail.hex;
+    legend4Color1x.value = evt.detail.hex;
+});
+const combo1colorPickB = document.getElementById("combo1colorPickB");
+combo1colorPickB.addEventListener("change", (evt) => {
+    combo1Row1y.style.backgroundColor = evt.detail.hex;
+    combo1Color1b.value = evt.detail.hex;
+    combo1Row2y.style.backgroundColor = evt.detail.hex;
+    combo1Color2b.value = evt.detail.hex;
+    combo1Row3y.style.backgroundColor = evt.detail.hex;
+    combo1Color3b.value = evt.detail.hex;
+    combo1Row4y.style.backgroundColor = evt.detail.hex;
+    combo1Color4b.value = evt.detail.hex;
+    combo1Row5y.style.backgroundColor = evt.detail.hex;
+    combo1Color5b.value = evt.detail.hex;
+    combo1Row6y.style.backgroundColor = evt.detail.hex;
+    combo1Color6b.value = evt.detail.hex;
+    legend4Color2.style.color = evt.detail.hex;
+    legend4Color2.style.backgroundColor = evt.detail.hex;
+    legend4Color2.style.borderColor = evt.detail.hex;
+    legend4Color2x.value = evt.detail.hex;
+    legend4Color2x.value = evt.detail.hex;
+    legend4Color2x.value = evt.detail.hex;
+});
+
 // Combo Chart I Text/Color Legend
 // const test = document.getElementById("test");
 const legend4Text1 = document.getElementById("legend4Text1");
@@ -2343,6 +2485,46 @@ combo2srcText.oninput = function() {
     }
 };
 
+// Combo II Chart Color Picker
+const combo2colorPickT = document.getElementById("combo2colorPickT");
+combo2colorPickT.addEventListener("change", (evt) => {
+    combo2Row1b.style.backgroundColor = evt.detail.hex;
+    combo2Color1t.value = evt.detail.hex;
+    combo2Row2b.style.backgroundColor = evt.detail.hex;
+    combo2Color2t.value = evt.detail.hex;
+    combo2Row3b.style.backgroundColor = evt.detail.hex;
+    combo2Color3t.value = evt.detail.hex;
+    combo2Row4b.style.backgroundColor = evt.detail.hex;
+    combo2Color4t.value = evt.detail.hex;
+    combo2Row5b.style.backgroundColor = evt.detail.hex;
+    combo2Color5t.value = evt.detail.hex;
+    legend8Color1.style.color = evt.detail.hex;
+    legend8Color1.style.backgroundColor = evt.detail.hex;
+    legend8Color1.style.borderColor = evt.detail.hex;
+    legend8Color1x.value = evt.detail.hex;
+    legend8Color1x.value = evt.detail.hex;
+    legend8Color1x.value = evt.detail.hex;
+});
+const combo2colorPickB = document.getElementById("combo2colorPickB");
+combo2colorPickB.addEventListener("change", (evt) => {
+    combo2Row1y.style.backgroundColor = evt.detail.hex;
+    combo2Color1b.value = evt.detail.hex;
+    combo2Row2y.style.backgroundColor = evt.detail.hex;
+    combo2Color2b.value = evt.detail.hex;
+    combo2Row3y.style.backgroundColor = evt.detail.hex;
+    combo2Color3b.value = evt.detail.hex;
+    combo2Row4y.style.backgroundColor = evt.detail.hex;
+    combo2Color4b.value = evt.detail.hex;
+    combo2Row5y.style.backgroundColor = evt.detail.hex;
+    combo2Color5b.value = evt.detail.hex;
+    legend8Color2.style.color = evt.detail.hex;
+    legend8Color2.style.backgroundColor = evt.detail.hex;
+    legend8Color2.style.borderColor = evt.detail.hex;
+    legend8Color2x.value = evt.detail.hex;
+    legend8Color2x.value = evt.detail.hex;
+    legend8Color2x.value = evt.detail.hex;
+});
+
 // Combo Chart II Text/Color Legend
 const legend8Text1 = document.getElementById("legend8Text1");
 const legend8Text1x = document.getElementById("legend8Text1x");
@@ -2822,6 +3004,44 @@ combo3srcText.oninput = function() {
         return combo3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + combo3Source.innerHTML + '</td></tr>';
     }
 };
+
+// Combo III Chart Color Picker
+const combo3colorPickT = document.getElementById("combo3colorPickT");
+combo3colorPickT.addEventListener("change", (evt) => {
+    combo3Row1b.style.backgroundColor = evt.detail.hex;
+    combo3Row1c.style.backgroundColor = evt.detail.hex;
+    combo3Color1t.value = evt.detail.hex;
+    combo3Row2b.style.backgroundColor = evt.detail.hex;
+    combo3Row2c.style.backgroundColor = evt.detail.hex;
+    combo3Color2t.value = evt.detail.hex;
+    combo3Row3b.style.backgroundColor = evt.detail.hex;
+    combo3Row3c.style.backgroundColor = evt.detail.hex;
+    combo3Color3t.value = evt.detail.hex;
+    combo3Row4b.style.backgroundColor = evt.detail.hex;
+    combo3Row4c.style.backgroundColor = evt.detail.hex;
+    combo3Color4t.value = evt.detail.hex;
+    combo3Row5b.style.backgroundColor = evt.detail.hex;
+    combo3Row5c.style.backgroundColor = evt.detail.hex;
+    combo3Color5t.value = evt.detail.hex;
+});
+const combo3colorPickB = document.getElementById("combo3colorPickB");
+combo3colorPickB.addEventListener("change", (evt) => {
+    combo3Row1x.style.backgroundColor = evt.detail.hex;
+    combo3Row1y.style.backgroundColor = evt.detail.hex;
+    combo3Color1b.value = evt.detail.hex;
+    combo3Row2x.style.backgroundColor = evt.detail.hex;
+    combo3Row2y.style.backgroundColor = evt.detail.hex;
+    combo3Color2b.value = evt.detail.hex;
+    combo3Row3x.style.backgroundColor = evt.detail.hex;
+    combo3Row3y.style.backgroundColor = evt.detail.hex;
+    combo3Color3b.value = evt.detail.hex;
+    combo3Row4x.style.backgroundColor = evt.detail.hex;
+    combo3Row4y.style.backgroundColor = evt.detail.hex;
+    combo3Color4b.value = evt.detail.hex;
+    combo3Row5x.style.backgroundColor = evt.detail.hex;
+    combo3Row5y.style.backgroundColor = evt.detail.hex;
+    combo3Color5b.value = evt.detail.hex;
+});
 
 // Combo Chart II Row Customization Logic
 const combo3Row1a = document.getElementById("combo3Row1a");
