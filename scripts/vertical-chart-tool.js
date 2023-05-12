@@ -49,6 +49,31 @@ vert1srcText.oninput = function() {
     }
 };
 
+// Vertical Chart I Color Picker
+const vert1colorPick = document.getElementById("vert1colorPick");
+vert1colorPick.addEventListener("change", (evt) => {
+    vert1Row1b.style.backgroundColor = evt.detail.hex;
+    vert1Color1.value = evt.detail.hex;
+    vert1Row2b.style.backgroundColor = evt.detail.hex;
+    vert1Color2.value = evt.detail.hex;
+    vert1Row3b.style.backgroundColor = evt.detail.hex;
+    vert1Color3.value = evt.detail.hex;
+    vert1Row4b.style.backgroundColor = evt.detail.hex;
+    vert1Color4.value = evt.detail.hex;
+    vert1Row5b.style.backgroundColor = evt.detail.hex;
+    vert1Color5.value = evt.detail.hex;
+    vert1Row6b.style.backgroundColor = evt.detail.hex;
+    vert1Color6.value = evt.detail.hex;
+    vert1Row7b.style.backgroundColor = evt.detail.hex;
+    vert1Color7.value = evt.detail.hex;
+    vert1Row8b.style.backgroundColor = evt.detail.hex;
+    vert1Color8.value = evt.detail.hex;
+    vert1Row9b.style.backgroundColor = evt.detail.hex;
+    vert1Color9.value = evt.detail.hex;
+    vert1Row10b.style.backgroundColor = evt.detail.hex;
+    vert1Color10.value = evt.detail.hex;
+});
+
 // Row 1 Customization Logic
 const vert1Row1a = document.getElementById("vert1Row1a"); // Top vertical bar label
 const vert1Text1a = document.getElementById("vert1Text1a");
@@ -357,6 +382,95 @@ vert2srcText.oninput = function() {
         return vert2srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert2Source.innerHTML + '</div>';
     }
 };
+
+// Vertical Chart II Color Picker
+const vert2colorPickD = document.getElementById("vert2colorPickD");
+vert2colorPickD.addEventListener("change", (evt) => {
+    vert2Row1d.style.backgroundColor = evt.detail.hex;
+    vert2Color1d.value = evt.detail.hex;
+    vert2Row2d.style.backgroundColor = evt.detail.hex;
+    vert2Color2d.value = evt.detail.hex;
+    vert2Row3d.style.backgroundColor = evt.detail.hex;
+    vert2Color3d.value = evt.detail.hex;
+    vert2Row4d.style.backgroundColor = evt.detail.hex;
+    vert2Color4d.value = evt.detail.hex;
+    vert2Row5d.style.backgroundColor = evt.detail.hex;
+    vert2Color5d.value = evt.detail.hex;
+    vert2Row6d.style.backgroundColor = evt.detail.hex;
+    vert2Color6d.value = evt.detail.hex;
+    vert2Row7d.style.backgroundColor = evt.detail.hex;
+    vert2Color7d.value = evt.detail.hex;
+    vert2Row8d.style.backgroundColor = evt.detail.hex;
+    vert2Color8d.value = evt.detail.hex;
+    vert2Row9d.style.backgroundColor = evt.detail.hex;
+    vert2Color9d.value = evt.detail.hex;
+    vert2Row10d.style.backgroundColor = evt.detail.hex;
+    vert2Color10d.value = evt.detail.hex;
+    legend6Color3.style.color = evt.detail.hex;
+    legend6Color3.style.backgroundColor = evt.detail.hex;
+    legend6Color3.style.borderColor = evt.detail.hex;
+    legend6Color3x.value = evt.detail.hex;
+    legend6Color3x.value = evt.detail.hex;
+    legend6Color3x.value = evt.detail.hex;
+});
+const vert2colorPickC = document.getElementById("vert2colorPickC");
+vert2colorPickC.addEventListener("change", (evt) => {
+    vert2Row1c.style.backgroundColor = evt.detail.hex;
+    vert2Color1c.value = evt.detail.hex;
+    vert2Row2c.style.backgroundColor = evt.detail.hex;
+    vert2Color2c.value = evt.detail.hex;
+    vert2Row3c.style.backgroundColor = evt.detail.hex;
+    vert2Color3c.value = evt.detail.hex;
+    vert2Row4c.style.backgroundColor = evt.detail.hex;
+    vert2Color4c.value = evt.detail.hex;
+    vert2Row5c.style.backgroundColor = evt.detail.hex;
+    vert2Color5c.value = evt.detail.hex;
+    vert2Row6c.style.backgroundColor = evt.detail.hex;
+    vert2Color6c.value = evt.detail.hex;
+    vert2Row7c.style.backgroundColor = evt.detail.hex;
+    vert2Color7c.value = evt.detail.hex;
+    vert2Row8c.style.backgroundColor = evt.detail.hex;
+    vert2Color8c.value = evt.detail.hex;
+    vert2Row9c.style.backgroundColor = evt.detail.hex;
+    vert2Color9c.value = evt.detail.hex;
+    vert2Row10c.style.backgroundColor = evt.detail.hex;
+    vert2Color10c.value = evt.detail.hex;
+    legend6Color2.style.color = evt.detail.hex;
+    legend6Color2.style.backgroundColor = evt.detail.hex;
+    legend6Color2.style.borderColor = evt.detail.hex;
+    legend6Color2x.value = evt.detail.hex;
+    legend6Color2x.value = evt.detail.hex;
+    legend6Color2x.value = evt.detail.hex;
+});
+const vert2colorPickB = document.getElementById("vert2colorPickB");
+vert2colorPickB.addEventListener("change", (evt) => {
+    vert2Row1b.style.backgroundColor = evt.detail.hex;
+    vert2Color1b.value = evt.detail.hex;
+    vert2Row2b.style.backgroundColor = evt.detail.hex;
+    vert2Color2b.value = evt.detail.hex;
+    vert2Row3b.style.backgroundColor = evt.detail.hex;
+    vert2Color3b.value = evt.detail.hex;
+    vert2Row4b.style.backgroundColor = evt.detail.hex;
+    vert2Color4b.value = evt.detail.hex;
+    vert2Row5b.style.backgroundColor = evt.detail.hex;
+    vert2Color5b.value = evt.detail.hex;
+    vert2Row6b.style.backgroundColor = evt.detail.hex;
+    vert2Color6b.value = evt.detail.hex;
+    vert2Row7b.style.backgroundColor = evt.detail.hex;
+    vert2Color7b.value = evt.detail.hex;
+    vert2Row8b.style.backgroundColor = evt.detail.hex;
+    vert2Color8b.value = evt.detail.hex;
+    vert2Row9b.style.backgroundColor = evt.detail.hex;
+    vert2Color9b.value = evt.detail.hex;
+    vert2Row10b.style.backgroundColor = evt.detail.hex;
+    vert2Color10b.value = evt.detail.hex;
+    legend6Color1.style.color = evt.detail.hex;
+    legend6Color1.style.backgroundColor = evt.detail.hex;
+    legend6Color1.style.borderColor = evt.detail.hex;
+    legend6Color1x.value = evt.detail.hex;
+    legend6Color1x.value = evt.detail.hex;
+    legend6Color1x.value = evt.detail.hex;
+});
 
 // Vertical Chart II Text/Color Legend
 const legend6Text1 = document.getElementById("legend6Text1");
@@ -955,6 +1069,31 @@ vert3srcText.oninput = function() {
     }
 };
 
+// Vertical Chart III Color Picker
+const vert3colorPick = document.getElementById("vert3colorPick");
+vert3colorPick.addEventListener("change", (evt) => {
+    vert3Row1b.style.backgroundColor = evt.detail.hex;
+    vert3Color1.value = evt.detail.hex;
+    vert3Row2b.style.backgroundColor = evt.detail.hex;
+    vert3Color2.value = evt.detail.hex;
+    vert3Row3b.style.backgroundColor = evt.detail.hex;
+    vert3Color3.value = evt.detail.hex;
+    vert3Row4b.style.backgroundColor = evt.detail.hex;
+    vert3Color4.value = evt.detail.hex;
+    vert3Row5b.style.backgroundColor = evt.detail.hex;
+    vert3Color5.value = evt.detail.hex;
+    vert3Row6b.style.backgroundColor = evt.detail.hex;
+    vert3Color6.value = evt.detail.hex;
+    vert3Row7b.style.backgroundColor = evt.detail.hex;
+    vert3Color7.value = evt.detail.hex;
+    vert3Row8b.style.backgroundColor = evt.detail.hex;
+    vert3Color8.value = evt.detail.hex;
+    vert3Row9b.style.backgroundColor = evt.detail.hex;
+    vert3Color9.value = evt.detail.hex;
+    vert3Row10b.style.backgroundColor = evt.detail.hex;
+    vert3Color10.value = evt.detail.hex;
+});
+
 // Row 1 Customization Logic
 const vert3Row1a = document.getElementById("vert3Row1a"); // Axis label
 const vert3Text1a = document.getElementById("vert3Text1a");
@@ -1263,6 +1402,95 @@ vert4srcText.oninput = function() {
         return vert4srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert4Source.innerHTML + '</div>';
     }
 };
+
+// Vertical Chart IV Color Picker
+const vert4colorPickD = document.getElementById("vert4colorPickD");
+vert4colorPickD.addEventListener("change", (evt) => {
+    vert4Row1d.style.backgroundColor = evt.detail.hex;
+    vert4Color1d.value = evt.detail.hex;
+    vert4Row2d.style.backgroundColor = evt.detail.hex;
+    vert4Color2d.value = evt.detail.hex;
+    vert4Row3d.style.backgroundColor = evt.detail.hex;
+    vert4Color3d.value = evt.detail.hex;
+    vert4Row4d.style.backgroundColor = evt.detail.hex;
+    vert4Color4d.value = evt.detail.hex;
+    vert4Row5d.style.backgroundColor = evt.detail.hex;
+    vert4Color5d.value = evt.detail.hex;
+    vert4Row6d.style.backgroundColor = evt.detail.hex;
+    vert4Color6d.value = evt.detail.hex;
+    vert4Row7d.style.backgroundColor = evt.detail.hex;
+    vert4Color7d.value = evt.detail.hex;
+    vert4Row8d.style.backgroundColor = evt.detail.hex;
+    vert4Color8d.value = evt.detail.hex;
+    vert4Row9d.style.backgroundColor = evt.detail.hex;
+    vert4Color9d.value = evt.detail.hex;
+    vert4Row10d.style.backgroundColor = evt.detail.hex;
+    vert4Color10d.value = evt.detail.hex;
+    legend7Color3.style.color = evt.detail.hex;
+    legend7Color3.style.backgroundColor = evt.detail.hex;
+    legend7Color3.style.borderColor = evt.detail.hex;
+    legend7Color3x.value = evt.detail.hex;
+    legend7Color3x.value = evt.detail.hex;
+    legend7Color3x.value = evt.detail.hex;
+});
+const vert4colorPickC = document.getElementById("vert4colorPickC");
+vert4colorPickC.addEventListener("change", (evt) => {
+    vert4Row1c.style.backgroundColor = evt.detail.hex;
+    vert4Color1c.value = evt.detail.hex;
+    vert4Row2c.style.backgroundColor = evt.detail.hex;
+    vert4Color2c.value = evt.detail.hex;
+    vert4Row3c.style.backgroundColor = evt.detail.hex;
+    vert4Color3c.value = evt.detail.hex;
+    vert4Row4c.style.backgroundColor = evt.detail.hex;
+    vert4Color4c.value = evt.detail.hex;
+    vert4Row5c.style.backgroundColor = evt.detail.hex;
+    vert4Color5c.value = evt.detail.hex;
+    vert4Row6c.style.backgroundColor = evt.detail.hex;
+    vert4Color6c.value = evt.detail.hex;
+    vert4Row7c.style.backgroundColor = evt.detail.hex;
+    vert4Color7c.value = evt.detail.hex;
+    vert4Row8c.style.backgroundColor = evt.detail.hex;
+    vert4Color8c.value = evt.detail.hex;
+    vert4Row9c.style.backgroundColor = evt.detail.hex;
+    vert4Color9c.value = evt.detail.hex;
+    vert4Row10c.style.backgroundColor = evt.detail.hex;
+    vert4Color10c.value = evt.detail.hex;
+    legend7Color2.style.color = evt.detail.hex;
+    legend7Color2.style.backgroundColor = evt.detail.hex;
+    legend7Color2.style.borderColor = evt.detail.hex;
+    legend7Color2x.value = evt.detail.hex;
+    legend7Color2x.value = evt.detail.hex;
+    legend7Color2x.value = evt.detail.hex;
+});
+const vert4colorPickB = document.getElementById("vert4colorPickB");
+vert4colorPickB.addEventListener("change", (evt) => {
+    vert4Row1b.style.backgroundColor = evt.detail.hex;
+    vert4Color1b.value = evt.detail.hex;
+    vert4Row2b.style.backgroundColor = evt.detail.hex;
+    vert4Color2b.value = evt.detail.hex;
+    vert4Row3b.style.backgroundColor = evt.detail.hex;
+    vert4Color3b.value = evt.detail.hex;
+    vert4Row4b.style.backgroundColor = evt.detail.hex;
+    vert4Color4b.value = evt.detail.hex;
+    vert4Row5b.style.backgroundColor = evt.detail.hex;
+    vert4Color5b.value = evt.detail.hex;
+    vert4Row6b.style.backgroundColor = evt.detail.hex;
+    vert4Color6b.value = evt.detail.hex;
+    vert4Row7b.style.backgroundColor = evt.detail.hex;
+    vert4Color7b.value = evt.detail.hex;
+    vert4Row8b.style.backgroundColor = evt.detail.hex;
+    vert4Color8b.value = evt.detail.hex;
+    vert4Row9b.style.backgroundColor = evt.detail.hex;
+    vert4Color9b.value = evt.detail.hex;
+    vert4Row10b.style.backgroundColor = evt.detail.hex;
+    vert4Color10b.value = evt.detail.hex;
+    legend7Color1.style.color = evt.detail.hex;
+    legend7Color1.style.backgroundColor = evt.detail.hex;
+    legend7Color1.style.borderColor = evt.detail.hex;
+    legend7Color1x.value = evt.detail.hex;
+    legend7Color1x.value = evt.detail.hex;
+    legend7Color1x.value = evt.detail.hex;
+});
 
 // Vertical Chart IV Text/Color Legend
 const legend7Text1 = document.getElementById("legend7Text1");
@@ -1864,6 +2092,54 @@ vert5srcText.oninput = function() {
         return vert5srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert5Source.innerHTML + '</div>';
     }
 };
+
+// Vertical Chart V Color Picker
+const vert5colorPickT = document.getElementById("vert5colorPickT");
+vert5colorPickT.addEventListener("change", (evt) => {
+    vert5Row1b.style.backgroundColor = evt.detail.hex;
+    vert5Color1b.value = evt.detail.hex;
+    vert5Row2b.style.backgroundColor = evt.detail.hex;
+    vert5Color2b.value = evt.detail.hex;
+    vert5Row3b.style.backgroundColor = evt.detail.hex;
+    vert5Color3b.value = evt.detail.hex;
+    vert5Row4b.style.backgroundColor = evt.detail.hex;
+    vert5Color4b.value = evt.detail.hex;
+    vert5Row5b.style.backgroundColor = evt.detail.hex;
+    vert5Color5b.value = evt.detail.hex;
+    vert5Row6b.style.backgroundColor = evt.detail.hex;
+    vert5Color6b.value = evt.detail.hex;
+    vert5Row7b.style.backgroundColor = evt.detail.hex;
+    vert5Color7b.value = evt.detail.hex;
+    vert5Row8b.style.backgroundColor = evt.detail.hex;
+    vert5Color8b.value = evt.detail.hex;
+    vert5Row9b.style.backgroundColor = evt.detail.hex;
+    vert5Color9b.value = evt.detail.hex;
+    vert5Row10b.style.backgroundColor = evt.detail.hex;
+    vert5Color10b.value = evt.detail.hex;
+});
+const vert5colorPickB = document.getElementById("vert5colorPickB");
+vert5colorPickB.addEventListener("change", (evt) => {
+    vert5Row1c.style.backgroundColor = evt.detail.hex;
+    vert5Color1c.value = evt.detail.hex;
+    vert5Row2c.style.backgroundColor = evt.detail.hex;
+    vert5Color2c.value = evt.detail.hex;
+    vert5Row3c.style.backgroundColor = evt.detail.hex;
+    vert5Color3c.value = evt.detail.hex;
+    vert5Row4c.style.backgroundColor = evt.detail.hex;
+    vert5Color4c.value = evt.detail.hex;
+    vert5Row5c.style.backgroundColor = evt.detail.hex;
+    vert5Color5c.value = evt.detail.hex;
+    vert5Row6c.style.backgroundColor = evt.detail.hex;
+    vert5Color6c.value = evt.detail.hex;
+    vert5Row7c.style.backgroundColor = evt.detail.hex;
+    vert5Color7c.value = evt.detail.hex;
+    vert5Row8c.style.backgroundColor = evt.detail.hex;
+    vert5Color8c.value = evt.detail.hex;
+    vert5Row9c.style.backgroundColor = evt.detail.hex;
+    vert5Color9c.value = evt.detail.hex;
+    vert5Row10c.style.backgroundColor = evt.detail.hex;
+    vert5Color10c.value = evt.detail.hex;
+});
 
 // Top Row 1 Customization Logic
 const vert5Row1a = document.getElementById("vert5Row1a"); // Axis label
