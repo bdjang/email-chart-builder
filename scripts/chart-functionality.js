@@ -98,6 +98,7 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     prog4Row4a.classList.add("lightStyles");
     prog4Row5a.classList.add("lightStyles");
     horiz1Cap.classList.add("lightStyles");
+    horiz1Sub.classList.add("lightStyles");
     horiz1Source.classList.add("lightStylesSRC");
     horiz2Cap.classList.add("lightStyles");
     horiz2Source.classList.add("lightStylesSRC");
@@ -228,6 +229,7 @@ document.addEventListener("keydown", () => {
             prog4Row4a.classList.replace("lightStyles", "darkStyles");
             prog4Row5a.classList.replace("lightStyles", "darkStyles");
             horiz1Cap.classList.replace("lightStyles", "darkStyles");
+            horiz1Sub.classList.replace("lightStyles", "darkStyles");
             horiz1Source.classList.replace("lightStylesSRC", "darkStyles");
             horiz2Cap.classList.replace("lightStyles", "darkStyles");
             horiz2Source.classList.replace("lightStylesSRC", "darkStyles");
@@ -368,6 +370,7 @@ document.addEventListener("keydown", () => {
             prog4Row4a.classList.replace("darkStyles", "lightStyles");
             prog4Row5a.classList.replace("darkStyles", "lightStyles");
             horiz1Cap.classList.replace("darkStyles", "lightStyles");
+            horiz1Sub.classList.replace("darkStyles", "lightStyles");
             horiz1Source.classList.replace("darkStyles", "lightStylesSRC");
             horiz2Cap.classList.replace("darkStyles", "lightStyles");
             horiz2Source.classList.replace("darkStyles", "lightStylesSRC");
@@ -530,6 +533,8 @@ darkMode.addEventListener("click", () => {
     prog4Row5a.classList.replace("lightStyles", "darkStyles");
     horiz1Cap.classList.toggle("darkStyles");
     horiz1Cap.classList.replace("lightStyles", "darkStyles");
+    horiz1Sub.classList.toggle("darkStyles");
+    horiz1Sub.classList.replace("lightStyles", "darkStyles");
     horiz1Source.classList.toggle("darkStyles");
     horiz1Source.classList.replace("lightStylesSRC", "darkStyles");
     horiz2Cap.classList.toggle("darkStyles");
@@ -749,6 +754,7 @@ lightMode.addEventListener("click", () => {
     prog4Row4a.classList.replace("darkStyles", "lightStyles");
     prog4Row5a.classList.replace("darkStyles", "lightStyles");
     horiz1Cap.classList.replace("darkStyles", "lightStyles");
+    horiz1Sub.classList.replace("darkStyles", "lightStyles");
     horiz1Source.classList.replace("darkStyles", "lightStylesSRC");
     horiz2Cap.classList.replace("darkStyles", "lightStyles");
     horiz2Source.classList.replace("darkStyles", "lightStylesSRC");
