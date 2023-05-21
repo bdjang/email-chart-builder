@@ -19,8 +19,11 @@ selectElement.addEventListener("change", () => {
     }
 });
 
-// Bottom Spacing for Non-Vertical Charts
-const botSpace = `<div height="24" style="font-size: 24px; line-height: 24px;">&nbsp;</div>`;
+// Chart Variables
+const botSpace = `<div height="24" style="font-size: 24px; line-height: 24px;">&nbsp;</div>`; // Bottom spacing for non-vertical charts
+const shadowColor = "0 0 10px #ffdf65, 0 0 10px #ffdf65, 0 0 10px #ffffff, 0 0 10px #ffffff"; // Chart text highlighting
+const barFocus = "repeating-linear-gradient(45deg, #cccccc 0, #cccccc 2px, #f4f4f4 0, #f4f4f4 50%)"; // Data bar indicator
+const focusSize = "8px 8px";
 
 // Preview Dark Mode
 const lightMode = document.getElementById("lightMode");
