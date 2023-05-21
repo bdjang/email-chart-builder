@@ -118,8 +118,14 @@
 
                         <!-- 3.3.23: Used "margin-bottom" for caption element because the JS logic targets marginBottom -->
                         <!-- CHART TITLE TEXT -->
-                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;" id="horiz1Cap">Optional Chart Title</caption>
+                        <caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 4px; text-align: left;" id="horiz1Cap">Optional Chart Title</caption>
                         <!-- end chart title text -->
+
+                        <!-- CHART SUBTITLE TEXT -->
+                        <tr>
+                            <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; padding-bottom: 20px; text-align: left;" id="horiz1Sub">Optional Chart Subtitle</td>
+                        </tr>
+                        <!-- end chart subtitle text -->
 
                         <!-- DATA BAR #1 -->
                         <tr class="horiz1Bars">
@@ -262,7 +268,7 @@
                         <!-- end data bar #10 -->
 
                         <!-- 3.3.23: Used "padding-top" for caption element because the JS logic targets paddingTop -->
-                        <!-- 4.3.23: Added "line-height: normal;" to source text to adjust line spacing in mobile vie -->
+                        <!-- 4.3.23: Added "line-height: normal;" to source text to adjust line spacing in mobile view -->
                         <!-- CHART SOURCE TEXT -->
                         <tr>
                             <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;" id="horiz1Source">Optional Source: Company A, Jan. 2023</td>
@@ -284,6 +290,9 @@
                     <br />
                     <label for="horiz1capText">Bar Chart Title</label>
                     <input type="text" size="35" value="Optional Chart Title" name="horiz1capText" id="horiz1capText">
+                    <br />
+                    <label for="horiz1subText">Bar Chart Subtitle</label>
+                    <input type="text" size="35" value="Optional Chart Subtitle" name="horiz1subText" id="horiz1subText">
                     <br />
                     <label for="horiz1srcText">Bar Chart Source</label>
                     <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="horiz1srcText" id="horiz1srcText">
