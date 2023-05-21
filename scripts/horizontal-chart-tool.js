@@ -56,12 +56,6 @@ horiz1capText.oninput = function() {
         return horiz1capCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + horiz1Cap.innerHTML + '</caption>';
     }
 };
-horiz1capText.addEventListener("focus", () => {
-    horiz1Cap.style.textShadow = "#ff0000 0 0 10px";
-});
-horiz1capText.addEventListener("blur", () => {
-    horiz1Cap.style.textShadow = "none";
-});
 // Horizontal Chart I Subtitle
 let horiz1subCode = "";
 const horiz1Sub = document.getElementById("horiz1Sub"); // Chart subtitle
@@ -78,12 +72,6 @@ horiz1subText.oninput = function() {
         return horiz1subCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; padding-bottom: 20px; text-align: left;">' + horiz1Sub.innerHTML + '</td> </tr>';
     }
 };
-horiz1subText.addEventListener("focus", () => {
-    horiz1Sub.style.textShadow = "#ff0000 0 0 10px";
-});
-horiz1subText.addEventListener("blur", () => {
-    horiz1Sub.style.textShadow = "none";
-});
 // Horizontal Chart I Source
 let horiz1srcCode = "";
 const horiz1Source = document.getElementById("horiz1Source"); // Chart source
@@ -98,12 +86,6 @@ horiz1srcText.oninput = function() {
         return horiz1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + horiz1Source.innerHTML + '</td></tr>';
     }
 };
-horiz1srcText.addEventListener("focus", () => {
-    horiz1Source.style.textShadow = "#ff0000 0 0 10px";
-});
-horiz1srcText.addEventListener("blur", () => {
-    horiz1Source.style.textShadow = "none";
-});
 
 // Horizontal Chart I Color Picker
 const horiz1colorPick = document.getElementById("horiz1colorPick");
@@ -191,32 +173,12 @@ const horiz1Label1b = document.getElementById("horiz1Label1b");
 //     if (horiz1Text1b.value) { Changes inner data label text color to data bar color
 //         horiz1Row1b.style.color = horiz1Color1.value;
 //     }
-//     horiz1Row1c.style.textShadow = -Math.abs(horiz1Text1b.value.length * 7.5) - 9 + "px 0 #558abb, 0 0 1em #ff0000"; Creates text-shadow to preview label text switch
+//     horiz1Row1c.style.textShadow = -Math.abs(horiz1Text1b.value.length * 7.5) - 9 + "px 0 #558abb, 0 0 1em #444cf7"; Creates text-shadow to preview label text switch
 // });
 // horiz1Label1b.addEventListener("mouseleave", () => {
 //     horiz1Row1b.style.color = "#000000";
 //     horiz1Row1c.style.textShadow = "none";
 // })
-horiz1Text1a.addEventListener("focus", () => {
-    if (document.body.classList.contains("darkStyles")) {
-        horiz1Row1a.style.textShadow = "#ffffff 0 0 10px";
-    } else {
-        horiz1Row1a.style.textShadow = "#ff0000 0 0 10px";
-    }
-});
-horiz1Text1b.addEventListener("focus", () => {
-    if (document.body.classList.contains("darkStyles")) {
-        horiz1Row1c.style.textShadow = "#ffffff 0 0 10px";
-    } else {
-        horiz1Row1c.style.textShadow = "#ff0000 0 0 10px";
-    }
-});
-horiz1Text1b.addEventListener("blur", () => {
-    horiz1Row1c.style.textShadow = "none";
-});
-horiz1Text1a.addEventListener("blur", () => {
-    horiz1Row1a.style.textShadow = "none";
-});
 horiz1Label1b.addEventListener("click", () => {
     horiz1Row1b.style.color = "#000000";
     if (horiz1Text1b.value == "") {
@@ -574,6 +536,134 @@ const horiz1Color10 = document.getElementById("horiz1Color10");
 horiz1Color10.oninput = function() {
     horiz1Row10b.style.backgroundColor = horiz1Color10.value;
 };
+
+// Horizontal Chart I Focus/Blur Events
+horiz1capText.addEventListener("focus", () => { horiz1Cap.style.textShadow = shadowColor; });
+horiz1capText.addEventListener("blur", () => { horiz1Cap.style.textShadow = "none"; });
+horiz1subText.addEventListener("focus", () => { horiz1Sub.style.textShadow = shadowColor; });
+horiz1subText.addEventListener("blur", () => { horiz1Sub.style.textShadow = "none"; });
+horiz1srcText.addEventListener("focus", () => { horiz1Source.style.textShadow = shadowColor; });
+horiz1srcText.addEventListener("blur", () => { horiz1Source.style.textShadow = "none"; });
+horiz1Size1.addEventListener("focus", () => {
+    horiz1Row1b.style.background = barFocus;
+    horiz1Row1b.style.backgroundSize = focusSize;
+});
+horiz1Size1.addEventListener("blur", () => {
+    horiz1Row1b.style.background = horiz1Color1.value;
+    horiz1Row1b.style.backgroundSize = "none";
+});
+horiz1Text1a.addEventListener("focus", () => { horiz1Row1a.style.textShadow = shadowColor; });
+horiz1Text1a.addEventListener("blur", () => { horiz1Row1a.style.textShadow = "none"; });
+horiz1Text1b.addEventListener("focus", () => { horiz1Row1c.style.textShadow = shadowColor; });
+horiz1Text1b.addEventListener("blur", () => { horiz1Row1c.style.textShadow = "none"; });
+horiz1Size2.addEventListener("focus", () => {
+    horiz1Row2b.style.background = barFocus;
+    horiz1Row2b.style.backgroundSize = focusSize;
+});
+horiz1Size2.addEventListener("blur", () => {
+    horiz1Row2b.style.background = horiz1Color2.value;
+    horiz1Row2b.style.backgroundSize = "none";
+});
+horiz1Text2a.addEventListener("focus", () => { horiz1Row2a.style.textShadow = shadowColor; });
+horiz1Text2a.addEventListener("blur", () => { horiz1Row2a.style.textShadow = "none"; });
+horiz1Text2b.addEventListener("focus", () => { horiz1Row2c.style.textShadow = shadowColor; });
+horiz1Text2b.addEventListener("blur", () => { horiz1Row2c.style.textShadow = "none"; });
+horiz1Size3.addEventListener("focus", () => {
+    horiz1Row3b.style.background = barFocus;
+    horiz1Row3b.style.backgroundSize = focusSize;
+});
+horiz1Size3.addEventListener("blur", () => {
+    horiz1Row3b.style.background = horiz1Color3.value;
+    horiz1Row3b.style.backgroundSize = "none";
+});
+horiz1Text3a.addEventListener("focus", () => { horiz1Row3a.style.textShadow = shadowColor; });
+horiz1Text3a.addEventListener("blur", () => { horiz1Row3a.style.textShadow = "none"; });
+horiz1Text3b.addEventListener("focus", () => { horiz1Row3c.style.textShadow = shadowColor; });
+horiz1Text3b.addEventListener("blur", () => { horiz1Row3c.style.textShadow = "none"; });
+horiz1Size4.addEventListener("focus", () => {
+    horiz1Row4b.style.background = barFocus;
+    horiz1Row4b.style.backgroundSize = focusSize;
+});
+horiz1Size4.addEventListener("blur", () => {
+    horiz1Row4b.style.background = horiz1Color4.value;
+    horiz1Row4b.style.backgroundSize = "none";
+});
+horiz1Text4a.addEventListener("focus", () => { horiz1Row4a.style.textShadow = shadowColor; });
+horiz1Text4a.addEventListener("blur", () => { horiz1Row4a.style.textShadow = "none"; });
+horiz1Text4b.addEventListener("focus", () => { horiz1Row4c.style.textShadow = shadowColor; });
+horiz1Text4b.addEventListener("blur", () => { horiz1Row4c.style.textShadow = "none"; });
+horiz1Size5.addEventListener("focus", () => {
+    horiz1Row5b.style.background = barFocus;
+    horiz1Row5b.style.backgroundSize = focusSize;
+});
+horiz1Size5.addEventListener("blur", () => {
+    horiz1Row5b.style.background = horiz1Color5.value;
+    horiz1Row5b.style.backgroundSize = "none";
+});
+horiz1Text5a.addEventListener("focus", () => { horiz1Row5a.style.textShadow = shadowColor; });
+horiz1Text5a.addEventListener("blur", () => { horiz1Row5a.style.textShadow = "none"; });
+horiz1Text5b.addEventListener("focus", () => { horiz1Row5c.style.textShadow = shadowColor; });
+horiz1Text5b.addEventListener("blur", () => { horiz1Row5c.style.textShadow = "none"; });
+horiz1Size6.addEventListener("focus", () => {
+    horiz1Row6b.style.background = barFocus;
+    horiz1Row6b.style.backgroundSize = focusSize;
+});
+horiz1Size6.addEventListener("blur", () => {
+    horiz1Row6b.style.background = horiz1Color6.value;
+    horiz1Row6b.style.backgroundSize = "none";
+});
+horiz1Text6a.addEventListener("focus", () => { horiz1Row6a.style.textShadow = shadowColor; });
+horiz1Text6a.addEventListener("blur", () => { horiz1Row6a.style.textShadow = "none"; });
+horiz1Text6b.addEventListener("focus", () => { horiz1Row6c.style.textShadow = shadowColor; });
+horiz1Text6b.addEventListener("blur", () => { horiz1Row6c.style.textShadow = "none"; });
+horiz1Size7.addEventListener("focus", () => {
+    horiz1Row7b.style.background = barFocus;
+    horiz1Row7b.style.backgroundSize = focusSize;
+});
+horiz1Size7.addEventListener("blur", () => {
+    horiz1Row7b.style.background = horiz1Color7.value;
+    horiz1Row7b.style.backgroundSize = "none";
+});
+horiz1Text7a.addEventListener("focus", () => { horiz1Row7a.style.textShadow = shadowColor; });
+horiz1Text7a.addEventListener("blur", () => { horiz1Row7a.style.textShadow = "none"; });
+horiz1Text7b.addEventListener("focus", () => { horiz1Row7c.style.textShadow = shadowColor; });
+horiz1Text7b.addEventListener("blur", () => { horiz1Row7c.style.textShadow = "none"; });
+horiz1Size8.addEventListener("focus", () => {
+    horiz1Row8b.style.background = barFocus;
+    horiz1Row8b.style.backgroundSize = focusSize;
+});
+horiz1Size8.addEventListener("blur", () => {
+    horiz1Row8b.style.background = horiz1Color8.value;
+    horiz1Row8b.style.backgroundSize = "none";
+});
+horiz1Text8a.addEventListener("focus", () => { horiz1Row8a.style.textShadow = shadowColor; });
+horiz1Text8a.addEventListener("blur", () => { horiz1Row8a.style.textShadow = "none"; });
+horiz1Text8b.addEventListener("focus", () => { horiz1Row8c.style.textShadow = shadowColor; });
+horiz1Text8b.addEventListener("blur", () => { horiz1Row8c.style.textShadow = "none"; });
+horiz1Size9.addEventListener("focus", () => {
+    horiz1Row9b.style.background = barFocus;
+    horiz1Row9b.style.backgroundSize = focusSize;
+});
+horiz1Size9.addEventListener("blur", () => {
+    horiz1Row9b.style.background = horiz1Color9.value;
+    horiz1Row9b.style.backgroundSize = "none";
+});
+horiz1Text9a.addEventListener("focus", () => { horiz1Row9a.style.textShadow = shadowColor; });
+horiz1Text9a.addEventListener("blur", () => { horiz1Row9a.style.textShadow = "none"; });
+horiz1Text9b.addEventListener("focus", () => { horiz1Row9c.style.textShadow = shadowColor; });
+horiz1Text9b.addEventListener("blur", () => { horiz1Row9c.style.textShadow = "none"; });
+horiz1Size10.addEventListener("focus", () => {
+    horiz1Row10b.style.background = barFocus;
+    horiz1Row10b.style.backgroundSize = focusSize;
+});
+horiz1Size10.addEventListener("blur", () => {
+    horiz1Row10b.style.background = horiz1Color10.value;
+    horiz1Row10b.style.backgroundSize = "none";
+});
+horiz1Text10a.addEventListener("focus", () => { horiz1Row10a.style.textShadow = shadowColor; });
+horiz1Text10a.addEventListener("blur", () => { horiz1Row10a.style.textShadow = "none"; });
+horiz1Text10b.addEventListener("focus", () => { horiz1Row10c.style.textShadow = shadowColor; });
+horiz1Text10b.addEventListener("blur", () => { horiz1Row10c.style.textShadow = "none"; });
 
 // Generate Horiz1 HTML Chart Logic
 const horiz1Weight = document.getElementById("horiz1Weight");
