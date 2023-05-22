@@ -6551,7 +6551,7 @@
             <!-- end chart title text -->
 
             <!-- LEGEND 6 -->
-            <div style="font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 0 0 30px 0; text-align: center;"><span id="legend6Color1" style="background-color: #47bd39; border: 1px solid #47bd39; color: #47bd39; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend6Text1">Light Green</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend6Color2" style="background-color: #12802b; border: 1px solid #12802b; color: #12802b; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend6Text2">Green</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend6Color3" style="background-color: #08584c; border: 1px solid #08584c; color: #08584c; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend6Text3">Dark Green</span></div>
+            <div class="chartVertLegend" style="font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 0 0 30px 0; text-align: center;"><span id="legend6Color1" style="background-color: #47bd39; border: 1px solid #47bd39; color: #47bd39; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend6Text1">Light Green</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend6Color2" style="background-color: #12802b; border: 1px solid #12802b; color: #12802b; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend6Text2">Green</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend6Color3" style="background-color: #08584c; border: 1px solid #08584c; color: #08584c; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend6Text3">Dark Green</span></div>
             <!-- end legend 6 -->
 
             <table id="vert2Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 400px; margin: 0 auto; padding: 0;" class="chartVertMobile">
@@ -7394,7 +7394,7 @@
             <!-- end chart title text -->
 
             <!-- LEGEND 7 -->
-            <div style="font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 0 0 30px 0; text-align: center;"><span id="legend7Color1" style="background-color: #800080; border: 1px solid #800080; color: #800080; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend7Text1">Dark Purple</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend7Color2" style="background-color: #be29ec; border: 1px solid #be29ec; color: #be29ec; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend7Text2">Purple</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend7Color3" style="background-color: #d896ff; border: 1px solid #d896ff; color: #d896ff; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend7Text3">Light Purple</span></div>
+            <div class="chartVertLegend" style="font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 0 0 30px 0; text-align: center;"><span id="legend7Color1" style="background-color: #800080; border: 1px solid #800080; color: #800080; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend7Text1">Dark Purple</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend7Color2" style="background-color: #be29ec; border: 1px solid #be29ec; color: #be29ec; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend7Text2">Purple</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend7Color3" style="background-color: #d896ff; border: 1px solid #d896ff; color: #d896ff; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend7Text3">Light Purple</span></div>
             <!-- end legend 7 -->
 
             <table id="vert4Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 400px; margin: 0 auto; padding: 0;" class="chartVertMobile">
@@ -8447,6 +8447,24 @@ Notes:
 4.6.23:
 - Consider changing caption element to a tr + td element; witnessing extra spacing that I am not able to get rid of in caption elements in some Outlook Windows clients; change margin-bottom to padding-bottom in this case
 - Consider changing the data bar heights in mobile view? YES, this looks much better in mobile. change height to 22px
+
+5.22.23:
+- For dark mode, get rid of all instances of "background-color: #ffffff;" <-- that is overriding dark mode and causing issues. if you get rid of this, the data bars with the actual red/blue/colors will display properly
+- Consider getting rid of the "bgcolor="#ffffff"
+- For dark mode custom code:
+@media (prefers-color-scheme: dark) {
+    .chartMobile caption, .chartMobile td, .chartVertMobile td, .chartVertCap, .chartVertSrc, .chartVertLegend { color: #f2f2f2 !important; }
+    .chartMobile, .chartMobile table { background-color: #141414 !important; }
+    .chartVertMobile td { border-top-color: #ffffff !important; }
+}
+- DONE: Add .chartVertLegend to all vertical legends (vert2 and vert4)
+- Add "border-top-color: #ffffff !important;" to dark mode for vertical x-axis color
+- DONE: Investigate why "2013, 2014" at the x-axis is floating in browser view ==> add "line-height: normal" to vertical chart I and for all vertical charts; looks like i added that to the HTML page but not to the HTML output code: THIS IS FOR VERT2 AND VERT4!!!!!!!
+
+
+- If caption text AND subtitle text exists, remove "padding-bottom: 20px;" at the subtitle level and move it to the first data bar padding ==> "<td align="left" style="padding: 20px 0 0 3px 0;">
+
+- Need to fix issue where deleting subtitle text and generating chart code doesn't add the appropriate bottom spacing to the OUTPUT code
 
 "Perfect is the enemy of the good"
 - Voltaire
