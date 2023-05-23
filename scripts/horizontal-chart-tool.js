@@ -40,6 +40,8 @@ horiz1Div.addEventListener("click", () => { // Toggles chart data bar dividers i
 
 
 // Horizontal Chart I Caption
+const horiz1FirstBar = horiz1Bars[0].childNodes[1]; // Targets the first data bar below caption/subtitle text
+let horiz1TopSpace = ""; // 05.22.23: Adjusts spacing between caption/subtitle text and the first data bar; issue seen in Outlook Windows clients where padding-bottom added to a <td> will add the same spacing above it if the <td> is directly below a <caption> element. This issue is not seen when using margin-bottom however the spacing will no longer work in Outlook Mac clients. Believe this is an Outlook bug
 let horiz1capCode = "";
 const horiz1Cap = document.getElementById("horiz1Cap"); // Caption or chart title
 const horiz1capText = document.getElementById("horiz1capText"); // Caption or chart title text
@@ -62,7 +64,11 @@ const horiz1Sub = document.getElementById("horiz1Sub"); // Chart subtitle
 const horiz1subText = document.getElementById("horiz1subText"); // Chart subtitle text
 horiz1subText.oninput = function() {
     horiz1Sub.innerHTML = horiz1subText.value;
-    if (horiz1subText.value == "") {
+    if (horiz1subText.value == "" && horiz1capText.value == "") {
+        horiz1Cap.style.marginBottom = "0";
+        horiz1Sub.style.paddingBottom = "0";
+        return horiz1subCode = "";
+    } else if (horiz1subText.value == "") {
         horiz1Cap.style.marginBottom = "20px";
         horiz1Sub.style.paddingBottom = "0";
         return horiz1subCode = "";
@@ -552,6 +558,8 @@ horiz1Size1.addEventListener("blur", () => {
     horiz1Row1b.style.background = horiz1Color1.value;
     horiz1Row1b.style.backgroundSize = "none";
 });
+// horiz1Color1.addEventListener("focus", () => { horiz1Row1b.style.opacity = ".5"; })
+// horiz1Color1.addEventListener("blur", () => { horiz1Row1b.style.opacity = "1"; })
 horiz1Text1a.addEventListener("focus", () => { horiz1Row1a.style.textShadow = shadowColor; });
 horiz1Text1a.addEventListener("blur", () => { horiz1Row1a.style.textShadow = "none"; });
 horiz1Text1b.addEventListener("focus", () => { horiz1Row1c.style.textShadow = shadowColor; });
