@@ -68,9 +68,9 @@ label[for*="Output"] span { text-decoration: underline; text-decoration-thicknes
 
 /* DARK MODE STYLES */
 button, #darkMode, #lightMode { cursor: pointer; }
-.darkBorder { border-color: #1f1f1f !important; }
+.darkBorder { border-color: #020202 !important; }
 .lightBorder { border-color: #ffffff !important; }
-.darkStyles { background-color: #0f0f0f !important; color: #ffffff !important; }
+.darkStyles { background-color: #020202 !important; color: #f2f2f2 !important; }
 .lightStyles { background-color: #ffffff !important; color: #000000 !important; }
 .lightStylesSRC { background-color: #ffffff !important; color: #666666 !important; }
 .scrollBoxLight, .textareaLight { background-color: #f8f8f8 !important; }
