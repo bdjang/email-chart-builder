@@ -554,122 +554,102 @@ horiz1subText.addEventListener("blur", () => { horiz1Sub.style.textShadow = "non
 horiz1srcText.addEventListener("focus", () => { horiz1Source.style.textShadow = shadowColor; });
 horiz1srcText.addEventListener("blur", () => { horiz1Source.style.textShadow = "none"; });
 horiz1Size1.addEventListener("focus", () => {
-    horiz1Row1b.style.background = barFocus;
-    horiz1Row1b.style.backgroundSize = focusSize;
+    horiz1Row1b.style.boxShadow = barShadow;
 });
 horiz1Size1.addEventListener("blur", () => {
-    horiz1Row1b.style.background = horiz1Color1.value;
-    horiz1Row1b.style.backgroundSize = "none";
+    horiz1Row1b.style.boxShadow = "none";
 });
-// horiz1Color1.addEventListener("focus", () => { horiz1Row1b.style.opacity = ".5"; })
-// horiz1Color1.addEventListener("blur", () => { horiz1Row1b.style.opacity = "1"; })
+// horiz1Color1.addEventListener("focus", () => { horiz1Row1b.style.boxShadow = "-1px -1px 10px blue, -1px 1px 10px blue"; })
+// horiz1Color1.addEventListener("blur", () => { horiz1Row1b.style.boxShadow = "none"; })
 horiz1Text1a.addEventListener("focus", () => { horiz1Row1a.style.textShadow = shadowColor; });
 horiz1Text1a.addEventListener("blur", () => { horiz1Row1a.style.textShadow = "none"; });
 horiz1Text1b.addEventListener("focus", () => { horiz1Row1c.style.textShadow = shadowColor; });
 horiz1Text1b.addEventListener("blur", () => { horiz1Row1c.style.textShadow = "none"; });
 horiz1Size2.addEventListener("focus", () => {
-    horiz1Row2b.style.background = barFocus;
-    horiz1Row2b.style.backgroundSize = focusSize;
+    horiz1Row2b.style.boxShadow = barShadow;
 });
 horiz1Size2.addEventListener("blur", () => {
-    horiz1Row2b.style.background = horiz1Color2.value;
-    horiz1Row2b.style.backgroundSize = "none";
+    horiz1Row2b.style.boxShadow = "none";
 });
 horiz1Text2a.addEventListener("focus", () => { horiz1Row2a.style.textShadow = shadowColor; });
 horiz1Text2a.addEventListener("blur", () => { horiz1Row2a.style.textShadow = "none"; });
 horiz1Text2b.addEventListener("focus", () => { horiz1Row2c.style.textShadow = shadowColor; });
 horiz1Text2b.addEventListener("blur", () => { horiz1Row2c.style.textShadow = "none"; });
 horiz1Size3.addEventListener("focus", () => {
-    horiz1Row3b.style.background = barFocus;
-    horiz1Row3b.style.backgroundSize = focusSize;
+    horiz1Row3b.style.boxShadow = barShadow;
 });
 horiz1Size3.addEventListener("blur", () => {
-    horiz1Row3b.style.background = horiz1Color3.value;
-    horiz1Row3b.style.backgroundSize = "none";
+    horiz1Row3b.style.boxShadow = "none";
 });
 horiz1Text3a.addEventListener("focus", () => { horiz1Row3a.style.textShadow = shadowColor; });
 horiz1Text3a.addEventListener("blur", () => { horiz1Row3a.style.textShadow = "none"; });
 horiz1Text3b.addEventListener("focus", () => { horiz1Row3c.style.textShadow = shadowColor; });
 horiz1Text3b.addEventListener("blur", () => { horiz1Row3c.style.textShadow = "none"; });
 horiz1Size4.addEventListener("focus", () => {
-    horiz1Row4b.style.background = barFocus;
-    horiz1Row4b.style.backgroundSize = focusSize;
+    horiz1Row4b.style.boxShadow = barShadow;
 });
 horiz1Size4.addEventListener("blur", () => {
-    horiz1Row4b.style.background = horiz1Color4.value;
-    horiz1Row4b.style.backgroundSize = "none";
+    horiz1Row4b.style.boxShadow = "none";
 });
 horiz1Text4a.addEventListener("focus", () => { horiz1Row4a.style.textShadow = shadowColor; });
 horiz1Text4a.addEventListener("blur", () => { horiz1Row4a.style.textShadow = "none"; });
 horiz1Text4b.addEventListener("focus", () => { horiz1Row4c.style.textShadow = shadowColor; });
 horiz1Text4b.addEventListener("blur", () => { horiz1Row4c.style.textShadow = "none"; });
 horiz1Size5.addEventListener("focus", () => {
-    horiz1Row5b.style.background = barFocus;
-    horiz1Row5b.style.backgroundSize = focusSize;
+    horiz1Row5b.style.boxShadow = barShadow;
 });
 horiz1Size5.addEventListener("blur", () => {
-    horiz1Row5b.style.background = horiz1Color5.value;
-    horiz1Row5b.style.backgroundSize = "none";
+    horiz1Row5b.style.boxShadow = "none";
 });
 horiz1Text5a.addEventListener("focus", () => { horiz1Row5a.style.textShadow = shadowColor; });
 horiz1Text5a.addEventListener("blur", () => { horiz1Row5a.style.textShadow = "none"; });
 horiz1Text5b.addEventListener("focus", () => { horiz1Row5c.style.textShadow = shadowColor; });
 horiz1Text5b.addEventListener("blur", () => { horiz1Row5c.style.textShadow = "none"; });
 horiz1Size6.addEventListener("focus", () => {
-    horiz1Row6b.style.background = barFocus;
-    horiz1Row6b.style.backgroundSize = focusSize;
+    horiz1Row6b.style.boxShadow = barShadow;
 });
 horiz1Size6.addEventListener("blur", () => {
-    horiz1Row6b.style.background = horiz1Color6.value;
-    horiz1Row6b.style.backgroundSize = "none";
+    horiz1Row6b.style.boxShadow = "none";
 });
 horiz1Text6a.addEventListener("focus", () => { horiz1Row6a.style.textShadow = shadowColor; });
 horiz1Text6a.addEventListener("blur", () => { horiz1Row6a.style.textShadow = "none"; });
 horiz1Text6b.addEventListener("focus", () => { horiz1Row6c.style.textShadow = shadowColor; });
 horiz1Text6b.addEventListener("blur", () => { horiz1Row6c.style.textShadow = "none"; });
 horiz1Size7.addEventListener("focus", () => {
-    horiz1Row7b.style.background = barFocus;
-    horiz1Row7b.style.backgroundSize = focusSize;
+    horiz1Row7b.style.boxShadow = barShadow;
 });
 horiz1Size7.addEventListener("blur", () => {
-    horiz1Row7b.style.background = horiz1Color7.value;
-    horiz1Row7b.style.backgroundSize = "none";
+    horiz1Row7b.style.boxShadow = "none";
 });
 horiz1Text7a.addEventListener("focus", () => { horiz1Row7a.style.textShadow = shadowColor; });
 horiz1Text7a.addEventListener("blur", () => { horiz1Row7a.style.textShadow = "none"; });
 horiz1Text7b.addEventListener("focus", () => { horiz1Row7c.style.textShadow = shadowColor; });
 horiz1Text7b.addEventListener("blur", () => { horiz1Row7c.style.textShadow = "none"; });
 horiz1Size8.addEventListener("focus", () => {
-    horiz1Row8b.style.background = barFocus;
-    horiz1Row8b.style.backgroundSize = focusSize;
+    horiz1Row8b.style.boxShadow = barShadow;
 });
 horiz1Size8.addEventListener("blur", () => {
-    horiz1Row8b.style.background = horiz1Color8.value;
-    horiz1Row8b.style.backgroundSize = "none";
+    horiz1Row8b.style.boxShadow = "none";
 });
 horiz1Text8a.addEventListener("focus", () => { horiz1Row8a.style.textShadow = shadowColor; });
 horiz1Text8a.addEventListener("blur", () => { horiz1Row8a.style.textShadow = "none"; });
 horiz1Text8b.addEventListener("focus", () => { horiz1Row8c.style.textShadow = shadowColor; });
 horiz1Text8b.addEventListener("blur", () => { horiz1Row8c.style.textShadow = "none"; });
 horiz1Size9.addEventListener("focus", () => {
-    horiz1Row9b.style.background = barFocus;
-    horiz1Row9b.style.backgroundSize = focusSize;
+    horiz1Row9b.style.boxShadow = barShadow;
 });
 horiz1Size9.addEventListener("blur", () => {
-    horiz1Row9b.style.background = horiz1Color9.value;
-    horiz1Row9b.style.backgroundSize = "none";
+    horiz1Row9b.style.boxShadow = "none";
 });
 horiz1Text9a.addEventListener("focus", () => { horiz1Row9a.style.textShadow = shadowColor; });
 horiz1Text9a.addEventListener("blur", () => { horiz1Row9a.style.textShadow = "none"; });
 horiz1Text9b.addEventListener("focus", () => { horiz1Row9c.style.textShadow = shadowColor; });
 horiz1Text9b.addEventListener("blur", () => { horiz1Row9c.style.textShadow = "none"; });
 horiz1Size10.addEventListener("focus", () => {
-    horiz1Row10b.style.background = barFocus;
-    horiz1Row10b.style.backgroundSize = focusSize;
+    horiz1Row10b.style.boxShadow = barShadow;
 });
 horiz1Size10.addEventListener("blur", () => {
-    horiz1Row10b.style.background = horiz1Color10.value;
-    horiz1Row10b.style.backgroundSize = "none";
+    horiz1Row10b.style.boxShadow = "none";
 });
 horiz1Text10a.addEventListener("focus", () => { horiz1Row10a.style.textShadow = shadowColor; });
 horiz1Text10a.addEventListener("blur", () => { horiz1Row10a.style.textShadow = "none"; });
