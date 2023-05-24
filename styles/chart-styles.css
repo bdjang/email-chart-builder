@@ -72,7 +72,7 @@ button, #darkMode, #lightMode { cursor: pointer; }
 .lightBorder { border-color: #ffffff !important; }
 .darkStyles { background-color: #020202 !important; color: #f2f2f2 !important; }
 .lightStyles { background-color: #ffffff !important; color: #000000 !important; }
-.lightStylesSRC { background-color: #ffffff !important; color: #666666 !important; }
+.lightStylesCSS { background-color: #ffffff !important; color: #666666 !important; } /* Used by Caption, Subtitle and Source text */
 .scrollBoxLight, .textareaLight { background-color: #f8f8f8 !important; }
 .darkStyles, .lightStyles, .lightStylesSRC, .scrollBoxLight, .textareaLight { -webkit-transition: background-color 250ms ease-out; -ms-transition: background-color 250ms ease-out; -moz-transition: background-color 250ms ease-out; transition: background-color 250ms ease-out; -webkit-transition: color 250ms ease-out; -ms-transition: color 250ms ease-out; -moz-transition: color 250ms ease-out; transition: color 250ms ease-out; }
 
