@@ -22,7 +22,8 @@ selectElement.addEventListener("change", () => {
 // Chart Variables
 const botSpace = `<div height="24" style="font-size: 24px; line-height: 24px;">&nbsp;</div>`; // Bottom spacing for non-vertical charts
 const shadowColor = "0 0 10px #ffdf65, 0 0 10px #ffdf65, 0 0 10px #ffffff, 0 0 10px #ffffff"; // Chart text highlighting
-const barShadow = "-1px -1px 10px #ffdf65, -1px 1px 10px #ffdf65"; // Data bar highlighting
+const barSizeShadow = "-1px -1px 10px #ffdf65, -1px 1px 10px #ffdf65"; // Data bar size highlighting
+const barColorShadow = "-1px -1px 10px #6585ff, -1px 1px 10px #6585ff, 0 0 10px #ffffff"; // Data bar color highlighting
 const msoOpen = `<!--[if mso 15 | mso 16]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td><![endif]-->`;
 const msoClose = "<!--[if mso 15 | mso 16]></td></tr></table><![endif]-->";
 
