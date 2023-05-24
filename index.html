@@ -5667,7 +5667,7 @@
                     <br />
                     <label for="prog2colorPick">Chart Color Picker</label><toolcool-color-picker color="#ff3860" button-width="42px" button-height="22px" button-padding="2.5px" id="prog2colorPick" class="colorTool"></toolcool-color-picker>
                     <small>📌 Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
-                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code and <a href="https://www.caniemail.com/search/?s=border-radius" target="_blank">border-radius</a>.</small>
+                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank">border-radius</a>.</small>
                 </fieldset>
                 <fieldset class="prog2Controls styleControls">
                     <legend>Progress Bar #1</legend>
@@ -5886,7 +5886,7 @@
                     <br />
                     <label for="prog3colorPick">Chart Color Picker</label><toolcool-color-picker color="#4287f5" button-width="42px" button-height="22px" button-padding="2.5px" id="prog3colorPickFB" class="colorTool"></toolcool-color-picker><toolcool-color-picker color="#0ad7f2" button-width="42px" button-height="22px" button-padding="2.5px" id="prog3colorPickLG" class="colorTool"></toolcool-color-picker>
                     <small>📌 Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
-                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code and <a href="https://www.caniemail.com/search/?s=linear-gradient" target="_blank">linear-gradient()</a>. The fallback color is <span style="font-weight: 600;">Bar Color #1</span>.</small>
+                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient" target="_blank">linear-gradient()</a>. The fallback color is <span style="font-weight: 600;">Bar Color #1</span>.</small>
                 </fieldset>
                 <fieldset class="prog3Controls styleControls">
                     <legend>Progress Bar #1</legend>
@@ -6114,7 +6114,7 @@
                     <br />
                     <label for="prog4colorPick">Chart Color Picker</label><toolcool-color-picker color="#0dbd67" button-width="42px" button-height="22px" button-padding="2.5px" id="prog4colorPickFB" class="colorTool"></toolcool-color-picker><toolcool-color-picker color="#10ed81" button-width="42px" button-height="22px" button-padding="2.5px" id="prog4colorPickLG" class="colorTool"></toolcool-color-picker>
                     <small>📌 Click on <span style="font-weight: 600;">"End Label"</span> to move the label text into the progress bar. Click again to delete the inside label text.</small>
-                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code, <a href="https://www.caniemail.com/search/?s=border-radius" target="_blank">border-radius</a>, and <a href="https://www.caniemail.com/search/?s=linear-gradient" target="_blank">linear-gradient()</a>. The fallback color is <span style="font-weight: 600;">Bar Color #1</span>.</small>
+                    <small>📝 This chart contains <a href="https://learn.microsoft.com/en-us/windows/win32/vml/msdn-online-vml-introduction" target="_blank">VML</a> code, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank">border-radius</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient" target="_blank">linear-gradient()</a>. The fallback color is <span style="font-weight: 600;">Bar Color #1</span>.</small>
                 </fieldset>
                 <fieldset class="prog4Controls styleControls">
                     <legend>Progress Bar #1</legend>
@@ -6370,6 +6370,7 @@
                     <!-- 2.25.23: Outlook email clients were setting height to this td cell and pushing the x-axis values down. Solution: add "line-height: 0;" and "&nbsp;" to this td cell and the extra height is removed -->
                     <!-- 4.30.23: Same with vertical chart V - added 'font-size: 0;' to remove x-axis gap seen in Gmail App -->
                     <!-- 4.30.23: Changed border color to `111111` to make the x-axis line display in Gmail App dark mode -->
+                    <!-- 5.24.23: X-axis was floating and creating space in Outlook iOS app and Gmail iPhone App. Solution is to add a class="chartAxis" and in mobile styles, add ".chartAxis { line-height: 0 !important; }". this fixed the issue -->
                 </tr>
 
                 <!-- X-axis Labels -->
@@ -7072,8 +7073,8 @@
                     <td class="vert3AxisLabel" id="vert3Row6a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2018</td>
                     <td class="vert3AxisLabel" id="vert3Row7a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2019</td>
                     <td class="vert3AxisLabel" id="vert3Row8a" height="10" valign="bottom" style="font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2020</td>
-                    <td class="vert3AxisLabel" id="vert3Row9a" height="10" valign="bottom" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2021</td>
-                    <td class="vert3AxisLabel" id="vert3Row10a" height="10" valign="bottom" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2022</td>
+                    <td class="vert3AxisLabel" id="vert3Row9a" height="10" valign="bottom" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2021</td>
+                    <td class="vert3AxisLabel" id="vert3Row10a" height="10" valign="bottom" style="display: none; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin: 0; padding: 8px 0 2px; text-align: center; vertical-align: bottom;">2022</td>
                 </tr>
                 <!-- end x-axis labels -->
 
@@ -8449,8 +8450,8 @@ Notes:
 - Consider changing the data bar heights in mobile view? YES, this looks much better in mobile. change height to 22px
 
 5.22.23:
-- For dark mode, get rid of all instances of "background-color: #ffffff;" <-- that is overriding dark mode and causing issues. if you get rid of this, the data bars with the actual red/blue/colors will display properly
-- Consider getting rid of the "bgcolor="#ffffff"
+- DONE: For dark mode, get rid of all instances of "background-color: #ffffff;" <-- that is overriding dark mode and causing issues. if you get rid of this, the data bars with the actual red/blue/colors will display properly
+- DONE: Consider getting rid of the "bgcolor="#ffffff"
 - For dark mode custom code:
 @media (prefers-color-scheme: dark) {
     .chartMobile caption, .chartMobile td, .chartVertMobile td, .chartVertCap, .chartVertSrc, .chartVertLegend { color: #f2f2f2 !important; }
@@ -8458,13 +8459,28 @@ Notes:
     .chartVertMobile td { border-top-color: #ffffff !important; }
 }
 - DONE: Add .chartVertLegend to all vertical legends (vert2 and vert4)
-- Add "border-top-color: #ffffff !important;" to dark mode for vertical x-axis color
+- DONE: Add "border-top-color: #ffffff !important;" to dark mode for vertical x-axis color
 - DONE: Investigate why "2013, 2014" at the x-axis is floating in browser view ==> add "line-height: normal" to vertical chart I and for all vertical charts; looks like i added that to the HTML page but not to the HTML output code: THIS IS FOR VERT2 AND VERT4!!!!!!!
 
 
 - If caption text AND subtitle text exists, remove "padding-bottom: 20px;" at the subtitle level and move it to the first data bar padding ==> "<td align="left" style="padding: 20px 0 0 3px 0;">
 
-- Need to fix issue where deleting subtitle text and generating chart code doesn't add the appropriate bottom spacing to the OUTPUT code
+- DONE: Need to fix issue where deleting subtitle text and generating chart code doesn't add the appropriate bottom spacing to the OUTPUT code
+
+5.23.23:
+- DONE: consider changing dark mode colors: black background: #020202 or #141414; white font color: #f2f2f2
+- DONE: consider getting rid of the wrapping MSO conditional comment on all charts; meant for testing only charts; its causing issues with MSO clients and expanding the width of the template frame
+- Need to test to see if this applies to VERTICAL bar charts: for now, the MSO conditional comment doesn't negatively affect vertical charts since the max width is 500px. keep for now but consider removing later.
+
+
+5.24.23:
+VERT III, VERT IV, VERT I, VERT II, VERT V
+- Vertical chart issue occurring in iPhone Gmail App where the x-axis has a space (similar to the desktop/laptop view). the solution was to add a class to the x-axis td cell and in the media query CSS, add the following:
+.chartVertAxis { line-height: 0 !important; }
+
+^ this fixed the floating issue seen in mobile iPhone Gmail App!
+
+
 
 "Perfect is the enemy of the good"
 - Voltaire
