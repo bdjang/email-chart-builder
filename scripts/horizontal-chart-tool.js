@@ -47,7 +47,11 @@ const horiz1Cap = document.getElementById("horiz1Cap"); // Caption or chart titl
 const horiz1capText = document.getElementById("horiz1capText"); // Caption or chart title text
 horiz1capText.oninput = function() {
     horiz1Cap.innerHTML = horiz1capText.value;
-    if (horiz1capText.value == "" && horiz1subText.value) {
+    if (horiz1capText.value == "" && horiz1subText.value == "") {
+        horiz1Cap.style.marginBottom = "0";
+        horiz1Sub.style.paddingBottom = "0";
+        return horiz1csCode = "";
+    } else if (horiz1capText.value == "" && horiz1subText.value) {
         horiz1Cap.style.marginBottom = "0";
         return horiz1csCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; padding-bottom: 20px; text-align: left;">' + horiz1Sub.innerHTML + '</td> </tr>';
     } else if (horiz1capText.value && horiz1subText.value) {
