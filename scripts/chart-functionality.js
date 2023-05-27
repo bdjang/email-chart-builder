@@ -74,6 +74,7 @@ const bodyEl = document.querySelectorAll("body");
 const anchorTags = document.querySelectorAll("a"); // Targets all anchor link tags
 const anchorCode = document.querySelectorAll("div#readme p code"); // Targets code element in anchor tag
 const codeText = document.querySelectorAll("div#readme ul li code");
+const codeSnippet = document.querySelectorAll("pre"); // Targets code snippet boxes
 
 window.addEventListener("load", () => { // Adds "lightStyles" class to all relevant elements
     document.body.classList.add("lightStyles");
@@ -365,6 +366,9 @@ document.addEventListener("keydown", () => {
                 anchorTags[b].style.color = "#0099ff";
                 anchorCode[0].style.color = "#0099ff";
             }
+            for (var c = 0; c < codeSnippet.length; c++) {
+                codeSnippet[c].style.backgroundColor = "#141414";
+            }
         }
     } else if (event.keyCode == 68 && document.body.classList.contains("darkStyles")) {
         if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
@@ -513,6 +517,9 @@ document.addEventListener("keydown", () => {
             for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
                 anchorTags[b].style.color = "#166dfc";
                 anchorCode[0].style.color = "#166dfc";
+            }
+            for (var c = 0; c < codeSnippet.length; c++) {
+                codeSnippet[c].style.backgroundColor = "#f7f7f7";
             }
         }
     }
