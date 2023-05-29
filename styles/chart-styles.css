@@ -27,7 +27,7 @@ ul li { margin: 8px 0; }
 #readme h3 + hr { width: 50%; }
 #readme p code { color: #0a47ff; font-weight: 300; } /* Targets <img> text */
 #readme p + p span { font-family: monospace; font-size: 14px; } /* Targets <table> text */
-pre { background-color: #f7f7f7; border: 1px solid #c4c4c4; padding: 20px; }
+pre { background-color: #f7f7f7; border: 1px solid #c4c4c4; padding: 20px; width: 580px; }
 
 /* CHART STYLES */
 .endLabel:hover { cursor: pointer; text-decoration: underline; } /* Adds interactivity for label text switching */
