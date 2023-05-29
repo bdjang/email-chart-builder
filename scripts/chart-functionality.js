@@ -830,6 +830,9 @@ darkMode.addEventListener("click", () => {
         anchorTags[b].style.color = "#0099ff";
         anchorCode[0].style.color = "#0099ff";
     }
+    for (var c = 0; c < codeSnippet.length; c++) {
+        codeSnippet[c].style.backgroundColor = "#141414";
+    }
     darkMode.style.display = "none";
     lightMode.style.display = "inline-block";
 });
@@ -981,6 +984,9 @@ lightMode.addEventListener("click", () => {
     for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
         anchorTags[b].style.color = "#166dfc";
         anchorCode[0].style.color = "#166dfc";
+    }
+    for (var c = 0; c < codeSnippet.length; c++) {
+        codeSnippet[c].style.backgroundColor = "#f7f7f7";
     }
     darkMode.style.display = "inline-block";
     lightMode.style.display = "none";
