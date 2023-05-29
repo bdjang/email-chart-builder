@@ -55,15 +55,10 @@ pre { background-color: #f7f7f7; border: 1px solid #c4c4c4; padding: 20px; }
 .splitControls input { width: 50px; }
 .vert5Controls input { margin: 10px 10px 0 0; width: 50px; }
 
-/* CHART STYLES TRANSITIONS */
-.charts caption, .charts td { -webkit-transition: text-shadow 200ms ease, box-shadow 200ms ease; -ms-transition: text-shadow 200ms ease, box-shadow 200ms ease; -moz-transition: text-shadow 200ms ease, box-shadow 200ms ease; transition: text-shadow 200ms ease, box-shadow 200ms ease; } /* Chart data bar + text highlighting */
-
 /* COLOR PICKER TOOL */
 .colorTool { display: inline-block; padding: 0 0 0 4px; --tool-cool-color-picker-btn-border-color: #858585; --tool-cool-color-picker-btn-border-color-inner: #000000; --tool-cool-color-picker-btn-border-radius: 3px; --tool-cool-color-picker-btn-border-radius-inner: 2px; }
 
 /* OUTPUT CODE + ESTIMATED HTML CHART WEIGHT */
-textarea[name*="Output"] { -webkit-transition: border-color 250ms ease, color 250ms ease, opacity 250ms ease; -ms-transition: border-color 250ms ease, color 250ms ease, opacity 250ms ease; -moz-transition: border-color 250ms ease, color 250ms ease, opacity 250ms ease; transition: border-color 250ms ease, color 250ms ease, opacity 250ms ease; } /* Selects all textarea elements with 'Output' in the name value using the attribute selector */
-.chartWeight { -webkit-transition: color 250ms ease, opacity 250ms ease; -ms-transition: color 250ms ease, opacity 250ms ease; -moz-transition: color 250ms ease, opacity 250ms ease; transition: color 250ms ease, opacity 250ms ease; }
 label[for*="Output"] { display: block; font-family: Arial, sans-serif; font-size: 12px; font-weight: 600; text-align: left; width: 700px; margin: 4px 0 40px; } /* HTML Weight Text */
 label[for*="Output"] span { text-decoration: underline; text-decoration-thickness: 2px; }
 
@@ -75,7 +70,9 @@ button, #darkMode, #lightMode { cursor: pointer; }
 .lightStyles { background-color: #ffffff !important; color: #000000 !important; }
 .lightStylesCSS { background-color: #ffffff !important; color: #666666 !important; } /* Used by Caption, Subtitle and Source text */
 .scrollBoxLight, .textareaLight { background-color: #f8f8f8 !important; }
-.darkStyles, .lightStyles, .lightStylesSRC, .scrollBoxLight, .textareaLight { -webkit-transition: background-color 250ms ease-out; -ms-transition: background-color 250ms ease-out; -moz-transition: background-color 250ms ease-out; transition: background-color 250ms ease-out; -webkit-transition: color 250ms ease-out; -ms-transition: color 250ms ease-out; -moz-transition: color 250ms ease-out; transition: color 250ms ease-out; }
+
+/* CHART STYLES TRANSITIONS */
+.darkStyles, .lightStyles, .lightStylesCSS, .scrollBoxLight, .textareaLight, .chartWeight, pre { -webkit-transition: background-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; -ms-transition: background-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; -moz-transition: background-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; transition: background-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; }
 
 /* PRE-MOBILE STYLES */
 .chartBuild /* Targets .scrollBox and code output section */, .charts > div + table:first-of-type /* Targets non-vertical charts */ { display: inline-block; margin: 0 30px 0 0; vertical-align: top; }
