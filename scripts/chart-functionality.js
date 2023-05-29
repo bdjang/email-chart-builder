@@ -379,14 +379,14 @@ document.addEventListener("keydown", () => {
                 lightMode.style.display = "none";
                 darkMode.style.display = "inline-block";
             }
-            for (var a = 0; a < codeText.length; a++) {
-                codeText[a].style.color = "#ff2424";
+            for (var a = 0; a < codeText.length; a++) { // Targets code elements in README section
+                codeText[a].style.color = "#ff6b6b";
             }
             for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
                 anchorTags[b].style.color = "#0099ff";
                 anchorCode[0].style.color = "#0099ff";
             }
-            for (var c = 0; c < codeSnippet.length; c++) {
+            for (var c = 0; c < codeSnippet.length; c++) { // Targets code snippets pre elements
                 codeSnippet[c].style.backgroundColor = "#141414";
             }
         }
@@ -824,7 +824,7 @@ darkMode.addEventListener("click", () => {
         combo3BarsBNodes3[z].classList.replace("lightStyles", "darkStyles");
     }
     for (var a = 0; a < codeText.length; a++) {
-        codeText[a].style.color = "#ff2424";
+        codeText[a].style.color = "#ff6b6b";
     }
     for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
         anchorTags[b].style.color = "#0099ff";
