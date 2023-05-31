@@ -111,7 +111,7 @@
             </li>
             <li>The following snippet of code can be applied to all <span style="font-weight: 600;">vertical bar charts</span>:
                 <pre><code>@media screen and (max-width: 650px) {
-  .chartVertCap {
+  .chartVertCap, .chartVertSub {
     font-size: 13px !important;
   }
   .chartVertMobile td {
@@ -140,7 +140,7 @@
     border-top: 1px solid #c4c4c4 !important;
     padding: 20px 0 !important;
   }
-  .chartMobile caption, .chartVertCap {
+  .chartMobile caption, .chartVertCap, .chartVertSub {
     font-size: 13px !important;
   }
   .chartMobile td {
@@ -6429,8 +6429,12 @@
         <section class="vertWrap">
 
             <!-- CHART TITLE TEXT -->
-            <div id="vert1Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Temperature Forecast: New York City</div>
+            <div id="vert1Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 4px; text-align: center;">Temperature Forecast: New York City</div>
             <!-- end chart title text -->
+
+            <!-- CHART SUBTITLE TEXT -->
+            <div id="vert1Sub" style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Subtitle</div>
+            <!-- end chart subtitle text -->
 
             <table id="vert1Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 350px; margin: 0 auto; padding: 0;" class="chartVertMobile">
                 <!-- 3.15.23: Possible experiment ~~> try changing the height from "350" to "auto" and see if this works in email clients. The change adjusts the chart height to the tallest vertical bar so the chart title is not hanging up at the top if there are low vertical bars -->
@@ -6635,6 +6639,9 @@
                     <label for="vert1capText">Bar Chart Title</label>
                     <input type="text" size="35" value="Temperature Forecast: New York City" name="vert1capText" id="vert1capText">
                     <br />
+                    <label for="vert1subText">Bar Chart Subtitle</label>
+                    <input type="text" size="35" value="Optional Chart Subtitle" name="vert1subText" id="vert1subText">
+                    <br />
                     <label for="vert1srcText">Bar Chart Source</label>
                     <input type="text" size="35" value="April Average High: 59&#8457; 🌡 ⬆️ ☀️" name="vert1srcText" id="vert1srcText">
                     <br />
@@ -6776,8 +6783,12 @@
 
             <!-- 3.16.23: For vertical charts II and IV, removed legend margin top of 30px and left margin-bottom in the chart title. The reason is if the chart title is deleted, the chart is set at the top with not margin/padding pushing it down -->
             <!-- CHART TITLE TEXT -->
-            <div id="vert2Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Title</div>
+            <div id="vert2Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 4px; text-align: center;">Optional Chart Title</div>
             <!-- end chart title text -->
+
+            <!-- CHART SUBTITLE TEXT -->
+            <div id="vert2Sub" style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin-bottom: 30px; text-align: center;">Optional Chart Subtitle</div>
+            <!-- end chart subtitle text -->
 
             <!-- LEGEND 6 -->
             <div class="chartVertLegend" style="font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 0 0 30px 0; text-align: center;"><span id="legend6Color1" style="background-color: #47bd39; border: 1px solid #47bd39; color: #47bd39; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend6Text1">Light Green</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend6Color2" style="background-color: #12802b; border: 1px solid #12802b; color: #12802b; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend6Text2">Green</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend6Color3" style="background-color: #08584c; border: 1px solid #08584c; color: #08584c; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend6Text3">Dark Green</span></div>
@@ -7033,6 +7044,9 @@
                     <label for="vert2capText">Bar Chart Title</label>
                     <input type="text" size="35" value="Optional Chart Title" name="vert2capText" id="vert2capText">
                     <br />
+                    <label for="vert2subText">Bar Chart Subtitle</label>
+                    <input type="text" size="35" value="Optional Chart Subtitle" name="vert2subText" id="vert2subText">
+                    <br />
                     <label for="vert2srcText">Bar Chart Source</label>
                     <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="vert2srcText" id="vert2srcText">
                     <br />
@@ -7286,8 +7300,12 @@
         <section class="vertWrap">
 
             <!-- CHART TITLE TEXT -->
-            <div id="vert3Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Title</div>
+            <div id="vert3Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 4px; text-align: center;">Optional Chart Title</div>
             <!-- end chart title text -->
+
+            <!-- CHART SUBTITLE TEXT -->
+            <div id="vert3Sub" style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Subtitle</div>
+            <!-- end chart subtitle text -->
 
             <table id="vert3Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 400px; margin: 0 auto; padding: 0;" class="chartVertMobile">
 
@@ -7479,6 +7497,9 @@
                     <label for="vert3capText">Bar Chart Title</label>
                     <input type="text" size="35" value="Optional Chart Title" name="vert3capText" id="vert3capText">
                     <br />
+                    <label for="vert3subText">Bar Chart Subtitle</label>
+                    <input type="text" size="35" value="Optional Chart Subtitle" name="vert3subText" id="vert3subText">
+                    <br />
                     <label for="vert3srcText">Bar Chart Source</label>
                     <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="vert3srcText" id="vert3srcText">
                     <br />
@@ -7619,8 +7640,12 @@
         <section class="vertWrap">
 
             <!-- CHART TITLE TEXT -->
-            <div id="vert4Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Title</div>
+            <div id="vert4Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 4px; text-align: center;">Optional Chart Title</div>
             <!-- end chart title text -->
+
+            <!-- CHART SUBTITLE TEXT -->
+            <div id="vert4Sub" style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin-bottom: 30px; text-align: center;">Optional Chart Subtitle</div>
+            <!-- end chart subtitle text -->
 
             <!-- LEGEND 7 -->
             <div class="chartVertLegend" style="font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 0 0 30px 0; text-align: center;"><span id="legend7Color1" style="background-color: #800080; border: 1px solid #800080; color: #800080; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend7Text1">Dark Purple</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend7Color2" style="background-color: #be29ec; border: 1px solid #be29ec; color: #be29ec; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend7Text2">Purple</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="legend7Color3" style="background-color: #d896ff; border: 1px solid #d896ff; color: #d896ff; font-family: Verdana, sans-serif; font-size: 12px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span id="legend7Text3">Light Purple</span></div>
@@ -7876,6 +7901,9 @@
                     <label for="vert4capText">Bar Chart Title</label>
                     <input type="text" size="35" value="Optional Chart Title" name="vert4capText" id="vert4capText">
                     <br />
+                    <label for="vert4subText">Bar Chart Subtitle</label>
+                    <input type="text" size="35" value="Optional Chart Subtitle" name="vert4subText" id="vert4subText">
+                    <br />
                     <label for="vert4srcText">Bar Chart Source</label>
                     <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="vert4srcText" id="vert4srcText">
                     <br />
@@ -8129,8 +8157,12 @@
         <section class="vertWrap">
 
             <!-- CHART TITLE TEXT -->
-            <div id="vert5Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Title</div>
+            <div id="vert5Cap" style="color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 4px; text-align: center;">Optional Chart Title</div>
             <!-- end chart title text -->
+
+            <!-- CHART SUBTITLE TEXT -->
+            <div id="vert5Sub" style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; margin-bottom: 20px; text-align: center;">Optional Chart Subtitle</div>
+            <!-- end chart subtitle text -->
 
             <table id="vert5Width" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="350" style="border: 1px solid #c4c4c4; max-width: 500px; min-height: 350px; margin: 0 auto; padding: 0;" class="chartVertMobile">
 
@@ -8460,6 +8492,9 @@
                     <br />
                     <label for="vert5capText">Bar Chart Title</label>
                     <input type="text" size="35" value="Optional Chart Title" name="vert5capText" id="vert5capText">
+                    <br />
+                    <label for="vert5subText">Bar Chart Subtitle</label>
+                    <input type="text" size="35" value="Optional Chart Subtitle" name="vert5subText" id="vert5subText">
                     <br />
                     <label for="vert5srcText">Bar Chart Source</label>
                     <input type="text" size="35" value="Optional Source: Company A, Jan. 2023" name="vert5srcText" id="vert5srcText">
