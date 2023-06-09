@@ -20,3 +20,9 @@ For additional information about the advantages and disadvantages of using HTML/
 3. Customize the bar colors, widths, and chart text using the input tools.
 4. When the chart is ready, click the button to generate and copy your HTML output code.
 5. Paste the chart code into your email template, make adjustments as needed, and test.
+
+## Advantages of HTML/CSS Coded Bar Charts in Email Templates
+
+1. Charts can display in email clients without the need to download images
+2. Charts are dark mode compatible in a variety of email clients and mobile devices
+3. Charts feature live text and are accessible to screen readers
