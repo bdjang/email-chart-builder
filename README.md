@@ -5,7 +5,7 @@ A tool for building bar charts for HTML email templates. Visit <a href="https://
 - Mobile Responsive 📲
 - No Images ❌
 
-## Background
+## Project Background
 
 The first objective of this project is to enable email marketers and developers to create clear, colorful visuals and bar charts that are mobile responsive, dark mode compatible, and accessible to screen readers quickly and efficiently. The second objective is to reimagine and change how data graphics are displayed in email templates and newsletters.
 
@@ -20,6 +20,7 @@ For additional information about the advantages and disadvantages of using HTML/
 3. Customize the bar colors, widths, and chart text using the input tools.
 4. When the chart is ready, click the button to generate and copy your HTML output code.
 5. Paste the chart code into your email template, make adjustments as needed, and test.
+<!-- Add gif -->
 
 ## Advantages of HTML/CSS Coded Bar Charts in Email Templates
 
