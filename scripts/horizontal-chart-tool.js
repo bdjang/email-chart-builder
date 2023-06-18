@@ -689,7 +689,7 @@ horiz1Text10b.addEventListener("focus", () => { horiz1Row10c.style.textShadow = 
 horiz1Text10b.addEventListener("blur", () => { horiz1Row10c.style.textShadow = "none"; });
 
 // Horizontal Chart I Height Adjustment
-const horiz1rowArray = [horiz1Row1a, horiz1Row1b, horiz1Row1c, horiz1Row2a, horiz1Row2b, horiz1Row2c, horiz1Row3a, horiz1Row3b, horiz1Row3c, horiz1Row4a, horiz1Row4b, horiz1Row4c, horiz1Row5a, horiz1Row5b, horiz1Row5c, horiz1Row6a, horiz1Row6b, horiz1Row6c, horiz1Row7a, horiz1Row7b, horiz1Row8a, horiz1Row8b, horiz1Row9a, horiz1Row9b, horiz1Row10a, horiz1Row10b, horiz1Row10c];
+const horiz1rowArray = [horiz1Row1a, horiz1Row1b, horiz1Row1c, horiz1Row2a, horiz1Row2b, horiz1Row2c, horiz1Row3a, horiz1Row3b, horiz1Row3c, horiz1Row4a, horiz1Row4b, horiz1Row4c, horiz1Row5a, horiz1Row5b, horiz1Row5c, horiz1Row6a, horiz1Row6b, horiz1Row6c, horiz1Row7a, horiz1Row7b, horiz1Row7c, horiz1Row8a, horiz1Row8b, horiz1Row8c, horiz1Row9a, horiz1Row9b, horiz1Row9c, horiz1Row10a, horiz1Row10b, horiz1Row10c];
 const horiz1inputArray = [horiz1Text1a, horiz1Text2a, horiz1Text3a, horiz1Text4a, horiz1Text5a, horiz1Text6a, horiz1Text7a, horiz1Text8a, horiz1Text9a, horiz1Text10a];
 horiz1inputArray[0].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
@@ -2043,7 +2043,7 @@ horiz3Color10.oninput = function() {
 };
 
 // Horizontal Chart III Height Adjustment
-const horiz3rowArray = [horiz3Row1a, horiz3Row1b, horiz3Row1c, horiz3Row2a, horiz3Row2b, horiz3Row2c, horiz3Row3a, horiz3Row3b, horiz3Row3c, horiz3Row4a, horiz3Row4b, horiz3Row4c, horiz3Row5a, horiz3Row5b, horiz3Row5c, horiz3Row6a, horiz3Row6b, horiz3Row6c, horiz3Row7a, horiz3Row7b, horiz3Row8a, horiz3Row8b, horiz3Row9a, horiz3Row9b, horiz3Row10a, horiz3Row10b, horiz3Row10c];
+const horiz3rowArray = [horiz3Row1a, horiz3Row1b, horiz3Row1c, horiz3Row2a, horiz3Row2b, horiz3Row2c, horiz3Row3a, horiz3Row3b, horiz3Row3c, horiz3Row4a, horiz3Row4b, horiz3Row4c, horiz3Row5a, horiz3Row5b, horiz3Row5c, horiz3Row6a, horiz3Row6b, horiz3Row6c, horiz3Row7a, horiz3Row7b, horiz3Row7c, horiz3Row8a, horiz3Row8b, horiz3Row8c, horiz3Row9a, horiz3Row9b, horiz3Row9c, horiz3Row10a, horiz3Row10b, horiz3Row10c];
 const horiz3inputArray = [horiz3Text1a, horiz3Text2a, horiz3Text3a, horiz3Text4a, horiz3Text5a, horiz3Text6a, horiz3Text7a, horiz3Text8a, horiz3Text9a, horiz3Text10a];
 horiz3inputArray[0].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
