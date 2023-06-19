@@ -73,6 +73,7 @@ button, #darkMode, #lightMode { cursor: pointer; }
 
 /* CHART STYLES TRANSITIONS */
 .darkStyles, .lightStyles, .lightStylesCSS, .scrollBoxLight, .textareaLight, .chartWeight, .chartTable td, code, img, pre { -webkit-transition: background-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, filter 250ms ease-out, height 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; -ms-transition: background-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, filter 250ms ease-out, height 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; -moz-transition: background-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, filter 250ms ease-out, height 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; transition: background-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, filter 250ms ease-out, height 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; }
+/* .chartTable td -> height, box-shadow; img -> filter */
 
 /* PRE-MOBILE STYLES */
 .chartBuild /* Targets .scrollBox and code output section */, .charts > div + table:first-of-type /* Targets non-vertical charts */ { display: inline-block; margin: 0 30px 0 0; vertical-align: top; }
