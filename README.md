@@ -16,16 +16,15 @@ For additional information about the advantages and disadvantages of using HTML/
 ## Instructions
 
 1. Visit <a href="https://charts.email/" target="_blank">https://charts.email/</a> and select a chart type from the drop down menu.
-    <img width="500" alt="Step #2: Select a chart type from the drop down menu" src="https://github.com/bdjang/email-chart-builder/assets/6575035/e23995a1-7c07-471c-bb35-f87d26564145">
+    <img width="500" alt="Step #1: Visit https://charts.email/ and select a chart type from the drop down menu." src="https://github.com/bdjang/email-chart-builder/assets/6575035/b0cc346c-76b7-4cf6-b173-ee54dac560b0">
 
-3. Customize the bar colors, widths, and chart text using the input tools.
-    <img width="600" alt="Step #3: Customize the bar colors, widths, and chart text using the input tools" src="https://github.com/bdjang/email-chart-builder/assets/6575035/f2a5623d-37f4-4bf8-9fb8-dae107d82a62">
+2. Customize the bar colors, widths, and chart text using the input tools.
+    <img width="750" alt="Step #2: Customize the bar colors, widths, and chart text using the input tools" src="https://github.com/bdjang/email-chart-builder/assets/6575035/ebcbc4b2-0ac8-4b5b-a992-4ee40ec56e91">
 
-4. When the chart is ready, click the button to generate and copy your HTML output code.
-    <img width="600" alt="Step #4: When the chart is ready, click the button to generate and copy your HTML output code" src="https://github.com/bdjang/email-chart-builder/assets/6575035/2b32dc34-40f4-455b-9773-06773cb6507e">
+3. When the chart is ready, click the button to generate and copy your HTML output code.
+    <img width="750" alt="Step #3: When the chart is ready, click the button to generate and copy your HTML output code" src="https://github.com/bdjang/email-chart-builder/assets/6575035/4a4919ba-4b56-4922-a3d5-2d596bbafa6d">
 
-5. Paste the chart code into your email template, make adjustments as needed, and test.
-<!-- Add gif -->
+4. Paste the chart code into your email template, make adjustments as needed, and test.
 
 ## Advantages of HTML/CSS Coded Bar Charts in Email Templates
 
