@@ -103,8 +103,8 @@ negative1srcText.oninput = function() {
         negative1Source.style.paddingTop = "0";
         return negative1srcCode = "";
     } else if (negative1srcText.value) {
-        negative1Source.style.paddingTop = "40px";
-        return negative1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + negative1Source.innerHTML + '</td></tr>';
+        negative1Source.style.paddingTop = "30px";
+        return negative1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + negative1Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -812,8 +812,8 @@ negative2srcText.oninput = function() {
         negative2Source.style.paddingTop = "0";
         return negative2srcCode = "";
     } else if (negative2srcText.value) {
-        negative2Source.style.paddingTop = "40px";
-        return negative2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + negative2Source.innerHTML + '</td></tr>';
+        negative2Source.style.paddingTop = "30px";
+        return negative2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + negative2Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -1497,8 +1497,8 @@ splitsrcText.oninput = function() {
         splitSource.style.paddingTop = "0";
         return splitsrcCode = "";
     } else if (splitsrcText.value) {
-        splitSource.style.paddingTop = "40px";
-        return splitsrcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + splitSource.innerHTML + '</td></tr>';
+        splitSource.style.paddingTop = "30px";
+        return splitsrcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + splitSource.innerHTML + '</td></tr>';
     }
 };
 
@@ -2306,8 +2306,8 @@ combo1srcText.oninput = function() {
         combo1Source.style.paddingTop = "0";
         return combo1srcCode = "";
     } else if (combo1srcText.value) {
-        combo1Source.style.paddingTop = "40px";
-        return combo1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + combo1Source.innerHTML + '</td></tr>';
+        combo1Source.style.paddingTop = "20px";
+        return combo1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + combo1Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -3037,8 +3037,8 @@ combo2srcText.oninput = function() {
         combo2Source.style.paddingTop = "0";
         return combo2srcCode = "";
     } else if (combo2srcText.value) {
-        combo2Source.style.paddingTop = "40px";
-        return combo2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + combo2Source.innerHTML + '</td></tr>';
+        combo2Source.style.paddingTop = "30px";
+        return combo2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + combo2Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -3628,8 +3628,8 @@ combo3srcText.oninput = function() {
         combo3Source.style.paddingTop = "0";
         return combo3srcCode = "";
     } else if (combo3srcText.value) {
-        combo3Source.style.paddingTop = "40px";
-        return combo3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + combo3Source.innerHTML + '</td></tr>';
+        combo3Source.style.paddingTop = "30px";
+        return combo3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + combo3Source.innerHTML + '</td></tr>';
     }
 };
 
