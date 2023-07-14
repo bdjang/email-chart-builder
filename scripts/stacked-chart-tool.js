@@ -57,8 +57,8 @@ stacked1srcText.oninput = function() {
         stacked1Source.style.paddingTop = "0";
         return stacked1srcCode = "";
     } else if (stacked1srcText.value) {
-        stacked1Source.style.paddingTop = "40px";
-        return stacked1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked1Source.innerHTML + '</td></tr>';
+        stacked1Source.style.paddingTop = "20px";
+        return stacked1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked1Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -1007,8 +1007,8 @@ stacked2srcText.oninput = function() {
         stacked2Source.style.paddingTop = "0";
         return stacked2srcCode = "";
     } else if (stacked2srcText.value) {
-        stacked2Source.style.paddingTop = "40px";
-        return stacked2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked2Source.innerHTML + '</td></tr>';
+        stacked2Source.style.paddingTop = "20px";
+        return stacked2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked2Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -1855,8 +1855,8 @@ stacked3srcText.oninput = function() {
         stacked3Source.style.paddingTop = "0";
         return stacked3srcCode = "";
     } else if (stacked3srcText.value) {
-        stacked3Source.style.paddingTop = "40px";
-        return stacked3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked3Source.innerHTML + '</td></tr>';
+        stacked3Source.style.paddingTop = "20px";
+        return stacked3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked3Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -2966,8 +2966,8 @@ stacked4srcText.oninput = function() {
         stacked4Source.style.paddingTop = "0";
         return stacked4srcCode = "";
     } else if (stacked4srcText.value) {
-        stacked4Source.style.paddingTop = "40px";
-        return stacked4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + stacked4Source.innerHTML + '</td></tr>';
+        stacked4Source.style.paddingTop = "20px";
+        return stacked4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked4Source.innerHTML + '</td></tr>';
     }
 };
 
