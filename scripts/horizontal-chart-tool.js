@@ -105,8 +105,8 @@ horiz1srcText.oninput = function() {
         horiz1Source.style.paddingTop = "0";
         return horiz1srcCode = "";
     } else if (horiz1srcText.value) {
-        horiz1Source.style.paddingTop = "30px";
-        return horiz1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + horiz1Source.innerHTML + '</td></tr>';
+        horiz1Source.style.paddingTop = "20px";
+        return horiz1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + horiz1Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -932,8 +932,8 @@ horiz2srcText.oninput = function() {
         horiz2Source.style.paddingTop = "0";
         return horiz2srcCode = "";
     } else if (horiz2srcText.value) {
-        horiz2Source.style.paddingTop = "40px";
-        return horiz2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + horiz2Source.innerHTML + '</td></tr>';
+        horiz2Source.style.paddingTop = "30px";
+        return horiz2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + horiz2Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -1648,8 +1648,8 @@ horiz3srcText.oninput = function() {
         horiz3Source.style.paddingTop = "0";
         return horiz3srcCode = "";
     } else if (horiz3srcText.value) {
-        horiz3Source.style.paddingTop = "40px";
-        return horiz3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + horiz3Source.innerHTML + '</td></tr>';
+        horiz3Source.style.paddingTop = "30px";
+        return horiz3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + horiz3Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -2488,8 +2488,8 @@ horiz4srcText.oninput = function() {
         horiz4Source.style.paddingTop = "0";
         return horiz4srcCode = "";
     } else if (horiz4srcText.value) {
-        horiz4Source.style.paddingTop = "40px";
-        return horiz4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + horiz4Source.innerHTML + '</td></tr>';
+        horiz4Source.style.paddingTop = "30px";
+        return horiz4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + horiz4Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -3185,8 +3185,8 @@ horiz5srcText.oninput = function() {
         horiz5Source.style.paddingTop = "0";
         return horiz5srcCode = "";
     } else if (horiz5srcText.value) {
-        horiz5Source.style.paddingTop = "40px";
-        return horiz5srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + horiz5Source.innerHTML + '</td></tr>';
+        horiz5Source.style.paddingTop = "30px";
+        return horiz5srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + horiz5Source.innerHTML + '</td></tr>';
     }
 };
 
