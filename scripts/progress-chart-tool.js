@@ -79,8 +79,8 @@ prog1srcText.oninput = function() {
         prog1Source.style.paddingTop = "0";
         return prog1srcCode = "";
     } else if (prog1srcText.value) {
-        prog1Source.style.paddingTop = "40px";
-        return prog1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + prog1Source.innerHTML + '</td></tr>';
+        prog1Source.style.paddingTop = "20px";
+        return prog1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + prog1Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -436,8 +436,8 @@ prog2srcText.oninput = function() {
         prog2Source.style.paddingTop = "0";
         return prog2srcCode = "";
     } else if (prog2srcText.value) {
-        prog2Source.style.paddingTop = "40px";
-        return prog2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + prog2Source.innerHTML + '</td></tr>';
+        prog2Source.style.paddingTop = "20px";
+        return prog2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + prog2Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -902,8 +902,8 @@ prog3srcText.oninput = function() {
         prog3Source.style.paddingTop = "0";
         return prog3srcCode = "";
     } else if (prog3srcText.value) {
-        prog3Source.style.paddingTop = "40px";
-        return prog3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + prog3Source.innerHTML + '</td></tr>';
+        prog3Source.style.paddingTop = "20px";
+        return prog3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + prog3Source.innerHTML + '</td></tr>';
     }
 };
 
@@ -1361,8 +1361,8 @@ prog4srcText.oninput = function() {
         prog4Source.style.paddingTop = "0";
         return prog4srcCode = "";
     } else if (prog4srcText.value) {
-        prog4Source.style.paddingTop = "40px";
-        return prog4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 40px; text-align: left;">' + prog4Source.innerHTML + '</td></tr>';
+        prog4Source.style.paddingTop = "20px";
+        return prog4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + prog4Source.innerHTML + '</td></tr>';
     }
 };
 
