@@ -1444,18 +1444,18 @@ splitcapText.oninput = function() {
         splitCap.style.marginBottom = "0";
         return splitcsCode = "";
     } else if (splitcapText.value == "" && splitsubText.value) {
-        splitBars[0].firstElementChild.style.padding = "30px 0 0 0";
-        splitTopBarSpace = "30px 0 0 0";
+        splitBars[0].firstElementChild.style.padding = "20px 0 0 0";
+        splitTopBarSpace = "20px 0 0 0";
         splitCap.style.marginBottom = "0";
         return splitcsCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">' + splitSub.innerHTML + '</td> </tr>';
     } else if (splitcapText.value && splitsubText.value == "") {
         splitBars[0].firstElementChild.style.padding = "0";
         splitTopBarSpace = "0";
-        splitCap.style.marginBottom = "30px";
-        return splitcsCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + splitCap.innerHTML + '</caption>';
+        splitCap.style.marginBottom = "20px";
+        return splitcsCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + splitCap.innerHTML + '</caption>';
     } else if (splitcapText.value && splitsubText.value) {
-        splitBars[0].firstElementChild.style.padding = "30px 0 0 0";
-        splitTopBarSpace = "30px 0 0 0";
+        splitBars[0].firstElementChild.style.padding = "20px 0 0 0";
+        splitTopBarSpace = "20px 0 0 0";
         splitCap.style.marginBottom = "4px";
         return splitcsCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 4px; text-align: left;">' + splitCap.innerHTML + '</caption> <tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">' + splitSub.innerHTML + '</td> </tr>';
     }
@@ -1473,16 +1473,16 @@ splitsubText.oninput = function() {
     } else if (splitsubText.value == "" && splitcapText.value) {
         splitBars[0].firstElementChild.style.padding = "0";
         splitTopBarSpace = "0";
-        splitCap.style.marginBottom = "30px";
-        return splitcsCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 30px; text-align: left;">' + splitCap.innerHTML + '</caption>';
+        splitCap.style.marginBottom = "20px";
+        return splitcsCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + splitCap.innerHTML + '</caption>';
     } else if (splitsubText.value && splitcapText.value == "") {
-        splitBars[0].firstElementChild.style.padding = "30px 0 0 0";
-        splitTopBarSpace = "30px 0 0 0";
+        splitBars[0].firstElementChild.style.padding = "20px 0 0 0";
+        splitTopBarSpace = "20px 0 0 0";
         splitCap.style.marginBottom = "0";
         return splitcsCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">' + splitSub.innerHTML + '</td> </tr>';
     } else if (splitsubText.value && splitcapText.value) {
-        splitBars[0].firstElementChild.style.padding = "30px 0 0 0";
-        splitTopBarSpace = "30px 0 0 0";
+        splitBars[0].firstElementChild.style.padding = "20px 0 0 0";
+        splitTopBarSpace = "20px 0 0 0";
         splitCap.style.marginBottom = "4px";
         return splitcsCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 14px; font-weight: 600; line-height: normal; margin-bottom: 4px; text-align: left;">' + splitCap.innerHTML + '</caption> <tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 12px; line-height: normal; text-align: left;">' + splitSub.innerHTML + '</td> </tr>';
     }
@@ -1497,8 +1497,8 @@ splitsrcText.oninput = function() {
         splitSource.style.paddingTop = "0";
         return splitsrcCode = "";
     } else if (splitsrcText.value) {
-        splitSource.style.paddingTop = "30px";
-        return splitsrcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 30px; text-align: left;">' + splitSource.innerHTML + '</td></tr>';
+        splitSource.style.paddingTop = "20px";
+        return splitsrcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + splitSource.innerHTML + '</td></tr>';
     }
 };
 
