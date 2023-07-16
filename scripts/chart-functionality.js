@@ -42,7 +42,7 @@ const previewBoxVert5LabelTop = document.querySelectorAll("div#vert5Chart td.ver
 const previewBoxVert5LabelBottom = document.querySelectorAll("div#vert5Chart td.vert5Bottom table:nth-of-type(2) tr:nth-of-type(1) td"); // Bottom vertical bar label
 const horiz1BarsNodes1 = document.querySelectorAll("tr.horiz1Bars table.chartTable td:nth-of-type(1)");
 const horiz1BarsNodes2 = document.querySelectorAll("tr.horiz1Bars table.chartTable td:nth-of-type(3)");
-const horiz2BarsNodes3 = document.querySelectorAll("tr.horiz2Bars table.chartTable td:nth-of-type(3)");
+const horiz2BarsNodes4 = document.querySelectorAll("tr.horiz2Bars table.chartTable td:nth-of-type(4)");
 const horiz3BarsNodes1 = document.querySelectorAll("tr.horiz3Bars table.chartTable td:nth-of-type(1)");
 const horiz3BarsNodes3 = document.querySelectorAll("tr.horiz3Bars table.chartTable td:nth-of-type(3)");
 const horiz4BarsNodes1 = document.querySelectorAll("tr.horiz4Bars table.chartTable td:nth-of-type(1)");
@@ -184,7 +184,7 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
     for (var x = 0; x < horiz1Bars.length; x++) {
         horiz1BarsNodes1[x].classList.add("lightStyles");
         horiz1BarsNodes2[x].classList.add("lightStyles");
-        horiz2BarsNodes3[x].classList.add("lightStyles");
+        horiz2BarsNodes4[x].classList.add("lightStyles");
         horiz3BarsNodes1[x].classList.add("lightStyles");
         horiz3BarsNodes3[x].classList.add("lightStyles");
         horiz4BarsNodes1[x].classList.add("lightStyles");
@@ -343,7 +343,7 @@ document.addEventListener("keydown", () => {
             for (var x = 0; x < horiz1Bars.length; x++) {
                 horiz1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
                 horiz1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-                horiz2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
+                horiz2BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
                 horiz3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
                 horiz3BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
                 horiz4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
@@ -510,7 +510,7 @@ document.addEventListener("keydown", () => {
             for (var x = 0; x < horiz1Bars.length; x++) {
                 horiz1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
                 horiz1BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
-                horiz2BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
+                horiz2BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
                 horiz3BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
                 horiz3BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
                 horiz4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
@@ -775,8 +775,8 @@ darkMode.addEventListener("click", () => {
         horiz1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
         horiz1BarsNodes2[x].classList.toggle("darkStyles");
         horiz1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-        horiz2BarsNodes3[x].classList.toggle("darkStyles");
-        horiz2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
+        horiz2BarsNodes4[x].classList.toggle("darkStyles");
+        horiz2BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
         horiz3BarsNodes1[x].classList.toggle("darkStyles");
         horiz3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
         horiz3BarsNodes3[x].classList.toggle("darkStyles");
@@ -969,7 +969,7 @@ lightMode.addEventListener("click", () => {
     for (var x = 0; x < horiz1Bars.length; x++) {
         horiz1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
         horiz1BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
-        horiz2BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
+        horiz2BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
         horiz3BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
         horiz3BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
         horiz4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
