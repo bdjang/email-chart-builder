@@ -68,9 +68,9 @@ const combo1BarsNodes3 = document.querySelectorAll("tr.combo1Bars table.chartTab
 const combo2BarsTNodes1 = document.querySelectorAll("tr.combo2BarsT table.chartTable tr:first-of-type td:nth-of-type(1)"); // Targets combo bar II title text
 const combo2BarsTNodes2 = document.querySelectorAll("tr.combo2BarsT table.chartTable td:nth-of-type(2)"); // Targets top row 2nd td cell
 const combo2BarsBNodes2 = document.querySelectorAll("tr.combo2BarsB table.chartTable td:nth-of-type(2)"); // Targets bottom row 2nd td cell
-const combo3BarsTNodes1 = document.querySelectorAll("tr.combo3BarsT table.chartTable tr:first-of-type td:nth-of-type(1)");
-const combo3BarsTNodes3 = document.querySelectorAll("tr.combo3BarsT table.chartTable td:nth-of-type(3)");
-const combo3BarsBNodes3 = document.querySelectorAll("tr.combo3BarsB table.chartTable td:nth-of-type(3)");
+const combo3BarsTNodes1 = document.querySelectorAll("tr.combo3BarsT table.chartTable tr:first-of-type td:nth-of-type(1)"); // Targets top label
+const combo3BarsTNodes4 = document.querySelectorAll("tr.combo3BarsT table.chartTable td:nth-of-type(4)"); // Targets end label for top data bar
+const combo3BarsBNodes4 = document.querySelectorAll("tr.combo3BarsB table.chartTable td:nth-of-type(4)"); // Targets end label for bottom data bar
 const bodyEl = document.querySelectorAll("body");
 const anchorTags = document.querySelectorAll("a"); // Targets all anchor link tags
 const anchorCode = document.querySelectorAll("div#readme p code"); // Targets code element in anchor tag
@@ -220,8 +220,8 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
         combo2BarsTNodes2[z].classList.add("lightStyles");
         combo2BarsBNodes2[z].classList.add("lightStyles");
         combo3BarsTNodes1[z].classList.add("lightStyles");
-        combo3BarsTNodes3[z].classList.add("lightStyles");
-        combo3BarsBNodes3[z].classList.add("lightStyles");
+        combo3BarsTNodes4[z].classList.add("lightStyles");
+        combo3BarsBNodes4[z].classList.add("lightStyles");
     }
 });
 
@@ -380,8 +380,8 @@ document.addEventListener("keydown", () => {
                 combo2BarsTNodes2[z].classList.replace("lightStyles", "darkStyles");
                 combo2BarsBNodes2[z].classList.replace("lightStyles", "darkStyles");
                 combo3BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
-                combo3BarsTNodes3[z].classList.replace("lightStyles", "darkStyles");
-                combo3BarsBNodes3[z].classList.replace("lightStyles", "darkStyles");
+                combo3BarsTNodes4[z].classList.replace("lightStyles", "darkStyles");
+                combo3BarsBNodes4[z].classList.replace("lightStyles", "darkStyles");
             }
             if (lightMode.style.display == "none") {
                 lightMode.style.display = "inline-block";
@@ -547,8 +547,8 @@ document.addEventListener("keydown", () => {
                 combo2BarsTNodes2[z].classList.replace("darkStyles", "lightStyles");
                 combo2BarsBNodes2[z].classList.replace("darkStyles", "lightStyles");
                 combo3BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
-                combo3BarsTNodes3[z].classList.replace("darkStyles", "lightStyles");
-                combo3BarsBNodes3[z].classList.replace("darkStyles", "lightStyles");
+                combo3BarsTNodes4[z].classList.replace("darkStyles", "lightStyles");
+                combo3BarsBNodes4[z].classList.replace("darkStyles", "lightStyles");
             }
             if (lightMode.style.display == "none") {
                 lightMode.style.display = "inline-block";
@@ -844,10 +844,10 @@ darkMode.addEventListener("click", () => {
         combo2BarsBNodes2[z].classList.replace("lightStyles", "darkStyles");
         combo3BarsTNodes1[z].classList.toggle("darkStyles");
         combo3BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
-        combo3BarsTNodes3[z].classList.toggle("darkStyles");
-        combo3BarsTNodes3[z].classList.replace("lightStyles", "darkStyles");
-        combo3BarsBNodes3[z].classList.toggle("darkStyles");
-        combo3BarsBNodes3[z].classList.replace("lightStyles", "darkStyles");
+        combo3BarsTNodes4[z].classList.toggle("darkStyles");
+        combo3BarsTNodes4[z].classList.replace("lightStyles", "darkStyles");
+        combo3BarsBNodes4[z].classList.toggle("darkStyles");
+        combo3BarsBNodes4[z].classList.replace("lightStyles", "darkStyles");
     }
     for (var a = 0; a < codeText.length; a++) {
         codeText[a].style.color = "#ff6b6b";
@@ -1006,8 +1006,8 @@ lightMode.addEventListener("click", () => {
         combo2BarsTNodes2[z].classList.replace("darkStyles", "lightStyles");
         combo2BarsBNodes2[z].classList.replace("darkStyles", "lightStyles");
         combo3BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
-        combo3BarsTNodes3[z].classList.replace("darkStyles", "lightStyles");
-        combo3BarsBNodes3[z].classList.replace("darkStyles", "lightStyles");
+        combo3BarsTNodes4[z].classList.replace("darkStyles", "lightStyles");
+        combo3BarsBNodes4[z].classList.replace("darkStyles", "lightStyles");
     }
     for (var a = 0; a < codeText.length; a++) {
         codeText[a].style.color = "#de0d0d";
