@@ -3747,7 +3747,7 @@ combo3Text1tf.oninput = function() {
     if (combo3Text1tf.value == "") {
         combo3Row1b.innerHTML = combo3Text1tf.value;
     } else if (combo3Text1tf.value) {
-        combo3Row1b.innerHTML = "&nbsp;" + combo3Text1tf.value;
+        combo3Row1b.innerHTML = combo3Text1tf.value;
     }
 };
 const combo3Text1te = document.getElementById("combo3Text1te"); // Top combo bar end label text
@@ -3785,7 +3785,7 @@ combo3Text1bf.oninput = function() {
     if (combo3Text1bf.value == "") {
         combo3Row1x.innerHTML = combo3Text1bf.value;
     } else if (combo3Text1bf.value) {
-        combo3Row1x.innerHTML = "&nbsp;" + combo3Text1bf.value;
+        combo3Row1x.innerHTML = combo3Text1bf.value;
     }
 };
 const combo3Text1be = document.getElementById("combo3Text1be"); // Bottom combo bar end label text
@@ -3833,7 +3833,7 @@ combo3Text2tf.oninput = function() {
     if (combo3Text2tf.value == "") {
         combo3Row2b.innerHTML = combo3Text2tf.value;
     } else if (combo3Text2tf.value) {
-        combo3Row2b.innerHTML = "&nbsp;" + combo3Text2tf.value;
+        combo3Row2b.innerHTML = combo3Text2tf.value;
     }
 };
 const combo3Text2te = document.getElementById("combo3Text2te"); // Top combo bar end label text
@@ -3871,7 +3871,7 @@ combo3Text2bf.oninput = function() {
     if (combo3Text2bf.value == "") {
         combo3Row2x.innerHTML = combo3Text2bf.value;
     } else if (combo3Text2bf.value) {
-        combo3Row2x.innerHTML = "&nbsp;" + combo3Text2bf.value;
+        combo3Row2x.innerHTML = combo3Text2bf.value;
     }
 };
 const combo3Text2be = document.getElementById("combo3Text2be"); // Bottom combo bar end label text
@@ -3919,7 +3919,7 @@ combo3Text3tf.oninput = function() {
     if (combo3Text3tf.value == "") {
         combo3Row3b.innerHTML = combo3Text3tf.value;
     } else if (combo3Text3tf.value) {
-        combo3Row3b.innerHTML = "&nbsp;" + combo3Text3tf.value;
+        combo3Row3b.innerHTML = combo3Text3tf.value;
     }
 };
 const combo3Text3te = document.getElementById("combo3Text3te"); // Top combo bar end label text
@@ -3957,7 +3957,7 @@ combo3Text3bf.oninput = function() {
     if (combo3Text3bf.value == "") {
         combo3Row3x.innerHTML = combo3Text3bf.value;
     } else if (combo3Text3bf.value) {
-        combo3Row3x.innerHTML = "&nbsp;" + combo3Text3bf.value;
+        combo3Row3x.innerHTML = combo3Text3bf.value;
     }
 };
 const combo3Text3be = document.getElementById("combo3Text3be"); // Bottom combo bar end label text
@@ -4005,7 +4005,7 @@ combo3Text4tf.oninput = function() {
     if (combo3Text4tf.value == "") {
         combo3Row4b.innerHTML = combo3Text4tf.value;
     } else if (combo3Text4tf.value) {
-        combo3Row4b.innerHTML = "&nbsp;" + combo3Text4tf.value;
+        combo3Row4b.innerHTML = combo3Text4tf.value;
     }
 };
 const combo3Text4te = document.getElementById("combo3Text4te"); // Top combo bar end label text
@@ -4043,7 +4043,7 @@ combo3Text4bf.oninput = function() {
     if (combo3Text4bf.value == "") {
         combo3Row4x.innerHTML = combo3Text4bf.value;
     } else if (combo3Text4bf.value) {
-        combo3Row4x.innerHTML = "&nbsp;" + combo3Text4bf.value;
+        combo3Row4x.innerHTML = combo3Text4bf.value;
     }
 };
 const combo3Text4be = document.getElementById("combo3Text4be"); // Bottom combo bar end label text
@@ -4091,7 +4091,7 @@ combo3Text5tf.oninput = function() {
     if (combo3Text5tf.value == "") {
         combo3Row5b.innerHTML = combo3Text5tf.value;
     } else if (combo3Text5tf.value) {
-        combo3Row5b.innerHTML = "&nbsp;" + combo3Text5tf.value;
+        combo3Row5b.innerHTML = combo3Text5tf.value;
     }
 };
 const combo3Text5te = document.getElementById("combo3Text5te"); // Top combo bar end label text
@@ -4129,7 +4129,7 @@ combo3Text5bf.oninput = function() {
     if (combo3Text5bf.value == "") {
         combo3Row5x.innerHTML = combo3Text5bf.value;
     } else if (combo3Text5bf.value) {
-        combo3Row5x.innerHTML = "&nbsp;" + combo3Text5bf.value;
+        combo3Row5x.innerHTML = combo3Text5bf.value;
     }
 };
 const combo3Text5be = document.getElementById("combo3Text5be"); // Bottom combo bar end label text
