@@ -97,16 +97,6 @@ prog1colorPick.addEventListener("change", (evt) => {
     prog1Color4.value = evt.detail.hex;
     prog1Row5b.style.backgroundColor = evt.detail.hex;
     prog1Color5.value = evt.detail.hex;
-    prog1Row6b.style.backgroundColor = evt.detail.hex;
-    prog1Color6.value = evt.detail.hex;
-    prog1Row7b.style.backgroundColor = evt.detail.hex;
-    prog1Color7.value = evt.detail.hex;
-    prog1Row8b.style.backgroundColor = evt.detail.hex;
-    prog1Color8.value = evt.detail.hex;
-    prog1Row9b.style.backgroundColor = evt.detail.hex;
-    prog1Color9.value = evt.detail.hex;
-    prog1Row10b.style.backgroundColor = evt.detail.hex;
-    prog1Color10.value = evt.detail.hex;
 });
 
 // Progress Bar Chart I Customization Logic
@@ -454,16 +444,6 @@ prog2colorPick.addEventListener("change", (evt) => {
     prog2Color4.value = evt.detail.hex;
     prog2Row5b.style.backgroundColor = evt.detail.hex;
     prog2Color5.value = evt.detail.hex;
-    prog2Row6b.style.backgroundColor = evt.detail.hex;
-    prog2Color6.value = evt.detail.hex;
-    prog2Row7b.style.backgroundColor = evt.detail.hex;
-    prog2Color7.value = evt.detail.hex;
-    prog2Row8b.style.backgroundColor = evt.detail.hex;
-    prog2Color8.value = evt.detail.hex;
-    prog2Row9b.style.backgroundColor = evt.detail.hex;
-    prog2Color9.value = evt.detail.hex;
-    prog2Row10b.style.backgroundColor = evt.detail.hex;
-    prog2Color10.value = evt.detail.hex;
 });
 
 // Progress Bar Chart II Customization Logic
