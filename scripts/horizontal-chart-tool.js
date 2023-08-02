@@ -653,10 +653,10 @@ const horiz1rowArray = [horiz1Row1a, horiz1Row1b, horiz1Row1c, horiz1Row2a, hori
 const horiz1inputArray = [horiz1Text1a, horiz1Text2a, horiz1Text3a, horiz1Text4a, horiz1Text5a, horiz1Text6a, horiz1Text7a, horiz1Text8a, horiz1Text9a, horiz1Text10a];
 horiz1inputArray[0].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[0].value.length < 18) {
+        if (horiz1inputArray[0].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[0].value.length > 18 && horiz1inputArray[0].value.length < 32) {
+        } else if (horiz1inputArray[0].value.length > 16 && horiz1inputArray[0].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[0].value.length >= 32) {
@@ -667,10 +667,10 @@ horiz1inputArray[0].addEventListener("input", () => {
 });
 horiz1inputArray[1].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[1].value.length < 18) {
+        if (horiz1inputArray[1].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[1].value.length > 18 && horiz1inputArray[1].value.length < 32) {
+        } else if (horiz1inputArray[1].value.length > 16 && horiz1inputArray[1].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[1].value.length >= 32) {
@@ -681,10 +681,10 @@ horiz1inputArray[1].addEventListener("input", () => {
 });
 horiz1inputArray[2].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[2].value.length < 18) {
+        if (horiz1inputArray[2].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[2].value.length > 18 && horiz1inputArray[2].value.length < 32) {
+        } else if (horiz1inputArray[2].value.length > 16 && horiz1inputArray[2].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[2].value.length >= 32) {
@@ -695,10 +695,10 @@ horiz1inputArray[2].addEventListener("input", () => {
 });
 horiz1inputArray[3].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[3].value.length < 18) {
+        if (horiz1inputArray[3].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[3].value.length > 18 && horiz1inputArray[3].value.length < 32) {
+        } else if (horiz1inputArray[3].value.length > 16 && horiz1inputArray[3].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[3].value.length >= 32) {
@@ -709,10 +709,10 @@ horiz1inputArray[3].addEventListener("input", () => {
 });
 horiz1inputArray[4].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[4].value.length < 18) {
+        if (horiz1inputArray[4].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[4].value.length > 18 && horiz1inputArray[4].value.length < 32) {
+        } else if (horiz1inputArray[4].value.length > 16 && horiz1inputArray[4].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[4].value.length >= 32) {
@@ -723,10 +723,10 @@ horiz1inputArray[4].addEventListener("input", () => {
 });
 horiz1inputArray[5].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[5].value.length < 18) {
+        if (horiz1inputArray[5].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[5].value.length > 18 && horiz1inputArray[5].value.length < 32) {
+        } else if (horiz1inputArray[5].value.length > 16 && horiz1inputArray[5].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[5].value.length >= 32) {
@@ -737,10 +737,10 @@ horiz1inputArray[5].addEventListener("input", () => {
 });
 horiz1inputArray[6].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[6].value.length < 18) {
+        if (horiz1inputArray[6].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[6].value.length > 18 && horiz1inputArray[6].value.length < 32) {
+        } else if (horiz1inputArray[6].value.length > 16 && horiz1inputArray[6].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[6].value.length >= 32) {
@@ -751,10 +751,10 @@ horiz1inputArray[6].addEventListener("input", () => {
 });
 horiz1inputArray[7].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[7].value.length < 18) {
+        if (horiz1inputArray[7].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[7].value.length > 18 && horiz1inputArray[7].value.length < 32) {
+        } else if (horiz1inputArray[7].value.length > 16 && horiz1inputArray[7].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[7].value.length >= 32) {
@@ -765,10 +765,10 @@ horiz1inputArray[7].addEventListener("input", () => {
 });
 horiz1inputArray[8].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[8].value.length < 18) {
+        if (horiz1inputArray[8].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[8].value.length > 18 && horiz1inputArray[8].value.length < 32) {
+        } else if (horiz1inputArray[8].value.length > 16 && horiz1inputArray[8].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[8].value.length >= 32) {
@@ -779,10 +779,10 @@ horiz1inputArray[8].addEventListener("input", () => {
 });
 horiz1inputArray[9].addEventListener("input", () => {
     for (var i = 0; i < horiz1rowArray.length; i++) {
-        if (horiz1inputArray[9].value.length < 18) {
+        if (horiz1inputArray[9].value.length <= 16) {
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[9].value.length > 18 && horiz1inputArray[9].value.length < 32) {
+        } else if (horiz1inputArray[9].value.length > 16 && horiz1inputArray[9].value.length < 32) {
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
         } else if (horiz1inputArray[9].value.length >= 32) {
@@ -1517,7 +1517,7 @@ const horiz2rowArray = [horiz2Row1a, horiz2Row1b, horiz2Row1c, horiz2Row2a, hori
 const horiz2inputArray = [horiz2Text1a, horiz2Text2a, horiz2Text3a, horiz2Text4a, horiz2Text5a, horiz2Text6a, horiz2Text7a, horiz2Text8a, horiz2Text9a, horiz2Text10a];
 horiz2inputArray[0].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[0].value.length < 16) {
+        if (horiz2inputArray[0].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[0].value.length > 16 && horiz2inputArray[0].value.length < 32) {
@@ -1531,7 +1531,7 @@ horiz2inputArray[0].addEventListener("input", () => {
 });
 horiz2inputArray[1].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[1].value.length < 16) {
+        if (horiz2inputArray[1].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[1].value.length > 16 && horiz2inputArray[1].value.length < 32) {
@@ -1545,7 +1545,7 @@ horiz2inputArray[1].addEventListener("input", () => {
 });
 horiz2inputArray[2].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[2].value.length < 16) {
+        if (horiz2inputArray[2].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[2].value.length > 16 && horiz2inputArray[2].value.length < 32) {
@@ -1559,7 +1559,7 @@ horiz2inputArray[2].addEventListener("input", () => {
 });
 horiz2inputArray[3].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[3].value.length < 16) {
+        if (horiz2inputArray[3].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[3].value.length > 16 && horiz2inputArray[3].value.length < 32) {
@@ -1573,7 +1573,7 @@ horiz2inputArray[3].addEventListener("input", () => {
 });
 horiz2inputArray[4].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[4].value.length < 16) {
+        if (horiz2inputArray[4].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[4].value.length > 16 && horiz2inputArray[4].value.length < 32) {
@@ -1587,7 +1587,7 @@ horiz2inputArray[4].addEventListener("input", () => {
 });
 horiz2inputArray[5].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[5].value.length < 16) {
+        if (horiz2inputArray[5].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[5].value.length > 16 && horiz2inputArray[5].value.length < 32) {
@@ -1601,7 +1601,7 @@ horiz2inputArray[5].addEventListener("input", () => {
 });
 horiz2inputArray[6].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[6].value.length < 16) {
+        if (horiz2inputArray[6].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[6].value.length > 16 && horiz2inputArray[6].value.length < 32) {
@@ -1615,7 +1615,7 @@ horiz2inputArray[6].addEventListener("input", () => {
 });
 horiz2inputArray[7].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[7].value.length < 16) {
+        if (horiz2inputArray[7].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[7].value.length > 16 && horiz2inputArray[7].value.length < 32) {
@@ -1629,7 +1629,7 @@ horiz2inputArray[7].addEventListener("input", () => {
 });
 horiz2inputArray[8].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[8].value.length < 16) {
+        if (horiz2inputArray[8].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[8].value.length > 16 && horiz2inputArray[8].value.length < 32) {
@@ -1643,7 +1643,7 @@ horiz2inputArray[8].addEventListener("input", () => {
 });
 horiz2inputArray[9].addEventListener("input", () => {
     for (var i = 0; i < horiz2rowArray.length; i++) {
-        if (horiz2inputArray[9].value.length < 16) {
+        if (horiz2inputArray[9].value.length <= 16) {
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
         } else if (horiz2inputArray[9].value.length > 16 && horiz2inputArray[9].value.length < 32) {
@@ -2357,7 +2357,7 @@ const horiz3rowArray = [horiz3Row1a, horiz3Row1b, horiz3Row1c, horiz3Row2a, hori
 const horiz3inputArray = [horiz3Text1a, horiz3Text2a, horiz3Text3a, horiz3Text4a, horiz3Text5a, horiz3Text6a, horiz3Text7a, horiz3Text8a, horiz3Text9a, horiz3Text10a];
 horiz3inputArray[0].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[0].value.length < 16) {
+        if (horiz3inputArray[0].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[0].value.length > 16 && horiz3inputArray[0].value.length < 32) {
@@ -2371,7 +2371,7 @@ horiz3inputArray[0].addEventListener("input", () => {
 });
 horiz3inputArray[1].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[1].value.length < 16) {
+        if (horiz3inputArray[1].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[1].value.length > 16 && horiz3inputArray[1].value.length < 32) {
@@ -2385,7 +2385,7 @@ horiz3inputArray[1].addEventListener("input", () => {
 });
 horiz3inputArray[2].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[2].value.length < 16) {
+        if (horiz3inputArray[2].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[2].value.length > 16 && horiz3inputArray[2].value.length < 32) {
@@ -2399,7 +2399,7 @@ horiz3inputArray[2].addEventListener("input", () => {
 });
 horiz3inputArray[3].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[3].value.length < 16) {
+        if (horiz3inputArray[3].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[3].value.length > 16 && horiz3inputArray[3].value.length < 32) {
@@ -2413,7 +2413,7 @@ horiz3inputArray[3].addEventListener("input", () => {
 });
 horiz3inputArray[4].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[4].value.length < 16) {
+        if (horiz3inputArray[4].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[4].value.length > 16 && horiz3inputArray[4].value.length < 32) {
@@ -2427,7 +2427,7 @@ horiz3inputArray[4].addEventListener("input", () => {
 });
 horiz3inputArray[5].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[5].value.length < 16) {
+        if (horiz3inputArray[5].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[5].value.length > 16 && horiz3inputArray[5].value.length < 32) {
@@ -2441,7 +2441,7 @@ horiz3inputArray[5].addEventListener("input", () => {
 });
 horiz3inputArray[6].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[6].value.length < 16) {
+        if (horiz3inputArray[6].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[6].value.length > 16 && horiz3inputArray[6].value.length < 32) {
@@ -2455,7 +2455,7 @@ horiz3inputArray[6].addEventListener("input", () => {
 });
 horiz3inputArray[7].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[7].value.length < 16) {
+        if (horiz3inputArray[7].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[7].value.length > 16 && horiz3inputArray[7].value.length < 32) {
@@ -2469,7 +2469,7 @@ horiz3inputArray[7].addEventListener("input", () => {
 });
 horiz3inputArray[8].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[8].value.length < 16) {
+        if (horiz3inputArray[8].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[8].value.length > 16 && horiz3inputArray[8].value.length < 32) {
@@ -2483,7 +2483,7 @@ horiz3inputArray[8].addEventListener("input", () => {
 });
 horiz3inputArray[9].addEventListener("input", () => {
     for (var i = 0; i < horiz3rowArray.length; i++) {
-        if (horiz3inputArray[9].value.length < 16) {
+        if (horiz3inputArray[9].value.length <= 16) {
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
         } else if (horiz3inputArray[9].value.length > 16 && horiz3inputArray[9].value.length < 32) {
