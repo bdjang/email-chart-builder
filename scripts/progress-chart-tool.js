@@ -306,7 +306,55 @@ prog1Color5.oninput = function() {
     prog1Row5b.style.backgroundColor = prog1Color5.value;
 };
 
-// Generate Progress Bar HTML Logic
+// Progess Bar Chart I Focus/Blur Events
+prog1capText.addEventListener("focus", () => { prog1Cap.style.textShadow = shadowColor; });
+prog1capText.addEventListener("blur", () => { prog1Cap.style.textShadow = "none"; });
+prog1subText.addEventListener("focus", () => { prog1Sub.style.textShadow = shadowColor; });
+prog1subText.addEventListener("blur", () => { prog1Sub.style.textShadow = "none"; });
+prog1srcText.addEventListener("focus", () => { prog1Source.style.textShadow = shadowColor; });
+prog1srcText.addEventListener("blur", () => { prog1Source.style.textShadow = "none"; });
+prog1Size1.addEventListener("focus", () => { prog1Row1b.style.boxShadow = barSizeShadow; });
+prog1Size1.addEventListener("blur", () => { prog1Row1b.style.boxShadow = "none"; });
+prog1Color1.addEventListener("focus", () => { prog1Row1b.style.boxShadow = barColorShadow; });
+prog1Color1.addEventListener("blur", () => { prog1Row1b.style.boxShadow = "none"; });
+prog1Text1a.addEventListener("focus", () => { prog1Row1a.style.textShadow = shadowColor; });
+prog1Text1a.addEventListener("blur", () => { prog1Row1a.style.textShadow = "none"; });
+prog1Text1.addEventListener("focus", () => { prog1Row1c.style.textShadow = shadowColor; });
+prog1Text1.addEventListener("blur", () => { prog1Row1c.style.textShadow = "none"; });
+prog1Size2.addEventListener("focus", () => { prog1Row2b.style.boxShadow = barSizeShadow; });
+prog1Size2.addEventListener("blur", () => { prog1Row2b.style.boxShadow = "none"; });
+prog1Color2.addEventListener("focus", () => { prog1Row2b.style.boxShadow = barColorShadow; });
+prog1Color2.addEventListener("blur", () => { prog1Row2b.style.boxShadow = "none"; });
+prog1Text2a.addEventListener("focus", () => { prog1Row2a.style.textShadow = shadowColor; });
+prog1Text2a.addEventListener("blur", () => { prog1Row2a.style.textShadow = "none"; });
+prog1Text2.addEventListener("focus", () => { prog1Row2c.style.textShadow = shadowColor; });
+prog1Text2.addEventListener("blur", () => { prog1Row2c.style.textShadow = "none"; });
+prog1Size3.addEventListener("focus", () => { prog1Row3b.style.boxShadow = barSizeShadow; });
+prog1Size3.addEventListener("blur", () => { prog1Row3b.style.boxShadow = "none"; });
+prog1Color3.addEventListener("focus", () => { prog1Row3b.style.boxShadow = barColorShadow; });
+prog1Color3.addEventListener("blur", () => { prog1Row3b.style.boxShadow = "none"; });
+prog1Text3a.addEventListener("focus", () => { prog1Row3a.style.textShadow = shadowColor; });
+prog1Text3a.addEventListener("blur", () => { prog1Row3a.style.textShadow = "none"; });
+prog1Text3.addEventListener("focus", () => { prog1Row3c.style.textShadow = shadowColor; });
+prog1Text3.addEventListener("blur", () => { prog1Row3c.style.textShadow = "none"; });
+prog1Size4.addEventListener("focus", () => { prog1Row4b.style.boxShadow = barSizeShadow; });
+prog1Size4.addEventListener("blur", () => { prog1Row4b.style.boxShadow = "none"; });
+prog1Color4.addEventListener("focus", () => { prog1Row4b.style.boxShadow = barColorShadow; });
+prog1Color4.addEventListener("blur", () => { prog1Row4b.style.boxShadow = "none"; });
+prog1Text4a.addEventListener("focus", () => { prog1Row4a.style.textShadow = shadowColor; });
+prog1Text4a.addEventListener("blur", () => { prog1Row4a.style.textShadow = "none"; });
+prog1Text4.addEventListener("focus", () => { prog1Row4c.style.textShadow = shadowColor; });
+prog1Text4.addEventListener("blur", () => { prog1Row4c.style.textShadow = "none"; });
+prog1Size5.addEventListener("focus", () => { prog1Row5b.style.boxShadow = barSizeShadow; });
+prog1Size5.addEventListener("blur", () => { prog1Row5b.style.boxShadow = "none"; });
+prog1Color5.addEventListener("focus", () => { prog1Row5b.style.boxShadow = barColorShadow; });
+prog1Color5.addEventListener("blur", () => { prog1Row5b.style.boxShadow = "none"; });
+prog1Text5a.addEventListener("focus", () => { prog1Row5a.style.textShadow = shadowColor; });
+prog1Text5a.addEventListener("blur", () => { prog1Row5a.style.textShadow = "none"; });
+prog1Text5.addEventListener("focus", () => { prog1Row5c.style.textShadow = shadowColor; });
+prog1Text5.addEventListener("blur", () => { prog1Row5c.style.textShadow = "none"; });
+
+// Generate Progress Bar Chart I HTML Logic
 const prog1Weight = document.getElementById("prog1Weight");
 const prog1Button = document.getElementById("prog1Button");
 const prog1Output = document.getElementById("prog1Output");
@@ -763,7 +811,55 @@ prog2Color5.oninput = function() {
     prog2Row5b.style.backgroundColor = prog2Color5.value;
 };
 
-// Generate Progress Bar HTML Logic
+// Progess Bar Chart II Focus/Blur Events
+prog2capText.addEventListener("focus", () => { prog2Cap.style.textShadow = shadowColor; });
+prog2capText.addEventListener("blur", () => { prog2Cap.style.textShadow = "none"; });
+prog2subText.addEventListener("focus", () => { prog2Sub.style.textShadow = shadowColor; });
+prog2subText.addEventListener("blur", () => { prog2Sub.style.textShadow = "none"; });
+prog2srcText.addEventListener("focus", () => { prog2Source.style.textShadow = shadowColor; });
+prog2srcText.addEventListener("blur", () => { prog2Source.style.textShadow = "none"; });
+prog2Size1.addEventListener("focus", () => { prog2Row1b.style.boxShadow = barSizeShadow; });
+prog2Size1.addEventListener("blur", () => { prog2Row1b.style.boxShadow = "none"; });
+prog2Color1.addEventListener("focus", () => { prog2Row1b.style.boxShadow = barColorShadow; });
+prog2Color1.addEventListener("blur", () => { prog2Row1b.style.boxShadow = "none"; });
+prog2Text1a.addEventListener("focus", () => { prog2Row1a.style.textShadow = shadowColor; });
+prog2Text1a.addEventListener("blur", () => { prog2Row1a.style.textShadow = "none"; });
+prog2Text1.addEventListener("focus", () => { prog2Row1c.style.textShadow = shadowColor; });
+prog2Text1.addEventListener("blur", () => { prog2Row1c.style.textShadow = "none"; });
+prog2Size2.addEventListener("focus", () => { prog2Row2b.style.boxShadow = barSizeShadow; });
+prog2Size2.addEventListener("blur", () => { prog2Row2b.style.boxShadow = "none"; });
+prog2Color2.addEventListener("focus", () => { prog2Row2b.style.boxShadow = barColorShadow; });
+prog2Color2.addEventListener("blur", () => { prog2Row2b.style.boxShadow = "none"; });
+prog2Text2a.addEventListener("focus", () => { prog2Row2a.style.textShadow = shadowColor; });
+prog2Text2a.addEventListener("blur", () => { prog2Row2a.style.textShadow = "none"; });
+prog2Text2.addEventListener("focus", () => { prog2Row2c.style.textShadow = shadowColor; });
+prog2Text2.addEventListener("blur", () => { prog2Row2c.style.textShadow = "none"; });
+prog2Size3.addEventListener("focus", () => { prog2Row3b.style.boxShadow = barSizeShadow; });
+prog2Size3.addEventListener("blur", () => { prog2Row3b.style.boxShadow = "none"; });
+prog2Color3.addEventListener("focus", () => { prog2Row3b.style.boxShadow = barColorShadow; });
+prog2Color3.addEventListener("blur", () => { prog2Row3b.style.boxShadow = "none"; });
+prog2Text3a.addEventListener("focus", () => { prog2Row3a.style.textShadow = shadowColor; });
+prog2Text3a.addEventListener("blur", () => { prog2Row3a.style.textShadow = "none"; });
+prog2Text3.addEventListener("focus", () => { prog2Row3c.style.textShadow = shadowColor; });
+prog2Text3.addEventListener("blur", () => { prog2Row3c.style.textShadow = "none"; });
+prog2Size4.addEventListener("focus", () => { prog2Row4b.style.boxShadow = barSizeShadow; });
+prog2Size4.addEventListener("blur", () => { prog2Row4b.style.boxShadow = "none"; });
+prog2Color4.addEventListener("focus", () => { prog2Row4b.style.boxShadow = barColorShadow; });
+prog2Color4.addEventListener("blur", () => { prog2Row4b.style.boxShadow = "none"; });
+prog2Text4a.addEventListener("focus", () => { prog2Row4a.style.textShadow = shadowColor; });
+prog2Text4a.addEventListener("blur", () => { prog2Row4a.style.textShadow = "none"; });
+prog2Text4.addEventListener("focus", () => { prog2Row4c.style.textShadow = shadowColor; });
+prog2Text4.addEventListener("blur", () => { prog2Row4c.style.textShadow = "none"; });
+prog2Size5.addEventListener("focus", () => { prog2Row5b.style.boxShadow = barSizeShadow; });
+prog2Size5.addEventListener("blur", () => { prog2Row5b.style.boxShadow = "none"; });
+prog2Color5.addEventListener("focus", () => { prog2Row5b.style.boxShadow = barColorShadow; });
+prog2Color5.addEventListener("blur", () => { prog2Row5b.style.boxShadow = "none"; });
+prog2Text5a.addEventListener("focus", () => { prog2Row5a.style.textShadow = shadowColor; });
+prog2Text5a.addEventListener("blur", () => { prog2Row5a.style.textShadow = "none"; });
+prog2Text5.addEventListener("focus", () => { prog2Row5c.style.textShadow = shadowColor; });
+prog2Text5.addEventListener("blur", () => { prog2Row5c.style.textShadow = "none"; });
+
+// Generate Progress Bar Chart II HTML Logic
 const prog2Weight = document.getElementById("prog2Weight");
 const prog2Button = document.getElementById("prog2Button");
 const prog2Output = document.getElementById("prog2Output");
@@ -1222,7 +1318,65 @@ prog3Color5b.oninput = function() {
     prog3Row5b.style.background = 'linear-gradient(90deg, ' + prog3Color5a.value + ', ' + prog3Color5b.value + ')';
 };
 
-// Generate Progress Bar HTML Logic
+// Progess Bar Chart III Focus/Blur Events
+prog3capText.addEventListener("focus", () => { prog3Cap.style.textShadow = shadowColor; });
+prog3capText.addEventListener("blur", () => { prog3Cap.style.textShadow = "none"; });
+prog3subText.addEventListener("focus", () => { prog3Sub.style.textShadow = shadowColor; });
+prog3subText.addEventListener("blur", () => { prog3Sub.style.textShadow = "none"; });
+prog3srcText.addEventListener("focus", () => { prog3Source.style.textShadow = shadowColor; });
+prog3srcText.addEventListener("blur", () => { prog3Source.style.textShadow = "none"; });
+prog3Size1.addEventListener("focus", () => { prog3Row1b.style.boxShadow = barSizeShadow; });
+prog3Size1.addEventListener("blur", () => { prog3Row1b.style.boxShadow = "none"; });
+prog3Color1a.addEventListener("focus", () => { prog3Row1b.style.boxShadow = barColorShadow; });
+prog3Color1a.addEventListener("blur", () => { prog3Row1b.style.boxShadow = "none"; });
+prog3Color1b.addEventListener("focus", () => { prog3Row1b.style.boxShadow = barColorShadow; });
+prog3Color1b.addEventListener("blur", () => { prog3Row1b.style.boxShadow = "none"; });
+prog3Text1a.addEventListener("focus", () => { prog3Row1a.style.textShadow = shadowColor; });
+prog3Text1a.addEventListener("blur", () => { prog3Row1a.style.textShadow = "none"; });
+prog3Text1.addEventListener("focus", () => { prog3Row1c.style.textShadow = shadowColor; });
+prog3Text1.addEventListener("blur", () => { prog3Row1c.style.textShadow = "none"; });
+prog3Size2.addEventListener("focus", () => { prog3Row2b.style.boxShadow = barSizeShadow; });
+prog3Size2.addEventListener("blur", () => { prog3Row2b.style.boxShadow = "none"; });
+prog3Color2a.addEventListener("focus", () => { prog3Row2b.style.boxShadow = barColorShadow; });
+prog3Color2a.addEventListener("blur", () => { prog3Row2b.style.boxShadow = "none"; });
+prog3Color2b.addEventListener("focus", () => { prog3Row2b.style.boxShadow = barColorShadow; });
+prog3Color2b.addEventListener("blur", () => { prog3Row2b.style.boxShadow = "none"; });
+prog3Text2a.addEventListener("focus", () => { prog3Row2a.style.textShadow = shadowColor; });
+prog3Text2a.addEventListener("blur", () => { prog3Row2a.style.textShadow = "none"; });
+prog3Text2.addEventListener("focus", () => { prog3Row2c.style.textShadow = shadowColor; });
+prog3Text2.addEventListener("blur", () => { prog3Row2c.style.textShadow = "none"; });
+prog3Size3.addEventListener("focus", () => { prog3Row3b.style.boxShadow = barSizeShadow; });
+prog3Size3.addEventListener("blur", () => { prog3Row3b.style.boxShadow = "none"; });
+prog3Color3a.addEventListener("focus", () => { prog3Row3b.style.boxShadow = barColorShadow; });
+prog3Color3a.addEventListener("blur", () => { prog3Row3b.style.boxShadow = "none"; });
+prog3Color3b.addEventListener("focus", () => { prog3Row3b.style.boxShadow = barColorShadow; });
+prog3Color3b.addEventListener("blur", () => { prog3Row3b.style.boxShadow = "none"; });
+prog3Text3a.addEventListener("focus", () => { prog3Row3a.style.textShadow = shadowColor; });
+prog3Text3a.addEventListener("blur", () => { prog3Row3a.style.textShadow = "none"; });
+prog3Text3.addEventListener("focus", () => { prog3Row3c.style.textShadow = shadowColor; });
+prog3Text3.addEventListener("blur", () => { prog3Row3c.style.textShadow = "none"; });
+prog3Size4.addEventListener("focus", () => { prog3Row4b.style.boxShadow = barSizeShadow; });
+prog3Size4.addEventListener("blur", () => { prog3Row4b.style.boxShadow = "none"; });
+prog3Color4a.addEventListener("focus", () => { prog3Row4b.style.boxShadow = barColorShadow; });
+prog3Color4a.addEventListener("blur", () => { prog3Row4b.style.boxShadow = "none"; });
+prog3Color4b.addEventListener("focus", () => { prog3Row4b.style.boxShadow = barColorShadow; });
+prog3Color4b.addEventListener("blur", () => { prog3Row4b.style.boxShadow = "none"; });
+prog3Text4a.addEventListener("focus", () => { prog3Row4a.style.textShadow = shadowColor; });
+prog3Text4a.addEventListener("blur", () => { prog3Row4a.style.textShadow = "none"; });
+prog3Text4.addEventListener("focus", () => { prog3Row4c.style.textShadow = shadowColor; });
+prog3Text4.addEventListener("blur", () => { prog3Row4c.style.textShadow = "none"; });
+prog3Size5.addEventListener("focus", () => { prog3Row5b.style.boxShadow = barSizeShadow; });
+prog3Size5.addEventListener("blur", () => { prog3Row5b.style.boxShadow = "none"; });
+prog3Color5a.addEventListener("focus", () => { prog3Row5b.style.boxShadow = barColorShadow; });
+prog3Color5a.addEventListener("blur", () => { prog3Row5b.style.boxShadow = "none"; });
+prog3Color5b.addEventListener("focus", () => { prog3Row5b.style.boxShadow = barColorShadow; });
+prog3Color5b.addEventListener("blur", () => { prog3Row5b.style.boxShadow = "none"; });
+prog3Text5a.addEventListener("focus", () => { prog3Row5a.style.textShadow = shadowColor; });
+prog3Text5a.addEventListener("blur", () => { prog3Row5a.style.textShadow = "none"; });
+prog3Text5.addEventListener("focus", () => { prog3Row5c.style.textShadow = shadowColor; });
+prog3Text5.addEventListener("blur", () => { prog3Row5c.style.textShadow = "none"; });
+
+// Generate Progress Bar Chart III HTML Logic
 const prog3Weight = document.getElementById("prog3Weight");
 const prog3Button = document.getElementById("prog3Button");
 const prog3Output = document.getElementById("prog3Output");
@@ -1726,7 +1880,65 @@ prog4Color5b.oninput = function() {
     prog4Row5b.style.background = 'linear-gradient(90deg, ' + prog4Color5a.value + ', ' + prog4Color5b.value + ')';
 };
 
-// Generate Progress Bar HTML Logic
+// Progess Bar Chart IV Focus/Blur Events
+prog4capText.addEventListener("focus", () => { prog4Cap.style.textShadow = shadowColor; });
+prog4capText.addEventListener("blur", () => { prog4Cap.style.textShadow = "none"; });
+prog4subText.addEventListener("focus", () => { prog4Sub.style.textShadow = shadowColor; });
+prog4subText.addEventListener("blur", () => { prog4Sub.style.textShadow = "none"; });
+prog4srcText.addEventListener("focus", () => { prog4Source.style.textShadow = shadowColor; });
+prog4srcText.addEventListener("blur", () => { prog4Source.style.textShadow = "none"; });
+prog4Size1.addEventListener("focus", () => { prog4Row1b.style.boxShadow = barSizeShadow; });
+prog4Size1.addEventListener("blur", () => { prog4Row1b.style.boxShadow = "none"; });
+prog4Color1a.addEventListener("focus", () => { prog4Row1b.style.boxShadow = barColorShadow; });
+prog4Color1a.addEventListener("blur", () => { prog4Row1b.style.boxShadow = "none"; });
+prog4Color1b.addEventListener("focus", () => { prog4Row1b.style.boxShadow = barColorShadow; });
+prog4Color1b.addEventListener("blur", () => { prog4Row1b.style.boxShadow = "none"; });
+prog4Text1a.addEventListener("focus", () => { prog4Row1a.style.textShadow = shadowColor; });
+prog4Text1a.addEventListener("blur", () => { prog4Row1a.style.textShadow = "none"; });
+prog4Text1.addEventListener("focus", () => { prog4Row1c.style.textShadow = shadowColor; });
+prog4Text1.addEventListener("blur", () => { prog4Row1c.style.textShadow = "none"; });
+prog4Size2.addEventListener("focus", () => { prog4Row2b.style.boxShadow = barSizeShadow; });
+prog4Size2.addEventListener("blur", () => { prog4Row2b.style.boxShadow = "none"; });
+prog4Color2a.addEventListener("focus", () => { prog4Row2b.style.boxShadow = barColorShadow; });
+prog4Color2a.addEventListener("blur", () => { prog4Row2b.style.boxShadow = "none"; });
+prog4Color2b.addEventListener("focus", () => { prog4Row2b.style.boxShadow = barColorShadow; });
+prog4Color2b.addEventListener("blur", () => { prog4Row2b.style.boxShadow = "none"; });
+prog4Text2a.addEventListener("focus", () => { prog4Row2a.style.textShadow = shadowColor; });
+prog4Text2a.addEventListener("blur", () => { prog4Row2a.style.textShadow = "none"; });
+prog4Text2.addEventListener("focus", () => { prog4Row2c.style.textShadow = shadowColor; });
+prog4Text2.addEventListener("blur", () => { prog4Row2c.style.textShadow = "none"; });
+prog4Size3.addEventListener("focus", () => { prog4Row3b.style.boxShadow = barSizeShadow; });
+prog4Size3.addEventListener("blur", () => { prog4Row3b.style.boxShadow = "none"; });
+prog4Color3a.addEventListener("focus", () => { prog4Row3b.style.boxShadow = barColorShadow; });
+prog4Color3a.addEventListener("blur", () => { prog4Row3b.style.boxShadow = "none"; });
+prog4Color3b.addEventListener("focus", () => { prog4Row3b.style.boxShadow = barColorShadow; });
+prog4Color3b.addEventListener("blur", () => { prog4Row3b.style.boxShadow = "none"; });
+prog4Text3a.addEventListener("focus", () => { prog4Row3a.style.textShadow = shadowColor; });
+prog4Text3a.addEventListener("blur", () => { prog4Row3a.style.textShadow = "none"; });
+prog4Text3.addEventListener("focus", () => { prog4Row3c.style.textShadow = shadowColor; });
+prog4Text3.addEventListener("blur", () => { prog4Row3c.style.textShadow = "none"; });
+prog4Size4.addEventListener("focus", () => { prog4Row4b.style.boxShadow = barSizeShadow; });
+prog4Size4.addEventListener("blur", () => { prog4Row4b.style.boxShadow = "none"; });
+prog4Color4a.addEventListener("focus", () => { prog4Row4b.style.boxShadow = barColorShadow; });
+prog4Color4a.addEventListener("blur", () => { prog4Row4b.style.boxShadow = "none"; });
+prog4Color4b.addEventListener("focus", () => { prog4Row4b.style.boxShadow = barColorShadow; });
+prog4Color4b.addEventListener("blur", () => { prog4Row4b.style.boxShadow = "none"; });
+prog4Text4a.addEventListener("focus", () => { prog4Row4a.style.textShadow = shadowColor; });
+prog4Text4a.addEventListener("blur", () => { prog4Row4a.style.textShadow = "none"; });
+prog4Text4.addEventListener("focus", () => { prog4Row4c.style.textShadow = shadowColor; });
+prog4Text4.addEventListener("blur", () => { prog4Row4c.style.textShadow = "none"; });
+prog4Size5.addEventListener("focus", () => { prog4Row5b.style.boxShadow = barSizeShadow; });
+prog4Size5.addEventListener("blur", () => { prog4Row5b.style.boxShadow = "none"; });
+prog4Color5a.addEventListener("focus", () => { prog4Row5b.style.boxShadow = barColorShadow; });
+prog4Color5a.addEventListener("blur", () => { prog4Row5b.style.boxShadow = "none"; });
+prog4Color5b.addEventListener("focus", () => { prog4Row5b.style.boxShadow = barColorShadow; });
+prog4Color5b.addEventListener("blur", () => { prog4Row5b.style.boxShadow = "none"; });
+prog4Text5a.addEventListener("focus", () => { prog4Row5a.style.textShadow = shadowColor; });
+prog4Text5a.addEventListener("blur", () => { prog4Row5a.style.textShadow = "none"; });
+prog4Text5.addEventListener("focus", () => { prog4Row5c.style.textShadow = shadowColor; });
+prog4Text5.addEventListener("blur", () => { prog4Row5c.style.textShadow = "none"; });
+
+// Generate Progress Bar Chart IV HTML Logic
 const prog4Weight = document.getElementById("prog4Weight");
 const prog4Button = document.getElementById("prog4Button");
 const prog4Output = document.getElementById("prog4Output");
