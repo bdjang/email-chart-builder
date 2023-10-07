@@ -883,6 +883,22 @@ stacked1inputArray[9].addEventListener("input", () => {
     }
 });
 
+// Stacked Chart I Focus/Blur Events
+stacked1capText.addEventListener("focus", () => { stacked1Cap.style.textShadow = shadowColor; });
+stacked1capText.addEventListener("blur", () => { stacked1Cap.style.textShadow = "none"; });
+stacked1subText.addEventListener("focus", () => { stacked1Sub.style.textShadow = shadowColor; });
+stacked1subText.addEventListener("blur", () => { stacked1Sub.style.textShadow = "none"; });
+stacked1srcText.addEventListener("focus", () => { stacked1Source.style.textShadow = shadowColor; });
+stacked1srcText.addEventListener("blur", () => { stacked1Source.style.textShadow = "none"; });
+legend1Text1x.addEventListener("focus", () => { legend1Text1.style.textShadow = shadowColor; });
+legend1Text1x.addEventListener("blur", () => { legend1Text1.style.textShadow = "none"; });
+legend1Color1x.addEventListener("focus", () => { legend1Color1.style.boxShadow = barColorShadow; });
+legend1Color1x.addEventListener("blur", () => { legend1Color1.style.boxShadow = "none"; });
+legend1Text2x.addEventListener("focus", () => { legend1Text2.style.textShadow = shadowColor; });
+legend1Text2x.addEventListener("blur", () => { legend1Text2.style.textShadow = "none"; });
+legend1Color2x.addEventListener("focus", () => { legend1Color2.style.boxShadow = barColorShadow; });
+legend1Color2x.addEventListener("blur", () => { legend1Color2.style.boxShadow = "none"; });
+
 // Generate Stacked Chart I HTML Chart Logic
 const stacked1Weight = document.getElementById("stacked1Weight");
 const stacked1Button = document.getElementById("stacked1Button");
@@ -1732,6 +1748,22 @@ stacked2inputArray[9].addEventListener("input", () => {
         }
     }
 });
+
+// Stacked Chart II Focus/Blur Events
+stacked2capText.addEventListener("focus", () => { stacked2Cap.style.textShadow = shadowColor; });
+stacked2capText.addEventListener("blur", () => { stacked2Cap.style.textShadow = "none"; });
+stacked2subText.addEventListener("focus", () => { stacked2Sub.style.textShadow = shadowColor; });
+stacked2subText.addEventListener("blur", () => { stacked2Sub.style.textShadow = "none"; });
+stacked2srcText.addEventListener("focus", () => { stacked2Source.style.textShadow = shadowColor; });
+stacked2srcText.addEventListener("blur", () => { stacked2Source.style.textShadow = "none"; });
+legend2Text1x.addEventListener("focus", () => { legend2Text1.style.textShadow = shadowColor; });
+legend2Text1x.addEventListener("blur", () => { legend2Text1.style.textShadow = "none"; });
+legend2Color1x.addEventListener("focus", () => { legend2Color1.style.boxShadow = barColorShadow; });
+legend2Color1x.addEventListener("blur", () => { legend2Color1.style.boxShadow = "none"; });
+legend2Text2x.addEventListener("focus", () => { legend2Text2.style.textShadow = shadowColor; });
+legend2Text2x.addEventListener("blur", () => { legend2Text2.style.textShadow = "none"; });
+legend2Color2x.addEventListener("focus", () => { legend2Color2.style.boxShadow = barColorShadow; });
+legend2Color2x.addEventListener("blur", () => { legend2Color2.style.boxShadow = "none"; });
 
 // Generate Stacked Chart II HTML Chart Logic
 const stacked2Weight = document.getElementById("stacked2Weight");
@@ -2846,6 +2878,26 @@ stacked3inputArray[9].addEventListener("input", () => {
     }
 });
 
+// Stacked Chart III Focus/Blur Events
+stacked3capText.addEventListener("focus", () => { stacked3Cap.style.textShadow = shadowColor; });
+stacked3capText.addEventListener("blur", () => { stacked3Cap.style.textShadow = "none"; });
+stacked3subText.addEventListener("focus", () => { stacked3Sub.style.textShadow = shadowColor; });
+stacked3subText.addEventListener("blur", () => { stacked3Sub.style.textShadow = "none"; });
+stacked3srcText.addEventListener("focus", () => { stacked3Source.style.textShadow = shadowColor; });
+stacked3srcText.addEventListener("blur", () => { stacked3Source.style.textShadow = "none"; });
+legend3Text1x.addEventListener("focus", () => { legend3Text1.style.textShadow = shadowColor; });
+legend3Text1x.addEventListener("blur", () => { legend3Text1.style.textShadow = "none"; });
+legend3Color1x.addEventListener("focus", () => { legend3Color1.style.boxShadow = barColorShadow; });
+legend3Color1x.addEventListener("blur", () => { legend3Color1.style.boxShadow = "none"; });
+legend3Text2x.addEventListener("focus", () => { legend3Text2.style.textShadow = shadowColor; });
+legend3Text2x.addEventListener("blur", () => { legend3Text2.style.textShadow = "none"; });
+legend3Color2x.addEventListener("focus", () => { legend3Color2.style.boxShadow = barColorShadow; });
+legend3Color2x.addEventListener("blur", () => { legend3Color2.style.boxShadow = "none"; });
+legend3Text3x.addEventListener("focus", () => { legend3Text3.style.textShadow = shadowColor; });
+legend3Text3x.addEventListener("blur", () => { legend3Text3.style.textShadow = "none"; });
+legend3Color3x.addEventListener("focus", () => { legend3Color3.style.boxShadow = barColorShadow; });
+legend3Color3x.addEventListener("blur", () => { legend3Color3.style.boxShadow = "none"; });
+
 // Generate Stacked Chart III HTML Chart Logic
 const stacked3Weight = document.getElementById("stacked3Weight");
 const stacked3Button = document.getElementById("stacked3Button");
@@ -3956,6 +4008,26 @@ stacked4inputArray[9].addEventListener("input", () => {
         }
     }
 });
+
+// Stacked Chart IV Focus/Blur Events
+stacked4capText.addEventListener("focus", () => { stacked4Cap.style.textShadow = shadowColor; });
+stacked4capText.addEventListener("blur", () => { stacked4Cap.style.textShadow = "none"; });
+stacked4subText.addEventListener("focus", () => { stacked4Sub.style.textShadow = shadowColor; });
+stacked4subText.addEventListener("blur", () => { stacked4Sub.style.textShadow = "none"; });
+stacked4srcText.addEventListener("focus", () => { stacked4Source.style.textShadow = shadowColor; });
+stacked4srcText.addEventListener("blur", () => { stacked4Source.style.textShadow = "none"; });
+legend5Text1x.addEventListener("focus", () => { legend5Text1.style.textShadow = shadowColor; });
+legend5Text1x.addEventListener("blur", () => { legend5Text1.style.textShadow = "none"; });
+legend5Color1x.addEventListener("focus", () => { legend5Color1.style.boxShadow = barColorShadow; });
+legend5Color1x.addEventListener("blur", () => { legend5Color1.style.boxShadow = "none"; });
+legend5Text2x.addEventListener("focus", () => { legend5Text2.style.textShadow = shadowColor; });
+legend5Text2x.addEventListener("blur", () => { legend5Text2.style.textShadow = "none"; });
+legend5Color2x.addEventListener("focus", () => { legend5Color2.style.boxShadow = barColorShadow; });
+legend5Color2x.addEventListener("blur", () => { legend5Color2.style.boxShadow = "none"; });
+legend5Text3x.addEventListener("focus", () => { legend5Text3.style.textShadow = shadowColor; });
+legend5Text3x.addEventListener("blur", () => { legend5Text3.style.textShadow = "none"; });
+legend5Color3x.addEventListener("focus", () => { legend5Color3.style.boxShadow = barColorShadow; });
+legend5Color3x.addEventListener("blur", () => { legend5Color3.style.boxShadow = "none"; });
 
 // Generate Stacked Chart IV HTML Chart Logic
 const stacked4Weight = document.getElementById("stacked4Weight");
