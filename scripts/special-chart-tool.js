@@ -649,6 +649,94 @@ negative1inputArray[9].addEventListener("input", () => {
     }
 });
 
+// Negative Chart I Focus/Blur Events
+negative1capText.addEventListener("focus", () => { negative1Cap.style.textShadow = shadowColor; });
+negative1capText.addEventListener("blur", () => { negative1Cap.style.textShadow = "none"; });
+negative1subText.addEventListener("focus", () => { negative1Sub.style.textShadow = shadowColor; });
+negative1subText.addEventListener("blur", () => { negative1Sub.style.textShadow = "none"; });
+negative1srcText.addEventListener("focus", () => { negative1Source.style.textShadow = shadowColor; });
+negative1srcText.addEventListener("blur", () => { negative1Source.style.textShadow = "none"; });
+negative1Size1.addEventListener("focus", () => { negative1Row1c.style.boxShadow = barSizeShadow; });
+negative1Size1.addEventListener("blur", () => { negative1Row1c.style.boxShadow = "none"; });
+negative1Color1.addEventListener("focus", () => { negative1Row1c.style.boxShadow = barColorShadow; });
+negative1Color1.addEventListener("blur", () => { negative1Row1c.style.boxShadow = "none"; });
+negative1Text1a.addEventListener("focus", () => { negative1Row1a.style.textShadow = shadowColor; });
+negative1Text1a.addEventListener("blur", () => { negative1Row1a.style.textShadow = "none"; });
+negative1Text1b.addEventListener("focus", () => { negative1Row1c.style.textShadow = shadowColor; });
+negative1Text1b.addEventListener("blur", () => { negative1Row1c.style.textShadow = "none"; });
+negative1Size2.addEventListener("focus", () => { negative1Row2c.style.boxShadow = barSizeShadow; });
+negative1Size2.addEventListener("blur", () => { negative1Row2c.style.boxShadow = "none"; });
+negative1Color2.addEventListener("focus", () => { negative1Row2c.style.boxShadow = barColorShadow; });
+negative1Color2.addEventListener("blur", () => { negative1Row2c.style.boxShadow = "none"; });
+negative1Text2a.addEventListener("focus", () => { negative1Row2a.style.textShadow = shadowColor; });
+negative1Text2a.addEventListener("blur", () => { negative1Row2a.style.textShadow = "none"; });
+negative1Text2b.addEventListener("focus", () => { negative1Row2c.style.textShadow = shadowColor; });
+negative1Text2b.addEventListener("blur", () => { negative1Row2c.style.textShadow = "none"; });
+negative1Size3.addEventListener("focus", () => { negative1Row3c.style.boxShadow = barSizeShadow; });
+negative1Size3.addEventListener("blur", () => { negative1Row3c.style.boxShadow = "none"; });
+negative1Color3.addEventListener("focus", () => { negative1Row3c.style.boxShadow = barColorShadow; });
+negative1Color3.addEventListener("blur", () => { negative1Row3c.style.boxShadow = "none"; });
+negative1Text3a.addEventListener("focus", () => { negative1Row3a.style.textShadow = shadowColor; });
+negative1Text3a.addEventListener("blur", () => { negative1Row3a.style.textShadow = "none"; });
+negative1Text3b.addEventListener("focus", () => { negative1Row3c.style.textShadow = shadowColor; });
+negative1Text3b.addEventListener("blur", () => { negative1Row3c.style.textShadow = "none"; });
+negative1Size4.addEventListener("focus", () => { negative1Row4c.style.boxShadow = barSizeShadow; });
+negative1Size4.addEventListener("blur", () => { negative1Row4c.style.boxShadow = "none"; });
+negative1Color4.addEventListener("focus", () => { negative1Row4c.style.boxShadow = barColorShadow; });
+negative1Color4.addEventListener("blur", () => { negative1Row4c.style.boxShadow = "none"; });
+negative1Text4a.addEventListener("focus", () => { negative1Row4a.style.textShadow = shadowColor; });
+negative1Text4a.addEventListener("blur", () => { negative1Row4a.style.textShadow = "none"; });
+negative1Text4b.addEventListener("focus", () => { negative1Row4c.style.textShadow = shadowColor; });
+negative1Text4b.addEventListener("blur", () => { negative1Row4c.style.textShadow = "none"; });
+negative1Size5.addEventListener("focus", () => { negative1Row5c.style.boxShadow = barSizeShadow; });
+negative1Size5.addEventListener("blur", () => { negative1Row5c.style.boxShadow = "none"; });
+negative1Color5.addEventListener("focus", () => { negative1Row5c.style.boxShadow = barColorShadow; });
+negative1Color5.addEventListener("blur", () => { negative1Row5c.style.boxShadow = "none"; });
+negative1Text5a.addEventListener("focus", () => { negative1Row5a.style.textShadow = shadowColor; });
+negative1Text5a.addEventListener("blur", () => { negative1Row5a.style.textShadow = "none"; });
+negative1Text5b.addEventListener("focus", () => { negative1Row5c.style.textShadow = shadowColor; });
+negative1Text5b.addEventListener("blur", () => { negative1Row5c.style.textShadow = "none"; });
+negative1Size6.addEventListener("focus", () => { negative1Row6c.style.boxShadow = barSizeShadow; });
+negative1Size6.addEventListener("blur", () => { negative1Row6c.style.boxShadow = "none"; });
+negative1Color6.addEventListener("focus", () => { negative1Row6c.style.boxShadow = barColorShadow; });
+negative1Color6.addEventListener("blur", () => { negative1Row6c.style.boxShadow = "none"; });
+negative1Text6a.addEventListener("focus", () => { negative1Row6a.style.textShadow = shadowColor; });
+negative1Text6a.addEventListener("blur", () => { negative1Row6a.style.textShadow = "none"; });
+negative1Text6b.addEventListener("focus", () => { negative1Row6c.style.textShadow = shadowColor; });
+negative1Text6b.addEventListener("blur", () => { negative1Row6c.style.textShadow = "none"; });
+negative1Size7.addEventListener("focus", () => { negative1Row7c.style.boxShadow = barSizeShadow; });
+negative1Size7.addEventListener("blur", () => { negative1Row7c.style.boxShadow = "none"; });
+negative1Color7.addEventListener("focus", () => { negative1Row7c.style.boxShadow = barColorShadow; });
+negative1Color7.addEventListener("blur", () => { negative1Row7c.style.boxShadow = "none"; });
+negative1Text7a.addEventListener("focus", () => { negative1Row7a.style.textShadow = shadowColor; });
+negative1Text7a.addEventListener("blur", () => { negative1Row7a.style.textShadow = "none"; });
+negative1Text7b.addEventListener("focus", () => { negative1Row7c.style.textShadow = shadowColor; });
+negative1Text7b.addEventListener("blur", () => { negative1Row7c.style.textShadow = "none"; });
+negative1Size8.addEventListener("focus", () => { negative1Row8c.style.boxShadow = barSizeShadow; });
+negative1Size8.addEventListener("blur", () => { negative1Row8c.style.boxShadow = "none"; });
+negative1Color8.addEventListener("focus", () => { negative1Row8c.style.boxShadow = barColorShadow; });
+negative1Color8.addEventListener("blur", () => { negative1Row8c.style.boxShadow = "none"; });
+negative1Text8a.addEventListener("focus", () => { negative1Row8a.style.textShadow = shadowColor; });
+negative1Text8a.addEventListener("blur", () => { negative1Row8a.style.textShadow = "none"; });
+negative1Text8b.addEventListener("focus", () => { negative1Row8c.style.textShadow = shadowColor; });
+negative1Text8b.addEventListener("blur", () => { negative1Row8c.style.textShadow = "none"; });
+negative1Size9.addEventListener("focus", () => { negative1Row9c.style.boxShadow = barSizeShadow; });
+negative1Size9.addEventListener("blur", () => { negative1Row9c.style.boxShadow = "none"; });
+negative1Color9.addEventListener("focus", () => { negative1Row9c.style.boxShadow = barColorShadow; });
+negative1Color9.addEventListener("blur", () => { negative1Row9c.style.boxShadow = "none"; });
+negative1Text9a.addEventListener("focus", () => { negative1Row9a.style.textShadow = shadowColor; });
+negative1Text9a.addEventListener("blur", () => { negative1Row9a.style.textShadow = "none"; });
+negative1Text9b.addEventListener("focus", () => { negative1Row9c.style.textShadow = shadowColor; });
+negative1Text9b.addEventListener("blur", () => { negative1Row9c.style.textShadow = "none"; });
+negative1Size10.addEventListener("focus", () => { negative1Row10c.style.boxShadow = barSizeShadow; });
+negative1Size10.addEventListener("blur", () => { negative1Row10c.style.boxShadow = "none"; });
+negative1Color10.addEventListener("focus", () => { negative1Row10c.style.boxShadow = barColorShadow; });
+negative1Color10.addEventListener("blur", () => { negative1Row10c.style.boxShadow = "none"; });
+negative1Text10a.addEventListener("focus", () => { negative1Row10a.style.textShadow = shadowColor; });
+negative1Text10a.addEventListener("blur", () => { negative1Row10a.style.textShadow = "none"; });
+negative1Text10b.addEventListener("focus", () => { negative1Row10c.style.textShadow = shadowColor; });
+negative1Text10b.addEventListener("blur", () => { negative1Row10c.style.textShadow = "none"; });
+
 // Generate Negative I HTML Chart Logic
 const negative1Weight = document.getElementById("negative1Weight");
 const negative1Button = document.getElementById("negative1Button");
@@ -1357,6 +1445,94 @@ negative2inputArray[9].addEventListener("input", () => {
         }
     }
 });
+
+// Negative Chart II Focus/Blur Events
+negative2capText.addEventListener("focus", () => { negative2Cap.style.textShadow = shadowColor; });
+negative2capText.addEventListener("blur", () => { negative2Cap.style.textShadow = "none"; });
+negative2subText.addEventListener("focus", () => { negative2Sub.style.textShadow = shadowColor; });
+negative2subText.addEventListener("blur", () => { negative2Sub.style.textShadow = "none"; });
+negative2srcText.addEventListener("focus", () => { negative2Source.style.textShadow = shadowColor; });
+negative2srcText.addEventListener("blur", () => { negative2Source.style.textShadow = "none"; });
+negative2Size1.addEventListener("focus", () => { negative2Row1c.style.boxShadow = barSizeShadow; });
+negative2Size1.addEventListener("blur", () => { negative2Row1c.style.boxShadow = "none"; });
+negative2Color1.addEventListener("focus", () => { negative2Row1c.style.boxShadow = barColorShadow; });
+negative2Color1.addEventListener("blur", () => { negative2Row1c.style.boxShadow = "none"; });
+negative2Text1a.addEventListener("focus", () => { negative2Row1a.style.textShadow = shadowColor; });
+negative2Text1a.addEventListener("blur", () => { negative2Row1a.style.textShadow = "none"; });
+negative2Text1b.addEventListener("focus", () => { negative2Row1c.style.textShadow = shadowColor; });
+negative2Text1b.addEventListener("blur", () => { negative2Row1c.style.textShadow = "none"; });
+negative2Size2.addEventListener("focus", () => { negative2Row2c.style.boxShadow = barSizeShadow; });
+negative2Size2.addEventListener("blur", () => { negative2Row2c.style.boxShadow = "none"; });
+negative2Color2.addEventListener("focus", () => { negative2Row2c.style.boxShadow = barColorShadow; });
+negative2Color2.addEventListener("blur", () => { negative2Row2c.style.boxShadow = "none"; });
+negative2Text2a.addEventListener("focus", () => { negative2Row2a.style.textShadow = shadowColor; });
+negative2Text2a.addEventListener("blur", () => { negative2Row2a.style.textShadow = "none"; });
+negative2Text2b.addEventListener("focus", () => { negative2Row2c.style.textShadow = shadowColor; });
+negative2Text2b.addEventListener("blur", () => { negative2Row2c.style.textShadow = "none"; });
+negative2Size3.addEventListener("focus", () => { negative2Row3c.style.boxShadow = barSizeShadow; });
+negative2Size3.addEventListener("blur", () => { negative2Row3c.style.boxShadow = "none"; });
+negative2Color3.addEventListener("focus", () => { negative2Row3c.style.boxShadow = barColorShadow; });
+negative2Color3.addEventListener("blur", () => { negative2Row3c.style.boxShadow = "none"; });
+negative2Text3a.addEventListener("focus", () => { negative2Row3a.style.textShadow = shadowColor; });
+negative2Text3a.addEventListener("blur", () => { negative2Row3a.style.textShadow = "none"; });
+negative2Text3b.addEventListener("focus", () => { negative2Row3c.style.textShadow = shadowColor; });
+negative2Text3b.addEventListener("blur", () => { negative2Row3c.style.textShadow = "none"; });
+negative2Size4.addEventListener("focus", () => { negative2Row4c.style.boxShadow = barSizeShadow; });
+negative2Size4.addEventListener("blur", () => { negative2Row4c.style.boxShadow = "none"; });
+negative2Color4.addEventListener("focus", () => { negative2Row4c.style.boxShadow = barColorShadow; });
+negative2Color4.addEventListener("blur", () => { negative2Row4c.style.boxShadow = "none"; });
+negative2Text4a.addEventListener("focus", () => { negative2Row4a.style.textShadow = shadowColor; });
+negative2Text4a.addEventListener("blur", () => { negative2Row4a.style.textShadow = "none"; });
+negative2Text4b.addEventListener("focus", () => { negative2Row4c.style.textShadow = shadowColor; });
+negative2Text4b.addEventListener("blur", () => { negative2Row4c.style.textShadow = "none"; });
+negative2Size5.addEventListener("focus", () => { negative2Row5c.style.boxShadow = barSizeShadow; });
+negative2Size5.addEventListener("blur", () => { negative2Row5c.style.boxShadow = "none"; });
+negative2Color5.addEventListener("focus", () => { negative2Row5c.style.boxShadow = barColorShadow; });
+negative2Color5.addEventListener("blur", () => { negative2Row5c.style.boxShadow = "none"; });
+negative2Text5a.addEventListener("focus", () => { negative2Row5a.style.textShadow = shadowColor; });
+negative2Text5a.addEventListener("blur", () => { negative2Row5a.style.textShadow = "none"; });
+negative2Text5b.addEventListener("focus", () => { negative2Row5c.style.textShadow = shadowColor; });
+negative2Text5b.addEventListener("blur", () => { negative2Row5c.style.textShadow = "none"; });
+negative2Size6.addEventListener("focus", () => { negative2Row6c.style.boxShadow = barSizeShadow; });
+negative2Size6.addEventListener("blur", () => { negative2Row6c.style.boxShadow = "none"; });
+negative2Color6.addEventListener("focus", () => { negative2Row6c.style.boxShadow = barColorShadow; });
+negative2Color6.addEventListener("blur", () => { negative2Row6c.style.boxShadow = "none"; });
+negative2Text6a.addEventListener("focus", () => { negative2Row6a.style.textShadow = shadowColor; });
+negative2Text6a.addEventListener("blur", () => { negative2Row6a.style.textShadow = "none"; });
+negative2Text6b.addEventListener("focus", () => { negative2Row6c.style.textShadow = shadowColor; });
+negative2Text6b.addEventListener("blur", () => { negative2Row6c.style.textShadow = "none"; });
+negative2Size7.addEventListener("focus", () => { negative2Row7c.style.boxShadow = barSizeShadow; });
+negative2Size7.addEventListener("blur", () => { negative2Row7c.style.boxShadow = "none"; });
+negative2Color7.addEventListener("focus", () => { negative2Row7c.style.boxShadow = barColorShadow; });
+negative2Color7.addEventListener("blur", () => { negative2Row7c.style.boxShadow = "none"; });
+negative2Text7a.addEventListener("focus", () => { negative2Row7a.style.textShadow = shadowColor; });
+negative2Text7a.addEventListener("blur", () => { negative2Row7a.style.textShadow = "none"; });
+negative2Text7b.addEventListener("focus", () => { negative2Row7c.style.textShadow = shadowColor; });
+negative2Text7b.addEventListener("blur", () => { negative2Row7c.style.textShadow = "none"; });
+negative2Size8.addEventListener("focus", () => { negative2Row8c.style.boxShadow = barSizeShadow; });
+negative2Size8.addEventListener("blur", () => { negative2Row8c.style.boxShadow = "none"; });
+negative2Color8.addEventListener("focus", () => { negative2Row8c.style.boxShadow = barColorShadow; });
+negative2Color8.addEventListener("blur", () => { negative2Row8c.style.boxShadow = "none"; });
+negative2Text8a.addEventListener("focus", () => { negative2Row8a.style.textShadow = shadowColor; });
+negative2Text8a.addEventListener("blur", () => { negative2Row8a.style.textShadow = "none"; });
+negative2Text8b.addEventListener("focus", () => { negative2Row8c.style.textShadow = shadowColor; });
+negative2Text8b.addEventListener("blur", () => { negative2Row8c.style.textShadow = "none"; });
+negative2Size9.addEventListener("focus", () => { negative2Row9c.style.boxShadow = barSizeShadow; });
+negative2Size9.addEventListener("blur", () => { negative2Row9c.style.boxShadow = "none"; });
+negative2Color9.addEventListener("focus", () => { negative2Row9c.style.boxShadow = barColorShadow; });
+negative2Color9.addEventListener("blur", () => { negative2Row9c.style.boxShadow = "none"; });
+negative2Text9a.addEventListener("focus", () => { negative2Row9a.style.textShadow = shadowColor; });
+negative2Text9a.addEventListener("blur", () => { negative2Row9a.style.textShadow = "none"; });
+negative2Text9b.addEventListener("focus", () => { negative2Row9c.style.textShadow = shadowColor; });
+negative2Text9b.addEventListener("blur", () => { negative2Row9c.style.textShadow = "none"; });
+negative2Size10.addEventListener("focus", () => { negative2Row10c.style.boxShadow = barSizeShadow; });
+negative2Size10.addEventListener("blur", () => { negative2Row10c.style.boxShadow = "none"; });
+negative2Color10.addEventListener("focus", () => { negative2Row10c.style.boxShadow = barColorShadow; });
+negative2Color10.addEventListener("blur", () => { negative2Row10c.style.boxShadow = "none"; });
+negative2Text10a.addEventListener("focus", () => { negative2Row10a.style.textShadow = shadowColor; });
+negative2Text10a.addEventListener("blur", () => { negative2Row10a.style.textShadow = "none"; });
+negative2Text10b.addEventListener("focus", () => { negative2Row10c.style.textShadow = shadowColor; });
+negative2Text10b.addEventListener("blur", () => { negative2Row10c.style.textShadow = "none"; });
 
 // Generate Negative HTML Chart Logic
 const negative2Weight = document.getElementById("negative2Weight");
@@ -2162,6 +2338,14 @@ rowColor10b.oninput = function() {
     row10c.style.backgroundColor = rowColor10b.value;
 };
 
+// Split Chart Focus/Blur Events
+splitcapText.addEventListener("focus", () => { splitCap.style.textShadow = shadowColor; });
+splitcapText.addEventListener("blur", () => { splitCap.style.textShadow = "none"; });
+splitsubText.addEventListener("focus", () => { splitSub.style.textShadow = shadowColor; });
+splitsubText.addEventListener("blur", () => { splitSub.style.textShadow = "none"; });
+splitsrcText.addEventListener("focus", () => { splitSource.style.textShadow = shadowColor; });
+splitsrcText.addEventListener("blur", () => { splitSource.style.textShadow = "none"; });
+
 // Generate Split HTML Chart Logic
 const splitWeight = document.getElementById("splitWeight");
 const splitButton = document.getElementById("splitButton");
@@ -2838,106 +3022,6 @@ combo1Color6b.oninput = function() {
     combo1Row6y.style.backgroundColor = combo1Color6b.value;
 };
 
-// Horizontal Chart I Focus/Blur Events
-combo1capText.addEventListener("focus", () => { combo1Cap.style.textShadow = shadowColor; });
-combo1capText.addEventListener("blur", () => { combo1Cap.style.textShadow = "none"; });
-combo1subText.addEventListener("focus", () => { combo1Sub.style.textShadow = shadowColor; });
-combo1subText.addEventListener("blur", () => { combo1Sub.style.textShadow = "none"; });
-combo1srcText.addEventListener("focus", () => { combo1Source.style.textShadow = shadowColor; });
-combo1srcText.addEventListener("blur", () => { combo1Source.style.textShadow = "none"; });
-legend4Text1x.addEventListener("focus", () => { legend4Text1.style.textShadow = shadowColor; });
-legend4Text1x.addEventListener("blur", () => { legend4Text1.style.textShadow = "none"; });
-legend4Color1x.addEventListener("focus", () => { legend4Color1.style.boxShadow = barColorShadow; });
-legend4Color1x.addEventListener("blur", () => { legend4Color1.style.boxShadow = "none"; });
-legend4Text2x.addEventListener("focus", () => { legend4Text2.style.textShadow = shadowColor; });
-legend4Text2x.addEventListener("blur", () => { legend4Text2.style.textShadow = "none"; });
-legend4Color2x.addEventListener("focus", () => { legend4Color2.style.boxShadow = barColorShadow; });
-legend4Color2x.addEventListener("blur", () => { legend4Color2.style.boxShadow = "none"; });
-combo1Text1.addEventListener("focus", () => { combo1Row1a.style.textShadow = shadowColor; });
-combo1Text1.addEventListener("blur", () => { combo1Row1a.style.textShadow = "none"; });
-combo1Size1t.addEventListener("focus", () => { combo1Row1b.style.boxShadow = barSizeShadow; });
-combo1Size1t.addEventListener("blur", () => { combo1Row1b.style.boxShadow = "none"; });
-combo1Color1t.addEventListener("focus", () => { combo1Row1b.style.boxShadow = barColorShadow; });
-combo1Color1t.addEventListener("blur", () => { combo1Row1b.style.boxShadow = "none"; })
-combo1Text1t.addEventListener("focus", () => { combo1Row1c.style.textShadow = shadowColor; });
-combo1Text1t.addEventListener("blur", () => { combo1Row1c.style.textShadow = "none"; });
-combo1Size1b.addEventListener("focus", () => { combo1Row1y.style.boxShadow = barSizeShadow; });
-combo1Size1b.addEventListener("blur", () => { combo1Row1y.style.boxShadow = "none"; });
-combo1Color1b.addEventListener("focus", () => { combo1Row1y.style.boxShadow = barColorShadow; });
-combo1Color1b.addEventListener("blur", () => { combo1Row1y.style.boxShadow = "none"; })
-combo1Text1b.addEventListener("focus", () => { combo1Row1z.style.textShadow = shadowColor; });
-combo1Text1b.addEventListener("blur", () => { combo1Row1z.style.textShadow = "none"; });
-combo1Text2.addEventListener("focus", () => { combo1Row2a.style.textShadow = shadowColor; });
-combo1Text2.addEventListener("blur", () => { combo1Row2a.style.textShadow = "none"; });
-combo1Size2t.addEventListener("focus", () => { combo1Row2b.style.boxShadow = barSizeShadow; });
-combo1Size2t.addEventListener("blur", () => { combo1Row2b.style.boxShadow = "none"; });
-combo1Color2t.addEventListener("focus", () => { combo1Row2b.style.boxShadow = barColorShadow; });
-combo1Color2t.addEventListener("blur", () => { combo1Row2b.style.boxShadow = "none"; })
-combo1Text2t.addEventListener("focus", () => { combo1Row2c.style.textShadow = shadowColor; });
-combo1Text2t.addEventListener("blur", () => { combo1Row2c.style.textShadow = "none"; });
-combo1Size2b.addEventListener("focus", () => { combo1Row2y.style.boxShadow = barSizeShadow; });
-combo1Size2b.addEventListener("blur", () => { combo1Row2y.style.boxShadow = "none"; });
-combo1Color2b.addEventListener("focus", () => { combo1Row2y.style.boxShadow = barColorShadow; });
-combo1Color2b.addEventListener("blur", () => { combo1Row2y.style.boxShadow = "none"; })
-combo1Text2b.addEventListener("focus", () => { combo1Row2z.style.textShadow = shadowColor; });
-combo1Text2b.addEventListener("blur", () => { combo1Row2z.style.textShadow = "none"; });
-combo1Text3.addEventListener("focus", () => { combo1Row3a.style.textShadow = shadowColor; });
-combo1Text3.addEventListener("blur", () => { combo1Row3a.style.textShadow = "none"; });
-combo1Size3t.addEventListener("focus", () => { combo1Row3b.style.boxShadow = barSizeShadow; });
-combo1Size3t.addEventListener("blur", () => { combo1Row3b.style.boxShadow = "none"; });
-combo1Color3t.addEventListener("focus", () => { combo1Row3b.style.boxShadow = barColorShadow; });
-combo1Color3t.addEventListener("blur", () => { combo1Row3b.style.boxShadow = "none"; })
-combo1Text3t.addEventListener("focus", () => { combo1Row3c.style.textShadow = shadowColor; });
-combo1Text3t.addEventListener("blur", () => { combo1Row3c.style.textShadow = "none"; });
-combo1Size3b.addEventListener("focus", () => { combo1Row3y.style.boxShadow = barSizeShadow; });
-combo1Size3b.addEventListener("blur", () => { combo1Row3y.style.boxShadow = "none"; });
-combo1Color3b.addEventListener("focus", () => { combo1Row3y.style.boxShadow = barColorShadow; });
-combo1Color3b.addEventListener("blur", () => { combo1Row3y.style.boxShadow = "none"; })
-combo1Text3b.addEventListener("focus", () => { combo1Row3z.style.textShadow = shadowColor; });
-combo1Text3b.addEventListener("blur", () => { combo1Row3z.style.textShadow = "none"; });
-combo1Text4.addEventListener("focus", () => { combo1Row4a.style.textShadow = shadowColor; });
-combo1Text4.addEventListener("blur", () => { combo1Row4a.style.textShadow = "none"; });
-combo1Size4t.addEventListener("focus", () => { combo1Row4b.style.boxShadow = barSizeShadow; });
-combo1Size4t.addEventListener("blur", () => { combo1Row4b.style.boxShadow = "none"; });
-combo1Color4t.addEventListener("focus", () => { combo1Row4b.style.boxShadow = barColorShadow; });
-combo1Color4t.addEventListener("blur", () => { combo1Row4b.style.boxShadow = "none"; })
-combo1Text4t.addEventListener("focus", () => { combo1Row4c.style.textShadow = shadowColor; });
-combo1Text4t.addEventListener("blur", () => { combo1Row4c.style.textShadow = "none"; });
-combo1Size4b.addEventListener("focus", () => { combo1Row4y.style.boxShadow = barSizeShadow; });
-combo1Size4b.addEventListener("blur", () => { combo1Row4y.style.boxShadow = "none"; });
-combo1Color4b.addEventListener("focus", () => { combo1Row4y.style.boxShadow = barColorShadow; });
-combo1Color4b.addEventListener("blur", () => { combo1Row4y.style.boxShadow = "none"; })
-combo1Text4b.addEventListener("focus", () => { combo1Row4z.style.textShadow = shadowColor; });
-combo1Text4b.addEventListener("blur", () => { combo1Row4z.style.textShadow = "none"; });
-combo1Text5.addEventListener("focus", () => { combo1Row5a.style.textShadow = shadowColor; });
-combo1Text5.addEventListener("blur", () => { combo1Row5a.style.textShadow = "none"; });
-combo1Size5t.addEventListener("focus", () => { combo1Row5b.style.boxShadow = barSizeShadow; });
-combo1Size5t.addEventListener("blur", () => { combo1Row5b.style.boxShadow = "none"; });
-combo1Color5t.addEventListener("focus", () => { combo1Row5b.style.boxShadow = barColorShadow; });
-combo1Color5t.addEventListener("blur", () => { combo1Row5b.style.boxShadow = "none"; })
-combo1Text5t.addEventListener("focus", () => { combo1Row5c.style.textShadow = shadowColor; });
-combo1Text5t.addEventListener("blur", () => { combo1Row5c.style.textShadow = "none"; });
-combo1Size5b.addEventListener("focus", () => { combo1Row5y.style.boxShadow = barSizeShadow; });
-combo1Size5b.addEventListener("blur", () => { combo1Row5y.style.boxShadow = "none"; });
-combo1Color5b.addEventListener("focus", () => { combo1Row5y.style.boxShadow = barColorShadow; });
-combo1Color5b.addEventListener("blur", () => { combo1Row5y.style.boxShadow = "none"; })
-combo1Text5b.addEventListener("focus", () => { combo1Row5z.style.textShadow = shadowColor; });
-combo1Text5b.addEventListener("blur", () => { combo1Row5z.style.textShadow = "none"; });
-combo1Text6.addEventListener("focus", () => { combo1Row6a.style.textShadow = shadowColor; });
-combo1Text6.addEventListener("blur", () => { combo1Row6a.style.textShadow = "none"; });
-combo1Size6t.addEventListener("focus", () => { combo1Row6b.style.boxShadow = barSizeShadow; });
-combo1Size6t.addEventListener("blur", () => { combo1Row6b.style.boxShadow = "none"; });
-combo1Color6t.addEventListener("focus", () => { combo1Row6b.style.boxShadow = barColorShadow; });
-combo1Color6t.addEventListener("blur", () => { combo1Row6b.style.boxShadow = "none"; })
-combo1Text6t.addEventListener("focus", () => { combo1Row6c.style.textShadow = shadowColor; });
-combo1Text6t.addEventListener("blur", () => { combo1Row6c.style.textShadow = "none"; });
-combo1Size6b.addEventListener("focus", () => { combo1Row6y.style.boxShadow = barSizeShadow; });
-combo1Size6b.addEventListener("blur", () => { combo1Row6y.style.boxShadow = "none"; });
-combo1Color6b.addEventListener("focus", () => { combo1Row6y.style.boxShadow = barColorShadow; });
-combo1Color6b.addEventListener("blur", () => { combo1Row6y.style.boxShadow = "none"; })
-combo1Text6b.addEventListener("focus", () => { combo1Row6z.style.textShadow = shadowColor; });
-combo1Text6b.addEventListener("blur", () => { combo1Row6z.style.textShadow = "none"; });
-
 // Combo Chart I Height Adjustment
 const combo1rowArray = [combo1Row1a, combo1Row1b, combo1Row1c, combo1Row1x, combo1Row1y, combo1Row1z, combo1Row2a, combo1Row2b, combo1Row2c, combo1Row2x, combo1Row2y, combo1Row2z, combo1Row3a, combo1Row3b, combo1Row3c, combo1Row3x, combo1Row3y, combo1Row3z, combo1Row4a, combo1Row4b, combo1Row4c, combo1Row4x, combo1Row4y, combo1Row4z, combo1Row5a, combo1Row5b, combo1Row5c, combo1Row5x, combo1Row5y, combo1Row5z, combo1Row6a, combo1Row6b, combo1Row6c, combo1Row6x, combo1Row6y, combo1Row6z];
 const combo1inputArray = [combo1Text1, combo1Text2, combo1Text3, combo1Text4, combo1Text5, combo1Text6];
@@ -3025,6 +3109,106 @@ combo1inputArray[5].addEventListener("input", () => {
         }
     }
 });
+
+// Combo Chart I Focus/Blur Events
+combo1capText.addEventListener("focus", () => { combo1Cap.style.textShadow = shadowColor; });
+combo1capText.addEventListener("blur", () => { combo1Cap.style.textShadow = "none"; });
+combo1subText.addEventListener("focus", () => { combo1Sub.style.textShadow = shadowColor; });
+combo1subText.addEventListener("blur", () => { combo1Sub.style.textShadow = "none"; });
+combo1srcText.addEventListener("focus", () => { combo1Source.style.textShadow = shadowColor; });
+combo1srcText.addEventListener("blur", () => { combo1Source.style.textShadow = "none"; });
+legend4Text1x.addEventListener("focus", () => { legend4Text1.style.textShadow = shadowColor; });
+legend4Text1x.addEventListener("blur", () => { legend4Text1.style.textShadow = "none"; });
+legend4Color1x.addEventListener("focus", () => { legend4Color1.style.boxShadow = barColorShadow; });
+legend4Color1x.addEventListener("blur", () => { legend4Color1.style.boxShadow = "none"; });
+legend4Text2x.addEventListener("focus", () => { legend4Text2.style.textShadow = shadowColor; });
+legend4Text2x.addEventListener("blur", () => { legend4Text2.style.textShadow = "none"; });
+legend4Color2x.addEventListener("focus", () => { legend4Color2.style.boxShadow = barColorShadow; });
+legend4Color2x.addEventListener("blur", () => { legend4Color2.style.boxShadow = "none"; });
+combo1Text1.addEventListener("focus", () => { combo1Row1a.style.textShadow = shadowColor; });
+combo1Text1.addEventListener("blur", () => { combo1Row1a.style.textShadow = "none"; });
+combo1Size1t.addEventListener("focus", () => { combo1Row1b.style.boxShadow = barSizeShadow; });
+combo1Size1t.addEventListener("blur", () => { combo1Row1b.style.boxShadow = "none"; });
+combo1Color1t.addEventListener("focus", () => { combo1Row1b.style.boxShadow = barColorShadow; });
+combo1Color1t.addEventListener("blur", () => { combo1Row1b.style.boxShadow = "none"; });
+combo1Text1t.addEventListener("focus", () => { combo1Row1c.style.textShadow = shadowColor; });
+combo1Text1t.addEventListener("blur", () => { combo1Row1c.style.textShadow = "none"; });
+combo1Size1b.addEventListener("focus", () => { combo1Row1y.style.boxShadow = barSizeShadow; });
+combo1Size1b.addEventListener("blur", () => { combo1Row1y.style.boxShadow = "none"; });
+combo1Color1b.addEventListener("focus", () => { combo1Row1y.style.boxShadow = barColorShadow; });
+combo1Color1b.addEventListener("blur", () => { combo1Row1y.style.boxShadow = "none"; });
+combo1Text1b.addEventListener("focus", () => { combo1Row1z.style.textShadow = shadowColor; });
+combo1Text1b.addEventListener("blur", () => { combo1Row1z.style.textShadow = "none"; });
+combo1Text2.addEventListener("focus", () => { combo1Row2a.style.textShadow = shadowColor; });
+combo1Text2.addEventListener("blur", () => { combo1Row2a.style.textShadow = "none"; });
+combo1Size2t.addEventListener("focus", () => { combo1Row2b.style.boxShadow = barSizeShadow; });
+combo1Size2t.addEventListener("blur", () => { combo1Row2b.style.boxShadow = "none"; });
+combo1Color2t.addEventListener("focus", () => { combo1Row2b.style.boxShadow = barColorShadow; });
+combo1Color2t.addEventListener("blur", () => { combo1Row2b.style.boxShadow = "none"; });
+combo1Text2t.addEventListener("focus", () => { combo1Row2c.style.textShadow = shadowColor; });
+combo1Text2t.addEventListener("blur", () => { combo1Row2c.style.textShadow = "none"; });
+combo1Size2b.addEventListener("focus", () => { combo1Row2y.style.boxShadow = barSizeShadow; });
+combo1Size2b.addEventListener("blur", () => { combo1Row2y.style.boxShadow = "none"; });
+combo1Color2b.addEventListener("focus", () => { combo1Row2y.style.boxShadow = barColorShadow; });
+combo1Color2b.addEventListener("blur", () => { combo1Row2y.style.boxShadow = "none"; });
+combo1Text2b.addEventListener("focus", () => { combo1Row2z.style.textShadow = shadowColor; });
+combo1Text2b.addEventListener("blur", () => { combo1Row2z.style.textShadow = "none"; });
+combo1Text3.addEventListener("focus", () => { combo1Row3a.style.textShadow = shadowColor; });
+combo1Text3.addEventListener("blur", () => { combo1Row3a.style.textShadow = "none"; });
+combo1Size3t.addEventListener("focus", () => { combo1Row3b.style.boxShadow = barSizeShadow; });
+combo1Size3t.addEventListener("blur", () => { combo1Row3b.style.boxShadow = "none"; });
+combo1Color3t.addEventListener("focus", () => { combo1Row3b.style.boxShadow = barColorShadow; });
+combo1Color3t.addEventListener("blur", () => { combo1Row3b.style.boxShadow = "none"; });
+combo1Text3t.addEventListener("focus", () => { combo1Row3c.style.textShadow = shadowColor; });
+combo1Text3t.addEventListener("blur", () => { combo1Row3c.style.textShadow = "none"; });
+combo1Size3b.addEventListener("focus", () => { combo1Row3y.style.boxShadow = barSizeShadow; });
+combo1Size3b.addEventListener("blur", () => { combo1Row3y.style.boxShadow = "none"; });
+combo1Color3b.addEventListener("focus", () => { combo1Row3y.style.boxShadow = barColorShadow; });
+combo1Color3b.addEventListener("blur", () => { combo1Row3y.style.boxShadow = "none"; });
+combo1Text3b.addEventListener("focus", () => { combo1Row3z.style.textShadow = shadowColor; });
+combo1Text3b.addEventListener("blur", () => { combo1Row3z.style.textShadow = "none"; });
+combo1Text4.addEventListener("focus", () => { combo1Row4a.style.textShadow = shadowColor; });
+combo1Text4.addEventListener("blur", () => { combo1Row4a.style.textShadow = "none"; });
+combo1Size4t.addEventListener("focus", () => { combo1Row4b.style.boxShadow = barSizeShadow; });
+combo1Size4t.addEventListener("blur", () => { combo1Row4b.style.boxShadow = "none"; });
+combo1Color4t.addEventListener("focus", () => { combo1Row4b.style.boxShadow = barColorShadow; });
+combo1Color4t.addEventListener("blur", () => { combo1Row4b.style.boxShadow = "none"; });
+combo1Text4t.addEventListener("focus", () => { combo1Row4c.style.textShadow = shadowColor; });
+combo1Text4t.addEventListener("blur", () => { combo1Row4c.style.textShadow = "none"; });
+combo1Size4b.addEventListener("focus", () => { combo1Row4y.style.boxShadow = barSizeShadow; });
+combo1Size4b.addEventListener("blur", () => { combo1Row4y.style.boxShadow = "none"; });
+combo1Color4b.addEventListener("focus", () => { combo1Row4y.style.boxShadow = barColorShadow; });
+combo1Color4b.addEventListener("blur", () => { combo1Row4y.style.boxShadow = "none"; });
+combo1Text4b.addEventListener("focus", () => { combo1Row4z.style.textShadow = shadowColor; });
+combo1Text4b.addEventListener("blur", () => { combo1Row4z.style.textShadow = "none"; });
+combo1Text5.addEventListener("focus", () => { combo1Row5a.style.textShadow = shadowColor; });
+combo1Text5.addEventListener("blur", () => { combo1Row5a.style.textShadow = "none"; });
+combo1Size5t.addEventListener("focus", () => { combo1Row5b.style.boxShadow = barSizeShadow; });
+combo1Size5t.addEventListener("blur", () => { combo1Row5b.style.boxShadow = "none"; });
+combo1Color5t.addEventListener("focus", () => { combo1Row5b.style.boxShadow = barColorShadow; });
+combo1Color5t.addEventListener("blur", () => { combo1Row5b.style.boxShadow = "none"; });
+combo1Text5t.addEventListener("focus", () => { combo1Row5c.style.textShadow = shadowColor; });
+combo1Text5t.addEventListener("blur", () => { combo1Row5c.style.textShadow = "none"; });
+combo1Size5b.addEventListener("focus", () => { combo1Row5y.style.boxShadow = barSizeShadow; });
+combo1Size5b.addEventListener("blur", () => { combo1Row5y.style.boxShadow = "none"; });
+combo1Color5b.addEventListener("focus", () => { combo1Row5y.style.boxShadow = barColorShadow; });
+combo1Color5b.addEventListener("blur", () => { combo1Row5y.style.boxShadow = "none"; });
+combo1Text5b.addEventListener("focus", () => { combo1Row5z.style.textShadow = shadowColor; });
+combo1Text5b.addEventListener("blur", () => { combo1Row5z.style.textShadow = "none"; });
+combo1Text6.addEventListener("focus", () => { combo1Row6a.style.textShadow = shadowColor; });
+combo1Text6.addEventListener("blur", () => { combo1Row6a.style.textShadow = "none"; });
+combo1Size6t.addEventListener("focus", () => { combo1Row6b.style.boxShadow = barSizeShadow; });
+combo1Size6t.addEventListener("blur", () => { combo1Row6b.style.boxShadow = "none"; });
+combo1Color6t.addEventListener("focus", () => { combo1Row6b.style.boxShadow = barColorShadow; });
+combo1Color6t.addEventListener("blur", () => { combo1Row6b.style.boxShadow = "none"; });
+combo1Text6t.addEventListener("focus", () => { combo1Row6c.style.textShadow = shadowColor; });
+combo1Text6t.addEventListener("blur", () => { combo1Row6c.style.textShadow = "none"; });
+combo1Size6b.addEventListener("focus", () => { combo1Row6y.style.boxShadow = barSizeShadow; });
+combo1Size6b.addEventListener("blur", () => { combo1Row6y.style.boxShadow = "none"; });
+combo1Color6b.addEventListener("focus", () => { combo1Row6y.style.boxShadow = barColorShadow; });
+combo1Color6b.addEventListener("blur", () => { combo1Row6y.style.boxShadow = "none"; });
+combo1Text6b.addEventListener("focus", () => { combo1Row6z.style.textShadow = shadowColor; });
+combo1Text6b.addEventListener("blur", () => { combo1Row6z.style.textShadow = "none"; });
 
 // Generate Combo1 HTML Chart Logic
 const combo1Weight = document.getElementById("combo1Weight");
@@ -3598,6 +3782,92 @@ const combo2Color5b = document.getElementById("combo2Color5b");
 combo2Color5b.oninput = function() {
     combo2Row5y.style.backgroundColor = combo2Color5b.value;
 };
+
+// Combo Chart II Focus/Blur Events
+combo2capText.addEventListener("focus", () => { combo2Cap.style.textShadow = shadowColor; });
+combo2capText.addEventListener("blur", () => { combo2Cap.style.textShadow = "none"; });
+combo2subText.addEventListener("focus", () => { combo2Sub.style.textShadow = shadowColor; });
+combo2subText.addEventListener("blur", () => { combo2Sub.style.textShadow = "none"; });
+combo2srcText.addEventListener("focus", () => { combo2Source.style.textShadow = shadowColor; });
+combo2srcText.addEventListener("blur", () => { combo2Source.style.textShadow = "none"; });
+legend8Text1x.addEventListener("focus", () => { legend8Text1.style.textShadow = shadowColor; });
+legend8Text1x.addEventListener("blur", () => { legend8Text1.style.textShadow = "none"; });
+legend8Color1x.addEventListener("focus", () => { legend8Color1.style.boxShadow = barColorShadow; });
+legend8Color1x.addEventListener("blur", () => { legend8Color1.style.boxShadow = "none"; });
+legend8Text2x.addEventListener("focus", () => { legend8Text2.style.textShadow = shadowColor; });
+legend8Text2x.addEventListener("blur", () => { legend8Text2.style.textShadow = "none"; });
+legend8Color2x.addEventListener("focus", () => { legend8Color2.style.boxShadow = barColorShadow; });
+legend8Color2x.addEventListener("blur", () => { legend8Color2.style.boxShadow = "none"; });
+combo2Text1.addEventListener("focus", () => { combo2Row1a.style.textShadow = shadowColor; });
+combo2Text1.addEventListener("blur", () => { combo2Row1a.style.textShadow = "none"; });
+combo2Size1t.addEventListener("focus", () => { combo2Row1b.style.boxShadow = barSizeShadow; });
+combo2Size1t.addEventListener("blur", () => { combo2Row1b.style.boxShadow = "none"; });
+combo2Color1t.addEventListener("focus", () => { combo2Row1b.style.boxShadow = barColorShadow; });
+combo2Color1t.addEventListener("blur", () => { combo2Row1b.style.boxShadow = "none"; });
+combo2Text1t.addEventListener("focus", () => { combo2Row1c.style.textShadow = shadowColor; });
+combo2Text1t.addEventListener("blur", () => { combo2Row1c.style.textShadow = "none"; });
+combo2Size1b.addEventListener("focus", () => { combo2Row1y.style.boxShadow = barSizeShadow; });
+combo2Size1b.addEventListener("blur", () => { combo2Row1y.style.boxShadow = "none"; });
+combo2Color1b.addEventListener("focus", () => { combo2Row1y.style.boxShadow = barColorShadow; });
+combo2Color1b.addEventListener("blur", () => { combo2Row1y.style.boxShadow = "none"; });
+combo2Text1b.addEventListener("focus", () => { combo2Row1z.style.textShadow = shadowColor; });
+combo2Text1b.addEventListener("blur", () => { combo2Row1z.style.textShadow = "none"; });
+combo2Text2.addEventListener("focus", () => { combo2Row2a.style.textShadow = shadowColor; });
+combo2Text2.addEventListener("blur", () => { combo2Row2a.style.textShadow = "none"; });
+combo2Size2t.addEventListener("focus", () => { combo2Row2b.style.boxShadow = barSizeShadow; });
+combo2Size2t.addEventListener("blur", () => { combo2Row2b.style.boxShadow = "none"; });
+combo2Color2t.addEventListener("focus", () => { combo2Row2b.style.boxShadow = barColorShadow; });
+combo2Color2t.addEventListener("blur", () => { combo2Row2b.style.boxShadow = "none"; });
+combo2Text2t.addEventListener("focus", () => { combo2Row2c.style.textShadow = shadowColor; });
+combo2Text2t.addEventListener("blur", () => { combo2Row2c.style.textShadow = "none"; });
+combo2Size2b.addEventListener("focus", () => { combo2Row2y.style.boxShadow = barSizeShadow; });
+combo2Size2b.addEventListener("blur", () => { combo2Row2y.style.boxShadow = "none"; });
+combo2Color2b.addEventListener("focus", () => { combo2Row2y.style.boxShadow = barColorShadow; });
+combo2Color2b.addEventListener("blur", () => { combo2Row2y.style.boxShadow = "none"; });
+combo2Text2b.addEventListener("focus", () => { combo2Row2z.style.textShadow = shadowColor; });
+combo2Text2b.addEventListener("blur", () => { combo2Row2z.style.textShadow = "none"; });
+combo2Text3.addEventListener("focus", () => { combo2Row3a.style.textShadow = shadowColor; });
+combo2Text3.addEventListener("blur", () => { combo2Row3a.style.textShadow = "none"; });
+combo2Size3t.addEventListener("focus", () => { combo2Row3b.style.boxShadow = barSizeShadow; });
+combo2Size3t.addEventListener("blur", () => { combo2Row3b.style.boxShadow = "none"; });
+combo2Color3t.addEventListener("focus", () => { combo2Row3b.style.boxShadow = barColorShadow; });
+combo2Color3t.addEventListener("blur", () => { combo2Row3b.style.boxShadow = "none"; });
+combo2Text3t.addEventListener("focus", () => { combo2Row3c.style.textShadow = shadowColor; });
+combo2Text3t.addEventListener("blur", () => { combo2Row3c.style.textShadow = "none"; });
+combo2Size3b.addEventListener("focus", () => { combo2Row3y.style.boxShadow = barSizeShadow; });
+combo2Size3b.addEventListener("blur", () => { combo2Row3y.style.boxShadow = "none"; });
+combo2Color3b.addEventListener("focus", () => { combo2Row3y.style.boxShadow = barColorShadow; });
+combo2Color3b.addEventListener("blur", () => { combo2Row3y.style.boxShadow = "none"; });
+combo2Text3b.addEventListener("focus", () => { combo2Row3z.style.textShadow = shadowColor; });
+combo2Text3b.addEventListener("blur", () => { combo2Row3z.style.textShadow = "none"; });
+combo2Text4.addEventListener("focus", () => { combo2Row4a.style.textShadow = shadowColor; });
+combo2Text4.addEventListener("blur", () => { combo2Row4a.style.textShadow = "none"; });
+combo2Size4t.addEventListener("focus", () => { combo2Row4b.style.boxShadow = barSizeShadow; });
+combo2Size4t.addEventListener("blur", () => { combo2Row4b.style.boxShadow = "none"; });
+combo2Color4t.addEventListener("focus", () => { combo2Row4b.style.boxShadow = barColorShadow; });
+combo2Color4t.addEventListener("blur", () => { combo2Row4b.style.boxShadow = "none"; });
+combo2Text4t.addEventListener("focus", () => { combo2Row4c.style.textShadow = shadowColor; });
+combo2Text4t.addEventListener("blur", () => { combo2Row4c.style.textShadow = "none"; });
+combo2Size4b.addEventListener("focus", () => { combo2Row4y.style.boxShadow = barSizeShadow; });
+combo2Size4b.addEventListener("blur", () => { combo2Row4y.style.boxShadow = "none"; });
+combo2Color4b.addEventListener("focus", () => { combo2Row4y.style.boxShadow = barColorShadow; });
+combo2Color4b.addEventListener("blur", () => { combo2Row4y.style.boxShadow = "none"; });
+combo2Text4b.addEventListener("focus", () => { combo2Row4z.style.textShadow = shadowColor; });
+combo2Text4b.addEventListener("blur", () => { combo2Row4z.style.textShadow = "none"; });
+combo2Text5.addEventListener("focus", () => { combo2Row5a.style.textShadow = shadowColor; });
+combo2Text5.addEventListener("blur", () => { combo2Row5a.style.textShadow = "none"; });
+combo2Size5t.addEventListener("focus", () => { combo2Row5b.style.boxShadow = barSizeShadow; });
+combo2Size5t.addEventListener("blur", () => { combo2Row5b.style.boxShadow = "none"; });
+combo2Color5t.addEventListener("focus", () => { combo2Row5b.style.boxShadow = barColorShadow; });
+combo2Color5t.addEventListener("blur", () => { combo2Row5b.style.boxShadow = "none"; });
+combo2Text5t.addEventListener("focus", () => { combo2Row5c.style.textShadow = shadowColor; });
+combo2Text5t.addEventListener("blur", () => { combo2Row5c.style.textShadow = "none"; });
+combo2Size5b.addEventListener("focus", () => { combo2Row5y.style.boxShadow = barSizeShadow; });
+combo2Size5b.addEventListener("blur", () => { combo2Row5y.style.boxShadow = "none"; });
+combo2Color5b.addEventListener("focus", () => { combo2Row5y.style.boxShadow = barColorShadow; });
+combo2Color5b.addEventListener("blur", () => { combo2Row5y.style.boxShadow = "none"; });
+combo2Text5b.addEventListener("focus", () => { combo2Row5z.style.textShadow = shadowColor; });
+combo2Text5b.addEventListener("blur", () => { combo2Row5z.style.textShadow = "none"; });
 
 // Generate Combo2 HTML Chart Logic
 const combo2Weight = document.getElementById("combo2Weight");
@@ -4258,6 +4528,13 @@ combo3Color5b.oninput = function() {
     combo3Row5y.style.backgroundColor = combo3Color5b.value;
 };
 
+// Combo Chart III Focus/Blur Events
+combo3capText.addEventListener("focus", () => { combo3Cap.style.textShadow = shadowColor; });
+combo3capText.addEventListener("blur", () => { combo3Cap.style.textShadow = "none"; });
+combo3subText.addEventListener("focus", () => { combo3Sub.style.textShadow = shadowColor; });
+combo3subText.addEventListener("blur", () => { combo3Sub.style.textShadow = "none"; });
+combo3srcText.addEventListener("focus", () => { combo3Source.style.textShadow = shadowColor; });
+combo3srcText.addEventListener("blur", () => { combo3Source.style.textShadow = "none"; });
 
 // Generate Combo3 HTML Chart Logic
 const combo3Weight = document.getElementById("combo3Weight");
