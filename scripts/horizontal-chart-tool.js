@@ -177,6 +177,17 @@ horiz1Text1a.oninput = function() {
     }
     // 04.22.23: Consider simplifying this logic to the following
     // horiz1Row1a.innerHTML = horiz1Text1a.value;
+
+    // 08.01.23: Consider adding logic to increase the label input maxlength if there is a " ". If there is no space, the maxlength stays as 16 (need to change in index.html).
+    // if (horiz1Text1a.value == "") {
+    //     horiz1Row1a.innerHTML = horiz1Text1a.value;
+    // } else if (horiz1Text1a.value && !horiz1Text1a.value.includes(" ")) {
+    //     horiz1Row1a.innerHTML = horiz1Text1a.value;
+    //     horiz1Text1a.maxLength = 16;
+    // } else if (horiz1Text1a.value && horiz1Text1a.value.includes(" ")) {
+    //     horiz1Row1a.innerHTML = horiz1Text1a.value;
+    //     horiz1Text1a.maxLength = 38;
+    // }
 };
 const horiz1Size1 = document.getElementById("horiz1Size1");
 horiz1Size1.oninput = function() {
@@ -570,7 +581,7 @@ horiz1srcText.addEventListener("blur", () => { horiz1Source.style.textShadow = "
 horiz1Size1.addEventListener("focus", () => { horiz1Row1b.style.boxShadow = barSizeShadow; });
 horiz1Size1.addEventListener("blur", () => { horiz1Row1b.style.boxShadow = "none"; });
 horiz1Color1.addEventListener("focus", () => { horiz1Row1b.style.boxShadow = barColorShadow; });
-horiz1Color1.addEventListener("blur", () => { horiz1Row1b.style.boxShadow = "none"; })
+horiz1Color1.addEventListener("blur", () => { horiz1Row1b.style.boxShadow = "none"; });
 horiz1Text1a.addEventListener("focus", () => { horiz1Row1a.style.textShadow = shadowColor; });
 horiz1Text1a.addEventListener("blur", () => { horiz1Row1a.style.textShadow = "none"; });
 horiz1Text1b.addEventListener("focus", () => { horiz1Row1c.style.textShadow = shadowColor; });
@@ -578,7 +589,7 @@ horiz1Text1b.addEventListener("blur", () => { horiz1Row1c.style.textShadow = "no
 horiz1Size2.addEventListener("focus", () => { horiz1Row2b.style.boxShadow = barSizeShadow; });
 horiz1Size2.addEventListener("blur", () => { horiz1Row2b.style.boxShadow = "none"; });
 horiz1Color2.addEventListener("focus", () => { horiz1Row2b.style.boxShadow = barColorShadow; });
-horiz1Color2.addEventListener("blur", () => { horiz1Row2b.style.boxShadow = "none"; })
+horiz1Color2.addEventListener("blur", () => { horiz1Row2b.style.boxShadow = "none"; });
 horiz1Text2a.addEventListener("focus", () => { horiz1Row2a.style.textShadow = shadowColor; });
 horiz1Text2a.addEventListener("blur", () => { horiz1Row2a.style.textShadow = "none"; });
 horiz1Text2b.addEventListener("focus", () => { horiz1Row2c.style.textShadow = shadowColor; });
@@ -586,7 +597,7 @@ horiz1Text2b.addEventListener("blur", () => { horiz1Row2c.style.textShadow = "no
 horiz1Size3.addEventListener("focus", () => { horiz1Row3b.style.boxShadow = barSizeShadow; });
 horiz1Size3.addEventListener("blur", () => { horiz1Row3b.style.boxShadow = "none"; });
 horiz1Color3.addEventListener("focus", () => { horiz1Row3b.style.boxShadow = barColorShadow; });
-horiz1Color3.addEventListener("blur", () => { horiz1Row3b.style.boxShadow = "none"; })
+horiz1Color3.addEventListener("blur", () => { horiz1Row3b.style.boxShadow = "none"; });
 horiz1Text3a.addEventListener("focus", () => { horiz1Row3a.style.textShadow = shadowColor; });
 horiz1Text3a.addEventListener("blur", () => { horiz1Row3a.style.textShadow = "none"; });
 horiz1Text3b.addEventListener("focus", () => { horiz1Row3c.style.textShadow = shadowColor; });
@@ -594,7 +605,7 @@ horiz1Text3b.addEventListener("blur", () => { horiz1Row3c.style.textShadow = "no
 horiz1Size4.addEventListener("focus", () => { horiz1Row4b.style.boxShadow = barSizeShadow; });
 horiz1Size4.addEventListener("blur", () => { horiz1Row4b.style.boxShadow = "none"; });
 horiz1Color4.addEventListener("focus", () => { horiz1Row4b.style.boxShadow = barColorShadow; });
-horiz1Color4.addEventListener("blur", () => { horiz1Row4b.style.boxShadow = "none"; })
+horiz1Color4.addEventListener("blur", () => { horiz1Row4b.style.boxShadow = "none"; });
 horiz1Text4a.addEventListener("focus", () => { horiz1Row4a.style.textShadow = shadowColor; });
 horiz1Text4a.addEventListener("blur", () => { horiz1Row4a.style.textShadow = "none"; });
 horiz1Text4b.addEventListener("focus", () => { horiz1Row4c.style.textShadow = shadowColor; });
@@ -602,7 +613,7 @@ horiz1Text4b.addEventListener("blur", () => { horiz1Row4c.style.textShadow = "no
 horiz1Size5.addEventListener("focus", () => { horiz1Row5b.style.boxShadow = barSizeShadow; });
 horiz1Size5.addEventListener("blur", () => { horiz1Row5b.style.boxShadow = "none"; });
 horiz1Color5.addEventListener("focus", () => { horiz1Row5b.style.boxShadow = barColorShadow; });
-horiz1Color5.addEventListener("blur", () => { horiz1Row5b.style.boxShadow = "none"; })
+horiz1Color5.addEventListener("blur", () => { horiz1Row5b.style.boxShadow = "none"; });
 horiz1Text5a.addEventListener("focus", () => { horiz1Row5a.style.textShadow = shadowColor; });
 horiz1Text5a.addEventListener("blur", () => { horiz1Row5a.style.textShadow = "none"; });
 horiz1Text5b.addEventListener("focus", () => { horiz1Row5c.style.textShadow = shadowColor; });
@@ -610,7 +621,7 @@ horiz1Text5b.addEventListener("blur", () => { horiz1Row5c.style.textShadow = "no
 horiz1Size6.addEventListener("focus", () => { horiz1Row6b.style.boxShadow = barSizeShadow; });
 horiz1Size6.addEventListener("blur", () => { horiz1Row6b.style.boxShadow = "none"; });
 horiz1Color6.addEventListener("focus", () => { horiz1Row6b.style.boxShadow = barColorShadow; });
-horiz1Color6.addEventListener("blur", () => { horiz1Row6b.style.boxShadow = "none"; })
+horiz1Color6.addEventListener("blur", () => { horiz1Row6b.style.boxShadow = "none"; });
 horiz1Text6a.addEventListener("focus", () => { horiz1Row6a.style.textShadow = shadowColor; });
 horiz1Text6a.addEventListener("blur", () => { horiz1Row6a.style.textShadow = "none"; });
 horiz1Text6b.addEventListener("focus", () => { horiz1Row6c.style.textShadow = shadowColor; });
@@ -618,7 +629,7 @@ horiz1Text6b.addEventListener("blur", () => { horiz1Row6c.style.textShadow = "no
 horiz1Size7.addEventListener("focus", () => { horiz1Row7b.style.boxShadow = barSizeShadow; });
 horiz1Size7.addEventListener("blur", () => { horiz1Row7b.style.boxShadow = "none"; });
 horiz1Color7.addEventListener("focus", () => { horiz1Row7b.style.boxShadow = barColorShadow; });
-horiz1Color7.addEventListener("blur", () => { horiz1Row7b.style.boxShadow = "none"; })
+horiz1Color7.addEventListener("blur", () => { horiz1Row7b.style.boxShadow = "none"; });
 horiz1Text7a.addEventListener("focus", () => { horiz1Row7a.style.textShadow = shadowColor; });
 horiz1Text7a.addEventListener("blur", () => { horiz1Row7a.style.textShadow = "none"; });
 horiz1Text7b.addEventListener("focus", () => { horiz1Row7c.style.textShadow = shadowColor; });
@@ -626,7 +637,7 @@ horiz1Text7b.addEventListener("blur", () => { horiz1Row7c.style.textShadow = "no
 horiz1Size8.addEventListener("focus", () => { horiz1Row8b.style.boxShadow = barSizeShadow; });
 horiz1Size8.addEventListener("blur", () => { horiz1Row8b.style.boxShadow = "none"; });
 horiz1Color8.addEventListener("focus", () => { horiz1Row8b.style.boxShadow = barColorShadow; });
-horiz1Color8.addEventListener("blur", () => { horiz1Row8b.style.boxShadow = "none"; })
+horiz1Color8.addEventListener("blur", () => { horiz1Row8b.style.boxShadow = "none"; });
 horiz1Text8a.addEventListener("focus", () => { horiz1Row8a.style.textShadow = shadowColor; });
 horiz1Text8a.addEventListener("blur", () => { horiz1Row8a.style.textShadow = "none"; });
 horiz1Text8b.addEventListener("focus", () => { horiz1Row8c.style.textShadow = shadowColor; });
@@ -634,7 +645,7 @@ horiz1Text8b.addEventListener("blur", () => { horiz1Row8c.style.textShadow = "no
 horiz1Size9.addEventListener("focus", () => { horiz1Row9b.style.boxShadow = barSizeShadow; });
 horiz1Size9.addEventListener("blur", () => { horiz1Row9b.style.boxShadow = "none"; });
 horiz1Color9.addEventListener("focus", () => { horiz1Row9b.style.boxShadow = barColorShadow; });
-horiz1Color9.addEventListener("blur", () => { horiz1Row9b.style.boxShadow = "none"; })
+horiz1Color9.addEventListener("blur", () => { horiz1Row9b.style.boxShadow = "none"; });
 horiz1Text9a.addEventListener("focus", () => { horiz1Row9a.style.textShadow = shadowColor; });
 horiz1Text9a.addEventListener("blur", () => { horiz1Row9a.style.textShadow = "none"; });
 horiz1Text9b.addEventListener("focus", () => { horiz1Row9c.style.textShadow = shadowColor; });
@@ -642,7 +653,7 @@ horiz1Text9b.addEventListener("blur", () => { horiz1Row9c.style.textShadow = "no
 horiz1Size10.addEventListener("focus", () => { horiz1Row10b.style.boxShadow = barSizeShadow; });
 horiz1Size10.addEventListener("blur", () => { horiz1Row10b.style.boxShadow = "none"; });
 horiz1Color10.addEventListener("focus", () => { horiz1Row10b.style.boxShadow = barColorShadow; });
-horiz1Color10.addEventListener("blur", () => { horiz1Row10b.style.boxShadow = "none"; })
+horiz1Color10.addEventListener("blur", () => { horiz1Row10b.style.boxShadow = "none"; });
 horiz1Text10a.addEventListener("focus", () => { horiz1Row10a.style.textShadow = shadowColor; });
 horiz1Text10a.addEventListener("blur", () => { horiz1Row10a.style.textShadow = "none"; });
 horiz1Text10b.addEventListener("focus", () => { horiz1Row10c.style.textShadow = shadowColor; });
@@ -2274,7 +2285,7 @@ horiz3srcText.addEventListener("blur", () => { horiz3Source.style.textShadow = "
 horiz3Size1.addEventListener("focus", () => { horiz3Row1b.style.boxShadow = barSizeShadow; });
 horiz3Size1.addEventListener("blur", () => { horiz3Row1b.style.boxShadow = "none"; });
 horiz3Color1.addEventListener("focus", () => { horiz3Row1b.style.boxShadow = barColorShadow; });
-horiz3Color1.addEventListener("blur", () => { horiz3Row1b.style.boxShadow = "none"; })
+horiz3Color1.addEventListener("blur", () => { horiz3Row1b.style.boxShadow = "none"; });
 horiz3Text1a.addEventListener("focus", () => { horiz3Row1a.style.textShadow = shadowColor; });
 horiz3Text1a.addEventListener("blur", () => { horiz3Row1a.style.textShadow = "none"; });
 horiz3Text1b.addEventListener("focus", () => { horiz3Row1c.style.textShadow = shadowColor; });
@@ -2282,7 +2293,7 @@ horiz3Text1b.addEventListener("blur", () => { horiz3Row1c.style.textShadow = "no
 horiz3Size2.addEventListener("focus", () => { horiz3Row2b.style.boxShadow = barSizeShadow; });
 horiz3Size2.addEventListener("blur", () => { horiz3Row2b.style.boxShadow = "none"; });
 horiz3Color2.addEventListener("focus", () => { horiz3Row2b.style.boxShadow = barColorShadow; });
-horiz3Color2.addEventListener("blur", () => { horiz3Row2b.style.boxShadow = "none"; })
+horiz3Color2.addEventListener("blur", () => { horiz3Row2b.style.boxShadow = "none"; });
 horiz3Text2a.addEventListener("focus", () => { horiz3Row2a.style.textShadow = shadowColor; });
 horiz3Text2a.addEventListener("blur", () => { horiz3Row2a.style.textShadow = "none"; });
 horiz3Text2b.addEventListener("focus", () => { horiz3Row2c.style.textShadow = shadowColor; });
@@ -2290,7 +2301,7 @@ horiz3Text2b.addEventListener("blur", () => { horiz3Row2c.style.textShadow = "no
 horiz3Size3.addEventListener("focus", () => { horiz3Row3b.style.boxShadow = barSizeShadow; });
 horiz3Size3.addEventListener("blur", () => { horiz3Row3b.style.boxShadow = "none"; });
 horiz3Color3.addEventListener("focus", () => { horiz3Row3b.style.boxShadow = barColorShadow; });
-horiz3Color3.addEventListener("blur", () => { horiz3Row3b.style.boxShadow = "none"; })
+horiz3Color3.addEventListener("blur", () => { horiz3Row3b.style.boxShadow = "none"; });
 horiz3Text3a.addEventListener("focus", () => { horiz3Row3a.style.textShadow = shadowColor; });
 horiz3Text3a.addEventListener("blur", () => { horiz3Row3a.style.textShadow = "none"; });
 horiz3Text3b.addEventListener("focus", () => { horiz3Row3c.style.textShadow = shadowColor; });
@@ -2298,7 +2309,7 @@ horiz3Text3b.addEventListener("blur", () => { horiz3Row3c.style.textShadow = "no
 horiz3Size4.addEventListener("focus", () => { horiz3Row4b.style.boxShadow = barSizeShadow; });
 horiz3Size4.addEventListener("blur", () => { horiz3Row4b.style.boxShadow = "none"; });
 horiz3Color4.addEventListener("focus", () => { horiz3Row4b.style.boxShadow = barColorShadow; });
-horiz3Color4.addEventListener("blur", () => { horiz3Row4b.style.boxShadow = "none"; })
+horiz3Color4.addEventListener("blur", () => { horiz3Row4b.style.boxShadow = "none"; });
 horiz3Text4a.addEventListener("focus", () => { horiz3Row4a.style.textShadow = shadowColor; });
 horiz3Text4a.addEventListener("blur", () => { horiz3Row4a.style.textShadow = "none"; });
 horiz3Text4b.addEventListener("focus", () => { horiz3Row4c.style.textShadow = shadowColor; });
@@ -2306,7 +2317,7 @@ horiz3Text4b.addEventListener("blur", () => { horiz3Row4c.style.textShadow = "no
 horiz3Size5.addEventListener("focus", () => { horiz3Row5b.style.boxShadow = barSizeShadow; });
 horiz3Size5.addEventListener("blur", () => { horiz3Row5b.style.boxShadow = "none"; });
 horiz3Color5.addEventListener("focus", () => { horiz3Row5b.style.boxShadow = barColorShadow; });
-horiz3Color5.addEventListener("blur", () => { horiz3Row5b.style.boxShadow = "none"; })
+horiz3Color5.addEventListener("blur", () => { horiz3Row5b.style.boxShadow = "none"; });
 horiz3Text5a.addEventListener("focus", () => { horiz3Row5a.style.textShadow = shadowColor; });
 horiz3Text5a.addEventListener("blur", () => { horiz3Row5a.style.textShadow = "none"; });
 horiz3Text5b.addEventListener("focus", () => { horiz3Row5c.style.textShadow = shadowColor; });
@@ -2314,7 +2325,7 @@ horiz3Text5b.addEventListener("blur", () => { horiz3Row5c.style.textShadow = "no
 horiz3Size6.addEventListener("focus", () => { horiz3Row6b.style.boxShadow = barSizeShadow; });
 horiz3Size6.addEventListener("blur", () => { horiz3Row6b.style.boxShadow = "none"; });
 horiz3Color6.addEventListener("focus", () => { horiz3Row6b.style.boxShadow = barColorShadow; });
-horiz3Color6.addEventListener("blur", () => { horiz3Row6b.style.boxShadow = "none"; })
+horiz3Color6.addEventListener("blur", () => { horiz3Row6b.style.boxShadow = "none"; });
 horiz3Text6a.addEventListener("focus", () => { horiz3Row6a.style.textShadow = shadowColor; });
 horiz3Text6a.addEventListener("blur", () => { horiz3Row6a.style.textShadow = "none"; });
 horiz3Text6b.addEventListener("focus", () => { horiz3Row6c.style.textShadow = shadowColor; });
@@ -2322,7 +2333,7 @@ horiz3Text6b.addEventListener("blur", () => { horiz3Row6c.style.textShadow = "no
 horiz3Size7.addEventListener("focus", () => { horiz3Row7b.style.boxShadow = barSizeShadow; });
 horiz3Size7.addEventListener("blur", () => { horiz3Row7b.style.boxShadow = "none"; });
 horiz3Color7.addEventListener("focus", () => { horiz3Row7b.style.boxShadow = barColorShadow; });
-horiz3Color7.addEventListener("blur", () => { horiz3Row7b.style.boxShadow = "none"; })
+horiz3Color7.addEventListener("blur", () => { horiz3Row7b.style.boxShadow = "none"; });
 horiz3Text7a.addEventListener("focus", () => { horiz3Row7a.style.textShadow = shadowColor; });
 horiz3Text7a.addEventListener("blur", () => { horiz3Row7a.style.textShadow = "none"; });
 horiz3Text7b.addEventListener("focus", () => { horiz3Row7c.style.textShadow = shadowColor; });
@@ -2330,7 +2341,7 @@ horiz3Text7b.addEventListener("blur", () => { horiz3Row7c.style.textShadow = "no
 horiz3Size8.addEventListener("focus", () => { horiz3Row8b.style.boxShadow = barSizeShadow; });
 horiz3Size8.addEventListener("blur", () => { horiz3Row8b.style.boxShadow = "none"; });
 horiz3Color8.addEventListener("focus", () => { horiz3Row8b.style.boxShadow = barColorShadow; });
-horiz3Color8.addEventListener("blur", () => { horiz3Row8b.style.boxShadow = "none"; })
+horiz3Color8.addEventListener("blur", () => { horiz3Row8b.style.boxShadow = "none"; });
 horiz3Text8a.addEventListener("focus", () => { horiz3Row8a.style.textShadow = shadowColor; });
 horiz3Text8a.addEventListener("blur", () => { horiz3Row8a.style.textShadow = "none"; });
 horiz3Text8b.addEventListener("focus", () => { horiz3Row8c.style.textShadow = shadowColor; });
@@ -2338,7 +2349,7 @@ horiz3Text8b.addEventListener("blur", () => { horiz3Row8c.style.textShadow = "no
 horiz3Size9.addEventListener("focus", () => { horiz3Row9b.style.boxShadow = barSizeShadow; });
 horiz3Size9.addEventListener("blur", () => { horiz3Row9b.style.boxShadow = "none"; });
 horiz3Color9.addEventListener("focus", () => { horiz3Row9b.style.boxShadow = barColorShadow; });
-horiz3Color9.addEventListener("blur", () => { horiz3Row9b.style.boxShadow = "none"; })
+horiz3Color9.addEventListener("blur", () => { horiz3Row9b.style.boxShadow = "none"; });
 horiz3Text9a.addEventListener("focus", () => { horiz3Row9a.style.textShadow = shadowColor; });
 horiz3Text9a.addEventListener("blur", () => { horiz3Row9a.style.textShadow = "none"; });
 horiz3Text9b.addEventListener("focus", () => { horiz3Row9c.style.textShadow = shadowColor; });
@@ -2346,7 +2357,7 @@ horiz3Text9b.addEventListener("blur", () => { horiz3Row9c.style.textShadow = "no
 horiz3Size10.addEventListener("focus", () => { horiz3Row10b.style.boxShadow = barSizeShadow; });
 horiz3Size10.addEventListener("blur", () => { horiz3Row10b.style.boxShadow = "none"; });
 horiz3Color10.addEventListener("focus", () => { horiz3Row10b.style.boxShadow = barColorShadow; });
-horiz3Color10.addEventListener("blur", () => { horiz3Row10b.style.boxShadow = "none"; })
+horiz3Color10.addEventListener("blur", () => { horiz3Row10b.style.boxShadow = "none"; });
 horiz3Text10a.addEventListener("focus", () => { horiz3Row10a.style.textShadow = shadowColor; });
 horiz3Text10a.addEventListener("blur", () => { horiz3Row10a.style.textShadow = "none"; });
 horiz3Text10b.addEventListener("focus", () => { horiz3Row10c.style.textShadow = shadowColor; });
@@ -3114,7 +3125,7 @@ horiz4srcText.addEventListener("blur", () => { horiz4Source.style.textShadow = "
 horiz4Size1.addEventListener("focus", () => { horiz4Row1b.style.boxShadow = barSizeShadow; });
 horiz4Size1.addEventListener("blur", () => { horiz4Row1b.style.boxShadow = "none"; });
 horiz4Color1.addEventListener("focus", () => { horiz4Row1b.style.boxShadow = barColorShadow; });
-horiz4Color1.addEventListener("blur", () => { horiz4Row1b.style.boxShadow = "none"; })
+horiz4Color1.addEventListener("blur", () => { horiz4Row1b.style.boxShadow = "none"; });
 horiz4Text1a.addEventListener("focus", () => { horiz4Row1a.style.textShadow = shadowColor; });
 horiz4Text1a.addEventListener("blur", () => { horiz4Row1a.style.textShadow = "none"; });
 horiz4Text1b.addEventListener("focus", () => { horiz4Row1c.style.textShadow = shadowColor; });
@@ -3122,7 +3133,7 @@ horiz4Text1b.addEventListener("blur", () => { horiz4Row1c.style.textShadow = "no
 horiz4Size2.addEventListener("focus", () => { horiz4Row2b.style.boxShadow = barSizeShadow; });
 horiz4Size2.addEventListener("blur", () => { horiz4Row2b.style.boxShadow = "none"; });
 horiz4Color2.addEventListener("focus", () => { horiz4Row2b.style.boxShadow = barColorShadow; });
-horiz4Color2.addEventListener("blur", () => { horiz4Row2b.style.boxShadow = "none"; })
+horiz4Color2.addEventListener("blur", () => { horiz4Row2b.style.boxShadow = "none"; });
 horiz4Text2a.addEventListener("focus", () => { horiz4Row2a.style.textShadow = shadowColor; });
 horiz4Text2a.addEventListener("blur", () => { horiz4Row2a.style.textShadow = "none"; });
 horiz4Text2b.addEventListener("focus", () => { horiz4Row2c.style.textShadow = shadowColor; });
@@ -3130,7 +3141,7 @@ horiz4Text2b.addEventListener("blur", () => { horiz4Row2c.style.textShadow = "no
 horiz4Size3.addEventListener("focus", () => { horiz4Row3b.style.boxShadow = barSizeShadow; });
 horiz4Size3.addEventListener("blur", () => { horiz4Row3b.style.boxShadow = "none"; });
 horiz4Color3.addEventListener("focus", () => { horiz4Row3b.style.boxShadow = barColorShadow; });
-horiz4Color3.addEventListener("blur", () => { horiz4Row3b.style.boxShadow = "none"; })
+horiz4Color3.addEventListener("blur", () => { horiz4Row3b.style.boxShadow = "none"; });
 horiz4Text3a.addEventListener("focus", () => { horiz4Row3a.style.textShadow = shadowColor; });
 horiz4Text3a.addEventListener("blur", () => { horiz4Row3a.style.textShadow = "none"; });
 horiz4Text3b.addEventListener("focus", () => { horiz4Row3c.style.textShadow = shadowColor; });
@@ -3138,7 +3149,7 @@ horiz4Text3b.addEventListener("blur", () => { horiz4Row3c.style.textShadow = "no
 horiz4Size4.addEventListener("focus", () => { horiz4Row4b.style.boxShadow = barSizeShadow; });
 horiz4Size4.addEventListener("blur", () => { horiz4Row4b.style.boxShadow = "none"; });
 horiz4Color4.addEventListener("focus", () => { horiz4Row4b.style.boxShadow = barColorShadow; });
-horiz4Color4.addEventListener("blur", () => { horiz4Row4b.style.boxShadow = "none"; })
+horiz4Color4.addEventListener("blur", () => { horiz4Row4b.style.boxShadow = "none"; });
 horiz4Text4a.addEventListener("focus", () => { horiz4Row4a.style.textShadow = shadowColor; });
 horiz4Text4a.addEventListener("blur", () => { horiz4Row4a.style.textShadow = "none"; });
 horiz4Text4b.addEventListener("focus", () => { horiz4Row4c.style.textShadow = shadowColor; });
@@ -3146,7 +3157,7 @@ horiz4Text4b.addEventListener("blur", () => { horiz4Row4c.style.textShadow = "no
 horiz4Size5.addEventListener("focus", () => { horiz4Row5b.style.boxShadow = barSizeShadow; });
 horiz4Size5.addEventListener("blur", () => { horiz4Row5b.style.boxShadow = "none"; });
 horiz4Color5.addEventListener("focus", () => { horiz4Row5b.style.boxShadow = barColorShadow; });
-horiz4Color5.addEventListener("blur", () => { horiz4Row5b.style.boxShadow = "none"; })
+horiz4Color5.addEventListener("blur", () => { horiz4Row5b.style.boxShadow = "none"; });
 horiz4Text5a.addEventListener("focus", () => { horiz4Row5a.style.textShadow = shadowColor; });
 horiz4Text5a.addEventListener("blur", () => { horiz4Row5a.style.textShadow = "none"; });
 horiz4Text5b.addEventListener("focus", () => { horiz4Row5c.style.textShadow = shadowColor; });
@@ -3154,7 +3165,7 @@ horiz4Text5b.addEventListener("blur", () => { horiz4Row5c.style.textShadow = "no
 horiz4Size6.addEventListener("focus", () => { horiz4Row6b.style.boxShadow = barSizeShadow; });
 horiz4Size6.addEventListener("blur", () => { horiz4Row6b.style.boxShadow = "none"; });
 horiz4Color6.addEventListener("focus", () => { horiz4Row6b.style.boxShadow = barColorShadow; });
-horiz4Color6.addEventListener("blur", () => { horiz4Row6b.style.boxShadow = "none"; })
+horiz4Color6.addEventListener("blur", () => { horiz4Row6b.style.boxShadow = "none"; });
 horiz4Text6a.addEventListener("focus", () => { horiz4Row6a.style.textShadow = shadowColor; });
 horiz4Text6a.addEventListener("blur", () => { horiz4Row6a.style.textShadow = "none"; });
 horiz4Text6b.addEventListener("focus", () => { horiz4Row6c.style.textShadow = shadowColor; });
@@ -3162,7 +3173,7 @@ horiz4Text6b.addEventListener("blur", () => { horiz4Row6c.style.textShadow = "no
 horiz4Size7.addEventListener("focus", () => { horiz4Row7b.style.boxShadow = barSizeShadow; });
 horiz4Size7.addEventListener("blur", () => { horiz4Row7b.style.boxShadow = "none"; });
 horiz4Color7.addEventListener("focus", () => { horiz4Row7b.style.boxShadow = barColorShadow; });
-horiz4Color7.addEventListener("blur", () => { horiz4Row7b.style.boxShadow = "none"; })
+horiz4Color7.addEventListener("blur", () => { horiz4Row7b.style.boxShadow = "none"; });
 horiz4Text7a.addEventListener("focus", () => { horiz4Row7a.style.textShadow = shadowColor; });
 horiz4Text7a.addEventListener("blur", () => { horiz4Row7a.style.textShadow = "none"; });
 horiz4Text7b.addEventListener("focus", () => { horiz4Row7c.style.textShadow = shadowColor; });
@@ -3170,7 +3181,7 @@ horiz4Text7b.addEventListener("blur", () => { horiz4Row7c.style.textShadow = "no
 horiz4Size8.addEventListener("focus", () => { horiz4Row8b.style.boxShadow = barSizeShadow; });
 horiz4Size8.addEventListener("blur", () => { horiz4Row8b.style.boxShadow = "none"; });
 horiz4Color8.addEventListener("focus", () => { horiz4Row8b.style.boxShadow = barColorShadow; });
-horiz4Color8.addEventListener("blur", () => { horiz4Row8b.style.boxShadow = "none"; })
+horiz4Color8.addEventListener("blur", () => { horiz4Row8b.style.boxShadow = "none"; });
 horiz4Text8a.addEventListener("focus", () => { horiz4Row8a.style.textShadow = shadowColor; });
 horiz4Text8a.addEventListener("blur", () => { horiz4Row8a.style.textShadow = "none"; });
 horiz4Text8b.addEventListener("focus", () => { horiz4Row8c.style.textShadow = shadowColor; });
@@ -3178,7 +3189,7 @@ horiz4Text8b.addEventListener("blur", () => { horiz4Row8c.style.textShadow = "no
 horiz4Size9.addEventListener("focus", () => { horiz4Row9b.style.boxShadow = barSizeShadow; });
 horiz4Size9.addEventListener("blur", () => { horiz4Row9b.style.boxShadow = "none"; });
 horiz4Color9.addEventListener("focus", () => { horiz4Row9b.style.boxShadow = barColorShadow; });
-horiz4Color9.addEventListener("blur", () => { horiz4Row9b.style.boxShadow = "none"; })
+horiz4Color9.addEventListener("blur", () => { horiz4Row9b.style.boxShadow = "none"; });
 horiz4Text9a.addEventListener("focus", () => { horiz4Row9a.style.textShadow = shadowColor; });
 horiz4Text9a.addEventListener("blur", () => { horiz4Row9a.style.textShadow = "none"; });
 horiz4Text9b.addEventListener("focus", () => { horiz4Row9c.style.textShadow = shadowColor; });
@@ -3186,7 +3197,7 @@ horiz4Text9b.addEventListener("blur", () => { horiz4Row9c.style.textShadow = "no
 horiz4Size10.addEventListener("focus", () => { horiz4Row10b.style.boxShadow = barSizeShadow; });
 horiz4Size10.addEventListener("blur", () => { horiz4Row10b.style.boxShadow = "none"; });
 horiz4Color10.addEventListener("focus", () => { horiz4Row10b.style.boxShadow = barColorShadow; });
-horiz4Color10.addEventListener("blur", () => { horiz4Row10b.style.boxShadow = "none"; })
+horiz4Color10.addEventListener("blur", () => { horiz4Row10b.style.boxShadow = "none"; });
 horiz4Text10a.addEventListener("focus", () => { horiz4Row10a.style.textShadow = shadowColor; });
 horiz4Text10a.addEventListener("blur", () => { horiz4Row10a.style.textShadow = "none"; });
 horiz4Text10b.addEventListener("focus", () => { horiz4Row10c.style.textShadow = shadowColor; });
@@ -3851,7 +3862,7 @@ horiz5srcText.addEventListener("blur", () => { horiz5Source.style.textShadow = "
 horiz5Size1.addEventListener("focus", () => { horiz5Row1b.style.boxShadow = barSizeShadow; });
 horiz5Size1.addEventListener("blur", () => { horiz5Row1b.style.boxShadow = "none"; });
 horiz5Color1.addEventListener("focus", () => { horiz5Row1b.style.boxShadow = barColorShadow; });
-horiz5Color1.addEventListener("blur", () => { horiz5Row1b.style.boxShadow = "none"; })
+horiz5Color1.addEventListener("blur", () => { horiz5Row1b.style.boxShadow = "none"; });
 horiz5Text1a.addEventListener("focus", () => { horiz5Row1a.firstChild.style.filter = imgDropShadow; });
 horiz5Text1a.addEventListener("blur", () => { horiz5Row1a.firstChild.style.filter = "none"; });
 horiz5Text1b.addEventListener("focus", () => { horiz5Row1c.style.textShadow = shadowColor; });
@@ -3859,7 +3870,7 @@ horiz5Text1b.addEventListener("blur", () => { horiz5Row1c.style.textShadow = "no
 horiz5Size2.addEventListener("focus", () => { horiz5Row2b.style.boxShadow = barSizeShadow; });
 horiz5Size2.addEventListener("blur", () => { horiz5Row2b.style.boxShadow = "none"; });
 horiz5Color2.addEventListener("focus", () => { horiz5Row2b.style.boxShadow = barColorShadow; });
-horiz5Color2.addEventListener("blur", () => { horiz5Row2b.style.boxShadow = "none"; })
+horiz5Color2.addEventListener("blur", () => { horiz5Row2b.style.boxShadow = "none"; });
 horiz5Text2a.addEventListener("focus", () => { horiz5Row2a.firstChild.style.filter = imgDropShadow; });
 horiz5Text2a.addEventListener("blur", () => { horiz5Row2a.firstChild.style.filter = "none"; });
 horiz5Text2b.addEventListener("focus", () => { horiz5Row2c.style.textShadow = shadowColor; });
@@ -3867,7 +3878,7 @@ horiz5Text2b.addEventListener("blur", () => { horiz5Row2c.style.textShadow = "no
 horiz5Size3.addEventListener("focus", () => { horiz5Row3b.style.boxShadow = barSizeShadow; });
 horiz5Size3.addEventListener("blur", () => { horiz5Row3b.style.boxShadow = "none"; });
 horiz5Color3.addEventListener("focus", () => { horiz5Row3b.style.boxShadow = barColorShadow; });
-horiz5Color3.addEventListener("blur", () => { horiz5Row3b.style.boxShadow = "none"; })
+horiz5Color3.addEventListener("blur", () => { horiz5Row3b.style.boxShadow = "none"; });
 horiz5Text3a.addEventListener("focus", () => { horiz5Row3a.firstChild.style.filter = imgDropShadow; });
 horiz5Text3a.addEventListener("blur", () => { horiz5Row3a.firstChild.style.filter = "none"; });
 horiz5Text3b.addEventListener("focus", () => { horiz5Row3c.style.textShadow = shadowColor; });
@@ -3875,7 +3886,7 @@ horiz5Text3b.addEventListener("blur", () => { horiz5Row3c.style.textShadow = "no
 horiz5Size4.addEventListener("focus", () => { horiz5Row4b.style.boxShadow = barSizeShadow; });
 horiz5Size4.addEventListener("blur", () => { horiz5Row4b.style.boxShadow = "none"; });
 horiz5Color4.addEventListener("focus", () => { horiz5Row4b.style.boxShadow = barColorShadow; });
-horiz5Color4.addEventListener("blur", () => { horiz5Row4b.style.boxShadow = "none"; })
+horiz5Color4.addEventListener("blur", () => { horiz5Row4b.style.boxShadow = "none"; });
 horiz5Text4a.addEventListener("focus", () => { horiz5Row4a.firstChild.style.filter = imgDropShadow; });
 horiz5Text4a.addEventListener("blur", () => { horiz5Row4a.firstChild.style.filter = "none"; });
 horiz5Text4b.addEventListener("focus", () => { horiz5Row4c.style.textShadow = shadowColor; });
@@ -3883,7 +3894,7 @@ horiz5Text4b.addEventListener("blur", () => { horiz5Row4c.style.textShadow = "no
 horiz5Size5.addEventListener("focus", () => { horiz5Row5b.style.boxShadow = barSizeShadow; });
 horiz5Size5.addEventListener("blur", () => { horiz5Row5b.style.boxShadow = "none"; });
 horiz5Color5.addEventListener("focus", () => { horiz5Row5b.style.boxShadow = barColorShadow; });
-horiz5Color5.addEventListener("blur", () => { horiz5Row5b.style.boxShadow = "none"; })
+horiz5Color5.addEventListener("blur", () => { horiz5Row5b.style.boxShadow = "none"; });
 horiz5Text5a.addEventListener("focus", () => { horiz5Row5a.firstChild.style.filter = imgDropShadow; });
 horiz5Text5a.addEventListener("blur", () => { horiz5Row5a.firstChild.style.filter = "none"; });
 horiz5Text5b.addEventListener("focus", () => { horiz5Row5c.style.textShadow = shadowColor; });
@@ -3891,7 +3902,7 @@ horiz5Text5b.addEventListener("blur", () => { horiz5Row5c.style.textShadow = "no
 horiz5Size6.addEventListener("focus", () => { horiz5Row6b.style.boxShadow = barSizeShadow; });
 horiz5Size6.addEventListener("blur", () => { horiz5Row6b.style.boxShadow = "none"; });
 horiz5Color6.addEventListener("focus", () => { horiz5Row6b.style.boxShadow = barColorShadow; });
-horiz5Color6.addEventListener("blur", () => { horiz5Row6b.style.boxShadow = "none"; })
+horiz5Color6.addEventListener("blur", () => { horiz5Row6b.style.boxShadow = "none"; });
 horiz5Text6a.addEventListener("focus", () => { horiz5Row6a.firstChild.style.filter = imgDropShadow; });
 horiz5Text6a.addEventListener("blur", () => { horiz5Row6a.firstChild.style.filter = "none"; });
 horiz5Text6b.addEventListener("focus", () => { horiz5Row6c.style.textShadow = shadowColor; });
@@ -3899,7 +3910,7 @@ horiz5Text6b.addEventListener("blur", () => { horiz5Row6c.style.textShadow = "no
 horiz5Size7.addEventListener("focus", () => { horiz5Row7b.style.boxShadow = barSizeShadow; });
 horiz5Size7.addEventListener("blur", () => { horiz5Row7b.style.boxShadow = "none"; });
 horiz5Color7.addEventListener("focus", () => { horiz5Row7b.style.boxShadow = barColorShadow; });
-horiz5Color7.addEventListener("blur", () => { horiz5Row7b.style.boxShadow = "none"; })
+horiz5Color7.addEventListener("blur", () => { horiz5Row7b.style.boxShadow = "none"; });
 horiz5Text7a.addEventListener("focus", () => { horiz5Row7a.firstChild.style.filter = imgDropShadow; });
 horiz5Text7a.addEventListener("blur", () => { horiz5Row7a.firstChild.style.filter = "none"; });
 horiz5Text7b.addEventListener("focus", () => { horiz5Row7c.style.textShadow = shadowColor; });
@@ -3907,7 +3918,7 @@ horiz5Text7b.addEventListener("blur", () => { horiz5Row7c.style.textShadow = "no
 horiz5Size8.addEventListener("focus", () => { horiz5Row8b.style.boxShadow = barSizeShadow; });
 horiz5Size8.addEventListener("blur", () => { horiz5Row8b.style.boxShadow = "none"; });
 horiz5Color8.addEventListener("focus", () => { horiz5Row8b.style.boxShadow = barColorShadow; });
-horiz5Color8.addEventListener("blur", () => { horiz5Row8b.style.boxShadow = "none"; })
+horiz5Color8.addEventListener("blur", () => { horiz5Row8b.style.boxShadow = "none"; });
 horiz5Text8a.addEventListener("focus", () => { horiz5Row8a.firstChild.style.filter = imgDropShadow; });
 horiz5Text8a.addEventListener("blur", () => { horiz5Row8a.firstChild.style.filter = "none"; });
 horiz5Text8b.addEventListener("focus", () => { horiz5Row8c.style.textShadow = shadowColor; });
@@ -3915,7 +3926,7 @@ horiz5Text8b.addEventListener("blur", () => { horiz5Row8c.style.textShadow = "no
 horiz5Size9.addEventListener("focus", () => { horiz5Row9b.style.boxShadow = barSizeShadow; });
 horiz5Size9.addEventListener("blur", () => { horiz5Row9b.style.boxShadow = "none"; });
 horiz5Color9.addEventListener("focus", () => { horiz5Row9b.style.boxShadow = barColorShadow; });
-horiz5Color9.addEventListener("blur", () => { horiz5Row9b.style.boxShadow = "none"; })
+horiz5Color9.addEventListener("blur", () => { horiz5Row9b.style.boxShadow = "none"; });
 horiz5Text9a.addEventListener("focus", () => { horiz5Row9a.firstChild.style.filter = imgDropShadow; });
 horiz5Text9a.addEventListener("blur", () => { horiz5Row9a.firstChild.style.filter = "none"; });
 horiz5Text9b.addEventListener("focus", () => { horiz5Row9c.style.textShadow = shadowColor; });
@@ -3923,7 +3934,7 @@ horiz5Text9b.addEventListener("blur", () => { horiz5Row9c.style.textShadow = "no
 horiz5Size10.addEventListener("focus", () => { horiz5Row10b.style.boxShadow = barSizeShadow; });
 horiz5Size10.addEventListener("blur", () => { horiz5Row10b.style.boxShadow = "none"; });
 horiz5Color10.addEventListener("focus", () => { horiz5Row10b.style.boxShadow = barColorShadow; });
-horiz5Color10.addEventListener("blur", () => { horiz5Row10b.style.boxShadow = "none"; })
+horiz5Color10.addEventListener("blur", () => { horiz5Row10b.style.boxShadow = "none"; });
 horiz5Text10a.addEventListener("focus", () => { horiz5Row10a.firstChild.style.filter = imgDropShadow; });
 horiz5Text10a.addEventListener("blur", () => { horiz5Row10a.firstChild.style.filter = "none"; });
 horiz5Text10b.addEventListener("focus", () => { horiz5Row10c.style.textShadow = shadowColor; });
