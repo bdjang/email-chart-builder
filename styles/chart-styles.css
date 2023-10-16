@@ -3,7 +3,7 @@ html{line-height: 1.15; -webkit-text-size-adjust: 100%;}body{margin: 0;}main{dis
 
 /* BASE STYLES */
 a { color: #0a47ff; }
-body { min-width: 740px; }
+body { margin: 0 auto; max-width: 1450px; min-width: 740px; }
 button { display: block; margin: 30px auto 30px; }
 button, input { font-family: Arial, sans-serif; font-size: 14px; }
 code { color: #de0d0d; font-size: 14px; }
