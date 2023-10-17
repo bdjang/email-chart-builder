@@ -56,7 +56,7 @@ pre { background-color: #f7f7f7; border: 1px solid #c4c4c4; padding: 20px; width
 .vert5Controls input { margin: 10px 10px 0 0; width: 50px; }
 
 /* CHART SELECTION TRANSITION EFFECT */
-.charts { opacity: 0; -webkit-transition: opacity 300ms ease-in; -ms-transition: opacity 300ms ease-in; -moz-transition: opacity 300ms ease-in; transition: opacity 300ms ease-in; }
+.charts { opacity: 0; -webkit-transition: opacity 300ms ease-in-out; -ms-transition: opacity 300ms ease-in-out; -moz-transition: opacity 300ms ease-in-out; transition: opacity 300ms ease-in-out; }
 #horiz1Chart { opacity: 1; }
 
 /* COLOR PICKER TOOL */
