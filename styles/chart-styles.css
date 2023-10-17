@@ -55,6 +55,10 @@ pre { background-color: #f7f7f7; border: 1px solid #c4c4c4; padding: 20px; width
 .splitControls input { width: 50px; }
 .vert5Controls input { margin: 10px 10px 0 0; width: 50px; }
 
+/* CHART SELECTION TRANSITION EFFECT */
+.charts { opacity: 0; -webkit-transition: opacity 300ms linear; -ms-transition: opacity 300ms linear; -moz-transition: opacity 300ms linear; transition: opacity 300ms linear; }
+#horiz1Chart { opacity: 1; }
+
 /* COLOR PICKER TOOL */
 .colorTool { display: inline-block; padding: 0 0 0 4px; --tool-cool-color-picker-btn-border-color: #858585; --tool-cool-color-picker-btn-border-color-inner: #000000; --tool-cool-color-picker-btn-border-radius: 3px; --tool-cool-color-picker-btn-border-radius-inner: 2px; }
 

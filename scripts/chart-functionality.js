@@ -5,9 +5,12 @@ selectElement.addEventListener("change", () => {
     for (var i = 0; i < charts.length; i++) {
         if (selectElement.value === "empty") {
             charts[i].style.display = "none";
+            charts[i].style.opacity = "0";
         } else if (selectElement.value === (charts[selectElement.selectedIndex - 1].id)) {
             charts[i].style.display = "none";
+            charts[i].style.opacity = "0";
             charts[selectElement.selectedIndex - 1].style.display = "block";
+            setTimeout(() => { charts[selectElement.selectedIndex - 1].style.opacity = "1"; }, 50);
         }
         if (selectElement.selectedIndex >= 21 && selectElement.selectedIndex < 26) {
             chartEmoji.style.transform = "rotate(0deg)"; // For vertical bar charts
