@@ -81,7 +81,7 @@ const codeText = document.querySelectorAll("div#readme ul li code");
 const codeSnippet = document.querySelectorAll("pre"); // Targets code snippet boxes
 
 window.addEventListener("load", () => { // Adds "lightStyles" class to all relevant elements
-    setTimeout(() => { darkMode.style.transform = "rotate(360deg)"; }, 250);
+    setTimeout(() => { darkMode.style.transform = "rotate(1080deg)"; }, 200);
     document.body.classList.add("lightStyles");
     prog1Row1a.classList.add("lightStyles");
     prog1Row2a.classList.add("lightStyles");
