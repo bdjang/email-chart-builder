@@ -1833,8 +1833,8 @@ horiz3srcText.oninput = function() {
         horiz3Source.style.paddingTop = "0";
         return horiz3srcCode = "";
     } else if (horiz3srcText.value) {
-        horiz3Source.style.paddingTop = "15px";
-        return horiz3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 15px; text-align: left;">' + horiz3Source.innerHTML + '</td></tr>';
+        horiz3Source.style.paddingTop = "20px";
+        return horiz3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + horiz3Source.innerHTML + '</td></tr>';
     }
 };
 
