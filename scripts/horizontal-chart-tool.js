@@ -1785,8 +1785,8 @@ horiz3capText.oninput = function() {
         horiz3Cap.style.marginBottom = "0";
         return horiz3csCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 14px; line-height: normal; text-align: left;">' + horiz3Sub.innerHTML + '</td> </tr>';
     } else if (horiz3capText.value && horiz3subText.value == "") {
-        horiz3Bars[0].firstElementChild.style.padding = "0";
-        horiz3TopBarSpace = "0";
+        horiz3Bars[0].firstElementChild.style.padding = "0 0 5px 0";
+        horiz3TopBarSpace = "0 0 5px 0";
         horiz3Cap.style.marginBottom = "20px";
         return horiz3csCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + horiz3Cap.innerHTML + '</caption>';
     } else if (horiz3capText.value && horiz3subText.value) {
@@ -2625,8 +2625,8 @@ horiz4capText.oninput = function() {
         horiz4Cap.style.marginBottom = "0";
         return horiz4csCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 14px; line-height: normal; text-align: left;">' + horiz4Sub.innerHTML + '</td> </tr>';
     } else if (horiz4capText.value && horiz4subText.value == "") {
-        horiz4Bars[0].firstElementChild.style.padding8= "0";
-        horiz4TopBarSpace8= "0";
+        horiz4Bars[0].firstElementChild.style.padding= "0 0 8px 0";
+        horiz4TopBarSpace= "0 0 8px 0";
         horiz4Cap.style.marginBottom = "20px";
         return horiz4csCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + horiz4Cap.innerHTML + '</caption>';
     } else if (horiz4capText.value && horiz4subText.value) {
@@ -3322,8 +3322,8 @@ horiz5capText.oninput = function() {
         horiz5Cap.style.marginBottom = "0";
         return horiz5csCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 14px; line-height: normal; text-align: left;">' + horiz5Sub.innerHTML + '</td> </tr>';
     } else if (horiz5capText.value && horiz5subText.value == "") {
-        horiz5Bars[0].firstElementChild.style.padding = "0";
-        horiz5TopBarSpace = "0";
+        horiz5Bars[0].firstElementChild.style.padding = "0 0 8px 0";
+        horiz5TopBarSpace = "0 0 8px 0";
         horiz5Cap.style.marginBottom = "20px";
         return horiz5csCode = '<caption style="caption-side: top; color: #000000; font-family: Verdana, sans-serif; font-size: 16px; font-weight: 600; line-height: normal; margin-bottom: 20px; text-align: left;">' + horiz5Cap.innerHTML + '</caption>';
     } else if (horiz5capText.value && horiz5subText.value) {
