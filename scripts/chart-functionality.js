@@ -1026,3 +1026,19 @@ lightMode.addEventListener("click", () => {
     darkMode.style.display = "inline-block";
     lightMode.style.display = "none";
 });
+
+// Light/Dark Mode Tooltips
+const lightNote = document.getElementById("lmTooltip");
+const darkNote = document.getElementById("dmTooltip");
+lightMode.addEventListener("mouseover", () => {
+    darkNote.style.opacity = "1";
+});
+lightMode.addEventListener("mouseleave", () => {
+    darkNote.style.opacity = "0";
+});
+darkMode.addEventListener("mouseover", () => {
+    lightNote.style.opacity = "1";
+});
+darkMode.addEventListener("mouseleave", () => {
+    lightNote.style.opacity = "0";
+});
