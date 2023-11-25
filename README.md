@@ -1,7 +1,7 @@
 # 📊 Email Chart Builder
 A tool for building bar charts for HTML email templates. Visit <a href="https://charts.email/" target="_blank">https://charts.email/</a>
 - 100% HTML/CSS Coded Bar Charts ⌨️
-- Compatible in Dark Mode ☀️
+- Compatible in Dark Mode 🌙
 - Mobile Responsive 📲
 - No Images ❌
 
