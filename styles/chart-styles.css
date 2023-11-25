@@ -9,7 +9,7 @@ button, input { font-family: Arial, sans-serif; font-size: 14px; }
 code { color: #de0d0d; font-size: 14px; }
 h1 { font-weight: 300; }
 header { margin: 0 20px; }
-header, textarea, #readme { font-family: Courier, serif; }
+header, footer, textarea, #readme { font-family: Courier, serif; }
 label { font-family: Times, serif; font-size: 16px; }
 legend { font-weight: 600; }
 textarea { background-color: #f8f8f8; border: 1px solid #c4c4c4; display: block; font-size: 12px; margin: 0 auto; padding: 0; resize: none; width: 700px; height: 160px; }
@@ -28,6 +28,10 @@ ul li { margin: 8px 0; }
 #readme p code { color: #0a47ff; font-weight: 300; } /* Targets <img> text */
 #readme p + p span { font-family: monospace; font-size: 14px; } /* Targets <table> text */
 pre { background-color: #f7f7f7; border: 1px solid #c4c4c4; padding: 20px; width: 580px; }
+
+/* FOOTER STYLES */
+footer p { font-size: 10px; margin: 0 0 20px 20px; }
+footer p time { font-weight: 600; }
 
 /* CHART STYLES */
 .endLabel:hover { cursor: pointer; text-decoration: underline; } /* Adds interactivity for label text switching */
