@@ -1042,3 +1042,11 @@ darkMode.addEventListener("mouseover", () => {
 darkMode.addEventListener("mouseleave", () => {
     lightNote.style.opacity = "0";
 });
+
+// Footer Last Update Time
+const timeEl = document.querySelectorAll("time");
+fetch("https://api.github.com/repos/bdjang/email-chart-builder/commits?per_page=1").then(res => res.json()).then(res => {
+    timeEl[0].innerHTML = res[0].commit.author.date;
+    timeEl[0].dateTime = res[0].commit.author.date;
+    timeEl[0].title = res[0].commit.author.date;
+});
