@@ -30,7 +30,7 @@ ul li { margin: 8px 0; }
 pre { background-color: #f7f7f7; border: 1px solid #c4c4c4; padding: 20px; width: 580px; }
 
 /* FOOTER STYLES */
-footer p { font-size: 10px; margin: 0 0 20px 20px; }
+footer p { font-size: 10px; margin: 20px 0 20px 20px; }
 footer p time { font-weight: 600; }
 
 /* CHART STYLES */
