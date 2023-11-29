@@ -3030,10 +3030,10 @@ combo1inputArray[0].addEventListener("input", () => {
         if (combo1inputArray[0].value.length <= 16) {
             combo1rowArray[i].style.height = "22px";
             combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[0].value.length > 16 && combo1inputArray[0].value.length < 32) {
+        } else if (combo1inputArray[0].value.length > 16 && combo1inputArray[0].value.length < 31) {
             combo1rowArray[i].style.height = "30px";
             combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[0].value.length >= 32) {
+        } else if (combo1inputArray[0].value.length >= 31) {
             combo1rowArray[i].style.height = "44px";
             combo1rowArray[i].height = "44";
         }
@@ -3044,10 +3044,10 @@ combo1inputArray[1].addEventListener("input", () => {
         if (combo1inputArray[1].value.length <= 16) {
             combo1rowArray[i].style.height = "22px";
             combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[1].value.length > 16 && combo1inputArray[1].value.length < 32) {
+        } else if (combo1inputArray[1].value.length > 16 && combo1inputArray[1].value.length < 31) {
             combo1rowArray[i].style.height = "30px";
             combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[1].value.length >= 32) {
+        } else if (combo1inputArray[1].value.length >= 31) {
             combo1rowArray[i].style.height = "44px";
             combo1rowArray[i].height = "44";
         }
@@ -3058,10 +3058,10 @@ combo1inputArray[2].addEventListener("input", () => {
         if (combo1inputArray[2].value.length <= 16) {
             combo1rowArray[i].style.height = "22px";
             combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[2].value.length > 16 && combo1inputArray[2].value.length < 32) {
+        } else if (combo1inputArray[2].value.length > 16 && combo1inputArray[2].value.length < 31) {
             combo1rowArray[i].style.height = "30px";
             combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[2].value.length >= 32) {
+        } else if (combo1inputArray[2].value.length >= 31) {
             combo1rowArray[i].style.height = "44px";
             combo1rowArray[i].height = "44";
         }
@@ -3072,10 +3072,10 @@ combo1inputArray[3].addEventListener("input", () => {
         if (combo1inputArray[3].value.length <= 16) {
             combo1rowArray[i].style.height = "22px";
             combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[3].value.length > 16 && combo1inputArray[3].value.length < 32) {
+        } else if (combo1inputArray[3].value.length > 16 && combo1inputArray[3].value.length < 31) {
             combo1rowArray[i].style.height = "30px";
             combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[3].value.length >= 32) {
+        } else if (combo1inputArray[3].value.length >= 31) {
             combo1rowArray[i].style.height = "44px";
             combo1rowArray[i].height = "44";
         }
@@ -3086,10 +3086,10 @@ combo1inputArray[4].addEventListener("input", () => {
         if (combo1inputArray[4].value.length <= 16) {
             combo1rowArray[i].style.height = "22px";
             combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[4].value.length > 16 && combo1inputArray[4].value.length < 32) {
+        } else if (combo1inputArray[4].value.length > 16 && combo1inputArray[4].value.length < 31) {
             combo1rowArray[i].style.height = "30px";
             combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[4].value.length >= 32) {
+        } else if (combo1inputArray[4].value.length >= 31) {
             combo1rowArray[i].style.height = "44px";
             combo1rowArray[i].height = "44";
         }
@@ -3100,10 +3100,10 @@ combo1inputArray[5].addEventListener("input", () => {
         if (combo1inputArray[5].value.length <= 16) {
             combo1rowArray[i].style.height = "22px";
             combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[5].value.length > 16 && combo1inputArray[5].value.length < 32) {
+        } else if (combo1inputArray[5].value.length > 16 && combo1inputArray[5].value.length < 31) {
             combo1rowArray[i].style.height = "30px";
             combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[5].value.length >= 32) {
+        } else if (combo1inputArray[5].value.length >= 31) {
             combo1rowArray[i].style.height = "44px";
             combo1rowArray[i].height = "44";
         }
