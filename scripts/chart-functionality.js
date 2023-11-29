@@ -1044,9 +1044,11 @@ darkMode.addEventListener("mouseleave", () => {
 });
 
 // Footer Last Update Time
+const timeLinkEl = document.getElementById("timeLink");
 const timeEl = document.querySelectorAll("time");
 fetch("https://api.github.com/repos/bdjang/email-chart-builder/commits?per_page=1").then(res => res.json()).then(res => {
     timeEl[0].innerHTML = res[0].commit.author.date;
     timeEl[0].dateTime = res[0].commit.author.date;
     timeEl[0].title = res[0].commit.author.date;
+    timeLinkEl.href = "https://github.com/bdjang/email-chart-builder";
 });
