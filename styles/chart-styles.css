@@ -73,9 +73,9 @@ label[for*="Output"] span { text-decoration: underline; text-decoration-thicknes
 /* DARK MODE STYLES */
 button, #darkMode, #lightMode { cursor: pointer; }
 #darkMode, #lightMode { -webkit-user-select: none; user-select: none; }
-.darkBorder { border-color: #020202 !important; }
+.darkBorder { border-color: #1b1b1b !important; }
 .lightBorder { border-color: #ffffff !important; }
-.darkStyles { background-color: #020202 !important; color: #f2f2f2 !important; }
+.darkStyles { background-color: #1b1b1b !important; color: #f2f2f2 !important; }
 .lightStyles { background-color: #ffffff !important; color: #000000 !important; }
 .lightStylesCSS { background-color: #ffffff !important; color: #666666 !important; } /* Used by Caption, Subtitle and Source text */
 .scrollBoxLight, .textareaLight { background-color: #f8f8f8 !important; }
