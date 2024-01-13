@@ -101,13 +101,8 @@ const horiz1Source = document.getElementById("horiz1Source"); // Chart source
 const horiz1srcText = document.getElementById("horiz1srcText"); // Chart source text
 horiz1srcText.oninput = function() {
     horiz1Source.innerHTML = horiz1srcText.value;
-    if (horiz1srcText.value == "") {
-        horiz1Source.style.paddingTop = "0";
-        return horiz1srcCode = "";
-    } else if (horiz1srcText.value) {
-        horiz1Source.style.paddingTop = "17px";
-        return horiz1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 17px; text-align: left;">' + horiz1Source.innerHTML + '</td></tr>';
-    }
+    horiz1Source.style.paddingTop = horiz1srcText.value ? "17px" : "0";
+    horiz1srcCode = horiz1srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 17px; text-align: left;">' + horiz1Source.innerHTML + '</td></tr>' : "";
 };
 
 // Horizontal Chart I Color Picker
@@ -939,13 +934,8 @@ const horiz2Source = document.getElementById("horiz2Source"); // Chart source
 const horiz2srcText = document.getElementById("horiz2srcText"); // Chart source text
 horiz2srcText.oninput = function() {
     horiz2Source.innerHTML = horiz2srcText.value;
-    if (horiz2srcText.value == "") {
-        horiz2Source.style.paddingTop = "0";
-        return horiz2srcCode = "";
-    } else if (horiz2srcText.value) {
-        horiz2Source.style.paddingTop = "20px";
-        return horiz2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + horiz2Source.innerHTML + '</td></tr>';
-    }
+    horiz2Source.style.paddingTop = horiz2srcText.value ? "20px" : "0";
+    horiz2srcCode = horiz2srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + horiz2Source.innerHTML + '</td></tr>' : "";
 };
 
 // Horizontal Chart II Color Picker
@@ -1829,13 +1819,8 @@ const horiz3Source = document.getElementById("horiz3Source"); // Chart source
 const horiz3srcText = document.getElementById("horiz3srcText"); // Chart source text
 horiz3srcText.oninput = function() {
     horiz3Source.innerHTML = horiz3srcText.value;
-    if (horiz3srcText.value == "") {
-        horiz3Source.style.paddingTop = "0";
-        return horiz3srcCode = "";
-    } else if (horiz3srcText.value) {
-        horiz3Source.style.paddingTop = "20px";
-        return horiz3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + horiz3Source.innerHTML + '</td></tr>';
-    }
+    horiz3Source.style.paddingTop = horiz3srcText.value ? "20px" : "0";
+    horiz3srcCode = horiz3srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + horiz3Source.innerHTML + '</td></tr>' : "";
 };
 
 // Horizontal Chart III Color Picker
@@ -2669,13 +2654,8 @@ const horiz4Source = document.getElementById("horiz4Source"); // Chart source
 const horiz4srcText = document.getElementById("horiz4srcText"); // Chart source text
 horiz4srcText.oninput = function() {
     horiz4Source.innerHTML = horiz4srcText.value;
-    if (horiz4srcText.value == "") {
-        horiz4Source.style.paddingTop = "0";
-        return horiz4srcCode = "";
-    } else if (horiz4srcText.value) {
-        horiz4Source.style.paddingTop = "12px";
-        return horiz4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 12px; text-align: left;">' + horiz4Source.innerHTML + '</td></tr>';
-    }
+    horiz4Source.style.paddingTop = horiz4srcText.value ? "12px" : "0";
+    horiz4srcCode = horiz4srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 12px; text-align: left;">' + horiz4Source.innerHTML + '</td></tr>' : "";
 };
 
 // Horizontal Chart IV Color Picker
@@ -3366,13 +3346,8 @@ const horiz5Source = document.getElementById("horiz5Source"); // Chart source
 const horiz5srcText = document.getElementById("horiz5srcText"); // Chart source text
 horiz5srcText.oninput = function() {
     horiz5Source.innerHTML = horiz5srcText.value;
-    if (horiz5srcText.value == "") {
-        horiz5Source.style.paddingTop = "0";
-        return horiz5srcCode = "";
-    } else if (horiz5srcText.value) {
-        horiz5Source.style.paddingTop = "12px";
-        return horiz5srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 12px; text-align: left;">' + horiz5Source.innerHTML + '</td></tr>';
-    }
+    horiz5Source.style.paddingTop = horiz5srcText.value ? "12px" : "0";
+    horiz5srcCode = horiz5srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 12px; text-align: left;">' + horiz5Source.innerHTML + '</td></tr>' : "";
 };
 
 // Horizontal Chart V Color Picker
