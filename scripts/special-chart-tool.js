@@ -99,13 +99,8 @@ const negative1Source = document.getElementById("negative1Source"); // Chart sou
 const negative1srcText = document.getElementById("negative1srcText"); // Chart source text
 negative1srcText.oninput = function() {
     negative1Source.innerHTML = negative1srcText.value;
-    if (negative1srcText.value == "") {
-        negative1Source.style.paddingTop = "0";
-        return negative1srcCode = "";
-    } else if (negative1srcText.value) {
-        negative1Source.style.paddingTop = "15px";
-        return negative1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 15px; text-align: left;">' + negative1Source.innerHTML + '</td></tr>';
-    }
+    negative1Source.style.paddingTop = negative1srcText.value ? "15px" : "0";
+    negative1srcCode = negative1srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 15px; text-align: left;">' + negative1Source.innerHTML + '</td></tr>' : "";
 };
 
 // Negative I Chart Color Picker
@@ -896,13 +891,8 @@ const negative2Source = document.getElementById("negative2Source"); // Chart sou
 const negative2srcText = document.getElementById("negative2srcText"); // Chart source text
 negative2srcText.oninput = function() {
     negative2Source.innerHTML = negative2srcText.value;
-    if (negative2srcText.value == "") {
-        negative2Source.style.paddingTop = "0";
-        return negative2srcCode = "";
-    } else if (negative2srcText.value) {
-        negative2Source.style.paddingTop = "15px";
-        return negative2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 15px; text-align: left;">' + negative2Source.innerHTML + '</td></tr>';
-    }
+    negative2Source.style.paddingTop = negative2srcText.value ? "15px" : "0";
+    negative2srcCode = negative2srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 15px; text-align: left;">' + negative2Source.innerHTML + '</td></tr>' : "";
 };
 
 // Negative II Chart Color Picker
@@ -1669,13 +1659,8 @@ const splitSource = document.getElementById("splitSource"); // Chart source
 const splitsrcText = document.getElementById("splitsrcText"); // Chart source text
 splitsrcText.oninput = function() {
     splitSource.innerHTML = splitsrcText.value;
-    if (splitsrcText.value == "") {
-        splitSource.style.paddingTop = "0";
-        return splitsrcCode = "";
-    } else if (splitsrcText.value) {
-        splitSource.style.paddingTop = "20px";
-        return splitsrcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + splitSource.innerHTML + '</td></tr>';
-    }
+    splitSource.style.paddingTop = splitsrcText.value ? "20px" : "0";
+    splitsrcCode = splitsrcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + splitSource.innerHTML + '</td></tr>' : "";
 };
 
 // Negative/Positive (Split) Chart Color Picker
@@ -2486,13 +2471,8 @@ const combo1Source = document.getElementById("combo1Source"); // Chart source
 const combo1srcText = document.getElementById("combo1srcText"); // Chart source text
 combo1srcText.oninput = function() {
     combo1Source.innerHTML = combo1srcText.value;
-    if (combo1srcText.value == "") {
-        combo1Source.style.paddingTop = "0";
-        return combo1srcCode = "";
-    } else if (combo1srcText.value) {
-        combo1Source.style.paddingTop = "10px";
-        return combo1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 10px; text-align: left;">' + combo1Source.innerHTML + '</td></tr>';
-    }
+    combo1Source.style.paddingTop = combo1srcText.value ? "10px" : "0";
+    combo1srcCode = combo1srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 10px; text-align: left;">' + combo1Source.innerHTML + '</td></tr>' : "";
 };
 
 // Combo I Chart Color Picker
@@ -3317,13 +3297,8 @@ const combo2Source = document.getElementById("combo2Source"); // Chart source
 const combo2srcText = document.getElementById("combo2srcText"); // Chart source text
 combo2srcText.oninput = function() {
     combo2Source.innerHTML = combo2srcText.value;
-    if (combo2srcText.value == "") {
-        combo2Source.style.paddingTop = "0";
-        return combo2srcCode = "";
-    } else if (combo2srcText.value) {
-        combo2Source.style.paddingTop = "20px";
-        return combo2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + combo2Source.innerHTML + '</td></tr>';
-    }
+    combo2Source.style.paddingTop = combo2srcText.value ? "20px" : "0";
+    combo2srcCode = combo2srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + combo2Source.innerHTML + '</td></tr>' : "";
 };
 
 // Combo II Chart Color Picker
@@ -3994,13 +3969,8 @@ const combo3Source = document.getElementById("combo3Source"); // Chart source
 const combo3srcText = document.getElementById("combo3srcText"); // Chart source text
 combo3srcText.oninput = function() {
     combo3Source.innerHTML = combo3srcText.value;
-    if (combo3srcText.value == "") {
-        combo3Source.style.paddingTop = "0";
-        return combo3srcCode = "";
-    } else if (combo3srcText.value) {
-        combo3Source.style.paddingTop = "20px";
-        return combo3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + combo3Source.innerHTML + '</td></tr>';
-    }
+    combo3Source.style.paddingTop = combo3srcText.value ? "20px" : "0";
+    combo3srcCode = combo3srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + combo3Source.innerHTML + '</td></tr>' : "";
 };
 
 // Combo III Chart Color Picker
