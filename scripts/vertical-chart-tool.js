@@ -73,13 +73,8 @@ const vert1Source = document.getElementById("vert1Source"); // Chart source
 const vert1srcText = document.getElementById("vert1srcText"); // Chart source text
 vert1srcText.oninput = function() {
     vert1Source.innerHTML = vert1srcText.value;
-    if (vert1srcText.value == "") {
-        vert1Source.style.paddingTop = "0";
-        return vert1srcCode = "";
-    } else if (vert1srcText.value) {
-        vert1Source.style.marginTop = "20px";
-        return vert1srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert1Source.innerHTML + '</div>';
-    }
+    vert1Source.style.marginTop = vert1srcText.value ? "20px" : "0";
+    vert1srcCode = vert1srcText.value ? '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert1Source.innerHTML + '</div>' : "";
 };
 
 // Vertical Chart I Color Picker
@@ -440,13 +435,8 @@ const vert2Source = document.getElementById("vert2Source"); // Chart source
 const vert2srcText = document.getElementById("vert2srcText"); // Chart source text
 vert2srcText.oninput = function() {
     vert2Source.innerHTML = vert2srcText.value;
-    if (vert2srcText.value == "") {
-        vert2Source.style.paddingTop = "0";
-        return vert2srcCode = "";
-    } else if (vert2srcText.value) {
-        vert2Source.style.marginTop = "20px";
-        return vert2srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert2Source.innerHTML + '</div>';
-    }
+    vert2Source.style.marginTop = vert2srcText.value ? "20px" : "0";
+    vert2srcCode = vert2srcText.value ? '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert2Source.innerHTML + '</div>' : "";
 };
 
 // Vertical Chart II Color Picker
@@ -1159,13 +1149,8 @@ const vert3Source = document.getElementById("vert3Source"); // Chart source
 const vert3srcText = document.getElementById("vert3srcText"); // Chart source text
 vert3srcText.oninput = function() {
     vert3Source.innerHTML = vert3srcText.value;
-    if (vert3srcText.value == "") {
-        vert3Source.style.paddingTop = "0";
-        return vert3srcCode = "";
-    } else if (vert3srcText.value) {
-        vert3Source.style.marginTop = "20px";
-        return vert3srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert3Source.innerHTML + '</div>';
-    }
+    vert3Source.style.marginTop = vert3srcText.value ? "20px" : "0";
+    vert3srcCode = vert3srcText.value ? '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert3Source.innerHTML + '</div>' : "";
 };
 
 // Vertical Chart III Color Picker
@@ -1526,13 +1511,8 @@ const vert4Source = document.getElementById("vert4Source"); // Chart source
 const vert4srcText = document.getElementById("vert4srcText"); // Chart source text
 vert4srcText.oninput = function() {
     vert4Source.innerHTML = vert4srcText.value;
-    if (vert4srcText.value == "") {
-        vert4Source.style.paddingTop = "0";
-        return vert4srcCode = "";
-    } else if (vert4srcText.value) {
-        vert4Source.style.marginTop = "20px";
-        return vert4srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert4Source.innerHTML + '</div>';
-    }
+    vert4Source.style.marginTop = vert4srcText.value ? "20px" : "0";
+    vert4srcCode = vert4srcText.value ? '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert4Source.innerHTML + '</div>' : "";
 };
 
 // Vertical Chart IV Color Picker
@@ -2249,13 +2229,8 @@ const vert5Source = document.getElementById("vert5Source"); // Chart source
 const vert5srcText = document.getElementById("vert5srcText"); // Chart source text
 vert5srcText.oninput = function() {
     vert5Source.innerHTML = vert5srcText.value;
-    if (vert5srcText.value == "") {
-        vert5Source.style.paddingTop = "0";
-        return vert5srcCode = "";
-    } else if (vert5srcText.value) {
-        vert5Source.style.marginTop = "20px";
-        return vert5srcCode = '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert5Source.innerHTML + '</div>';
-    }
+    vert5Source.style.marginTop = vert5srcText.value ? "20px" : "0";
+    vert5srcCode = vert5srcText.value ? '<div style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; margin: 20px 0; text-align: center;" class="chartVertSrc">' + vert5Source.innerHTML + '</div>' : "";
 };
 
 // Vertical Chart V Color Picker
