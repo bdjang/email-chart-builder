@@ -53,13 +53,8 @@ const stacked1Source = document.getElementById("stacked1Source"); // Chart sourc
 const stacked1srcText = document.getElementById("stacked1srcText"); // Chart source text
 stacked1srcText.oninput = function() {
     stacked1Source.innerHTML = stacked1srcText.value;
-    if (stacked1srcText.value == "") {
-        stacked1Source.style.paddingTop = "0";
-        return stacked1srcCode = "";
-    } else if (stacked1srcText.value) {
-        stacked1Source.style.paddingTop = "20px";
-        return stacked1srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked1Source.innerHTML + '</td></tr>';
-    }
+    stacked1Source.style.paddingTop = stacked1srcText.value ? "20px" : "0";
+    stacked1srcCode = stacked1srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked1Source.innerHTML + '</td></tr>' : "";
 };
 
 // Stacked I Chart Color Picker
@@ -1019,13 +1014,8 @@ const stacked2Source = document.getElementById("stacked2Source"); // Chart sourc
 const stacked2srcText = document.getElementById("stacked2srcText"); // Chart source text
 stacked2srcText.oninput = function() {
     stacked2Source.innerHTML = stacked2srcText.value;
-    if (stacked2srcText.value == "") {
-        stacked2Source.style.paddingTop = "0";
-        return stacked2srcCode = "";
-    } else if (stacked2srcText.value) {
-        stacked2Source.style.paddingTop = "20px";
-        return stacked2srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked2Source.innerHTML + '</td></tr>';
-    }
+    stacked2Source.style.paddingTop = stacked2srcText.value ? "20px" :"0";
+    stacked2srcCode = stacked2srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked2Source.innerHTML + '</td></tr>' : "";
 };
 
 // Stacked II Chart Color Picker
@@ -1883,13 +1873,8 @@ const stacked3Source = document.getElementById("stacked3Source"); // Chart sourc
 const stacked3srcText = document.getElementById("stacked3srcText"); // Chart source text
 stacked3srcText.oninput = function() {
     stacked3Source.innerHTML = stacked3srcText.value;
-    if (stacked3srcText.value == "") {
-        stacked3Source.style.paddingTop = "0";
-        return stacked3srcCode = "";
-    } else if (stacked3srcText.value) {
-        stacked3Source.style.paddingTop = "20px";
-        return stacked3srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked3Source.innerHTML + '</td></tr>';
-    }
+    stacked3Source.style.paddingTop = stacked3srcText.value ? "20px" : "0";
+    stacked3srcCode = stacked3srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked3Source.innerHTML + '</td></tr>' : "";
 };
 
 // Stacked III Chart Color Picker
@@ -3014,13 +2999,8 @@ const stacked4Source = document.getElementById("stacked4Source"); // Chart sourc
 const stacked4srcText = document.getElementById("stacked4srcText"); // Chart source text
 stacked4srcText.oninput = function() {
     stacked4Source.innerHTML = stacked4srcText.value;
-    if (stacked4srcText.value == "") {
-        stacked4Source.style.paddingTop = "0";
-        return stacked4srcCode = "";
-    } else if (stacked4srcText.value) {
-        stacked4Source.style.paddingTop = "20px";
-        return stacked4srcCode = '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked4Source.innerHTML + '</td></tr>';
-    }
+    stacked4Source.style.paddingTop = stacked4srcText.value ? "20px" : "0";
+    stacked4srcCode = stacked4srcText.value ? '<tr> <td style="color: #666666; font-family: Verdana, sans-serif; font-size: 11px; line-height: normal; padding-top: 20px; text-align: left;">' + stacked4Source.innerHTML + '</td></tr>' : "";
 };
 
 // Stacked IV Chart Color Picker
