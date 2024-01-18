@@ -113,13 +113,7 @@ const prog1Row5c = document.getElementById("prog1Row5c");
 
 // Progress Bar Row 1 Customization Logic
 const prog1Text1a = document.getElementById("prog1Text1a");
-prog1Text1a.oninput = function() {
-    if (prog1Text1a.value == "") {
-        prog1Row1a.innerHTML = prog1Text1a.value;
-    } else if (prog1Text1a.value) {
-        prog1Row1a.innerHTML = prog1Text1a.value;
-    }
-};
+prog1Text1a.oninput = function() { prog1Row1a.innerHTML = prog1Text1a.value; };
 const prog1Size1 = document.getElementById("prog1Size1");
 prog1Size1.oninput = function() {
     prog1Row1b.style.width = Math.abs(prog1Size1.value) + "%";
@@ -151,13 +145,7 @@ prog1Color1.oninput = function() {
 
 // Progress Bar Row 2 Customization Logic
 const prog1Text2a = document.getElementById("prog1Text2a");
-prog1Text2a.oninput = function() {
-    if (prog1Text2a.value == "") {
-        prog1Row2a.innerHTML = prog1Text2a.value;
-    } else if (prog1Text2a.value) {
-        prog1Row2a.innerHTML = prog1Text2a.value;
-    }
-};
+prog1Text2a.oninput = function() { prog1Row2a.innerHTML = prog1Text2a.value; };
 const prog1Size2 = document.getElementById("prog1Size2");
 prog1Size2.oninput = function() {
     prog1Row2b.style.width = Math.abs(prog1Size2.value) + "%";
@@ -189,13 +177,7 @@ prog1Color2.oninput = function() {
 
 // Progress Bar Row 3 Customization Logic
 const prog1Text3a = document.getElementById("prog1Text3a");
-prog1Text3a.oninput = function() {
-    if (prog1Text3a.value == "") {
-        prog1Row3a.innerHTML = prog1Text3a.value;
-    } else if (prog1Text3a.value) {
-        prog1Row3a.innerHTML = prog1Text3a.value;
-    }
-};
+prog1Text3a.oninput = function() { prog1Row3a.innerHTML = prog1Text3a.value; };
 const prog1Size3 = document.getElementById("prog1Size3");
 prog1Size3.oninput = function() {
     prog1Row3b.style.width = Math.abs(prog1Size3.value) + "%";
@@ -227,13 +209,7 @@ prog1Color3.oninput = function() {
 
 // Progress Bar Row 4 Customization Logic
 const prog1Text4a = document.getElementById("prog1Text4a");
-prog1Text4a.oninput = function() {
-    if (prog1Text4a.value == "") {
-        prog1Row4a.innerHTML = prog1Text4a.value;
-    } else if (prog1Text4a.value) {
-        prog1Row4a.innerHTML = prog1Text4a.value;
-    }
-};
+prog1Text4a.oninput = function() { prog1Row4a.innerHTML = prog1Text4a.value; };
 const prog1Size4 = document.getElementById("prog1Size4");
 prog1Size4.oninput = function() {
     prog1Row4b.style.width = Math.abs(prog1Size4.value) + "%";
@@ -265,13 +241,7 @@ prog1Color4.oninput = function() {
 
 // Progress Bar Row 5 Customization Logic
 const prog1Text5a = document.getElementById("prog1Text5a");
-prog1Text5a.oninput = function() {
-    if (prog1Text5a.value == "") {
-        prog1Row5a.innerHTML = prog1Text5a.value;
-    } else if (prog1Text5a.value) {
-        prog1Row5a.innerHTML = prog1Text5a.value;
-    }
-};
+prog1Text5a.oninput = function() { prog1Row5a.innerHTML = prog1Text5a.value; };
 const prog1Size5 = document.getElementById("prog1Size5");
 prog1Size5.oninput = function() {
     prog1Row5b.style.width = Math.abs(prog1Size5.value) + "%";
@@ -503,13 +473,7 @@ const prog2Row5c = document.getElementById("prog2Row5c");
 
 // Progress Bar Row 1 Customization Logic
 const prog2Text1a = document.getElementById("prog2Text1a");
-prog2Text1a.oninput = function() {
-    if (prog2Text1a.value == "") {
-        prog2Row1a.innerHTML = prog2Text1a.value;
-    } else if (prog2Text1a.value) {
-        prog2Row1a.innerHTML = prog2Text1a.value;
-    }
-};
+prog2Text1a.oninput = function() { prog2Row1a.innerHTML = prog2Text1a.value; };
 let prog2VML1b = "156.8"; // Actual progress bar width; not grey color bar
 let prog2VML1bInset = "106.80";
 let prog2VML1cInset = "156.80";
@@ -563,13 +527,7 @@ prog2Color1.oninput = function() {
 
 // Progress Bar Row 2 Customization Logic
 const prog2Text2a = document.getElementById("prog2Text2a");
-prog2Text2a.oninput = function() {
-    if (prog2Text2a.value == "") {
-        prog2Row2a.innerHTML = prog2Text2a.value;
-    } else if (prog2Text2a.value) {
-        prog2Row2a.innerHTML = prog2Text2a.value;
-    }
-};
+prog2Text2a.oninput = function() { prog2Row2a.innerHTML = prog2Text2a.value; };
 let prog2VML2b = "375.20"; // Actual progress bar width; not grey color bar
 let prog2VML2bInset = "325.20";
 let prog2VML2cInset = "375.20";
@@ -623,13 +581,7 @@ prog2Color2.oninput = function() {
 
 // Progress Bar Row 3 Customization Logic
 const prog2Text3a = document.getElementById("prog2Text3a");
-prog2Text3a.oninput = function() {
-    if (prog2Text3a.value == "") {
-        prog2Row3a.innerHTML = prog2Text3a.value;
-    } else if (prog2Text3a.value) {
-        prog2Row3a.innerHTML = prog2Text3a.value;
-    }
-};
+prog2Text3a.oninput = function() { prog2Row3a.innerHTML = prog2Text3a.value; };
 let prog2VML3b = "44.80"; // Actual progress bar width; not grey color bar
 let prog2VML3bInset = "103";
 let prog2VML3cInset = "44.80";
@@ -683,13 +635,7 @@ prog2Color3.oninput = function() {
 
 // Progress Bar Row 4 Customization Logic
 const prog2Text4a = document.getElementById("prog2Text4a");
-prog2Text4a.oninput = function() {
-    if (prog2Text4a.value == "") {
-        prog2Row4a.innerHTML = prog2Text4a.value;
-    } else if (prog2Text4a.value) {
-        prog2Row4a.innerHTML = prog2Text4a.value;
-    }
-};
+prog2Text4a.oninput = function() { prog2Row4a.innerHTML = prog2Text4a.value; };
 let prog2VML4b = "543.20"; // Actual progress bar width; not grey color bar
 let prog2VML4bInset = "493.20";
 let prog2VML4cInset = "543.20";
@@ -743,13 +689,7 @@ prog2Color4.oninput = function() {
 
 // Progress Bar Row 5 Customization Logic
 const prog2Text5a = document.getElementById("prog2Text5a");
-prog2Text5a.oninput = function() {
-    if (prog2Text5a.value == "") {
-        prog2Row5a.innerHTML = prog2Text5a.value;
-    } else if (prog2Text5a.value) {
-        prog2Row5a.innerHTML = prog2Text5a.value;
-    }
-};
+prog2Text5a.oninput = function() { prog2Row5a.innerHTML = prog2Text5a.value; };
 let prog2VML5b = "140"; // Actual progress bar width; not grey color bar
 let prog2VML5bInset = "103";
 let prog2VML5cInset = "140";
@@ -1025,13 +965,7 @@ const prog3Row5c = document.getElementById("prog3Row5c");
 
 // Progress Bar Row 1 Customization Logic
 const prog3Text1a = document.getElementById("prog3Text1a");
-prog3Text1a.oninput = function() {
-    if (prog3Text1a.value == "") {
-        prog3Row1a.innerHTML = prog3Text1a.value;
-    } else if (prog3Text1a.value) {
-        prog3Row1a.innerHTML = prog3Text1a.value;
-    }
-};
+prog3Text1a.oninput = function() { prog3Row1a.innerHTML = prog3Text1a.value; };
 let prog3VML1b = "156.8"; // Actual progress bar width; not grey color bar
 let prog3VML1bInset = "106.80";
 let prog3VML1cInset = "156.80";
@@ -1081,13 +1015,7 @@ prog3Color1b.oninput = function() {
 
 // Progress Bar Row 2 Customization Logic
 const prog3Text2a = document.getElementById("prog3Text2a");
-prog3Text2a.oninput = function() {
-    if (prog3Text2a.value == "") {
-        prog3Row2a.innerHTML = prog3Text2a.value;
-    } else if (prog3Text2a.value) {
-        prog3Row2a.innerHTML = prog3Text2a.value;
-    }
-};
+prog3Text2a.oninput = function() { prog3Row2a.innerHTML = prog3Text2a.value; };
 let prog3VML2b = "375.20"; // Actual progress bar width; not grey color bar
 let prog3VML2bInset = "325.20";
 let prog3VML2cInset = "375.20";
@@ -1137,13 +1065,7 @@ prog3Color2b.oninput = function() {
 
 // Progress Bar Row 3 Customization Logic
 const prog3Text3a = document.getElementById("prog3Text3a");
-prog3Text3a.oninput = function() {
-    if (prog3Text3a.value == "") {
-        prog3Row3a.innerHTML = prog3Text3a.value;
-    } else if (prog3Text3a.value) {
-        prog3Row3a.innerHTML = prog3Text3a.value;
-    }
-};
+prog3Text3a.oninput = function() { prog3Row3a.innerHTML = prog3Text3a.value; };
 let prog3VML3b = "44.80"; // Actual progress bar width; not grey color bar
 let prog3VML3bInset = "103";
 let prog3VML3cInset = "44.80";
@@ -1193,13 +1115,7 @@ prog3Color3b.oninput = function() {
 
 // Progress Bar Row 4 Customization Logic
 const prog3Text4a = document.getElementById("prog3Text4a");
-prog3Text4a.oninput = function() {
-    if (prog3Text4a.value == "") {
-        prog3Row4a.innerHTML = prog3Text4a.value;
-    } else if (prog3Text4a.value) {
-        prog3Row4a.innerHTML = prog3Text4a.value;
-    }
-};
+prog3Text4a.oninput = function() { prog3Row4a.innerHTML = prog3Text4a.value; };
 let prog3VML4b = "543.20"; // Actual progress bar width; not grey color bar
 let prog3VML4bInset = "493.20";
 let prog3VML4cInset = "543.20";
@@ -1249,13 +1165,7 @@ prog3Color4b.oninput = function() {
 
 // Progress Bar Row 5 Customization Logic
 const prog3Text5a = document.getElementById("prog3Text5a");
-prog3Text5a.oninput = function() {
-    if (prog3Text5a.value == "") {
-        prog3Row5a.innerHTML = prog3Text5a.value;
-    } else if (prog3Text5a.value) {
-        prog3Row5a.innerHTML = prog3Text5a.value;
-    }
-};
+prog3Text5a.oninput = function() { prog3Row5a.innerHTML = prog3Text5a.value; };
 let prog3VML5b = "140"; // Actual progress bar width; not grey color bar
 let prog3VML5bInset = "103";
 let prog3VML5cInset = "140";
@@ -1537,13 +1447,7 @@ const prog4Row5c = document.getElementById("prog4Row5c");
 
 // Progress Bar Row 1 Customization Logic
 const prog4Text1a = document.getElementById("prog4Text1a");
-prog4Text1a.oninput = function() {
-    if (prog4Text1a.value == "") {
-        prog4Row1a.innerHTML = prog4Text1a.value;
-    } else if (prog4Text1a.value) {
-        prog4Row1a.innerHTML = prog4Text1a.value;
-    }
-};
+prog4Text1a.oninput = function() { prog4Row1a.innerHTML = prog4Text1a.value; };
 let prog4VML1b = "156.8"; // Actual progress bar width; not grey color bar
 let prog4VML1bInset = "106.80";
 let prog4VML1cInset = "156.80";
@@ -1602,13 +1506,7 @@ prog4Color1b.oninput = function() {
 
 // Progress Bar Row 2 Customization Logic
 const prog4Text2a = document.getElementById("prog4Text2a");
-prog4Text2a.oninput = function() {
-    if (prog4Text2a.value == "") {
-        prog4Row2a.innerHTML = prog4Text2a.value;
-    } else if (prog4Text2a.value) {
-        prog4Row2a.innerHTML = prog4Text2a.value;
-    }
-};
+prog4Text2a.oninput = function() { prog4Row2a.innerHTML = prog4Text2a.value; };
 let prog4VML2b = "375.20"; // Actual progress bar width; not grey color bar
 let prog4VML2bInset = "325.20";
 let prog4VML2cInset = "375.20";
@@ -1667,13 +1565,7 @@ prog4Color2b.oninput = function() {
 
 // Progress Bar Row 3 Customization Logic
 const prog4Text3a = document.getElementById("prog4Text3a");
-prog4Text3a.oninput = function() {
-    if (prog4Text3a.value == "") {
-        prog4Row3a.innerHTML = prog4Text3a.value;
-    } else if (prog4Text3a.value) {
-        prog4Row3a.innerHTML = prog4Text3a.value;
-    }
-};
+prog4Text3a.oninput = function() { prog4Row3a.innerHTML = prog4Text3a.value; };
 let prog4VML3b = "44.80"; // Actual progress bar width; not grey color bar
 let prog4VML3bInset = "103";
 let prog4VML3cInset = "44.80";
@@ -1732,13 +1624,7 @@ prog4Color3b.oninput = function() {
 
 // Progress Bar Row 4 Customization Logic
 const prog4Text4a = document.getElementById("prog4Text4a");
-prog4Text4a.oninput = function() {
-    if (prog4Text4a.value == "") {
-        prog4Row4a.innerHTML = prog4Text4a.value;
-    } else if (prog4Text4a.value) {
-        prog4Row4a.innerHTML = prog4Text4a.value;
-    }
-};
+prog4Text4a.oninput = function() { prog4Row4a.innerHTML = prog4Text4a.value; };
 let prog4VML4b = "543.20"; // Actual progress bar width; not grey color bar
 let prog4VML4bInset = "493.20";
 let prog4VML4cInset = "543.20";
@@ -1797,13 +1683,7 @@ prog4Color4b.oninput = function() {
 
 // Progress Bar Row 5 Customization Logic
 const prog4Text5a = document.getElementById("prog4Text5a");
-prog4Text5a.oninput = function() {
-    if (prog4Text5a.value == "") {
-        prog4Row5a.innerHTML = prog4Text5a.value;
-    } else if (prog4Text5a.value) {
-        prog4Row5a.innerHTML = prog4Text5a.value;
-    }
-};
+prog4Text5a.oninput = function() { prog4Row5a.innerHTML = prog4Text5a.value; };
 let prog4VML5b = "140"; // Actual progress bar width; not grey color bar
 let prog4VML5bInset = "103";
 let prog4VML5cInset = "140";
