@@ -121,11 +121,7 @@ prog1Size1.oninput = function() {
 };
 const prog1Text1 = document.getElementById("prog1Text1");
 prog1Text1.oninput = function() {
-    if (prog1Text1.value == "") {
-        prog1Row1c.innerHTML = prog1Text1.value;
-    } else if (prog1Text1.value) {
-        prog1Row1c.innerHTML = "&nbsp;" + prog1Text1.value;
-    }
+    prog1Row1c.innerHTML = prog1Text1.value ? "&nbsp;" + prog1Text1.value : "";
 };
 const prog1Label1 = document.getElementById("prog1Label1");
 prog1Label1.addEventListener("click", () => {
@@ -153,11 +149,7 @@ prog1Size2.oninput = function() {
 };
 const prog1Text2 = document.getElementById("prog1Text2");
 prog1Text2.oninput = function() {
-    if (prog1Text2.value == "") {
-        prog1Row2c.innerHTML = prog1Text2.value;
-    } else if (prog1Text2.value) {
-        prog1Row2c.innerHTML = "&nbsp;" + prog1Text2.value;
-    }
+    prog1Row2c.innerHTML = prog1Text2.value ? "&nbsp;" + prog1Text2.value : "";
 };
 const prog1Label2 = document.getElementById("prog1Label2");
 prog1Label2.addEventListener("click", () => {
@@ -185,11 +177,7 @@ prog1Size3.oninput = function() {
 };
 const prog1Text3 = document.getElementById("prog1Text3");
 prog1Text3.oninput = function() {
-    if (prog1Text3.value == "") {
-        prog1Row3c.innerHTML = prog1Text3.value;
-    } else if (prog1Text3.value) {
-        prog1Row3c.innerHTML = "&nbsp;" + prog1Text3.value;
-    }
+    prog1Row3c.innerHTML = prog1Text3.value ? "&nbsp;" + prog1Text3.value : "";
 };
 const prog1Label3 = document.getElementById("prog1Label3");
 prog1Label3.addEventListener("click", () => {
@@ -217,11 +205,7 @@ prog1Size4.oninput = function() {
 };
 const prog1Text4 = document.getElementById("prog1Text4");
 prog1Text4.oninput = function() {
-    if (prog1Text4.value == "") {
-        prog1Row4c.innerHTML = prog1Text4.value;
-    } else if (prog1Text4.value) {
-        prog1Row4c.innerHTML = "&nbsp;" + prog1Text4.value;
-    }
+    prog1Row4c.innerHTML = prog1Text4.value ? "&nbsp;" + prog1Text4.value : "";
 };
 const prog1Label4 = document.getElementById("prog1Label4");
 prog1Label4.addEventListener("click", () => {
@@ -249,11 +233,7 @@ prog1Size5.oninput = function() {
 };
 const prog1Text5 = document.getElementById("prog1Text5");
 prog1Text5.oninput = function() {
-    if (prog1Text5.value == "") {
-        prog1Row5c.innerHTML = prog1Text5.value;
-    } else if (prog1Text5.value) {
-        prog1Row5c.innerHTML = "&nbsp;" + prog1Text5.value;
-    }
+    prog1Row5c.innerHTML = prog1Text5.value ? "&nbsp;" + prog1Text5.value : "";
 };
 const prog1Label5 = document.getElementById("prog1Label5");
 prog1Label5.addEventListener("click", () => {
@@ -503,11 +483,7 @@ prog2Size1.oninput = function() {
 };
 const prog2Text1 = document.getElementById("prog2Text1");
 prog2Text1.oninput = function() {
-    if (prog2Text1.value == "") {
-        prog2Row1c.innerHTML = prog2Text1.value;
-    } else if (prog2Text1.value) {
-        prog2Row1c.innerHTML = "&nbsp;" + prog2Text1.value;
-    }
+    prog2Row1c.innerHTML = prog2Text1.value ? "&nbsp;" + prog2Text1.value : "";
 };
 const prog2Label1 = document.getElementById("prog2Label1");
 prog2Label1.addEventListener("click", () => {
@@ -557,11 +533,7 @@ prog2Size2.oninput = function() {
 };
 const prog2Text2 = document.getElementById("prog2Text2");
 prog2Text2.oninput = function() {
-    if (prog2Text2.value == "") {
-        prog2Row2c.innerHTML = prog2Text2.value;
-    } else if (prog2Text2.value) {
-        prog2Row2c.innerHTML = "&nbsp;" + prog2Text2.value;
-    }
+    prog2Row2c.innerHTML = prog2Text2.value ? "&nbsp;" + prog2Text2.value : "";
 };
 const prog2Label2 = document.getElementById("prog2Label2");
 prog2Label2.addEventListener("click", () => {
@@ -611,11 +583,7 @@ prog2Size3.oninput = function() {
 };
 const prog2Text3 = document.getElementById("prog2Text3");
 prog2Text3.oninput = function() {
-    if (prog2Text3.value == "") {
-        prog2Row3c.innerHTML = prog2Text3.value;
-    } else if (prog2Text3.value) {
-        prog2Row3c.innerHTML = "&nbsp;" + prog2Text3.value;
-    }
+    prog2Row3c.innerHTML = prog2Text3.value ? "&nbsp;" + prog2Text3.value : "";
 };
 const prog2Label3 = document.getElementById("prog2Label3");
 prog2Label3.addEventListener("click", () => {
@@ -665,11 +633,7 @@ prog2Size4.oninput = function() {
 };
 const prog2Text4 = document.getElementById("prog2Text4");
 prog2Text4.oninput = function() {
-    if (prog2Text4.value == "") {
-        prog2Row4c.innerHTML = prog2Text4.value;
-    } else if (prog2Text4.value) {
-        prog2Row4c.innerHTML = "&nbsp;" + prog2Text4.value;
-    }
+    prog2Row4c.innerHTML = prog2Text4.value ? "&nbsp;" + prog2Text4.value : "";
 };
 const prog2Label4 = document.getElementById("prog2Label4");
 prog2Label4.addEventListener("click", () => {
@@ -719,11 +683,7 @@ prog2Size5.oninput = function() {
 };
 const prog2Text5 = document.getElementById("prog2Text5");
 prog2Text5.oninput = function() {
-    if (prog2Text5.value == "") {
-        prog2Row5c.innerHTML = prog2Text5.value;
-    } else if (prog2Text5.value) {
-        prog2Row5c.innerHTML = "&nbsp;" + prog2Text5.value;
-    }
+    prog2Row5c.innerHTML = prog2Text5.value ? "&nbsp;" + prog2Text5.value : "";
 };
 const prog2Label5 = document.getElementById("prog2Label5");
 prog2Label5.addEventListener("click", () => {
@@ -986,11 +946,7 @@ prog3Size1.oninput = function() {
 };
 const prog3Text1 = document.getElementById("prog3Text1");
 prog3Text1.oninput = function() {
-    if (prog3Text1.value == "") {
-        prog3Row1c.innerHTML = prog3Text1.value;
-    } else if (prog3Text1.value) {
-        prog3Row1c.innerHTML = "&nbsp;" + prog3Text1.value;
-    }
+    prog3Row1c.innerHTML = prog3Text1.value ? "&nbsp;" + prog3Text1.value : "";
 };
 const prog3Label1 = document.getElementById("prog3Label1");
 prog3Label1.addEventListener("click", () => {
@@ -1036,11 +992,7 @@ prog3Size2.oninput = function() {
 };
 const prog3Text2 = document.getElementById("prog3Text2");
 prog3Text2.oninput = function() {
-    if (prog3Text2.value == "") {
-        prog3Row2c.innerHTML = prog3Text2.value;
-    } else if (prog3Text2.value) {
-        prog3Row2c.innerHTML = "&nbsp;" + prog3Text2.value;
-    }
+    prog3Row2c.innerHTML = prog3Text2.value ? "&nbsp;" + prog3Text2.value : "";
 };
 const prog3Label2 = document.getElementById("prog3Label2");
 prog3Label2.addEventListener("click", () => {
@@ -1086,11 +1038,7 @@ prog3Size3.oninput = function() {
 };
 const prog3Text3 = document.getElementById("prog3Text3");
 prog3Text3.oninput = function() {
-    if (prog3Text3.value == "") {
-        prog3Row3c.innerHTML = prog3Text3.value;
-    } else if (prog3Text3.value) {
-        prog3Row3c.innerHTML = "&nbsp;" + prog3Text3.value;
-    }
+    prog3Row3c.innerHTML = prog3Text3.value ? "&nbsp;" + prog3Text3.value : "";
 };
 const prog3Label3 = document.getElementById("prog3Label3");
 prog3Label3.addEventListener("click", () => {
@@ -1136,11 +1084,7 @@ prog3Size4.oninput = function() {
 };
 const prog3Text4 = document.getElementById("prog3Text4");
 prog3Text4.oninput = function() {
-    if (prog3Text4.value == "") {
-        prog3Row4c.innerHTML = prog3Text4.value;
-    } else if (prog3Text4.value) {
-        prog3Row4c.innerHTML = "&nbsp;" + prog3Text4.value;
-    }
+    prog3Row4c.innerHTML = prog3Text4.value ? "&nbsp;" + prog3Text4.value : "";
 };
 const prog3Label4 = document.getElementById("prog3Label4");
 prog3Label4.addEventListener("click", () => {
@@ -1186,11 +1130,7 @@ prog3Size5.oninput = function() {
 };
 const prog3Text5 = document.getElementById("prog3Text5");
 prog3Text5.oninput = function() {
-    if (prog3Text5.value == "") {
-        prog3Row5c.innerHTML = prog3Text5.value;
-    } else if (prog3Text5.value) {
-        prog3Row5c.innerHTML = "&nbsp;" + prog3Text5.value;
-    }
+    prog3Row5c.innerHTML = prog3Text5.value ? "&nbsp;" + prog3Text5.value : "";
 };
 const prog3Label5 = document.getElementById("prog3Label5");
 prog3Label5.addEventListener("click", () => {
@@ -1477,11 +1417,7 @@ prog4Size1.oninput = function() {
 };
 const prog4Text1 = document.getElementById("prog4Text1");
 prog4Text1.oninput = function() {
-    if (prog4Text1.value == "") {
-        prog4Row1c.innerHTML = prog4Text1.value;
-    } else if (prog4Text1.value) {
-        prog4Row1c.innerHTML = "&nbsp;" + prog4Text1.value;
-    }
+    prog4Row1c.innerHTML = prog4Text1.value ? "&nbsp;" + prog4Text1.value : "";
 };
 const prog4Label1 = document.getElementById("prog4Label1");
 prog4Label1.addEventListener("click", () => {
@@ -1536,11 +1472,7 @@ prog4Size2.oninput = function() {
 };
 const prog4Text2 = document.getElementById("prog4Text2");
 prog4Text2.oninput = function() {
-    if (prog4Text2.value == "") {
-        prog4Row2c.innerHTML = prog4Text2.value;
-    } else if (prog4Text2.value) {
-        prog4Row2c.innerHTML = "&nbsp;" + prog4Text2.value;
-    }
+    prog4Row2c.innerHTML = prog4Text2.value ? "&nbsp;" + prog4Text2.value : "";
 };
 const prog4Label2 = document.getElementById("prog4Label2");
 prog4Label2.addEventListener("click", () => {
@@ -1595,11 +1527,7 @@ prog4Size3.oninput = function() {
 };
 const prog4Text3 = document.getElementById("prog4Text3");
 prog4Text3.oninput = function() {
-    if (prog4Text3.value == "") {
-        prog4Row3c.innerHTML = prog4Text3.value;
-    } else if (prog4Text3.value) {
-        prog4Row3c.innerHTML = "&nbsp;" + prog4Text3.value;
-    }
+    prog4Row3c.innerHTML = prog4Text3.value ? "&nbsp;" + prog4Text3.value : "";
 };
 const prog4Label3 = document.getElementById("prog4Label3");
 prog4Label3.addEventListener("click", () => {
@@ -1654,11 +1582,7 @@ prog4Size4.oninput = function() {
 };
 const prog4Text4 = document.getElementById("prog4Text4");
 prog4Text4.oninput = function() {
-    if (prog4Text4.value == "") {
-        prog4Row4c.innerHTML = prog4Text4.value;
-    } else if (prog4Text4.value) {
-        prog4Row4c.innerHTML = "&nbsp;" + prog4Text4.value;
-    }
+    prog4Row4c.innerHTML = prog4Text4.value ? "&nbsp;" + prog4Text4.value : "";
 };
 const prog4Label4 = document.getElementById("prog4Label4");
 prog4Label4.addEventListener("click", () => {
@@ -1713,11 +1637,7 @@ prog4Size5.oninput = function() {
 };
 const prog4Text5 = document.getElementById("prog4Text5");
 prog4Text5.oninput = function() {
-    if (prog4Text5.value == "") {
-        prog4Row5c.innerHTML = prog4Text5.value;
-    } else if (prog4Text5.value) {
-        prog4Row5c.innerHTML = "&nbsp;" + prog4Text5.value;
-    }
+    prog4Row5c.innerHTML = prog4Text5.value ? "&nbsp;" + prog4Text5.value : "";
 };
 const prog4Label5 = document.getElementById("prog4Label5");
 prog4Label5.addEventListener("click", () => {
