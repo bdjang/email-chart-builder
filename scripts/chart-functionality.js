@@ -21,6 +21,16 @@ selectElement.addEventListener("change", () => {
         }
     }
 });
+// Chart Emoji Click Event
+chartEmoji.addEventListener("click", () => {
+    if (chartEmoji.style.transform == "rotate(0deg)") {
+        chartEmoji.style.transform = "rotate(90deg)"; // For horizontal bar charts
+        chartEmoji.style.marginRight = "19px";
+    } else {
+        chartEmoji.style.transform = "rotate(0deg)"; // For vertical bar charts
+        chartEmoji.style.marginRight = "13px";
+    }
+});
 
 // Chart Variables
 const botSpace = `<div height="24" style="font-size: 24px; line-height: 24px;">&nbsp;</div>`; // Bottom spacing for non-vertical charts
