@@ -170,19 +170,6 @@ horiz1Text1a.oninput = function() {
     } else if (horiz1Text1a.value) {
         horiz1Row1a.innerHTML = horiz1Text1a.value;
     }
-    // 04.22.23: Consider simplifying this logic to the following
-    // horiz1Row1a.innerHTML = horiz1Text1a.value;
-
-    // 08.01.23: Consider adding logic to increase the label input maxlength if there is a " ". If there is no space, the maxlength stays as 16 (need to change in index.html).
-    // if (horiz1Text1a.value == "") {
-    //     horiz1Row1a.innerHTML = horiz1Text1a.value;
-    // } else if (horiz1Text1a.value && !horiz1Text1a.value.includes(" ")) {
-    //     horiz1Row1a.innerHTML = horiz1Text1a.value;
-    //     horiz1Text1a.maxLength = 16;
-    // } else if (horiz1Text1a.value && horiz1Text1a.value.includes(" ")) {
-    //     horiz1Row1a.innerHTML = horiz1Text1a.value;
-    //     horiz1Text1a.maxLength = 38;
-    // }
 };
 const horiz1Size1 = document.getElementById("horiz1Size1");
 horiz1Size1.oninput = function() {
@@ -191,23 +178,9 @@ horiz1Size1.oninput = function() {
 };
 const horiz1Text1b = document.getElementById("horiz1Text1b");
 horiz1Text1b.oninput = function() {
-    if (horiz1Text1b.value == "") {
-        horiz1Row1c.innerHTML = horiz1Text1b.value;
-    } else if (horiz1Text1b.value) {
-        horiz1Row1c.innerHTML = "&nbsp;" + horiz1Text1b.value;
-    }
+    horiz1Row1c.innerHTML = horiz1Text1b.value ? "&nbsp;" + horiz1Text1b.value : "";
 };
 const horiz1Label1b = document.getElementById("horiz1Label1b");
-// horiz1Label1b.addEventListener("mouseover", () => {
-//     if (horiz1Text1b.value) { Changes inner data label text color to data bar color
-//         horiz1Row1b.style.color = horiz1Color1.value;
-//     }
-//     horiz1Row1c.style.textShadow = -Math.abs(horiz1Text1b.value.length * 7.5) - 9 + "px 0 #558abb, 0 0 1em #444cf7"; Creates text-shadow to preview label text switch
-// });
-// horiz1Label1b.addEventListener("mouseleave", () => {
-//     horiz1Row1b.style.color = "#000000";
-//     horiz1Row1c.style.textShadow = "none";
-// })
 horiz1Label1b.addEventListener("click", () => {
     horiz1Row1b.style.color = "#000000";
     if (horiz1Text1b.value == "") {
@@ -240,11 +213,7 @@ horiz1Size2.oninput = function() {
 };
 const horiz1Text2b = document.getElementById("horiz1Text2b");
 horiz1Text2b.oninput = function() {
-    if (horiz1Text2b.value == "") {
-        horiz1Row2c.innerHTML = horiz1Text2b.value;
-    } else if (horiz1Text2b.value) {
-        horiz1Row2c.innerHTML = "&nbsp;" + horiz1Text2b.value;
-    }
+    horiz1Row2c.innerHTML = horiz1Text2b.value ? "&nbsp;" + horiz1Text2b.value : "";
 };
 const horiz1Label2b = document.getElementById("horiz1Label2b");
 horiz1Label2b.addEventListener("click", () => {
@@ -278,11 +247,7 @@ horiz1Size3.oninput = function() {
 };
 const horiz1Text3b = document.getElementById("horiz1Text3b");
 horiz1Text3b.oninput = function() {
-    if (horiz1Text3b.value == "") {
-        horiz1Row3c.innerHTML = horiz1Text3b.value;
-    } else if (horiz1Text3b.value) {
-        horiz1Row3c.innerHTML = "&nbsp;" + horiz1Text3b.value;
-    }
+    horiz1Row3c.innerHTML = horiz1Text3b.value ? "&nbsp;" + horiz1Text3b.value : "";
 };
 const horiz1Label3b = document.getElementById("horiz1Label3b");
 horiz1Label3b.addEventListener("click", () => {
@@ -316,11 +281,7 @@ horiz1Size4.oninput = function() {
 };
 const horiz1Text4b = document.getElementById("horiz1Text4b");
 horiz1Text4b.oninput = function() {
-    if (horiz1Text4b.value == "") {
-        horiz1Row4c.innerHTML = horiz1Text4b.value;
-    } else if (horiz1Text4b.value) {
-        horiz1Row4c.innerHTML = "&nbsp;" + horiz1Text4b.value;
-    }
+    horiz1Row4c.innerHTML = horiz1Text4b.value ? "&nbsp;" + horiz1Text4b.value : "";
 };
 const horiz1Label4b = document.getElementById("horiz1Label4b");
 horiz1Label4b.addEventListener("click", () => {
@@ -354,11 +315,7 @@ horiz1Size5.oninput = function() {
 };
 const horiz1Text5b = document.getElementById("horiz1Text5b");
 horiz1Text5b.oninput = function() {
-    if (horiz1Text5b.value == "") {
-        horiz1Row5c.innerHTML = horiz1Text5b.value;
-    } else if (horiz1Text5b.value) {
-        horiz1Row5c.innerHTML = "&nbsp;" + horiz1Text5b.value;
-    }
+    horiz1Row5c.innerHTML = horiz1Text5b.value ? "&nbsp;" + horiz1Text5b.value : "";
 };
 const horiz1Label5b = document.getElementById("horiz1Label5b");
 horiz1Label5b.addEventListener("click", () => {
@@ -392,11 +349,7 @@ horiz1Size6.oninput = function() {
 };
 const horiz1Text6b = document.getElementById("horiz1Text6b");
 horiz1Text6b.oninput = function() {
-    if (horiz1Text6b.value == "") {
-        horiz1Row6c.innerHTML = horiz1Text6b.value;
-    } else if (horiz1Text6b.value) {
-        horiz1Row6c.innerHTML = "&nbsp;" + horiz1Text6b.value;
-    }
+    horiz1Row6c.innerHTML = horiz1Text6b.value ? "&nbsp;" + horiz1Text6b.value : "";
 };
 const horiz1Label6b = document.getElementById("horiz1Label6b");
 horiz1Label6b.addEventListener("click", () => {
@@ -430,11 +383,7 @@ horiz1Size7.oninput = function() {
 };
 const horiz1Text7b = document.getElementById("horiz1Text7b");
 horiz1Text7b.oninput = function() {
-    if (horiz1Text7b.value == "") {
-        horiz1Row7c.innerHTML = horiz1Text7b.value;
-    } else if (horiz1Text7b.value) {
-        horiz1Row7c.innerHTML = "&nbsp;" + horiz1Text7b.value;
-    }
+    horiz1Row7c.innerHTML = horiz1Text7b.value ? "&nbsp;" + horiz1Text7b.value : "";
 };
 const horiz1Label7b = document.getElementById("horiz1Label7b");
 horiz1Label7b.addEventListener("click", () => {
@@ -468,11 +417,7 @@ horiz1Size8.oninput = function() {
 };
 const horiz1Text8b = document.getElementById("horiz1Text8b");
 horiz1Text8b.oninput = function() {
-    if (horiz1Text8b.value == "") {
-        horiz1Row8c.innerHTML = horiz1Text8b.value;
-    } else if (horiz1Text8b.value) {
-        horiz1Row8c.innerHTML = "&nbsp;" + horiz1Text8b.value;
-    }
+    horiz1Row8c.innerHTML = horiz1Text8b.value ? "&nbsp;" + horiz1Text8b.value : "";
 };
 const horiz1Label8b = document.getElementById("horiz1Label8b");
 horiz1Label8b.addEventListener("click", () => {
@@ -506,11 +451,7 @@ horiz1Size9.oninput = function() {
 };
 const horiz1Text9b = document.getElementById("horiz1Text9b");
 horiz1Text9b.oninput = function() {
-    if (horiz1Text9b.value == "") {
-        horiz1Row9c.innerHTML = horiz1Text9b.value;
-    } else if (horiz1Text9b.value) {
-        horiz1Row9c.innerHTML = "&nbsp;" + horiz1Text9b.value;
-    }
+    horiz1Row9c.innerHTML = horiz1Text9b.value ? "&nbsp;" + horiz1Text9b.value : "";
 };
 const horiz1Label9b = document.getElementById("horiz1Label9b");
 horiz1Label9b.addEventListener("click", () => {
@@ -544,11 +485,7 @@ horiz1Size10.oninput = function() {
 };
 const horiz1Text10b = document.getElementById("horiz1Text10b");
 horiz1Text10b.oninput = function() {
-    if (horiz1Text10b.value == "") {
-        horiz1Row10c.innerHTML = horiz1Text10b.value;
-    } else if (horiz1Text10b.value) {
-        horiz1Row10c.innerHTML = "&nbsp;" + horiz1Text10b.value;
-    }
+    horiz1Row10c.innerHTML = horiz1Text10b.value ? "&nbsp;" + horiz1Text10b.value : "";
 };
 const horiz1Label10b = document.getElementById("horiz1Label10b");
 horiz1Label10b.addEventListener("click", () => {
@@ -1041,11 +978,7 @@ horiz2Size1.oninput = function() {
 };
 const horiz2Text1b = document.getElementById("horiz2Text1b");
 horiz2Text1b.oninput = function() {
-    if (horiz2Text1b.value == "") {
-        horiz2Row1c.innerHTML = horiz2Text1b.value;
-    } else if (horiz2Text1b.value) {
-        horiz2Row1c.innerHTML = "&nbsp;" + horiz2Text1b.value;
-    }
+    horiz2Row1c.innerHTML = horiz2Text1b.value ? "&nbsp;" + horiz2Text1b.value : "";
 };
 const horiz2Label1b = document.getElementById("horiz2Label1b");
 horiz2Label1b.addEventListener("click", () => {
@@ -1081,11 +1014,7 @@ horiz2Size2.oninput = function() {
 };
 const horiz2Text2b = document.getElementById("horiz2Text2b");
 horiz2Text2b.oninput = function() {
-    if (horiz2Text2b.value == "") {
-        horiz2Row2c.innerHTML = horiz2Text2b.value;
-    } else if (horiz2Text2b.value) {
-        horiz2Row2c.innerHTML = "&nbsp;" + horiz2Text2b.value;
-    }
+    horiz2Row2c.innerHTML = horiz2Text2b.value ? "&nbsp;" + horiz2Text2b.value : "";
 };
 const horiz2Label2b = document.getElementById("horiz2Label2b");
 horiz2Label2b.addEventListener("click", () => {
@@ -1121,11 +1050,7 @@ horiz2Size3.oninput = function() {
 };
 const horiz2Text3b = document.getElementById("horiz2Text3b");
 horiz2Text3b.oninput = function() {
-    if (horiz2Text3b.value == "") {
-        horiz2Row3c.innerHTML = horiz2Text3b.value;
-    } else if (horiz2Text3b.value) {
-        horiz2Row3c.innerHTML = "&nbsp;" + horiz2Text3b.value;
-    }
+    horiz2Row3c.innerHTML = horiz2Text3b.value ? "&nbsp;" + horiz2Text3b.value : "";
 };
 const horiz2Label3b = document.getElementById("horiz2Label3b");
 horiz2Label3b.addEventListener("click", () => {
@@ -1161,11 +1086,7 @@ horiz2Size4.oninput = function() {
 };
 const horiz2Text4b = document.getElementById("horiz2Text4b");
 horiz2Text4b.oninput = function() {
-    if (horiz2Text4b.value == "") {
-        horiz2Row4c.innerHTML = horiz2Text4b.value;
-    } else if (horiz2Text4b.value) {
-        horiz2Row4c.innerHTML = "&nbsp;" + horiz2Text4b.value;
-    }
+    horiz2Row4c.innerHTML = horiz2Text4b.value ? "&nbsp;" + horiz2Text4b.value : "";
 };
 const horiz2Label4b = document.getElementById("horiz2Label4b");
 horiz2Label4b.addEventListener("click", () => {
@@ -1201,11 +1122,7 @@ horiz2Size5.oninput = function() {
 };
 const horiz2Text5b = document.getElementById("horiz2Text5b");
 horiz2Text5b.oninput = function() {
-    if (horiz2Text5b.value == "") {
-        horiz2Row5c.innerHTML = horiz2Text5b.value;
-    } else if (horiz2Text5b.value) {
-        horiz2Row5c.innerHTML = "&nbsp;" + horiz2Text5b.value;
-    }
+    horiz2Row5c.innerHTML = horiz2Text5b.value ? "&nbsp;" + horiz2Text5b.value : "";
 };
 const horiz2Label5b = document.getElementById("horiz2Label5b");
 horiz2Label5b.addEventListener("click", () => {
@@ -1241,11 +1158,7 @@ horiz2Size6.oninput = function() {
 };
 const horiz2Text6b = document.getElementById("horiz2Text6b");
 horiz2Text6b.oninput = function() {
-    if (horiz2Text6b.value == "") {
-        horiz2Row6c.innerHTML = horiz2Text6b.value;
-    } else if (horiz2Text6b.value) {
-        horiz2Row6c.innerHTML = "&nbsp;" + horiz2Text6b.value;
-    }
+    horiz2Row6c.innerHTML = horiz2Text6b.value ? "&nbsp;" + horiz2Text6b.value : "";
 };
 const horiz2Label6b = document.getElementById("horiz2Label6b");
 horiz2Label6b.addEventListener("click", () => {
@@ -1281,11 +1194,7 @@ horiz2Size7.oninput = function() {
 };
 const horiz2Text7b = document.getElementById("horiz2Text7b");
 horiz2Text7b.oninput = function() {
-    if (horiz2Text7b.value == "") {
-        horiz2Row7c.innerHTML = horiz2Text7b.value;
-    } else if (horiz2Text7b.value) {
-        horiz2Row7c.innerHTML = "&nbsp;" + horiz2Text7b.value;
-    }
+    horiz2Row7c.innerHTML = horiz2Text7b.value ? "&nbsp;" + horiz2Text7b.value : "";
 };
 const horiz2Label7b = document.getElementById("horiz2Label7b");
 horiz2Label7b.addEventListener("click", () => {
@@ -1321,11 +1230,7 @@ horiz2Size8.oninput = function() {
 };
 const horiz2Text8b = document.getElementById("horiz2Text8b");
 horiz2Text8b.oninput = function() {
-    if (horiz2Text8b.value == "") {
-        horiz2Row8c.innerHTML = horiz2Text8b.value;
-    } else if (horiz2Text8b.value) {
-        horiz2Row8c.innerHTML = "&nbsp;" + horiz2Text8b.value;
-    }
+    horiz2Row8c.innerHTML = horiz2Text8b.value ? "&nbsp;" + horiz2Text8b.value : "";
 };
 const horiz2Label8b = document.getElementById("horiz2Label8b");
 horiz2Label8b.addEventListener("click", () => {
@@ -1361,11 +1266,7 @@ horiz2Size9.oninput = function() {
 };
 const horiz2Text9b = document.getElementById("horiz2Text9b");
 horiz2Text9b.oninput = function() {
-    if (horiz2Text9b.value == "") {
-        horiz2Row9c.innerHTML = horiz2Text9b.value;
-    } else if (horiz2Text9b.value) {
-        horiz2Row9c.innerHTML = "&nbsp;" + horiz2Text9b.value;
-    }
+    horiz2Row9c.innerHTML = horiz2Text9b.value ? "&nbsp;" + horiz2Text9b.value : "";
 };
 const horiz2Label9b = document.getElementById("horiz2Label9b");
 horiz2Label9b.addEventListener("click", () => {
@@ -1401,11 +1302,7 @@ horiz2Size10.oninput = function() {
 };
 const horiz2Text10b = document.getElementById("horiz2Text10b");
 horiz2Text10b.oninput = function() {
-    if (horiz2Text10b.value == "") {
-        horiz2Row10c.innerHTML = horiz2Text10b.value;
-    } else if (horiz2Text10b.value) {
-        horiz2Row10c.innerHTML = "&nbsp;" + horiz2Text10b.value;
-    }
+    horiz2Row10c.innerHTML = horiz2Text10b.value ? "&nbsp;" + horiz2Text10b.value : "";
 };
 const horiz2Label10b = document.getElementById("horiz2Label10b");
 horiz2Label10b.addEventListener("click", () => {
@@ -1896,11 +1793,7 @@ horiz3Size1.oninput = function() {
 };
 const horiz3Text1b = document.getElementById("horiz3Text1b");
 horiz3Text1b.oninput = function() {
-    if (horiz3Text1b.value == "") {
-        horiz3Row1c.innerHTML = horiz3Text1b.value;
-    } else if (horiz3Text1b.value) {
-        horiz3Row1c.innerHTML = "&nbsp;" + horiz3Text1b.value;
-    }
+    horiz3Row1c.innerHTML = horiz3Text1b.value ? "&nbsp;" + horiz3Text1b.value : "";
 };
 const horiz3Label1b = document.getElementById("horiz3Label1b");
 horiz3Label1b.addEventListener("click", () => {
@@ -1934,11 +1827,7 @@ horiz3Size2.oninput = function() {
 };
 const horiz3Text2b = document.getElementById("horiz3Text2b");
 horiz3Text2b.oninput = function() {
-    if (horiz3Text2b.value == "") {
-        horiz3Row2c.innerHTML = horiz3Text2b.value;
-    } else if (horiz3Text2b.value) {
-        horiz3Row2c.innerHTML = "&nbsp;" + horiz3Text2b.value;
-    }
+    horiz3Row2c.innerHTML = horiz3Text2b.value ? "&nbsp;" + horiz3Text2b.value : "";
 };
 const horiz3Label2b = document.getElementById("horiz3Label2b");
 horiz3Label2b.addEventListener("click", () => {
@@ -1972,11 +1861,7 @@ horiz3Size3.oninput = function() {
 };
 const horiz3Text3b = document.getElementById("horiz3Text3b");
 horiz3Text3b.oninput = function() {
-    if (horiz3Text3b.value == "") {
-        horiz3Row3c.innerHTML = horiz3Text3b.value;
-    } else if (horiz3Text3b.value) {
-        horiz3Row3c.innerHTML = "&nbsp;" + horiz3Text3b.value;
-    }
+    horiz3Row3c.innerHTML = horiz3Text3b.value ? "&nbsp;" + horiz3Text3b.value : "";
 };
 const horiz3Label3b = document.getElementById("horiz3Label3b");
 horiz3Label3b.addEventListener("click", () => {
@@ -2010,11 +1895,7 @@ horiz3Size4.oninput = function() {
 };
 const horiz3Text4b = document.getElementById("horiz3Text4b");
 horiz3Text4b.oninput = function() {
-    if (horiz3Text4b.value == "") {
-        horiz3Row4c.innerHTML = horiz3Text4b.value;
-    } else if (horiz3Text4b.value) {
-        horiz3Row4c.innerHTML = "&nbsp;" + horiz3Text4b.value;
-    }
+    horiz3Row4c.innerHTML = horiz3Text4b.value ? "&nbsp;" + horiz3Text4b.value : "";
 };
 const horiz3Label4b = document.getElementById("horiz3Label4b");
 horiz3Label4b.addEventListener("click", () => {
@@ -2048,11 +1929,7 @@ horiz3Size5.oninput = function() {
 };
 const horiz3Text5b = document.getElementById("horiz3Text5b");
 horiz3Text5b.oninput = function() {
-    if (horiz3Text5b.value == "") {
-        horiz3Row5c.innerHTML = horiz3Text5b.value;
-    } else if (horiz3Text5b.value) {
-        horiz3Row5c.innerHTML = "&nbsp;" + horiz3Text5b.value;
-    }
+    horiz3Row5c.innerHTML = horiz3Text5b.value ? "&nbsp;" + horiz3Text5b.value : "";
 };
 const horiz3Label5b = document.getElementById("horiz3Label5b");
 horiz3Label5b.addEventListener("click", () => {
@@ -2086,11 +1963,7 @@ horiz3Size6.oninput = function() {
 };
 const horiz3Text6b = document.getElementById("horiz3Text6b");
 horiz3Text6b.oninput = function() {
-    if (horiz3Text6b.value == "") {
-        horiz3Row6c.innerHTML = horiz3Text6b.value;
-    } else if (horiz3Text6b.value) {
-        horiz3Row6c.innerHTML = "&nbsp;" + horiz3Text6b.value;
-    }
+    horiz3Row6c.innerHTML = horiz3Text6b.value ? "&nbsp;" + horiz3Text6b.value : "";
 };
 const horiz3Label6b = document.getElementById("horiz3Label6b");
 horiz3Label6b.addEventListener("click", () => {
@@ -2124,11 +1997,7 @@ horiz3Size7.oninput = function() {
 };
 const horiz3Text7b = document.getElementById("horiz3Text7b");
 horiz3Text7b.oninput = function() {
-    if (horiz3Text7b.value == "") {
-        horiz3Row7c.innerHTML = horiz3Text7b.value;
-    } else if (horiz3Text7b.value) {
-        horiz3Row7c.innerHTML = "&nbsp;" + horiz3Text7b.value;
-    }
+    horiz3Row7c.innerHTML = horiz3Text7b.value ? "&nbsp;" + horiz3Text7b.value : "";
 };
 const horiz3Label7b = document.getElementById("horiz3Label7b");
 horiz3Label7b.addEventListener("click", () => {
@@ -2162,11 +2031,7 @@ horiz3Size8.oninput = function() {
 };
 const horiz3Text8b = document.getElementById("horiz3Text8b");
 horiz3Text8b.oninput = function() {
-    if (horiz3Text8b.value == "") {
-        horiz3Row8c.innerHTML = horiz3Text8b.value;
-    } else if (horiz3Text8b.value) {
-        horiz3Row8c.innerHTML = "&nbsp;" + horiz3Text8b.value;
-    }
+    horiz3Row8c.innerHTML = horiz3Text8b.value ? "&nbsp;" + horiz3Text8b.value : "";
 };
 const horiz3Label8b = document.getElementById("horiz3Label8b");
 horiz3Label8b.addEventListener("click", () => {
@@ -2200,11 +2065,7 @@ horiz3Size9.oninput = function() {
 };
 const horiz3Text9b = document.getElementById("horiz3Text9b");
 horiz3Text9b.oninput = function() {
-    if (horiz3Text9b.value == "") {
-        horiz3Row9c.innerHTML = horiz3Text9b.value;
-    } else if (horiz3Text9b.value) {
-        horiz3Row9c.innerHTML = "&nbsp;" + horiz3Text9b.value;
-    }
+    horiz3Row9c.innerHTML = horiz3Text9b.value ? "&nbsp;" + horiz3Text9b.value : "";
 };
 const horiz3Label9b = document.getElementById("horiz3Label9b");
 horiz3Label9b.addEventListener("click", () => {
@@ -2238,11 +2099,7 @@ horiz3Size10.oninput = function() {
 };
 const horiz3Text10b = document.getElementById("horiz3Text10b");
 horiz3Text10b.oninput = function() {
-    if (horiz3Text10b.value == "") {
-        horiz3Row10c.innerHTML = horiz3Text10b.value;
-    } else if (horiz3Text10b.value) {
-        horiz3Row10c.innerHTML = "&nbsp;" + horiz3Text10b.value;
-    }
+    horiz3Row10c.innerHTML = horiz3Text10b.value ? "&nbsp;" + horiz3Text10b.value : "";
 };
 const horiz3Label10b = document.getElementById("horiz3Label10b");
 horiz3Label10b.addEventListener("click", () => {
@@ -2731,11 +2588,7 @@ horiz4Size1.oninput = function() {
 };
 const horiz4Text1b = document.getElementById("horiz4Text1b");
 horiz4Text1b.oninput = function() {
-    if (horiz4Text1b.value == "") {
-        horiz4Row1c.innerHTML = horiz4Text1b.value;
-    } else if (horiz4Text1b.value) {
-        horiz4Row1c.innerHTML = "&nbsp;" + horiz4Text1b.value;
-    }
+    horiz4Row1c.innerHTML = horiz4Text1b.value ? "&nbsp;" + horiz4Text1b.value : "";
 };
 const horiz4Label1b = document.getElementById("horiz4Label1b");
 horiz4Label1b.addEventListener("click", () => {
@@ -2769,11 +2622,7 @@ horiz4Size2.oninput = function() {
 };
 const horiz4Text2b = document.getElementById("horiz4Text2b");
 horiz4Text2b.oninput = function() {
-    if (horiz4Text2b.value == "") {
-        horiz4Row2c.innerHTML = horiz4Text2b.value;
-    } else if (horiz4Text2b.value) {
-        horiz4Row2c.innerHTML = "&nbsp;" + horiz4Text2b.value;
-    }
+    horiz4Row2c.innerHTML = horiz4Text2b.value ? "&nbsp;" + horiz4Text2b.value : "";
 };
 const horiz4Label2b = document.getElementById("horiz4Label2b");
 horiz4Label2b.addEventListener("click", () => {
@@ -2807,11 +2656,7 @@ horiz4Size3.oninput = function() {
 };
 const horiz4Text3b = document.getElementById("horiz4Text3b");
 horiz4Text3b.oninput = function() {
-    if (horiz4Text3b.value == "") {
-        horiz4Row3c.innerHTML = horiz4Text3b.value;
-    } else if (horiz4Text3b.value) {
-        horiz4Row3c.innerHTML = "&nbsp;" + horiz4Text3b.value;
-    }
+    horiz4Row3c.innerHTML = horiz4Text3b.value ? "&nbsp;" + horiz4Text3b.value : "";
 };
 const horiz4Label3b = document.getElementById("horiz4Label3b");
 horiz4Label3b.addEventListener("click", () => {
@@ -2845,11 +2690,7 @@ horiz4Size4.oninput = function() {
 };
 const horiz4Text4b = document.getElementById("horiz4Text4b");
 horiz4Text4b.oninput = function() {
-    if (horiz4Text4b.value == "") {
-        horiz4Row4c.innerHTML = horiz4Text4b.value;
-    } else if (horiz4Text4b.value) {
-        horiz4Row4c.innerHTML = "&nbsp;" + horiz4Text4b.value;
-    }
+    horiz4Row4c.innerHTML = horiz4Text4b.value ? "&nbsp;" + horiz4Text4b.value : "";
 };
 const horiz4Label4b = document.getElementById("horiz4Label4b");
 horiz4Label4b.addEventListener("click", () => {
@@ -2883,11 +2724,7 @@ horiz4Size5.oninput = function() {
 };
 const horiz4Text5b = document.getElementById("horiz4Text5b");
 horiz4Text5b.oninput = function() {
-    if (horiz4Text5b.value == "") {
-        horiz4Row5c.innerHTML = horiz4Text5b.value;
-    } else if (horiz4Text5b.value) {
-        horiz4Row5c.innerHTML = "&nbsp;" + horiz4Text5b.value;
-    }
+    horiz4Row5c.innerHTML = horiz4Text5b.value ? "&nbsp;" + horiz4Text5b.value : "";
 };
 const horiz4Label5b = document.getElementById("horiz4Label5b");
 horiz4Label5b.addEventListener("click", () => {
@@ -2921,11 +2758,7 @@ horiz4Size6.oninput = function() {
 };
 const horiz4Text6b = document.getElementById("horiz4Text6b");
 horiz4Text6b.oninput = function() {
-    if (horiz4Text6b.value == "") {
-        horiz4Row6c.innerHTML = horiz4Text6b.value;
-    } else if (horiz4Text6b.value) {
-        horiz4Row6c.innerHTML = "&nbsp;" + horiz4Text6b.value;
-    }
+    horiz4Row6c.innerHTML = horiz4Text6b.value ? "&nbsp;" + horiz4Text6b.value : "";
 };
 const horiz4Label6b = document.getElementById("horiz4Label6b");
 horiz4Label6b.addEventListener("click", () => {
@@ -2959,11 +2792,7 @@ horiz4Size7.oninput = function() {
 };
 const horiz4Text7b = document.getElementById("horiz4Text7b");
 horiz4Text7b.oninput = function() {
-    if (horiz4Text7b.value == "") {
-        horiz4Row7c.innerHTML = horiz4Text7b.value;
-    } else if (horiz4Text7b.value) {
-        horiz4Row7c.innerHTML = "&nbsp;" + horiz4Text7b.value;
-    }
+    horiz4Row7c.innerHTML = horiz4Text7b.value ? "&nbsp;" + horiz4Text7b.value : "";
 };
 const horiz4Label7b = document.getElementById("horiz4Label7b");
 horiz4Label7b.addEventListener("click", () => {
@@ -2997,11 +2826,7 @@ horiz4Size8.oninput = function() {
 };
 const horiz4Text8b = document.getElementById("horiz4Text8b");
 horiz4Text8b.oninput = function() {
-    if (horiz4Text8b.value == "") {
-        horiz4Row8c.innerHTML = horiz4Text8b.value;
-    } else if (horiz4Text8b.value) {
-        horiz4Row8c.innerHTML = "&nbsp;" + horiz4Text8b.value;
-    }
+    horiz4Row8c.innerHTML = horiz4Text8b.value ? "&nbsp;" + horiz4Text8b.value : "";
 };
 const horiz4Label8b = document.getElementById("horiz4Label8b");
 horiz4Label8b.addEventListener("click", () => {
@@ -3035,11 +2860,7 @@ horiz4Size9.oninput = function() {
 };
 const horiz4Text9b = document.getElementById("horiz4Text9b");
 horiz4Text9b.oninput = function() {
-    if (horiz4Text9b.value == "") {
-        horiz4Row9c.innerHTML = horiz4Text9b.value;
-    } else if (horiz4Text9b.value) {
-        horiz4Row9c.innerHTML = "&nbsp;" + horiz4Text9b.value;
-    }
+    horiz4Row9c.innerHTML = horiz4Text9b.value ? "&nbsp;" + horiz4Text9b.value : "";
 };
 const horiz4Label9b = document.getElementById("horiz4Label9b");
 horiz4Label9b.addEventListener("click", () => {
@@ -3073,11 +2894,7 @@ horiz4Size10.oninput = function() {
 };
 const horiz4Text10b = document.getElementById("horiz4Text10b");
 horiz4Text10b.oninput = function() {
-    if (horiz4Text10b.value == "") {
-        horiz4Row10c.innerHTML = horiz4Text10b.value;
-    } else if (horiz4Text10b.value) {
-        horiz4Row10c.innerHTML = "&nbsp;" + horiz4Text10b.value;
-    }
+    horiz4Row10c.innerHTML = horiz4Text10b.value ? "&nbsp;" + horiz4Text10b.value : "";
 };
 const horiz4Label10b = document.getElementById("horiz4Label10b");
 horiz4Label10b.addEventListener("click", () => {
