@@ -16,7 +16,7 @@ textarea { background-color: #f8f8f8; border: 1px solid #c4c4c4; display: block;
 ul li { margin: 8px 0; }
 
 /* SITE STYLES */
-#chartEmoji { float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: transform 250ms ease-out, margin 250ms ease-out; -ms-transition: transform 250ms ease-out, margin 250ms ease-out; -moz-transition: transform 250ms ease-out, margin 250ms ease-out; transition: transform 250ms ease-out, margin 250ms ease-out; }
+#chartEmoji { cursor: pointer; float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: transform 250ms ease-out, margin 250ms ease-out; -ms-transition: transform 250ms ease-out, margin 250ms ease-out; -moz-transition: transform 250ms ease-out, margin 250ms ease-out; transition: transform 250ms ease-out, margin 250ms ease-out; -webkit-user-select: none; user-select: none; }
 #chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
 .scrollBox { background-color: #f8f8f8; border: 1px solid #c4c4c4; height: 400px; width: 700px; margin: 0 auto; padding: 10px 0; text-align: left; overflow-x: hidden; overflow-y: auto; }
 .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
@@ -72,7 +72,7 @@ label[for*="Output"] span { text-decoration: underline; text-decoration-thicknes
 
 /* DARK MODE STYLES */
 button, #darkMode, #lightMode { cursor: pointer; }
-#darkMode, #lightMode { -webkit-user-select: none; user-select: none; }
+#darkMode, #lightMode, label, legend { -webkit-user-select: none; user-select: none; }
 .darkBorder { border-color: #0d1117 !important; }
 .lightBorder { border-color: #ffffff !important; }
 .darkStyles { background-color: #0d1117 !important; color: #e6edf3 !important; }
