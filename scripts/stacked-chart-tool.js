@@ -232,11 +232,7 @@ stacked1Size1a.oninput = function() {
 };
 const stacked1Text1a = document.getElementById("stacked1Text1a"); // End Data Label #1
 stacked1Text1a.oninput = function() {
-    if (stacked1Text1a.value == "") {
-        stacked1Row1b.innerHTML = stacked1Text1a.value;
-    } else if (stacked1Text1a.value) {
-        stacked1Row1b.innerHTML = stacked1Text1a.value + "&nbsp;";
-    }
+    stacked1Row1b.innerHTML = stacked1Text1a.value ? stacked1Text1a.value + "&nbsp;" : "";
 };
 const stacked1Color1a = document.getElementById("stacked1Color1a");
 stacked1Color1a.oninput = function() {
@@ -255,11 +251,7 @@ stacked1Size1b.oninput = function() {
 };
 const stacked1Text1b = document.getElementById("stacked1Text1b"); // End Data Label #2
 stacked1Text1b.oninput = function() {
-    if (stacked1Text1b.value == "") {
-        stacked1Row1c.innerHTML = stacked1Text1b.value;
-    } else if (stacked1Text1b.value) {
-        stacked1Row1c.innerHTML = stacked1Text1b.value + "&nbsp;";
-    }
+    stacked1Row1c.innerHTML = stacked1Text1b.value ? stacked1Text1b.value + "&nbsp;" : "";
 };
 const stacked1Color1b = document.getElementById("stacked1Color1b");
 stacked1Color1b.oninput = function() {
@@ -284,11 +276,7 @@ stacked1Size2a.oninput = function() {
 };
 const stacked1Text2a = document.getElementById("stacked1Text2a");
 stacked1Text2a.oninput = function() {
-    if (stacked1Text2a.value == "") {
-        stacked1Row2b.innerHTML = stacked1Text2a.value;
-    } else if (stacked1Text2a.value) {
-        stacked1Row2b.innerHTML = stacked1Text2a.value + "&nbsp;";
-    }
+    stacked1Row2b.innerHTML = stacked1Text2a.value ? stacked1Text2a.value + "&nbsp;" : "";
 };
 const stacked1Color2a = document.getElementById("stacked1Color2a");
 stacked1Color2a.oninput = function() {
@@ -307,11 +295,7 @@ stacked1Size2b.oninput = function() {
 };
 const stacked1Text2b = document.getElementById("stacked1Text2b");
 stacked1Text2b.oninput = function() {
-    if (stacked1Text2b.value == "") {
-        stacked1Row2c.innerHTML = stacked1Text2b.value;
-    } else if (stacked1Text2b.value) {
-        stacked1Row2c.innerHTML = stacked1Text2b.value + "&nbsp;";
-    }
+    stacked1Row2c.innerHTML = stacked1Text2b.value ? stacked1Text2b.value + "&nbsp;" : "";
 };
 const stacked1Color2b = document.getElementById("stacked1Color2b");
 stacked1Color2b.oninput = function() {
@@ -336,11 +320,7 @@ stacked1Size3a.oninput = function() {
 };
 const stacked1Text3a = document.getElementById("stacked1Text3a");
 stacked1Text3a.oninput = function() {
-    if (stacked1Text3a.value == "") {
-        stacked1Row3b.innerHTML = stacked1Text3a.value;
-    } else if (stacked1Text3a.value) {
-        stacked1Row3b.innerHTML = stacked1Text3a.value + "&nbsp;";
-    }
+    stacked1Row3b.innerHTML = stacked1Text3a.value ? stacked1Text3a.value + "&nbsp;" : "";
 };
 const stacked1Color3a = document.getElementById("stacked1Color3a");
 stacked1Color3a.oninput = function() {
@@ -359,11 +339,7 @@ stacked1Size3b.oninput = function() {
 };
 const stacked1Text3b = document.getElementById("stacked1Text3b");
 stacked1Text3b.oninput = function() {
-    if (stacked1Text3b.value == "") {
-        stacked1Row3c.innerHTML = stacked1Text3b.value;
-    } else if (stacked1Text3b.value) {
-        stacked1Row3c.innerHTML = stacked1Text3b.value + "&nbsp;";
-    }
+    stacked1Row3c.innerHTML = stacked1Text3b.value ? stacked1Text3b.value + "&nbsp;" : "";
 };
 const stacked1Color3b = document.getElementById("stacked1Color3b");
 stacked1Color3b.oninput = function() {
@@ -388,11 +364,7 @@ stacked1Size4a.oninput = function() {
 };
 const stacked1Text4a = document.getElementById("stacked1Text4a");
 stacked1Text4a.oninput = function() {
-    if (stacked1Text4a.value == "") {
-        stacked1Row4b.innerHTML = stacked1Text4a.value;
-    } else if (stacked1Text4a.value) {
-        stacked1Row4b.innerHTML = stacked1Text4a.value + "&nbsp;";
-    }
+    stacked1Row4b.innerHTML = stacked1Text4a.value ? stacked1Text4a.value + "&nbsp;" : "";
 };
 const stacked1Color4a = document.getElementById("stacked1Color4a");
 stacked1Color4a.oninput = function() {
@@ -411,11 +383,7 @@ stacked1Size4b.oninput = function() {
 };
 const stacked1Text4b = document.getElementById("stacked1Text4b");
 stacked1Text4b.oninput = function() {
-    if (stacked1Text4b.value == "") {
-        stacked1Row4c.innerHTML = stacked1Text4b.value;
-    } else if (stacked1Text4b.value) {
-        stacked1Row4c.innerHTML = stacked1Text4b.value + "&nbsp;";
-    }
+    stacked1Row4c.innerHTML = stacked1Text4b.value ? stacked1Text4b.value + "&nbsp;" : "";
 };
 const stacked1Color4b = document.getElementById("stacked1Color4b");
 stacked1Color4b.oninput = function() {
@@ -440,11 +408,7 @@ stacked1Size5a.oninput = function() {
 };
 const stacked1Text5a = document.getElementById("stacked1Text5a");
 stacked1Text5a.oninput = function() {
-    if (stacked1Text5a.value == "") {
-        stacked1Row5b.innerHTML = stacked1Text5a.value;
-    } else if (stacked1Text5a.value) {
-        stacked1Row5b.innerHTML = stacked1Text5a.value + "&nbsp;";
-    }
+    stacked1Row5b.innerHTML = stacked1Text5a.value ? stacked1Text5a.value + "&nbsp;" : "";
 };
 const stacked1Color5a = document.getElementById("stacked1Color5a");
 stacked1Color5a.oninput = function() {
@@ -463,11 +427,7 @@ stacked1Size5b.oninput = function() {
 };
 const stacked1Text5b = document.getElementById("stacked1Text5b");
 stacked1Text5b.oninput = function() {
-    if (stacked1Text5b.value == "") {
-        stacked1Row5c.innerHTML = stacked1Text5b.value;
-    } else if (stacked1Text5b.value) {
-        stacked1Row5c.innerHTML = stacked1Text5b.value + "&nbsp;";
-    }
+    stacked1Row5c.innerHTML = stacked1Text5b.value ? stacked1Text5b.value + "&nbsp;" : "";
 };
 const stacked1Color5b = document.getElementById("stacked1Color5b");
 stacked1Color5b.oninput = function() {
@@ -492,11 +452,7 @@ stacked1Size6a.oninput = function() {
 };
 const stacked1Text6a = document.getElementById("stacked1Text6a");
 stacked1Text6a.oninput = function() {
-    if (stacked1Text6a.value == "") {
-        stacked1Row6b.innerHTML = stacked1Text6a.value;
-    } else if (stacked1Text6a.value) {
-        stacked1Row6b.innerHTML = stacked1Text6a.value + "&nbsp;";
-    }
+    stacked1Row6b.innerHTML = stacked1Text6a.value ? stacked1Text6a.value + "&nbsp;" : "";
 };
 const stacked1Color6a = document.getElementById("stacked1Color6a");
 stacked1Color6a.oninput = function() {
@@ -515,11 +471,7 @@ stacked1Size6b.oninput = function() {
 };
 const stacked1Text6b = document.getElementById("stacked1Text6b");
 stacked1Text6b.oninput = function() {
-    if (stacked1Text6b.value == "") {
-        stacked1Row6c.innerHTML = stacked1Text6b.value;
-    } else if (stacked1Text6b.value) {
-        stacked1Row6c.innerHTML = stacked1Text6b.value + "&nbsp;";
-    }
+    stacked1Row6c.innerHTML = stacked1Text6b.value ? stacked1Text6b.value + "&nbsp;" : "";
 };
 const stacked1Color6b = document.getElementById("stacked1Color6b");
 stacked1Color6b.oninput = function() {
@@ -544,11 +496,7 @@ stacked1Size7a.oninput = function() {
 };
 const stacked1Text7a = document.getElementById("stacked1Text7a");
 stacked1Text7a.oninput = function() {
-    if (stacked1Text7a.value == "") {
-        stacked1Row7b.innerHTML = stacked1Text7a.value;
-    } else if (stacked1Text7a.value) {
-        stacked1Row7b.innerHTML = stacked1Text7a.value + "&nbsp;";
-    }
+    stacked1Row7b.innerHTML = stacked1Text7a.value ? stacked1Text7a.value + "&nbsp;" : "";
 };
 const stacked1Color7a = document.getElementById("stacked1Color7a");
 stacked1Color7a.oninput = function() {
@@ -567,11 +515,7 @@ stacked1Size7b.oninput = function() {
 };
 const stacked1Text7b = document.getElementById("stacked1Text7b");
 stacked1Text7b.oninput = function() {
-    if (stacked1Text7b.value == "") {
-        stacked1Row7c.innerHTML = stacked1Text7b.value;
-    } else if (stacked1Text7b.value) {
-        stacked1Row7c.innerHTML = stacked1Text7b.value + "&nbsp;";
-    }
+    stacked1Row7c.innerHTML = stacked1Text7b.value ? stacked1Text7b.value + "&nbsp;" : "";
 };
 const stacked1Color7b = document.getElementById("stacked1Color7b");
 stacked1Color7b.oninput = function() {
@@ -596,11 +540,7 @@ stacked1Size8a.oninput = function() {
 };
 const stacked1Text8a = document.getElementById("stacked1Text8a");
 stacked1Text8a.oninput = function() {
-    if (stacked1Text8a.value == "") {
-        stacked1Row8b.innerHTML = stacked1Text8a.value;
-    } else if (stacked1Text8a.value) {
-        stacked1Row8b.innerHTML = stacked1Text8a.value + "&nbsp;";
-    }
+    stacked1Row8b.innerHTML = stacked1Text8a.value ? stacked1Text8a.value + "&nbsp;" : "";
 };
 const stacked1Color8a = document.getElementById("stacked1Color8a");
 stacked1Color8a.oninput = function() {
@@ -619,11 +559,7 @@ stacked1Size8b.oninput = function() {
 };
 const stacked1Text8b = document.getElementById("stacked1Text8b");
 stacked1Text8b.oninput = function() {
-    if (stacked1Text8b.value == "") {
-        stacked1Row8c.innerHTML = stacked1Text8b.value;
-    } else if (stacked1Text8b.value) {
-        stacked1Row8c.innerHTML = stacked1Text8b.value + "&nbsp;";
-    }
+    stacked1Row8c.innerHTML = stacked1Text8b.value ? stacked1Text8b.value + "&nbsp;" : "";
 };
 const stacked1Color8b = document.getElementById("stacked1Color8b");
 stacked1Color8b.oninput = function() {
@@ -648,11 +584,7 @@ stacked1Size9a.oninput = function() {
 };
 const stacked1Text9a = document.getElementById("stacked1Text9a");
 stacked1Text9a.oninput = function() {
-    if (stacked1Text9a.value == "") {
-        stacked1Row9b.innerHTML = stacked1Text9a.value;
-    } else if (stacked1Text9a.value) {
-        stacked1Row9b.innerHTML = stacked1Text9a.value + "&nbsp;";
-    }
+    stacked1Row9b.innerHTML = stacked1Text9a.value ? stacked1Text9a.value + "&nbsp;" : "";
 };
 const stacked1Color9a = document.getElementById("stacked1Color9a");
 stacked1Color9a.oninput = function() {
@@ -671,11 +603,7 @@ stacked1Size9b.oninput = function() {
 };
 const stacked1Text9b = document.getElementById("stacked1Text9b");
 stacked1Text9b.oninput = function() {
-    if (stacked1Text9b.value == "") {
-        stacked1Row9c.innerHTML = stacked1Text9b.value;
-    } else if (stacked1Text9b.value) {
-        stacked1Row9c.innerHTML = stacked1Text9b.value + "&nbsp;";
-    }
+    stacked1Row9c.innerHTML = stacked1Text9b.value ? stacked1Text9b.value + "&nbsp;" : "";
 };
 const stacked1Color9b = document.getElementById("stacked1Color9b");
 stacked1Color9b.oninput = function() {
@@ -700,11 +628,7 @@ stacked1Size10a.oninput = function() {
 };
 const stacked1Text10a = document.getElementById("stacked1Text10a");
 stacked1Text10a.oninput = function() {
-    if (stacked1Text10a.value == "") {
-        stacked1Row10b.innerHTML = stacked1Text10a.value;
-    } else if (stacked1Text10a.value) {
-        stacked1Row10b.innerHTML = stacked1Text10a.value + "&nbsp;";
-    }
+    stacked1Row10b.innerHTML = stacked1Text10a.value ? stacked1Text10a.value + "&nbsp;" : "";
 };
 const stacked1Color10a = document.getElementById("stacked1Color10a");
 stacked1Color10a.oninput = function() {
@@ -723,11 +647,7 @@ stacked1Size10b.oninput = function() {
 };
 const stacked1Text10b = document.getElementById("stacked1Text10b");
 stacked1Text10b.oninput = function() {
-    if (stacked1Text10b.value == "") {
-        stacked1Row10c.innerHTML = stacked1Text10b.value;
-    } else if (stacked1Text10b.value) {
-        stacked1Row10c.innerHTML = stacked1Text10b.value + "&nbsp;";
-    }
+    stacked1Row10c.innerHTML = stacked1Text10b.value ? stacked1Text10b.value + "&nbsp;" : "";
 };
 const stacked1Color10b = document.getElementById("stacked1Color10b");
 stacked1Color10b.oninput = function() {
@@ -1188,11 +1108,7 @@ stacked2Size1a.oninput = function() {
 };
 const stacked2Text1a = document.getElementById("stacked2Text1a"); // End Data Label #1
 stacked2Text1a.oninput = function() {
-    if (stacked2Text1a.value == "") {
-        stacked2Row1b.innerHTML = stacked2Text1a.value;
-    } else if (stacked2Text1a.value) {
-        stacked2Row1b.innerHTML = stacked2Text1a.value + "&nbsp;";
-    }
+    stacked2Row1b.innerHTML = stacked2Text1a.value ? stacked2Text1a.value + "&nbsp;" : "";
 };
 const stacked2Color1a = document.getElementById("stacked2Color1a");
 stacked2Color1a.oninput = function() {
@@ -1206,11 +1122,7 @@ stacked2Size1b.oninput = function() {
 };
 const stacked2Text1b = document.getElementById("stacked2Text1b"); // End Data Label #2
 stacked2Text1b.oninput = function() {
-    if (stacked2Text1b.value == "") {
-        stacked2Row1c.innerHTML = stacked2Text1b.value;
-    } else if (stacked2Text1b.value) {
-        stacked2Row1c.innerHTML = stacked2Text1b.value + "&nbsp;";
-    }
+    stacked2Row1c.innerHTML = stacked2Text1b.value ? stacked2Text1b.value + "&nbsp;" : "";
 };
 const stacked2Color1b = document.getElementById("stacked2Color1b");
 stacked2Color1b.oninput = function() {
@@ -1230,11 +1142,7 @@ stacked2Size2a.oninput = function() {
 };
 const stacked2Text2a = document.getElementById("stacked2Text2a");
 stacked2Text2a.oninput = function() {
-    if (stacked2Text2a.value == "") {
-        stacked2Row2b.innerHTML = stacked2Text2a.value;
-    } else if (stacked2Text2a.value) {
-        stacked2Row2b.innerHTML = stacked2Text2a.value + "&nbsp;";
-    }
+    stacked2Row2b.innerHTML = stacked2Text2a.value ? stacked2Text2a.value + "&nbsp;" : "";
 };
 const stacked2Color2a = document.getElementById("stacked2Color2a");
 stacked2Color2a.oninput = function() {
@@ -1248,11 +1156,7 @@ stacked2Size2b.oninput = function() {
 };
 const stacked2Text2b = document.getElementById("stacked2Text2b");
 stacked2Text2b.oninput = function() {
-    if (stacked2Text2b.value == "") {
-        stacked2Row2c.innerHTML = stacked2Text2b.value;
-    } else if (stacked2Text2b.value) {
-        stacked2Row2c.innerHTML = stacked2Text2b.value + "&nbsp;";
-    }
+    stacked2Row2c.innerHTML = stacked2Text2b.value ? stacked2Text2b.value + "&nbsp;" : "";
 };
 const stacked2Color2b = document.getElementById("stacked2Color2b");
 stacked2Color2b.oninput = function() {
@@ -1272,11 +1176,7 @@ stacked2Size3a.oninput = function() {
 };
 const stacked2Text3a = document.getElementById("stacked2Text3a");
 stacked2Text3a.oninput = function() {
-    if (stacked2Text3a.value == "") {
-        stacked2Row3b.innerHTML = stacked2Text3a.value;
-    } else if (stacked2Text3a.value) {
-        stacked2Row3b.innerHTML = stacked2Text3a.value + "&nbsp;";
-    }
+    stacked2Row3b.innerHTML = stacked2Text3a.value ? stacked2Text3a.value + "&nbsp;" : "";
 };
 const stacked2Color3a = document.getElementById("stacked2Color3a");
 stacked2Color3a.oninput = function() {
@@ -1290,11 +1190,7 @@ stacked2Size3b.oninput = function() {
 };
 const stacked2Text3b = document.getElementById("stacked2Text3b");
 stacked2Text3b.oninput = function() {
-    if (stacked2Text3b.value == "") {
-        stacked2Row3c.innerHTML = stacked2Text3b.value;
-    } else if (stacked2Text3b.value) {
-        stacked2Row3c.innerHTML = stacked2Text3b.value + "&nbsp;";
-    }
+    stacked2Row3c.innerHTML = stacked2Text3b.value ? stacked2Text3b.value + "&nbsp;" : "";
 };
 const stacked2Color3b = document.getElementById("stacked2Color3b");
 stacked2Color3b.oninput = function() {
@@ -1314,11 +1210,7 @@ stacked2Size4a.oninput = function() {
 };
 const stacked2Text4a = document.getElementById("stacked2Text4a");
 stacked2Text4a.oninput = function() {
-    if (stacked2Text4a.value == "") {
-        stacked2Row4b.innerHTML = stacked2Text4a.value;
-    } else if (stacked2Text4a.value) {
-        stacked2Row4b.innerHTML = stacked2Text4a.value + "&nbsp;";
-    }
+    stacked2Row4b.innerHTML = stacked2Text4a.value ? stacked2Text4a.value + "&nbsp;" : "";
 };
 const stacked2Color4a = document.getElementById("stacked2Color4a");
 stacked2Color4a.oninput = function() {
@@ -1332,11 +1224,7 @@ stacked2Size4b.oninput = function() {
 };
 const stacked2Text4b = document.getElementById("stacked2Text4b");
 stacked2Text4b.oninput = function() {
-    if (stacked2Text4b.value == "") {
-        stacked2Row4c.innerHTML = stacked2Text4b.value;
-    } else if (stacked2Text4b.value) {
-        stacked2Row4c.innerHTML = stacked2Text4b.value + "&nbsp;";
-    }
+    stacked2Row4c.innerHTML = stacked2Text4b.value ? stacked2Text4b.value + "&nbsp;" : "";
 };
 const stacked2Color4b = document.getElementById("stacked2Color4b");
 stacked2Color4b.oninput = function() {
@@ -1356,11 +1244,7 @@ stacked2Size5a.oninput = function() {
 };
 const stacked2Text5a = document.getElementById("stacked2Text5a");
 stacked2Text5a.oninput = function() {
-    if (stacked2Text5a.value == "") {
-        stacked2Row5b.innerHTML = stacked2Text5a.value;
-    } else if (stacked2Text5a.value) {
-        stacked2Row5b.innerHTML = stacked2Text5a.value + "&nbsp;";
-    }
+    stacked2Row5b.innerHTML = stacked2Text5a.value ? stacked2Text5a.value + "&nbsp;" : "";
 };
 const stacked2Color5a = document.getElementById("stacked2Color5a");
 stacked2Color5a.oninput = function() {
@@ -1374,11 +1258,7 @@ stacked2Size5b.oninput = function() {
 };
 const stacked2Text5b = document.getElementById("stacked2Text5b");
 stacked2Text5b.oninput = function() {
-    if (stacked2Text5b.value == "") {
-        stacked2Row5c.innerHTML = stacked2Text5b.value;
-    } else if (stacked2Text5b.value) {
-        stacked2Row5c.innerHTML = stacked2Text5b.value + "&nbsp;";
-    }
+    stacked2Row5c.innerHTML = stacked2Text5b.value ? stacked2Text5b.value + "&nbsp;" : "";
 };
 const stacked2Color5b = document.getElementById("stacked2Color5b");
 stacked2Color5b.oninput = function() {
@@ -1398,11 +1278,7 @@ stacked2Size6a.oninput = function() {
 };
 const stacked2Text6a = document.getElementById("stacked2Text6a");
 stacked2Text6a.oninput = function() {
-    if (stacked2Text6a.value == "") {
-        stacked2Row6b.innerHTML = stacked2Text6a.value;
-    } else if (stacked2Text6a.value) {
-        stacked2Row6b.innerHTML = stacked2Text6a.value + "&nbsp;";
-    }
+    stacked2Row6b.innerHTML = stacked2Text6a.value ? stacked2Text6a.value + "&nbsp;" : "";
 };
 const stacked2Color6a = document.getElementById("stacked2Color6a");
 stacked2Color6a.oninput = function() {
@@ -1416,11 +1292,7 @@ stacked2Size6b.oninput = function() {
 };
 const stacked2Text6b = document.getElementById("stacked2Text6b");
 stacked2Text6b.oninput = function() {
-    if (stacked2Text6b.value == "") {
-        stacked2Row6c.innerHTML = stacked2Text6b.value;
-    } else if (stacked2Text6b.value) {
-        stacked2Row6c.innerHTML = stacked2Text6b.value + "&nbsp;";
-    }
+    stacked2Row6c.innerHTML = stacked2Text6b.value ? stacked2Text6b.value + "&nbsp;" : "";
 };
 const stacked2Color6b = document.getElementById("stacked2Color6b");
 stacked2Color6b.oninput = function() {
@@ -1440,11 +1312,7 @@ stacked2Size7a.oninput = function() {
 };
 const stacked2Text7a = document.getElementById("stacked2Text7a");
 stacked2Text7a.oninput = function() {
-    if (stacked2Text7a.value == "") {
-        stacked2Row7b.innerHTML = stacked2Text7a.value;
-    } else if (stacked2Text7a.value) {
-        stacked2Row7b.innerHTML = stacked2Text7a.value + "&nbsp;";
-    }
+    stacked2Row7b.innerHTML = stacked2Text7a.value ? stacked2Text7a.value + "&nbsp;" : "";
 };
 const stacked2Color7a = document.getElementById("stacked2Color7a");
 stacked2Color7a.oninput = function() {
@@ -1458,11 +1326,7 @@ stacked2Size7b.oninput = function() {
 };
 const stacked2Text7b = document.getElementById("stacked2Text7b");
 stacked2Text7b.oninput = function() {
-    if (stacked2Text7b.value == "") {
-        stacked2Row7c.innerHTML = stacked2Text7b.value;
-    } else if (stacked2Text7b.value) {
-        stacked2Row7c.innerHTML = stacked2Text7b.value + "&nbsp;";
-    }
+    stacked2Row7c.innerHTML = stacked2Text7b.value ? stacked2Text7b.value + "&nbsp;" : "";
 };
 const stacked2Color7b = document.getElementById("stacked2Color7b");
 stacked2Color7b.oninput = function() {
@@ -1482,11 +1346,7 @@ stacked2Size8a.oninput = function() {
 };
 const stacked2Text8a = document.getElementById("stacked2Text8a");
 stacked2Text8a.oninput = function() {
-    if (stacked2Text8a.value == "") {
-        stacked2Row8b.innerHTML = stacked2Text8a.value;
-    } else if (stacked2Text8a.value) {
-        stacked2Row8b.innerHTML = stacked2Text8a.value + "&nbsp;";
-    }
+    stacked2Row8b.innerHTML = stacked2Text8a.value ? stacked2Text8a.value + "&nbsp;" : "";
 };
 const stacked2Color8a = document.getElementById("stacked2Color8a");
 stacked2Color8a.oninput = function() {
@@ -1500,11 +1360,7 @@ stacked2Size8b.oninput = function() {
 };
 const stacked2Text8b = document.getElementById("stacked2Text8b");
 stacked2Text8b.oninput = function() {
-    if (stacked2Text8b.value == "") {
-        stacked2Row8c.innerHTML = stacked2Text8b.value;
-    } else if (stacked2Text8b.value) {
-        stacked2Row8c.innerHTML = stacked2Text8b.value + "&nbsp;";
-    }
+    stacked2Row8c.innerHTML = stacked2Text8b.value ? stacked2Text8b.value + "&nbsp;" : "";
 };
 const stacked2Color8b = document.getElementById("stacked2Color8b");
 stacked2Color8b.oninput = function() {
@@ -1524,11 +1380,7 @@ stacked2Size9a.oninput = function() {
 };
 const stacked2Text9a = document.getElementById("stacked2Text9a");
 stacked2Text9a.oninput = function() {
-    if (stacked2Text9a.value == "") {
-        stacked2Row9b.innerHTML = stacked2Text9a.value;
-    } else if (stacked2Text9a.value) {
-        stacked2Row9b.innerHTML = stacked2Text9a.value + "&nbsp;";
-    }
+    stacked2Row9b.innerHTML = stacked2Text9a.value ? stacked2Text9a.value + "&nbsp;" : "";
 };
 const stacked2Color9a = document.getElementById("stacked2Color9a");
 stacked2Color9a.oninput = function() {
@@ -1542,11 +1394,7 @@ stacked2Size9b.oninput = function() {
 };
 const stacked2Text9b = document.getElementById("stacked2Text9b");
 stacked2Text9b.oninput = function() {
-    if (stacked2Text9b.value == "") {
-        stacked2Row9c.innerHTML = stacked2Text9b.value;
-    } else if (stacked2Text9b.value) {
-        stacked2Row9c.innerHTML = stacked2Text9b.value + "&nbsp;";
-    }
+    stacked2Row9c.innerHTML = stacked2Text9b.value ? stacked2Text9b.value + "&nbsp;" : "";
 };
 const stacked2Color9b = document.getElementById("stacked2Color9b");
 stacked2Color9b.oninput = function() {
@@ -1566,11 +1414,7 @@ stacked2Size10a.oninput = function() {
 };
 const stacked2Text10a = document.getElementById("stacked2Text10a");
 stacked2Text10a.oninput = function() {
-    if (stacked2Text10a.value == "") {
-        stacked2Row10b.innerHTML = stacked2Text10a.value;
-    } else if (stacked2Text10a.value) {
-        stacked2Row10b.innerHTML = stacked2Text10a.value + "&nbsp;";
-    }
+    stacked2Row10b.innerHTML = stacked2Text10a.value ? stacked2Text10a.value + "&nbsp;" : "";
 };
 const stacked2Color10a = document.getElementById("stacked2Color10a");
 stacked2Color10a.oninput = function() {
@@ -1584,11 +1428,7 @@ stacked2Size10b.oninput = function() {
 };
 const stacked2Text10b = document.getElementById("stacked2Text10b");
 stacked2Text10b.oninput = function() {
-    if (stacked2Text10b.value == "") {
-        stacked2Row10c.innerHTML = stacked2Text10b.value;
-    } else if (stacked2Text10b.value) {
-        stacked2Row10c.innerHTML = stacked2Text10b.value + "&nbsp;";
-    }
+    stacked2Row10c.innerHTML = stacked2Text10b.value ? stacked2Text10b.value + "&nbsp;" : "";
 };
 const stacked2Color10b = document.getElementById("stacked2Color10b");
 stacked2Color10b.oninput = function() {
@@ -2103,11 +1943,7 @@ stacked3Size1a.oninput = function() {
 };
 const stacked3Text1a = document.getElementById("stacked3Text1a"); // End Data Label #1
 stacked3Text1a.oninput = function() {
-    if (stacked3Text1a.value == "") {
-        stacked3Row1b.innerHTML = stacked3Text1a.value;
-    } else if (stacked3Text1a.value) {
-        stacked3Row1b.innerHTML = stacked3Text1a.value + "&nbsp;";
-    }
+    stacked3Row1b.innerHTML = stacked3Text1a.value ? stacked3Text1a.value + "&nbsp;" : "";
 };
 const stacked3Color1a = document.getElementById("stacked3Color1a");
 stacked3Color1a.oninput = function() {
@@ -2122,11 +1958,7 @@ stacked3Size1b.oninput = function() {
 };
 const stacked3Text1b = document.getElementById("stacked3Text1b"); // End Data Label #2
 stacked3Text1b.oninput = function() {
-    if (stacked3Text1b.value == "") {
-        stacked3Row1c.innerHTML = stacked3Text1b.value;
-    } else if (stacked3Text1b.value) {
-        stacked3Row1c.innerHTML = stacked3Text1b.value + "&nbsp;";
-    }
+    stacked3Row1c.innerHTML = stacked3Text1b.value ? stacked3Text1b.value + "&nbsp;" : "";
 };
 const stacked3Color1b = document.getElementById("stacked3Color1b");
 stacked3Color1b.oninput = function() {
@@ -2141,11 +1973,7 @@ stacked3Size1c.oninput = function() {
 };
 const stacked3Text1c = document.getElementById("stacked3Text1c");
 stacked3Text1c.oninput = function() {
-    if (stacked3Text1c.value == "") {
-        stacked3Row1d.innerHTML = stacked3Text1c.value;
-    } else if (stacked3Text1c.value) {
-        stacked3Row1d.innerHTML = stacked3Text1c.value + "&nbsp;";
-    }
+    stacked3Row1d.innerHTML = stacked3Text1c.value ? stacked3Text1c.value + "&nbsp;" : "";
 };
 const stacked3Color1c = document.getElementById("stacked3Color1c");
 stacked3Color1c.oninput = function() {
@@ -2166,11 +1994,7 @@ stacked3Size2a.oninput = function() {
 };
 const stacked3Text2a = document.getElementById("stacked3Text2a");
 stacked3Text2a.oninput = function() {
-    if (stacked3Text2a.value == "") {
-        stacked3Row2b.innerHTML = stacked3Text2a.value;
-    } else if (stacked3Text2a.value) {
-        stacked3Row2b.innerHTML = stacked3Text2a.value + "&nbsp;";
-    }
+    stacked3Row2b.innerHTML = stacked3Text2a.value ? stacked3Text2a.value + "&nbsp;" : "";
 };
 const stacked3Color2a = document.getElementById("stacked3Color2a");
 stacked3Color2a.oninput = function() {
@@ -2185,11 +2009,7 @@ stacked3Size2b.oninput = function() {
 };
 const stacked3Text2b = document.getElementById("stacked3Text2b");
 stacked3Text2b.oninput = function() {
-    if (stacked3Text2b.value == "") {
-        stacked3Row2c.innerHTML = stacked3Text2b.value;
-    } else if (stacked3Text2b.value) {
-        stacked3Row2c.innerHTML = stacked3Text2b.value + "&nbsp;";
-    }
+    stacked3Row2c.innerHTML = stacked3Text2b.value ? stacked3Text2b.value + "&nbsp;" : "";
 };
 const stacked3Color2b = document.getElementById("stacked3Color2b");
 stacked3Color2b.oninput = function() {
@@ -2204,11 +2024,7 @@ stacked3Size2c.oninput = function() {
 };
 const stacked3Text2c = document.getElementById("stacked3Text2c");
 stacked3Text2c.oninput = function() {
-    if (stacked3Text2c.value == "") {
-        stacked3Row2d.innerHTML = stacked3Text2c.value;
-    } else if (stacked3Text2c.value) {
-        stacked3Row2d.innerHTML = stacked3Text2c.value + "&nbsp;";
-    }
+    stacked3Row2d.innerHTML = stacked3Text2c.value ? stacked3Text2c.value + "&nbsp;" : "";
 };
 const stacked3Color2c = document.getElementById("stacked3Color2c");
 stacked3Color2c.oninput = function() {
@@ -2229,11 +2045,7 @@ stacked3Size3a.oninput = function() {
 };
 const stacked3Text3a = document.getElementById("stacked3Text3a");
 stacked3Text3a.oninput = function() {
-    if (stacked3Text3a.value == "") {
-        stacked3Row3b.innerHTML = stacked3Text3a.value;
-    } else if (stacked3Text3a.value) {
-        stacked3Row3b.innerHTML = stacked3Text3a.value + "&nbsp;";
-    }
+    stacked3Row3b.innerHTML = stacked3Text3a.value ? stacked3Text3a.value + "&nbsp;" : "";
 };
 const stacked3Color3a = document.getElementById("stacked3Color3a");
 stacked3Color3a.oninput = function() {
@@ -2248,11 +2060,7 @@ stacked3Size3b.oninput = function() {
 };
 const stacked3Text3b = document.getElementById("stacked3Text3b");
 stacked3Text3b.oninput = function() {
-    if (stacked3Text3b.value == "") {
-        stacked3Row3c.innerHTML = stacked3Text3b.value;
-    } else if (stacked3Text3b.value) {
-        stacked3Row3c.innerHTML = stacked3Text3b.value + "&nbsp;";
-    }
+    stacked3Row3c.innerHTML = stacked3Text3b.value ? stacked3Text3b.value + "&nbsp;" : "";
 };
 const stacked3Color3b = document.getElementById("stacked3Color3b");
 stacked3Color3b.oninput = function() {
@@ -2267,11 +2075,7 @@ stacked3Size3c.oninput = function() {
 };
 const stacked3Text3c = document.getElementById("stacked3Text3c");
 stacked3Text3c.oninput = function() {
-    if (stacked3Text3c.value == "") {
-        stacked3Row3d.innerHTML = stacked3Text3c.value;
-    } else if (stacked3Text3c.value) {
-        stacked3Row3d.innerHTML = stacked3Text3c.value + "&nbsp;";
-    }
+    stacked3Row3d.innerHTML = stacked3Text3c.value ? stacked3Text3c.value + "&nbsp;" : "";
 };
 const stacked3Color3c = document.getElementById("stacked3Color3c");
 stacked3Color3c.oninput = function() {
@@ -2292,11 +2096,7 @@ stacked3Size4a.oninput = function() {
 };
 const stacked3Text4a = document.getElementById("stacked3Text4a");
 stacked3Text4a.oninput = function() {
-    if (stacked3Text4a.value == "") {
-        stacked3Row4b.innerHTML = stacked3Text4a.value;
-    } else if (stacked3Text4a.value) {
-        stacked3Row4b.innerHTML = stacked3Text4a.value + "&nbsp;";
-    }
+    stacked3Row4b.innerHTML = stacked3Text4a.value ? stacked3Text4a.value + "&nbsp;" : "";
 };
 const stacked3Color4a = document.getElementById("stacked3Color4a");
 stacked3Color4a.oninput = function() {
@@ -2311,11 +2111,7 @@ stacked3Size4b.oninput = function() {
 };
 const stacked3Text4b = document.getElementById("stacked3Text4b");
 stacked3Text4b.oninput = function() {
-    if (stacked3Text4b.value == "") {
-        stacked3Row4c.innerHTML = stacked3Text4b.value;
-    } else if (stacked3Text4b.value) {
-        stacked3Row4c.innerHTML = stacked3Text4b.value + "&nbsp;";
-    }
+    stacked3Row4c.innerHTML = stacked3Text4b.value ? stacked3Text4b.value + "&nbsp;" : "";
 };
 const stacked3Color4b = document.getElementById("stacked3Color4b");
 stacked3Color4b.oninput = function() {
@@ -2330,11 +2126,7 @@ stacked3Size4c.oninput = function() {
 };
 const stacked3Text4c = document.getElementById("stacked3Text4c");
 stacked3Text4c.oninput = function() {
-    if (stacked3Text4c.value == "") {
-        stacked3Row4d.innerHTML = stacked3Text4c.value;
-    } else if (stacked3Text4c.value) {
-        stacked3Row4d.innerHTML = stacked3Text4c.value + "&nbsp;";
-    }
+    stacked3Row4d.innerHTML = stacked3Text4c.value ? stacked3Text4c.value + "&nbsp;" : "";
 };
 const stacked3Color4c = document.getElementById("stacked3Color4c");
 stacked3Color4c.oninput = function() {
@@ -2355,11 +2147,7 @@ stacked3Size5a.oninput = function() {
 };
 const stacked3Text5a = document.getElementById("stacked3Text5a");
 stacked3Text5a.oninput = function() {
-    if (stacked3Text5a.value == "") {
-        stacked3Row5b.innerHTML = stacked3Text5a.value;
-    } else if (stacked3Text5a.value) {
-        stacked3Row5b.innerHTML = stacked3Text5a.value + "&nbsp;";
-    }
+    stacked3Row5b.innerHTML = stacked3Text5a.value ? stacked3Text5a.value + "&nbsp;" : "";
 };
 const stacked3Color5a = document.getElementById("stacked3Color5a");
 stacked3Color5a.oninput = function() {
@@ -2374,11 +2162,7 @@ stacked3Size5b.oninput = function() {
 };
 const stacked3Text5b = document.getElementById("stacked3Text5b");
 stacked3Text5b.oninput = function() {
-    if (stacked3Text5b.value == "") {
-        stacked3Row5c.innerHTML = stacked3Text5b.value;
-    } else if (stacked3Text5b.value) {
-        stacked3Row5c.innerHTML = stacked3Text5b.value + "&nbsp;";
-    }
+    stacked3Row5c.innerHTML = stacked3Text5b.value ? stacked3Text5b.value + "&nbsp;" : "";
 };
 const stacked3Color5b = document.getElementById("stacked3Color5b");
 stacked3Color5b.oninput = function() {
@@ -2393,11 +2177,7 @@ stacked3Size5c.oninput = function() {
 };
 const stacked3Text5c = document.getElementById("stacked3Text5c");
 stacked3Text5c.oninput = function() {
-    if (stacked3Text5c.value == "") {
-        stacked3Row5d.innerHTML = stacked3Text5c.value;
-    } else if (stacked3Text5c.value) {
-        stacked3Row5d.innerHTML = stacked3Text5c.value + "&nbsp;";
-    }
+    stacked3Row5d.innerHTML = stacked3Text5c.value ? stacked3Text5c.value + "&nbsp;" : "";
 };
 const stacked3Color5c = document.getElementById("stacked3Color5c");
 stacked3Color5c.oninput = function() {
@@ -2418,11 +2198,7 @@ stacked3Size6a.oninput = function() {
 };
 const stacked3Text6a = document.getElementById("stacked3Text6a");
 stacked3Text6a.oninput = function() {
-    if (stacked3Text6a.value == "") {
-        stacked3Row6b.innerHTML = stacked3Text6a.value;
-    } else if (stacked3Text6a.value) {
-        stacked3Row6b.innerHTML = stacked3Text6a.value + "&nbsp;";
-    }
+    stacked3Row6b.innerHTML = stacked3Text6a.value ? stacked3Text6a.value + "&nbsp;" : "";
 };
 const stacked3Color6a = document.getElementById("stacked3Color6a");
 stacked3Color6a.oninput = function() {
@@ -2437,11 +2213,7 @@ stacked3Size6b.oninput = function() {
 };
 const stacked3Text6b = document.getElementById("stacked3Text6b");
 stacked3Text6b.oninput = function() {
-    if (stacked3Text6b.value == "") {
-        stacked3Row6c.innerHTML = stacked3Text6b.value;
-    } else if (stacked3Text6b.value) {
-        stacked3Row6c.innerHTML = stacked3Text6b.value + "&nbsp;";
-    }
+    stacked3Row6c.innerHTML = stacked3Text6b.value ? stacked3Text6b.value + "&nbsp;" : "";
 };
 const stacked3Color6b = document.getElementById("stacked3Color6b");
 stacked3Color6b.oninput = function() {
@@ -2456,11 +2228,7 @@ stacked3Size6c.oninput = function() {
 };
 const stacked3Text6c = document.getElementById("stacked3Text6c");
 stacked3Text6c.oninput = function() {
-    if (stacked3Text6c.value == "") {
-        stacked3Row6d.innerHTML = stacked3Text6c.value;
-    } else if (stacked3Text6c.value) {
-        stacked3Row6d.innerHTML = stacked3Text6c.value + "&nbsp;";
-    }
+    stacked3Row6d.innerHTML = stacked3Text6c.value ? stacked3Text6c.value + "&nbsp;" : "";
 };
 const stacked3Color6c = document.getElementById("stacked3Color6c");
 stacked3Color6c.oninput = function() {
@@ -2481,11 +2249,7 @@ stacked3Size7a.oninput = function() {
 };
 const stacked3Text7a = document.getElementById("stacked3Text7a");
 stacked3Text7a.oninput = function() {
-    if (stacked3Text7a.value == "") {
-        stacked3Row7b.innerHTML = stacked3Text7a.value;
-    } else if (stacked3Text7a.value) {
-        stacked3Row7b.innerHTML = stacked3Text7a.value + "&nbsp;";
-    }
+    stacked3Row7b.innerHTML = stacked3Text7a.value ? stacked3Text7a.value + "&nbsp;" : "";
 };
 const stacked3Color7a = document.getElementById("stacked3Color7a");
 stacked3Color7a.oninput = function() {
@@ -2500,11 +2264,7 @@ stacked3Size7b.oninput = function() {
 };
 const stacked3Text7b = document.getElementById("stacked3Text7b");
 stacked3Text7b.oninput = function() {
-    if (stacked3Text7b.value == "") {
-        stacked3Row7c.innerHTML = stacked3Text7b.value;
-    } else if (stacked3Text7b.value) {
-        stacked3Row7c.innerHTML = stacked3Text7b.value + "&nbsp;";
-    }
+    stacked3Row7c.innerHTML = stacked3Text7b.value ? stacked3Text7b.value + "&nbsp;" : "";
 };
 const stacked3Color7b = document.getElementById("stacked3Color7b");
 stacked3Color7b.oninput = function() {
@@ -2519,11 +2279,7 @@ stacked3Size7c.oninput = function() {
 };
 const stacked3Text7c = document.getElementById("stacked3Text7c");
 stacked3Text7c.oninput = function() {
-    if (stacked3Text7c.value == "") {
-        stacked3Row7d.innerHTML = stacked3Text7c.value;
-    } else if (stacked3Text7c.value) {
-        stacked3Row7d.innerHTML = stacked3Text7c.value + "&nbsp;";
-    }
+    stacked3Row7d.innerHTML = stacked3Text7c.value ? stacked3Text7c.value + "&nbsp;" : "";
 };
 const stacked3Color7c = document.getElementById("stacked3Color7c");
 stacked3Color7c.oninput = function() {
@@ -2544,11 +2300,7 @@ stacked3Size8a.oninput = function() {
 };
 const stacked3Text8a = document.getElementById("stacked3Text8a");
 stacked3Text8a.oninput = function() {
-    if (stacked3Text8a.value == "") {
-        stacked3Row8b.innerHTML = stacked3Text8a.value;
-    } else if (stacked3Text8a.value) {
-        stacked3Row8b.innerHTML = stacked3Text8a.value + "&nbsp;";
-    }
+    stacked3Row8b.innerHTML = stacked3Text8a.value ? stacked3Text8a.value + "&nbsp;" : "";
 };
 const stacked3Color8a = document.getElementById("stacked3Color8a");
 stacked3Color8a.oninput = function() {
@@ -2563,11 +2315,7 @@ stacked3Size8b.oninput = function() {
 };
 const stacked3Text8b = document.getElementById("stacked3Text8b");
 stacked3Text8b.oninput = function() {
-    if (stacked3Text8b.value == "") {
-        stacked3Row8c.innerHTML = stacked3Text8b.value;
-    } else if (stacked3Text8b.value) {
-        stacked3Row8c.innerHTML = stacked3Text8b.value + "&nbsp;";
-    }
+    stacked3Row8c.innerHTML = stacked3Text8b.value ? stacked3Text8b.value + "&nbsp;" : "";
 };
 const stacked3Color8b = document.getElementById("stacked3Color8b");
 stacked3Color8b.oninput = function() {
@@ -2582,11 +2330,7 @@ stacked3Size8c.oninput = function() {
 };
 const stacked3Text8c = document.getElementById("stacked3Text8c");
 stacked3Text8c.oninput = function() {
-    if (stacked3Text8c.value == "") {
-        stacked3Row8d.innerHTML = stacked3Text8c.value;
-    } else if (stacked3Text8c.value) {
-        stacked3Row8d.innerHTML = stacked3Text8c.value + "&nbsp;";
-    }
+    stacked3Row8d.innerHTML = stacked3Text8c.value ? stacked3Text8c.value + "&nbsp;" : "";
 };
 const stacked3Color8c = document.getElementById("stacked3Color8c");
 stacked3Color8c.oninput = function() {
@@ -2607,11 +2351,7 @@ stacked3Size9a.oninput = function() {
 };
 const stacked3Text9a = document.getElementById("stacked3Text9a");
 stacked3Text9a.oninput = function() {
-    if (stacked3Text9a.value == "") {
-        stacked3Row9b.innerHTML = stacked3Text9a.value;
-    } else if (stacked3Text9a.value) {
-        stacked3Row9b.innerHTML = stacked3Text9a.value + "&nbsp;";
-    }
+    stacked3Row9b.innerHTML = stacked3Text9a.value ? stacked3Text9a.value + "&nbsp;" : "";
 };
 const stacked3Color9a = document.getElementById("stacked3Color9a");
 stacked3Color9a.oninput = function() {
@@ -2626,11 +2366,7 @@ stacked3Size9b.oninput = function() {
 };
 const stacked3Text9b = document.getElementById("stacked3Text9b");
 stacked3Text9b.oninput = function() {
-    if (stacked3Text9b.value == "") {
-        stacked3Row9c.innerHTML = stacked3Text9b.value;
-    } else if (stacked3Text9b.value) {
-        stacked3Row9c.innerHTML = stacked3Text9b.value + "&nbsp;";
-    }
+    stacked3Row9c.innerHTML = stacked3Text9b.value ? stacked3Text9b.value + "&nbsp;" : "";
 };
 const stacked3Color9b = document.getElementById("stacked3Color9b");
 stacked3Color9b.oninput = function() {
@@ -2645,11 +2381,7 @@ stacked3Size9c.oninput = function() {
 };
 const stacked3Text9c = document.getElementById("stacked3Text9c");
 stacked3Text9c.oninput = function() {
-    if (stacked3Text9c.value == "") {
-        stacked3Row9d.innerHTML = stacked3Text9c.value;
-    } else if (stacked3Text9c.value) {
-        stacked3Row9d.innerHTML = stacked3Text9c.value + "&nbsp;";
-    }
+    stacked3Row9d.innerHTML = stacked3Text9c.value ? stacked3Text9c.value + "&nbsp;" : "";
 };
 const stacked3Color9c = document.getElementById("stacked3Color9c");
 stacked3Color9c.oninput = function() {
@@ -2670,11 +2402,7 @@ stacked3Size10a.oninput = function() {
 };
 const stacked3Text10a = document.getElementById("stacked3Text10a");
 stacked3Text10a.oninput = function() {
-    if (stacked3Text10a.value == "") {
-        stacked3Row10b.innerHTML = stacked3Text10a.value;
-    } else if (stacked3Text10a.value) {
-        stacked3Row10b.innerHTML = stacked3Text10a.value + "&nbsp;";
-    }
+    stacked3Row10b.innerHTML = stacked3Text10a.value ? stacked3Text10a.value + "&nbsp;" : "";
 };
 const stacked3Color10a = document.getElementById("stacked3Color10a");
 stacked3Color10a.oninput = function() {
@@ -2689,11 +2417,7 @@ stacked3Size10b.oninput = function() {
 };
 const stacked3Text10b = document.getElementById("stacked3Text10b");
 stacked3Text10b.oninput = function() {
-    if (stacked3Text10b.value == "") {
-        stacked3Row10c.innerHTML = stacked3Text10b.value;
-    } else if (stacked3Text10b.value) {
-        stacked3Row10c.innerHTML = stacked3Text10b.value + "&nbsp;";
-    }
+    stacked3Row10c.innerHTML = stacked3Text10b.value ? stacked3Text10b.value + "&nbsp;" : "";
 };
 const stacked3Color10b = document.getElementById("stacked3Color10b");
 stacked3Color10b.oninput = function() {
@@ -2708,11 +2432,7 @@ stacked3Size10c.oninput = function() {
 };
 const stacked3Text10c = document.getElementById("stacked3Text10c");
 stacked3Text10c.oninput = function() {
-    if (stacked3Text10c.value == "") {
-        stacked3Row10d.innerHTML = stacked3Text10c.value;
-    } else if (stacked3Text10c.value) {
-        stacked3Row10d.innerHTML = stacked3Text10c.value + "&nbsp;";
-    }
+    stacked3Row10d.innerHTML = stacked3Text10c.value ? stacked3Text10c.value + "&nbsp;" : "";
 };
 const stacked3Color10c = document.getElementById("stacked3Color10c");
 stacked3Color10c.oninput = function() {
@@ -3229,11 +2949,7 @@ stacked4Size1a.oninput = function() {
 };
 const stacked4Text1a = document.getElementById("stacked4Text1a"); // End Data Label #1
 stacked4Text1a.oninput = function() {
-    if (stacked4Text1a.value == "") {
-        stacked4Row1b.innerHTML = stacked4Text1a.value;
-    } else if (stacked4Text1a.value) {
-        stacked4Row1b.innerHTML = stacked4Text1a.value + "&nbsp;";
-    }
+    stacked4Row1b.innerHTML = stacked4Text1a.value ? stacked4Text1a.value + "&nbsp;" : "";
 };
 const stacked4Color1a = document.getElementById("stacked4Color1a");
 stacked4Color1a.oninput = function() {
@@ -3248,11 +2964,7 @@ stacked4Size1b.oninput = function() {
 };
 const stacked4Text1b = document.getElementById("stacked4Text1b"); // End Data Label #2
 stacked4Text1b.oninput = function() {
-    if (stacked4Text1b.value == "") {
-        stacked4Row1c.innerHTML = stacked4Text1b.value;
-    } else if (stacked4Text1b.value) {
-        stacked4Row1c.innerHTML = stacked4Text1b.value + "&nbsp;";
-    }
+    stacked4Row1c.innerHTML = stacked4Text1b.value ? stacked4Text1b.value + "&nbsp;" : "";
 };
 const stacked4Color1b = document.getElementById("stacked4Color1b");
 stacked4Color1b.oninput = function() {
@@ -3267,11 +2979,7 @@ stacked4Size1c.oninput = function() {
 };
 const stacked4Text1c = document.getElementById("stacked4Text1c");
 stacked4Text1c.oninput = function() {
-    if (stacked4Text1c.value == "") {
-        stacked4Row1d.innerHTML = stacked4Text1c.value;
-    } else if (stacked4Text1c.value) {
-        stacked4Row1d.innerHTML = stacked4Text1c.value + "&nbsp;";
-    }
+    stacked4Row1d.innerHTML = stacked4Text1c.value ? stacked4Text1c.value + "&nbsp;" : "";
 };
 const stacked4Color1c = document.getElementById("stacked4Color1c");
 stacked4Color1c.oninput = function() {
@@ -3292,11 +3000,7 @@ stacked4Size2a.oninput = function() {
 };
 const stacked4Text2a = document.getElementById("stacked4Text2a");
 stacked4Text2a.oninput = function() {
-    if (stacked4Text2a.value == "") {
-        stacked4Row2b.innerHTML = stacked4Text2a.value;
-    } else if (stacked4Text2a.value) {
-        stacked4Row2b.innerHTML = stacked4Text2a.value + "&nbsp;";
-    }
+    stacked4Row2b.innerHTML = stacked4Text2a.value ? stacked4Text2a.value + "&nbsp;" : "";
 };
 const stacked4Color2a = document.getElementById("stacked4Color2a");
 stacked4Color2a.oninput = function() {
@@ -3311,11 +3015,7 @@ stacked4Size2b.oninput = function() {
 };
 const stacked4Text2b = document.getElementById("stacked4Text2b");
 stacked4Text2b.oninput = function() {
-    if (stacked4Text2b.value == "") {
-        stacked4Row2c.innerHTML = stacked4Text2b.value;
-    } else if (stacked4Text2b.value) {
-        stacked4Row2c.innerHTML = stacked4Text2b.value + "&nbsp;";
-    }
+    stacked4Row2c.innerHTML = stacked4Text2b.value ? stacked4Text2b.value + "&nbsp;" : "";
 };
 const stacked4Color2b = document.getElementById("stacked4Color2b");
 stacked4Color2b.oninput = function() {
@@ -3330,11 +3030,7 @@ stacked4Size2c.oninput = function() {
 };
 const stacked4Text2c = document.getElementById("stacked4Text2c");
 stacked4Text2c.oninput = function() {
-    if (stacked4Text2c.value == "") {
-        stacked4Row2d.innerHTML = stacked4Text2c.value;
-    } else if (stacked4Text2c.value) {
-        stacked4Row2d.innerHTML = stacked4Text2c.value + "&nbsp;";
-    }
+    stacked4Row2d.innerHTML = stacked4Text2c.value ? stacked4Text2c.value + "&nbsp;" : "";
 };
 const stacked4Color2c = document.getElementById("stacked4Color2c");
 stacked4Color2c.oninput = function() {
@@ -3355,11 +3051,7 @@ stacked4Size3a.oninput = function() {
 };
 const stacked4Text3a = document.getElementById("stacked4Text3a");
 stacked4Text3a.oninput = function() {
-    if (stacked4Text3a.value == "") {
-        stacked4Row3b.innerHTML = stacked4Text3a.value;
-    } else if (stacked4Text3a.value) {
-        stacked4Row3b.innerHTML = stacked4Text3a.value + "&nbsp;";
-    }
+    stacked4Row3b.innerHTML = stacked4Text3a.value ? stacked4Text3a.value + "&nbsp;" : "";
 };
 const stacked4Color3a = document.getElementById("stacked4Color3a");
 stacked4Color3a.oninput = function() {
@@ -3374,11 +3066,7 @@ stacked4Size3b.oninput = function() {
 };
 const stacked4Text3b = document.getElementById("stacked4Text3b");
 stacked4Text3b.oninput = function() {
-    if (stacked4Text3b.value == "") {
-        stacked4Row3c.innerHTML = stacked4Text3b.value;
-    } else if (stacked4Text3b.value) {
-        stacked4Row3c.innerHTML = stacked4Text3b.value + "&nbsp;";
-    }
+    stacked4Row3c.innerHTML = stacked4Text3b.value ? stacked4Text3b.value + "&nbsp;" : "";
 };
 const stacked4Color3b = document.getElementById("stacked4Color3b");
 stacked4Color3b.oninput = function() {
@@ -3393,11 +3081,7 @@ stacked4Size3c.oninput = function() {
 };
 const stacked4Text3c = document.getElementById("stacked4Text3c");
 stacked4Text3c.oninput = function() {
-    if (stacked4Text3c.value == "") {
-        stacked4Row3d.innerHTML = stacked4Text3c.value;
-    } else if (stacked4Text3c.value) {
-        stacked4Row3d.innerHTML = stacked4Text3c.value + "&nbsp;";
-    }
+    stacked4Row3d.innerHTML = stacked4Text3c.value ? stacked4Text3c.value + "&nbsp;" : "";
 };
 const stacked4Color3c = document.getElementById("stacked4Color3c");
 stacked4Color3c.oninput = function() {
@@ -3418,11 +3102,7 @@ stacked4Size4a.oninput = function() {
 };
 const stacked4Text4a = document.getElementById("stacked4Text4a");
 stacked4Text4a.oninput = function() {
-    if (stacked4Text4a.value == "") {
-        stacked4Row4b.innerHTML = stacked4Text4a.value;
-    } else if (stacked4Text4a.value) {
-        stacked4Row4b.innerHTML = stacked4Text4a.value + "&nbsp;";
-    }
+    stacked4Row4b.innerHTML = stacked4Text4a.value ? stacked4Text4a.value + "&nbsp;" : "";
 };
 const stacked4Color4a = document.getElementById("stacked4Color4a");
 stacked4Color4a.oninput = function() {
@@ -3437,11 +3117,7 @@ stacked4Size4b.oninput = function() {
 };
 const stacked4Text4b = document.getElementById("stacked4Text4b");
 stacked4Text4b.oninput = function() {
-    if (stacked4Text4b.value == "") {
-        stacked4Row4c.innerHTML = stacked4Text4b.value;
-    } else if (stacked4Text4b.value) {
-        stacked4Row4c.innerHTML = stacked4Text4b.value + "&nbsp;";
-    }
+    stacked4Row4c.innerHTML = stacked4Text4b.value ? stacked4Text4b.value + "&nbsp;" : "";
 };
 const stacked4Color4b = document.getElementById("stacked4Color4b");
 stacked4Color4b.oninput = function() {
@@ -3456,11 +3132,7 @@ stacked4Size4c.oninput = function() {
 };
 const stacked4Text4c = document.getElementById("stacked4Text4c");
 stacked4Text4c.oninput = function() {
-    if (stacked4Text4c.value == "") {
-        stacked4Row4d.innerHTML = stacked4Text4c.value;
-    } else if (stacked4Text4c.value) {
-        stacked4Row4d.innerHTML = stacked4Text4c.value + "&nbsp;";
-    }
+    stacked4Row4d.innerHTML = stacked4Text4c.value ? stacked4Text4c.value + "&nbsp;" : "";
 };
 const stacked4Color4c = document.getElementById("stacked4Color4c");
 stacked4Color4c.oninput = function() {
@@ -3481,11 +3153,7 @@ stacked4Size5a.oninput = function() {
 };
 const stacked4Text5a = document.getElementById("stacked4Text5a");
 stacked4Text5a.oninput = function() {
-    if (stacked4Text5a.value == "") {
-        stacked4Row5b.innerHTML = stacked4Text5a.value;
-    } else if (stacked4Text5a.value) {
-        stacked4Row5b.innerHTML = stacked4Text5a.value + "&nbsp;";
-    }
+    stacked4Row5b.innerHTML = stacked4Text5a.value ? stacked4Text5a.value + "&nbsp;" : "";
 };
 const stacked4Color5a = document.getElementById("stacked4Color5a");
 stacked4Color5a.oninput = function() {
@@ -3500,11 +3168,7 @@ stacked4Size5b.oninput = function() {
 };
 const stacked4Text5b = document.getElementById("stacked4Text5b");
 stacked4Text5b.oninput = function() {
-    if (stacked4Text5b.value == "") {
-        stacked4Row5c.innerHTML = stacked4Text5b.value;
-    } else if (stacked4Text5b.value) {
-        stacked4Row5c.innerHTML = stacked4Text5b.value + "&nbsp;";
-    }
+    stacked4Row5c.innerHTML = stacked4Text5b.value ? stacked4Text5b.value + "&nbsp;" : "";
 };
 const stacked4Color5b = document.getElementById("stacked4Color5b");
 stacked4Color5b.oninput = function() {
@@ -3519,11 +3183,7 @@ stacked4Size5c.oninput = function() {
 };
 const stacked4Text5c = document.getElementById("stacked4Text5c");
 stacked4Text5c.oninput = function() {
-    if (stacked4Text5c.value == "") {
-        stacked4Row5d.innerHTML = stacked4Text5c.value;
-    } else if (stacked4Text5c.value) {
-        stacked4Row5d.innerHTML = stacked4Text5c.value + "&nbsp;";
-    }
+    stacked4Row5d.innerHTML = stacked4Text5c.value ? stacked4Text5c.value + "&nbsp;" : "";
 };
 const stacked4Color5c = document.getElementById("stacked4Color5c");
 stacked4Color5c.oninput = function() {
@@ -3544,11 +3204,7 @@ stacked4Size6a.oninput = function() {
 };
 const stacked4Text6a = document.getElementById("stacked4Text6a");
 stacked4Text6a.oninput = function() {
-    if (stacked4Text6a.value == "") {
-        stacked4Row6b.innerHTML = stacked4Text6a.value;
-    } else if (stacked4Text6a.value) {
-        stacked4Row6b.innerHTML = stacked4Text6a.value + "&nbsp;";
-    }
+    stacked4Row6b.innerHTML = stacked4Text6a.value ? stacked4Text6a.value + "&nbsp;" : "";
 };
 const stacked4Color6a = document.getElementById("stacked4Color6a");
 stacked4Color6a.oninput = function() {
@@ -3563,11 +3219,7 @@ stacked4Size6b.oninput = function() {
 };
 const stacked4Text6b = document.getElementById("stacked4Text6b");
 stacked4Text6b.oninput = function() {
-    if (stacked4Text6b.value == "") {
-        stacked4Row6c.innerHTML = stacked4Text6b.value;
-    } else if (stacked4Text6b.value) {
-        stacked4Row6c.innerHTML = stacked4Text6b.value + "&nbsp;";
-    }
+    stacked4Row6c.innerHTML = stacked4Text6b.value ? stacked4Text6b.value + "&nbsp;" : "";
 };
 const stacked4Color6b = document.getElementById("stacked4Color6b");
 stacked4Color6b.oninput = function() {
@@ -3582,11 +3234,7 @@ stacked4Size6c.oninput = function() {
 };
 const stacked4Text6c = document.getElementById("stacked4Text6c");
 stacked4Text6c.oninput = function() {
-    if (stacked4Text6c.value == "") {
-        stacked4Row6d.innerHTML = stacked4Text6c.value;
-    } else if (stacked4Text6c.value) {
-        stacked4Row6d.innerHTML = stacked4Text6c.value + "&nbsp;";
-    }
+    stacked4Row6d.innerHTML = stacked4Text6c.value ? stacked4Text6c.value + "&nbsp;" : "";
 };
 const stacked4Color6c = document.getElementById("stacked4Color6c");
 stacked4Color6c.oninput = function() {
@@ -3607,11 +3255,7 @@ stacked4Size7a.oninput = function() {
 };
 const stacked4Text7a = document.getElementById("stacked4Text7a");
 stacked4Text7a.oninput = function() {
-    if (stacked4Text7a.value == "") {
-        stacked4Row7b.innerHTML = stacked4Text7a.value;
-    } else if (stacked4Text7a.value) {
-        stacked4Row7b.innerHTML = stacked4Text7a.value + "&nbsp;";
-    }
+    stacked4Row7b.innerHTML = stacked4Text7a.value ? stacked4Text7a.value + "&nbsp;" : "";
 };
 const stacked4Color7a = document.getElementById("stacked4Color7a");
 stacked4Color7a.oninput = function() {
@@ -3626,11 +3270,7 @@ stacked4Size7b.oninput = function() {
 };
 const stacked4Text7b = document.getElementById("stacked4Text7b");
 stacked4Text7b.oninput = function() {
-    if (stacked4Text7b.value == "") {
-        stacked4Row7c.innerHTML = stacked4Text7b.value;
-    } else if (stacked4Text7b.value) {
-        stacked4Row7c.innerHTML = stacked4Text7b.value + "&nbsp;";
-    }
+    stacked4Row7c.innerHTML = stacked4Text7b.value ? stacked4Text7b.value + "&nbsp;" : "";
 };
 const stacked4Color7b = document.getElementById("stacked4Color7b");
 stacked4Color7b.oninput = function() {
@@ -3645,11 +3285,7 @@ stacked4Size7c.oninput = function() {
 };
 const stacked4Text7c = document.getElementById("stacked4Text7c");
 stacked4Text7c.oninput = function() {
-    if (stacked4Text7c.value == "") {
-        stacked4Row7d.innerHTML = stacked4Text7c.value;
-    } else if (stacked4Text7c.value) {
-        stacked4Row7d.innerHTML = stacked4Text7c.value + "&nbsp;";
-    }
+    stacked4Row7d.innerHTML = stacked4Text7c.value ? stacked4Text7c.value + "&nbsp;" : "";
 };
 const stacked4Color7c = document.getElementById("stacked4Color7c");
 stacked4Color7c.oninput = function() {
@@ -3670,11 +3306,7 @@ stacked4Size8a.oninput = function() {
 };
 const stacked4Text8a = document.getElementById("stacked4Text8a");
 stacked4Text8a.oninput = function() {
-    if (stacked4Text8a.value == "") {
-        stacked4Row8b.innerHTML = stacked4Text8a.value;
-    } else if (stacked4Text8a.value) {
-        stacked4Row8b.innerHTML = stacked4Text8a.value + "&nbsp;";
-    }
+    stacked4Row8b.innerHTML = stacked4Text8a.value ? stacked4Text8a.value + "&nbsp;" : "";
 };
 const stacked4Color8a = document.getElementById("stacked4Color8a");
 stacked4Color8a.oninput = function() {
@@ -3689,11 +3321,7 @@ stacked4Size8b.oninput = function() {
 };
 const stacked4Text8b = document.getElementById("stacked4Text8b");
 stacked4Text8b.oninput = function() {
-    if (stacked4Text8b.value == "") {
-        stacked4Row8c.innerHTML = stacked4Text8b.value;
-    } else if (stacked4Text8b.value) {
-        stacked4Row8c.innerHTML = stacked4Text8b.value + "&nbsp;";
-    }
+    stacked4Row8c.innerHTML = stacked4Text8b.value ? stacked4Text8b.value + "&nbsp;" : "";
 };
 const stacked4Color8b = document.getElementById("stacked4Color8b");
 stacked4Color8b.oninput = function() {
@@ -3708,11 +3336,7 @@ stacked4Size8c.oninput = function() {
 };
 const stacked4Text8c = document.getElementById("stacked4Text8c");
 stacked4Text8c.oninput = function() {
-    if (stacked4Text8c.value == "") {
-        stacked4Row8d.innerHTML = stacked4Text8c.value;
-    } else if (stacked4Text8c.value) {
-        stacked4Row8d.innerHTML = stacked4Text8c.value + "&nbsp;";
-    }
+    stacked4Row8d.innerHTML = stacked4Text8c.value ? stacked4Text8c.value + "&nbsp;" : "";
 };
 const stacked4Color8c = document.getElementById("stacked4Color8c");
 stacked4Color8c.oninput = function() {
@@ -3733,11 +3357,7 @@ stacked4Size9a.oninput = function() {
 };
 const stacked4Text9a = document.getElementById("stacked4Text9a");
 stacked4Text9a.oninput = function() {
-    if (stacked4Text9a.value == "") {
-        stacked4Row9b.innerHTML = stacked4Text9a.value;
-    } else if (stacked4Text9a.value) {
-        stacked4Row9b.innerHTML = stacked4Text9a.value + "&nbsp;";
-    }
+    stacked4Row9b.innerHTML = stacked4Text9a.value ? stacked4Text9a.value + "&nbsp;" : "";
 };
 const stacked4Color9a = document.getElementById("stacked4Color9a");
 stacked4Color9a.oninput = function() {
@@ -3752,11 +3372,7 @@ stacked4Size9b.oninput = function() {
 };
 const stacked4Text9b = document.getElementById("stacked4Text9b");
 stacked4Text9b.oninput = function() {
-    if (stacked4Text9b.value == "") {
-        stacked4Row9c.innerHTML = stacked4Text9b.value;
-    } else if (stacked4Text9b.value) {
-        stacked4Row9c.innerHTML = stacked4Text9b.value + "&nbsp;";
-    }
+    stacked4Row9c.innerHTML = stacked4Text9b.value ? stacked4Text9b.value + "&nbsp;" : "";
 };
 const stacked4Color9b = document.getElementById("stacked4Color9b");
 stacked4Color9b.oninput = function() {
@@ -3771,11 +3387,7 @@ stacked4Size9c.oninput = function() {
 };
 const stacked4Text9c = document.getElementById("stacked4Text9c");
 stacked4Text9c.oninput = function() {
-    if (stacked4Text9c.value == "") {
-        stacked4Row9d.innerHTML = stacked4Text9c.value;
-    } else if (stacked4Text9c.value) {
-        stacked4Row9d.innerHTML = stacked4Text9c.value + "&nbsp;";
-    }
+    stacked4Row9d.innerHTML = stacked4Text9c.value ? stacked4Text9c.value + "&nbsp;" : "";
 };
 const stacked4Color9c = document.getElementById("stacked4Color9c");
 stacked4Color9c.oninput = function() {
@@ -3796,11 +3408,7 @@ stacked4Size10a.oninput = function() {
 };
 const stacked4Text10a = document.getElementById("stacked4Text10a");
 stacked4Text10a.oninput = function() {
-    if (stacked4Text10a.value == "") {
-        stacked4Row10b.innerHTML = stacked4Text10a.value;
-    } else if (stacked4Text10a.value) {
-        stacked4Row10b.innerHTML = stacked4Text10a.value + "&nbsp;";
-    }
+    stacked4Row10b.innerHTML = stacked4Text10a.value ? stacked4Text10a.value + "&nbsp;" : "";
 };
 const stacked4Color10a = document.getElementById("stacked4Color10a");
 stacked4Color10a.oninput = function() {
@@ -3815,11 +3423,7 @@ stacked4Size10b.oninput = function() {
 };
 const stacked4Text10b = document.getElementById("stacked4Text10b");
 stacked4Text10b.oninput = function() {
-    if (stacked4Text10b.value == "") {
-        stacked4Row10c.innerHTML = stacked4Text10b.value;
-    } else if (stacked4Text10b.value) {
-        stacked4Row10c.innerHTML = stacked4Text10b.value + "&nbsp;";
-    }
+    stacked4Row10c.innerHTML = stacked4Text10b.value ? stacked4Text10b.value + "&nbsp;" : "";
 };
 const stacked4Color10b = document.getElementById("stacked4Color10b");
 stacked4Color10b.oninput = function() {
@@ -3834,11 +3438,7 @@ stacked4Size10c.oninput = function() {
 };
 const stacked4Text10c = document.getElementById("stacked4Text10c");
 stacked4Text10c.oninput = function() {
-    if (stacked4Text10c.value == "") {
-        stacked4Row10d.innerHTML = stacked4Text10c.value;
-    } else if (stacked4Text10c.value) {
-        stacked4Row10d.innerHTML = stacked4Text10c.value + "&nbsp;";
-    }
+    stacked4Row10d.innerHTML = stacked4Text10c.value ? stacked4Text10c.value + "&nbsp;" : "";
 };
 const stacked4Color10c = document.getElementById("stacked4Color10c");
 stacked4Color10c.oninput = function() {
