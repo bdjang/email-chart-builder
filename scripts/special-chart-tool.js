@@ -172,11 +172,7 @@ negative1Size1.oninput = function() {
 };
 const negative1Text1b = document.getElementById("negative1Text1b");
 negative1Text1b.oninput = function() {
-    if (negative1Text1b.value == "") {
-        negative1Row1c.innerHTML = negative1Text1b.value;
-    } else if (negative1Text1b.value) {
-        negative1Row1c.innerHTML = "&nbsp;" + negative1Text1b.value;
-    }
+    negative1Row1c.innerHTML = negative1Text1b.value ? "&nbsp;" + negative1Text1b.value : "";
 };
 const negative1Label1b = document.getElementById("negative1Label1b");
 negative1Label1b.addEventListener("click", () => {
@@ -206,11 +202,7 @@ negative1Size2.oninput = function() {
 };
 const negative1Text2b = document.getElementById("negative1Text2b");
 negative1Text2b.oninput = function() {
-    if (negative1Text2b.value == "") {
-        negative1Row2c.innerHTML = negative1Text2b.value;
-    } else if (negative1Text2b.value) {
-        negative1Row2c.innerHTML = "&nbsp;" + negative1Text2b.value;
-    }
+    negative1Row2c.innerHTML = negative1Text2b.value ? "&nbsp;" + negative1Text2b.value : "";
 };
 const negative1Label2b = document.getElementById("negative1Label2b");
 negative1Label2b.addEventListener("click", () => {
@@ -240,11 +232,7 @@ negative1Size3.oninput = function() {
 };
 const negative1Text3b = document.getElementById("negative1Text3b");
 negative1Text3b.oninput = function() {
-    if (negative1Text3b.value == "") {
-        negative1Row3c.innerHTML = negative1Text3b.value;
-    } else if (negative1Text3b.value) {
-        negative1Row3c.innerHTML = "&nbsp;" + negative1Text3b.value;
-    }
+    negative1Row3c.innerHTML = negative1Text3b.value ? "&nbsp;" + negative1Text3b.value : "";
 };
 const negative1Label3b = document.getElementById("negative1Label3b");
 negative1Label3b.addEventListener("click", () => {
@@ -274,11 +262,7 @@ negative1Size4.oninput = function() {
 };
 const negative1Text4b = document.getElementById("negative1Text4b");
 negative1Text4b.oninput = function() {
-    if (negative1Text4b.value == "") {
-        negative1Row4c.innerHTML = negative1Text4b.value;
-    } else if (negative1Text4b.value) {
-        negative1Row4c.innerHTML = "&nbsp;" + negative1Text4b.value;
-    }
+    negative1Row4c.innerHTML = negative1Text4b.value ? "&nbsp;" + negative1Text4b.value : "";
 };
 const negative1Label4b = document.getElementById("negative1Label4b");
 negative1Label4b.addEventListener("click", () => {
@@ -308,11 +292,7 @@ negative1Size5.oninput = function() {
 };
 const negative1Text5b = document.getElementById("negative1Text5b");
 negative1Text5b.oninput = function() {
-    if (negative1Text5b.value == "") {
-        negative1Row5c.innerHTML = negative1Text5b.value;
-    } else if (negative1Text5b.value) {
-        negative1Row5c.innerHTML = "&nbsp;" + negative1Text5b.value;
-    }
+    negative1Row5c.innerHTML = negative1Text5b.value ? "&nbsp;" + negative1Text5b.value : "";
 };
 const negative1Label5b = document.getElementById("negative1Label5b");
 negative1Label5b.addEventListener("click", () => {
@@ -342,11 +322,7 @@ negative1Size6.oninput = function() {
 };
 const negative1Text6b = document.getElementById("negative1Text6b");
 negative1Text6b.oninput = function() {
-    if (negative1Text6b.value == "") {
-        negative1Row6c.innerHTML = negative1Text6b.value;
-    } else if (negative1Text6b.value) {
-        negative1Row6c.innerHTML = "&nbsp;" + negative1Text6b.value;
-    }
+    negative1Row6c.innerHTML = negative1Text6b.value ? "&nbsp;" + negative1Text6b.value : "";
 };
 const negative1Label6b = document.getElementById("negative1Label6b");
 negative1Label6b.addEventListener("click", () => {
@@ -376,11 +352,7 @@ negative1Size7.oninput = function() {
 };
 const negative1Text7b = document.getElementById("negative1Text7b");
 negative1Text7b.oninput = function() {
-    if (negative1Text7b.value == "") {
-        negative1Row7c.innerHTML = negative1Text7b.value;
-    } else if (negative1Text7b.value) {
-        negative1Row7c.innerHTML = "&nbsp;" + negative1Text7b.value;
-    }
+    negative1Row7c.innerHTML = negative1Text7b.value ? "&nbsp;" + negative1Text7b.value : "";
 };
 const negative1Label7b = document.getElementById("negative1Label7b");
 negative1Label7b.addEventListener("click", () => {
@@ -410,11 +382,7 @@ negative1Size8.oninput = function() {
 };
 const negative1Text8b = document.getElementById("negative1Text8b");
 negative1Text8b.oninput = function() {
-    if (negative1Text8b.value == "") {
-        negative1Row8c.innerHTML = negative1Text8b.value;
-    } else if (negative1Text8b.value) {
-        negative1Row8c.innerHTML = "&nbsp;" + negative1Text8b.value;
-    }
+    negative1Row8c.innerHTML = negative1Text8b.value ? "&nbsp;" + negative1Text8b.value : "";
 };
 const negative1Label8b = document.getElementById("negative1Label8b");
 negative1Label8b.addEventListener("click", () => {
@@ -444,11 +412,7 @@ negative1Size9.oninput = function() {
 };
 const negative1Text9b = document.getElementById("negative1Text9b");
 negative1Text9b.oninput = function() {
-    if (negative1Text9b.value == "") {
-        negative1Row9c.innerHTML = negative1Text9b.value;
-    } else if (negative1Text9b.value) {
-        negative1Row9c.innerHTML = "&nbsp;" + negative1Text9b.value;
-    }
+    negative1Row9c.innerHTML = negative1Text9b.value ? "&nbsp;" + negative1Text9b.value : "";
 };
 const negative1Label9b = document.getElementById("negative1Label9b");
 negative1Label9b.addEventListener("click", () => {
@@ -478,11 +442,7 @@ negative1Size10.oninput = function() {
 };
 const negative1Text10b = document.getElementById("negative1Text10b");
 negative1Text10b.oninput = function() {
-    if (negative1Text10b.value == "") {
-        negative1Row10c.innerHTML = negative1Text10b.value;
-    } else if (negative1Text10b.value) {
-        negative1Row10c.innerHTML = "&nbsp;" + negative1Text10b.value;
-    }
+    negative1Row10c.innerHTML = negative1Text10b.value ? "&nbsp;" + negative1Text10b.value : "";
 };
 const negative1Label10b = document.getElementById("negative1Label10b");
 negative1Label10b.addEventListener("click", () => {
@@ -964,11 +924,7 @@ negative2Size1.oninput = function() {
 };
 const negative2Text1b = document.getElementById("negative2Text1b");
 negative2Text1b.oninput = function() {
-    if (negative2Text1b.value == "") {
-        negative2Row1c.innerHTML = negative2Text1b.value;
-    } else if (negative2Text1b.value) {
-        negative2Row1c.innerHTML = "&nbsp;" + negative2Text1b.value;
-    }
+    negative2Row1c.innerHTML = negative2Text1b.value ? "&nbsp;" + negative2Text1b.value : "";
 };
 const negative2Label1b = document.getElementById("negative2Label1b");
 negative2Label1b.addEventListener("click", () => {
@@ -998,11 +954,7 @@ negative2Size2.oninput = function() {
 };
 const negative2Text2b = document.getElementById("negative2Text2b");
 negative2Text2b.oninput = function() {
-    if (negative2Text2b.value == "") {
-        negative2Row2c.innerHTML = negative2Text2b.value;
-    } else if (negative2Text2b.value) {
-        negative2Row2c.innerHTML = "&nbsp;" + negative2Text2b.value;
-    }
+    negative2Row2c.innerHTML = negative2Text2b.value ? "&nbsp;" + negative2Text2b.value : "";
 };
 const negative2Label2b = document.getElementById("negative2Label2b");
 negative2Label2b.addEventListener("click", () => {
@@ -1032,11 +984,7 @@ negative2Size3.oninput = function() {
 };
 const negative2Text3b = document.getElementById("negative2Text3b");
 negative2Text3b.oninput = function() {
-    if (negative2Text3b.value == "") {
-        negative2Row3c.innerHTML = negative2Text3b.value;
-    } else if (negative2Text3b.value) {
-        negative2Row3c.innerHTML = "&nbsp;" + negative2Text3b.value;
-    }
+    negative2Row3c.innerHTML = negative2Text3b.value ? "&nbsp;" + negative2Text3b.value : "";
 };
 const negative2Label3b = document.getElementById("negative2Label3b");
 negative2Label3b.addEventListener("click", () => {
@@ -1066,11 +1014,7 @@ negative2Size4.oninput = function() {
 };
 const negative2Text4b = document.getElementById("negative2Text4b");
 negative2Text4b.oninput = function() {
-    if (negative2Text4b.value == "") {
-        negative2Row4c.innerHTML = negative2Text4b.value;
-    } else if (negative2Text4b.value) {
-        negative2Row4c.innerHTML = "&nbsp;" + negative2Text4b.value;
-    }
+    negative2Row4c.innerHTML = negative2Text4b.value ? "&nbsp;" + negative2Text4b.value : "";
 };
 const negative2Label4b = document.getElementById("negative2Label4b");
 negative2Label4b.addEventListener("click", () => {
@@ -1100,11 +1044,7 @@ negative2Size5.oninput = function() {
 };
 const negative2Text5b = document.getElementById("negative2Text5b");
 negative2Text5b.oninput = function() {
-    if (negative2Text5b.value == "") {
-        negative2Row5c.innerHTML = negative2Text5b.value;
-    } else if (negative2Text5b.value) {
-        negative2Row5c.innerHTML = "&nbsp;" + negative2Text5b.value;
-    }
+    negative2Row5c.innerHTML = negative2Text5b.value ? "&nbsp;" + negative2Text5b.value : "";
 };
 const negative2Label5b = document.getElementById("negative2Label5b");
 negative2Label5b.addEventListener("click", () => {
@@ -1134,11 +1074,7 @@ negative2Size6.oninput = function() {
 };
 const negative2Text6b = document.getElementById("negative2Text6b");
 negative2Text6b.oninput = function() {
-    if (negative2Text6b.value == "") {
-        negative2Row6c.innerHTML = negative2Text6b.value;
-    } else if (negative2Text6b.value) {
-        negative2Row6c.innerHTML = "&nbsp;" + negative2Text6b.value;
-    }
+    negative2Row6c.innerHTML = negative2Text6b.value ? "&nbsp;" + negative2Text6b.value : "";
 };
 const negative2Label6b = document.getElementById("negative2Label6b");
 negative2Label6b.addEventListener("click", () => {
@@ -1168,11 +1104,7 @@ negative2Size7.oninput = function() {
 };
 const negative2Text7b = document.getElementById("negative2Text7b");
 negative2Text7b.oninput = function() {
-    if (negative2Text7b.value == "") {
-        negative2Row7c.innerHTML = negative2Text7b.value;
-    } else if (negative2Text7b.value) {
-        negative2Row7c.innerHTML = "&nbsp;" + negative2Text7b.value;
-    }
+    negative2Row7c.innerHTML = negative2Text7b.value ? "&nbsp;" + negative2Text7b.value : "";
 };
 const negative2Label7b = document.getElementById("negative2Label7b");
 negative2Label7b.addEventListener("click", () => {
@@ -1202,11 +1134,7 @@ negative2Size8.oninput = function() {
 };
 const negative2Text8b = document.getElementById("negative2Text8b");
 negative2Text8b.oninput = function() {
-    if (negative2Text8b.value == "") {
-        negative2Row8c.innerHTML = negative2Text8b.value;
-    } else if (negative2Text8b.value) {
-        negative2Row8c.innerHTML = "&nbsp;" + negative2Text8b.value;
-    }
+    negative2Row8c.innerHTML = negative2Text8b.value ? "&nbsp;" + negative2Text8b.value : "";
 };
 const negative2Label8b = document.getElementById("negative2Label8b");
 negative2Label8b.addEventListener("click", () => {
@@ -1236,11 +1164,7 @@ negative2Size9.oninput = function() {
 };
 const negative2Text9b = document.getElementById("negative2Text9b");
 negative2Text9b.oninput = function() {
-    if (negative2Text9b.value == "") {
-        negative2Row9c.innerHTML = negative2Text9b.value;
-    } else if (negative2Text9b.value) {
-        negative2Row9c.innerHTML = "&nbsp;" + negative2Text9b.value;
-    }
+    negative2Row9c.innerHTML = negative2Text9b.value ? "&nbsp;" + negative2Text9b.value : "";
 };
 const negative2Label9b = document.getElementById("negative2Label9b");
 negative2Label9b.addEventListener("click", () => {
@@ -1270,11 +1194,7 @@ negative2Size10.oninput = function() {
 };
 const negative2Text10b = document.getElementById("negative2Text10b");
 negative2Text10b.oninput = function() {
-    if (negative2Text10b.value == "") {
-        negative2Row10c.innerHTML = negative2Text10b.value;
-    } else if (negative2Text10b.value) {
-        negative2Row10c.innerHTML = "&nbsp;" + negative2Text10b.value;
-    }
+    negative2Row10c.innerHTML = negative2Text10b.value ? "&nbsp;" + negative2Text10b.value : "";
 };
 const negative2Label10b = document.getElementById("negative2Label10b");
 negative2Label10b.addEventListener("click", () => {
@@ -2622,11 +2542,7 @@ combo1Size1t.oninput = function() {
 };
 const combo1Text1t = document.getElementById("combo1Text1t");
 combo1Text1t.oninput = function() {
-    if (combo1Text1t.value == "") {
-        combo1Row1c.innerHTML = combo1Text1t.value;
-    } else if (combo1Text1t.value) {
-        combo1Row1c.innerHTML = "&nbsp;" + combo1Text1t.value;
-    }
+    combo1Row1c.innerHTML = combo1Text1t.value ? "&nbsp;" + combo1Text1t.value : "";
 };
 const combo1Label1t = document.getElementById("combo1Label1t");
 combo1Label1t.addEventListener("click", () => {
@@ -2650,11 +2566,7 @@ combo1Size1b.oninput = function() {
 };
 const combo1Text1b = document.getElementById("combo1Text1b");
 combo1Text1b.oninput = function() {
-    if (combo1Text1b.value == "") {
-        combo1Row1z.innerHTML = combo1Text1b.value;
-    } else if (combo1Text1b.value) {
-        combo1Row1z.innerHTML = "&nbsp;" + combo1Text1b.value;
-    }
+    combo1Row1z.innerHTML = combo1Text1b.value ? "&nbsp;" + combo1Text1b.value : "";
 };
 const combo1Label1b = document.getElementById("combo1Label1b");
 combo1Label1b.addEventListener("click", () => {
@@ -2688,11 +2600,7 @@ combo1Size2t.oninput = function() {
 };
 const combo1Text2t = document.getElementById("combo1Text2t");
 combo1Text2t.oninput = function() {
-    if (combo1Text2t.value == "") {
-        combo1Row2c.innerHTML = combo1Text2t.value;
-    } else if (combo1Text2t.value) {
-        combo1Row2c.innerHTML = "&nbsp;" + combo1Text2t.value;
-    }
+    combo1Row2c.innerHTML = combo1Text2t.value ? "&nbsp;" + combo1Text2t.value : "";
 };
 const combo1Label2t = document.getElementById("combo1Label2t");
 combo1Label2t.addEventListener("click", () => {
@@ -2716,11 +2624,7 @@ combo1Size2b.oninput = function() {
 };
 const combo1Text2b = document.getElementById("combo1Text2b");
 combo1Text2b.oninput = function() {
-    if (combo1Text2b.value == "") {
-        combo1Row2z.innerHTML = combo1Text2b.value;
-    } else if (combo1Text2b.value) {
-        combo1Row2z.innerHTML = "&nbsp;" + combo1Text2b.value;
-    }
+    combo1Row2z.innerHTML = combo1Text2b.value ? "&nbsp;" + combo1Text2b.value : "";
 };
 const combo1Label2b = document.getElementById("combo1Label2b");
 combo1Label2b.addEventListener("click", () => {
@@ -2754,11 +2658,7 @@ combo1Size3t.oninput = function() {
 };
 const combo1Text3t = document.getElementById("combo1Text3t");
 combo1Text3t.oninput = function() {
-    if (combo1Text3t.value == "") {
-        combo1Row3c.innerHTML = combo1Text3t.value;
-    } else if (combo1Text3t.value) {
-        combo1Row3c.innerHTML = "&nbsp;" + combo1Text3t.value;
-    }
+    combo1Row3c.innerHTML = combo1Text3t.value ? "&nbsp;" + combo1Text3t.value : "";
 };
 const combo1Label3t = document.getElementById("combo1Label3t");
 combo1Label3t.addEventListener("click", () => {
@@ -2782,11 +2682,7 @@ combo1Size3b.oninput = function() {
 };
 const combo1Text3b = document.getElementById("combo1Text3b");
 combo1Text3b.oninput = function() {
-    if (combo1Text3b.value == "") {
-        combo1Row3z.innerHTML = combo1Text3b.value;
-    } else if (combo1Text3b.value) {
-        combo1Row3z.innerHTML = "&nbsp;" + combo1Text3b.value;
-    }
+    combo1Row3z.innerHTML = combo1Text3b.value ? "&nbsp;" + combo1Text3b.value : "";
 };
 const combo1Label3b = document.getElementById("combo1Label3b");
 combo1Label3b.addEventListener("click", () => {
@@ -2820,11 +2716,7 @@ combo1Size4t.oninput = function() {
 };
 const combo1Text4t = document.getElementById("combo1Text4t");
 combo1Text4t.oninput = function() {
-    if (combo1Text4t.value == "") {
-        combo1Row4c.innerHTML = combo1Text4t.value;
-    } else if (combo1Text4t.value) {
-        combo1Row4c.innerHTML = "&nbsp;" + combo1Text4t.value;
-    }
+    combo1Row4c.innerHTML = combo1Text4t.value ? "&nbsp;" + combo1Text4t.value : "";
 };
 const combo1Label4t = document.getElementById("combo1Label4t");
 combo1Label4t.addEventListener("click", () => {
@@ -2848,11 +2740,7 @@ combo1Size4b.oninput = function() {
 };
 const combo1Text4b = document.getElementById("combo1Text4b");
 combo1Text4b.oninput = function() {
-    if (combo1Text4b.value == "") {
-        combo1Row4z.innerHTML = combo1Text4b.value;
-    } else if (combo1Text4b.value) {
-        combo1Row4z.innerHTML = "&nbsp;" + combo1Text4b.value;
-    }
+    combo1Row4z.innerHTML = combo1Text4b.value ? "&nbsp;" + combo1Text4b.value : "";
 };
 const combo1Label4b = document.getElementById("combo1Label4b");
 combo1Label4b.addEventListener("click", () => {
@@ -2886,11 +2774,7 @@ combo1Size5t.oninput = function() {
 };
 const combo1Text5t = document.getElementById("combo1Text5t");
 combo1Text5t.oninput = function() {
-    if (combo1Text5t.value == "") {
-        combo1Row5c.innerHTML = combo1Text5t.value;
-    } else if (combo1Text5t.value) {
-        combo1Row5c.innerHTML = "&nbsp;" + combo1Text5t.value;
-    }
+    combo1Row5c.innerHTML = combo1Text5t.value ? "&nbsp;" + combo1Text5t.value : "";
 };
 const combo1Label5t = document.getElementById("combo1Label5t");
 combo1Label5t.addEventListener("click", () => {
@@ -2914,11 +2798,7 @@ combo1Size5b.oninput = function() {
 };
 const combo1Text5b = document.getElementById("combo1Text5b");
 combo1Text5b.oninput = function() {
-    if (combo1Text5b.value == "") {
-        combo1Row5z.innerHTML = combo1Text5b.value;
-    } else if (combo1Text5b.value) {
-        combo1Row5z.innerHTML = "&nbsp;" + combo1Text5b.value;
-    }
+    combo1Row5z.innerHTML = combo1Text5b.value ? "&nbsp;" + combo1Text5b.value : "";
 };
 const combo1Label5b = document.getElementById("combo1Label5b");
 combo1Label5b.addEventListener("click", () => {
@@ -2952,11 +2832,7 @@ combo1Size6t.oninput = function() {
 };
 const combo1Text6t = document.getElementById("combo1Text6t");
 combo1Text6t.oninput = function() {
-    if (combo1Text6t.value == "") {
-        combo1Row6c.innerHTML = combo1Text6t.value;
-    } else if (combo1Text6t.value) {
-        combo1Row6c.innerHTML = "&nbsp;" + combo1Text6t.value;
-    }
+    combo1Row6c.innerHTML = combo1Text6t.value ? "&nbsp;" + combo1Text6t.value : "";
 };
 const combo1Label6t = document.getElementById("combo1Label6t");
 combo1Label6t.addEventListener("click", () => {
@@ -2980,11 +2856,7 @@ combo1Size6b.oninput = function() {
 };
 const combo1Text6b = document.getElementById("combo1Text6b");
 combo1Text6b.oninput = function() {
-    if (combo1Text6b.value == "") {
-        combo1Row6z.innerHTML = combo1Text6b.value;
-    } else if (combo1Text6b.value) {
-        combo1Row6z.innerHTML = "&nbsp;" + combo1Text6b.value;
-    }
+    combo1Row6z.innerHTML = combo1Text6b.value ? "&nbsp;" + combo1Text6b.value : "";
 };
 const combo1Label6b = document.getElementById("combo1Label6b");
 combo1Label6b.addEventListener("click", () => {
@@ -3444,11 +3316,7 @@ combo2Size1t.oninput = function() {
 };
 const combo2Text1t = document.getElementById("combo2Text1t");
 combo2Text1t.oninput = function() {
-    if (combo2Text1t.value == "") {
-        combo2Row1c.innerHTML = combo2Text1t.value;
-    } else if (combo2Text1t.value) {
-        combo2Row1c.innerHTML = "&nbsp;" + combo2Text1t.value;
-    }
+    combo2Row1c.innerHTML = combo2Text1t.value ? "&nbsp;" + combo2Text1t.value : "";
 };
 const combo2Label1t = document.getElementById("combo2Label1t");
 combo2Label1t.addEventListener("click", () => {
@@ -3472,11 +3340,7 @@ combo2Size1b.oninput = function() {
 };
 const combo2Text1b = document.getElementById("combo2Text1b");
 combo2Text1b.oninput = function() {
-    if (combo2Text1b.value == "") {
-        combo2Row1z.innerHTML = combo2Text1b.value;
-    } else if (combo2Text1b.value) {
-        combo2Row1z.innerHTML = "&nbsp;" + combo2Text1b.value;
-    }
+    combo2Row1z.innerHTML = combo2Text1b.value ? "&nbsp;" + combo2Text1b.value : "";
 };
 const combo2Label1b = document.getElementById("combo2Label1b");
 combo2Label1b.addEventListener("click", () => {
@@ -3510,11 +3374,7 @@ combo2Size2t.oninput = function() {
 };
 const combo2Text2t = document.getElementById("combo2Text2t");
 combo2Text2t.oninput = function() {
-    if (combo2Text2t.value == "") {
-        combo2Row2c.innerHTML = combo2Text2t.value;
-    } else if (combo2Text2t.value) {
-        combo2Row2c.innerHTML = "&nbsp;" + combo2Text2t.value;
-    }
+    combo2Row2c.innerHTML = combo2Text2t.value ? "&nbsp;" + combo2Text2t.value : "";
 };
 const combo2Label2t = document.getElementById("combo2Label2t");
 combo2Label2t.addEventListener("click", () => {
@@ -3538,11 +3398,7 @@ combo2Size2b.oninput = function() {
 };
 const combo2Text2b = document.getElementById("combo2Text2b");
 combo2Text2b.oninput = function() {
-    if (combo2Text2b.value == "") {
-        combo2Row2z.innerHTML = combo2Text2b.value;
-    } else if (combo2Text2b.value) {
-        combo2Row2z.innerHTML = "&nbsp;" + combo2Text2b.value;
-    }
+    combo2Row2z.innerHTML = combo2Text2b.value ? "&nbsp;" + combo2Text2b.value : "";
 };
 const combo2Label2b = document.getElementById("combo2Label2b");
 combo2Label2b.addEventListener("click", () => {
@@ -3576,11 +3432,7 @@ combo2Size3t.oninput = function() {
 };
 const combo2Text3t = document.getElementById("combo2Text3t");
 combo2Text3t.oninput = function() {
-    if (combo2Text3t.value == "") {
-        combo2Row3c.innerHTML = combo2Text3t.value;
-    } else if (combo2Text3t.value) {
-        combo2Row3c.innerHTML = "&nbsp;" + combo2Text3t.value;
-    }
+    combo2Row3c.innerHTML = combo2Text3t.value ? "&nbsp;" + combo2Text3t.value : "";
 };
 const combo2Label3t = document.getElementById("combo2Label3t");
 combo2Label3t.addEventListener("click", () => {
@@ -3604,11 +3456,7 @@ combo2Size3b.oninput = function() {
 };
 const combo2Text3b = document.getElementById("combo2Text3b");
 combo2Text3b.oninput = function() {
-    if (combo2Text3b.value == "") {
-        combo2Row3z.innerHTML = combo2Text3b.value;
-    } else if (combo2Text3b.value) {
-        combo2Row3z.innerHTML = "&nbsp;" + combo2Text3b.value;
-    }
+    combo2Row3z.innerHTML = combo2Text3b.value ? "&nbsp;" + combo2Text3b.value : "";
 };
 const combo2Label3b = document.getElementById("combo2Label3b");
 combo2Label3b.addEventListener("click", () => {
@@ -3642,11 +3490,7 @@ combo2Size4t.oninput = function() {
 };
 const combo2Text4t = document.getElementById("combo2Text4t");
 combo2Text4t.oninput = function() {
-    if (combo2Text4t.value == "") {
-        combo2Row4c.innerHTML = combo2Text4t.value;
-    } else if (combo2Text4t.value) {
-        combo2Row4c.innerHTML = "&nbsp;" + combo2Text4t.value;
-    }
+    combo2Row4c.innerHTML = combo2Text4t.value ? "&nbsp;" + combo2Text4t.value : "";
 };
 const combo2Label4t = document.getElementById("combo2Label4t");
 combo2Label4t.addEventListener("click", () => {
@@ -3670,11 +3514,7 @@ combo2Size4b.oninput = function() {
 };
 const combo2Text4b = document.getElementById("combo2Text4b");
 combo2Text4b.oninput = function() {
-    if (combo2Text4b.value == "") {
-        combo2Row4z.innerHTML = combo2Text4b.value;
-    } else if (combo2Text4b.value) {
-        combo2Row4z.innerHTML = "&nbsp;" + combo2Text4b.value;
-    }
+    combo2Row4z.innerHTML = combo2Text4b.value ? "&nbsp;" + combo2Text4b.value : "";
 };
 const combo2Label4b = document.getElementById("combo2Label4b");
 combo2Label4b.addEventListener("click", () => {
@@ -3708,11 +3548,7 @@ combo2Size5t.oninput = function() {
 };
 const combo2Text5t = document.getElementById("combo2Text5t");
 combo2Text5t.oninput = function() {
-    if (combo2Text5t.value == "") {
-        combo2Row5c.innerHTML = combo2Text5t.value;
-    } else if (combo2Text5t.value) {
-        combo2Row5c.innerHTML = "&nbsp;" + combo2Text5t.value;
-    }
+    combo2Row5c.innerHTML = combo2Text5t.value ? "&nbsp;" + combo2Text5t.value : "";
 };
 const combo2Label5t = document.getElementById("combo2Label5t");
 combo2Label5t.addEventListener("click", () => {
@@ -3736,11 +3572,7 @@ combo2Size5b.oninput = function() {
 };
 const combo2Text5b = document.getElementById("combo2Text5b");
 combo2Text5b.oninput = function() {
-    if (combo2Text5b.value == "") {
-        combo2Row5z.innerHTML = combo2Text5b.value;
-    } else if (combo2Text5b.value) {
-        combo2Row5z.innerHTML = "&nbsp;" + combo2Text5b.value;
-    }
+    combo2Row5z.innerHTML = combo2Text5b.value ? "&nbsp;" + combo2Text5b.value : "";
 };
 const combo2Label5b = document.getElementById("combo2Label5b");
 combo2Label5b.addEventListener("click", () => {
