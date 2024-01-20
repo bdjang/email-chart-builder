@@ -165,11 +165,7 @@ const horiz1Row10c = document.getElementById("horiz1Row10c");
 // Row 1 Customization Logic
 const horiz1Text1a = document.getElementById("horiz1Text1a");
 horiz1Text1a.oninput = function() {
-    if (horiz1Text1a.value == "") {
-        horiz1Row1a.innerHTML = horiz1Text1a.value;
-    } else if (horiz1Text1a.value) {
-        horiz1Row1a.innerHTML = horiz1Text1a.value;
-    }
+    horiz1Row1a.innerHTML = horiz1Text1a.value;
 };
 const horiz1Size1 = document.getElementById("horiz1Size1");
 horiz1Size1.oninput = function() {
@@ -200,11 +196,7 @@ horiz1Color1.oninput = function() {
 // Row 2 Customization Logic
 const horiz1Text2a = document.getElementById("horiz1Text2a");
 horiz1Text2a.oninput = function() {
-    if (horiz1Text2a.value == "") {
-        horiz1Row2a.innerHTML = horiz1Text2a.value;
-    } else if (horiz1Text2a.value) {
-        horiz1Row2a.innerHTML = horiz1Text2a.value;
-    }
+    horiz1Row2a.innerHTML = horiz1Text2a.value;
 };
 const horiz1Size2 = document.getElementById("horiz1Size2");
 horiz1Size2.oninput = function() {
@@ -234,11 +226,7 @@ horiz1Color2.oninput = function() {
 // Row 3 Customization Logic
 const horiz1Text3a = document.getElementById("horiz1Text3a");
 horiz1Text3a.oninput = function() {
-    if (horiz1Text3a.value == "") {
-        horiz1Row3a.innerHTML = horiz1Text3a.value;
-    } else if (horiz1Text3a.value) {
-        horiz1Row3a.innerHTML = horiz1Text3a.value;
-    }
+    horiz1Row3a.innerHTML = horiz1Text3a.value;
 };
 const horiz1Size3 = document.getElementById("horiz1Size3");
 horiz1Size3.oninput = function() {
@@ -268,11 +256,7 @@ horiz1Color3.oninput = function() {
 // Row 4 Customization Logic
 const horiz1Text4a = document.getElementById("horiz1Text4a");
 horiz1Text4a.oninput = function() {
-    if (horiz1Text4a.value == "") {
-        horiz1Row4a.innerHTML = horiz1Text4a.value;
-    } else if (horiz1Text4a.value) {
-        horiz1Row4a.innerHTML = horiz1Text4a.value;
-    }
+    horiz1Row4a.innerHTML = horiz1Text4a.value;
 };
 const horiz1Size4 = document.getElementById("horiz1Size4");
 horiz1Size4.oninput = function() {
@@ -302,11 +286,7 @@ horiz1Color4.oninput = function() {
 // Row 5 Customization Logic
 const horiz1Text5a = document.getElementById("horiz1Text5a");
 horiz1Text5a.oninput = function() {
-    if (horiz1Text5a.value == "") {
-        horiz1Row5a.innerHTML = horiz1Text5a.value;
-    } else if (horiz1Text5a.value) {
-        horiz1Row5a.innerHTML = horiz1Text5a.value;
-    }
+    horiz1Row5a.innerHTML = horiz1Text5a.value;
 };
 const horiz1Size5 = document.getElementById("horiz1Size5");
 horiz1Size5.oninput = function() {
@@ -336,11 +316,7 @@ horiz1Color5.oninput = function() {
 // Row 6 Customization Logic
 const horiz1Text6a = document.getElementById("horiz1Text6a");
 horiz1Text6a.oninput = function() {
-    if (horiz1Text6a.value == "") {
-        horiz1Row6a.innerHTML = horiz1Text6a.value;
-    } else if (horiz1Text6a.value) {
-        horiz1Row6a.innerHTML = horiz1Text6a.value;
-    }
+    horiz1Row6a.innerHTML = horiz1Text6a.value;
 };
 const horiz1Size6 = document.getElementById("horiz1Size6");
 horiz1Size6.oninput = function() {
@@ -370,11 +346,7 @@ horiz1Color6.oninput = function() {
 // Row 7 Customization Logic
 const horiz1Text7a = document.getElementById("horiz1Text7a");
 horiz1Text7a.oninput = function() {
-    if (horiz1Text7a.value == "") {
-        horiz1Row7a.innerHTML = horiz1Text7a.value;
-    } else if (horiz1Text7a.value) {
-        horiz1Row7a.innerHTML = horiz1Text7a.value;
-    }
+    horiz1Row7a.innerHTML = horiz1Text7a.value;
 };
 const horiz1Size7 = document.getElementById("horiz1Size7");
 horiz1Size7.oninput = function() {
@@ -404,11 +376,7 @@ horiz1Color7.oninput = function() {
 // Row 8 Customization Logic
 const horiz1Text8a = document.getElementById("horiz1Text8a");
 horiz1Text8a.oninput = function() {
-    if (horiz1Text8a.value == "") {
-        horiz1Row8a.innerHTML = horiz1Text8a.value;
-    } else if (horiz1Text8a.value) {
-        horiz1Row8a.innerHTML = horiz1Text8a.value;
-    }
+    horiz1Row8a.innerHTML = horiz1Text8a.value;
 };
 const horiz1Size8 = document.getElementById("horiz1Size8");
 horiz1Size8.oninput = function() {
@@ -438,11 +406,7 @@ horiz1Color8.oninput = function() {
 // Row 9 Customization Logic
 const horiz1Text9a = document.getElementById("horiz1Text9a");
 horiz1Text9a.oninput = function() {
-    if (horiz1Text9a.value == "") {
-        horiz1Row9a.innerHTML = horiz1Text9a.value;
-    } else if (horiz1Text9a.value) {
-        horiz1Row9a.innerHTML = horiz1Text9a.value;
-    }
+    horiz1Row9a.innerHTML = horiz1Text9a.value;
 };
 const horiz1Size9 = document.getElementById("horiz1Size9");
 horiz1Size9.oninput = function() {
@@ -472,11 +436,7 @@ horiz1Color9.oninput = function() {
 // Row 10 Customization Logic
 const horiz1Text10a = document.getElementById("horiz1Text10a");
 horiz1Text10a.oninput = function() {
-    if (horiz1Text10a.value == "") {
-        horiz1Row10a.innerHTML = horiz1Text10a.value;
-    } else if (horiz1Text10a.value) {
-        horiz1Row10a.innerHTML = horiz1Text10a.value;
-    }
+    horiz1Row10a.innerHTML = horiz1Text10a.value;
 };
 const horiz1Size10 = document.getElementById("horiz1Size10");
 horiz1Size10.oninput = function() {
@@ -965,11 +925,7 @@ const horiz2Row10c = document.getElementById("horiz2Row10c");
 // Row 1 Customization Logic
 const horiz2Text1a = document.getElementById("horiz2Text1a");
 horiz2Text1a.oninput = function() {
-    if (horiz2Text1a.value == "") {
-        horiz2Row1a.innerHTML = horiz2Text1a.value;
-    } else if (horiz2Text1a.value) {
-        horiz2Row1a.innerHTML = horiz2Text1a.value;
-    }
+    horiz2Row1a.innerHTML = horiz2Text1a.value;
 };
 const horiz2Size1 = document.getElementById("horiz2Size1");
 horiz2Size1.oninput = function() {
@@ -1001,11 +957,7 @@ horiz2Color1.oninput = function() {
 // Row 2 Customization Logic
 const horiz2Text2a = document.getElementById("horiz2Text2a");
 horiz2Text2a.oninput = function() {
-    if (horiz2Text2a.value == "") {
-        horiz2Row2a.innerHTML = horiz2Text2a.value;
-    } else if (horiz2Text2a.value) {
-        horiz2Row2a.innerHTML = horiz2Text2a.value;
-    }
+    horiz2Row2a.innerHTML = horiz2Text2a.value;
 };
 const horiz2Size2 = document.getElementById("horiz2Size2");
 horiz2Size2.oninput = function() {
@@ -1037,11 +989,7 @@ horiz2Color2.oninput = function() {
 // Row 3 Customization Logic
 const horiz2Text3a = document.getElementById("horiz2Text3a");
 horiz2Text3a.oninput = function() {
-    if (horiz2Text3a.value == "") {
-        horiz2Row3a.innerHTML = horiz2Text3a.value;
-    } else if (horiz2Text3a.value) {
-        horiz2Row3a.innerHTML = horiz2Text3a.value;
-    }
+    horiz2Row3a.innerHTML = horiz2Text3a.value;
 };
 const horiz2Size3 = document.getElementById("horiz2Size3");
 horiz2Size3.oninput = function() {
@@ -1073,11 +1021,7 @@ horiz2Color3.oninput = function() {
 // Row 4 Customization Logic
 const horiz2Text4a = document.getElementById("horiz2Text4a");
 horiz2Text4a.oninput = function() {
-    if (horiz2Text4a.value == "") {
-        horiz2Row4a.innerHTML = horiz2Text4a.value;
-    } else if (horiz2Text4a.value) {
-        horiz2Row4a.innerHTML = horiz2Text4a.value;
-    }
+    horiz2Row4a.innerHTML = horiz2Text4a.value;
 };
 const horiz2Size4 = document.getElementById("horiz2Size4");
 horiz2Size4.oninput = function() {
@@ -1109,11 +1053,7 @@ horiz2Color4.oninput = function() {
 // Row 5 Customization Logic
 const horiz2Text5a = document.getElementById("horiz2Text5a");
 horiz2Text5a.oninput = function() {
-    if (horiz2Text5a.value == "") {
-        horiz2Row5a.innerHTML = horiz2Text5a.value;
-    } else if (horiz2Text5a.value) {
-        horiz2Row5a.innerHTML = horiz2Text5a.value;
-    }
+    horiz2Row5a.innerHTML = horiz2Text5a.value;
 };
 const horiz2Size5 = document.getElementById("horiz2Size5");
 horiz2Size5.oninput = function() {
@@ -1145,11 +1085,7 @@ horiz2Color5.oninput = function() {
 // Row 6 Customization Logic
 const horiz2Text6a = document.getElementById("horiz2Text6a");
 horiz2Text6a.oninput = function() {
-    if (horiz2Text6a.value == "") {
-        horiz2Row6a.innerHTML = horiz2Text6a.value;
-    } else if (horiz2Text6a.value) {
-        horiz2Row6a.innerHTML = horiz2Text6a.value;
-    }
+    horiz2Row6a.innerHTML = horiz2Text6a.value;
 };
 const horiz2Size6 = document.getElementById("horiz2Size6");
 horiz2Size6.oninput = function() {
@@ -1181,11 +1117,7 @@ horiz2Color6.oninput = function() {
 // Row 7 Customization Logic
 const horiz2Text7a = document.getElementById("horiz2Text7a");
 horiz2Text7a.oninput = function() {
-    if (horiz2Text7a.value == "") {
-        horiz2Row7a.innerHTML = horiz2Text7a.value;
-    } else if (horiz2Text7a.value) {
-        horiz2Row7a.innerHTML = horiz2Text7a.value;
-    }
+    horiz2Row7a.innerHTML = horiz2Text7a.value;
 };
 const horiz2Size7 = document.getElementById("horiz2Size7");
 horiz2Size7.oninput = function() {
@@ -1217,11 +1149,7 @@ horiz2Color7.oninput = function() {
 // Row 8 Customization Logic
 const horiz2Text8a = document.getElementById("horiz2Text8a");
 horiz2Text8a.oninput = function() {
-    if (horiz2Text8a.value == "") {
-        horiz2Row8a.innerHTML = horiz2Text8a.value;
-    } else if (horiz2Text8a.value) {
-        horiz2Row8a.innerHTML = horiz2Text8a.value;
-    }
+    horiz2Row8a.innerHTML = horiz2Text8a.value;
 };
 const horiz2Size8 = document.getElementById("horiz2Size8");
 horiz2Size8.oninput = function() {
@@ -1253,11 +1181,7 @@ horiz2Color8.oninput = function() {
 // Row 9 Customization Logic
 const horiz2Text9a = document.getElementById("horiz2Text9a");
 horiz2Text9a.oninput = function() {
-    if (horiz2Text9a.value == "") {
-        horiz2Row9a.innerHTML = horiz2Text9a.value;
-    } else if (horiz2Text9a.value) {
-        horiz2Row9a.innerHTML = horiz2Text9a.value;
-    }
+    horiz2Row9a.innerHTML = horiz2Text9a.value;
 };
 const horiz2Size9 = document.getElementById("horiz2Size9");
 horiz2Size9.oninput = function() {
@@ -1289,11 +1213,7 @@ horiz2Color9.oninput = function() {
 // Row 10 Customization Logic
 const horiz2Text10a = document.getElementById("horiz2Text10a");
 horiz2Text10a.oninput = function() {
-    if (horiz2Text10a.value == "") {
-        horiz2Row10a.innerHTML = horiz2Text10a.value;
-    } else if (horiz2Text10a.value) {
-        horiz2Row10a.innerHTML = horiz2Text10a.value;
-    }
+    horiz2Row10a.innerHTML = horiz2Text10a.value;
 };
 const horiz2Size10 = document.getElementById("horiz2Size10");
 horiz2Size10.oninput = function() {
@@ -1780,11 +1700,7 @@ const horiz3Row10c = document.getElementById("horiz3Row10c");
 // Row 1 Customization Logic
 const horiz3Text1a = document.getElementById("horiz3Text1a");
 horiz3Text1a.oninput = function() {
-    if (horiz3Text1a.value == "") {
-        horiz3Row1a.innerHTML = horiz3Text1a.value;
-    } else if (horiz3Text1a.value) {
-        horiz3Row1a.innerHTML = horiz3Text1a.value;
-    }
+    horiz3Row1a.innerHTML = horiz3Text1a.value;
 };
 const horiz3Size1 = document.getElementById("horiz3Size1");
 horiz3Size1.oninput = function() {
@@ -1814,11 +1730,7 @@ horiz3Color1.oninput = function() {
 // Row 2 Customization Logic
 const horiz3Text2a = document.getElementById("horiz3Text2a");
 horiz3Text2a.oninput = function() {
-    if (horiz3Text2a.value == "") {
-        horiz3Row2a.innerHTML = horiz3Text2a.value;
-    } else if (horiz3Text2a.value) {
-        horiz3Row2a.innerHTML = horiz3Text2a.value;
-    }
+    horiz3Row2a.innerHTML = horiz3Text2a.value;
 };
 const horiz3Size2 = document.getElementById("horiz3Size2");
 horiz3Size2.oninput = function() {
@@ -1848,11 +1760,7 @@ horiz3Color2.oninput = function() {
 // Row 3 Customization Logic
 const horiz3Text3a = document.getElementById("horiz3Text3a");
 horiz3Text3a.oninput = function() {
-    if (horiz3Text3a.value == "") {
-        horiz3Row3a.innerHTML = horiz3Text3a.value;
-    } else if (horiz3Text3a.value) {
-        horiz3Row3a.innerHTML = horiz3Text3a.value;
-    }
+    horiz3Row3a.innerHTML = horiz3Text3a.value;
 };
 const horiz3Size3 = document.getElementById("horiz3Size3");
 horiz3Size3.oninput = function() {
@@ -1882,11 +1790,7 @@ horiz3Color3.oninput = function() {
 // Row 4 Customization Logic
 const horiz3Text4a = document.getElementById("horiz3Text4a");
 horiz3Text4a.oninput = function() {
-    if (horiz3Text4a.value == "") {
-        horiz3Row4a.innerHTML = horiz3Text4a.value;
-    } else if (horiz3Text4a.value) {
-        horiz3Row4a.innerHTML = horiz3Text4a.value;
-    }
+    horiz3Row4a.innerHTML = horiz3Text4a.value;
 };
 const horiz3Size4 = document.getElementById("horiz3Size4");
 horiz3Size4.oninput = function() {
@@ -1916,11 +1820,7 @@ horiz3Color4.oninput = function() {
 // Row 5 Customization Logic
 const horiz3Text5a = document.getElementById("horiz3Text5a");
 horiz3Text5a.oninput = function() {
-    if (horiz3Text5a.value == "") {
-        horiz3Row5a.innerHTML = horiz3Text5a.value;
-    } else if (horiz3Text5a.value) {
-        horiz3Row5a.innerHTML = horiz3Text5a.value;
-    }
+    horiz3Row5a.innerHTML = horiz3Text5a.value;
 };
 const horiz3Size5 = document.getElementById("horiz3Size5");
 horiz3Size5.oninput = function() {
@@ -1950,11 +1850,7 @@ horiz3Color5.oninput = function() {
 // Row 6 Customization Logic
 const horiz3Text6a = document.getElementById("horiz3Text6a");
 horiz3Text6a.oninput = function() {
-    if (horiz3Text6a.value == "") {
-        horiz3Row6a.innerHTML = horiz3Text6a.value;
-    } else if (horiz3Text6a.value) {
-        horiz3Row6a.innerHTML = horiz3Text6a.value;
-    }
+    horiz3Row6a.innerHTML = horiz3Text6a.value;
 };
 const horiz3Size6 = document.getElementById("horiz3Size6");
 horiz3Size6.oninput = function() {
@@ -1984,11 +1880,7 @@ horiz3Color6.oninput = function() {
 // Row 7 Customization Logic
 const horiz3Text7a = document.getElementById("horiz3Text7a");
 horiz3Text7a.oninput = function() {
-    if (horiz3Text7a.value == "") {
-        horiz3Row7a.innerHTML = horiz3Text7a.value;
-    } else if (horiz3Text7a.value) {
-        horiz3Row7a.innerHTML = horiz3Text7a.value;
-    }
+    horiz3Row7a.innerHTML = horiz3Text7a.value;
 };
 const horiz3Size7 = document.getElementById("horiz3Size7");
 horiz3Size7.oninput = function() {
@@ -2018,11 +1910,7 @@ horiz3Color7.oninput = function() {
 // Row 8 Customization Logic
 const horiz3Text8a = document.getElementById("horiz3Text8a");
 horiz3Text8a.oninput = function() {
-    if (horiz3Text8a.value == "") {
-        horiz3Row8a.innerHTML = horiz3Text8a.value;
-    } else if (horiz3Text8a.value) {
-        horiz3Row8a.innerHTML = horiz3Text8a.value;
-    }
+    horiz3Row8a.innerHTML = horiz3Text8a.value;
 };
 const horiz3Size8 = document.getElementById("horiz3Size8");
 horiz3Size8.oninput = function() {
@@ -2052,11 +1940,7 @@ horiz3Color8.oninput = function() {
 // Row 9 Customization Logic
 const horiz3Text9a = document.getElementById("horiz3Text9a");
 horiz3Text9a.oninput = function() {
-    if (horiz3Text9a.value == "") {
-        horiz3Row9a.innerHTML = horiz3Text9a.value;
-    } else if (horiz3Text9a.value) {
-        horiz3Row9a.innerHTML = horiz3Text9a.value;
-    }
+    horiz3Row9a.innerHTML = horiz3Text9a.value;
 };
 const horiz3Size9 = document.getElementById("horiz3Size9");
 horiz3Size9.oninput = function() {
@@ -2086,11 +1970,7 @@ horiz3Color9.oninput = function() {
 // Row 10 Customization Logic
 const horiz3Text10a = document.getElementById("horiz3Text10a");
 horiz3Text10a.oninput = function() {
-    if (horiz3Text10a.value == "") {
-        horiz3Row10a.innerHTML = horiz3Text10a.value;
-    } else if (horiz3Text10a.value) {
-        horiz3Row10a.innerHTML = horiz3Text10a.value;
-    }
+    horiz3Row10a.innerHTML = horiz3Text10a.value;
 };
 const horiz3Size10 = document.getElementById("horiz3Size10");
 horiz3Size10.oninput = function() {
@@ -2575,11 +2455,7 @@ const horiz4Row10c = document.getElementById("horiz4Row10c");
 // Row 1 Customization Logic
 const horiz4Text1a = document.getElementById("horiz4Text1a");
 horiz4Text1a.oninput = function() {
-    if (horiz4Text1a.value == "") {
-        horiz4Row1a.innerHTML = horiz4Text1a.value;
-    } else if (horiz4Text1a.value) {
-        horiz4Row1a.innerHTML = horiz4Text1a.value;
-    }
+    horiz4Row1a.innerHTML = horiz4Text1a.value;
 };
 const horiz4Size1 = document.getElementById("horiz4Size1");
 horiz4Size1.oninput = function() {
@@ -2609,11 +2485,7 @@ horiz4Color1.oninput = function() {
 // Row 2 Customization Logic
 const horiz4Text2a = document.getElementById("horiz4Text2a");
 horiz4Text2a.oninput = function() {
-    if (horiz4Text2a.value == "") {
-        horiz4Row2a.innerHTML = horiz4Text2a.value;
-    } else if (horiz4Text2a.value) {
-        horiz4Row2a.innerHTML = horiz4Text2a.value;
-    }
+    horiz4Row2a.innerHTML = horiz4Text2a.value;
 };
 const horiz4Size2 = document.getElementById("horiz4Size2");
 horiz4Size2.oninput = function() {
@@ -2643,11 +2515,7 @@ horiz4Color2.oninput = function() {
 // Row 3 Customization Logic
 const horiz4Text3a = document.getElementById("horiz4Text3a");
 horiz4Text3a.oninput = function() {
-    if (horiz4Text3a.value == "") {
-        horiz4Row3a.innerHTML = horiz4Text3a.value;
-    } else if (horiz4Text3a.value) {
-        horiz4Row3a.innerHTML = horiz4Text3a.value;
-    }
+    horiz4Row3a.innerHTML = horiz4Text3a.value;
 };
 const horiz4Size3 = document.getElementById("horiz4Size3");
 horiz4Size3.oninput = function() {
@@ -2677,11 +2545,7 @@ horiz4Color3.oninput = function() {
 // Row 4 Customization Logic
 const horiz4Text4a = document.getElementById("horiz4Text4a");
 horiz4Text4a.oninput = function() {
-    if (horiz4Text4a.value == "") {
-        horiz4Row4a.innerHTML = horiz4Text4a.value;
-    } else if (horiz4Text4a.value) {
-        horiz4Row4a.innerHTML = horiz4Text4a.value;
-    }
+    horiz4Row4a.innerHTML = horiz4Text4a.value;
 };
 const horiz4Size4 = document.getElementById("horiz4Size4");
 horiz4Size4.oninput = function() {
@@ -2711,11 +2575,7 @@ horiz4Color4.oninput = function() {
 // Row 5 Customization Logic
 const horiz4Text5a = document.getElementById("horiz4Text5a");
 horiz4Text5a.oninput = function() {
-    if (horiz4Text5a.value == "") {
-        horiz4Row5a.innerHTML = horiz4Text5a.value;
-    } else if (horiz4Text5a.value) {
-        horiz4Row5a.innerHTML = horiz4Text5a.value;
-    }
+    horiz4Row5a.innerHTML = horiz4Text5a.value;
 };
 const horiz4Size5 = document.getElementById("horiz4Size5");
 horiz4Size5.oninput = function() {
@@ -2745,11 +2605,7 @@ horiz4Color5.oninput = function() {
 // Row 6 Customization Logic
 const horiz4Text6a = document.getElementById("horiz4Text6a");
 horiz4Text6a.oninput = function() {
-    if (horiz4Text6a.value == "") {
-        horiz4Row6a.innerHTML = horiz4Text6a.value;
-    } else if (horiz4Text6a.value) {
-        horiz4Row6a.innerHTML = horiz4Text6a.value;
-    }
+    horiz4Row6a.innerHTML = horiz4Text6a.value;
 };
 const horiz4Size6 = document.getElementById("horiz4Size6");
 horiz4Size6.oninput = function() {
@@ -2779,11 +2635,7 @@ horiz4Color6.oninput = function() {
 // Row 7 Customization Logic
 const horiz4Text7a = document.getElementById("horiz4Text7a");
 horiz4Text7a.oninput = function() {
-    if (horiz4Text7a.value == "") {
-        horiz4Row7a.innerHTML = horiz4Text7a.value;
-    } else if (horiz4Text7a.value) {
-        horiz4Row7a.innerHTML = horiz4Text7a.value;
-    }
+    horiz4Row7a.innerHTML = horiz4Text7a.value;
 };
 const horiz4Size7 = document.getElementById("horiz4Size7");
 horiz4Size7.oninput = function() {
@@ -2813,11 +2665,7 @@ horiz4Color7.oninput = function() {
 // Row 8 Customization Logic
 const horiz4Text8a = document.getElementById("horiz4Text8a");
 horiz4Text8a.oninput = function() {
-    if (horiz4Text8a.value == "") {
-        horiz4Row8a.innerHTML = horiz4Text8a.value;
-    } else if (horiz4Text8a.value) {
-        horiz4Row8a.innerHTML = horiz4Text8a.value;
-    }
+    horiz4Row8a.innerHTML = horiz4Text8a.value;
 };
 const horiz4Size8 = document.getElementById("horiz4Size8");
 horiz4Size8.oninput = function() {
@@ -2847,11 +2695,7 @@ horiz4Color8.oninput = function() {
 // Row 9 Customization Logic
 const horiz4Text9a = document.getElementById("horiz4Text9a");
 horiz4Text9a.oninput = function() {
-    if (horiz4Text9a.value == "") {
-        horiz4Row9a.innerHTML = horiz4Text9a.value;
-    } else if (horiz4Text9a.value) {
-        horiz4Row9a.innerHTML = horiz4Text9a.value;
-    }
+    horiz4Row9a.innerHTML = horiz4Text9a.value;
 };
 const horiz4Size9 = document.getElementById("horiz4Size9");
 horiz4Size9.oninput = function() {
@@ -2881,11 +2725,7 @@ horiz4Color9.oninput = function() {
 // Row 10 Customization Logic
 const horiz4Text10a = document.getElementById("horiz4Text10a");
 horiz4Text10a.oninput = function() {
-    if (horiz4Text10a.value == "") {
-        horiz4Row10a.innerHTML = horiz4Text10a.value;
-    } else if (horiz4Text10a.value) {
-        horiz4Row10a.innerHTML = horiz4Text10a.value;
-    }
+    horiz4Row10a.innerHTML = horiz4Text10a.value;
 };
 const horiz4Size10 = document.getElementById("horiz4Size10");
 horiz4Size10.oninput = function() {
