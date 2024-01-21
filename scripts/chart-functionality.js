@@ -238,538 +238,103 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
         combo3BarsBNodes4[z].classList.add("lightStyles");
     }
 });
-
-document.addEventListener("keydown", () => {
-    if (event.keyCode == 82 && document.activeElement == bodyEl[0]) { // r
-        chartSelect.blur();
-        chartSelect.focus();
-    }
-    if (event.keyCode == 84 && document.activeElement == bodyEl[0]) { // t
-        chartSelect.blur();
-        chartSelect.focus();
-    }
-    if (event.keyCode == 68 && document.body.classList.contains("lightStyles")) { // d
-        if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
-            chartSelect.blur();
-            document.body.classList.replace("lightStyles", "darkStyles");
-            prog1Row1a.classList.replace("lightStyles", "darkStyles");
-            prog1Row2a.classList.replace("lightStyles", "darkStyles");
-            prog1Row3a.classList.replace("lightStyles", "darkStyles");
-            prog1Row4a.classList.replace("lightStyles", "darkStyles");
-            prog1Row5a.classList.replace("lightStyles", "darkStyles");
-            prog2Row1a.classList.replace("lightStyles", "darkStyles");
-            prog2Row2a.classList.replace("lightStyles", "darkStyles");
-            prog2Row3a.classList.replace("lightStyles", "darkStyles");
-            prog2Row4a.classList.replace("lightStyles", "darkStyles");
-            prog2Row5a.classList.replace("lightStyles", "darkStyles");
-            prog3Row1a.classList.replace("lightStyles", "darkStyles");
-            prog3Row2a.classList.replace("lightStyles", "darkStyles");
-            prog3Row3a.classList.replace("lightStyles", "darkStyles");
-            prog3Row4a.classList.replace("lightStyles", "darkStyles");
-            prog3Row5a.classList.replace("lightStyles", "darkStyles");
-            prog4Row1a.classList.replace("lightStyles", "darkStyles");
-            prog4Row2a.classList.replace("lightStyles", "darkStyles");
-            prog4Row3a.classList.replace("lightStyles", "darkStyles");
-            prog4Row4a.classList.replace("lightStyles", "darkStyles");
-            prog4Row5a.classList.replace("lightStyles", "darkStyles");
-            horiz1Cap.classList.replace("lightStyles", "darkStyles");
-            horiz1Sub.classList.replace("lightStylesCSS", "darkStyles");
-            horiz1Source.classList.replace("lightStylesCSS", "darkStyles");
-            horiz2Cap.classList.replace("lightStyles", "darkStyles");
-            horiz2Sub.classList.replace("lightStylesCSS", "darkStyles");
-            horiz2Source.classList.replace("lightStylesCSS", "darkStyles");
-            horiz3Cap.classList.replace("lightStyles", "darkStyles");
-            horiz3Sub.classList.replace("lightStylesCSS", "darkStyles");
-            horiz3Source.classList.replace("lightStylesCSS", "darkStyles");
-            horiz4Cap.classList.replace("lightStyles", "darkStyles");
-            horiz4Sub.classList.replace("lightStylesCSS", "darkStyles");
-            horiz4Source.classList.replace("lightStylesCSS", "darkStyles");
-            horiz5Cap.classList.replace("lightStyles", "darkStyles");
-            horiz5Sub.classList.replace("lightStylesCSS", "darkStyles");
-            horiz5Source.classList.replace("lightStylesCSS", "darkStyles");
-            combo1Cap.classList.replace("lightStyles", "darkStyles");
-            combo1Sub.classList.replace("lightStylesCSS", "darkStyles");
-            combo1Source.classList.replace("lightStylesCSS", "darkStyles");
-            combo2Cap.classList.replace("lightStyles", "darkStyles");
-            combo2Sub.classList.replace("lightStylesCSS", "darkStyles");
-            combo2Source.classList.replace("lightStylesCSS", "darkStyles");
-            combo3Cap.classList.replace("lightStyles", "darkStyles");
-            combo3Sub.classList.replace("lightStylesCSS", "darkStyles");
-            combo3Source.classList.replace("lightStylesCSS", "darkStyles");
-            stacked1Cap.classList.replace("lightStyles", "darkStyles");
-            stacked1Sub.classList.replace("lightStylesCSS", "darkStyles");
-            stacked1Source.classList.replace("lightStylesCSS", "darkStyles");
-            stacked2Cap.classList.replace("lightStyles", "darkStyles");
-            stacked2Sub.classList.replace("lightStylesCSS", "darkStyles");
-            stacked2Source.classList.replace("lightStylesCSS", "darkStyles");
-            stacked3Cap.classList.replace("lightStyles", "darkStyles");
-            stacked3Sub.classList.replace("lightStylesCSS", "darkStyles");
-            stacked3Source.classList.replace("lightStylesCSS", "darkStyles");
-            stacked4Cap.classList.replace("lightStyles", "darkStyles");
-            stacked4Sub.classList.replace("lightStylesCSS", "darkStyles");
-            stacked4Source.classList.replace("lightStylesCSS", "darkStyles");
-            prog1Cap.classList.replace("lightStyles", "darkStyles");
-            prog1Sub.classList.replace("lightStylesCSS", "darkStyles");
-            prog1Source.classList.replace("lightStylesCSS", "darkStyles");
-            prog2Cap.classList.replace("lightStyles", "darkStyles");
-            prog2Sub.classList.replace("lightStylesCSS", "darkStyles");
-            prog2Source.classList.replace("lightStylesCSS", "darkStyles");
-            prog3Cap.classList.replace("lightStyles", "darkStyles");
-            prog3Sub.classList.replace("lightStylesCSS", "darkStyles");
-            prog3Source.classList.replace("lightStylesCSS", "darkStyles");
-            prog4Cap.classList.replace("lightStyles", "darkStyles");
-            prog4Sub.classList.replace("lightStylesCSS", "darkStyles");
-            prog4Source.classList.replace("lightStylesCSS", "darkStyles");
-            negative1Cap.classList.replace("lightStyles", "darkStyles");
-            negative1Sub.classList.replace("lightStylesCSS", "darkStyles");
-            negative1Source.classList.replace("lightStylesCSS", "darkStyles");
-            negative2Cap.classList.replace("lightStyles", "darkStyles");
-            negative2Sub.classList.replace("lightStylesCSS", "darkStyles");
-            negative2Source.classList.replace("lightStylesCSS", "darkStyles");
-            splitCap.classList.replace("lightStyles", "darkStyles");
-            splitSub.classList.replace("lightStylesCSS", "darkStyles");
-            splitSource.classList.replace("lightStylesCSS", "darkStyles");
-            vert1Cap.classList.replace("lightStyles", "darkStyles");
-            vert1Sub.classList.replace("lightStylesCSS", "darkStyles");
-            vert1Source.classList.replace("lightStylesCSS", "darkStyles");
-            vert2Cap.classList.replace("lightStyles", "darkStyles");
-            vert2Sub.classList.replace("lightStylesCSS", "darkStyles");
-            vert2Source.classList.replace("lightStylesCSS", "darkStyles");
-            vert3Cap.classList.replace("lightStyles", "darkStyles");
-            vert3Sub.classList.replace("lightStylesCSS", "darkStyles");
-            vert3Source.classList.replace("lightStylesCSS", "darkStyles");
-            vert4Cap.classList.replace("lightStyles", "darkStyles");
-            vert4Sub.classList.replace("lightStylesCSS", "darkStyles");
-            vert4Source.classList.replace("lightStylesCSS", "darkStyles");
-            vert5Cap.classList.replace("lightStyles", "darkStyles");
-            vert5Sub.classList.replace("lightStylesCSS", "darkStyles");
-            vert5Source.classList.replace("lightStylesCSS", "darkStyles");
-            vert1AxisLine.classList.toggle("lightBorder");
-            vert2AxisLine.classList.toggle("lightBorder");
-            vert3AxisLine.classList.toggle("lightBorder");
-            vert4AxisLine.classList.toggle("lightBorder");
-            vert5AxisLine.classList.toggle("lightBorder");
-            for (var i = 0; i < scrollBox.length; i++) {
-                scrollBox[i].classList.replace("scrollBoxLight", "darkStyles");
-                textarea[i].classList.replace("textareaLight", "darkStyles");
-                previewBox[i].classList.replace("lightStyles", "darkStyles");
-            }
-            for (var x = 0; x < horiz1Bars.length; x++) {
-                horiz1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                horiz1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-                horiz2BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-                horiz3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                horiz3BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
-                horiz4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                horiz4BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-                horiz5BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                horiz5BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-                stacked1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                stacked1BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-                stacked2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                stacked2BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-                stacked3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                stacked4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                stacked4BarsNodes5[x].classList.replace("lightStyles", "darkStyles");
-                stacked1BarsNodes3[x].classList.toggle("darkBorder");
-                negative1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                negative1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-                negative2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                negative2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
-                splitBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-                splitBarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-                previewBoxVert1Label[x].classList.replace("lightStyles", "darkStyles");
-                previewBoxVert2Label[x].classList.replace("lightStyles", "darkStyles");
-                previewBoxVert3Label[x].classList.replace("lightStyles", "darkStyles");
-                previewBoxVert4Label[x].classList.replace("lightStyles", "darkStyles");
-                previewBoxVert5LabelTop[x].classList.replace("lightStyles", "darkStyles");
-                previewBoxVert5LabelBottom[x].classList.replace("lightStyles", "darkStyles");
-            }
-            for (var y = 0; y < combo1BarsNodes1.length; y++) {
-                combo1BarsNodes1[y].classList.replace("lightStyles", "darkStyles");
-                combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
-            }
-            for (var z = 0; z < combo2BarsTNodes1.length; z++) {
-                combo2BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
-                combo2BarsTNodes2[z].classList.replace("lightStyles", "darkStyles");
-                combo2BarsBNodes2[z].classList.replace("lightStyles", "darkStyles");
-                combo3BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
-                combo3BarsTNodes4[z].classList.replace("lightStyles", "darkStyles");
-                combo3BarsBNodes4[z].classList.replace("lightStyles", "darkStyles");
-            }
-            if (lightMode.style.display == "none") {
-                lightMode.style.display = "inline-block";
-                darkMode.style.display = "none";
-            } else if (lightMode.style.display == "inline-block") {
-                lightMode.style.display = "none";
-                darkMode.style.display = "inline-block";
-            }
-            for (var a = 0; a < codeText.length; a++) { // Targets code elements in README section
-                codeText[a].style.color = "#ff6b6b";
-            }
-            for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
-                anchorTags[b].style.color = "#0099ff";
-                anchorCode[0].style.color = "#0099ff";
-            }
-            for (var c = 0; c < codeSnippet.length; c++) { // Targets code snippets pre elements
-                codeSnippet[c].style.backgroundColor = "#141414";
-            }
-        }
-    } else if (event.keyCode == 68 && document.body.classList.contains("darkStyles")) {
-        if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
-            chartSelect.blur();
-            document.body.classList.replace("darkStyles", "lightStyles");
-            prog1Row1a.classList.replace("darkStyles", "lightStyles");
-            prog1Row2a.classList.replace("darkStyles", "lightStyles");
-            prog1Row3a.classList.replace("darkStyles", "lightStyles");
-            prog1Row4a.classList.replace("darkStyles", "lightStyles");
-            prog1Row5a.classList.replace("darkStyles", "lightStyles");
-            prog2Row1a.classList.replace("darkStyles", "lightStyles");
-            prog2Row2a.classList.replace("darkStyles", "lightStyles");
-            prog2Row3a.classList.replace("darkStyles", "lightStyles");
-            prog2Row4a.classList.replace("darkStyles", "lightStyles");
-            prog2Row5a.classList.replace("darkStyles", "lightStyles");
-            prog3Row1a.classList.replace("darkStyles", "lightStyles");
-            prog3Row2a.classList.replace("darkStyles", "lightStyles");
-            prog3Row3a.classList.replace("darkStyles", "lightStyles");
-            prog3Row4a.classList.replace("darkStyles", "lightStyles");
-            prog3Row5a.classList.replace("darkStyles", "lightStyles");
-            prog4Row1a.classList.replace("darkStyles", "lightStyles");
-            prog4Row2a.classList.replace("darkStyles", "lightStyles");
-            prog4Row3a.classList.replace("darkStyles", "lightStyles");
-            prog4Row4a.classList.replace("darkStyles", "lightStyles");
-            prog4Row5a.classList.replace("darkStyles", "lightStyles");
-            horiz1Cap.classList.replace("darkStyles", "lightStyles");
-            horiz1Sub.classList.replace("darkStyles", "lightStylesCSS");
-            horiz1Source.classList.replace("darkStyles", "lightStylesCSS");
-            horiz2Cap.classList.replace("darkStyles", "lightStyles");
-            horiz2Sub.classList.replace("darkStyles", "lightStylesCSS");
-            horiz2Source.classList.replace("darkStyles", "lightStylesCSS");
-            horiz3Cap.classList.replace("darkStyles", "lightStyles");
-            horiz3Sub.classList.replace("darkStyles", "lightStylesCSS");
-            horiz3Source.classList.replace("darkStyles", "lightStylesCSS");
-            horiz4Cap.classList.replace("darkStyles", "lightStyles");
-            horiz4Sub.classList.replace("darkStyles", "lightStylesCSS");
-            horiz4Source.classList.replace("darkStyles", "lightStylesCSS");
-            horiz5Cap.classList.replace("darkStyles", "lightStyles");
-            horiz5Sub.classList.replace("darkStyles", "lightStylesCSS");
-            horiz5Source.classList.replace("darkStyles", "lightStylesCSS");
-            combo1Cap.classList.replace("darkStyles", "lightStyles");
-            combo1Sub.classList.replace("darkStyles", "lightStylesCSS");
-            combo1Source.classList.replace("darkStyles", "lightStylesCSS");
-            combo2Cap.classList.replace("darkStyles", "lightStyles");
-            combo2Sub.classList.replace("darkStyles", "lightStylesCSS");
-            combo2Source.classList.replace("darkStyles", "lightStylesCSS");
-            combo3Cap.classList.replace("darkStyles", "lightStyles");
-            combo3Sub.classList.replace("darkStyles", "lightStylesCSS");
-            combo3Source.classList.replace("darkStyles", "lightStylesCSS");
-            stacked1Cap.classList.replace("darkStyles", "lightStyles");
-            stacked1Sub.classList.replace("darkStyles", "lightStylesCSS");
-            stacked1Source.classList.replace("darkStyles", "lightStylesCSS");
-            stacked2Cap.classList.replace("darkStyles", "lightStyles");
-            stacked2Sub.classList.replace("darkStyles", "lightStylesCSS");
-            stacked2Source.classList.replace("darkStyles", "lightStylesCSS");
-            stacked3Cap.classList.replace("darkStyles", "lightStyles");
-            stacked3Sub.classList.replace("darkStyles", "lightStylesCSS");
-            stacked3Source.classList.replace("darkStyles", "lightStylesCSS");
-            stacked4Cap.classList.replace("darkStyles", "lightStyles");
-            stacked4Sub.classList.replace("darkStyles", "lightStylesCSS");
-            stacked4Source.classList.replace("darkStyles", "lightStylesCSS");
-            prog1Cap.classList.replace("darkStyles", "lightStyles");
-            prog1Sub.classList.replace("darkStyles", "lightStylesCSS");
-            prog1Source.classList.replace("darkStyles", "lightStylesCSS");
-            prog2Cap.classList.replace("darkStyles", "lightStyles");
-            prog2Sub.classList.replace("darkStyles", "lightStylesCSS");
-            prog2Source.classList.replace("darkStyles", "lightStylesCSS");
-            prog3Cap.classList.replace("darkStyles", "lightStyles");
-            prog3Sub.classList.replace("darkStyles", "lightStylesCSS");
-            prog3Source.classList.replace("darkStyles", "lightStylesCSS");
-            prog4Cap.classList.replace("darkStyles", "lightStyles");
-            prog4Sub.classList.replace("darkStyles", "lightStylesCSS");
-            prog4Source.classList.replace("darkStyles", "lightStylesCSS");
-            negative1Cap.classList.replace("darkStyles", "lightStyles");
-            negative1Sub.classList.replace("darkStyles", "lightStylesCSS");
-            negative1Source.classList.replace("darkStyles", "lightStylesCSS");
-            negative2Cap.classList.replace("darkStyles", "lightStyles");
-            negative2Sub.classList.replace("darkStyles", "lightStylesCSS");
-            negative2Source.classList.replace("darkStyles", "lightStylesCSS");
-            splitCap.classList.replace("darkStyles", "lightStyles");
-            splitSub.classList.replace("darkStyles", "lightStylesCSS");
-            splitSource.classList.replace("darkStyles", "lightStylesCSS");
-            vert1Cap.classList.replace("darkStyles", "lightStyles");
-            vert1Sub.classList.replace("darkStyles", "lightStylesCSS");
-            vert1Source.classList.replace("darkStyles", "lightStylesCSS");
-            vert2Cap.classList.replace("darkStyles", "lightStyles");
-            vert2Sub.classList.replace("darkStyles", "lightStylesCSS");
-            vert2Source.classList.replace("darkStyles", "lightStylesCSS");
-            vert3Cap.classList.replace("darkStyles", "lightStyles");
-            vert3Sub.classList.replace("darkStyles", "lightStylesCSS");
-            vert3Source.classList.replace("darkStyles", "lightStylesCSS");
-            vert4Cap.classList.replace("darkStyles", "lightStyles");
-            vert4Sub.classList.replace("darkStyles", "lightStylesCSS");
-            vert4Source.classList.replace("darkStyles", "lightStylesCSS");
-            vert5Cap.classList.replace("darkStyles", "lightStyles");
-            vert5Sub.classList.replace("darkStyles", "lightStylesCSS");
-            vert5Source.classList.replace("darkStyles", "lightStylesCSS");
-            vert1AxisLine.classList.toggle("lightBorder");
-            vert2AxisLine.classList.toggle("lightBorder");
-            vert3AxisLine.classList.toggle("lightBorder");
-            vert4AxisLine.classList.toggle("lightBorder");
-            vert5AxisLine.classList.toggle("lightBorder");
-            for (var i = 0; i < scrollBox.length; i++) {
-                scrollBox[i].classList.replace("darkStyles", "scrollBoxLight");
-                textarea[i].classList.replace("darkStyles", "textareaLight");
-                previewBox[i].classList.replace("darkStyles", "lightStyles");
-            }
-            for (var x = 0; x < horiz1Bars.length; x++) {
-                horiz1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                horiz1BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
-                horiz2BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
-                horiz3BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                horiz3BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
-                horiz4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                horiz4BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
-                horiz5BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                horiz5BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
-                stacked1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                stacked1BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
-                stacked2BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                stacked2BarsNodes4[x].classList.replace("darkStyles", "lightStyles");
-                stacked3BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                stacked4BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                stacked4BarsNodes5[x].classList.replace("darkStyles", "lightStyles");
-                stacked1BarsNodes3[x].classList.toggle("darkBorder");
-                negative1BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                negative1BarsNodes2[x].classList.replace("darkStyles", "lightStyles");
-                negative2BarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                negative2BarsNodes3[x].classList.replace("darkStyles", "lightStyles");
-                splitBarsNodes1[x].classList.replace("darkStyles", "lightStyles");
-                splitBarsNodes4[x].classList.replace("darkStyles", "lightStyles");
-                previewBoxVert1Label[x].classList.replace("darkStyles", "lightStyles");
-                previewBoxVert2Label[x].classList.replace("darkStyles", "lightStyles");
-                previewBoxVert3Label[x].classList.replace("darkStyles", "lightStyles");
-                previewBoxVert4Label[x].classList.replace("darkStyles", "lightStyles");
-                previewBoxVert5LabelTop[x].classList.replace("darkStyles", "lightStyles");
-                previewBoxVert5LabelBottom[x].classList.replace("darkStyles", "lightStyles");
-            }
-            for (var y = 0; y < combo1BarsNodes1.length; y++) {
-                combo1BarsNodes1[y].classList.replace("darkStyles", "lightStyles");
-                combo1BarsNodes3[y].classList.replace("darkStyles", "lightStyles");
-            }
-            for (var z = 0; z < combo2BarsTNodes1.length; z++) {
-                combo2BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
-                combo2BarsTNodes2[z].classList.replace("darkStyles", "lightStyles");
-                combo2BarsBNodes2[z].classList.replace("darkStyles", "lightStyles");
-                combo3BarsTNodes1[z].classList.replace("darkStyles", "lightStyles");
-                combo3BarsTNodes4[z].classList.replace("darkStyles", "lightStyles");
-                combo3BarsBNodes4[z].classList.replace("darkStyles", "lightStyles");
-            }
-            if (lightMode.style.display == "none") {
-                lightMode.style.display = "inline-block";
-                darkMode.style.display = "none";
-            } else if (lightMode.style.display == "inline-block") {
-                lightMode.style.display = "none";
-                darkMode.style.display = "inline-block";
-            }
-            for (var a = 0; a < codeText.length; a++) {
-                codeText[a].style.color = "#de0d0d";
-            }
-            for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
-                anchorTags[b].style.color = "#166dfc";
-                anchorCode[0].style.color = "#166dfc";
-            }
-            for (var c = 0; c < codeSnippet.length; c++) {
-                codeSnippet[c].style.backgroundColor = "#f7f7f7";
-            }
-        }
-    }
-});
-darkMode.addEventListener("click", () => {
-    document.body.classList.toggle("darkStyles");
+// Dark Mode Function
+let darkStatus = false;
+function toggleDM() {
+    darkStatus = true;
+    chartSelect.blur();
     document.body.classList.replace("lightStyles", "darkStyles");
-    prog1Row1a.classList.toggle("darkStyles");
     prog1Row1a.classList.replace("lightStyles", "darkStyles");
-    prog1Row2a.classList.toggle("darkStyles");
     prog1Row2a.classList.replace("lightStyles", "darkStyles");
-    prog1Row3a.classList.toggle("darkStyles");
     prog1Row3a.classList.replace("lightStyles", "darkStyles");
-    prog1Row4a.classList.toggle("darkStyles");
     prog1Row4a.classList.replace("lightStyles", "darkStyles");
-    prog1Row5a.classList.toggle("darkStyles");
     prog1Row5a.classList.replace("lightStyles", "darkStyles");
-    prog2Row1a.classList.toggle("darkStyles");
     prog2Row1a.classList.replace("lightStyles", "darkStyles");
-    prog2Row2a.classList.toggle("darkStyles");
     prog2Row2a.classList.replace("lightStyles", "darkStyles");
-    prog2Row3a.classList.toggle("darkStyles");
     prog2Row3a.classList.replace("lightStyles", "darkStyles");
-    prog2Row4a.classList.toggle("darkStyles");
     prog2Row4a.classList.replace("lightStyles", "darkStyles");
-    prog2Row5a.classList.toggle("darkStyles");
     prog2Row5a.classList.replace("lightStyles", "darkStyles");
-    prog3Row1a.classList.toggle("darkStyles");
     prog3Row1a.classList.replace("lightStyles", "darkStyles");
-    prog3Row2a.classList.toggle("darkStyles");
     prog3Row2a.classList.replace("lightStyles", "darkStyles");
-    prog3Row3a.classList.toggle("darkStyles");
     prog3Row3a.classList.replace("lightStyles", "darkStyles");
-    prog3Row4a.classList.toggle("darkStyles");
     prog3Row4a.classList.replace("lightStyles", "darkStyles");
-    prog3Row5a.classList.toggle("darkStyles");
     prog3Row5a.classList.replace("lightStyles", "darkStyles");
-    prog4Row1a.classList.toggle("darkStyles");
     prog4Row1a.classList.replace("lightStyles", "darkStyles");
-    prog4Row2a.classList.toggle("darkStyles");
     prog4Row2a.classList.replace("lightStyles", "darkStyles");
-    prog4Row3a.classList.toggle("darkStyles");
     prog4Row3a.classList.replace("lightStyles", "darkStyles");
-    prog4Row4a.classList.toggle("darkStyles");
     prog4Row4a.classList.replace("lightStyles", "darkStyles");
-    prog4Row5a.classList.toggle("darkStyles");
     prog4Row5a.classList.replace("lightStyles", "darkStyles");
-    horiz1Cap.classList.toggle("darkStyles");
     horiz1Cap.classList.replace("lightStyles", "darkStyles");
-    horiz1Sub.classList.toggle("darkStyles");
     horiz1Sub.classList.replace("lightStylesCSS", "darkStyles");
-    horiz1Source.classList.toggle("darkStyles");
     horiz1Source.classList.replace("lightStylesCSS", "darkStyles");
-    horiz2Cap.classList.toggle("darkStyles");
     horiz2Cap.classList.replace("lightStyles", "darkStyles");
-    horiz2Sub.classList.toggle("darkStyles");
     horiz2Sub.classList.replace("lightStylesCSS", "darkStyles");
-    horiz2Source.classList.toggle("darkStyles");
     horiz2Source.classList.replace("lightStylesCSS", "darkStyles");
-    horiz3Cap.classList.toggle("darkStyles");
     horiz3Cap.classList.replace("lightStyles", "darkStyles");
-    horiz3Sub.classList.toggle("darkStyles");
     horiz3Sub.classList.replace("lightStylesCSS", "darkStyles");
-    horiz3Source.classList.toggle("darkStyles");
     horiz3Source.classList.replace("lightStylesCSS", "darkStyles");
-    horiz4Cap.classList.toggle("darkStyles");
     horiz4Cap.classList.replace("lightStyles", "darkStyles");
-    horiz4Sub.classList.toggle("darkStyles");
     horiz4Sub.classList.replace("lightStylesCSS", "darkStyles");
-    horiz4Source.classList.toggle("darkStyles");
     horiz4Source.classList.replace("lightStylesCSS", "darkStyles");
-    horiz5Cap.classList.toggle("darkStyles");
     horiz5Cap.classList.replace("lightStyles", "darkStyles");
-    horiz5Sub.classList.toggle("darkStyles");
     horiz5Sub.classList.replace("lightStylesCSS", "darkStyles");
-    horiz5Source.classList.toggle("darkStyles");
     horiz5Source.classList.replace("lightStylesCSS", "darkStyles");
-    combo1Cap.classList.toggle("darkStyles");
     combo1Cap.classList.replace("lightStyles", "darkStyles");
-    combo1Sub.classList.toggle("darkStyles");
     combo1Sub.classList.replace("lightStylesCSS", "darkStyles");
-    combo1Source.classList.toggle("darkStyles");
     combo1Source.classList.replace("lightStylesCSS", "darkStyles");
-    combo2Cap.classList.toggle("darkStyles");
     combo2Cap.classList.replace("lightStyles", "darkStyles");
-    combo2Sub.classList.toggle("darkStyles");
     combo2Sub.classList.replace("lightStylesCSS", "darkStyles");
-    combo2Source.classList.toggle("darkStyles");
     combo2Source.classList.replace("lightStylesCSS", "darkStyles");
-    combo3Cap.classList.toggle("darkStyles");
     combo3Cap.classList.replace("lightStyles", "darkStyles");
-    combo3Sub.classList.toggle("darkStyles");
     combo3Sub.classList.replace("lightStylesCSS", "darkStyles");
-    combo3Source.classList.toggle("darkStyles");
     combo3Source.classList.replace("lightStylesCSS", "darkStyles");
-    stacked1Cap.classList.toggle("darkStyles");
     stacked1Cap.classList.replace("lightStyles", "darkStyles");
-    stacked1Sub.classList.toggle("darkStyles");
     stacked1Sub.classList.replace("lightStylesCSS", "darkStyles");
-    stacked1Source.classList.toggle("darkStyles");
     stacked1Source.classList.replace("lightStylesCSS", "darkStyles");
-    stacked2Cap.classList.toggle("darkStyles");
     stacked2Cap.classList.replace("lightStyles", "darkStyles");
-    stacked2Sub.classList.toggle("darkStyles");
     stacked2Sub.classList.replace("lightStylesCSS", "darkStyles");
-    stacked2Source.classList.toggle("darkStyles");
     stacked2Source.classList.replace("lightStylesCSS", "darkStyles");
-    stacked3Cap.classList.toggle("darkStyles");
     stacked3Cap.classList.replace("lightStyles", "darkStyles");
-    stacked3Sub.classList.toggle("darkStyles");
     stacked3Sub.classList.replace("lightStylesCSS", "darkStyles");
-    stacked3Source.classList.toggle("darkStyles");
     stacked3Source.classList.replace("lightStylesCSS", "darkStyles");
-    stacked4Cap.classList.toggle("darkStyles");
     stacked4Cap.classList.replace("lightStyles", "darkStyles");
-    stacked4Sub.classList.toggle("darkStyles");
     stacked4Sub.classList.replace("lightStylesCSS", "darkStyles");
-    stacked4Source.classList.toggle("darkStyles");
     stacked4Source.classList.replace("lightStylesCSS", "darkStyles");
-    prog1Cap.classList.toggle("darkStyles");
     prog1Cap.classList.replace("lightStyles", "darkStyles");
-    prog1Sub.classList.toggle("darkStyles");
     prog1Sub.classList.replace("lightStylesCSS", "darkStyles");
-    prog1Source.classList.toggle("darkStyles");
     prog1Source.classList.replace("lightStylesCSS", "darkStyles");
-    prog2Cap.classList.toggle("darkStyles");
     prog2Cap.classList.replace("lightStyles", "darkStyles");
-    prog2Sub.classList.toggle("darkStyles");
     prog2Sub.classList.replace("lightStylesCSS", "darkStyles");
-    prog2Source.classList.toggle("darkStyles");
     prog2Source.classList.replace("lightStylesCSS", "darkStyles");
-    prog3Cap.classList.toggle("darkStyles");
     prog3Cap.classList.replace("lightStyles", "darkStyles");
-    prog3Sub.classList.toggle("darkStyles");
     prog3Sub.classList.replace("lightStylesCSS", "darkStyles");
-    prog3Source.classList.toggle("darkStyles");
     prog3Source.classList.replace("lightStylesCSS", "darkStyles");
-    prog4Cap.classList.toggle("darkStyles");
     prog4Cap.classList.replace("lightStyles", "darkStyles");
-    prog4Sub.classList.toggle("darkStyles");
     prog4Sub.classList.replace("lightStylesCSS", "darkStyles");
-    prog4Source.classList.toggle("darkStyles");
     prog4Source.classList.replace("lightStylesCSS", "darkStyles");
-    negative1Cap.classList.toggle("darkStyles");
     negative1Cap.classList.replace("lightStyles", "darkStyles");
-    negative1Sub.classList.toggle("darkStyles");
     negative1Sub.classList.replace("lightStylesCSS", "darkStyles");
-    negative1Source.classList.toggle("darkStyles");
     negative1Source.classList.replace("lightStylesCSS", "darkStyles");
-    negative2Cap.classList.toggle("darkStyles");
     negative2Cap.classList.replace("lightStyles", "darkStyles");
-    negative2Sub.classList.toggle("darkStyles");
     negative2Sub.classList.replace("lightStylesCSS", "darkStyles");
-    negative2Source.classList.toggle("darkStyles");
     negative2Source.classList.replace("lightStylesCSS", "darkStyles");
-    splitCap.classList.toggle("darkStyles");
     splitCap.classList.replace("lightStyles", "darkStyles");
-    splitSub.classList.toggle("darkStyles");
     splitSub.classList.replace("lightStylesCSS", "darkStyles");
-    splitSource.classList.toggle("darkStyles");
     splitSource.classList.replace("lightStylesCSS", "darkStyles");
-    vert1Cap.classList.toggle("darkStyles");
     vert1Cap.classList.replace("lightStyles", "darkStyles");
-    vert1Sub.classList.toggle("darkStyles");
     vert1Sub.classList.replace("lightStylesCSS", "darkStyles");
-    vert1Source.classList.toggle("darkStyles");
     vert1Source.classList.replace("lightStylesCSS", "darkStyles");
-    vert2Cap.classList.toggle("darkStyles");
     vert2Cap.classList.replace("lightStyles", "darkStyles");
-    vert2Sub.classList.toggle("darkStyles");
     vert2Sub.classList.replace("lightStylesCSS", "darkStyles");
-    vert2Source.classList.toggle("darkStyles");
     vert2Source.classList.replace("lightStylesCSS", "darkStyles");
-    vert3Cap.classList.toggle("darkStyles");
     vert3Cap.classList.replace("lightStyles", "darkStyles");
-    vert3Sub.classList.toggle("darkStyles");
     vert3Sub.classList.replace("lightStylesCSS", "darkStyles");
-    vert3Source.classList.toggle("darkStyles");
     vert3Source.classList.replace("lightStylesCSS", "darkStyles");
-    vert4Cap.classList.toggle("darkStyles");
     vert4Cap.classList.replace("lightStyles", "darkStyles");
-    vert4Sub.classList.toggle("darkStyles");
     vert4Sub.classList.replace("lightStylesCSS", "darkStyles");
-    vert4Source.classList.toggle("darkStyles");
     vert4Source.classList.replace("lightStylesCSS", "darkStyles");
-    vert5Cap.classList.toggle("darkStyles");
     vert5Cap.classList.replace("lightStyles", "darkStyles");
-    vert5Sub.classList.toggle("darkStyles");
     vert5Sub.classList.replace("lightStylesCSS", "darkStyles");
-    vert5Source.classList.toggle("darkStyles");
     vert5Source.classList.replace("lightStylesCSS", "darkStyles");
     vert1AxisLine.classList.toggle("lightBorder");
     vert2AxisLine.classList.toggle("lightBorder");
@@ -777,106 +342,75 @@ darkMode.addEventListener("click", () => {
     vert4AxisLine.classList.toggle("lightBorder");
     vert5AxisLine.classList.toggle("lightBorder");
     for (var i = 0; i < scrollBox.length; i++) {
-        scrollBox[i].classList.toggle("darkStyles");
         scrollBox[i].classList.replace("scrollBoxLight", "darkStyles");
-        textarea[i].classList.toggle("darkStyles");
         textarea[i].classList.replace("textareaLight", "darkStyles");
-        previewBox[i].classList.toggle("darkStyles");
         previewBox[i].classList.replace("lightStyles", "darkStyles");
     }
     for (var x = 0; x < horiz1Bars.length; x++) {
-        horiz1BarsNodes1[x].classList.toggle("darkStyles");
         horiz1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        horiz1BarsNodes2[x].classList.toggle("darkStyles");
         horiz1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-        horiz2BarsNodes4[x].classList.toggle("darkStyles");
         horiz2BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-        horiz3BarsNodes1[x].classList.toggle("darkStyles");
         horiz3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        horiz3BarsNodes3[x].classList.toggle("darkStyles");
         horiz3BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
-        horiz4BarsNodes1[x].classList.toggle("darkStyles");
         horiz4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        horiz4BarsNodes2[x].classList.toggle("darkStyles");
         horiz4BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-        horiz5BarsNodes1[x].classList.toggle("darkStyles");
         horiz5BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        horiz5BarsNodes2[x].classList.toggle("darkStyles");
         horiz5BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-        stacked1BarsNodes1[x].classList.toggle("darkStyles");
         stacked1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        stacked1BarsNodes4[x].classList.toggle("darkStyles");
         stacked1BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-        stacked2BarsNodes1[x].classList.toggle("darkStyles");
         stacked2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        stacked2BarsNodes4[x].classList.toggle("darkStyles");
         stacked2BarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-        stacked3BarsNodes1[x].classList.toggle("darkStyles");
         stacked3BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        stacked4BarsNodes1[x].classList.toggle("darkStyles");
         stacked4BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        stacked4BarsNodes5[x].classList.toggle("darkStyles");
         stacked4BarsNodes5[x].classList.replace("lightStyles", "darkStyles");
         stacked1BarsNodes3[x].classList.toggle("darkBorder");
-        negative1BarsNodes1[x].classList.toggle("darkStyles");
         negative1BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        negative1BarsNodes2[x].classList.toggle("darkStyles");
         negative1BarsNodes2[x].classList.replace("lightStyles", "darkStyles");
-        negative2BarsNodes1[x].classList.toggle("darkStyles");
         negative2BarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        negative2BarsNodes3[x].classList.toggle("darkStyles");
         negative2BarsNodes3[x].classList.replace("lightStyles", "darkStyles");
-        splitBarsNodes1[x].classList.toggle("darkStyles");
         splitBarsNodes1[x].classList.replace("lightStyles", "darkStyles");
-        splitBarsNodes4[x].classList.toggle("darkStyles");
         splitBarsNodes4[x].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert1Label[x].classList.toggle("darkStyles");
         previewBoxVert1Label[x].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert2Label[x].classList.toggle("darkStyles");
         previewBoxVert2Label[x].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert3Label[x].classList.toggle("darkStyles");
         previewBoxVert3Label[x].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert4Label[x].classList.toggle("darkStyles");
         previewBoxVert4Label[x].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert5LabelTop[x].classList.toggle("darkStyles");
         previewBoxVert5LabelTop[x].classList.replace("lightStyles", "darkStyles");
-        previewBoxVert5LabelBottom[x].classList.toggle("darkStyles");
         previewBoxVert5LabelBottom[x].classList.replace("lightStyles", "darkStyles");
     }
     for (var y = 0; y < combo1BarsNodes1.length; y++) {
-        combo1BarsNodes1[y].classList.toggle("darkStyles");
         combo1BarsNodes1[y].classList.replace("lightStyles", "darkStyles");
-        combo1BarsNodes3[y].classList.toggle("darkStyles");
         combo1BarsNodes3[y].classList.replace("lightStyles", "darkStyles");
     }
     for (var z = 0; z < combo2BarsTNodes1.length; z++) {
-        combo2BarsTNodes1[z].classList.toggle("darkStyles");
         combo2BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
-        combo2BarsTNodes2[z].classList.toggle("darkStyles");
         combo2BarsTNodes2[z].classList.replace("lightStyles", "darkStyles");
-        combo2BarsBNodes2[z].classList.toggle("darkStyles");
         combo2BarsBNodes2[z].classList.replace("lightStyles", "darkStyles");
-        combo3BarsTNodes1[z].classList.toggle("darkStyles");
         combo3BarsTNodes1[z].classList.replace("lightStyles", "darkStyles");
-        combo3BarsTNodes4[z].classList.toggle("darkStyles");
         combo3BarsTNodes4[z].classList.replace("lightStyles", "darkStyles");
-        combo3BarsBNodes4[z].classList.toggle("darkStyles");
         combo3BarsBNodes4[z].classList.replace("lightStyles", "darkStyles");
     }
-    for (var a = 0; a < codeText.length; a++) {
+    if (lightMode.style.display == "none" && darkStatus == true) {
+        lightMode.style.display = "inline-block";
+        darkMode.style.display = "none";
+    } else if (lightMode.style.display == "inline-block" && darkStatus == false) {
+        lightMode.style.display = "none";
+        darkMode.style.display = "inline-block";
+    }
+    for (var a = 0; a < codeText.length; a++) { // Targets code elements in README section
         codeText[a].style.color = "#ff6b6b";
     }
     for (var b = 0; b < anchorTags.length; b++) { // Targets all anchor link tags
         anchorTags[b].style.color = "#0099ff";
         anchorCode[0].style.color = "#0099ff";
     }
-    for (var c = 0; c < codeSnippet.length; c++) {
+    for (var c = 0; c < codeSnippet.length; c++) { // Targets code snippets pre elements
         codeSnippet[c].style.backgroundColor = "#141414";
     }
-    darkMode.style.display = "none";
-    lightMode.style.display = "inline-block";
-});
-lightMode.addEventListener("click", () => {
+};
+// Light Mode Function
+function toggleLM() {
+    darkStatus = false;
+    chartSelect.blur();
     document.body.classList.replace("darkStyles", "lightStyles");
     prog1Row1a.classList.replace("darkStyles", "lightStyles");
     prog1Row2a.classList.replace("darkStyles", "lightStyles");
@@ -1023,6 +557,13 @@ lightMode.addEventListener("click", () => {
         combo3BarsTNodes4[z].classList.replace("darkStyles", "lightStyles");
         combo3BarsBNodes4[z].classList.replace("darkStyles", "lightStyles");
     }
+    if (lightMode.style.display == "none" && darkStatus == true) {
+        lightMode.style.display = "inline-block";
+        darkMode.style.display = "none";
+    } else if (lightMode.style.display == "inline-block" && darkStatus == false) {
+        lightMode.style.display = "none";
+        darkMode.style.display = "inline-block";
+    }
     for (var a = 0; a < codeText.length; a++) {
         codeText[a].style.color = "#de0d0d";
     }
@@ -1033,8 +574,42 @@ lightMode.addEventListener("click", () => {
     for (var c = 0; c < codeSnippet.length; c++) {
         codeSnippet[c].style.backgroundColor = "#f7f7f7";
     }
-    darkMode.style.display = "inline-block";
-    lightMode.style.display = "none";
+};
+// Keydown Events
+document.addEventListener("keydown", () => {
+    if (event.keyCode == 82 && document.activeElement == bodyEl[0]) { // r
+        chartSelect.blur();
+        chartSelect.focus();
+    }
+    if (event.keyCode == 84 && document.activeElement == bodyEl[0]) { // t
+        chartSelect.blur();
+        chartSelect.focus();
+    }
+    if (event.keyCode == 68 && document.body.classList.contains("lightStyles")) { // d
+        if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
+            toggleDM();
+        }
+    } else if (event.keyCode == 68 && document.body.classList.contains("darkStyles")) {
+        if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
+            toggleLM();
+        }
+    }
+});
+// Toggle Light/Dark Modes via Emoji Click Event
+darkMode.addEventListener("click", () => {
+    toggleDM();
+});
+lightMode.addEventListener("click", () => {
+    toggleLM();
+});
+// Toggle Light/Dark Mode via Media Query
+let dmMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+dmMediaQuery.addEventListener("change", () => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        toggleDM();
+    } else {
+        toggleLM();
+    }
 });
 
 // Light/Dark Mode Tooltips
