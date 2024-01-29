@@ -24,17 +24,9 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 let horiz1borderTop = "";
 horiz1Div.addEventListener("click", () => { // Toggles chart data bar dividers in chart preview
     for (var i = 1; i < horiz1DivNodes1.length; i++) {
-        if (horiz1Div.checked == true) {
-            horiz1DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
-        } else if (horiz1Div.checked == false) {
-            horiz1DivNodes1[i].firstElementChild.style.borderTop = "none";
-        }
+        horiz1DivNodes1[i].firstElementChild.style.borderTop = horiz1Div.checked ? "1px solid #e3e3e3" : "none";
     }
-    if (horiz1Div.checked == true) { // Adds border-top to output code if checked
-        return horiz1borderTop = 'border-top: 1px solid #e3e3e3; ';
-    } else if (horiz1Div.checked == false) {
-        return horiz1borderTop = "";
-    }
+    horiz1borderTop = horiz1Div.checked ? "border-top: 1px solid #e3e3e3; " : ""; // Adds border-top to output code if checked
 });
 
 
@@ -1561,17 +1553,9 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 let horiz3borderTop = "";
 horiz3Div.addEventListener("click", () => { // Toggles chart data bar dividers in chart preview
     for (var i = 1; i < horiz3DivNodes1.length; i++) {
-        if (horiz3Div.checked == true) {
-            horiz3DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
-        } else if (horiz3Div.checked == false) {
-            horiz3DivNodes1[i].firstElementChild.style.borderTop = "none";
-        }
+        horiz3DivNodes1[i].firstElementChild.style.borderTop = horiz3Div.checked ? "1px solid #e3e3e3" : "none";
     }
-    if (horiz3Div.checked == true) { // Adds border-top to output code if checked
-        return horiz3borderTop = 'border-top: 1px solid #e3e3e3; ';
-    } else if (horiz3Div.checked == false) {
-        return horiz3borderTop = "";
-    }
+    horiz3borderTop = horiz3Div.checked ? "border-top: 1px solid #e3e3e3; " : ""; // Adds border-top to output code if checked
 });
 
 // Horizontal Chart III Caption
@@ -2316,17 +2300,9 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 let horiz4borderTop = "";
 horiz4Div.addEventListener("click", () => { // Toggles chart data bar dividers in chart preview
     for (var i = 1; i < horiz4DivNodes1.length; i++) {
-        if (horiz4Div.checked == true) {
-            horiz4DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
-        } else if (horiz4Div.checked == false) {
-            horiz4DivNodes1[i].firstElementChild.style.borderTop = "none";
-        }
+        horiz4DivNodes1[i].firstElementChild.style.borderTop = horiz4Div.checked ? "1px solid #e3e3e3" : "none";
     }
-    if (horiz4Div.checked == true) { // Adds border-top to output code if checked
-        return horiz4borderTop = 'border-top: 1px solid #e3e3e3; ';
-    } else if (horiz4Div.checked == false) {
-        return horiz4borderTop = "";
-    }
+    horiz4borderTop = horiz4Div.checked ? "border-top: 1px solid #e3e3e3; " : ""; // Adds border-top to output code if checked
 });
 
 // Horizontal Chart IV Caption
@@ -2928,17 +2904,9 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 let horiz5borderTop = "";
 horiz5Div.addEventListener("click", () => { // Toggles chart data bar dividers in chart preview
     for (var i = 1; i < horiz5DivNodes1.length; i++) {
-        if (horiz5Div.checked == true) {
-            horiz5DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
-        } else if (horiz5Div.checked == false) {
-            horiz5DivNodes1[i].firstElementChild.style.borderTop = "none";
-        }
+        horiz5DivNodes1[i].firstElementChild.style.borderTop = horiz5Div.checked ? "1px solid #e3e3e3" : "none";
     }
-    if (horiz5Div.checked == true) { // Adds border-top to output code if checked
-        return horiz5borderTop = 'border-top: 1px solid #e3e3e3; ';
-    } else if (horiz5Div.checked == false) {
-        return horiz5borderTop = "";
-    }
+    horiz5borderTop = horiz5Div.checked ? "border-top: 1px solid #e3e3e3; " : ""; // Adds border-top to output code if checked
 });
 
 // Horizontal Chart V Caption
