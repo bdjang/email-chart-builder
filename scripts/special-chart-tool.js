@@ -24,17 +24,9 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 let negative1borderTop = "";
 negative1Div.addEventListener("click", () => { // Toggles chart data bar dividers in chart preview
     for (var i = 1; i < negative1DivNodes1.length; i++) {
-        if (negative1Div.checked == true) {
-            negative1DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
-        } else if (negative1Div.checked == false) {
-            negative1DivNodes1[i].firstElementChild.style.borderTop = "none";
-        }
+        negative1DivNodes1[i].firstElementChild.style.borderTop = negative1Div.checked ? "1px solid #e3e3e3" : "none";
     }
-    if (negative1Div.checked == true) { // Adds border-top to output code if checked
-        return negative1borderTop = 'border-top: 1px solid #e3e3e3; ';
-    } else if (negative1Div.checked == false) {
-        return negative1borderTop = "";
-    }
+    negative1borderTop = negative1Div.checked ? "border-top: 1px solid #e3e3e3; " : ""; // Adds border-top to output code if checked
 });
 
 // Negative Chart I Caption
@@ -776,17 +768,9 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 let negative2borderTop = "";
 negative2Div.addEventListener("click", () => { // Toggles chart data bar dividers in chart preview
     for (var i = 1; i < negative2DivNodes1.length; i++) {
-        if (negative2Div.checked == true) {
-            negative2DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
-        } else if (negative2Div.checked == false) {
-            negative2DivNodes1[i].firstElementChild.style.borderTop = "none";
-        }
+        negative2DivNodes1[i].firstElementChild.style.borderTop = negative2Div.checked ? "1px solid #e3e3e3" : "none";
     }
-    if (negative2Div.checked == true) { // Adds border-top to output code if checked
-        return negative2borderTop = 'border-top: 1px solid #e3e3e3; ';
-    } else if (negative2Div.checked == false) {
-        return negative2borderTop = "";
-    }
+    negative2borderTop = negative2Div.checked ? "border-top: 1px solid #e3e3e3; " : ""; // Adds border-top to output code if checked
 });
 
 // Negative Chart II Caption
@@ -2337,17 +2321,9 @@ window.addEventListener("load", () => { // Adds "none" to border-top on load
 let combo1borderTop = "";
 combo1Div.addEventListener("click", () => { // Toggles chart data bar dividers in chart preview
     for (var i = 1; i < combo1DivNodes1.length; i++) {
-        if (combo1Div.checked == true) {
-            combo1DivNodes1[i].firstElementChild.style.borderTop = "1px solid #e3e3e3";
-        } else if (combo1Div.checked == false) {
-            combo1DivNodes1[i].firstElementChild.style.borderTop = "none";
-        }
+        combo1DivNodes1[i].firstElementChild.style.borderTop = combo1Div.checked ? "1px solid #e3e3e3" : "none";
     }
-    if (combo1Div.checked == true) { // Adds border-top to output code if checked
-        return combo1borderTop = 'border-top: 1px solid #e3e3e3; ';
-    } else if (combo1Div.checked == false) {
-        return combo1borderTop = "";
-    }
+    combo1borderTop = combo1Div.checked ? "border-top: 1px solid #e3e3e3; " : ""; // Adds border-top to output code if checked
 });
 
 // Combo Chart I Caption
