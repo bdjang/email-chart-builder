@@ -455,146 +455,33 @@ negative1Color10.oninput = function() {
 // Negative Chart I Height Adjustment
 const negative1rowArray = [negative1Row1a, negative1Row1b, negative1Row1c, negative1Row2a, negative1Row2b, negative1Row2c, negative1Row3a, negative1Row3b, negative1Row3c, negative1Row4a, negative1Row4b, negative1Row4c, negative1Row5a, negative1Row5b, negative1Row5c, negative1Row6a, negative1Row6b, negative1Row6c, negative1Row7a, negative1Row7b, negative1Row7c, negative1Row8a, negative1Row8b, negative1Row8c, negative1Row9a, negative1Row9b, negative1Row9c, negative1Row10a, negative1Row10b, negative1Row10c];
 const negative1inputArray = [negative1Text1a, negative1Text2a, negative1Text3a, negative1Text4a, negative1Text5a, negative1Text6a, negative1Text7a, negative1Text8a, negative1Text9a, negative1Text10a];
-negative1inputArray[0].addEventListener("input", () => {
+function negative1BarHeight(x) {
     for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[0].value.length <= 16) {
+        if (negative1inputArray[0].value.length <= 16 && negative1inputArray[1].value.length <= 16 && negative1inputArray[2].value.length <= 16 && negative1inputArray[3].value.length <= 16 && negative1inputArray[4].value.length <= 16 && negative1inputArray[5].value.length <= 16 && negative1inputArray[6].value.length <= 16 && negative1inputArray[7].value.length <= 16 && negative1inputArray[8].value.length <= 16 && negative1inputArray[9].value.length <= 16) {
+            // All labels must be <= 16 characters for the bar heights to be set at 28px
             negative1rowArray[i].style.height = "28px";
             negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[0].value.length > 16 && negative1inputArray[0].value.length < 32) {
+        } else if (negative1inputArray[x].value.length > 16 && negative1inputArray[x].value.length < 32 && negative1inputArray[0].value.length < 32 && negative1inputArray[1].value.length < 32 && negative1inputArray[2].value.length < 32 && negative1inputArray[3].value.length < 32 && negative1inputArray[4].value.length < 32 && negative1inputArray[5].value.length < 32 && negative1inputArray[6].value.length < 32 && negative1inputArray[7].value.length < 32 && negative1inputArray[8].value.length < 32 && negative1inputArray[9].value.length < 32) {
+            // All labels must be < 32 characters and only one needs to be > 16 to set all bar heights at 36px
             negative1rowArray[i].style.height = "36px";
             negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[0].value.length >= 32) {
+        } else if (negative1inputArray[0].value.length >= 32 || negative1inputArray[1].value.length >= 32 || negative1inputArray[2].value.length >= 32 || negative1inputArray[3].value.length >= 32 || negative1inputArray[4].value.length >= 32 || negative1inputArray[5].value.length >= 32 || negative1inputArray[6].value.length >= 32 || negative1inputArray[7].value.length >= 32 || negative1inputArray[8].value.length >= 32 || negative1inputArray[9].value.length >= 32) {
+            // Only one label needs to be >= 32 characters to set all bars heights to 54px
             negative1rowArray[i].style.height = "54px";
             negative1rowArray[i].height = "54";
         }
     }
-});
-negative1inputArray[1].addEventListener("input", () => {
-    for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[1].value.length <= 16) {
-            negative1rowArray[i].style.height = "28px";
-            negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[1].value.length > 16 && negative1inputArray[1].value.length < 32) {
-            negative1rowArray[i].style.height = "36px";
-            negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[1].value.length >= 32) {
-            negative1rowArray[i].style.height = "54px";
-            negative1rowArray[i].height = "54";
-        }
-    }
-});
-negative1inputArray[2].addEventListener("input", () => {
-    for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[2].value.length <= 16) {
-            negative1rowArray[i].style.height = "28px";
-            negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[2].value.length > 16 && negative1inputArray[2].value.length < 32) {
-            negative1rowArray[i].style.height = "36px";
-            negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[2].value.length >= 32) {
-            negative1rowArray[i].style.height = "54px";
-            negative1rowArray[i].height = "54";
-        }
-    }
-});
-negative1inputArray[3].addEventListener("input", () => {
-    for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[3].value.length <= 16) {
-            negative1rowArray[i].style.height = "28px";
-            negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[3].value.length > 16 && negative1inputArray[3].value.length < 32) {
-            negative1rowArray[i].style.height = "36px";
-            negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[3].value.length >= 32) {
-            negative1rowArray[i].style.height = "54px";
-            negative1rowArray[i].height = "54";
-        }
-    }
-});
-negative1inputArray[4].addEventListener("input", () => {
-    for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[4].value.length <= 16) {
-            negative1rowArray[i].style.height = "28px";
-            negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[4].value.length > 16 && negative1inputArray[4].value.length < 32) {
-            negative1rowArray[i].style.height = "36px";
-            negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[4].value.length >= 32) {
-            negative1rowArray[i].style.height = "54px";
-            negative1rowArray[i].height = "54";
-        }
-    }
-});
-negative1inputArray[5].addEventListener("input", () => {
-    for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[5].value.length <= 16) {
-            negative1rowArray[i].style.height = "28px";
-            negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[5].value.length > 16 && negative1inputArray[5].value.length < 32) {
-            negative1rowArray[i].style.height = "36px";
-            negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[5].value.length >= 32) {
-            negative1rowArray[i].style.height = "54px";
-            negative1rowArray[i].height = "54";
-        }
-    }
-});
-negative1inputArray[6].addEventListener("input", () => {
-    for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[6].value.length <= 16) {
-            negative1rowArray[i].style.height = "28px";
-            negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[6].value.length > 16 && negative1inputArray[6].value.length < 32) {
-            negative1rowArray[i].style.height = "36px";
-            negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[6].value.length >= 32) {
-            negative1rowArray[i].style.height = "54px";
-            negative1rowArray[i].height = "54";
-        }
-    }
-});
-negative1inputArray[7].addEventListener("input", () => {
-    for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[7].value.length <= 16) {
-            negative1rowArray[i].style.height = "28px";
-            negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[7].value.length > 16 && negative1inputArray[7].value.length < 32) {
-            negative1rowArray[i].style.height = "36px";
-            negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[7].value.length >= 32) {
-            negative1rowArray[i].style.height = "54px";
-            negative1rowArray[i].height = "54";
-        }
-    }
-});
-negative1inputArray[8].addEventListener("input", () => {
-    for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[8].value.length <= 16) {
-            negative1rowArray[i].style.height = "28px";
-            negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[8].value.length > 16 && negative1inputArray[8].value.length < 32) {
-            negative1rowArray[i].style.height = "36px";
-            negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[8].value.length >= 32) {
-            negative1rowArray[i].style.height = "54px";
-            negative1rowArray[i].height = "54";
-        }
-    }
-});
-negative1inputArray[9].addEventListener("input", () => {
-    for (var i = 0; i < negative1rowArray.length; i++) {
-        if (negative1inputArray[9].value.length <= 16) {
-            negative1rowArray[i].style.height = "28px";
-            negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[9].value.length > 16 && negative1inputArray[9].value.length < 32) {
-            negative1rowArray[i].style.height = "36px";
-            negative1rowArray[i].height = "36";
-        } else if (negative1inputArray[9].value.length >= 32) {
-            negative1rowArray[i].style.height = "54px";
-            negative1rowArray[i].height = "54";
-        }
-    }
-});
+};
+negative1inputArray[0].addEventListener("input", () => { negative1BarHeight(0); });
+negative1inputArray[1].addEventListener("input", () => { negative1BarHeight(1); });
+negative1inputArray[2].addEventListener("input", () => { negative1BarHeight(2); });
+negative1inputArray[3].addEventListener("input", () => { negative1BarHeight(3); });
+negative1inputArray[4].addEventListener("input", () => { negative1BarHeight(4); });
+negative1inputArray[5].addEventListener("input", () => { negative1BarHeight(5); });
+negative1inputArray[6].addEventListener("input", () => { negative1BarHeight(6); });
+negative1inputArray[7].addEventListener("input", () => { negative1BarHeight(7); });
+negative1inputArray[8].addEventListener("input", () => { negative1BarHeight(8); });
+negative1inputArray[9].addEventListener("input", () => { negative1BarHeight(9); });
 
 // Negative Chart I Focus/Blur Events
 negative1capText.addEventListener("focus", () => { negative1Cap.style.textShadow = shadowColor; });
@@ -1199,146 +1086,33 @@ negative2Color10.oninput = function() {
 // Negative Chart II Height Adjustment
 const negative2rowArray = [negative2Row1a, negative2Row1b, negative2Row1c, negative2Row2a, negative2Row2b, negative2Row2c, negative2Row3a, negative2Row3b, negative2Row3c, negative2Row4a, negative2Row4b, negative2Row4c, negative2Row5a, negative2Row5b, negative2Row5c, negative2Row6a, negative2Row6b, negative2Row6c, negative2Row7a, negative2Row7b, negative2Row7c, negative2Row8a, negative2Row8b, negative2Row8c, negative2Row9a, negative2Row9b, negative2Row9c, negative2Row10a, negative2Row10b, negative2Row10c];
 const negative2inputArray = [negative2Text1a, negative2Text2a, negative2Text3a, negative2Text4a, negative2Text5a, negative2Text6a, negative2Text7a, negative2Text8a, negative2Text9a, negative2Text10a];
-negative2inputArray[0].addEventListener("input", () => {
+function negative2BarHeight(x) {
     for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[0].value.length <= 16) {
+        if (negative2inputArray[0].value.length <= 16 && negative2inputArray[1].value.length <= 16 && negative2inputArray[2].value.length <= 16 && negative2inputArray[3].value.length <= 16 && negative2inputArray[4].value.length <= 16 && negative2inputArray[5].value.length <= 16 && negative2inputArray[6].value.length <= 16 && negative2inputArray[7].value.length <= 16 && negative2inputArray[8].value.length <= 16 && negative2inputArray[9].value.length <= 16) {
+            // All labels must be <= 16 characters for the bar heights to be set at 28px
             negative2rowArray[i].style.height = "28px";
             negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[0].value.length > 16 && negative2inputArray[0].value.length < 32) {
+        } else if (negative2inputArray[x].value.length > 16 && negative2inputArray[x].value.length < 32 && negative2inputArray[0].value.length < 32 && negative2inputArray[1].value.length < 32 && negative2inputArray[2].value.length < 32 && negative2inputArray[3].value.length < 32 && negative2inputArray[4].value.length < 32 && negative2inputArray[5].value.length < 32 && negative2inputArray[6].value.length < 32 && negative2inputArray[7].value.length < 32 && negative2inputArray[8].value.length < 32 && negative2inputArray[9].value.length < 32) {
+            // All labels must be < 32 characters and only one needs to be > 16 to set all bar heights at 36px
             negative2rowArray[i].style.height = "36px";
             negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[0].value.length >= 32) {
+        } else if (negative2inputArray[0].value.length >= 32 || negative2inputArray[1].value.length >= 32 || negative2inputArray[2].value.length >= 32 || negative2inputArray[3].value.length >= 32 || negative2inputArray[4].value.length >= 32 || negative2inputArray[5].value.length >= 32 || negative2inputArray[6].value.length >= 32 || negative2inputArray[7].value.length >= 32 || negative2inputArray[8].value.length >= 32 || negative2inputArray[9].value.length >= 32) {
+            // Only one label needs to be >= 32 characters to set all bars heights to 54px
             negative2rowArray[i].style.height = "54px";
             negative2rowArray[i].height = "54";
         }
     }
-});
-negative2inputArray[1].addEventListener("input", () => {
-    for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[1].value.length <= 16) {
-            negative2rowArray[i].style.height = "28px";
-            negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[1].value.length > 16 && negative2inputArray[1].value.length < 32) {
-            negative2rowArray[i].style.height = "36px";
-            negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[1].value.length >= 32) {
-            negative2rowArray[i].style.height = "54px";
-            negative2rowArray[i].height = "54";
-        }
-    }
-});
-negative2inputArray[2].addEventListener("input", () => {
-    for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[2].value.length <= 16) {
-            negative2rowArray[i].style.height = "28px";
-            negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[2].value.length > 16 && negative2inputArray[2].value.length < 32) {
-            negative2rowArray[i].style.height = "36px";
-            negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[2].value.length >= 32) {
-            negative2rowArray[i].style.height = "54px";
-            negative2rowArray[i].height = "54";
-        }
-    }
-});
-negative2inputArray[3].addEventListener("input", () => {
-    for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[3].value.length <= 16) {
-            negative2rowArray[i].style.height = "28px";
-            negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[3].value.length > 16 && negative2inputArray[3].value.length < 32) {
-            negative2rowArray[i].style.height = "36px";
-            negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[3].value.length >= 32) {
-            negative2rowArray[i].style.height = "54px";
-            negative2rowArray[i].height = "54";
-        }
-    }
-});
-negative2inputArray[4].addEventListener("input", () => {
-    for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[4].value.length <= 16) {
-            negative2rowArray[i].style.height = "28px";
-            negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[4].value.length > 16 && negative2inputArray[4].value.length < 32) {
-            negative2rowArray[i].style.height = "36px";
-            negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[4].value.length >= 32) {
-            negative2rowArray[i].style.height = "54px";
-            negative2rowArray[i].height = "54";
-        }
-    }
-});
-negative2inputArray[5].addEventListener("input", () => {
-    for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[5].value.length <= 16) {
-            negative2rowArray[i].style.height = "28px";
-            negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[5].value.length > 16 && negative2inputArray[5].value.length < 32) {
-            negative2rowArray[i].style.height = "36px";
-            negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[5].value.length >= 32) {
-            negative2rowArray[i].style.height = "54px";
-            negative2rowArray[i].height = "54";
-        }
-    }
-});
-negative2inputArray[6].addEventListener("input", () => {
-    for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[6].value.length <= 16) {
-            negative2rowArray[i].style.height = "28px";
-            negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[6].value.length > 16 && negative2inputArray[6].value.length < 32) {
-            negative2rowArray[i].style.height = "36px";
-            negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[6].value.length >= 32) {
-            negative2rowArray[i].style.height = "54px";
-            negative2rowArray[i].height = "54";
-        }
-    }
-});
-negative2inputArray[7].addEventListener("input", () => {
-    for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[7].value.length <= 16) {
-            negative2rowArray[i].style.height = "28px";
-            negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[7].value.length > 16 && negative2inputArray[7].value.length < 32) {
-            negative2rowArray[i].style.height = "36px";
-            negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[7].value.length >= 32) {
-            negative2rowArray[i].style.height = "54px";
-            negative2rowArray[i].height = "54";
-        }
-    }
-});
-negative2inputArray[8].addEventListener("input", () => {
-    for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[8].value.length <= 16) {
-            negative2rowArray[i].style.height = "28px";
-            negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[8].value.length > 16 && negative2inputArray[8].value.length < 32) {
-            negative2rowArray[i].style.height = "36px";
-            negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[8].value.length >= 32) {
-            negative2rowArray[i].style.height = "54px";
-            negative2rowArray[i].height = "54";
-        }
-    }
-});
-negative2inputArray[9].addEventListener("input", () => {
-    for (var i = 0; i < negative2rowArray.length; i++) {
-        if (negative2inputArray[9].value.length <= 16) {
-            negative2rowArray[i].style.height = "28px";
-            negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[9].value.length > 16 && negative2inputArray[9].value.length < 32) {
-            negative2rowArray[i].style.height = "36px";
-            negative2rowArray[i].height = "36";
-        } else if (negative2inputArray[9].value.length >= 32) {
-            negative2rowArray[i].style.height = "54px";
-            negative2rowArray[i].height = "54";
-        }
-    }
-});
+};
+negative2inputArray[0].addEventListener("input", () => { negative2BarHeight(0); });
+negative2inputArray[1].addEventListener("input", () => { negative2BarHeight(1); });
+negative2inputArray[2].addEventListener("input", () => { negative2BarHeight(2); });
+negative2inputArray[3].addEventListener("input", () => { negative2BarHeight(3); });
+negative2inputArray[4].addEventListener("input", () => { negative2BarHeight(4); });
+negative2inputArray[5].addEventListener("input", () => { negative2BarHeight(5); });
+negative2inputArray[6].addEventListener("input", () => { negative2BarHeight(6); });
+negative2inputArray[7].addEventListener("input", () => { negative2BarHeight(7); });
+negative2inputArray[8].addEventListener("input", () => { negative2BarHeight(8); });
+negative2inputArray[9].addEventListener("input", () => { negative2BarHeight(9); });
 
 // Negative Chart II Focus/Blur Events
 negative2capText.addEventListener("focus", () => { negative2Cap.style.textShadow = shadowColor; });
@@ -2853,90 +2627,29 @@ combo1Color6b.oninput = function() {
 // Combo Chart I Height Adjustment
 const combo1rowArray = [combo1Row1a, combo1Row1b, combo1Row1c, combo1Row1x, combo1Row1y, combo1Row1z, combo1Row2a, combo1Row2b, combo1Row2c, combo1Row2x, combo1Row2y, combo1Row2z, combo1Row3a, combo1Row3b, combo1Row3c, combo1Row3x, combo1Row3y, combo1Row3z, combo1Row4a, combo1Row4b, combo1Row4c, combo1Row4x, combo1Row4y, combo1Row4z, combo1Row5a, combo1Row5b, combo1Row5c, combo1Row5x, combo1Row5y, combo1Row5z, combo1Row6a, combo1Row6b, combo1Row6c, combo1Row6x, combo1Row6y, combo1Row6z];
 const combo1inputArray = [combo1Text1, combo1Text2, combo1Text3, combo1Text4, combo1Text5, combo1Text6];
-combo1inputArray[0].addEventListener("input", () => {
+function combo1BarHeight(x) {
     for (var i = 0; i < combo1rowArray.length; i++) {
-        if (combo1inputArray[0].value.length <= 16) {
+        if (combo1inputArray[0].value.length <= 16 && combo1inputArray[1].value.length <= 16 && combo1inputArray[2].value.length <= 16 && combo1inputArray[3].value.length <= 16 && combo1inputArray[4].value.length <= 16 && combo1inputArray[5].value.length <= 16) {
+            // All labels must be <= 16 characters for the bar heights to be set at 22px
             combo1rowArray[i].style.height = "22px";
             combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[0].value.length > 16 && combo1inputArray[0].value.length < 31) {
+        } else if (combo1inputArray[x].value.length > 16 && combo1inputArray[x].value.length < 31 && combo1inputArray[0].value.length < 31 && combo1inputArray[1].value.length < 31 && combo1inputArray[2].value.length < 31 && combo1inputArray[3].value.length < 31 && combo1inputArray[4].value.length < 31 && combo1inputArray[5].value.length < 31) {
+            // All labels must be < 31 characters and only one needs to be > 16 to set all bar heights at 30px
             combo1rowArray[i].style.height = "30px";
             combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[0].value.length >= 31) {
+        } else if (combo1inputArray[0].value.length >= 31 || combo1inputArray[1].value.length >= 31 || combo1inputArray[2].value.length >= 31 || combo1inputArray[3].value.length >= 31 || combo1inputArray[4].value.length >= 31 || combo1inputArray[5].value.length >= 31) {
+            // Only one label needs to be >= 31 characters to set all bars heights to 54px
             combo1rowArray[i].style.height = "44px";
             combo1rowArray[i].height = "44";
         }
     }
-});
-combo1inputArray[1].addEventListener("input", () => {
-    for (var i = 0; i < combo1rowArray.length; i++) {
-        if (combo1inputArray[1].value.length <= 16) {
-            combo1rowArray[i].style.height = "22px";
-            combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[1].value.length > 16 && combo1inputArray[1].value.length < 31) {
-            combo1rowArray[i].style.height = "30px";
-            combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[1].value.length >= 31) {
-            combo1rowArray[i].style.height = "44px";
-            combo1rowArray[i].height = "44";
-        }
-    }
-});
-combo1inputArray[2].addEventListener("input", () => {
-    for (var i = 0; i < combo1rowArray.length; i++) {
-        if (combo1inputArray[2].value.length <= 16) {
-            combo1rowArray[i].style.height = "22px";
-            combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[2].value.length > 16 && combo1inputArray[2].value.length < 31) {
-            combo1rowArray[i].style.height = "30px";
-            combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[2].value.length >= 31) {
-            combo1rowArray[i].style.height = "44px";
-            combo1rowArray[i].height = "44";
-        }
-    }
-});
-combo1inputArray[3].addEventListener("input", () => {
-    for (var i = 0; i < combo1rowArray.length; i++) {
-        if (combo1inputArray[3].value.length <= 16) {
-            combo1rowArray[i].style.height = "22px";
-            combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[3].value.length > 16 && combo1inputArray[3].value.length < 31) {
-            combo1rowArray[i].style.height = "30px";
-            combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[3].value.length >= 31) {
-            combo1rowArray[i].style.height = "44px";
-            combo1rowArray[i].height = "44";
-        }
-    }
-});
-combo1inputArray[4].addEventListener("input", () => {
-    for (var i = 0; i < combo1rowArray.length; i++) {
-        if (combo1inputArray[4].value.length <= 16) {
-            combo1rowArray[i].style.height = "22px";
-            combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[4].value.length > 16 && combo1inputArray[4].value.length < 31) {
-            combo1rowArray[i].style.height = "30px";
-            combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[4].value.length >= 31) {
-            combo1rowArray[i].style.height = "44px";
-            combo1rowArray[i].height = "44";
-        }
-    }
-});
-combo1inputArray[5].addEventListener("input", () => {
-    for (var i = 0; i < combo1rowArray.length; i++) {
-        if (combo1inputArray[5].value.length <= 16) {
-            combo1rowArray[i].style.height = "22px";
-            combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[5].value.length > 16 && combo1inputArray[5].value.length < 31) {
-            combo1rowArray[i].style.height = "30px";
-            combo1rowArray[i].height = "30";
-        } else if (combo1inputArray[5].value.length >= 31) {
-            combo1rowArray[i].style.height = "44px";
-            combo1rowArray[i].height = "44";
-        }
-    }
-});
+};
+combo1inputArray[0].addEventListener("input", () => { combo1BarHeight(0); });
+combo1inputArray[1].addEventListener("input", () => { combo1BarHeight(1); });
+combo1inputArray[2].addEventListener("input", () => { combo1BarHeight(2); });
+combo1inputArray[3].addEventListener("input", () => { combo1BarHeight(3); });
+combo1inputArray[4].addEventListener("input", () => { combo1BarHeight(4); });
+combo1inputArray[5].addEventListener("input", () => { combo1BarHeight(5); });
 
 // Combo Chart I Focus/Blur Events
 combo1capText.addEventListener("focus", () => { combo1Cap.style.textShadow = shadowColor; });
