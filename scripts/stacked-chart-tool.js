@@ -663,7 +663,7 @@ function stacked1BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 22px
             stacked1rowArray[i].style.height = "22px";
             stacked1rowArray[i].height = "22";
-        } else if (stacked1inputArray[x].value.length > 16 && stacked1inputArray[x].value.length < 31 && stacked1inputArray[0].value.length < 31 && stacked1inputArray[1].value.length < 31 && stacked1inputArray[2].value.length < 31 && stacked1inputArray[3].value.length < 31 && stacked1inputArray[4].value.length < 31 && stacked1inputArray[5].value.length < 31 && stacked1inputArray[6].value.length < 31 && stacked1inputArray[7].value.length < 31 && stacked1inputArray[8].value.length < 31 && stacked1inputArray[9].value.length < 31) {
+        } else if (stacked1inputArray[x].value.length < 31 && stacked1inputArray[0].value.length < 31 && stacked1inputArray[1].value.length < 31 && stacked1inputArray[2].value.length < 31 && stacked1inputArray[3].value.length < 31 && stacked1inputArray[4].value.length < 31 && stacked1inputArray[5].value.length < 31 && stacked1inputArray[6].value.length < 31 && stacked1inputArray[7].value.length < 31 && stacked1inputArray[8].value.length < 31 && stacked1inputArray[9].value.length < 31) {
             // All labels must be < 31 characters and only one needs to be > 16 to set all bar heights at 30px
             stacked1rowArray[i].style.height = "30px";
             stacked1rowArray[i].height = "30";
@@ -1331,7 +1331,7 @@ function stacked2BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 31px
             stacked2rowArray[i].style.height = "31px";
             stacked2rowArray[i].height = "31";
-        } else if (stacked2inputArray[x].value.length > 16 && stacked2inputArray[x].value.length < 32 && stacked2inputArray[0].value.length < 32 && stacked2inputArray[1].value.length < 32 && stacked2inputArray[2].value.length < 32 && stacked2inputArray[3].value.length < 32 && stacked2inputArray[4].value.length < 32 && stacked2inputArray[5].value.length < 32 && stacked2inputArray[6].value.length < 32 && stacked2inputArray[7].value.length < 32 && stacked2inputArray[8].value.length < 32 && stacked2inputArray[9].value.length < 32) {
+        } else if (stacked2inputArray[x].value.length < 32 && stacked2inputArray[0].value.length < 32 && stacked2inputArray[1].value.length < 32 && stacked2inputArray[2].value.length < 32 && stacked2inputArray[3].value.length < 32 && stacked2inputArray[4].value.length < 32 && stacked2inputArray[5].value.length < 32 && stacked2inputArray[6].value.length < 32 && stacked2inputArray[7].value.length < 32 && stacked2inputArray[8].value.length < 32 && stacked2inputArray[9].value.length < 32) {
             // All labels must be < 32 characters and only one needs to be > 16 to set all bar heights at 40px
             stacked2rowArray[i].style.height = "40px";
             stacked2rowArray[i].height = "40";
@@ -2222,7 +2222,7 @@ function stacked3BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 28px
             stacked3rowArray[i].style.height = "28px";
             stacked3rowArray[i].height = "28";
-        } else if (stacked3inputArray[x].value.length > 16 && stacked3inputArray[x].value.length < 32 && stacked3inputArray[0].value.length < 32 && stacked3inputArray[1].value.length < 32 && stacked3inputArray[2].value.length < 32 && stacked3inputArray[3].value.length < 32 && stacked3inputArray[4].value.length < 32 && stacked3inputArray[5].value.length < 32 && stacked3inputArray[6].value.length < 32 && stacked3inputArray[7].value.length < 32 && stacked3inputArray[8].value.length < 32 && stacked3inputArray[9].value.length < 32) {
+        } else if (stacked3inputArray[x].value.length < 32 && stacked3inputArray[0].value.length < 32 && stacked3inputArray[1].value.length < 32 && stacked3inputArray[2].value.length < 32 && stacked3inputArray[3].value.length < 32 && stacked3inputArray[4].value.length < 32 && stacked3inputArray[5].value.length < 32 && stacked3inputArray[6].value.length < 32 && stacked3inputArray[7].value.length < 32 && stacked3inputArray[8].value.length < 32 && stacked3inputArray[9].value.length < 32) {
             // All labels must be < 32 characters and only one needs to be > 16 to set all bar heights at 36px
             stacked3rowArray[i].style.height = "36px";
             stacked3rowArray[i].height = "36";
@@ -3115,7 +3115,7 @@ function stacked4BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 28px
             stacked4rowArray[i].style.height = "28px";
             stacked4rowArray[i].height = "28";
-        } else if (stacked4inputArray[x].value.length > 16 && stacked4inputArray[x].value.length < 32 && stacked4inputArray[0].value.length < 32 && stacked4inputArray[1].value.length < 32 && stacked4inputArray[2].value.length < 32 && stacked4inputArray[3].value.length < 32 && stacked4inputArray[4].value.length < 32 && stacked4inputArray[5].value.length < 32 && stacked4inputArray[6].value.length < 32 && stacked4inputArray[7].value.length < 32 && stacked4inputArray[8].value.length < 32 && stacked4inputArray[9].value.length < 32) {
+        } else if (stacked4inputArray[x].value.length < 32 && stacked4inputArray[0].value.length < 32 && stacked4inputArray[1].value.length < 32 && stacked4inputArray[2].value.length < 32 && stacked4inputArray[3].value.length < 32 && stacked4inputArray[4].value.length < 32 && stacked4inputArray[5].value.length < 32 && stacked4inputArray[6].value.length < 32 && stacked4inputArray[7].value.length < 32 && stacked4inputArray[8].value.length < 32 && stacked4inputArray[9].value.length < 32) {
             // All labels must be < 32 characters and only one needs to be > 16 to set all bar heights at 36px
             stacked4rowArray[i].style.height = "36px";
             stacked4rowArray[i].height = "36";

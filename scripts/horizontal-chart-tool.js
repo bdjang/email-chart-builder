@@ -552,7 +552,7 @@ function horiz1BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 22px
             horiz1rowArray[i].style.height = "22px";
             horiz1rowArray[i].height = "22";
-        } else if (horiz1inputArray[x].value.length > 16 && horiz1inputArray[x].value.length < 31 && horiz1inputArray[0].value.length < 31 && horiz1inputArray[1].value.length < 31 && horiz1inputArray[2].value.length < 31 && horiz1inputArray[3].value.length < 31 && horiz1inputArray[4].value.length < 31 && horiz1inputArray[5].value.length < 31 && horiz1inputArray[6].value.length < 31 && horiz1inputArray[7].value.length < 31 && horiz1inputArray[8].value.length < 31 && horiz1inputArray[9].value.length < 31) {
+        } else if (horiz1inputArray[x].value.length < 31 && horiz1inputArray[0].value.length < 31 && horiz1inputArray[1].value.length < 31 && horiz1inputArray[2].value.length < 31 && horiz1inputArray[3].value.length < 31 && horiz1inputArray[4].value.length < 31 && horiz1inputArray[5].value.length < 31 && horiz1inputArray[6].value.length < 31 && horiz1inputArray[7].value.length < 31 && horiz1inputArray[8].value.length < 31 && horiz1inputArray[9].value.length < 31) {
             // All labels must be < 31 characters and only one needs to be > 16 to set all bar heights at 30px
             horiz1rowArray[i].style.height = "30px";
             horiz1rowArray[i].height = "30";
@@ -1218,7 +1218,7 @@ function horiz2BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 31px
             horiz2rowArray[i].style.height = "31px";
             horiz2rowArray[i].height = "31";
-        } else if (horiz2inputArray[x].value.length > 16 && horiz2inputArray[x].value.length < 32 && horiz2inputArray[0].value.length < 32 && horiz2inputArray[1].value.length < 32 && horiz2inputArray[2].value.length < 32 && horiz2inputArray[3].value.length < 32 && horiz2inputArray[4].value.length < 32 && horiz2inputArray[5].value.length < 32 && horiz2inputArray[6].value.length < 32 && horiz2inputArray[7].value.length < 32 && horiz2inputArray[8].value.length < 32 && horiz2inputArray[9].value.length < 32) {
+        } else if (horiz2inputArray[x].value.length < 32 && horiz2inputArray[0].value.length < 32 && horiz2inputArray[1].value.length < 32 && horiz2inputArray[2].value.length < 32 && horiz2inputArray[3].value.length < 32 && horiz2inputArray[4].value.length < 32 && horiz2inputArray[5].value.length < 32 && horiz2inputArray[6].value.length < 32 && horiz2inputArray[7].value.length < 32 && horiz2inputArray[8].value.length < 32 && horiz2inputArray[9].value.length < 32) {
             // All labels must be < 32 characters and only one needs to be > 16 to set all bar heights at 44px
             horiz2rowArray[i].style.height = "44px";
             horiz2rowArray[i].height = "44";
@@ -1852,7 +1852,7 @@ function horiz3BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 28px
             horiz3rowArray[i].style.height = "28px";
             horiz3rowArray[i].height = "28";
-        } else if (horiz3inputArray[x].value.length > 16 && horiz3inputArray[x].value.length < 32 && horiz3inputArray[0].value.length < 32 && horiz3inputArray[1].value.length < 32 && horiz3inputArray[2].value.length < 32 && horiz3inputArray[3].value.length < 32 && horiz3inputArray[4].value.length < 32 && horiz3inputArray[5].value.length < 32 && horiz3inputArray[6].value.length < 32 && horiz3inputArray[7].value.length < 32 && horiz3inputArray[8].value.length < 32 && horiz3inputArray[9].value.length < 32) {
+        } else if (horiz3inputArray[x].value.length < 32 && horiz3inputArray[0].value.length < 32 && horiz3inputArray[1].value.length < 32 && horiz3inputArray[2].value.length < 32 && horiz3inputArray[3].value.length < 32 && horiz3inputArray[4].value.length < 32 && horiz3inputArray[5].value.length < 32 && horiz3inputArray[6].value.length < 32 && horiz3inputArray[7].value.length < 32 && horiz3inputArray[8].value.length < 32 && horiz3inputArray[9].value.length < 32) {
             // All labels must be < 32 characters and only one needs to be > 16 to set all bar heights at 36px
             horiz3rowArray[i].style.height = "36px";
             horiz3rowArray[i].height = "36";

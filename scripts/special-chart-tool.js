@@ -461,7 +461,7 @@ function negative1BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 28px
             negative1rowArray[i].style.height = "28px";
             negative1rowArray[i].height = "28";
-        } else if (negative1inputArray[x].value.length > 16 && negative1inputArray[x].value.length < 32 && negative1inputArray[0].value.length < 32 && negative1inputArray[1].value.length < 32 && negative1inputArray[2].value.length < 32 && negative1inputArray[3].value.length < 32 && negative1inputArray[4].value.length < 32 && negative1inputArray[5].value.length < 32 && negative1inputArray[6].value.length < 32 && negative1inputArray[7].value.length < 32 && negative1inputArray[8].value.length < 32 && negative1inputArray[9].value.length < 32) {
+        } else if (negative1inputArray[x].value.length < 32 && negative1inputArray[0].value.length < 32 && negative1inputArray[1].value.length < 32 && negative1inputArray[2].value.length < 32 && negative1inputArray[3].value.length < 32 && negative1inputArray[4].value.length < 32 && negative1inputArray[5].value.length < 32 && negative1inputArray[6].value.length < 32 && negative1inputArray[7].value.length < 32 && negative1inputArray[8].value.length < 32 && negative1inputArray[9].value.length < 32) {
             // All labels must be < 32 characters and only one needs to be > 16 to set all bar heights at 36px
             negative1rowArray[i].style.height = "36px";
             negative1rowArray[i].height = "36";
@@ -1092,7 +1092,7 @@ function negative2BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 28px
             negative2rowArray[i].style.height = "28px";
             negative2rowArray[i].height = "28";
-        } else if (negative2inputArray[x].value.length > 16 && negative2inputArray[x].value.length < 32 && negative2inputArray[0].value.length < 32 && negative2inputArray[1].value.length < 32 && negative2inputArray[2].value.length < 32 && negative2inputArray[3].value.length < 32 && negative2inputArray[4].value.length < 32 && negative2inputArray[5].value.length < 32 && negative2inputArray[6].value.length < 32 && negative2inputArray[7].value.length < 32 && negative2inputArray[8].value.length < 32 && negative2inputArray[9].value.length < 32) {
+        } else if (negative2inputArray[x].value.length < 32 && negative2inputArray[0].value.length < 32 && negative2inputArray[1].value.length < 32 && negative2inputArray[2].value.length < 32 && negative2inputArray[3].value.length < 32 && negative2inputArray[4].value.length < 32 && negative2inputArray[5].value.length < 32 && negative2inputArray[6].value.length < 32 && negative2inputArray[7].value.length < 32 && negative2inputArray[8].value.length < 32 && negative2inputArray[9].value.length < 32) {
             // All labels must be < 32 characters and only one needs to be > 16 to set all bar heights at 36px
             negative2rowArray[i].style.height = "36px";
             negative2rowArray[i].height = "36";
@@ -2633,7 +2633,7 @@ function combo1BarHeight(x) {
             // All labels must be <= 16 characters for the bar heights to be set at 22px
             combo1rowArray[i].style.height = "22px";
             combo1rowArray[i].height = "22";
-        } else if (combo1inputArray[x].value.length > 16 && combo1inputArray[x].value.length < 31 && combo1inputArray[0].value.length < 31 && combo1inputArray[1].value.length < 31 && combo1inputArray[2].value.length < 31 && combo1inputArray[3].value.length < 31 && combo1inputArray[4].value.length < 31 && combo1inputArray[5].value.length < 31) {
+        } else if (combo1inputArray[x].value.length < 31 && combo1inputArray[0].value.length < 31 && combo1inputArray[1].value.length < 31 && combo1inputArray[2].value.length < 31 && combo1inputArray[3].value.length < 31 && combo1inputArray[4].value.length < 31 && combo1inputArray[5].value.length < 31) {
             // All labels must be < 31 characters and only one needs to be > 16 to set all bar heights at 30px
             combo1rowArray[i].style.height = "30px";
             combo1rowArray[i].height = "30";
