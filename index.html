@@ -8718,8 +8718,6 @@
 Notes:
 - Horizontal charts I, II, III and combo chart all swapped the last <td> width from auto to a calculated one due to the Firefox/Safari width auto issue
 - Stacked charts I and II and IV were not able to make the same changes due to calculating issues with the width. the solution was to set the last <td> cell in these charts to 100% and that prevented the issue from occurring in Firefox/Safari. The width in the generated HTML chart stayed as "auto" for the last <td> cell
-- meta description: Build HTML/CSS coded bar charts for email templates.   
-- meta og:title: Email Chart Builder
 
 1.13.23:
 - make these charts BIG, BOLD, and EASY TO IMMEDIATELY READ AND DIGEST. Surprise and delight
@@ -8755,8 +8753,7 @@ Notes:
 }
 - DONE: Add .chartVertLegend to all vertical legends (vert2 and vert4)
 - DONE: Add "border-top-color: #ffffff !important;" to dark mode for vertical x-axis color
-- DONE: Investigate why "2013, 2014" at the x-axis is floating in browser view ==> add "line-height: normal" to vertical chart I and for all vertical charts; looks like i added that to the HTML page but not to the HTML output code: THIS IS FOR VERT2 AND VERT4!!!!!!!
-
+- DONE: Investigate why "2013, 2014" at the x-axis is floating in browser view ==> add "line-height: normal" to vertical chart I and for all vertical charts; looks like i added that to the HTML page but not to the HTML output code: THIS IS FOR VERT2 AND VERT4
 
 - If caption text AND subtitle text exists, remove "padding-bottom: 20px;" at the subtitle level and move it to the first data bar padding ==> "<td align="left" style="padding: 20px 0 0 3px 0;">
 
@@ -8767,16 +8764,10 @@ Notes:
 - DONE: consider getting rid of the wrapping MSO conditional comment on all charts; meant for testing only charts; its causing issues with MSO clients and expanding the width of the template frame
 - Need to test to see if this applies to VERTICAL bar charts: for now, the MSO conditional comment doesn't negatively affect vertical charts since the max width is 500px. keep for now but consider removing later.
 
-
 5.24.23:
 VERT III, VERT IV, VERT I, VERT II, VERT V
 - Vertical chart issue occurring in iPhone Gmail App where the x-axis has a space (similar to the desktop/laptop view). the solution was to add a class to the x-axis td cell and in the media query CSS, add the following:
 .chartVertAxis { line-height: 0 !important; }
 
 ^ this fixed the floating issue seen in mobile iPhone Gmail App!
-
-
-
-"Perfect is the enemy of the good"
-- Voltaire
 -->
