@@ -12,13 +12,13 @@ header { margin: 0 20px; }
 header, footer, textarea, #readme { font-family: Courier, serif; }
 label { font-family: Times, serif; font-size: 16px; }
 legend { font-weight: 600; }
-textarea { background-color: #f8f8f8; border: 1px solid #c4c4c4; display: block; font-size: 12px; margin: 0 auto; padding: 0; resize: none; width: 700px; height: 160px; }
+textarea { background-color: #f8f8f8; border: 1px solid #c4c4c4; box-shadow: 0 2px 3px rgba(0, 0, 0, .1); display: block; font-size: 12px; margin: 0 auto; padding: 0; resize: none; width: 700px; height: 160px; }
 ul li { margin: 8px 0; }
 
 /* SITE STYLES */
 #chartEmoji { cursor: pointer; float: left; left: -4px; margin: 0 19px 0 0; position: relative; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: transform 250ms ease-out, margin 250ms ease-out; -ms-transition: transform 250ms ease-out, margin 250ms ease-out; -moz-transition: transform 250ms ease-out, margin 250ms ease-out; transition: transform 250ms ease-out, margin 250ms ease-out; -webkit-user-select: none; user-select: none; }
-#chartSelect { font-family: Arial, sans-serif; font-size: 14px; }
-.scrollBox { background-color: #f8f8f8; border: 1px solid #c4c4c4; height: 400px; width: 700px; margin: 0 auto; padding: 10px 0; text-align: left; overflow-x: hidden; overflow-y: auto; }
+#chartSelect { box-shadow: 0 2px 3px rgba(0, 0, 0, .1); font-family: Arial, sans-serif; font-size: 14px; }
+.scrollBox { background-color: #f8f8f8; border: 1px solid #c4c4c4; box-shadow: 0 2px 3px rgba(0, 0, 0, .1); height: 400px; width: 700px; margin: 0 auto; padding: 10px 0; text-align: left; overflow-x: hidden; overflow-y: auto; }
 .dataCheckboxes, .styleControls { border: 1px solid #c4c4c4; width: 616px; margin: 20px auto; }
 
 /* README SECTION */
