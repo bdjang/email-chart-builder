@@ -81,8 +81,10 @@ button, #darkMode, #lightMode { cursor: pointer; }
 .scrollBoxLight, .textareaLight { background-color: #f8f8f8 !important; }
 #darkMode { display: inline-block; -webkit-transition: transform 10000ms ease-out; -ms-transition: transform 10000ms ease-out; -moz-transition: transform 10000ms ease-out; transition: transform 10000ms ease-out; }
 /* LIGHT/DARK MODE TOOLTIPS */
-#lmTooltip, #dmTooltip { background-color: #0d1117; border-radius: 2px; color: #e6edf3; font-size: 16px; margin: 0 0 0 234px; opacity: 0; padding: 4px; position: absolute; }
-#dmTooltip { background-color: #ffffff; color: #000000; }
+#lmTooltip, #dmTooltip, #lmSelectTip, #dmSelectTip { background-color: #0d1117; border-radius: 2px; color: #e6edf3; font-size: 16px; opacity: 0; padding: 4px; position: absolute; }
+#lmTooltip, #dmTooltip { margin: 0 0 0 234px; }
+#lmSelectTip, #dmSelectTip { margin: 0 0 0 180px; }
+#dmTooltip, #dmSelectTip { background-color: #ffffff; color: #000000; }
 
 /* CHART STYLES TRANSITIONS */
 .darkStyles, .lightStyles, .lightStylesCSS, .scrollBoxLight, .textareaLight, .chartWeight, .chartTable td, code, img, pre, .combo1Legend span, .combo2Legend span, .stacked1Legend span, .stacked2Legend span, .stacked3Legend span, .stacked4Legend span { -webkit-transition: background-color 250ms ease-out, border-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, filter 250ms ease-out, height 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; -ms-transition: background-color 250ms ease-out, border-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, filter 250ms ease-out, height 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; -moz-transition: background-color 250ms ease-out, border-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, filter 250ms ease-out, height 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; transition: background-color 250ms ease-out, border-color 250ms ease-out, box-shadow 250ms ease-out, color 250ms ease-out, filter 250ms ease-out, height 250ms ease-out, opacity 250ms ease-out, text-shadow 250ms ease-out; }
