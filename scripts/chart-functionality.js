@@ -31,6 +31,33 @@ chartEmoji.addEventListener("click", () => {
         chartEmoji.style.marginRight = "13px";
     }
 });
+// Chart Select Light/Dark Mode Tooltips
+const lightSelect = document.getElementById("lmSelectTip");
+const darkSelect = document.getElementById("dmSelectTip");
+selectElement.addEventListener("mouseover", () => {
+    if (darkStatus == true && selectElement.value == "empty") {
+        darkSelect.style.opacity = "1";
+    } else {
+        darkSelect.style.opacity = "0";
+    }
+    if (darkStatus == false && selectElement.value == "empty") {
+        lightSelect.style.opacity = "1";
+    } else {
+        lightSelect.style.opacity = "0";
+    }
+});
+selectElement.addEventListener("mouseleave", () => {
+    if (darkStatus == true && selectElement.value == "empty") {
+        darkSelect.style.opacity = "0";
+    } else {
+        darkSelect.style.opacity = "0";
+    }
+    if (darkStatus == false && selectElement.value == "empty") {
+        lightSelect.style.opacity = "0";
+    } else {
+        lightSelect.style.opacity = "0";
+    }
+});
 
 // Chart Variables
 const botSpace = `<div height="24" style="font-size: 24px; line-height: 24px;">&nbsp;</div>`; // Bottom spacing for non-vertical charts
