@@ -30,7 +30,7 @@ negative1Div.addEventListener("click", () => { // Toggles chart data bar divider
 });
 
 // Negative Chart I Caption
-let negative1TopBarSpace = "";
+let negative1TopBarSpace = "0 0 5px 0";
 let negative1csCode = "";
 const negative1Cap = document.getElementById("negative1Cap"); // Caption or chart title
 const negative1capText = document.getElementById("negative1capText"); // Caption or chart title text
@@ -661,7 +661,7 @@ negative2Div.addEventListener("click", () => { // Toggles chart data bar divider
 });
 
 // Negative Chart II Caption
-let negative2TopBarSpace = "";
+let negative2TopBarSpace = "0 0 5px 0";
 let negative2csCode = "";
 const negative2Cap = document.getElementById("negative2Cap"); // Caption or chart title
 const negative2capText = document.getElementById("negative2capText"); // Caption or chart title text
@@ -1276,7 +1276,7 @@ rowsData20.addEventListener("change", () => {
 });
 
 // Negative/Positive (Split) Caption
-let splitTopBarSpace = "";
+let splitTopBarSpace = "0";
 let splitcsCode = "";
 const splitCap = document.getElementById("splitCap"); // Caption or chart title
 const splitcapText = document.getElementById("splitcapText"); // Caption or chart title text
@@ -3429,7 +3429,7 @@ rowsData23.addEventListener("change", () => {
 });
 
 // Combo Chart III Caption
-let combo3TopBarSpace = "";
+let combo3TopBarSpace = "0";
 let combo3csCode = "";
 const combo3Cap = document.getElementById("combo3Cap"); // Caption or chart title
 const combo3capText = document.getElementById("combo3capText"); // Caption or chart title text
