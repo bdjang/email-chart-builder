@@ -14,7 +14,7 @@ rowsData8.addEventListener("change", () => {
 });
 
 // Progress Bar I Caption
-let prog1TopBarSpace = "";
+let prog1TopBarSpace = "0";
 let prog1csCode = "";
 const prog1Cap = document.getElementById("prog1Cap"); // Caption or chart title
 const prog1capText = document.getElementById("prog1capText"); // Caption or chart title text
@@ -364,7 +364,7 @@ rowsData9.addEventListener("change", () => {
 });
 
 // Progress Bar II Caption
-let prog2TopBarSpace = "";
+let prog2TopBarSpace = "0";
 let prog2csCode = "";
 const prog2Cap = document.getElementById("prog2Cap"); // Caption or chart title
 const prog2capText = document.getElementById("prog2capText"); // Caption or chart title text
@@ -823,7 +823,7 @@ rowsData22.addEventListener("change", () => {
 });
 
 // Progress Bar III Caption
-let prog3TopBarSpace = "";
+let prog3TopBarSpace = "0";
 let prog3csCode = "";
 const prog3Cap = document.getElementById("prog3Cap"); // Caption or chart title
 const prog3capText = document.getElementById("prog3capText"); // Caption or chart title text
@@ -1295,7 +1295,7 @@ rowsData21.addEventListener("change", () => {
 });
 
 // Progress Bar IV Caption
-let prog4TopBarSpace = "";
+let prog4TopBarSpace = "0";
 let prog4csCode = "";
 const prog4Cap = document.getElementById("prog4Cap"); // Caption or chart title
 const prog4capText = document.getElementById("prog4capText"); // Caption or chart title text
