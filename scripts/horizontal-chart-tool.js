@@ -32,7 +32,7 @@ horiz1Div.addEventListener("click", () => { // Toggles chart data bar dividers i
 
 
 // Horizontal Chart I Caption
-let horiz1TopBarSpace = ""; // 05.22.23: Adjusts spacing between caption/subtitle text and the first data bar; issue seen in Outlook Windows clients where padding-bottom added to a <td> will add the same spacing above it if the <td> is directly below a <caption> element. This issue is not seen when using margin-bottom however the spacing will no longer work in Outlook macOS clients. Believe this is an Outlook bug
+let horiz1TopBarSpace = "0 0 3px 0"; // 05.22.23: Adjusts spacing between caption/subtitle text and the first data bar; issue seen in Outlook Windows clients where padding-bottom added to a <td> will add the same spacing above it if the <td> is directly below a <caption> element. This issue is not seen when using margin-bottom however the spacing will no longer work in Outlook macOS clients. Believe this is an Outlook bug
 let horiz1csCode = "";
 const horiz1Cap = document.getElementById("horiz1Cap"); // Caption or chart title
 const horiz1capText = document.getElementById("horiz1capText"); // Caption or chart title text
@@ -649,7 +649,7 @@ rowsData2.addEventListener("change", () => {
 });
 
 // Horizontal Chart II Caption
-let horiz2TopBarSpace = "";
+let horiz2TopBarSpace = "0";
 let horiz2csCode = "";
 const horiz2Cap = document.getElementById("horiz2Cap"); // Caption or chart title
 const horiz2capText = document.getElementById("horiz2capText"); // Caption or chart title text
@@ -1333,7 +1333,7 @@ horiz3Div.addEventListener("click", () => { // Toggles chart data bar dividers i
 });
 
 // Horizontal Chart III Caption
-let horiz3TopBarSpace = "";
+let horiz3TopBarSpace = "0 0 5px 0";
 let horiz3csCode = "";
 const horiz3Cap = document.getElementById("horiz3Cap"); // Caption or chart title
 const horiz3capText = document.getElementById("horiz3capText"); // Caption or chart title text
@@ -1967,7 +1967,7 @@ horiz4Div.addEventListener("click", () => { // Toggles chart data bar dividers i
 });
 
 // Horizontal Chart IV Caption
-let horiz4TopBarSpace = "";
+let horiz4TopBarSpace = "0 0 4px 0";
 let horiz4csCode = "";
 const horiz4Cap = document.getElementById("horiz4Cap"); // Caption or chart title
 const horiz4capText = document.getElementById("horiz4capText"); // Caption or chart title text
@@ -2571,7 +2571,7 @@ horiz5Div.addEventListener("click", () => { // Toggles chart data bar dividers i
 });
 
 // Horizontal Chart V Caption
-let horiz5TopBarSpace = "";
+let horiz5TopBarSpace = "0 0 8px 0";
 let horiz5csCode = "";
 const horiz5Cap = document.getElementById("horiz5Cap"); // Caption or chart title
 const horiz5capText = document.getElementById("horiz5capText"); // Caption or chart title text
