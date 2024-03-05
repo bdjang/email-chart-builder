@@ -97,6 +97,7 @@ button, #darkMode, #lightMode { cursor: pointer; }
 /* MOBILE STYLES */
 @media screen and (max-width: 1295px) {
     [id^="vert"] .chartBuild { display: block; margin: 30px 0 0 0; } /* Targets all vertical charts; "^=" means STARTS WITH; "*=" means CONTAINS */
+    #lmTooltip, #dmTooltip, #lmSelectTip, #dmSelectTip { display: none; }
 }
 @media screen and (max-width: 1365px) {
     .charts div:first-of-type + table:first-of-type { margin: 0; }
