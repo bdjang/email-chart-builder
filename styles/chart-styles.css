@@ -81,7 +81,7 @@ button, #darkMode, #lightMode { cursor: pointer; }
 .scrollBoxLight, .textareaLight { background-color: #f8f8f8 !important; }
 #darkMode { display: inline-block; -webkit-transition: transform 10000ms ease-out; -ms-transition: transform 10000ms ease-out; -moz-transition: transform 10000ms ease-out; transition: transform 10000ms ease-out; }
 /* LIGHT/DARK MODE TOOLTIPS */
-#lmTooltip, #dmTooltip, #lmSelectTip, #dmSelectTip { background-color: #0d1117; border-radius: 2px; color: #e6edf3; font-size: 16px; opacity: 0; padding: 4px; position: absolute; }
+#lmTooltip, #dmTooltip, #lmSelectTip, #dmSelectTip { background-color: #0d1117; border-radius: 2px; color: #e6edf3; font-size: 16px; opacity: 0; padding: 4px 6px; position: absolute; }
 #lmTooltip, #dmTooltip { margin: 0 0 0 234px; }
 #lmSelectTip, #dmSelectTip { margin: 0 0 0 180px; }
 #dmTooltip, #dmSelectTip { background-color: #ffffff; color: #000000; }
