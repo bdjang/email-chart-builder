@@ -22,7 +22,7 @@ For additional information about the advantages and disadvantages of using HTML/
     <img width="750" alt="Step #2: Customize the bar colors, widths, and chart text using the input tools" src="https://github.com/bdjang/email-chart-builder/assets/6575035/eb6866bd-c7a7-4e49-b5ba-7aa808da74a6">
 
 3. When the chart is ready, click the button to generate and copy your HTML output code.
-    <img width="750" alt="Step #3: When the chart is ready, click the button to generate and copy your HTML output code" src="https://github.com/bdjang/email-chart-builder/assets/6575035/f08b99f2-0375-40a8-8095-24f312604916">
+    <img width="750" alt="Step #3: When the chart is ready, click the button to generate and copy your HTML output code" src="https://github.com/bdjang/email-chart-builder/assets/6575035/ddabdbc5-6106-49e1-a8bc-ab6e236d155e">
 
 4. Paste the chart code into your email template, make adjustments as needed, and test.
 
