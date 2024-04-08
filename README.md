@@ -11,7 +11,7 @@ The first objective of this project is to enable email marketers and developers 
 
 Each of the 20+ bar charts have been built using `<table>` elements and CSS styling specifically for email templates. All coding required for creating individual data bars with customized widths, label text, colors, and more have been taken care of with vanilla JavaScript.
 
-For additional information about the advantages and disadvantages of using HTML/CSS bar charts compared to images in email templates, read the "[📊 Non-Image Approach to Data Viz in Email](https://dev.to/bdjang/non-image-approach-to-data-viz-in-email-o0k)" blog post.
+For additional information about the advantages and disadvantages of using HTML/CSS bar charts compared to images in email templates, read the "[🚫 Non-Image Approach to Data Viz in Email](https://dev.to/bdjang/non-image-approach-to-data-viz-in-email-o0k)" blog post.
 
 ## Instructions
 
