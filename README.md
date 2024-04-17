@@ -28,6 +28,6 @@ For additional information about the advantages and disadvantages of using HTML/
 
 ## Advantages of HTML/CSS Coded Bar Charts in Email Templates
 
-1. Charts can display in email clients without the need to download images
-2. Charts are dark mode compatible in a variety of email clients and mobile devices
-3. Charts feature live text and are accessible to screen readers
+1. Charts can be viewed without the use of images.
+2. Charts are dark mode compatible for many email clients and mobile devices.
+3. Charts use live text, numbers, and labels which are accessible to screen readers.
