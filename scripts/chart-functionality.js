@@ -603,20 +603,20 @@ function toggleLM() {
     }
 };
 // Keydown Events
-document.addEventListener("keydown", () => {
-    if (event.keyCode == 82 && document.activeElement == bodyEl[0]) { // r
+document.addEventListener("keydown", (e) => {
+    if (e.key == 'r' && document.activeElement == bodyEl[0]) {
         chartSelect.blur();
         chartSelect.focus();
     }
-    if (event.keyCode == 84 && document.activeElement == bodyEl[0]) { // t
+    if (e.key == 't' && document.activeElement == bodyEl[0]) {
         chartSelect.blur();
         chartSelect.focus();
     }
-    if (event.keyCode == 68 && document.body.classList.contains("lightStyles")) { // d
+    if (e.key == 'd' && document.body.classList.contains("lightStyles")) {
         if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
             toggleDM();
         }
-    } else if (event.keyCode == 68 && document.body.classList.contains("darkStyles")) {
+    } else if (e.key == 'd' && document.body.classList.contains("darkStyles")) {
         if (document.activeElement == bodyEl[0] || document.activeElement == selectElement) {
             toggleLM();
         }
