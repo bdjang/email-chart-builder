@@ -1,3 +1,5 @@
+"use strict";
+
 // Drop Down Menu Logic
 const charts = document.getElementsByClassName("charts");
 const selectElement = document.getElementById("chartSelect");

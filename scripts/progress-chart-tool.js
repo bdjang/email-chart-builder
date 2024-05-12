@@ -1,3 +1,5 @@
+"use strict";
+
 // Progress Bar Chart I Selection
 const prog1Bars = document.getElementsByClassName("prog1Bars");
 const prog1Controls = document.getElementsByClassName("prog1Controls");

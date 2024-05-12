@@ -1,3 +1,5 @@
+"use strict";
+
 // Horizontal Chart I Row Selection
 const horiz1Bars = document.getElementsByClassName("horiz1Bars");
 const horiz1Controls = document.getElementsByClassName("horiz1Controls");

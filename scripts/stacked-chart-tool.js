@@ -1,3 +1,5 @@
+"use strict";
+
 // Stacked Chart I Row Selection
 const stacked1Bars = document.getElementsByClassName("stacked1Bars");
 const stacked1Controls = document.getElementsByClassName("stacked1Controls");

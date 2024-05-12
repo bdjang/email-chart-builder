@@ -1,3 +1,5 @@
+"use strict";
+
 // Negative I Chart Row Selection
 const negative1Bars = document.getElementsByClassName("negative1Bars");
 const negative1Controls = document.getElementsByClassName("negative1Controls");
