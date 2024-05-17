@@ -657,7 +657,7 @@ stacked1Color10b.oninput = function() {
 };
 
 // Stacked Chart I Height Adjustment
-const stacked1rowArray = [stacked1Row1a, stacked1Row1b, stacked1Row1c, stacked1Row1d, stacked1Row2a, stacked1Row2b, stacked1Row2c, stacked1Row1d, stacked1Row3a, stacked1Row3b, stacked1Row3c, stacked1Row1d, stacked1Row4a, stacked1Row4b, stacked1Row4c, stacked1Row1d, stacked1Row5a, stacked1Row5b, stacked1Row5c, stacked1Row1d, stacked1Row6a, stacked1Row6b, stacked1Row6c, stacked1Row1d, stacked1Row7a, stacked1Row7b, stacked1Row7c, stacked1Row7d, stacked1Row8a, stacked1Row8b, stacked1Row8c, stacked1Row8d, stacked1Row9a, stacked1Row9b, stacked1Row9c, stacked1Row9d, stacked1Row10a, stacked1Row10b, stacked1Row10c, stacked1Row10d];
+const stacked1rowArray = [stacked1Row1a, stacked1Row1b, stacked1Row1c, stacked1Row1d, stacked1Row2a, stacked1Row2b, stacked1Row2c, stacked1Row2d, stacked1Row3a, stacked1Row3b, stacked1Row3c, stacked1Row3d, stacked1Row4a, stacked1Row4b, stacked1Row4c, stacked1Row4d, stacked1Row5a, stacked1Row5b, stacked1Row5c, stacked1Row5d, stacked1Row6a, stacked1Row6b, stacked1Row6c, stacked1Row6d, stacked1Row7a, stacked1Row7b, stacked1Row7c, stacked1Row7d, stacked1Row8a, stacked1Row8b, stacked1Row8c, stacked1Row8d, stacked1Row9a, stacked1Row9b, stacked1Row9c, stacked1Row9d, stacked1Row10a, stacked1Row10b, stacked1Row10c, stacked1Row10d];
 const stacked1inputArray = [stacked1Text1, stacked1Text2, stacked1Text3, stacked1Text4, stacked1Text5, stacked1Text6, stacked1Text7, stacked1Text8, stacked1Text9, stacked1Text10];
 function stacked1BarHeight(x) {
     for (var i = 0; i < stacked1rowArray.length; i++) {
