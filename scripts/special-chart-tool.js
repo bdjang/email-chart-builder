@@ -2985,11 +2985,6 @@ const combo2Row5b = document.getElementById("combo2Row5b");
 const combo2Row5c = document.getElementById("combo2Row5c");
 const combo2Row5y = document.getElementById("combo2Row5y");
 const combo2Row5z = document.getElementById("combo2Row5z");
-const combo2Row6a = document.getElementById("combo2Row6a");
-const combo2Row6b = document.getElementById("combo2Row6b");
-const combo2Row6c = document.getElementById("combo2Row6c");
-const combo2Row6y = document.getElementById("combo2Row6y");
-const combo2Row6z = document.getElementById("combo2Row6z");
 
 // Row 1 Customization Logic
 const combo2Text1 = document.getElementById("combo2Text1");
