@@ -1,4 +1,6 @@
-"use strict";
+import { botSpace } from './index.js';
+import { shadowColor } from './index.js';
+import { barColorShadow } from './index.js';
 
 // Stacked Chart III Row Selection
 const stacked3Bars = document.getElementsByClassName("stacked3Bars");

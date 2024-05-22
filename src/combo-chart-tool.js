@@ -1,4 +1,7 @@
-"use strict";
+import { botSpace } from './index.js';
+import { shadowColor } from './index.js';
+import { barSizeShadow } from './index.js';
+import { barColorShadow } from './index.js';
 
 // Combo Chart I Row Selection
 const combo1Bars = document.getElementsByClassName("combo1Bars");

@@ -1,4 +1,7 @@
-"use strict";
+import { botSpace } from './index.js';
+import { shadowColor } from './index.js';
+import { barSizeShadow } from './index.js';
+import { barColorShadow } from './index.js';
 
 // Progress Bar Chart I Selection
 const prog1Bars = document.getElementsByClassName("prog1Bars");
