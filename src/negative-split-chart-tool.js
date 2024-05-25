@@ -1,4 +1,7 @@
-"use strict";
+import { botSpace } from './index.js';
+import { shadowColor } from './index.js';
+import { barSizeShadow } from './index.js';
+import { barColorShadow } from './index.js';
 
 // Negative I Chart Row Selection
 const negative1Bars = document.getElementsByClassName("negative1Bars");

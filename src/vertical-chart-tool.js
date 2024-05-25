@@ -1,5 +1,3 @@
-"use strict";
-
 // Vertical Chart I Row Selection
 const vert1AxisLine = document.getElementById("vert1AxisLine");
 const vert1Width = document.getElementById("vert1Width");
