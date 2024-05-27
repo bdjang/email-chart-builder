@@ -615,11 +615,19 @@ document.addEventListener("keydown", (e) => {
         }
     }
 });
-// Toggle Light/Dark Modes via Emoji Click Event
+// Toggle Light/Dark Modes via Emoji Click/Touchstart Event
 darkMode.addEventListener("click", () => {
     toggleDM();
 });
 lightMode.addEventListener("click", () => {
+    toggleLM();
+});
+darkMode.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    toggleDM();
+});
+lightMode.addEventListener("touchstart", (e) => {
+    e.preventDefault();
     toggleLM();
 });
 // Toggle Light/Dark Mode via Media Query
