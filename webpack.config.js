@@ -1,16 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = {
+module.exports = (env, argv) => ({
   entry: ['./src/index.js', './src/chart-functionality.js', './src/horizontal-chart-tool-01.js', './src/horizontal-chart-tool-02.js', './src/progress-chart-tool.js', './src/negative-split-chart-tool.js', './src/combo-chart-tool.js', './src/stacked-chart-tool-01.js', './src/stacked-chart-tool-02.js', './src/vertical-chart-tool.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   optimization: {
-    minimize: true,
     minimizer: [
       new TerserPlugin(),
       new CssMinimizerPlugin(),
@@ -31,7 +31,9 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [
+          argv.mode === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader',
+        ],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -40,6 +42,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './index.html',  // path to your HTML file
       minify: {
@@ -58,4 +61,4 @@ module.exports = {
     compress: true,
     port: 8000,
   },
-};
+});
