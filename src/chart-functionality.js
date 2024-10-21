@@ -62,8 +62,8 @@ selectElement.addEventListener("mouseleave", () => {
 });
 
 // Preview Dark Mode
-const lightMode = document.getElementById("lightMode");
 const darkMode = document.getElementById("darkMode");
+const lightMode = document.getElementById("lightMode");
 const scrollBox = document.getElementsByClassName("scrollBox");
 const textarea = document.getElementsByTagName("textarea");
 const previewBox = document.querySelectorAll("div.charts td.previewBox");
@@ -111,7 +111,6 @@ const codeText = document.querySelectorAll("div#readme ul li code");
 const codeSnippet = document.querySelectorAll("pre"); // Targets code snippet boxes
 
 window.addEventListener("load", () => { // Adds "lightStyles" class to all relevant elements
-    setTimeout(() => { darkMode.style.transform = "rotate(1080deg)"; }, 200);
     document.body.classList.add("lightStyles");
     prog1Row1a.classList.add("lightStyles");
     prog1Row2a.classList.add("lightStyles");
@@ -261,6 +260,7 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
 // Dark Mode Function
 let darkStatus = false;
 function toggleDM() {
+    setTimeout(() => { darkMode.style.filter = "invert(100%) drop-shadow(0 0 3px #005eff) drop-shadow(0 0 5px #005eff) drop-shadow(0 0 10px #005eff)"; }, 10);
     darkStatus = true;
     chartSelect.blur();
     document.body.classList.replace("lightStyles", "darkStyles");
@@ -409,12 +409,12 @@ function toggleDM() {
         combo3BarsTNodes4[z].classList.replace("lightStyles", "darkStyles");
         combo3BarsBNodes4[z].classList.replace("lightStyles", "darkStyles");
     }
-    if (lightMode.style.display == "none" && darkStatus == true) {
-        lightMode.style.display = "inline-block";
-        darkMode.style.display = "none";
-    } else if (lightMode.style.display == "inline-block" && darkStatus == false) {
-        lightMode.style.display = "none";
+    if (darkMode.style.display == "none" && darkStatus == true) {
         darkMode.style.display = "inline-block";
+        lightMode.style.display = "none";
+    } else if (darkMode.style.display == "inline-block" && darkStatus == false) {
+        darkMode.style.display = "none";
+        lightMode.style.display = "inline-block";
     }
     for (var a = 0; a < codeText.length; a++) { // Targets code elements in README section
         codeText[a].style.color = "#ff6b6b";
@@ -429,6 +429,7 @@ function toggleDM() {
 };
 // Light Mode Function
 function toggleLM() {
+    darkMode.style.filter = "invert(0%) drop-shadow(0 0 3px #ffffff) drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 10px #ffffff)";
     darkStatus = false;
     chartSelect.blur();
     document.body.classList.replace("darkStyles", "lightStyles");
@@ -577,12 +578,12 @@ function toggleLM() {
         combo3BarsTNodes4[z].classList.replace("darkStyles", "lightStyles");
         combo3BarsBNodes4[z].classList.replace("darkStyles", "lightStyles");
     }
-    if (lightMode.style.display == "none" && darkStatus == true) {
-        lightMode.style.display = "inline-block";
-        darkMode.style.display = "none";
-    } else if (lightMode.style.display == "inline-block" && darkStatus == false) {
-        lightMode.style.display = "none";
+    if (darkMode.style.display == "none" && darkStatus == true) {
         darkMode.style.display = "inline-block";
+        lightMode.style.display = "none";
+    } else if (darkMode.style.display == "inline-block" && darkStatus == false) {
+        darkMode.style.display = "none";
+        lightMode.style.display = "inline-block";
     }
     for (var a = 0; a < codeText.length; a++) {
         codeText[a].style.color = "#de0d0d";
@@ -616,17 +617,17 @@ document.addEventListener("keydown", (e) => {
     }
 });
 // Toggle Light/Dark Modes via Emoji Click/Touchstart Event
-darkMode.addEventListener("click", () => {
+lightMode.addEventListener("click", () => {
     toggleDM();
 });
-lightMode.addEventListener("click", () => {
+darkMode.addEventListener("click", () => {
     toggleLM();
 });
-darkMode.addEventListener("touchstart", (e) => {
+lightMode.addEventListener("touchstart", (e) => {
     e.preventDefault();
     toggleDM();
 });
-lightMode.addEventListener("touchstart", (e) => {
+darkMode.addEventListener("touchstart", (e) => {
     e.preventDefault();
     toggleLM();
 });
@@ -643,16 +644,16 @@ dmMediaQuery.addEventListener("change", () => {
 // Light/Dark Mode Tooltips
 const lightNote = document.getElementById("lmTooltip");
 const darkNote = document.getElementById("dmTooltip");
-lightMode.addEventListener("mouseover", () => {
+darkMode.addEventListener("mouseover", () => {
     darkNote.style.opacity = "1";
 });
-lightMode.addEventListener("mouseleave", () => {
+darkMode.addEventListener("mouseleave", () => {
     darkNote.style.opacity = "0";
 });
-darkMode.addEventListener("mouseover", () => {
+lightMode.addEventListener("mouseover", () => {
     lightNote.style.opacity = "1";
 });
-darkMode.addEventListener("mouseleave", () => {
+lightMode.addEventListener("mouseleave", () => {
     lightNote.style.opacity = "0";
 });
 
