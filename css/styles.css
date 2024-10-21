@@ -72,15 +72,29 @@ label[for*="Output"] { display: block; font-family: Arial, sans-serif; font-size
 label[for*="Output"] span { text-decoration: underline; text-decoration-thickness: 2px; }
 
 /* DARK MODE STYLES */
-button, #darkMode, #lightMode { cursor: pointer; }
-#darkMode, #lightMode, label, legend { -webkit-user-select: none; user-select: none; }
+button, #lightMode, #darkMode { cursor: pointer; }
+#lightMode, #darkMode, label, legend { -webkit-user-select: none; user-select: none; }
 .darkBorder { border-color: #0d1117 !important; }
 .lightBorder { border-color: #ffffff !important; }
 .darkStyles { background-color: #0d1117 !important; color: #e6edf3 !important; }
 .lightStyles { background-color: #ffffff !important; color: #000000 !important; }
 .lightStylesCSS { background-color: #ffffff !important; color: #666666 !important; } /* Used by Caption, Subtitle and Source text */
 .scrollBoxLight, .textareaLight { background-color: #f8f8f8 !important; }
-#darkMode { display: inline-block; -webkit-transition: transform 10000ms ease-out; -ms-transition: transform 10000ms ease-out; -moz-transition: transform 10000ms ease-out; transition: transform 10000ms ease-out; }
+#lightMode { display: inline-block; -webkit-transition: filter 1000ms linear; -ms-transition: filter 1000ms linear; -moz-transition: filter 1000ms linear; transition: filter 1000ms linear; }
+#darkMode { -webkit-transition: filter 750ms linear; -ms-transition: filter 750ms linear; -moz-transition: filter 750ms linear; transition: filter 750ms linear; }
+/* LIGHTBULB ANIMATION */
+@keyframes lightFlicker {
+    0% { filter: invert(100%); }
+    15% { filter: invert(50%); }
+    25% { filter: invert(0%); }
+    35% { filter: invert(50%); }
+    50% { filter: invert(100%); }
+    75% { filter: invert(50%); }
+    100% { filter: invert(0%); }
+}
+@media (prefers-reduced-motion: no-preference) {
+    #lightMode { animation: lightFlicker 2000ms linear; animation-iteration-count: 2; }
+}
 /* LIGHT/DARK MODE TOOLTIPS */
 #lmTooltip, #dmTooltip, #lmSelectTip, #dmSelectTip { background-color: #0d1117; border-radius: 2px; color: #e6edf3; font-size: 16px; opacity: 0; padding: 4px 6px; position: absolute; }
 #lmTooltip, #dmTooltip { margin: 0 0 0 234px; }
