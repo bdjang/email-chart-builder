@@ -93,7 +93,7 @@ button, #lightMode, #darkMode { cursor: pointer; }
     100% { filter: invert(0%); }
 }
 @media (prefers-reduced-motion: no-preference) {
-    #lightMode { animation: lightFlicker 2000ms linear; animation-iteration-count: 2; }
+    #lightMode { animation: lightFlicker 1500ms linear; animation-iteration-count: 2; }
 }
 /* LIGHT/DARK MODE TOOLTIPS */
 #lmTooltip, #dmTooltip, #lmSelectTip, #dmSelectTip { background-color: #0d1117; border-radius: 2px; color: #e6edf3; font-size: 16px; opacity: 0; padding: 4px 6px; position: absolute; }
