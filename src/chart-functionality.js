@@ -260,7 +260,8 @@ window.addEventListener("load", () => { // Adds "lightStyles" class to all relev
 // Dark Mode Function
 let darkStatus = false;
 function toggleDM() {
-    setTimeout(() => { darkMode.style.filter = "invert(100%) drop-shadow(0 0 3px #005eff) drop-shadow(0 0 5px #005eff) drop-shadow(0 0 10px #005eff)"; }, 10);
+    const randomColorGen = "#" + (Math.random() * 0xffffff << 0).toString(16).padStart(6, "0");
+    setTimeout(() => { darkMode.style.filter = "invert(100%) drop-shadow(0 0 3px " + randomColorGen + ") drop-shadow(0 0 5px " + randomColorGen + ") drop-shadow(0 0 10px " + randomColorGen + ")"; }, 10);
     darkStatus = true;
     chartSelect.blur();
     document.body.classList.replace("lightStyles", "darkStyles");
