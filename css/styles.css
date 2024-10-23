@@ -85,16 +85,16 @@ button, #lightMode, #darkMode { cursor: pointer; }
 #darkMode { -webkit-transition: filter 750ms linear; -ms-transition: filter 750ms linear; -moz-transition: filter 750ms linear; transition: filter 750ms linear; }
 /* LIGHTBULB ANIMATION */
 @keyframes lightFlicker {
-    0% { filter: invert(100%) drop-shadow(0 0 5px #f8e6a0); }
+    0% { filter: invert(100%); }
     15% { filter: invert(50%); }
-    25% { filter: invert(0%); }
+    25% { filter: invert(0%) drop-shadow(0 0 5px #f8e6a0) drop-shadow(0 0 5px #f8e6a0); }
     35% { filter: invert(50%); }
-    50% { filter: invert(100%) drop-shadow(0 0 5px #f8e6a0); }
+    50% { filter: invert(100%); }
     75% { filter: invert(50%); }
     100% { filter: invert(0%) drop-shadow(0 0 5px #f8e6a0) drop-shadow(0 0 5px #f8e6a0);}
 }
 @media (prefers-reduced-motion: no-preference) {
-    #lightMode { animation: lightFlicker 1500ms linear; animation-iteration-count: 2; }
+    #lightMode { animation: lightFlicker 1000ms linear; animation-iteration-count: 2; }
 }
 /* LIGHT/DARK MODE TOOLTIPS */
 #lmTooltip, #dmTooltip, #lmSelectTip, #dmSelectTip { background-color: #0d1117; border-radius: 2px; color: #e6edf3; font-size: 16px; opacity: 0; padding: 4px 6px; position: absolute; }
