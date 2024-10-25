@@ -10,7 +10,7 @@ import './stacked-chart-tool-02.js';
 import './vertical-chart-tool.js';
 
 // Global Chart Variables
-export const botSpace = `<div height="24" style="font-size: 24px; line-height: 24px;">&nbsp;</div>`; // Bottom spacing for non-vertical charts
+export const botSpace = `<div height="16" style="font-size: 16px; line-height: 16px;">&nbsp;</div>`; // Bottom spacing for non-vertical charts
 export const shadowColor = "0 0 10px #ffdf65, 0 0 10px #ffdf65, 0 0 10px #ffffff, 0 0 10px #ffffff"; // Chart text highlighting
 export const barSizeShadow = "-1px -1px 10px #ffdf65, -1px 1px 10px #ffdf65"; // Data bar size highlighting
 export const barColorShadow = "-1px -1px 10px #6585ff, -1px 1px 10px #6585ff, 0 0 10px #ffffff"; // Data bar color highlighting
