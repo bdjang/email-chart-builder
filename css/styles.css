@@ -81,7 +81,7 @@ button, #lightMode, #darkMode { cursor: pointer; }
 .lightStylesCSS { background-color: #ffffff !important; color: #666666 !important; } /* Used by Caption, Subtitle and Source text */
 .scrollBoxLight, .textareaLight { background-color: #f8f8f8 !important; }
 /* 10.22.24: Combine #lightMode and #darkMode and just change the CSS since they could be updated to be the same span element now */
-#lightMode { display: inline-block; filter: drop-shadow(0 0 5px #f8e6a0) drop-shadow(0 0 5px #f8e6a0);}
+#lightMode { display: inline-block; filter: drop-shadow(0 0 5px #f8e6a0) drop-shadow(0 0 5px #f8e6a0); }
 #darkMode { -webkit-transition: filter 750ms linear; -ms-transition: filter 750ms linear; -moz-transition: filter 750ms linear; transition: filter 750ms linear; }
 /* LIGHTBULB ANIMATION */
 @keyframes lightFlicker {
@@ -91,7 +91,7 @@ button, #lightMode, #darkMode { cursor: pointer; }
     35% { filter: invert(50%); }
     50% { filter: invert(100%); }
     75% { filter: invert(50%); }
-    100% { filter: invert(0%) drop-shadow(0 0 5px #f8e6a0) drop-shadow(0 0 5px #f8e6a0);}
+    100% { filter: invert(0%) drop-shadow(0 0 5px #f8e6a0) drop-shadow(0 0 5px #f8e6a0); }
 }
 @media (prefers-reduced-motion: no-preference) {
     #lightMode { animation: lightFlicker 1000ms linear; animation-iteration-count: 2; }
