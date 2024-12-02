@@ -45,7 +45,7 @@ module.exports = (env, argv) => ({
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './index.html',  // path to your HTML file
-      favicon: './images/chart-favicon-32x32.png', // Path to your favicon
+      favicon: './images/chart_favicon.ico', // Path to your favicon
       minify: {
         removeComments: true,
         collapseWhitespace: true,
