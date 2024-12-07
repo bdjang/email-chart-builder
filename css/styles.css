@@ -83,6 +83,7 @@ button, #lightMode, #darkMode { cursor: pointer; }
 /* 10.22.24: Combine #lightMode and #darkMode and just change the CSS since they could be updated to be the same span element now */
 #lightMode { display: inline-block; filter: drop-shadow(0 0 5px #f8e6a0) drop-shadow(0 0 5px #f8e6a0); }
 #darkMode { -webkit-transition: filter 750ms linear; -ms-transition: filter 750ms linear; -moz-transition: filter 750ms linear; transition: filter 750ms linear; }
+#lightMode, #darkMode { transform: translateZ(0); } /* Drop-shadow Fix for Safari */
 /* LIGHTBULB ANIMATION */
 @keyframes lightFlicker {
     0% { filter: invert(100%); }
